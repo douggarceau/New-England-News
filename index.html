@@ -1,0 +1,2367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Signals</title>
+  <meta name="description" content="High-signal intelligence for the AI industry." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Rajdhani:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #000000;
+      --bg2: #010101;
+
+      --panel: rgba(8, 8, 8, 0.96);
+      --panel-2: rgba(12, 12, 12, 0.96);
+
+      --line: rgba(255, 70, 0, 0.18);
+      --line-strong: rgba(255, 70, 0, 0.32);
+
+      --text: #f1f1f1;
+      --muted: #a8a8a8;
+      --soft: #555555;
+
+      --hot: #ff3c00;
+      --hot-2: #ff6400;
+
+      --ok: #ff7a33;
+      --warn: #ff9c66;
+
+      --glow: 0 0 16px rgba(255, 60, 0, 0.22), 0 0 48px rgba(255, 60, 0, 0.08);
+      --radius: 24px;
+      --radius-sm: 18px;
+      --max: 1320px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Rajdhani", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 14% 16%, rgba(255, 106, 0, 0.14), transparent 34%),
+        radial-gradient(circle at 88% 20%, rgba(255, 145, 40, 0.08), transparent 33%),
+        linear-gradient(180deg, #000000 0%, #050505 54%, #000000 100%);
+      overflow-x: hidden;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -2;
+    }
+
+    body::before {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 40px 40px;
+      mask-image: radial-gradient(circle at center, black 50%, transparent 100%);
+      opacity: 0.35;
+    }
+
+    body::after {
+      background:
+        linear-gradient(90deg, transparent 0%, rgba(255, 90, 31, 0.05) 50%, transparent 100%),
+        radial-gradient(circle at center, rgba(255, 112, 44, 0.09), transparent 50%);
+      filter: blur(24px);
+      opacity: 0.75;
+    }
+
+    .circuit {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: 0.45;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, transparent 0 4%, rgba(255,90,31,.12) 4% 4.2%, transparent 4.2% 12%, rgba(255,90,31,.08) 12% 12.1%, transparent 12.1% 100%),
+        linear-gradient(0deg, transparent 0 8%, rgba(255,90,31,.08) 8% 8.15%, transparent 8.15% 17%, rgba(255,90,31,.05) 17% 17.1%, transparent 17.1% 100%);
+      mix-blend-mode: screen;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: calc(100% - 12px); max-width: none; margin: 0 6px; }
+    .scroll-anchor { display: block; position: relative; top: -96px; visibility: hidden; }
+
+    .nav {
+      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(16px);
+      background: rgba(3, 3, 3, 0.82); border-bottom: 1px solid rgba(255, 120, 24, 0.22);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 14px; letter-spacing: 0.08em; font-weight: 800; text-transform: uppercase; font-size: 0.9rem;
+    }
+    .brand-mark {
+      width: 14px; height: 14px; border-radius: 50%; background: linear-gradient(135deg, var(--hot), var(--hot-2)); box-shadow: 0 0 18px rgba(255, 92, 31, 0.8);
+    }
+    .nav-links {
+      display: flex; align-items: center; gap: 24px; color: var(--muted); font-size: 0.94rem;
+    }
+    .nav-links a:hover { color: #fff; }
+
+    .quick-links-bar {
+      border-bottom: 1px solid rgba(255, 120, 24, 0.2);
+      background: rgba(0, 0, 0, 0.78);
+      backdrop-filter: blur(8px);
+    }
+    .quick-links-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: thin;
+    }
+    .quick-link-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 11px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 120, 24, 0.28);
+      background: rgba(255,255,255,0.02);
+      color: #fff;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      flex: 0 0 auto;
+    }
+    .quick-link-pill:hover {
+      border-color: rgba(255, 120, 24, 0.7);
+      background: rgba(255, 120, 24, 0.12);
+      color: #ffd7b4;
+    }
+
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 999px; padding: 13px 18px;
+      font-weight: 700; letter-spacing: 0.02em; transition: 180ms ease; cursor: pointer; border: 1px solid transparent;
+    }
+    .button-primary { background: linear-gradient(135deg, var(--hot), var(--hot-2)); color: #090909; box-shadow: var(--glow); }
+    .button-primary:hover { transform: translateY(-1px); filter: brightness(1.05); }
+    .button-secondary { background: rgba(255,255,255,0.02); border-color: rgba(255,255,255,0.08); color: #fff; }
+
+    .sound-toggle {
+      background: rgba(255, 106, 0, 0.08);
+      border-color: rgba(255, 120, 24, 0.4);
+      color: #fff2e4;
+      min-width: 160px;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .sound-toggle:hover {
+      background: rgba(255, 106, 0, 0.14);
+      border-color: rgba(255, 120, 24, 0.62);
+    }
+    .sound-toggle.active {
+      background: linear-gradient(135deg, rgba(255, 106, 0, 0.95), rgba(255, 157, 46, 0.88));
+      color: #100803;
+      border-color: rgba(255, 180, 118, 0.9);
+      box-shadow: 0 0 28px rgba(255, 106, 0, 0.42);
+    }
+    .sound-toggle .live-dot {
+      width: 9px;
+      height: 9px;
+    }
+
+    @keyframes riseIn {
+      from { opacity: 0; transform: translateY(18px) scale(0.985); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes emberPulse {
+      0%, 100% { box-shadow: 0 0 0 rgba(255,106,0,0); }
+      50% { box-shadow: 0 0 22px rgba(255,106,0,0.45); }
+    }
+
+    .hero { padding: 6px 0; position: relative; }
+    .hero-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+
+    .hero-panel,.panel,.signal-card,.stat-card,.story-card,.subscribe-card,.contact-card,.terminal {
+      background: linear-gradient(180deg, rgba(20,15,11,0.86), rgba(10,8,7,0.94));
+      border: 1px solid rgba(255, 120, 24, 0.2);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), var(--glow);
+    }
+
+    .hero-panel {
+      border-radius: 34px; padding: 10px; overflow: hidden; position: relative;
+      animation: riseIn 780ms ease-out both;
+    }
+    .hero-panel::before,.hero-panel::after { content: ""; position: absolute; inset: auto; pointer-events: none; }
+    .hero-panel::before {
+      right: -60px; top: -60px; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(circle, rgba(255,90,31,0.25), transparent 65%); filter: blur(6px);
+    }
+    .hero-panel::after {
+      left: -40px; bottom: -40px; width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle, rgba(255,138,31,0.12), transparent 70%); filter: blur(10px);
+    }
+
+    .eyebrow,.status-pill {
+      display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 999px;
+      color: #ffd7c8; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.18em; background: rgba(255, 90, 31, 0.08);
+    }
+    .eyebrow { margin-bottom: 18px; }
+    .status-pill { margin-top: 18px; font-size: 0.72rem; }
+    .status-pill strong { color: var(--ok); }
+
+    h1 { margin: 0; font-family: "Orbitron", "Rajdhani", sans-serif; font-size: 1.6rem; line-height: 0.98; letter-spacing: -0.01em; font-weight: 800; text-transform: uppercase; max-width: 11ch; }
+    .hero h1 span { color: #fff2e4; display: block; text-shadow: 0 0 24px rgba(255, 106, 0, 0.3); }
+    .hero-copy { display: none; }
+    .hero-actions { display: none; }
+    .hero-console {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .console-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 120, 24, 0.24);
+      background: rgba(255, 255, 255, 0.02);
+      color: #f7dbc1;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .console-chip strong {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .ticker { margin-top: 28px; border: 1px solid var(--line-strong); border-radius: 999px; overflow: hidden; background: linear-gradient(180deg, rgba(255,90,31,0.08), rgba(255,90,31,0.02)); }
+    .ticker-track {
+      display: flex; gap: 32px; white-space: nowrap; padding: 14px 18px; color: #ffe5dc; animation: scroll 72s linear infinite;
+      min-width: max-content; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem;
+    }
+    @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    .stock-update-box {
+      margin-top: 8px;
+      border: 1px solid rgba(255, 120, 24, 0.32);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.02);
+      padding: 8px;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 6px;
+    }
+    .stock-update-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .stock-update-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+      align-content: start;
+    }
+    .stock-card {
+      border: 1px solid rgba(255, 120, 24, 0.32);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.02);
+      padding: 7px 9px;
+      display: grid;
+      gap: 2px;
+    }
+    .stock-label {
+      color: #ffd7b4;
+      font-size: 0.64rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .stock-price {
+      color: #fff;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+    .stock-change {
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .front-blast {
+      margin-top: 8px;
+      border: 1px solid rgba(255, 120, 24, 0.28);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.02);
+      padding: 8px;
+    }
+    .front-blast-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px 4px;
+      margin-top: 6px;
+    }
+    .front-blast-link {
+      display: block;
+      color: #fff;
+      font-size: 0.85rem;
+      line-height: 1.3;
+      border-bottom: 1px solid rgba(255, 120, 24, 0.18);
+      padding: 1px 0;
+    }
+    .front-blast-link:hover {
+      color: #ffd7b4;
+      border-bottom-color: rgba(255, 120, 24, 0.52);
+    }
+
+    .hero-side { display: grid; grid-template-rows: auto; gap: 14px; }
+    .terminal { border-radius: 30px; padding: 22px; position: relative; overflow: hidden; }
+    .terminal { animation: riseIn 900ms ease-out both; }
+    .terminal::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 30%, transparent 70%, rgba(255,255,255,0.02)); pointer-events: none; }
+    .terminal-bar {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; color: var(--muted); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.16em;
+    }
+    .dots { display: inline-flex; gap: 8px; }
+    .dots span { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.25); }
+    .dots span:first-child { background: var(--hot); box-shadow: 0 0 16px rgba(255, 92, 31, 0.8); }
+    .terminal-lines { display: grid; gap: 14px; font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.94rem; line-height: 1.55; color: #ffe7d2; }
+    .terminal-line { display: grid; grid-template-columns: 72px 1fr; gap: 14px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px; }
+    .terminal-line:last-child { border-bottom: 0; }
+    .time { color: #8d8d8d; }
+    .pulse { color: #fff; }
+    .hot { color: #ffbb97; }
+
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .stat-card { border-radius: 24px; padding: 22px; display: grid; align-content: center; }
+    .stat-card { animation: riseIn 980ms ease-out both; }
+    .stat-label { color: var(--muted); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.76rem; margin-bottom: 14px; }
+    .stat-value { font-size: clamp(2rem, 3.4vw, 2.8rem); font-weight: 800; letter-spacing: -0.05em; }
+    .stat-note { color: #d0d0d0; margin-top: 8px; line-height: 1.5; font-size: 0.95rem; }
+
+    section { padding: 6px 0; margin: 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 8px; }
+    .section-kicker { color: #ffceb8; text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.76rem; margin-bottom: 10px; }
+    h2 { margin: 0; font-family: "Orbitron", "Rajdhani", sans-serif; font-size: clamp(1.55rem, 2.7vw, 2.45rem); line-height: 1.05; letter-spacing: -0.01em; text-transform: uppercase; }
+    .section-copy { color: var(--muted); max-width: 680px; line-height: 1.7; font-size: 1rem; }
+
+    .signals-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .signal-card { border-radius: 24px; padding: 20px; position: relative; overflow: hidden; display: grid; }
+    .signal-card { animation: riseIn 700ms ease-out both; }
+    .signal-card::before {
+      content: ""; position: absolute; left: -10%; right: -10%; top: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); opacity: 0.3;
+    }
+    .signal-type { color: #ffb391; font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 18px; }
+    .signal-title { font-size: 1.34rem; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 14px; }
+    .signal-text { color: #d2d2d2; line-height: 1.68; margin-bottom: 18px; }
+    .signal-link { margin-top: auto; color: #ffd6c8; font-weight: 700; font-size: 0.9rem; }
+    .signal-meta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+    .tag { padding: 8px 10px; border-radius: 999px; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.12em; border: 1px solid rgba(255,255,255,0.08); color: #ededed; background: rgba(255,255,255,0.03); }
+
+    .stories { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    .story-stack { display: grid; gap: 18px; }
+    .story-card { border-radius: 28px; padding: 26px; display: grid; gap: 14px; }
+    .story-card { animation: riseIn 700ms ease-out both; }
+    .story-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.14em; }
+    .story-title { font-size: clamp(1.4rem, 2.2vw, 2rem); line-height: 1.08; letter-spacing: -0.04em; font-weight: 800; max-width: 26ch; }
+    .story-copy { color: #d6d6d6; line-height: 1.75; max-width: 62ch; }
+    .signal-brief-label { color: #ffd2bf; font-weight: 700; margin-right: 6px; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78rem; }
+    .story-impact { color: #ffcfbc; font-weight: 700; line-height: 1.7; }
+    .story-link { color: #ffe5dc; font-weight: 700; }
+
+    .tonight-section { padding-top: 10px; }
+    .tonight-card {
+      border-radius: 28px;
+      padding: 24px;
+      display: grid;
+      gap: 12px;
+      background: linear-gradient(180deg, rgba(20,15,11,0.9), rgba(10,8,7,0.96));
+      border: 1px solid rgba(255, 120, 24, 0.26);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), var(--glow);
+      animation: riseIn 760ms ease-out both;
+    }
+    .tonight-title { font-size: clamp(1.3rem, 2vw, 1.75rem); line-height: 1.12; letter-spacing: -0.02em; font-weight: 800; max-width: 34ch; }
+    .tonight-brief { color: #dccfc4; line-height: 1.72; max-width: 70ch; }
+
+    .matrix { border-radius: 28px; padding: 26px; display: grid; gap: 16px; align-content: start; }
+    .matrix-row { display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .matrix-row:last-child { border-bottom: 0; }
+    .matrix-name { font-weight: 700; letter-spacing: -0.02em; }
+    .matrix-note { color: var(--muted); margin-top: 6px; font-size: 0.96rem; line-height: 1.55; }
+    .score { min-width: 64px; text-align: right; color: #ffd6c8; font-weight: 800; font-size: 1.1rem; }
+
+    .deep-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    .wire-panel, .market-panel, .editorials-panel, .fed-panel, .trump-panel { border-radius: 28px; padding: 24px; }
+    .wire-panel, .market-panel, .editorials-panel, .fed-panel, .trump-panel { animation: riseIn 760ms ease-out both; }
+
+    .top-link-stack { display: grid; gap: 12px; align-content: start; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .top-links-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    .top-card { border-radius: 18px; padding: 12px; }
+    .outlet-grid { display: grid; gap: 13px; margin-top: 12px; }
+    .source-group { display: grid; gap: 5px; }
+    .source-group-label {
+      font-size: 0.63rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #ff9c6e;
+      border-bottom: 1px solid rgba(255, 120, 24, 0.22);
+      padding-bottom: 5px;
+      font-weight: 700;
+    }
+    .source-links-row { display: flex; flex-wrap: wrap; gap: 5px; }
+    .outlet-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 9px;
+      border-radius: 7px;
+      border: 1px solid rgba(255, 120, 24, 0.26);
+      background: rgba(255,255,255,0.02);
+      color: #eeddd0;
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: 150ms ease;
+    }
+    .outlet-link:hover { background: rgba(255,120,24,0.14); border-color: rgba(255,120,24,0.65); color: #ffd7b4; }
+
+    .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .video-card {
+      border-radius: 28px;
+      padding: 12px;
+      position: relative;
+      overflow: hidden;
+      animation: riseIn 840ms ease-out both;
+    }
+    .video-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,0.05) 42%, transparent 64%);
+      transform: translateX(-120%);
+      animation: sweep 7s linear infinite;
+      pointer-events: none;
+    }
+    @keyframes sweep {
+      to { transform: translateX(120%); }
+    }
+    .video-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .live-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #ffe2c6;
+      border: 1px solid rgba(255,120,24,0.5);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: rgba(255,106,0,0.12);
+      animation: emberPulse 2.2s ease-in-out infinite;
+    }
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #ff6a00;
+      box-shadow: 0 0 14px rgba(255,106,0,0.9);
+    }
+    .video-frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 1px solid rgba(255,120,24,0.32);
+      border-radius: 16px;
+      overflow: hidden;
+      background: #050505;
+      position: relative;
+      z-index: 1;
+    }
+    .video-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    .video-note {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      letter-spacing: 0.02em;
+    }
+    .audio-shell {
+      margin-top: 12px;
+      border: 1px solid rgba(255, 120, 24, 0.3);
+      border-radius: 14px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .audio-player {
+      width: 100%;
+      height: 38px;
+      filter: sepia(0.25) saturate(1.05) hue-rotate(-8deg);
+    }
+    .wire-list, .editorial-list { display: grid; gap: 10px; margin-top: 14px; }
+    .wire-link, .editorial-link {
+      display: grid;
+      gap: 4px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 120, 24, 0.2);
+      background: rgba(255,255,255,0.01);
+      transition: 160ms ease;
+    }
+    .wire-link:hover, .editorial-link:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255, 120, 24, 0.6);
+      background: rgba(255, 120, 24, 0.12);
+    }
+    .wire-title, .editorial-title { font-weight: 600; line-height: 1.35; }
+    .wire-meta, .editorial-meta { color: var(--muted); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    .market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
+    .market-card {
+      border-radius: 14px;
+      border: 1px solid rgba(255, 120, 24, 0.22);
+      background: rgba(255,255,255,0.02);
+      padding: 12px;
+    }
+    .asset { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .price { font-size: 1.1rem; font-weight: 700; margin-top: 4px; }
+    .delta { margin-top: 4px; font-size: 0.88rem; font-weight: 600; }
+    .up { color: #8df6be; }
+    .down { color: #ff8e8e; }
+    .flat { color: #ffe3a9; }
+    .spark {
+      margin-top: 8px;
+      height: 7px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(141,246,190,0.2), rgba(141,246,190,0.7));
+    }
+    .spark.down {
+      background: linear-gradient(90deg, rgba(255,142,142,0.7), rgba(255,142,142,0.2));
+    }
+    .market-links { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .market-links a {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #ffd9b6;
+      border: 1px solid rgba(255, 120, 24, 0.35);
+      border-radius: 999px;
+      padding: 7px 10px;
+    }
+
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 22px; }
+    .team-card {
+      border-radius: 20px;
+      border: 1px solid rgba(255, 120, 24, 0.28);
+      background: linear-gradient(180deg, rgba(20,15,11,0.86), rgba(10,8,7,0.94));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), var(--glow);
+      padding: 26px;
+      display: grid;
+      gap: 12px;
+      animation: riseIn 700ms ease-out both;
+    }
+    .team-name { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.01em; color: #fff; }
+    .team-title { font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.12em; color: #ffceb8; }
+    .team-bio { color: #d6d6d6; line-height: 1.65; font-size: 0.96rem; }
+
+    .briefing-title {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      line-clamp: 1;
+    }
+
+    .briefing-copy {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      line-clamp: 2;
+    }
+
+    .fed-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .fed-list { display: grid; gap: 10px; margin-top: 14px; }
+    .fed-link {
+      display: grid;
+      gap: 4px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 120, 24, 0.2);
+      background: rgba(255,255,255,0.01);
+      transition: 160ms ease;
+    }
+    .fed-link:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255, 120, 24, 0.6);
+      background: rgba(255, 120, 24, 0.12);
+    }
+
+    .empty-state, .load-error {
+      border-radius: 24px; padding: 22px; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.12); color: var(--muted);
+    }
+
+    .bottom-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    .subscribe-card,.contact-card { border-radius: 30px; padding: 30px; }
+    .ad-card { max-width: 560px; margin: 0 auto; padding: 22px; text-align: center; }
+    .card-title { font-family: "Orbitron", "Rajdhani", sans-serif; font-size: 1.7rem; line-height: 1.1; letter-spacing: -0.02em; font-weight: 800; margin: 0 0 10px; }
+    .card-copy { color: var(--muted); line-height: 1.75; margin-bottom: 22px; }
+    form { display: grid; gap: 12px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    input,textarea {
+      width: 100%; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); color: #fff;
+      padding: 15px 16px; font: inherit; outline: none; transition: 160ms ease;
+    }
+    input:focus,textarea:focus { border-color: rgba(255, 112, 44, 0.6); box-shadow: 0 0 0 4px rgba(255, 112, 44, 0.08); }
+    textarea { resize: vertical; }
+
+    .form-status {
+      color: #ffd6c8; font-size: 0.9rem;
+    }
+
+    .ad-cta {
+      margin-top: 8px;
+    }
+
+    footer { padding: 34px 0 56px; color: #8f8f8f; font-size: 0.94rem; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 26px; }
+
+    .admin-analytics-panel {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: min(420px, calc(100vw - 24px));
+      max-height: calc(100vh - 36px);
+      overflow: auto;
+      z-index: 120;
+      border-radius: 24px;
+      border: 1px solid rgba(255, 120, 24, 0.3);
+      background: linear-gradient(180deg, rgba(10, 9, 8, 0.97), rgba(6, 6, 6, 0.98));
+      box-shadow: 0 22px 80px rgba(0, 0, 0, 0.6), 0 0 32px rgba(255, 106, 0, 0.18);
+      padding: 18px;
+      display: none;
+    }
+    .admin-analytics-panel.is-open { display: grid; gap: 14px; }
+    .admin-analytics-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .admin-analytics-title {
+      margin: 0;
+      font-family: "Orbitron", "Rajdhani", sans-serif;
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .admin-analytics-note {
+      color: #c8b6a8;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .admin-analytics-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .admin-analytics-button {
+      border: 1px solid rgba(255, 120, 24, 0.28);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.03);
+      color: #ffe5d1;
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+    }
+    .admin-analytics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .admin-metric-card {
+      border: 1px solid rgba(255, 120, 24, 0.18);
+      border-radius: 16px;
+      padding: 12px;
+      background: rgba(255,255,255,0.02);
+    }
+    .admin-metric-label {
+      color: #cfae94;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .admin-metric-value {
+      margin-top: 6px;
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+    .admin-analytics-section {
+      border: 1px solid rgba(255, 120, 24, 0.18);
+      border-radius: 18px;
+      padding: 14px;
+      background: rgba(255,255,255,0.02);
+      display: grid;
+      gap: 10px;
+    }
+    .admin-analytics-section h4 {
+      margin: 0;
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #ffe5d1;
+    }
+    .admin-analytics-list {
+      display: grid;
+      gap: 8px;
+    }
+    .admin-analytics-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: start;
+      font-size: 0.9rem;
+      color: #e7e7e7;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .admin-analytics-item:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    .admin-analytics-item strong {
+      display: block;
+      color: #fff;
+      font-weight: 700;
+    }
+    .admin-analytics-item span {
+      color: #aeaeae;
+      font-size: 0.82rem;
+      word-break: break-word;
+    }
+    .admin-analytics-count {
+      color: #ffd5ae;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .admin-analytics-message {
+      color: #d6b89f;
+      font-size: 0.86rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 1120px) {
+      .stories,.bottom-grid,.deep-grid,.top-links-grid { grid-template-columns: 1fr; }
+      .top-link-stack { grid-template-columns: repeat(2, 1fr); }
+      .video-grid { grid-template-columns: 1fr; }
+      .signals-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats { grid-template-columns: 1fr; }
+      .market-grid { grid-template-columns: 1fr; }
+      .fed-grid { grid-template-columns: 1fr; }
+      .stock-update-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .front-blast-grid { grid-template-columns: repeat(2, 1fr); }
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 760px) {
+      .wrap { width: calc(100% - 10px); margin: 0 5px; }
+      .nav-links { display: none; }
+      .hero { padding-top: 6px; }
+      .hero-panel, .subscribe-card, .contact-card { padding: 22px; border-radius: 24px; }
+      .signals-grid,.row { grid-template-columns: 1fr; }
+      .outlet-grid { gap: 10px; }
+      .front-blast-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr; }
+      h1 { max-width: none; }
+      .hero-copy { font-size: 1rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .admin-analytics-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="circuit"></div>
+
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark"></span>
+        <span>AI Signals</span>
+      </a>
+      <div class="nav-links">
+        <a href="#top">Home</a>
+        <a href="#signals">Major Headlines</a>
+        <a href="#dark-tech">Dark Tech</a>
+        <a href="#briefings">Briefings</a>
+        <a href="#pulse">Markets</a>
+        <a href="#video-feed">Live Video</a>
+        <a href="#team">About</a>
+      </div>
+      <a href="#subscribe" class="button button-primary">Subscribe</a>
+    </div>
+  </nav>
+
+  <div class="quick-links-bar" aria-label="Quick outlet links">
+    <div class="wrap quick-links-inner">
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://openai.com/blog">OpenAI</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.anthropic.com/news">Anthropic</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://deepmind.google/discover/blog">DeepMind</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://ai.meta.com/blog">Meta AI</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://nvidianews.nvidia.com/">NVIDIA</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.spacex.com/updates">SpaceX</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.palantir.com/">Palantir</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://x.ai/">xAI</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://mistral.ai/news/">Mistral AI</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.perplexity.ai/hub/blog">Perplexity</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://huggingface.co/blog">Hugging Face</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.midjourney.com/">Midjourney</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://runwayml.com/">Runway</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://stability.ai/news">Stability AI</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://elevenlabs.io/blog">ElevenLabs</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://blog.character.ai/">Character.AI</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.cursor.com/">Cursor</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://github.com/features/copilot">GitHub AI</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/list/cs.AI/recent">ArXiv AI</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://paperswithcode.com/">Papers With Code</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-panel">
+          <div class="eyebrow">Live Signal Desk</div>
+          <h1>AI <span>News Desk</span></h1>
+          <p class="hero-copy">
+            Real-time intelligence on frontier AI models, labs, chips, robotics, and research. The signal desk for what's actually moving.
+          </p>
+          <div class="hero-actions">
+            <a href="#top-feeds" class="button button-primary">Open Feeds</a>
+            <a href="#advertise" class="button button-secondary">Media Kit</a>
+          </div>
+
+          <div class="status-pill">Feed: <strong id="feed-status">CONNECTING</strong></div>
+
+          <div class="stock-update-box" id="stock-update-box">
+            <div class="stock-update-head">
+              <div class="section-kicker" style="margin:0;">Frontier Company Signals</div>
+              <div class="wire-meta" id="stock-update-status">Loading</div>
+            </div>
+            <div class="stock-update-grid" id="stock-update-grid">
+              <a class="stock-card" target="_blank" rel="noopener noreferrer" href="https://blogs.nvidia.com/blog/category/ai/">
+                <span class="stock-label">NVIDIA AI</span>
+                <span class="stock-price">--</span>
+                <span class="stock-change">--</span>
+              </a>
+              <a class="stock-card" target="_blank" rel="noopener noreferrer" href="https://www.amd.com/en/newsroom">
+                <span class="stock-label">AMD AI</span>
+                <span class="stock-price">--</span>
+                <span class="stock-change">--</span>
+              </a>
+              <a class="stock-card" target="_blank" rel="noopener noreferrer" href="https://newsroom.intel.com/">
+                <span class="stock-label">Intel AI</span>
+                <span class="stock-price">--</span>
+                <span class="stock-change">--</span>
+              </a>
+              <a class="stock-card" target="_blank" rel="noopener noreferrer" href="https://blog.google/technology/ai/">
+                <span class="stock-label">Google AI</span>
+                <span class="stock-price">--</span>
+                <span class="stock-change">--</span>
+              </a>
+              <a class="stock-card" target="_blank" rel="noopener noreferrer" href="https://www.anthropic.com/news">
+                <span class="stock-label">Anthropic</span>
+                <span class="stock-price">--</span>
+                <span class="stock-change">--</span>
+              </a>
+              <a class="stock-card" target="_blank" rel="noopener noreferrer" href="https://openai.com/news/">
+                <span class="stock-label">OpenAI</span>
+                <span class="stock-price">--</span>
+                <span class="stock-change">--</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="ticker" aria-label="AI signals ticker">
+            <div class="ticker-track" id="ticker-track">
+              <span>Connecting to live AI feeds</span>
+              <span>OpenAI</span>
+              <span>Anthropic</span>
+              <span>Google DeepMind</span>
+              <span>NVIDIA</span>
+              <span>Connecting to live AI feeds</span>
+              <span>OpenAI</span>
+              <span>Anthropic</span>
+              <span>Google DeepMind</span>
+              <span>NVIDIA</span>
+            </div>
+          </div>
+
+          <div class="front-blast" id="front-blast">
+            <div class="section-kicker" style="margin:0;">Rapid Signal Wire</div>
+            <div class="front-blast-grid"></div>
+          </div>
+        </div>
+
+        <div id="top-feeds" class="hero-side top-link-stack" data-sponsored-intelligence-slot="ready">
+          <div class="panel top-card">
+            <div class="section-kicker">Live Wire</div>
+            <h3 class="card-title" style="margin:0;">Command Headlines</h3>
+            <div class="wire-list" id="mainstream-headlines"></div>
+          </div>
+
+          <div class="panel top-card">
+            <div class="section-kicker">Institutional Coverage</div>
+            <h3 class="card-title" style="margin:0;">Priority Outlets</h3>
+            <div class="editorial-list" id="editorial-list"></div>
+          </div>
+
+          <div class="panel top-card">
+            <div class="section-kicker">Verified Sources</div>
+            <h3 class="card-title" style="margin:0;">Source Grid</h3>
+            <div class="outlet-grid" id="outlet-grid">
+              <div class="source-group">
+                <div class="source-group-label">Frontier Labs</div>
+                <div class="source-links-row">
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://openai.com/blog">OpenAI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.anthropic.com/news">Anthropic</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://deepmind.google/discover/blog">DeepMind</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://ai.meta.com/blog">Meta AI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://x.ai/">xAI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://mistral.ai/news/">Mistral</a>
+                </div>
+              </div>
+              <div class="source-group">
+                <div class="source-group-label">Chips / Compute</div>
+                <div class="source-links-row">
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://nvidianews.nvidia.com/">NVIDIA</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.amd.com/en/newsroom">AMD</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://newsroom.intel.com/">Intel AI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://cerebras.ai/blog/">Cerebras</a>
+                </div>
+              </div>
+              <div class="source-group">
+                <div class="source-group-label">Research</div>
+                <div class="source-links-row">
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/list/cs.AI/recent">arXiv AI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://paperswithcode.com/">Papers With Code</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.semanticscholar.org/">Semantic Scholar</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.alignmentforum.org/">Alignment Forum</a>
+                </div>
+              </div>
+              <div class="source-group">
+                <div class="source-group-label">Tools / Builders</div>
+                <div class="source-links-row">
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://huggingface.co/blog">Hugging Face</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://runwayml.com/">Runway</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://elevenlabs.io/blog">ElevenLabs</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://stability.ai/news">Stability AI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.perplexity.ai/hub/blog">Perplexity</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.cursor.com/">Cursor</a>
+                </div>
+              </div>
+              <div class="source-group">
+                <div class="source-group-label">Safety / Policy</div>
+                <div class="source-links-row">
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.aisi.gov.uk/">AI Safety Institute</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://oecd.ai/">OECD AI Observatory</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.aiaaic.org/aiaaic-repository">AI Incidents DB</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tonight-section" id="tonight-moment">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Night Watch</div>
+            <h2>Tonight's AI Moment</h2>
+          </div>
+          <p class="section-copy">One uncanny, high-signal story that reveals where AI is bending human behavior, safety, or reality.</p>
+        </div>
+        <article class="tonight-card" id="tonight-moment-card">
+          <div class="empty-state">Scanning live feeds for tonight's standout AI moment.</div>
+        </article>
+      </div>
+    </section>
+
+    <span id="industry" class="scroll-anchor" aria-hidden="true"></span>
+
+    <span id="compute" class="scroll-anchor" aria-hidden="true"></span>
+    <span id="personalities" class="scroll-anchor" aria-hidden="true"></span>
+    <section id="signals">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Power Shift Monitor</div>
+            <h2>Major Headlines</h2>
+          </div>
+          <p class="section-copy">The top AI, compute, and robotics stories moving markets, labs, and policy right now.</p>
+        </div>
+
+        <div class="signals-grid" id="major-signals"></div>
+      </div>
+    </section>
+
+    <span id="opinion" class="scroll-anchor" aria-hidden="true"></span>
+    <section id="dark-tech">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Dark Tech</div>
+            <h2>Unsettling Signals</h2>
+          </div>
+          <p class="section-copy">Deepfakes, AI-enabled fraud, rogue models, synthetic identity abuse, and autonomous system failures.</p>
+        </div>
+
+        <div class="signals-grid" id="dark-tech-grid">
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Dark Tech</div>
+              <div class="signal-title">When AI Errors Leave the Screen</div>
+              <div class="signal-text">Model errors are no longer lab curiosities. They now appear in legal, financial, and workflow systems where bad outputs have real cost.</div>
+              <div class="signal-meta"><span class="tag">AI Safety</span><span class="tag">Operational Risk</span></div>
+            </div>
+            <a class="signal-link" href="https://news.google.com/search?q=AI+failure+error+hallucination+mistake+glitch&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Dark Tech</div>
+              <div class="signal-title">Neighborhood Life Meets Quiet Surveillance</div>
+              <div class="signal-text">Facial recognition and behavioral tracking are scaling across public and private systems while accountability standards remain uneven.</div>
+              <div class="signal-meta"><span class="tag">Surveillance</span><span class="tag">Civil Liberties</span></div>
+            </div>
+            <a class="signal-link" href="https://news.google.com/search?q=facial+recognition+surveillance+tracking+privacy&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Dark Tech</div>
+              <div class="signal-title">A Familiar Voice, Generated Elsewhere</div>
+              <div class="signal-text">Voice clones and generated personas are forcing new controls in payments, media verification, and identity assurance workflows.</div>
+              <div class="signal-meta"><span class="tag">Synthetic Identity</span><span class="tag">Deepfakes</span></div>
+            </div>
+            <a class="signal-link" href="https://news.google.com/search?q=deepfake+synthetic+media+fake+video+voice+clone+identity+theft&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="incident-log">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Incident Tracking</div>
+            <h2>AI Incident Log</h2>
+          </div>
+          <p class="section-copy">Real-world AI failures: hallucinations in production, autonomous system breakdowns, and algorithmic decisions gone wrong.</p>
+        </div>
+
+        <div class="signals-grid" id="incident-log-grid">
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">System Failure</div>
+              <div class="signal-title">AI Hallucinations Enter Real-World Systems</div>
+              <div class="signal-text">Language models and automated systems have produced incorrect information in legal filings, business automation tools, and research workflows, raising questions about reliability and oversight.</div>
+              <div class="signal-meta"><span class="tag">AI Risk</span><span class="tag">Reliability</span></div>
+            </div>
+            <a class="signal-link" href="https://news.google.com/search?q=AI+hallucination+legal+filings+automation+errors&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Synthetic Identity</div>
+              <div class="signal-title">Deepfake Fraud Expands Financial Crime</div>
+              <div class="signal-text">Voice cloning and synthetic identity tools are increasingly being used to impersonate executives, family members, and financial authorities in scams and fraud operations.</div>
+              <div class="signal-meta"><span class="tag">Deepfakes</span><span class="tag">Security</span></div>
+            </div>
+            <a class="signal-link" href="https://news.google.com/search?q=deepfake+voice+clone+fraud+synthetic+identity+scam&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Autonomous Systems</div>
+              <div class="signal-title">Robotics and Automation Failures Under Review</div>
+              <div class="signal-text">Warehouse robots, automated vehicles, and machine decision systems occasionally produce unexpected behavior, forcing investigators to study how complex systems fail under real-world conditions.</div>
+              <div class="signal-meta"><span class="tag">Robotics</span><span class="tag">Safety</span></div>
+            </div>
+            <a class="signal-link" href="https://news.google.com/search?q=robotics+automation+system+failure+investigation+autonomous+vehicle&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Live Feed</div>
+            <h2>Latest Signals</h2>
+          </div>
+          <p class="section-copy">Latest AI, chips, and robotics stories as they break.</p>
+        </div>
+
+        <div class="story-stack" id="latest-signals"></div>
+      </div>
+    </section>
+
+    <span id="capital" class="scroll-anchor" aria-hidden="true"></span>
+    <span id="futures" class="scroll-anchor" aria-hidden="true"></span>
+    <section id="briefings">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Signal Analysis</div>
+            <h2>Command Briefings</h2>
+          </div>
+          <p class="section-copy">Compressed analysis of the strategic shifts beneath the headlines — labs, models, policy, and compute.</p>
+        </div>
+
+        <div class="stories">
+          <div class="story-stack" id="briefing-stack"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <span id="markets" class="scroll-anchor" aria-hidden="true"></span>
+    <span id="robotics" class="scroll-anchor" aria-hidden="true"></span>
+    <section id="pulse">
+      <div class="wrap">
+        <aside class="panel market-panel">
+          <div class="section-kicker">AI Company Signals</div>
+          <h3 class="card-title">Top AI Company Updates</h3>
+          <p class="card-copy" id="market-copy">This panel tracks major AI company momentum and updates so you can quickly see who is shipping, scaling, or shifting strategy.</p>
+          <div class="market-grid" id="market-grid"></div>
+          <div class="market-links" id="market-links"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="video-feed">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Live Broadcast</div>
+            <h2>Command Video Feed</h2>
+          </div>
+          <p class="section-copy">Always-on windows for observing the moment technical systems move from demonstrations into ordinary public life.</p>
+        </div>
+
+        <div class="video-grid">
+          <article class="panel video-card">
+            <div class="video-top">
+              <h3 class="card-title" style="margin:0;">AI SIGNAL LIVE</h3>
+              <span class="live-pill"><span class="live-dot"></span>Live Window</span>
+            </div>
+            <div class="video-frame">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L_Guz73e6fw" title="Sam Altman AI Interview" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-note">Rotating interview feed covering AI leaders, research talks, and conference conversations.</div>
+          </article>
+
+          <article class="panel video-card">
+            <div class="video-top">
+              <h3 class="card-title" style="margin:0;">SIGNAL DESK PODCAST</h3>
+              <span class="live-pill"><span class="live-dot"></span>Live Window</span>
+            </div>
+            <div class="video-frame">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YRvf00NooN8" title="Elon Musk AI Discussion" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-note">Discussion playlist for long-form AI interviews, podcast segments, and synthetic-future analysis.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="podcast">
+      <div class="wrap" data-podcast-sponsorship-slot="ready">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Audio Briefing</div>
+            <h2>Signal Desk Podcast</h2>
+          </div>
+          <p class="section-copy">Six high-IQ AI podcasts with in-page players focused on frontier labs, alignment, policy, and technical depth.</p>
+        </div>
+
+        <div class="signals-grid">
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Lex Fridman</div>
+              <div class="signal-title">AI Alignment + Frontier Labs</div>
+              <div class="signal-text">Long-form technical interviews with researchers and founders on alignment, model capability, and AGI timelines.</div>
+              <div class="signal-meta">
+                <span class="tag">Research</span>
+                <span class="tag">Alignment</span>
+              </div>
+            </div>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Dwarkesh</div>
+              <div class="signal-title">Scaling Laws + AGI</div>
+              <div class="signal-text">High-density conversations with top scientists on model scaling, reasoning, compute, and transformative AI forecasts.</div>
+              <div class="signal-meta">
+                <span class="tag">Compute</span>
+                <span class="tag">Theory</span>
+              </div>
+            </div>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://media.transistor.fm/1923dca1/0dd54a72.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">ML Street Talk</div>
+              <div class="signal-title">Architecture + Interpretability</div>
+              <div class="signal-text">Deep technical roundtables with researchers on architecture choices, interpretability, and empirical ML results.</div>
+              <div class="signal-meta">
+                <span class="tag">Technical</span>
+                <span class="tag">Interpretability</span>
+              </div>
+            </div>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP8118754179.mp3?updated=1773148641" type="audio/mpeg" />
+              </audio>
+            </div>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Cognitive Revolution</div>
+              <div class="signal-title">Agentic Workflows + Deployment</div>
+              <div class="signal-text">Practical and strategic analysis of frontier model releases, enterprise deployment, and agentic workflows.</div>
+              <div class="signal-meta">
+                <span class="tag">Industry</span>
+                <span class="tag">Frontier Models</span>
+              </div>
+            </div>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/traffic.megaphone.fm/NPR2488007355.mp3?t=podcast&amp;e=nx-s1-5726849&amp;p=510289&amp;d=1775&amp;size=28414207" type="audio/mpeg" />
+              </audio>
+            </div>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">No Priors</div>
+              <div class="signal-title">AI + Tech Strategy</div>
+              <div class="signal-text">Founder-level interviews on AI product strategy, semiconductor dynamics, and platform-level competition.</div>
+              <div class="signal-meta">
+                <span class="tag">Strategy</span>
+                <span class="tag">Execution</span>
+              </div>
+            </div>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/bf1f0b32-d38c-4af5-8abe-2fb2fd4d78ba/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&amp;awEpisodeId=bf1f0b32-d38c-4af5-8abe-2fb2fd4d78ba&amp;feed=54nAGcIl" type="audio/mpeg" />
+              </audio>
+            </div>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Eye on AI</div>
+              <div class="signal-title">Policy, Safety + Governance</div>
+              <div class="signal-text">Policy, safety, and geopolitics discussions with AI leaders, researchers, and governance experts.</div>
+              <div class="signal-meta">
+                <span class="tag">Policy</span>
+                <span class="tag">Safety</span>
+              </div>
+            </div>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP8507001898.mp3?updated=1773097195" type="audio/mpeg" />
+              </audio>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <span id="culture" class="scroll-anchor" aria-hidden="true"></span>
+      <span id="startups" class="scroll-anchor" aria-hidden="true"></span>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Editorial Desk</div>
+            <h2>Meet the Team</h2>
+          </div>
+          <p class="section-copy">AI Signals is an independent intelligence desk covering frontier models, AI labs, chips, robotics, and policy.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-name">Doug Garceau</div>
+            <div class="team-title">Founder & Publisher</div>
+            <div class="team-bio">Leads product direction, source priorities, and publishing focus across AI labs, policy, and infrastructure.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap bottom-grid">
+        <div id="subscribe" class="subscribe-card" data-newsletter-growth="ready">
+          <div class="section-kicker">Daily Command Brief</div>
+          <h3 class="card-title">Get the daily signal brief.</h3>
+          <p class="card-copy">Compressed daily intelligence on frontier AI, labs, models, chips, and research that matters.</p>
+          <form name="subscribe" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="subscribe" />
+            <div class="row">
+              <input type="text" name="first_name" placeholder="First name" aria-label="First name" />
+              <input type="email" name="email" placeholder="Email address" aria-label="Email address" required />
+            </div>
+            <button type="submit" class="button button-primary">Join the List</button>
+            <div class="form-status">Low volume. High signal.</div>
+          </form>
+        </div>
+
+        <div id="contact" class="contact-card">
+          <div class="section-kicker">Intelligence Desk</div>
+          <h3 class="card-title">Send a lead.</h3>
+          <p class="card-copy">Send sourced tips on AI breakthroughs, lab news, chip developments, or incidents worth tracking.</p>
+          <form name="tips" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="tips" />
+            <div class="row">
+              <input type="text" name="name" placeholder="Name" aria-label="Name" />
+              <input type="email" name="email" placeholder="Email" aria-label="Email" />
+            </div>
+            <textarea name="message" placeholder="Send a tip, story, or intelligence note" aria-label="Signal message"></textarea>
+            <button type="submit" class="button button-secondary">Transmit</button>
+            <div class="form-status">Attribution optional. Confidentiality respected.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="advertise">
+      <div class="wrap">
+        <div class="contact-card ad-card">
+          <div class="section-kicker">Partner Access</div>
+          <h3 class="card-title">Advertise</h3>
+          <p class="card-copy">Place your brand in front of readers tracking AI, chips, labs, regulation, and real-time technology shifts.</p>
+          <a class="button button-primary ad-cta" href="mailto:advertise@aisignals.news?subject=Advertising%20Inquiry">Advertise</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>AI Signals — Live Monitoring Desk</div>
+      <div>Signal System operating under the direction of Doug Garceau.</div>
+    </div>
+  </footer>
+
+  <aside id="admin-analytics-panel" class="admin-analytics-panel" aria-hidden="true" data-analytics="off">
+    <div class="admin-analytics-head">
+      <div>
+        <div class="admin-analytics-note">Private Analytics</div>
+        <h3 class="admin-analytics-title">Views And Clicks</h3>
+      </div>
+      <div class="admin-analytics-actions">
+        <button type="button" id="admin-analytics-refresh" class="admin-analytics-button" data-analytics="off">Refresh</button>
+        <button type="button" id="admin-analytics-close" class="admin-analytics-button" data-analytics="off">Close</button>
+      </div>
+    </div>
+    <div id="admin-analytics-message" class="admin-analytics-message">Hidden shortcut: Shift + Alt + A</div>
+    <div class="admin-analytics-grid">
+      <div class="admin-metric-card">
+        <div class="admin-metric-label">Total Views</div>
+        <div class="admin-metric-value" id="admin-total-views">--</div>
+      </div>
+      <div class="admin-metric-card">
+        <div class="admin-metric-label">Total Clicks</div>
+        <div class="admin-metric-value" id="admin-total-clicks">--</div>
+      </div>
+    </div>
+    <div class="admin-analytics-section">
+      <h4>Top Pages</h4>
+      <div id="admin-top-pages" class="admin-analytics-list"></div>
+    </div>
+    <div class="admin-analytics-section">
+      <h4>Top Links</h4>
+      <div id="admin-top-clicks" class="admin-analytics-list"></div>
+    </div>
+    <div class="admin-analytics-section">
+      <h4>Recent Activity</h4>
+      <div id="admin-recent-events" class="admin-analytics-list"></div>
+    </div>
+  </aside>
+
+  <script>
+    const revenueReadiness = {
+      premiumSignalBrief: { enabled: false, slot: '#premium-brief-slot' },
+      newsletterGrowth: { enabled: false, slot: '#subscribe' },
+      sponsoredIntelligenceCard: { enabled: false, slot: '#top-feeds' },
+      podcastSponsorship: { enabled: false, slot: '#podcast' },
+      downloadableResearchReports: { enabled: false, slot: '#research-report-slot' }
+    };
+
+    const isGitHubPages = /github\.io$/i.test(location.hostname);
+    const endpoint = '/.netlify/functions/ai-news';
+    const analyticsConfig = {
+      trackEndpoint: '/.netlify/functions/track-analytics',
+      reportEndpoint: '/.netlify/functions/analytics-report',
+      tokenStorageKey: 'ai-signals-admin-token'
+    };
+
+    function escapeHtml(text = '') {
+      return text
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
+    }
+
+    function timeLabel(iso) {
+      if (!iso) return '--:--';
+      const date = new Date(iso);
+      if (Number.isNaN(date.getTime())) return '--:--';
+      return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+
+    function dateLabel(iso) {
+      if (!iso) return 'Live';
+      const date = new Date(iso);
+      if (Number.isNaN(date.getTime())) return 'Live';
+      return date.toLocaleDateString([], { month: 'short', day: 'numeric' });
+    }
+
+    function summarize(title = '') {
+      const trimmed = title.replace(/\s+/g, ' ').trim();
+      return trimmed.length > 170 ? trimmed.slice(0, 167) + '...' : trimmed;
+    }
+
+    function cleanHeadline(text = '') {
+      const el = document.createElement('textarea');
+      el.innerHTML = String(text || '');
+      const decoded = el.value;
+      return decoded
+        .replace(/^\s*(?:code|id|tag|xml|rss|json)\s*[:=\-]+\s*/i, '')
+        .replace(/^\s*(?:\[[^\]]+\]|\{[^\}]+\}|\([A-Z0-9_\-]{2,20}\))\s*/, '')
+        .replace(/^\s*(?:code:|id:|tag:)\s*/i, '')
+        .replace(/^\s*(?:<[^>]+>|\{\s*"[^"]+"\s*:|\[\s*\{)/, '')
+        .replace(/^\s*[\|:\-\[\]{}()#@*_`~>]+\s*/, '')
+        .replace(/^\s*\d+\s*[\)\].:-]\s*/, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function buildSignalBrief(item = {}) {
+      const title = cleanHeadline(item.title || '');
+      let summary = cleanHeadline(item.summary || '');
+
+      if (!summary || /update pulled from the live source page/i.test(summary)) {
+        summary = `${title || 'A new AI development is active.'} This matters because it can change how AI systems are built, deployed, or governed.`;
+      }
+
+      const parts = summary
+        .replace(/\s+/g, ' ')
+        .split(/(?<=[.!?])\s+/)
+        .map(s => s.trim())
+        .filter(Boolean)
+        .slice(0, 2);
+
+      if (!parts.length) {
+        return 'A new AI development is active. This matters because it can change how AI systems are built, deployed, or governed.';
+      }
+
+      if (parts.length === 1 && parts[0].length < 70) {
+        parts.push('This matters because it can affect model capability, safety, or deployment decisions.');
+      }
+
+      return parts
+        .map(sentence => /[.!?]$/.test(sentence) ? sentence : `${sentence}.`)
+        .join(' ');
+    }
+
+    function isRenderableHeadline(text = '') {
+      const t = String(text || '').trim();
+      if (!t) return false;
+      if (t.length < 18) return false;
+      if (/^(code|id|tag|xml|rss|json)\b/i.test(t)) return false;
+      if (/^[\[{<]/.test(t)) return false;
+      if (/^[a-z0-9_-]{8,}$/.test(t)) return false;
+      return true;
+    }
+
+    function formatNumber(value) {
+      return Number(value || 0).toLocaleString();
+    }
+
+    function analyticsPanel() {
+      return document.getElementById('admin-analytics-panel');
+    }
+
+    function setAnalyticsMessage(message) {
+      const box = document.getElementById('admin-analytics-message');
+      if (box) box.textContent = message;
+    }
+
+    function renderAnalyticsList(elementId, items, formatter) {
+      const box = document.getElementById(elementId);
+      if (!box) return;
+
+      if (!items.length) {
+        box.innerHTML = '<div class="admin-analytics-message">No data collected yet.</div>';
+        return;
+      }
+
+      box.innerHTML = items.map(formatter).join('');
+    }
+
+    function storeAnalyticsToken(token) {
+      sessionStorage.setItem(analyticsConfig.tokenStorageKey, token);
+    }
+
+    function getAnalyticsToken() {
+      return sessionStorage.getItem(analyticsConfig.tokenStorageKey) || '';
+    }
+
+    function clearAnalyticsToken() {
+      sessionStorage.removeItem(analyticsConfig.tokenStorageKey);
+    }
+
+    function analyticsPayloadBase() {
+      return {
+        path: location.pathname,
+        title: document.title
+      };
+    }
+
+    function sendAnalytics(payload) {
+      const body = JSON.stringify(payload);
+
+      try {
+        if (navigator.sendBeacon) {
+          const blob = new Blob([body], { type: 'application/json' });
+          if (navigator.sendBeacon(analyticsConfig.trackEndpoint, blob)) return;
+        }
+      } catch (error) {
+        console.debug('sendBeacon analytics fallback', error);
+      }
+
+      fetch(analyticsConfig.trackEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body,
+        keepalive: true
+      }).catch(() => {});
+    }
+
+    function trackPageView() {
+      if (isGitHubPages) return;
+      sendAnalytics({
+        ...analyticsPayloadBase(),
+        type: 'pageview'
+      });
+    }
+
+    function linkAnalyticsLabel(link) {
+      return (link.dataset.analyticsLabel || link.getAttribute('aria-label') || link.textContent || link.title || 'Link')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 120);
+    }
+
+    function initializeClickTracking() {
+      if (isGitHubPages) return;
+      document.addEventListener('click', (event) => {
+        const link = event.target.closest('a[href]');
+        if (!link || link.dataset.analytics === 'off') return;
+
+        const rawHref = link.getAttribute('href') || '';
+        if (!rawHref || rawHref.startsWith('#') || rawHref.startsWith('mailto:') || rawHref.startsWith('tel:') || rawHref.startsWith('javascript:')) {
+          return;
+        }
+
+        sendAnalytics({
+          ...analyticsPayloadBase(),
+          type: 'click',
+          href: link.href,
+          label: linkAnalyticsLabel(link)
+        });
+      });
+    }
+
+    async function fetchAnalyticsReport(forceTokenPrompt = false) {
+      let token = getAnalyticsToken();
+      if (!token || forceTokenPrompt) {
+        token = window.prompt('Enter your admin analytics token');
+        if (!token) return null;
+        storeAnalyticsToken(token.trim());
+        token = token.trim();
+      }
+
+      const response = await fetch(analyticsConfig.reportEndpoint, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        },
+        cache: 'no-store'
+      });
+
+      if (response.status === 401) {
+        clearAnalyticsToken();
+        throw new Error('Unauthorized');
+      }
+
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || 'Analytics report unavailable');
+      }
+
+      return data;
+    }
+
+    function renderAnalyticsReport(report) {
+      document.getElementById('admin-total-views').textContent = formatNumber(report.totalViews);
+      document.getElementById('admin-total-clicks').textContent = formatNumber(report.totalClicks);
+      setAnalyticsMessage(report.updatedAt ? `Last updated ${new Date(report.updatedAt).toLocaleString()}` : 'No analytics data yet.');
+
+      renderAnalyticsList('admin-top-pages', report.topPages || [], (item) => `
+        <div class="admin-analytics-item">
+          <div>
+            <strong>${escapeHtml(item.path || '/')}</strong>
+            <span>Page views</span>
+          </div>
+          <div class="admin-analytics-count">${escapeHtml(formatNumber(item.views || 0))}</div>
+        </div>
+      `);
+
+      renderAnalyticsList('admin-top-clicks', report.topClicks || [], (item) => `
+        <div class="admin-analytics-item">
+          <div>
+            <strong>${escapeHtml(item.label || 'Untitled link')}</strong>
+            <span>${escapeHtml(item.href || '')}</span>
+          </div>
+          <div class="admin-analytics-count">${escapeHtml(formatNumber(item.clicks || 0))}</div>
+        </div>
+      `);
+
+      renderAnalyticsList('admin-recent-events', report.recentEvents || [], (item) => `
+        <div class="admin-analytics-item">
+          <div>
+            <strong>${escapeHtml((item.type || 'event').toUpperCase())} · ${escapeHtml(item.label || item.path || 'Site')}</strong>
+            <span>${escapeHtml(item.path || '/')} ${item.href ? '· ' + escapeHtml(item.href) : ''}</span>
+          </div>
+          <div class="admin-analytics-count">${escapeHtml(new Date(item.ts).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }))}</div>
+        </div>
+      `);
+    }
+
+    function closeAnalyticsPanel() {
+      const panel = analyticsPanel();
+      if (!panel) return;
+      panel.classList.remove('is-open');
+      panel.setAttribute('aria-hidden', 'true');
+    }
+
+    async function openAnalyticsPanel(forceTokenPrompt = false) {
+      const panel = analyticsPanel();
+      if (!panel) return;
+
+      panel.classList.add('is-open');
+      panel.setAttribute('aria-hidden', 'false');
+      setAnalyticsMessage('Loading analytics...');
+
+      try {
+        const report = await fetchAnalyticsReport(forceTokenPrompt);
+        if (!report) {
+          closeAnalyticsPanel();
+          return;
+        }
+        renderAnalyticsReport(report);
+      } catch (error) {
+        if (error.message === 'Unauthorized') {
+          setAnalyticsMessage('Token rejected. Press Shift + Alt + A to try again.');
+          closeAnalyticsPanel();
+          return;
+        }
+        setAnalyticsMessage(error.message || 'Analytics report unavailable.');
+      }
+    }
+
+    function initializeAnalyticsPanel() {
+      const closeButton = document.getElementById('admin-analytics-close');
+      const refreshButton = document.getElementById('admin-analytics-refresh');
+
+      if (closeButton) closeButton.addEventListener('click', closeAnalyticsPanel);
+      if (refreshButton) refreshButton.addEventListener('click', () => openAnalyticsPanel(false));
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          closeAnalyticsPanel();
+          return;
+        }
+
+        if (event.shiftKey && event.altKey && String(event.key || '').toLowerCase() === 'a') {
+          event.preventDefault();
+          openAnalyticsPanel(false);
+        }
+      });
+    }
+
+    function isBlockedHeadline(text = '') {
+      const t = String(text || '').toLowerCase();
+      return /\b(donald\s+trump|trump\s+campaign|trump\s+administration|trump)\b/i.test(t);
+    }
+
+    function isAISignal(text = "") {
+      const keywords = [
+        "ai", "artificial intelligence", "llm", "model", "robot",
+        "deepfake", "synthetic", "autonomous", "gpu", "nvidia"
+      ];
+
+      const t = text.toLowerCase();
+      return keywords.some(k => t.includes(k));
+    }
+
+    function filterAISignals(items = []) {
+      return items.filter(item => isAISignal(item.title + " " + (item.summary || "")));
+    }
+
+    const aiCelebs = [
+      "sam altman",
+      "demis hassabis",
+      "dario amodei",
+      "jensen huang",
+      "andrej karpathy",
+      "ilya sutskever",
+      "yann lecun",
+      "geoffrey hinton",
+      "andrew ng",
+      "fei fei li",
+      "emad mostaque",
+      "thomas wolf",
+      "clem delangue",
+      "greg brockman",
+      "lex fridman",
+      "dwarkesh patel",
+      "nick bostrom",
+      "max tegmark",
+      "vitalik buterin"
+    ];
+
+    function isAICelebritySignal(text = "") {
+      const t = text.toLowerCase();
+      return aiCelebs.some(name => t.includes(name));
+    }
+
+    function getCelebrityMatch(text = "") {
+      const t = text.toLowerCase();
+      const match = aiCelebs.find(name => t.includes(name));
+      if (!match) return null;
+      return match.split(' ').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
+    }
+
+    function filterCelebritySignals(items = []) {
+      return items.filter(item =>
+        isAICelebritySignal(item.title + " " + (item.summary || ""))
+      );
+    }
+
+    function filterBlockedItems(items = []) {
+      return (items || []).filter(item => {
+        const clean = cleanHeadline(item?.title || '');
+        return !isBlockedHeadline(clean) && isRenderableHeadline(clean);
+      });
+    }
+
+    let cornellCount = 0;
+    function limitCornellContent(item) {
+      const isCornell = /cornell|arxiv/i.test(item?.source || '');
+      if (isCornell) {
+        if (cornellCount >= 2) return false;
+        cornellCount++;
+      }
+      return true;
+    }
+
+    function detectTheme(text = '') {
+      const t = text.toLowerCase();
+      if (/(openai|anthropic|claude|gemini|model|reasoning|release)/.test(t)) return ['Models', 'Models'];
+      if (/(nvidia|gpu|blackwell|compute|chip|infrastructure)/.test(t)) return ['Compute', 'Compute'];
+      if (/(research|science|paper|benchmark|safety)/.test(t)) return ['Research', 'Research'];
+      return ['Signals', 'Society'];
+    }
+
+    function renderTicker(items) {
+      const track = document.getElementById('ticker-track');
+      const labels = items.slice(0, 8).map(item => `<span>${escapeHtml(cleanHeadline(item.title))}</span>`).join('');
+      track.innerHTML = labels + labels;
+    }
+
+    function selectTonightsMoment(items = []) {
+      const pool = (items || []).filter(item => {
+        const text = `${item.title || ''} ${item.summary || ''}`.toLowerCase();
+        return /(conscious|sentien|chatbot attachment|companion|deepfake|synthetic identity|identity fraud|robotics incident|robot failure|human-ai|transhuman|emergent behavior|unusual breakthrough|reasoning breakthrough|rogue ai|ai gone wrong)/.test(text);
+      });
+
+      const score = (item) => {
+        const text = `${item.title || ''} ${item.summary || ''}`.toLowerCase();
+        let s = 0;
+        if (/(conscious|sentien|self-aware|aware)/.test(text)) s += 10;
+        if (/(chatbot attachment|companion|bond|relationship)/.test(text)) s += 9;
+        if (/(deepfake|voice clone|synthetic identity|identity fraud)/.test(text)) s += 9;
+        if (/(robotics incident|robot failure|autonomous.*incident|automation.*failure)/.test(text)) s += 8;
+        if (/(transhuman|neural implant|brain-computer|bci)/.test(text)) s += 8;
+        if (/(emergent behavior|unexpected behavior|unusual breakthrough|reasoning breakthrough)/.test(text)) s += 8;
+        if (/arxiv/i.test(item.source || '')) s += 1;
+        return s;
+      };
+
+      const ranked = (pool.length ? pool : items).slice().sort((a, b) => score(b) - score(a));
+      return ranked[0] || null;
+    }
+
+    function renderTonightsMoment(items = []) {
+      const box = document.getElementById('tonight-moment-card');
+      if (!box) return;
+
+      const pick = selectTonightsMoment(filterBlockedItems(items || []));
+      if (!pick) {
+        box.innerHTML = '<div class="empty-state">No standout moment yet. Monitoring for uncanny AI behavior and major breakthroughs.</div>';
+        return;
+      }
+
+      box.innerHTML = `
+        <div class="story-top"><span>Must-See Signal</span><span>${escapeHtml(pick.source || 'Live')}</span></div>
+        <div class="tonight-title">${escapeHtml(cleanHeadline(pick.title || ''))}</div>
+        <div class="tonight-brief"><span class="signal-brief-label">Signal Brief:</span>${escapeHtml(buildSignalBrief(pick))}</div>
+        <a class="story-link" href="${escapeHtml(pick.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
+      `;
+    }
+
+    function renderLatest(items) {
+      const box = document.getElementById('latest-signals');
+      if (!items.length) {
+        box.innerHTML = '<div class="empty-state">No stories yet. New signals will appear shortly.</div>';
+        return;
+      }
+      box.innerHTML = items.slice(0, 3).map(item => {
+        const title = cleanHeadline(item.title);
+        const oneLiner = title.split(/[.!?]/)[0].trim().replace(/\s+/g, ' ');
+        return `
+        <article class="story-card">
+          <div class="story-top"><span>${escapeHtml(item.source || 'Live Feed')}</span><span>${escapeHtml(dateLabel(item.pubDate))}</span></div>
+          <div class="story-title">${escapeHtml(oneLiner)}</div>
+          <div class="story-copy"><span class="signal-brief-label">Signal Brief:</span>${escapeHtml(buildSignalBrief(item))}</div>
+          <a class="story-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
+        </article>
+      `}).join('');
+    }
+
+    function renderCelebrityRadar(items) {
+      const box = document.getElementById('celebrity-radar-grid');
+      if (!box) return;
+
+      const entries = filterCelebritySignals(items || []);
+      if (!entries.length) {
+        box.innerHTML = '<div class="empty-state">No live personality signals right now. Monitoring active.</div>';
+        return;
+      }
+
+      box.innerHTML = entries.slice(0, 6).map(item => {
+        const cleanTitle = cleanHeadline(item.title || '');
+        const celeb = getCelebrityMatch(`${item.title || ''} ${item.summary || ''}`) || 'AI Figure';
+        return `
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">AI Personalities</div>
+              <div class="signal-title">${escapeHtml(cleanTitle)}</div>
+              <div class="signal-meta"><span class="tag">${escapeHtml(item.source || 'Live')}</span><span class="tag">${escapeHtml(celeb)}</span></div>
+            </div>
+            <a class="signal-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderFrontBlast(items) {
+      const box = document.getElementById('front-blast');
+      if (!box) return;
+      const pool = (items || []).slice(0, 24);
+      if (!pool.length) {
+        box.innerHTML = '<div class="section-kicker" style="margin:0;">Breaking Now</div><div class="front-blast-grid"><div class="empty-state">Headlines are loading.</div></div>';
+        return;
+      }
+
+      box.innerHTML = `
+        <div class="section-kicker" style="margin:0;">Breaking Now</div>
+        <div class="front-blast-grid">
+          ${pool.map(item => `<a class="front-blast-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(cleanHeadline(item.title))}</a>`).join('')}
+        </div>
+      `;
+    }
+
+    function renderMajor(items) {
+      const box = document.getElementById('major-signals');
+      if (!items.length) {
+        box.innerHTML = '<div class="empty-state">No major signals yet. We are still scanning live sources.</div>';
+        return;
+      }
+      box.innerHTML = items.slice(0, 6).map(item => {
+        const cleanTitle = cleanHeadline(item.title);
+        const [type, tag] = detectTheme(cleanTitle + ' ' + (item.summary || ''));
+        return `
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">${escapeHtml(type)}</div>
+              <div class="signal-title">${escapeHtml(cleanTitle)}</div>
+              <div class="signal-text">${escapeHtml(item.summary || summarize(cleanTitle))}</div>
+              <div class="signal-meta"><span class="tag">${escapeHtml(item.source || 'Live')}</span><span class="tag">${escapeHtml(tag)}</span></div>
+            </div>
+            <a class="signal-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderResearchBreakthroughs(meta, items) {
+      const box = document.getElementById('major-signals');
+      if (!box) return;
+
+      const backend = filterBlockedItems(Array.isArray(meta.researchBreakthroughs) ? meta.researchBreakthroughs : []);
+      const fallback = filterBlockedItems(items || []).filter(item => /(paper|preprint|benchmark|experiment|research|breakthrough|alignment|interpretability|reasoning)/i.test(`${item.title || ''} ${item.summary || ''}`));
+      const pool = backend.length ? backend : fallback;
+
+      if (!pool.length) {
+        box.innerHTML = '<div class="empty-state">Research feed is syncing. New technical breakthroughs will appear shortly.</div>';
+        return;
+      }
+
+      box.innerHTML = pool.slice(0, 6).map(item => {
+        const cleanTitle = cleanHeadline(item.title || '');
+        return `
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Research Breakthroughs</div>
+              <div class="signal-title">${escapeHtml(cleanTitle)}</div>
+              <div class="signal-text">${escapeHtml(item.summary || summarize(cleanTitle))}</div>
+              <div class="signal-meta"><span class="tag">${escapeHtml(item.source || 'Research')}</span><span class="tag">Frontier</span></div>
+            </div>
+            <a class="signal-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderDarkTech(meta, items) {
+      const box = document.getElementById('dark-tech-grid');
+      if (!box) return;
+
+      const backend = filterBlockedItems(Array.isArray(meta.darkTech) ? meta.darkTech : []);
+      const fallback = filterBlockedItems(items || []).filter(item => /(deepfake|voice clone|synthetic identity|autonomous weapon|weaponized|eerie|unsettling|creepy|disturbing|horrifying|nightmare|sinister|darknet|banned|illegal|uncontrolled|rogue ai|ai gone wrong|nightmare fuel)/i.test(`${item.title || ''} ${item.summary || ''}`));
+      const pool = backend.length ? backend : fallback;
+
+      if (!pool.length) {
+        box.innerHTML = '<div class="empty-state">Dark tech monitor is quiet. No active threats detected.</div>';
+        return;
+      }
+
+      box.innerHTML = pool.slice(0, 6).map(item => `
+        <article class="signal-card">
+          <div>
+            <div class="signal-type">Dark Tech</div>
+            <div class="signal-title">${escapeHtml(cleanHeadline(item.title || ''))}</div>
+            <div class="signal-text">${escapeHtml(item.summary || summarize(cleanHeadline(item.title || '')))}</div>
+            <div class="signal-meta"><span class="tag">${escapeHtml(item.source || 'Live')}</span><span class="tag">Dark Tech</span></div>
+          </div>
+          <a class="signal-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
+        </article>
+      `).join('');
+    }
+
+    function renderIncidentLog(meta, items) {
+      const box = document.getElementById('incident-log-grid');
+      if (!box) return;
+
+      const backend = filterBlockedItems(Array.isArray(meta.incidentLog) ? meta.incidentLog : []);
+      const fallback = filterBlockedItems(items || []).filter(item => /(incident|failure|hallucination|outage|bug|accident|harm|safety failure|red team|misalignment|breakdown)/i.test(`${item.title || ''} ${item.summary || ''}`));
+      const pool = backend.length ? backend : fallback;
+
+      if (!pool.length) {
+        box.innerHTML = '<div class="empty-state">Incident log is syncing.</div>';
+        return;
+      }
+
+      box.innerHTML = pool.slice(0, 6).map(item => `
+        <article class="signal-card">
+          <div>
+            <div class="signal-type">AI Incident</div>
+            <div class="signal-title">${escapeHtml(cleanHeadline(item.title || ''))}</div>
+            <div class="signal-text">${escapeHtml(item.summary || summarize(cleanHeadline(item.title || '')))}</div>
+            <div class="signal-meta"><span class="tag">${escapeHtml(item.source || 'Live')}</span><span class="tag">Incident</span></div>
+          </div>
+          <a class="signal-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
+        </article>
+      `).join('');
+    }
+
+    function renderBriefings(items) {
+      const box = document.getElementById('briefing-stack');
+      const pool = filterBlockedItems(items || []).filter(item => isAISignal(`${item.title || ''} ${item.summary || ''}`));
+
+      if (!pool.length) {
+        box.innerHTML = '<div class="empty-state">Briefings are warming up. Check back in a moment.</div>';
+        return;
+      }
+
+      box.innerHTML = pool.slice(0, 2).map((item, index) => {
+        const title = cleanHeadline(item.title || '');
+        const brief = buildSignalBrief(item);
+        return `
+        <article class="story-card">
+          <div class="story-top"><span>${index === 0 ? 'Top Brief' : 'Brief'}</span><span>${escapeHtml(item.source || 'Live')}</span></div>
+          <div class="story-title briefing-title">${escapeHtml(title)}</div>
+          <div class="story-copy briefing-copy"><span class="signal-brief-label">Signal Brief:</span>${escapeHtml(brief)}</div>
+        </article>
+      `;
+      }).join('');
+    }
+
+    function renderWatchlist(items) {
+      const panel = document.getElementById('watchlist-panel');
+      if (!panel) return;
+      const themes = [
+        ['Belief + Attachment', items.filter(i => /conscious|sentient|companion|relationship|chatbot|attachment|anthropomorph/i.test(i.title)).length],
+        ['Homes + Autonomy', items.filter(i => /robot|autonomous|drone|machine targeting|automation|vehicle|household|home/i.test(i.title)).length],
+        ['Identity + Trust Drift', items.filter(i => /deepfake|synthetic|identity|surveillance|hallucination|failure|safety|trust/i.test(i.title)).length],
+        ['Total Headlines', items.length]
+      ];
+      panel.innerHTML = `
+        <div class="section-kicker">Watchlist</div>
+        <div class="card-title" style="margin:0;">Current Pressure Points</div>
+        ${themes.map(([name, count]) => `
+          <div class="matrix-row">
+            <div>
+              <div class="matrix-name">${escapeHtml(name)}</div>
+              <div class="matrix-note">Current live count from the active feed.</div>
+            </div>
+            <div class="score">${escapeHtml(String(count))}</div>
+          </div>
+        `).join('')}
+      `;
+    }
+
+    function renderMainstream(meta) {
+      const box = document.getElementById('mainstream-headlines');
+      const headlines = filterBlockedItems(Array.isArray(meta.mainstreamHeadlines) ? meta.mainstreamHeadlines : []);
+      const wire = filterBlockedItems(Array.isArray(meta.wireHeadlines) ? meta.wireHeadlines : []);
+      const pool = headlines.length ? headlines : wire.slice(0, 18);
+
+      if (!pool.length) {
+        box.innerHTML = '<div class="empty-state">Live wire is syncing.</div>';
+        return;
+      }
+
+      box.innerHTML = pool.slice(0, 18).map(item => `
+        <a class="wire-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
+          <div class="wire-title">${escapeHtml(cleanHeadline(item.title))}</div>
+          <div class="wire-meta">${escapeHtml(item.source || 'Wire')}</div>
+        </a>
+      `).join('');
+    }
+
+    function renderMarket(meta) {
+      const grid = document.getElementById('market-grid');
+      const copy = document.getElementById('market-copy');
+      const links = document.getElementById('market-links');
+      const market = meta.market || null;
+
+      if (!market || !Array.isArray(market.assets) || !market.assets.length) {
+        copy.textContent = 'AI company signal feed is reconnecting.';
+        grid.innerHTML = '<div class="empty-state">AI company snapshot unavailable.</div>';
+        links.innerHTML = '';
+        return;
+      }
+
+      copy.textContent = `AI company pulse: ${market.pulse || 'FLAT'} ${typeof market.pulseValue === 'number' ? `(${market.pulseValue > 0 ? '+' : ''}${market.pulseValue}%)` : ''}`;
+
+      grid.innerHTML = market.assets.map(asset => {
+        const trendClass = (asset.trend || 'FLAT').toLowerCase();
+        const changeText = typeof asset.changePct === 'number' ? `${asset.changePct > 0 ? '+' : ''}${asset.changePct}%` : '--';
+        return `
+          <a class="market-card" href="${escapeHtml(asset.link)}" target="_blank" rel="noopener noreferrer">
+            <div class="asset">${escapeHtml(asset.name)} (${escapeHtml(asset.ticker)})</div>
+            <div class="price">${typeof asset.price === 'number' ? `$${asset.price.toLocaleString()}` : '--'}</div>
+            <div class="delta ${trendClass}">${escapeHtml(changeText)}</div>
+            <div class="spark ${trendClass === 'down' ? 'down' : ''}"></div>
+          </a>
+        `;
+      }).join('');
+
+      const indexLinks = Array.isArray(market.indexLinks) ? market.indexLinks : [];
+      links.innerHTML = [
+        ...indexLinks,
+        { name: 'OpenAI News', link: 'https://openai.com/news/' },
+        { name: 'Anthropic News', link: 'https://www.anthropic.com/news' },
+        { name: 'DeepMind Blog', link: 'https://deepmind.google/blog/' }
+      ].map(entry => `<a href="${escapeHtml(entry.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(entry.name)}</a>`).join('');
+    }
+
+    function renderQuickMarketTape(meta) {
+      const grid = document.getElementById('stock-update-grid');
+      const status = document.getElementById('stock-update-status');
+      if (!grid) return;
+
+      const defaults = [
+        { key: 'NVIDIA', label: 'NVIDIA AI', link: 'https://blogs.nvidia.com/blog/category/ai/' },
+        { key: 'AMD', label: 'AMD AI', link: 'https://www.amd.com/en/newsroom' },
+        { key: 'INTEL', label: 'Intel AI', link: 'https://newsroom.intel.com/' },
+        { key: 'GOOGLE', label: 'Google AI', link: 'https://blog.google/technology/ai/' },
+        { key: 'ANTHROPIC', label: 'Anthropic', link: 'https://www.anthropic.com/news' },
+        { key: 'OPENAI', label: 'OpenAI', link: 'https://openai.com/news/' }
+      ];
+
+      const market = meta.market || null;
+      const assets = market && Array.isArray(market.assets) ? market.assets : [];
+
+      const findAsset = (key) => {
+        return assets.find((asset) => {
+          const ticker = String(asset.ticker || '').toUpperCase();
+          const name = String(asset.name || '').toLowerCase();
+          if (key === 'NVIDIA') return ticker.includes('NVDA') || name.includes('nvidia');
+          if (key === 'AMD') return ticker.includes('AMD') || name.includes('amd');
+          if (key === 'INTEL') return ticker.includes('INTC') || name.includes('intel');
+          if (key === 'GOOGLE') return ticker.includes('GOOGL') || ticker.includes('GOOG') || name.includes('google');
+          if (key === 'ANTHROPIC') return name.includes('anthropic');
+          if (key === 'OPENAI') return name.includes('openai');
+          return false;
+        }) || null;
+      };
+
+      status.textContent = assets.length ? 'Live' : 'Delayed';
+
+      grid.innerHTML = defaults.map((entry) => {
+        const asset = findAsset(entry.key);
+        const change = asset && typeof asset.changePct === 'number'
+          ? `${asset.changePct > 0 ? '+' : ''}${asset.changePct}%`
+          : '--';
+        const trendClass = asset && typeof asset.changePct === 'number'
+          ? (asset.changePct > 0 ? 'up' : asset.changePct < 0 ? 'down' : 'flat')
+          : 'flat';
+
+        return `
+          <a class="stock-card" target="_blank" rel="noopener noreferrer" href="${escapeHtml(asset?.link || entry.link)}">
+            <span class="stock-label">${escapeHtml(entry.label)}</span>
+            <span class="stock-price">${asset && typeof asset.price === 'number' ? `$${asset.price.toLocaleString()}` : '--'}</span>
+            <span class="stock-change ${trendClass}">${escapeHtml(change)}</span>
+          </a>
+        `;
+      }).join('');
+    }
+
+    function renderEditorials() {
+      const box = document.getElementById('editorial-list');
+      const links = [
+        { title: 'AI Incidents Database', source: 'AIAAIC', link: 'https://www.aiaaic.org/aiaaic-repository' },
+        { title: 'Bellingcat: Investigations', source: 'Bellingcat', link: 'https://www.bellingcat.com/' },
+        { title: 'Lawfare: AI + National Security', source: 'Lawfare', link: 'https://www.lawfaremedia.org/topics/artificial-intelligence' },
+        { title: 'CSET Emerging Technology', source: 'CSET', link: 'https://cset.georgetown.edu/' },
+        { title: 'MIT Tech Review: AI', source: 'MIT TR', link: 'https://www.technologyreview.com/topic/artificial-intelligence/' },
+        { title: 'Reuters: AI + Security', source: 'Reuters', link: 'https://www.reuters.com/technology/' },
+        { title: 'Defense One: AI', source: 'Defense One', link: 'https://www.defenseone.com/topic/artificial-intelligence/' },
+        { title: 'The Record: Cyber + AI', source: 'The Record', link: 'https://therecord.media/' }
+      ];
+
+      box.innerHTML = links.map(item => `
+        <a class="editorial-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
+          <div class="editorial-title">${escapeHtml(item.title)}</div>
+          <div class="editorial-meta">${escapeHtml(item.source)} · Recurring Coverage</div>
+        </a>
+      `).join('');
+    }
+
+    function renderPolicyDesk(meta) {
+      const box = document.getElementById('fed-list');
+      const linksBox = document.getElementById('fed-links');
+      if (!box && !linksBox) return;
+      const entries = filterBlockedItems(Array.isArray(meta.policyActivity) ? meta.policyActivity : []);
+
+      if (box) {
+        if (!entries.length) {
+          box.innerHTML = '<div class="empty-state">Policy monitor is syncing.</div>';
+        } else {
+          box.innerHTML = entries.slice(0, 10).map(item => `
+            <a class="fed-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
+              <div class="wire-title">${escapeHtml(cleanHeadline(item.title))}</div>
+              <div class="wire-meta">${escapeHtml(item.source || 'Policy Wire')} ${item.pubDate ? '· ' + escapeHtml(dateLabel(item.pubDate)) : ''}</div>
+            </a>
+          `).join('');
+        }
+      }
+
+      const fedLinks = [
+        { name: 'OECD AI Policy Observatory', link: 'https://oecd.ai/' },
+        { name: 'NIST AI Risk Management', link: 'https://www.nist.gov/itl/ai-risk-management-framework' },
+        { name: 'EU AI Act Tracker', link: 'https://artificialintelligenceact.eu/' },
+        { name: 'U.S. OSTP AI Resources', link: 'https://www.whitehouse.gov/ostp/ai/' },
+        { name: 'Partnership on AI', link: 'https://partnershiponai.org/' },
+        { name: 'AI Safety Institute', link: 'https://www.aisi.gov.uk/' }
+      ];
+
+      if (linksBox) {
+        linksBox.innerHTML = fedLinks.map(entry => `<a href="${escapeHtml(entry.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(entry.name)}</a>`).join('');
+      }
+    }
+
+    function renderHumanDrift(meta) {
+      const box = document.getElementById('trump-list');
+      if (!box) return;
+      const sourceItems = filterBlockedItems(Array.isArray(meta.items) ? meta.items : []);
+      const backendEntries = filterBlockedItems(Array.isArray(meta.humanDriftActivity) ? meta.humanDriftActivity : []);
+      const entries = backendEntries.length ? backendEntries : sourceItems.filter(item => {
+        const t = `${item.title || ''} ${item.summary || ''}`.toLowerCase();
+        return /(incident|failure|hallucination|deepfake|synthetic|identity|robot|autonomous|drone|surveillance|weapon|defense|attachment|companion|transhuman|enhancement|safety|misuse|breakdown)/.test(t);
+      });
+
+      if (!entries.length) {
+        box.innerHTML = '<div class="empty-state">No fresh human-drift headlines in the current cycle.</div>';
+        return;
+      }
+
+      box.innerHTML = entries.slice(0, 10).map(item => `
+        <a class="fed-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
+          <div class="wire-title">${escapeHtml(cleanHeadline(item.title))}</div>
+          <div class="wire-meta">${escapeHtml(item.source || 'Wire')} ${item.pubDate ? '· ' + escapeHtml(dateLabel(item.pubDate)) : ''}</div>
+        </a>
+      `).join('');
+    }
+
+    async function loadFeed() {
+      const status = document.getElementById('feed-status');
+
+      if (isGitHubPages) {
+        status.textContent = 'STATIC';
+        const previewMeta = {
+          mainstreamHeadlines: [],
+          wireHeadlines: [],
+          researchBreakthroughs: [],
+          darkTech: [],
+          incidentLog: [],
+          aiCulture: [],
+          policyActivity: [],
+          humanDriftActivity: [],
+          market: null,
+          indexLinks: [],
+          items: []
+        };
+
+        const ticker = document.getElementById('ticker-track');
+        if (ticker) {
+          ticker.innerHTML = '<span>GitHub preview mode active</span><span>Deploy on Netlify for live AI feeds</span><span>GitHub preview mode active</span><span>Deploy on Netlify for live AI feeds</span>';
+        }
+
+        renderFrontBlast([]);
+        renderTonightsMoment([]);
+        renderLatest([]);
+        renderCelebrityRadar([]);
+        renderResearchBreakthroughs(previewMeta, []);
+        renderDarkTech(previewMeta, []);
+        renderIncidentLog(previewMeta, []);
+        renderBriefings([]);
+        renderMainstream(previewMeta);
+        renderMarket(previewMeta);
+        renderQuickMarketTape(previewMeta);
+        renderEditorials();
+        renderPolicyDesk(previewMeta);
+        renderHumanDrift(previewMeta);
+        return;
+      }
+
+      status.textContent = 'CONNECTING';
+
+      try {
+        const response = await fetch(endpoint, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        const items = filterBlockedItems(Array.isArray(data.items) ? data.items : []);
+        const safeMeta = {
+          ...(data.meta || {}),
+          mainstreamHeadlines: filterBlockedItems(Array.isArray(data?.meta?.mainstreamHeadlines) ? data.meta.mainstreamHeadlines : []),
+          wireHeadlines: filterBlockedItems(Array.isArray(data?.meta?.wireHeadlines) ? data.meta.wireHeadlines : []),
+          researchBreakthroughs: filterBlockedItems(Array.isArray(data?.meta?.researchBreakthroughs) ? data.meta.researchBreakthroughs : []),
+          darkTech: filterBlockedItems(Array.isArray(data?.meta?.darkTech) ? data.meta.darkTech : []),
+          incidentLog: filterBlockedItems(Array.isArray(data?.meta?.incidentLog) ? data.meta.incidentLog : []),
+          aiCulture: filterBlockedItems(Array.isArray(data?.meta?.aiCulture) ? data.meta.aiCulture : []),
+          policyActivity: filterBlockedItems(Array.isArray(data?.meta?.policyActivity) ? data.meta.policyActivity : []),
+          humanDriftActivity: filterBlockedItems(Array.isArray(data?.meta?.humanDriftActivity) ? data.meta.humanDriftActivity : []),
+          items
+        };
+
+        cornellCount = 0;
+        const filteredItems = items.filter(limitCornellContent);
+
+        renderTicker(items);
+        renderFrontBlast(items);
+        renderTonightsMoment(filteredItems);
+        renderLatest(filteredItems);
+        renderResearchBreakthroughs(safeMeta, filteredItems);
+        renderDarkTech(safeMeta, filteredItems);
+        renderIncidentLog(safeMeta, filteredItems);
+        renderBriefings(filteredItems);
+        renderMainstream(safeMeta);
+        renderMarket(safeMeta);
+        renderQuickMarketTape(data.meta || {});
+        renderEditorials();
+        renderPolicyDesk(safeMeta);
+        renderHumanDrift(safeMeta);
+        status.textContent = items.length ? 'LIVE' : 'EMPTY';
+      } catch (error) {
+        console.error(error);
+        status.textContent = 'ERROR';
+        document.getElementById('latest-signals').innerHTML = `<div class="load-error">Live feed is temporarily unavailable. Please refresh in a moment.</div>`;
+        document.getElementById('major-signals').innerHTML = `<div class="load-error">Signals are reconnecting. New items should appear shortly.</div>`;
+        document.getElementById('briefing-stack').innerHTML = `<div class="load-error">Briefings will resume automatically when the feed reconnects.</div>`;
+        document.getElementById('tonight-moment-card').innerHTML = `<div class="load-error">Tonight's AI Moment is reconnecting to live sources.</div>`;
+      }
+    }
+
+    initializeAnalyticsPanel();
+    initializeClickTracking();
+    trackPageView();
+    loadFeed();
+    setInterval(loadFeed, 30 * 60 * 1000);
+  </script>
+</body>
+</html>
