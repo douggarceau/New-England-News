@@ -1496,7 +1496,7 @@ function vInk(){const L=STORIES.filter(s=>s.topic==='ink');return `<h2 class="ro
   <div class="intro"><b>Tattoos · piercing · body mod</b><p>Shops, artists, the law, the ink, the regrets and what's next. Skin Deep is back.</p></div>
   <div class="sgrid">${L.map(storyCard).join('')}</div>`}
 /* national features live on the cover, not in the Stories tab (Boston news only) */
-const FEATURES=new Set(['aoc-love-on-her-own-terms','clavicular-business-of-contempt','case-against-clavicular','who-said-martial-law','nancy-mace-gets-inked','downfall-of-andrew-tate','candace-anomalies','macklemore-vs-the-owners-box','we-turned-our-lights-off','the-swarm','satanic-cabal']);
+const FEATURES=new Set(["aoc-love-on-her-own-terms", "candace-anomalies", "case-against-clavicular", "clavicular-business-of-contempt", "downfall-of-andrew-tate", "homeless-by-choice", "macklemore-vs-the-owners-box", "nancy-mace-gets-inked", "satanic-cabal", "the-swarm", "we-turned-our-lights-off", "who-said-martial-law"]);
 function vStories(){
   const LS=STORIES.filter(s=>!FEATURES.has(s.slug));
   return `<h2 class="room">Stories</h2>
