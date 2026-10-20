@@ -1,126 +1,15 @@
 {
- "asof": "2026-10-19T22:37:00-04:00",
+ "asof": "2026-10-20T02:44:27-04:00",
  "sources_last_run": [
-  "AXS Boston venue pages",
-  "ConcertFix Boston/Cambridge/Somerville",
-  "Consequence Concerts venue pages",
-  "SeatGeek venue pages",
-  "Vivid Seats venue pages",
-  "TickPick",
-  "JamBase",
-  "Concertful",
-  "ATG Tickets (Emerson Colonial)",
-  "theater.guide",
-  "Eventworld Boston",
-  "Boston.com",
-  "Songkick Cambridge venue calendars",
-  "ma.to (O'Brien's Pub)",
-  "Club Cafe site",
-  "Scullers Jazz site",
-  "TicketWeb Regattabar",
-  "Berklee Performance Center calendar",
-  "Berklee Cafe 939",
-  "BSO/Symphony Hall",
-  "NEC Jordan Hall",
-  "City Winery Boston site"
+  "Songkick Boston/Cambridge metro calendar",
+  "Songkick venue calendars (Paradise, Sinclair, Brighton Music Hall, Royale, Roadrunner, House of Blues, Big Night Live, MGM Music Hall, TD Garden, Wilbur, Wang, Shubert, Orpheum, Chevalier, Agganis, Berklee PC, City Winery, Somerville Theatre, Crystal Ballroom, Middle East rooms, Sonia, Deep Cuts, Lilypad, Rockwell, Warehouse XI, Lizard Lounge, Club Passim, O'Brien's, Cantab, Midway, Faces Brewing, The Jungle, Burren, Plough and Stars, Emerson Colonial)",
+  "Eventworld Boston November",
+  "JazzNearYou Boston live calendar",
+  "NEC concerts calendar",
+  "BC football (SeatGeek)",
+  "Northeastern hockey schedule"
  ],
  "events": [
-  {
-   "date": "2026-10-19",
-   "time": "7:00 PM",
-   "venue": "Paradise Rock Club",
-   "hood": "Allston",
-   "artists": "Emei",
-   "genre": "pop",
-   "price": "",
-   "ages": "",
-   "url": "https://labs.songkick.com/concerts/43179462-emei-at-paradise-rock-club",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-10-19",
-   "time": "7:00 PM",
-   "venue": "Royale",
-   "hood": "Downtown",
-   "artists": "Bethel Music",
-   "genre": "other",
-   "price": "",
-   "ages": "",
-   "url": "https://labs.songkick.com/concerts/42947260-bethel-music-at-royale-boston",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-10-19",
-   "time": "7:30 PM",
-   "venue": "City Winery Boston",
-   "hood": "West End",
-   "artists": "Joe Pug, Willie Watson",
-   "genre": "folk",
-   "price": "$30",
-   "ages": "",
-   "url": "https://detour.songkick.com/concerts/43459169-joe-pug-at-city-winery-boston",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-10-19",
-   "time": "7:30 PM",
-   "venue": "City Winery Haymarket Lounge",
-   "hood": "West End",
-   "artists": "Feng E",
-   "genre": "jazz",
-   "price": "",
-   "ages": "",
-   "url": "https://concertfix.com/tours/feng-e+haymarket-lounge-at-city-winery-boston+boston-ma",
-   "src": "ConcertFix"
-  },
-  {
-   "date": "2026-10-19",
-   "time": "8:00 PM",
-   "venue": "Roadrunner",
-   "hood": "Brighton",
-   "artists": "Brand New",
-   "genre": "rock",
-   "price": "",
-   "ages": "",
-   "url": "https://labs.songkick.com/concerts/43292776-brand-new-at-roadrunner",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-10-19",
-   "time": "",
-   "artists": "You Don't Count",
-   "venue": "O'Brien's Pub",
-   "hood": "Allston",
-   "genre": "punk",
-   "price": "",
-   "ages": "21+",
-   "url": "https://ma.to/event/you-dont-count-at-obriens-pub-2026-10-19",
-   "src": "ma.to"
-  },
-  {
-   "date": "2026-10-19",
-   "time": "",
-   "venue": "Sonia",
-   "hood": "Cambridge",
-   "artists": "Ryan Peter Murphy",
-   "genre": "pop",
-   "price": "",
-   "ages": "",
-   "url": "https://labs.songkick.com/concerts/43383451-ryan-peter-murphy-at-sonia",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-10-19",
-   "time": "",
-   "venue": "The Sinclair",
-   "hood": "Cambridge",
-   "artists": "Carly Pearce, Belle Frantz",
-   "genre": "country",
-   "price": "",
-   "ages": "",
-   "url": "https://www.songkick.com/concerts/43290493-carly-pearce-at-sinclair",
-   "src": "Songkick"
-  },
   {
    "date": "2026-10-20",
    "time": "6:00 PM",
@@ -208,6 +97,18 @@
   {
    "date": "2026-10-20",
    "time": "8:00 PM",
+   "artists": "Tuesday Night New Music",
+   "venue": "NEC Williams Hall",
+   "hood": "Fenway",
+   "genre": "classical",
+   "price": "",
+   "ages": "",
+   "url": "https://necmusic.edu/events/tuesday-night-new-music-3-2/",
+   "src": "NEC"
+  },
+  {
+   "date": "2026-10-20",
+   "time": "8:00 PM",
    "venue": "The Sinclair",
    "hood": "Cambridge",
    "artists": "Greg Freeman, Hello Shark",
@@ -222,11 +123,23 @@
    "time": "",
    "venue": "Cantab Lounge",
    "hood": "Cambridge",
-   "artists": "Asher White",
+   "artists": "Asher White, Clifford",
    "genre": "experimental",
    "price": "",
    "ages": "",
    "url": "https://songkick.com/concerts/43310702-asher-white-at-cantab-lounge",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-20",
+   "time": "",
+   "artists": "Mark Winters",
+   "venue": "Cantab Lounge",
+   "hood": "Cambridge",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/42881921-mark-winters-at-cantab-lounge",
    "src": "Songkick"
   },
   {
@@ -276,6 +189,18 @@
    "ages": "",
    "url": "https://www.eventworld.com/session-americana-somerville-tickets-10-20-2026/event/567502",
    "src": "EventWorld"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "6:00 PM",
+   "artists": "Liederabend LXXXIII: Shades of Romanticism, Part 1",
+   "venue": "NEC Williams Hall",
+   "hood": "Fenway",
+   "genre": "classical",
+   "price": "",
+   "ages": "",
+   "url": "https://necmusic.edu/events/liederabend-lxxxiii/",
+   "src": "NEC"
   },
   {
    "date": "2026-10-21",
@@ -436,6 +361,18 @@
   {
    "date": "2026-10-21",
    "time": "",
+   "artists": "The Gobshites",
+   "venue": "Black Rose",
+   "hood": "Downtown",
+   "genre": "folk",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/42956858-gobshites-at-black-rose",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "",
    "venue": "Club Passim",
    "hood": "Cambridge",
    "artists": "Jacob Perez, Grace Givertz",
@@ -448,13 +385,25 @@
   {
    "date": "2026-10-21",
    "time": "",
-   "artists": "Battlemode, Void Ripper",
+   "artists": "Battlemode, Void Ripper, desmo.",
    "venue": "Middle East ZuZu",
    "hood": "Cambridge",
    "genre": "punk",
    "price": "",
    "ages": "",
    "url": "https://songkick.com/concerts/43454893-battlemode-at-middle-east-zuzu",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "",
+   "artists": "Noah Britton, Schooner",
+   "venue": "Outpost 186",
+   "hood": "Cambridge",
+   "genre": "experimental",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43465265-noah-britton-at-outpost-186",
    "src": "Songkick"
   },
   {
@@ -480,18 +429,6 @@
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43109590-hawthorne-heights-at-house-of-blues-boston",
    "src": "Songkick"
-  },
-  {
-   "date": "2026-10-22",
-   "time": "7:00 PM",
-   "artists": "Sophie Truax",
-   "venue": "Brighton Music Hall",
-   "hood": "Allston",
-   "genre": "pop",
-   "price": "",
-   "ages": "",
-   "url": "https://concerts.consequence.net/events/sophie-truax-at-brighton-music-hall-on-2026-10-22-19-00",
-   "src": "Consequence Concerts"
   },
   {
    "date": "2026-10-22",
@@ -540,6 +477,18 @@
    "ages": "All ages",
    "url": "https://www.berklee.edu/red-room-cafe-939/events/2026-hip-hop-showcase-2",
    "src": "berklee.edu/cafe939"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "7:30 PM",
+   "artists": "NEC Jazz Orchestra: Blues and the Abstract Truth",
+   "venue": "NEC Plimpton Shattuck Black Box",
+   "hood": "Fenway",
+   "genre": "jazz",
+   "price": "",
+   "ages": "",
+   "url": "https://necmusic.edu/events/nec-jazz-orchestra-blues-and-the-abstract-truth/",
+   "src": "NEC"
   },
   {
    "date": "2026-10-22",
@@ -604,6 +553,18 @@
   {
    "date": "2026-10-22",
    "time": "",
+   "artists": "The Gobshites",
+   "venue": "Black Rose",
+   "hood": "Downtown",
+   "genre": "folk",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/42956860-gobshites-at-black-rose",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "",
    "venue": "Lilypad",
    "hood": "Cambridge",
    "artists": "The Flooding, Bloodsports",
@@ -624,6 +585,18 @@
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43333516-organ-fairchild-at-lizard-lounge",
    "src": "Songkick"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "",
+   "artists": "Oscar Stagnaro & Peru Mestizo",
+   "venue": "Long Live Roxbury",
+   "hood": "Roxbury",
+   "genre": "latin",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/oscar-stagnaro-and-peru-mestizo-at-long-live-roxbury-on-october-22",
+   "src": "JazzNearYou"
   },
   {
    "date": "2026-10-22",
@@ -652,6 +625,30 @@
   {
    "date": "2026-10-22",
    "time": "",
+   "artists": "Degs",
+   "venue": "Phoenix Landing",
+   "hood": "Cambridge",
+   "genre": "electronic",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43445765-degs-at-phoenix-landing",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "",
+   "artists": "Max Wareham",
+   "venue": "Redbones",
+   "hood": "Somerville",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43397509-max-wareham-at-redbones",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "",
    "venue": "The Grand",
    "hood": "Seaport",
    "artists": "Cash Cobain",
@@ -671,6 +668,18 @@
    "price": "",
    "ages": "",
    "url": "https://songkick.com/concerts/43382780-american-motors-at-rockwell",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "",
+   "artists": "Eros Ramazzotti",
+   "venue": "Wang Theatre",
+   "hood": "Downtown",
+   "genre": "pop",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43459175-eros-ramazzotti-at-wang-theatre-boch-center",
    "src": "Songkick"
   },
   {
@@ -952,6 +961,18 @@
   {
    "date": "2026-10-23",
    "time": "",
+   "artists": "Joe Block Quintet (album release)",
+   "venue": "Regattabar",
+   "hood": "Cambridge",
+   "genre": "jazz",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/joe-block-quintet-there-is-always-hope-album-release-show-at-regattabar-on-october-23",
+   "src": "JazzNearYou"
+  },
+  {
+   "date": "2026-10-23",
+   "time": "",
    "venue": "Scullers Jazz Club",
    "hood": "Allston",
    "artists": "Brian Simpson",
@@ -1080,6 +1101,18 @@
    "ages": "18+",
    "url": "https://songkick.com/concerts/43066524-assembly-of-dust-at-brighton-music-hall",
    "src": "Songkick"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "8:00 PM",
+   "artists": "Aardvark Jazz Orchestra (54th season opener)",
+   "venue": "Church of the Covenant",
+   "hood": "Back Bay",
+   "genre": "jazz",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/aardvark-jazz-orchestra-54th-season-opener-at-church-of-the-covenant-on-october-24",
+   "src": "JazzNearYou"
   },
   {
    "date": "2026-10-24",
@@ -1312,7 +1345,7 @@
   {
    "date": "2026-10-25",
    "time": "6:30 PM",
-   "artists": "Elizabeth Nichols",
+   "artists": "Elizabeth Nichols, Dawson Anderson",
    "venue": "Sonia",
    "hood": "Cambridge",
    "genre": "pop",
@@ -1332,18 +1365,6 @@
    "ages": "",
    "url": "https://songkick.com/concerts/43243806-maris-at-brighton-music-hall",
    "src": "Songkick"
-  },
-  {
-   "date": "2026-10-25",
-   "time": "7:00 PM",
-   "artists": "Frankie Valli & The Four Seasons",
-   "venue": "Chevalier Theatre",
-   "hood": "Medford",
-   "genre": "pop",
-   "price": "",
-   "ages": "",
-   "url": "https://concerts.consequence.net/events/frankie-valli-the-four-seasons-at-chevalier-theatre-on-2025-11-22-19-00",
-   "src": "Consequence Concerts"
   },
   {
    "date": "2026-10-25",
@@ -1463,6 +1484,18 @@
    "price": "",
    "ages": "",
    "url": "https://detour.songkick.com/concerts/43373903-fervence-at-cantab-underground",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-25",
+   "time": "",
+   "artists": "Luke Kidgell",
+   "venue": "Crystal Ballroom",
+   "hood": "Somerville",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43270670-luke-kidgell-at-crystal-ballroom-somerville-theatre",
    "src": "Songkick"
   },
   {
@@ -1614,7 +1647,7 @@
    "time": "8:00 PM",
    "venue": "Wilbur Theatre",
    "hood": "Downtown",
-   "artists": "L7",
+   "artists": "L7, VIAL",
    "genre": "punk",
    "price": "",
    "ages": "",
@@ -1626,7 +1659,7 @@
    "time": "",
    "venue": "Brighton Music Hall",
    "hood": "Allston",
-   "artists": "LØLØ, mylie taylor",
+   "artists": "LØLØ, DJ Carbo, mylie taylor",
    "genre": "punk",
    "price": "",
    "ages": "",
@@ -1655,6 +1688,18 @@
    "price": "",
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43412168-johnny-blue-skies-at-td-garden",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-26",
+   "time": "",
+   "artists": "Spookey Ruben",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "genre": "indie",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43381054-spookey-ruben-at-rockwell",
    "src": "Songkick"
   },
   {
@@ -1910,6 +1955,18 @@
    "src": "Songkick"
   },
   {
+   "date": "2026-10-28",
+   "time": "",
+   "artists": "Arcangel",
+   "venue": "MGM Music Hall at Fenway",
+   "hood": "Fenway",
+   "genre": "latin",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43222876-arcangel-at-mgm-music-hall-at-fenway",
+   "src": "Songkick"
+  },
+  {
    "date": "2026-10-29",
    "time": "6:30 PM",
    "artists": "Isabel LaRosa",
@@ -2051,6 +2108,18 @@
    "price": "",
    "ages": "",
    "url": "https://songkick.com/concerts/43441326-construct-at-middle-east-zuzu",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "",
+   "artists": "Samantha Farrell",
+   "venue": "Plough and Stars",
+   "hood": "Cambridge",
+   "genre": "folk",
+   "price": "",
+   "ages": "",
+   "url": "https://app.songkick.com/concerts/43274101-samantha-farrell-at-plough-and-stars",
    "src": "Songkick"
   },
   {
@@ -2294,6 +2363,18 @@
    "src": "Songkick"
   },
   {
+   "date": "2026-10-30",
+   "time": "",
+   "artists": "The New Limits, Battlemode, Bad Idea USA, Skeleton Crew",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "genre": "punk",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43432407-new-limits-at-rockwell",
+   "src": "Songkick"
+  },
+  {
    "date": "2026-10-31",
    "time": "1:30 PM",
    "artists": "Boston Pops: Disney Pixar's Coco Live in Concert",
@@ -2488,6 +2569,18 @@
   {
    "date": "2026-10-31",
    "time": "",
+   "artists": "Costume Party",
+   "venue": "Middle East Corner",
+   "hood": "Cambridge",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43428868-costume-party-at-middle-east-corner-and-bakery",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-31",
+   "time": "",
    "artists": "NU-NRG",
    "venue": "Middle East ZuZu",
    "hood": "Cambridge",
@@ -2520,18 +2613,6 @@
    "ages": "",
    "url": "https://www.berklee.edu/BPC/events/lachanze",
    "src": "berklee.edu"
-  },
-  {
-   "date": "2026-11-01",
-   "time": "6:00 PM",
-   "artists": "Ana Castela",
-   "venue": "Big Night Live",
-   "hood": "West End",
-   "genre": "world",
-   "price": "",
-   "ages": "",
-   "url": "https://seatgeek.com/ana-castela-tickets/boston-massachusetts-big-night-live-2026-11-01-6-pm/concert/18641168",
-   "src": "SeatGeek"
   },
   {
    "date": "2026-11-01",
@@ -2586,7 +2667,7 @@
    "time": "7:00 PM",
    "venue": "Paradise Rock Club",
    "hood": "Allston",
-   "artists": "Eivør, The Messenger Birds",
+   "artists": "Eivør, The Messenger Birds, midori jaeger",
    "genre": "world",
    "price": "",
    "ages": "",
@@ -2676,6 +2757,18 @@
    "ages": "",
    "url": "https://www.axs.com/events/1541569",
    "src": "AXS"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "",
+   "artists": "Lily DeTaeye",
+   "venue": "City Winery Boston",
+   "hood": "West End",
+   "genre": "folk",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43468477-lily-detaeye-at-city-winery-boston",
+   "src": "Songkick"
   },
   {
    "date": "2026-11-01",
@@ -2836,6 +2929,18 @@
   {
    "date": "2026-11-02",
    "time": "",
+   "artists": "This Is Lorelei",
+   "venue": "The Sinclair",
+   "hood": "Cambridge",
+   "genre": "indie",
+   "price": "",
+   "ages": "",
+   "url": "https://www.eventworld.com/this-is-lorelei-cambridge-tickets-11-02-2026/event/505375",
+   "src": "Eventworld"
+  },
+  {
+   "date": "2026-11-02",
+   "time": "",
    "venue": "Warehouse XI",
    "hood": "Somerville",
    "artists": "Josie Edwards",
@@ -2968,18 +3073,6 @@
   {
    "date": "2026-11-03",
    "time": "8:00 PM",
-   "artists": "gavn!",
-   "venue": "Brighton Music Hall",
-   "hood": "Allston",
-   "genre": "pop",
-   "price": "",
-   "ages": "",
-   "url": "https://concerts.consequence.net/events/gavn-at-brighton-music-hall-on-2026-11-03-20-00",
-   "src": "Consequence Concerts"
-  },
-  {
-   "date": "2026-11-03",
-   "time": "8:00 PM",
    "venue": "Crystal Ballroom",
    "hood": "Somerville",
    "artists": "Willi Carlisle, Mama's Broke",
@@ -3096,18 +3189,6 @@
    "ages": "",
    "url": "https://detour.songkick.com/concerts/43368502-jon-muq-at-wilbur-theatre",
    "src": "Songkick"
-  },
-  {
-   "date": "2026-11-04",
-   "time": "6:30 PM",
-   "artists": "SiM",
-   "venue": "Paradise Rock Club",
-   "hood": "Allston",
-   "genre": "punk",
-   "price": "",
-   "ages": "",
-   "url": "https://www.tickpick.com/buy-sim-tickets-paradise-rock-club-presented-by-citizens-11-4-26-6pm/7980472/",
-   "src": "TickPick"
   },
   {
    "date": "2026-11-04",
@@ -3328,30 +3409,6 @@
   {
    "date": "2026-11-05",
    "time": "7:00 PM",
-   "artists": "Gavin Adcock",
-   "venue": "MGM Music Hall at Fenway",
-   "hood": "Fenway",
-   "genre": "country",
-   "price": "",
-   "ages": "",
-   "url": "https://concerts.consequence.net/events/gavin-adcock-at-mgm-music-hall-at-fenway-on-2026-11-05-19-00",
-   "src": "Consequence Concerts"
-  },
-  {
-   "date": "2026-11-05",
-   "time": "7:00 PM",
-   "artists": "Teen Jesus And The Jean Teasers",
-   "venue": "Middle East Upstairs",
-   "hood": "Cambridge",
-   "genre": "punk",
-   "price": "",
-   "ages": "",
-   "url": "https://concertfix.com/tours/teen-jesus-and-the-jean-teasers+middle-east-upstairs+cambridge-ma",
-   "src": "ConcertFix"
-  },
-  {
-   "date": "2026-11-05",
-   "time": "7:00 PM",
    "artists": "Joe Alterman Trio",
    "venue": "Regattabar",
    "hood": "Cambridge",
@@ -3508,6 +3565,18 @@
   {
    "date": "2026-11-05",
    "time": "",
+   "artists": "Willie J Healey",
+   "venue": "House of Blues Boston",
+   "hood": "Fenway",
+   "genre": "indie",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43328311-willie-j-healey-at-house-of-blues-boston",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "",
    "venue": "Lizard Lounge",
    "hood": "Cambridge",
    "artists": "Jessye DeSilva",
@@ -3516,6 +3585,18 @@
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43448778-jessye-desilva-at-lizard-lounge",
    "src": "Songkick"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "",
+   "artists": "Felipe Salles Quartet",
+   "venue": "Long Live Roxbury",
+   "hood": "Roxbury",
+   "genre": "jazz",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/felipe-salles-quartet-at-long-live-roxbury-on-november-5",
+   "src": "JazzNearYou"
   },
   {
    "date": "2026-11-05",
@@ -3539,6 +3620,18 @@
    "price": "",
    "ages": "",
    "url": "https://songkick.com/concerts/43452331-arto-vaun-at-obriens",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "",
+   "artists": "Jackie Evans",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43309533-jackie-evans-at-rockwell",
    "src": "Songkick"
   },
   {
@@ -3772,6 +3865,18 @@
   {
    "date": "2026-11-06",
    "time": "",
+   "artists": "Warren Miller's Days Off",
+   "venue": "Berklee Performance Center",
+   "hood": "Back Bay",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/warren-millers-days-off-at-berklee-performance-center-on-november-6",
+   "src": "JazzNearYou"
+  },
+  {
+   "date": "2026-11-06",
+   "time": "",
    "artists": "Sweeping Promises",
    "venue": "Deep Cuts",
    "hood": "Medford",
@@ -3808,6 +3913,18 @@
   {
    "date": "2026-11-06",
    "time": "",
+   "artists": "h2",
+   "venue": "Middle East ZuZu",
+   "hood": "Cambridge",
+   "genre": "jazz",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/h2-at-zuzu-on-november-6",
+   "src": "JazzNearYou"
+  },
+  {
+   "date": "2026-11-06",
+   "time": "",
    "artists": "Elan Trotman - 25 Years in Music",
    "venue": "Scullers Jazz Club",
    "hood": "Allston",
@@ -3816,6 +3933,18 @@
    "ages": "",
    "url": "https://scullersjazz.com/",
    "src": "scullersjazz.com"
+  },
+  {
+   "date": "2026-11-06",
+   "time": "",
+   "artists": "Jean Paul Jean Paul",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43324218-jean-paul-jean-paul-at-rockwell",
+   "src": "Songkick"
   },
   {
    "date": "2026-11-06",
@@ -4024,6 +4153,18 @@
   {
    "date": "2026-11-07",
    "time": "",
+   "artists": "A Star Called Sun: Kino Symphony Tribute",
+   "venue": "Berklee Performance Center",
+   "hood": "Back Bay",
+   "genre": "rock",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/a-star-called-sun-zvezda-po-imeni-solnce-kino-symphony-tribute-at-berklee-performance-center-on-november-7",
+   "src": "JazzNearYou"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "",
    "venue": "Cantab Lounge",
    "hood": "Cambridge",
    "artists": "Boyhood",
@@ -4152,18 +4293,6 @@
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43270999-wheeler-walker-jr-at-house-of-blues-boston",
    "src": "Songkick"
-  },
-  {
-   "date": "2026-11-08",
-   "time": "7:00 PM",
-   "artists": "Hank Heaven",
-   "venue": "Middle East Upstairs",
-   "hood": "Cambridge",
-   "genre": "indie",
-   "price": "",
-   "ages": "",
-   "url": "https://concertfix.com/tours/hank-heaven+middle-east-upstairs+cambridge-ma",
-   "src": "ConcertFix"
   },
   {
    "date": "2026-11-08",
@@ -4511,6 +4640,18 @@
    "price": "",
    "ages": "",
    "url": "https://songkick.com/concerts/43198847-michigander-at-brighton-music-hall",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "",
+   "artists": "Blankette",
+   "venue": "Cantab Underground",
+   "hood": "Cambridge",
+   "genre": "indie",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43385940-blankette-at-cantab-underground",
    "src": "Songkick"
   },
   {
@@ -4899,18 +5040,6 @@
   },
   {
    "date": "2026-11-12",
-   "time": "8:30 PM",
-   "artists": "Dan Whitlam",
-   "venue": "The Sinclair",
-   "hood": "Cambridge",
-   "genre": "indie",
-   "price": "",
-   "ages": "",
-   "url": "https://concertfix.com/tickets/7893757?v=the-sinclair-music-hall&c=cambridge-ma",
-   "src": "ConcertFix"
-  },
-  {
-   "date": "2026-11-12",
    "time": "",
    "artists": "Shanghai Qiutian, Dabda",
    "venue": "Deep Cuts",
@@ -4943,6 +5072,18 @@
    "price": "",
    "ages": "",
    "url": "https://app.songkick.com/concerts/43389890-rohan-at-middle-east-upstairs",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "",
+   "artists": "Jake Klar, Blue Ranger, Noble Dust, Hayley Sabella",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "genre": "folk",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43426385-jake-klar-at-rockwell",
    "src": "Songkick"
   },
   {
@@ -5428,6 +5569,18 @@
   {
    "date": "2026-11-14",
    "time": "",
+   "artists": "After Nations, Lesotho, North Star The Wanderer, Blue Manic",
+   "venue": "Cantab Underground",
+   "hood": "Cambridge",
+   "genre": "rock",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43396090-after-nations-at-cantab-underground",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "",
    "venue": "Crystal Ballroom",
    "hood": "Somerville",
    "artists": "Cal in Red",
@@ -5616,18 +5769,6 @@
    "ages": "18+",
    "url": "https://labs.songkick.com/concerts/43275969-mountain-grass-unit-at-royale-boston",
    "src": "Songkick"
-  },
-  {
-   "date": "2026-11-15",
-   "time": "8:00 PM",
-   "artists": "Zayn",
-   "venue": "TD Garden",
-   "hood": "West End",
-   "genre": "pop",
-   "price": "",
-   "ages": "",
-   "url": "https://concertfix.com/concerts/boston-ma+td-garden",
-   "src": "ConcertFix"
   },
   {
    "date": "2026-11-15",
@@ -5956,6 +6097,18 @@
   {
    "date": "2026-11-18",
    "time": "",
+   "artists": "Worst Party Ever, Equipment",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "genre": "punk",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43371952-worst-party-ever-at-rockwell",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "",
    "venue": "The Sinclair",
    "hood": "Cambridge",
    "artists": "sadurn, Kitchen, hemlock",
@@ -6052,7 +6205,7 @@
   {
    "date": "2026-11-19",
    "time": "7:30 PM",
-   "artists": "John Scofield",
+   "artists": "John Scofield, Adam Deitch, Larry Goldings, Oteil Burbridge",
    "venue": "Somerville Theatre",
    "hood": "Somerville",
    "genre": "jazz",
@@ -6096,18 +6249,6 @@
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43218100-angine-de-poitrine-at-roadrunner",
    "src": "Songkick"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "8:00 PM",
-   "artists": "Il Volo",
-   "venue": "TD Garden",
-   "hood": "West End",
-   "genre": "classical",
-   "price": "",
-   "ages": "",
-   "url": "https://concertfix.com/concerts/boston-ma+td-garden",
-   "src": "ConcertFix"
   },
   {
    "date": "2026-11-19",
@@ -6878,6 +7019,18 @@
    "src": "Songkick"
   },
   {
+   "date": "2026-11-25",
+   "time": "",
+   "artists": "Ghostwoman",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "genre": "rock",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43218240-ghostwoman-at-rockwell",
+   "src": "Songkick"
+  },
+  {
    "date": "2026-11-26",
    "time": "9:00 PM",
    "artists": "Kai",
@@ -7252,18 +7405,6 @@
   {
    "date": "2026-12-01",
    "time": "7:00 PM",
-   "artists": "6LACK",
-   "venue": "House of Blues Boston",
-   "hood": "Fenway",
-   "genre": "r&b",
-   "price": "",
-   "ages": "",
-   "url": "https://concertfix.com/concerts/boston-ma+citizens-house-of-blues-boston",
-   "src": "ConcertFix"
-  },
-  {
-   "date": "2026-12-01",
-   "time": "7:00 PM",
    "venue": "MGM Music Hall at Fenway",
    "hood": "Fenway",
    "artists": "Sabaton, Pop Evil, Wings of Steel",
@@ -7492,6 +7633,18 @@
   {
    "date": "2026-12-03",
    "time": "",
+   "artists": "Forever Whitney Houston (Berklee Singers Showcase)",
+   "venue": "Berklee Performance Center",
+   "hood": "Back Bay",
+   "genre": "r&b",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/signature-series-presents-singers-showcase-forever-whitney-houston-at-berklee-performance-center-on-december-3",
+   "src": "JazzNearYou"
+  },
+  {
+   "date": "2026-12-03",
+   "time": "",
    "venue": "Deep Cuts",
    "hood": "Medford",
    "artists": "Lily Seabird, eliza niemi",
@@ -7620,6 +7773,18 @@
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43231865-franky-rizardo-at-royale-boston",
    "src": "Songkick"
+  },
+  {
+   "date": "2026-12-04",
+   "time": "",
+   "artists": "Forever Whitney Houston (Berklee Singers Showcase)",
+   "venue": "Berklee Performance Center",
+   "hood": "Back Bay",
+   "genre": "r&b",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/signature-series-presents-singers-showcase-forever-whitney-houston-at-berklee-performance-center-on-december-4",
+   "src": "JazzNearYou"
   },
   {
    "date": "2026-12-04",
@@ -7779,6 +7944,18 @@
   },
   {
    "date": "2026-12-06",
+   "time": "6:30 PM",
+   "artists": "Melissa Kassel & Tom Zicarelli Group",
+   "venue": "Lilypad",
+   "hood": "Cambridge",
+   "genre": "jazz",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/melissa-kassel-and-tom-zicarelli-group-at-lilypad-on-december-6",
+   "src": "JazzNearYou"
+  },
+  {
+   "date": "2026-12-06",
    "time": "7:00 PM",
    "artists": "Engelbert Humperdinck",
    "venue": "Chevalier Theatre",
@@ -7895,6 +8072,18 @@
    "price": "",
    "ages": "",
    "url": "https://songkick.com/concerts/43449514-michael-boezi-at-midway-cafe",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-12-06",
+   "time": "",
+   "artists": "Lucy FGS",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43375878-lucy-at-rockwell",
    "src": "Songkick"
   },
   {
@@ -8070,7 +8259,7 @@
    "time": "7:00 PM",
    "venue": "Brighton Music Hall",
    "hood": "Allston",
-   "artists": "King Buffalo, Handsome Jack",
+   "artists": "King Buffalo, DJ Carbo, Handsome Jack",
    "genre": "rock",
    "price": "",
    "ages": "",
@@ -8147,6 +8336,18 @@
    "price": "",
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43217275-shakey-graves-at-roadrunner",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-12-10",
+   "time": "",
+   "artists": "Jobi Riccio",
+   "venue": "Roadrunner",
+   "hood": "Brighton",
+   "genre": "country",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43464718-jobi-riccio-at-roadrunner",
    "src": "Songkick"
   },
   {
@@ -8244,6 +8445,18 @@
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43322305-daily-bread-at-roadrunner",
    "src": "Songkick"
+  },
+  {
+   "date": "2026-12-11",
+   "time": "",
+   "artists": "Duane Eubanks Quintet: Celebrating Lee Morgan",
+   "venue": "Scullers Jazz Club",
+   "hood": "Allston",
+   "genre": "jazz",
+   "price": "",
+   "ages": "",
+   "url": "https://www.jazznearyou.com/boston/events/duane-eubanks-quintet-celebrating-the-music-and-legacy-of-lee-morgan-at-scullers-jazz-club-on-december-11",
+   "src": "JazzNearYou"
   },
   {
    "date": "2026-12-12",
@@ -8762,6 +8975,18 @@
    "src": "Songkick"
   },
   {
+   "date": "2026-12-22",
+   "time": "",
+   "artists": "Mood",
+   "venue": "Middle East Corner",
+   "hood": "Cambridge",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/42968214-mood-at-middle-east-corner-and-bakery",
+   "src": "Songkick"
+  },
+  {
    "date": "2026-12-23",
    "time": "",
    "venue": "Club Passim",
@@ -8822,6 +9047,30 @@
    "src": "Songkick"
   },
   {
+   "date": "2026-12-29",
+   "time": "",
+   "artists": "Mood",
+   "venue": "Middle East Corner",
+   "hood": "Cambridge",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/42968183-mood-at-middle-east-corner-and-bakery",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-12-29",
+   "time": "",
+   "artists": "The Sloppy Boys",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "genre": "rock",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43359195-sloppy-boys-at-rockwell",
+   "src": "Songkick"
+  },
+  {
    "date": "2026-12-30",
    "time": "",
    "venue": "Brighton Music Hall",
@@ -8831,6 +9080,18 @@
    "price": "",
    "ages": "",
    "url": "https://songkick.com/concerts/43342724-pigeons-playing-ping-pong-at-brighton-music-hall",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-12-30",
+   "time": "",
+   "artists": "Big Blitz",
+   "venue": "Brighton Music Hall",
+   "hood": "Allston",
+   "genre": "rock",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43343581-big-blitz-at-brighton-music-hall",
    "src": "Songkick"
   },
   {
@@ -8891,6 +9152,18 @@
    "price": "",
    "ages": "",
    "url": "https://detour.songkick.com/concerts/43358563-govt-mule-at-mgm-music-hall-at-fenway",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-12-31",
+   "time": "",
+   "artists": "Samantha Farrell",
+   "venue": "Plough and Stars",
+   "hood": "Cambridge",
+   "genre": "folk",
+   "price": "",
+   "ages": "",
+   "url": "https://app.songkick.com/concerts/43274107-samantha-farrell-at-plough-and-stars",
    "src": "Songkick"
   },
   {
