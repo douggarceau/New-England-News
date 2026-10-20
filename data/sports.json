@@ -1,5 +1,5 @@
 {
- "asof": "2026-10-19T22:30:00-04:00",
+ "asof": "2026-10-19T22:37:48-04:00",
  "events": [
   {
    "date": "2026-10-22",
@@ -86,6 +86,18 @@
    "src": "CBS Sports schedule"
   },
   {
+   "date": "2026-10-28",
+   "time": "7:30 PM",
+   "artists": "New England Revolution vs. Red Bull New York",
+   "venue": "Gillette Stadium",
+   "hood": "Foxborough",
+   "genre": "sports",
+   "price": "",
+   "ages": "",
+   "url": "https://www.revolutionsoccer.net/news/revolution-announce-2026-mls-regular-season-schedule",
+   "src": "RevolutionSoccer.net"
+  },
+  {
    "date": "2026-10-29",
    "time": "7:00 PM",
    "artists": "Harvard men's hockey vs. UMass",
@@ -144,6 +156,18 @@
    "ages": "",
    "url": "https://goterriers.com/sports/mens-ice-hockey/schedule",
    "src": "goterriers.com"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "7:00 PM",
+   "artists": "New England Revolution vs. Inter Miami CF",
+   "venue": "Gillette Stadium",
+   "hood": "Foxborough",
+   "genre": "sports",
+   "price": "",
+   "ages": "",
+   "url": "https://www.revolutionsoccer.net/news/revolution-announce-2026-mls-regular-season-schedule",
+   "src": "RevolutionSoccer.net"
   },
   {
    "date": "2026-11-02",
