@@ -1,7 +1,7 @@
 {
  "name": "The Boston Rambler",
  "short_name": "Boston Rambler",
- "description": "Seattle news, music, nightlife and the stories nobody else will run.",
+ "description": "Boston news, music, nightlife and the stories nobody else will run.",
  "id": "/",
  "start_url": "/?source=app",
  "scope": "/",
