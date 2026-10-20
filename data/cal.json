@@ -1,13 +1,12 @@
 {
- "asof": "2026-10-20T02:44:27-04:00",
+ "asof": "2026-10-20T06:20:25-04:00",
  "sources_last_run": [
-  "Songkick Boston/Cambridge metro calendar",
-  "Songkick venue calendars (Paradise, Sinclair, Brighton Music Hall, Royale, Roadrunner, House of Blues, Big Night Live, MGM Music Hall, TD Garden, Wilbur, Wang, Shubert, Orpheum, Chevalier, Agganis, Berklee PC, City Winery, Somerville Theatre, Crystal Ballroom, Middle East rooms, Sonia, Deep Cuts, Lilypad, Rockwell, Warehouse XI, Lizard Lounge, Club Passim, O'Brien's, Cantab, Midway, Faces Brewing, The Jungle, Burren, Plough and Stars, Emerson Colonial)",
-  "Eventworld Boston November",
-  "JazzNearYou Boston live calendar",
-  "NEC concerts calendar",
-  "BC football (SeatGeek)",
-  "Northeastern hockey schedule"
+  "ConcertFix Boston (all, pop-rock, alternative, country-folk, world, November page)",
+  "ConcertFix Cambridge (all, country-folk, world, latin, hard-rock-metal)",
+  "ConcertFix Somerville (December page)",
+  "ConcertFix Allston (all, techno-electronic)",
+  "Songkick venue pages (Great Scott, Toad, Thunder Road, Atwood's Tavern — no upcoming listings)",
+  "Bandsintown Somerville (no listings rendered)"
  ],
  "events": [
   {
@@ -525,6 +524,18 @@
    "ages": "",
    "url": "https://www.berklee.edu/BPC/events/guitar-night-jazz-and-blues-student-showcase-4",
    "src": "berklee.edu"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "8:00 PM",
+   "artists": "Sophie Truax",
+   "venue": "Brighton Music Hall",
+   "hood": "Allston",
+   "genre": "indie",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tickets/8112452?v=brighton-music-hall-ma&c=allston-ma",
+   "src": "ConcertFix"
   },
   {
    "date": "2026-10-22",
@@ -1165,6 +1176,18 @@
   {
    "date": "2026-10-24",
    "time": "8:00 PM",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "artists": "Rachel Bochner",
+   "genre": "pop",
+   "price": "",
+   "ages": "",
+   "url": "https://detour.songkick.com/concerts/43292508-rachel-bochner-at-rockwell",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-10-24",
+   "time": "8:00 PM",
    "venue": "The Sinclair",
    "hood": "Cambridge",
    "artists": "Lexi Jayde",
@@ -1292,18 +1315,6 @@
    "price": "",
    "ages": "",
    "url": "https://detour.songkick.com/concerts/43450581-dj-burns-at-sorrel-and-lime",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-10-24",
-   "time": "",
-   "venue": "The Rockwell",
-   "hood": "Somerville",
-   "artists": "Rachel Bochner",
-   "genre": "pop",
-   "price": "",
-   "ages": "",
-   "url": "https://detour.songkick.com/concerts/43292508-rachel-bochner-at-rockwell",
    "src": "Songkick"
   },
   {
@@ -1833,6 +1844,18 @@
    "ages": "",
    "url": "https://detour.songkick.com/concerts/43459187-oz-noy-at-city-winery-boston",
    "src": "Songkick"
+  },
+  {
+   "date": "2026-10-28",
+   "time": "7:30 PM",
+   "artists": "Toxtricity",
+   "venue": "City Winery Haymarket Lounge",
+   "hood": "West End",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tours/toxtricity+haymarket-lounge-at-city-winery-boston+boston-ma",
+   "src": "ConcertFix"
   },
   {
    "date": "2026-10-28",
@@ -2424,6 +2447,18 @@
   },
   {
    "date": "2026-10-31",
+   "time": "7:30 PM",
+   "artists": "Splendid Torch",
+   "venue": "City Winery Haymarket Lounge",
+   "hood": "West End",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tickets/8230368?v=haymarket-lounge-at-city-winery-boston&c=boston-ma",
+   "src": "ConcertFix"
+  },
+  {
+   "date": "2026-10-31",
    "time": "8:00 PM",
    "venue": "Brighton Music Hall",
    "hood": "Allston",
@@ -2845,6 +2880,18 @@
   {
    "date": "2026-11-02",
    "time": "7:30 PM",
+   "artists": "Block",
+   "venue": "City Winery Haymarket Lounge",
+   "hood": "West End",
+   "genre": "rock",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tours/block+haymarket-lounge-at-city-winery-boston+boston-ma",
+   "src": "ConcertFix"
+  },
+  {
+   "date": "2026-11-02",
+   "time": "7:30 PM",
    "artists": "The Music of Hey Arnold",
    "venue": "Wilbur Theatre",
    "hood": "Downtown",
@@ -3069,6 +3116,18 @@
    "ages": "",
    "url": "https://www.berklee.edu/BPC/events/berklee-asia-rising-celebrating-asian-and-asian-american-voices-in-contemporary-music",
    "src": "berklee.edu"
+  },
+  {
+   "date": "2026-11-03",
+   "time": "8:00 PM",
+   "artists": "Gavn!",
+   "venue": "Brighton Music Hall",
+   "hood": "Allston",
+   "genre": "pop",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tours/gavn+brighton-music-hall-ma+allston-ma",
+   "src": "ConcertFix"
   },
   {
    "date": "2026-11-03",
@@ -3409,6 +3468,18 @@
   {
    "date": "2026-11-05",
    "time": "7:00 PM",
+   "artists": "Teen Jesus And The Jean Teasers",
+   "venue": "Middle East Upstairs",
+   "hood": "Cambridge",
+   "genre": "punk",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tours/teen-jesus-and-the-jean-teasers+middle-east-upstairs+cambridge-ma",
+   "src": "ConcertFix"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "7:00 PM",
    "artists": "Joe Alterman Trio",
    "venue": "Regattabar",
    "hood": "Cambridge",
@@ -3417,6 +3488,18 @@
    "ages": "",
    "url": "https://www.ticketweb.com/event/joe-alterman-trio-regattabar-tickets/14233954",
    "src": "Regattabar/TicketWeb"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "7:00 PM",
+   "artists": "Jackie Evans",
+   "venue": "The Rockwell",
+   "hood": "Somerville",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://songkick.com/concerts/43309533-jackie-evans-at-rockwell",
+   "src": "Songkick"
   },
   {
    "date": "2026-11-05",
@@ -3623,18 +3706,6 @@
    "src": "Songkick"
   },
   {
-   "date": "2026-11-05",
-   "time": "",
-   "artists": "Jackie Evans",
-   "venue": "The Rockwell",
-   "hood": "Somerville",
-   "genre": "other",
-   "price": "",
-   "ages": "",
-   "url": "https://songkick.com/concerts/43309533-jackie-evans-at-rockwell",
-   "src": "Songkick"
-  },
-  {
    "date": "2026-11-06",
    "time": "1:30 PM",
    "artists": "Boston Symphony Orchestra: Haydn's The Creation",
@@ -3769,6 +3840,18 @@
   {
    "date": "2026-11-06",
    "time": "8:00 PM",
+   "venue": "Middle East Downstairs",
+   "hood": "Cambridge",
+   "artists": "Emo Night Karaoke",
+   "genre": "punk",
+   "price": "",
+   "ages": "",
+   "url": "https://labs.songkick.com/concerts/43303769-emo-night-karaoke-at-middle-east-downstairs",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-11-06",
+   "time": "8:00 PM",
    "venue": "Paradise Rock Club",
    "hood": "Allston",
    "artists": "Almost Monday, Feel Trip",
@@ -3896,18 +3979,6 @@
    "price": "",
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43448704-organically-good-trio-at-lizard-lounge",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-11-06",
-   "time": "",
-   "venue": "Middle East Downstairs",
-   "hood": "Cambridge",
-   "artists": "Emo Night Karaoke",
-   "genre": "punk",
-   "price": "",
-   "ages": "",
-   "url": "https://labs.songkick.com/concerts/43303769-emo-night-karaoke-at-middle-east-downstairs",
    "src": "Songkick"
   },
   {
@@ -4293,6 +4364,18 @@
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43270999-wheeler-walker-jr-at-house-of-blues-boston",
    "src": "Songkick"
+  },
+  {
+   "date": "2026-11-08",
+   "time": "7:00 PM",
+   "artists": "Hank Heaven",
+   "venue": "Middle East Upstairs",
+   "hood": "Cambridge",
+   "genre": "other",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tours/hank-heaven+middle-east-upstairs+cambridge-ma",
+   "src": "ConcertFix"
   },
   {
    "date": "2026-11-08",
@@ -5040,6 +5123,18 @@
   },
   {
    "date": "2026-11-12",
+   "time": "8:30 PM",
+   "artists": "Dan Whitlam",
+   "venue": "The Sinclair",
+   "hood": "Cambridge",
+   "genre": "indie",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/concerts/cambridge-ma+the-sinclair-music-hall",
+   "src": "ConcertFix"
+  },
+  {
+   "date": "2026-11-12",
    "time": "",
    "artists": "Shanghai Qiutian, Dabda",
    "venue": "Deep Cuts",
@@ -5132,6 +5227,18 @@
    "price": "",
    "ages": "18+",
    "url": "https://concertfix.com/tours/joanna-jojo-levesque+royale-boston+boston-ma",
+   "src": "ConcertFix"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "7:00 PM",
+   "artists": "Bailen",
+   "venue": "The Red Room at Cafe 939",
+   "hood": "Back Bay",
+   "genre": "folk",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tours/bailen-band+the-red-room-at-cafe-939+boston-ma",
    "src": "ConcertFix"
   },
   {
@@ -5928,6 +6035,18 @@
   },
   {
    "date": "2026-11-17",
+   "time": "7:30 PM",
+   "artists": "Jack O'Neill",
+   "venue": "City Winery Haymarket Lounge",
+   "hood": "West End",
+   "genre": "folk",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tours/jack-oneill+haymarket-lounge-at-city-winery-boston+boston-ma",
+   "src": "ConcertFix"
+  },
+  {
+   "date": "2026-11-17",
    "time": "8:00 PM",
    "artists": "Singers Night: Journey - Don't Stop Believin'",
    "venue": "Berklee Performance Center",
@@ -6537,6 +6656,18 @@
    "ages": "",
    "url": "https://www.vividseats.com/the-menzingers-tickets-boston-roadrunner-11-21-2026/production/6994114",
    "src": "Vivid Seats"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "7:00 PM",
+   "artists": "Francis of Delirium",
+   "venue": "The Red Room at Cafe 939",
+   "hood": "Back Bay",
+   "genre": "indie",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tours/francis-of-delirium+the-red-room-at-cafe-939+boston-ma",
+   "src": "ConcertFix"
   },
   {
    "date": "2026-11-21",
@@ -7717,6 +7848,18 @@
   {
    "date": "2026-12-04",
    "time": "8:00 PM",
+   "venue": "Emerson Colonial Theatre",
+   "hood": "Downtown",
+   "artists": "The Dresden Dolls",
+   "genre": "goth",
+   "price": "",
+   "ages": "",
+   "url": "https://detour.songkick.com/concerts/43244468-dresden-dolls-at-emerson-colonial-theatre",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-12-04",
+   "time": "8:00 PM",
    "venue": "Roadrunner",
    "hood": "Brighton",
    "artists": "Streetlight Manifesto",
@@ -7789,18 +7932,6 @@
   {
    "date": "2026-12-04",
    "time": "",
-   "venue": "Emerson Colonial Theatre",
-   "hood": "Downtown",
-   "artists": "The Dresden Dolls",
-   "genre": "goth",
-   "price": "",
-   "ages": "",
-   "url": "https://detour.songkick.com/concerts/43244468-dresden-dolls-at-emerson-colonial-theatre",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-12-04",
-   "time": "",
    "venue": "Paradise Rock Club",
    "hood": "Allston",
    "artists": "Caspian, Pile, The Infinity Ring",
@@ -7844,6 +7975,30 @@
    "price": "",
    "ages": "",
    "url": "https://songkick.com/concerts/43404034-sue-foley-at-brighton-music-hall",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-12-05",
+   "time": "7:30 PM",
+   "venue": "Agganis Arena",
+   "hood": "Allston",
+   "artists": "Sara Bareilles, Matt Nathanson",
+   "genre": "pop",
+   "price": "",
+   "ages": "",
+   "url": "https://detour.songkick.com/concerts/43437662-sara-bareilles-at-agganis-arena",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-12-05",
+   "time": "8:00 PM",
+   "venue": "Emerson Colonial Theatre",
+   "hood": "Downtown",
+   "artists": "The Dresden Dolls",
+   "genre": "goth",
+   "price": "",
+   "ages": "",
+   "url": "https://detour.songkick.com/concerts/43244469-dresden-dolls-at-emerson-colonial-theatre",
    "src": "Songkick"
   },
   {
@@ -7892,30 +8047,6 @@
    "price": "",
    "ages": "21+",
    "url": "https://developer.songkick.com/concerts/43404198-nghtmre-at-big-night-live",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-12-05",
-   "time": "",
-   "venue": "Agganis Arena",
-   "hood": "Allston",
-   "artists": "Sara Bareilles, Matt Nathanson",
-   "genre": "pop",
-   "price": "",
-   "ages": "",
-   "url": "https://detour.songkick.com/concerts/43437662-sara-bareilles-at-agganis-arena",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-12-05",
-   "time": "",
-   "venue": "Emerson Colonial Theatre",
-   "hood": "Downtown",
-   "artists": "The Dresden Dolls",
-   "genre": "goth",
-   "price": "",
-   "ages": "",
-   "url": "https://detour.songkick.com/concerts/43244469-dresden-dolls-at-emerson-colonial-theatre",
    "src": "Songkick"
   },
   {
@@ -8300,6 +8431,18 @@
    "price": "",
    "ages": "",
    "url": "https://concertfix.com/tours/monty-alexander+takeda-theater-at-the-platform+cambridge-ma",
+   "src": "ConcertFix"
+  },
+  {
+   "date": "2026-12-10",
+   "time": "8:00 PM",
+   "artists": "Whitmer Thomas",
+   "venue": "Center for Arts at the Armory",
+   "hood": "Somerville",
+   "genre": "indie",
+   "price": "",
+   "ages": "",
+   "url": "https://concertfix.com/tickets/8217612?p=whitmer-thomas&v=arts-at-the-armory&c=somerville-ma",
    "src": "ConcertFix"
   },
   {
@@ -8773,6 +8916,18 @@
   {
    "date": "2026-12-17",
    "time": "8:00 PM",
+   "venue": "The Sinclair",
+   "hood": "Cambridge",
+   "artists": "Amtrac",
+   "genre": "electronic",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/concerts/43376188-amtrac-at-sinclair",
+   "src": "Songkick"
+  },
+  {
+   "date": "2026-12-17",
+   "time": "8:00 PM",
    "artists": "Christmas With The Celts",
    "venue": "Wilbur Theatre",
    "hood": "Downtown",
@@ -8792,18 +8947,6 @@
    "price": "",
    "ages": "",
    "url": "https://labs.songkick.com/concerts/43466212-luxdeluxe-at-lizard-lounge",
-   "src": "Songkick"
-  },
-  {
-   "date": "2026-12-17",
-   "time": "",
-   "venue": "The Sinclair",
-   "hood": "Cambridge",
-   "artists": "Amtrac",
-   "genre": "electronic",
-   "price": "",
-   "ages": "",
-   "url": "https://www.songkick.com/concerts/43376188-amtrac-at-sinclair",
    "src": "Songkick"
   },
   {
