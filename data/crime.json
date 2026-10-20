@@ -1,1 +1,469 @@
-{"asof": "", "items": []}
+{
+ "asof": "2026-10-19T22:30:00-04:00",
+ "items": [
+  {
+   "kind": "crash",
+   "headline": "Car crashes through fences into Jamaica Plain home; two hurt",
+   "blurb": "Two people inside a car were freed by firefighters with minor injuries after it struck a home on Glen Road Monday afternoon. Officials said speed appears to have been a factor; the crash remains under investigation.",
+   "hood": "Jamaica Plain",
+   "spd": [
+    "E13"
+   ],
+   "date": "2026-10-19",
+   "url": "https://www.boston25news.com/news/local/police-2-people-removed-car-that-crashed-into-jamaica-plain-home/D7WAWIIQ4VHSZCOLJQRZSDUZTY/",
+   "outlet": "Boston 25 News"
+  },
+  {
+   "kind": "other",
+   "headline": "Northeastern police investigating scammers posing as ICE agents",
+   "blurb": "Northeastern University's police chief told student government that officers are investigating numerous cases of people impersonating ICE agents to target students.",
+   "hood": "Fenway",
+   "spd": [
+    "D4"
+   ],
+   "date": "2026-10-19",
+   "url": "https://www.universalhub.com/2026/scammers-are-going-after-northeastern-students-posing-ice-agent-police",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Tip jar theft suspect charged after two officers hurt in South End arrest",
+   "blurb": "Police say a 28-year-old Brockton man took a tip jar from a bakery at 345 Harrison Ave. and injured two officers while resisting. He faces larceny, assault on police and resisting arrest charges.",
+   "hood": "South End",
+   "spd": [
+    "D4"
+   ],
+   "date": "2026-10-19",
+   "url": "https://police.boston.gov/2026/10/19/suspect-arrested-after-resisting-arrest-and-injuring-two-officers/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "shooting",
+   "headline": "Two women shot on Davison Street in Hyde Park",
+   "blurb": "Two women were shot near 114 Davison St. around 1:10 a.m. Saturday; one was reported to have life-threatening injuries. No arrests were reported.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-10-17",
+   "url": "https://www.universalhub.com/crime/2026/two-women-shot-davison-street-hyde-park-latest-bout-gun-violence",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Hyde Park man charged after loaded revolver found in Mattapan stop",
+   "blurb": "B-3 officers stopped a vehicle at Delhi Street and Wooddale Avenue early Friday and arrested Kareem Seales, 24, on unlicensed firearm and ammunition charges.",
+   "hood": "Mattapan",
+   "spd": [
+    "B3"
+   ],
+   "date": "2026-10-17",
+   "url": "https://police.boston.gov/2026/10/17/district-b-3-officers-arrest-hyde-park-man-recover-loaded-revolver/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "other",
+   "headline": "Allston stabbing survivor calls for more mental health resources",
+   "blurb": "One of three men stabbed near Cambridge and Highgate streets on Oct. 4 spoke publicly, urging more mental health and recovery services to help prevent violence.",
+   "hood": "Allston",
+   "spd": [
+    "D14"
+   ],
+   "date": "2026-10-16",
+   "url": "https://www.cbsnews.com/boston/news/boston-stabbing-survivor-mental-health-violence/",
+   "outlet": "CBS Boston"
+  },
+  {
+   "kind": "shooting",
+   "headline": "Woman shot inside Washington Street home in Dorchester",
+   "blurb": "A woman was shot shortly before 8 p.m. Thursday near Washington and Armandine streets and taken to a hospital. Police reported no arrests.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-15",
+   "url": "https://www.boston25news.com/news/local/woman-shot-dorchester-no-arrests-made/WUZB4XCAQ5E2HD4PM7YRRUXTWM/",
+   "outlet": "Boston 25 News"
+  },
+  {
+   "kind": "courts",
+   "headline": "Boston man pleads guilty in federal firearms trafficking case",
+   "blurb": "A Boston man pleaded guilty in federal court in Boston to firearm trafficking charges, according to the U.S. Attorney's Office.",
+   "hood": "Boston",
+   "spd": [],
+   "date": "2026-10-15",
+   "url": "https://www.justice.gov/usao-ma/pr/boston-man-pleads-guilty-trafficking-firearms",
+   "outlet": "U.S. Attorney, District of Massachusetts"
+  },
+  {
+   "kind": "courts",
+   "headline": "Second defendant pleads guilty to manslaughter in 2023 Mass and Cass killing",
+   "blurb": "Crystal Morgan, 41, was sentenced to six to eight years for a fatal 2023 stabbing on Topeka Street. A co-defendant earlier received 10 to 15 years.",
+   "hood": "South End",
+   "spd": [
+    "D4"
+   ],
+   "date": "2026-10-14",
+   "url": "https://www.suffolkdistrictattorney.com/press-releases/items/2026/10/14/second-person-pleads-guilty-in-2023-stabbing-of-39-year-old-woman",
+   "outlet": "Suffolk County DA"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Dorchester man faces gun charges after foot chase in Mattapan",
+   "blurb": "Police say officers recovered a firearm in a Mallard Avenue driveway and arrested Corey Perfect Jean-Little, 22, near Talbot Avenue Tuesday night on multiple firearm charges.",
+   "hood": "Mattapan",
+   "spd": [
+    "B3"
+   ],
+   "date": "2026-10-14",
+   "url": "https://police.boston.gov/2026/10/14/mattapan-officers-recovered-a-firearm-following-a-foot-chase/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "robbery",
+   "headline": "Two teens charged with armed robbery at Ashmont liquor store",
+   "blurb": "Two juveniles, 14 and 15, are charged in an Oct. 1 incident at a Dorchester Avenue liquor store; one also faces an assault charge. Both were released with stay-away orders.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-13",
+   "url": "https://www.suffolkdistrictattorney.com/press-releases/items/2026/10/14/two-juveniles-charged-with-stealing-from-liquor-store-one-charged-with-assaulting-worker",
+   "outlet": "Suffolk County DA"
+  },
+  {
+   "kind": "assault",
+   "headline": "Cambridge man charged after alleged attacks in Blackstone Square",
+   "blurb": "Police say Sharkell Tariq Matthews, 26, assaulted several people, including an elderly person, and two officers in the South End park Monday evening.",
+   "hood": "South End",
+   "spd": [
+    "D4"
+   ],
+   "date": "2026-10-13",
+   "url": "https://police.boston.gov/2026/10/13/violent-suspect-arrested-after-assaulting-multiple-victims-and-officers-in-blackstone-square/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "other",
+   "headline": "Police seek four seen entering South Station Tower garage",
+   "blurb": "Detectives are asking for help identifying four people who allegedly entered a parking garage at 680 Atlantic Ave. through an unlocked door on Sept. 7.",
+   "hood": "Downtown",
+   "spd": [
+    "A1"
+   ],
+   "date": "2026-10-13",
+   "url": "https://police.boston.gov/2026/10/13/bpd-community-alert-detectives-seek-publics-assistance-in-trespassing-investigation-at-south-station-tower/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "other",
+   "headline": "Transit Police seek man who broke fare gate at JFK/UMass",
+   "blurb": "MBTA Transit Police released video of a man they say forced his way through a fare gate to leave the station Sunday night, breaking a plexiglass panel.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-13",
+   "url": "https://www.universalhub.com/2026/reversing-normal-course-events-jfkumass-police-say-guy-busts-down-fare",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "stabbing",
+   "headline": "Person stabbed on Stellman Road in Roslindale; two teens sought",
+   "blurb": "A person was stabbed near 37 Stellman Rd. around 1:30 p.m. and hospitalized with injuries not considered life-threatening. Police were seeking two masked teens.",
+   "hood": "Roslindale",
+   "spd": [
+    "E5"
+   ],
+   "date": "2026-10-12",
+   "url": "https://www.universalhub.com/crime/2026/person-stabbed-stellman-road-roslindale",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Man charged with trying to disarm officers near Mass. Ave.",
+   "blurb": "Police say Felix Omar David Marrero, 34, struggled with officers responding to a drug-use complaint near 690 Massachusetts Ave. He also had outstanding drug warrants.",
+   "hood": "South End",
+   "spd": [
+    "D4"
+   ],
+   "date": "2026-10-12",
+   "url": "https://police.boston.gov/2026/10/12/violent-suspect-arrested-for-attempting-to-disarm-officers-in-boston/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "homicide",
+   "headline": "18-year-old charged with murder in Hyde Park gas station shooting",
+   "blurb": "Christian Peebles, 18, of Boston was arrested Friday and charged with murder in the Oct. 7 shooting at 1171 Hyde Park Ave. He faces arraignment in West Roxbury court.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-10-09",
+   "url": "https://police.boston.gov/2026/10/09/arrest-made-in-connection-to-homicide-on-hyde-park-avenue/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "courts",
+   "headline": "Grove Hall woman sentenced to 5 to 7 years in infant daughter's death",
+   "blurb": "Raynell Reed, 32, pleaded guilty to involuntary manslaughter in Suffolk Superior Court and received a 5-to-7-year state prison term.",
+   "hood": "Dorchester",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-10-09",
+   "url": "https://www.universalhub.com/2026/grove-hall-woman-gets-5-7-death-her-infant-daughter-malnutrition-and",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Brighton man charged in Allston triple stabbing after knife call",
+   "blurb": "Joshua Flores, 24, was arrested on Western Avenue after a report of a man swinging a knife, then charged with armed assault to murder in the Oct. 4 stabbings.",
+   "hood": "Brighton",
+   "spd": [
+    "D14"
+   ],
+   "date": "2026-10-09",
+   "url": "https://police.boston.gov/2026/10/09/investigation-update-suspect-arrested-for-triple-stabbing-in-brighton/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Youth Violence Strike Force recovers loaded gun in Roxbury",
+   "blurb": "Officers arrested a 16-year-old and recovered a loaded firearm near Mount Pleasant and Dudley streets on Oct. 7 after community complaints, police say.",
+   "hood": "Roxbury",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-10-09",
+   "url": "https://police.boston.gov/2026/10/09/youth-violence-strike-force-takes-loaded-gun-off-the-street-in-roxbury-after-community-complaints/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "theft",
+   "headline": "Police seek pair in tip jar theft at Jamaica Plain restaurant",
+   "blurb": "Detectives want help identifying two people who allegedly took a tip jar from a restaurant at 3160 Washington St. on Oct. 8.",
+   "hood": "Jamaica Plain",
+   "spd": [
+    "E13"
+   ],
+   "date": "2026-10-08",
+   "url": "https://police.boston.gov/2026/10/16/bpd-community-alert-detectives-seek-publics-assistance-in-efforts-to-identify-two-individuals-in-relation-to-a-larceny-investigation-in-jamaica-plain/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "courts",
+   "headline": "City security director agrees to plead guilty in COVID loan fraud",
+   "blurb": "Reuben Taylor, 40, director of Boston's Municipal Protective Services, agreed to plead guilty to wire fraud over a $20,804 PPP loan, prosecutors say.",
+   "hood": "Roxbury",
+   "spd": [],
+   "date": "2026-10-08",
+   "url": "https://www.universalhub.com/2026/boston-muni-sergeant-admits-ripping-covid-small-business-fund",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "homicide",
+   "headline": "Man fatally shot inside Hyde Park Avenue gas station",
+   "blurb": "A man was shot inside a gas station and store at 1171 Hyde Park Ave. around 5:09 p.m. and died at a hospital. Police said it did not appear random.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-10-07",
+   "url": "https://www.bostonglobe.com/2026/10/07/metro/man-killed-hyde-park-shooting/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Revere man charged in Warren Street stabbing after knife found on roof",
+   "blurb": "Detectives arrested Meshach Dowman, 31, on assault with intent to murder and mayhem charges in the Sept. 29 stabbing near 301 Warren St.",
+   "hood": "Roxbury",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-10-07",
+   "url": "https://police.boston.gov/2026/10/07/suspect-arrested-in-roxbury-stabbing-after-detectives-recover-knife-from-rooftop/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "courts",
+   "headline": "Fourth person charged in deadly June shooting in Mattapan Square",
+   "blurb": "Cerrone Wilcox Buford, 19, of Jamaica Plain is charged with first-degree murder in the June 27 shooting at 1460 Blue Hill Ave. and held without bail.",
+   "hood": "Mattapan",
+   "spd": [
+    "B3"
+   ],
+   "date": "2026-10-07",
+   "url": "https://www.suffolkdistrictattorney.com/press-releases/items/2026/10/7/fourth-person-charged-in-june-shooting-that-killed-one-man-and-injured-four-others",
+   "outlet": "Suffolk County DA"
+  },
+  {
+   "kind": "assault",
+   "headline": "Police seek man in Jamaica Plain assault on South Huntington Avenue",
+   "blurb": "Detectives are asking for help identifying a man who allegedly punched someone without warning near 105 South Huntington Ave. on Sept. 25.",
+   "hood": "Jamaica Plain",
+   "spd": [
+    "E13"
+   ],
+   "date": "2026-10-05",
+   "url": "https://police.boston.gov/2026/10/05/bpd-community-alert-detectives-seek-publics-assistance-in-efforts-to-identify-individual-in-relation-to-an-aggravated-assault-and-battery-investigation-in-jamaica-plain/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Quincy man charged with gun possession after Dorchester traffic stop",
+   "blurb": "Police say a loaded firearm was found during a stop near 54 Washington St. Johnny Williams Delacruz, 27, faces firearm and stolen property charges.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-05",
+   "url": "https://police.boston.gov/2026/10/05/traffic-stop-leads-to-suspect-arrested-and-firearm-recovered-in-dorchester/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "stabbing",
+   "headline": "Three men stabbed near Cambridge Street in Allston",
+   "blurb": "Three people were stabbed near Highgate and Cambridge streets shortly before 1:30 a.m.; police said the injuries were not life-threatening.",
+   "hood": "Allston",
+   "spd": [
+    "D14"
+   ],
+   "date": "2026-10-04",
+   "url": "https://www.universalhub.com/crime/2026/three-stabbed-cambridge-street-allston",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "stabbing",
+   "headline": "Man stabbed at Tremont Street and Temple Place downtown",
+   "blurb": "A man was stabbed in the neck during a fight around 11 p.m. Friday near Downtown Crossing, and the homicide unit was called in. No arrests were reported.",
+   "hood": "Downtown",
+   "spd": [
+    "A1"
+   ],
+   "date": "2026-10-02",
+   "url": "https://www.universalhub.com/crime/2026/man-stabbed-tremont-and-temple-downtown",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "burglary",
+   "headline": "Five juveniles charged in Roxbury break-in involving mopeds",
+   "blurb": "Officers responding to a larceny in progress on Maywood Street arrested five teens, ages 14 to 17, on breaking and entering and related charges.",
+   "hood": "Roxbury",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-10-01",
+   "url": "https://police.boston.gov/2026/10/01/five-arrested-for-breaking-and-entering-in-roxbury/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "homicide",
+   "headline": "20-year-old charged with murder in Whitfield Street shooting",
+   "blurb": "Joseph Bailey, 20, of Dorchester is charged with murder after a man was fatally shot near 7 Whitfield St. on Sept. 30, police say.",
+   "hood": "Dorchester",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-10-01",
+   "url": "https://police.boston.gov/2026/10/01/suspect-charged-with-murder-in-7-whitfield-street-homicide-investigation/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "assault",
+   "headline": "Transit Police seek man in Red Line punch that broke senior's jaw",
+   "blurb": "Police say a man punched a rider over 60 without provocation on a train at Shawmut station on Sept. 22. The suspect has not been identified.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-09-30",
+   "url": "https://www.universalhub.com/crime/2026/man-sought-breaking-seniors-jaw-unprovoked-punch-red-line",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "courts",
+   "headline": "Man gets 5 1/2 years in federal prison for Heath Street Gang role",
+   "blurb": "Tyrre Herring pleaded guilty to a racketeering charge and was also barred from Heath Street and the Mildred Hailey Apartments for three years after release.",
+   "hood": "Jamaica Plain",
+   "spd": [
+    "E13"
+   ],
+   "date": "2026-09-30",
+   "url": "https://www.universalhub.com/2026/man-gets-5-12-years-after-admitting-role-heath-street-gang",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "stabbing",
+   "headline": "Man slashed at Warren Street McDonald's in Roxbury",
+   "blurb": "A man was cut in the face around 7:10 p.m. Tuesday at the restaurant at 301 Warren St. An arrest was later announced.",
+   "hood": "Roxbury",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-09-29",
+   "url": "https://www.universalhub.com/crime/2026/man-slashed-face-roxbury-mcdonalds-suspect-sought",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "courts",
+   "headline": "Lowell man held on $50,000 bail in fatal Jamaicaway crash",
+   "blurb": "Luis Bermudez Torres, 23, is charged with manslaughter and reckless motor vehicle homicide in an Aug. 17 crash on the Jamaicaway, prosecutors say.",
+   "hood": "Jamaica Plain",
+   "spd": [
+    "E13"
+   ],
+   "date": "2026-09-29",
+   "url": "https://www.suffolkdistrictattorney.com/press-releases/items/2026/9/29/lowell-man-held-on-50000-bail-in-high-speed-crash-that-killed-fetus",
+   "outlet": "Suffolk County DA"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Roslindale man charged after loaded gun found in Mattapan traffic stop",
+   "blurb": "Police say a 9mm pistol was found during a stop near Franklin Field. Driver Starlin Bonnet, 24, faces gun and drug charges; three passengers had warrants.",
+   "hood": "Mattapan",
+   "spd": [
+    "B3"
+   ],
+   "date": "2026-09-29",
+   "url": "https://police.boston.gov/2026/09/29/bpd-officers-recover-loaded-firearm-arrest-man-on-firearm-and-drug-charges-in-mattapan/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "fire",
+   "headline": "Six-alarm fire strikes historic Edison Building in Nubian Square",
+   "blurb": "A basement fire at 72 Warren St. grew to six alarms Monday morning; firefighters fought it from outside and urged people to avoid the area.",
+   "hood": "Roxbury",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-09-28",
+   "url": "https://www.universalhub.com/2026/six-alarm-fire-nubian-square",
+   "outlet": "Universal Hub"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Man charged with attempted murder after ShotSpotter alert in Roxbury",
+   "blurb": "Police arrested Jermaine Blackman, 29, after shots near Pauline Bennett Way and Smith Street on Sept. 25. No injuries were reported.",
+   "hood": "Roxbury",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-09-28",
+   "url": "https://police.boston.gov/2026/09/28/boston-police-arrest-north-billerica-resident-on-firearm-and-attempted-murder-charges-following-shotspotter-activation/",
+   "outlet": "Boston Police (BPDNews)"
+  },
+  {
+   "kind": "homicide",
+   "headline": "Homicide unit investigates fatal shooting at Walter Street business",
+   "blurb": "A 37-year-old Milton man was shot and pronounced dead inside a business near 54 Walter St. on Sept. 26. No arrests were announced.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-09-28",
+   "url": "https://police.boston.gov/2026/09/28/boston-police-homicide-unit-investigates-fatal-shooting-on-walter-street-in-hyde-park/",
+   "outlet": "Boston Police (BPDNews)"
+  }
+ ]
+}
