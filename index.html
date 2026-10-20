@@ -2121,5 +2121,27 @@ html body #coverSlot .nat-l button:hover{color:#fff!important}
 html body #coverSlot .cvcrime{padding:0 16px 16px}
 @media (min-width:900px){html body #coverSlot .cvcrime .crm-g{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 </style>
+<style>
+.eadv{position:fixed;z-index:60;width:230px;background:#fff;border-radius:6px;box-shadow:0 14px 34px #000c;overflow:hidden;opacity:0;pointer-events:none;transition:opacity .5s ease,transform .5s ease}
+.eadv.on{opacity:1;pointer-events:auto}
+.eadv a{display:block;line-height:0}.eadv img{width:100%;height:auto;display:block}
+.eadv .ex{position:absolute;top:4px;right:4px;width:22px;height:22px;border:0;border-radius:50%;background:#000a;color:#fff;font:700 13px/22px system-ui,sans-serif;text-align:center;cursor:pointer;padding:0}
+.eadv .at{position:absolute;top:4px;left:4px;font:700 8px/1 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:#000a;padding:3px 5px;border-radius:3px}
+@media (min-width:1280px){.eadv{top:170px;right:16px;transform:translateX(24px)}.eadv.on{transform:none}}
+@media (max-width:1279px){.eadv{left:50%;bottom:0;width:min(74vw,260px);border-radius:6px 6px 0 0;transform:translate(-50%,100%)}.eadv.on{transform:translate(-50%,0)}}
+@media (prefers-reduced-motion:reduce){.eadv{transition:none}}
+</style>
+<div class="eadv" id="eadv" aria-label="Advertisement"><span class="at">Ad</span><button class="ex" type="button" aria-label="Close ad">×</button><a href="tel:+14012544403"><img src="img/eric-maluk-ad.jpg" alt="Rate: Eric Maluk, mortgage. Call (401) 254-4403" width="700" height="700"></a></div>
+<script>
+/* Eric Maluk margin ad: pops in once in a while, above the fold; runs 30 days from 2026-10-20 */
+(function(){
+const START=Date.parse('2026-10-20T00:00:00-04:00'),END=START+30*864e5;
+if(Date.now()>=END)return;
+const el=document.getElementById('eadv');if(!el)return;
+let t;const show=()=>{el.classList.add('on');t=setTimeout(hide,12000)},hide=()=>{el.classList.remove('on')};
+el.querySelector('.ex').addEventListener('click',()=>{clearTimeout(t);hide()});
+setTimeout(function loop(){if(Date.now()>=END)return;show();setTimeout(loop,12000+75000+Math.random()*30000)},9000);
+})();
+</script>
 </body>
 </html>
