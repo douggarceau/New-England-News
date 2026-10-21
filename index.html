@@ -2205,5 +2205,27 @@ const cycle=()=>{if(Date.now()>=END){if(ad)ad.classList.remove('on');return}
 setTimeout(cycle,8000);
 })();
 </script>
-</body>
+<script id="irinavo">(()=>{/* Irina's welcome: first click on Front page or the cover in a visit brings the cover to life (video sits exactly over the cover); Skip button; tabs light up as she names them */
+const SRC="/irina-boston.mp4",POS="/irina-boston.jpg",KEY="br_irina1";
+const C=[[0,8.0,'#nav [data-go="front"]'],[8.7,10.3,'#nav [data-go="bars"]'],[10.8,12.6,'#nav [data-go="crime"]'],[13.0,14.2,'#nav [data-go="tech"]'],[14.6,15.6,'#nav [data-go="cal"]'],[15.9,16.6,'#nav [data-go="scene"]'],[16.7,18.4,'#nav [data-go="venues"]'],[18.8,19.5,'#nav [data-go="bands"]'],[19.6,23.0,'#tw'],[23.4,26.0,'#tick'],[26.2,29.4,'#nav [data-go="stories"]'],[29.5,32.3,'#nav [data-go="bars"],#nav [data-go="scene"],#nav [data-go="cal"]']];
+let done=false;try{done=sessionStorage.getItem(KEY)==="1"}catch(_){}
+let box=null,vid=null,skip=null,playing=false,lit=[],cur=-1,tmr=null;
+const css=document.createElement("style");css.textContent="#irBox{position:absolute;padding:0!important;margin:0!important;box-sizing:border-box;z-index:20;overflow:hidden;background:#000;display:none;opacity:0}#irBox.on{display:block;animation:irFade .7s ease forwards}@keyframes irFade{to{opacity:1}}#irBox video{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 4%;background:#000}#irBox button{position:absolute;top:6px;right:6px;width:26px;height:26px;border-radius:50%;border:1px solid #fff9;background:#000a;color:#fff;font:700 15px/1 system-ui,sans-serif;cursor:pointer;padding:0;z-index:2}#irSkip{position:fixed;left:50%;bottom:34px;transform:translateX(-50%);z-index:9998;padding:7px 14px;border-radius:999px;border:1px solid #d9a400;background:#0b0c0fe6;color:#f0c94a;font:700 11px/1 var(--mono,monospace);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;box-shadow:0 0 14px #d9a40055}#irSkip[hidden]{display:none}.ir-lit{position:relative;z-index:61;outline:2px solid #7dff4a!important;outline-offset:2px;box-shadow:0 0 0 3px rgba(125,255,74,.25),0 0 22px rgba(125,255,74,.9)!important;filter:brightness(1.25)}";document.head.appendChild(css);
+const clear=()=>{lit.forEach(e=>e.classList.remove("ir-lit"));lit=[];cur=-1};
+const cover=()=>{const CI=document.querySelector(".cvr .cimg img");return CI&&CI.offsetParent&&CI.offsetWidth>60?CI:null};
+const place=()=>{const CI=cover();if(!box)return false;if(!CI){return false}const par=CI.parentElement;if(getComputedStyle(par).position==="static")par.style.position="relative";if(box.parentElement!==par){par.appendChild(box);if(playing&&vid.paused)vid.play().catch(()=>{})}
+ const q=CI.getBoundingClientRect(),pr=par.getBoundingClientRect();box.style.left=(q.left-pr.left-par.clientLeft)+"px";box.style.top=(q.top-pr.top-par.clientTop)+"px";box.style.width=q.width+"px";box.style.height=q.height+"px";box.style.borderRadius=getComputedStyle(CI).borderRadius;return true};
+const stop=()=>{playing=false;clearInterval(tmr);if(vid)vid.pause();if(box)box.classList.remove("on");if(skip)skip.hidden=true;clear()};
+const tick=()=>{if(!playing){clear();return}place();const t=vid.currentTime;const i=C.findIndex(c=>t>=c[0]&&t<c[1]);if(i!==cur){lit.forEach(e=>e.classList.remove("ir-lit"));lit=[];cur=i;if(i>=0)document.querySelectorAll(C[i][2]).forEach(e=>{e.classList.add("ir-lit");lit.push(e)})}};
+const play=()=>{if(!box){box=document.createElement("div");box.id="irBox";box.setAttribute("role","region");box.setAttribute("aria-label","Welcome video");box.innerHTML='<button type="button" aria-label="Close welcome video">&times;</button><video playsinline preload="auto" poster="'+POS+'"><source src="'+SRC+'" type="video/mp4"></video>';vid=box.querySelector("video");vid.addEventListener("ended",stop);
+  box.addEventListener("click",e=>{e.stopPropagation();e.preventDefault();if(e.target.closest("button"))stop()});addEventListener("resize",place)}
+ if(!place())return;try{document.querySelectorAll("audio").forEach(a=>a.pause())}catch(_){}
+ if(!skip){skip=document.createElement("button");skip.type="button";skip.id="irSkip";skip.textContent="Skip intro ✕";skip.onclick=e=>{e.stopPropagation();stop()};document.body.appendChild(skip)}
+ playing=true;box.classList.add("on");skip.hidden=false;vid.currentTime=0;vid.muted=false;const p=vid.play();if(p&&p.catch)p.catch(()=>{vid.muted=true;vid.play().catch(()=>stop())});clearInterval(tmr);tmr=setInterval(tick,120)};
+document.addEventListener("click",e=>{const t=e.target;if(!t.closest)return;
+ if(playing&&t.closest('[data-go]:not([data-go="front"])')){stop();return}
+ if(done)return;const cv=t.closest(".cvr .cimg");if(!cv&&!t.closest('[data-go="front"]'))return;if(cv){e.preventDefault();e.stopPropagation();e.stopImmediatePropagation()}
+ done=true;try{sessionStorage.setItem(KEY,"1")}catch(_){}
+ setTimeout(()=>{const CI=document.querySelector(".cvr .cimg img");if(CI){const q=CI.getBoundingClientRect();if(q.top<0||q.bottom>innerHeight)CI.scrollIntoView({block:"center",behavior:"smooth"})}setTimeout(play,CI?650:0)},350)},true);
+document.addEventListener("visibilitychange",()=>{if(document.hidden&&playing)stop()})})();</script></body>
 </html>
