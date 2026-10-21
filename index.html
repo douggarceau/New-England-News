@@ -2206,7 +2206,7 @@ setTimeout(cycle,8000);
 })();
 </script>
 <script id="irinavo">(()=>{/* Irina's welcome: first click on Front page or the cover in a visit brings the cover to life (video sits exactly over the cover); Skip button; tabs light up as she names them */
-const SRC="/irina-boston.mp4",POS="/irina-boston.jpg",KEY="br_irina1";
+const SRC="/irina-boston_1.mp4",POS="/irina-boston_1.jpg",KEY="br_irina1";
 const C=[[0,8.0,'#nav [data-go="front"]'],[8.7,10.3,'#nav [data-go="bars"]'],[10.8,12.6,'#nav [data-go="crime"]'],[13.0,14.2,'#nav [data-go="tech"]'],[14.6,15.6,'#nav [data-go="cal"]'],[15.9,16.6,'#nav [data-go="scene"]'],[16.7,18.4,'#nav [data-go="venues"]'],[18.8,19.5,'#nav [data-go="bands"]'],[19.6,23.0,'#tw'],[23.4,26.0,'#tick'],[26.2,29.4,'#nav [data-go="stories"]'],[29.5,32.3,'#nav [data-go="bars"],#nav [data-go="scene"],#nav [data-go="cal"]']];
 let done=false;try{done=sessionStorage.getItem(KEY)==="1"}catch(_){}
 let box=null,vid=null,skip=null,playing=false,lit=[],cur=-1,tmr=null;
