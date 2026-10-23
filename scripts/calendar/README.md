@@ -26,3 +26,8 @@ Wilbur uses its official Ticketmaster venue feed. A checked-in mapping of
 91 existing performance identities preserves separate show times and prevents
 duplicates when changing providers. New performances use their ticket ID.
 These routes avoid making collection depend on the presentation page shell.
+
+Regattabar's official TicketWeb events are also available through the
+Ticketmaster Discovery venue feed (KovZ917AYuX). This route includes partner
+events and preserves their original TicketWeb URLs and existing identities.
+All 12 published Regattabar event URLs matched the verified feed on October 23.

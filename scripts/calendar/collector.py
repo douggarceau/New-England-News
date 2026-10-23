@@ -34,6 +34,7 @@ TICKETMASTER_VENUES = {
     "https://crossroadspresents.com/pages/mgm-fenway-music-hall": "KovZ917AEJz",
     "https://www.ticketmaster.com/big-night-live-tickets-boston/venue/9293": "KovZ917AxdQ",
     "https://thewilbur.com/calendar/": "KovZpZAEAIvA",
+    "https://www.ticketweb.com/venue/regattabar-cambridge-ma/748814?pl=regatta": "KovZ917AYuX",
 }
 ROAD_FEED = "https://aegwebprod.blob.core.windows.net/json/events/219/events.json"
 SCULLERS_FEED = "https://musicidb.com/venue/getVenueEvents.htm?listType=upcoming&page=0&frameType=listWidget&descrip=1&venueId=715"
@@ -155,15 +156,20 @@ class CalendarCollector:
         offset = len(self.requests)
         fetch_url = MIDDLE_LIST if host == "www.mideastoffers.com" else SCULLERS_FEED if host == "scullersjazz.com" else CITY_FEED if host == "citywinery.com" else source_url
         if source_url in TICKETMASTER_VENUES:
-            fetch_url = TICKETMASTER_ENDPOINT + "?" + urlencode({
+            params = {
                 "size": 100, "page": 0, "sort": "date,asc",
                 "venueId": TICKETMASTER_VENUES[source_url],
-                "apikey": CROSSROADS_PUBLIC_WIDGET_KEY, "source": "ticketmaster"})
+                "apikey": CROSSROADS_PUBLIC_WIDGET_KEY}
+            # Regattabar's official TicketWeb events are syndicated through
+            # Discovery. A ticketmaster-only filter would exclude those rows.
+            if venue != "Regattabar":
+                params["source"] = "ticketmaster"
+            fetch_url = TICKETMASTER_ENDPOINT + "?" + urlencode(params)
         page = self._get(fetch_url, stop_event)
         text = decode_page(page)
         if source_url in TICKETMASTER_VENUES:
             events, parsing = parse_ticketmaster(text, source_url, page.retrieved_at)
-            if venue == "Big Night Live":
+            if venue in ("Big Night Live", "Regattabar"):
                 # Keep the original provider URL identity while enriching its
                 # former doors-only timestamp with the explicit show time.
                 for event in events:

@@ -66,7 +66,7 @@ class DirectFeedTests(unittest.TestCase):
                         '_embedded':{'venues':[{'name':'Big Night Live'}]}
                     }]}}).encode()
                     return SimpleNamespace(body=body,final_url=url,status=200,retrieved_at='2026-10-23T23:00:00+00:00')
-            venue='Big Night Live' if '/9293' in source else 'Example Venue'
+            venue='Big Night Live' if '/9293' in source else 'Regattabar' if '/regattabar-' in source else 'Example Venue'
             collector=CalendarCollector({source:{'fallback_venue':venue}},transport=Transport(),minimum_spacing=0)
             result=collector.fetch(source,threading.Event())
             self.assertEqual(len(calls),1)
@@ -74,8 +74,10 @@ class DirectFeedTests(unittest.TestCase):
             self.assertEqual(parse_qs(urlsplit(calls[0]).query)['venueId'],[venue_id])
             event=result.parsed_events[0]
             self.assertEqual((event['time'],event['doors_time']),('20:00','19:00'))
-            if venue=='Big Night Live':
+            if venue in ('Big Night Live','Regattabar'):
                 self.assertEqual(event['external_identity'],'event-url:'+event['url'])
+            if venue=='Regattabar':
+                self.assertNotIn('source',parse_qs(urlsplit(calls[0]).query))
 
     def test_city_winery_direct_feed_preserves_explicit_room(self):
         calls=[]
