@@ -47,6 +47,7 @@ class DirectFeedTests(unittest.TestCase):
         for message,always,expected_calls,success in [
             ('Source request timed out.',False,2,True),
             ('Source request timed out.',True,2,False),
+            ('Source returned HTTP 504.',False,2,True),
             ('Source returned HTTP 403.',True,1,False),
             ('Source returned HTTP 429.',True,1,False)]:
             transport=Transport(message,always)

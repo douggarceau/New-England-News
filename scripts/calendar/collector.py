@@ -150,7 +150,8 @@ class CalendarCollector:
                 # One bounded retry for transient timeouts only. Never retry
                 # access denials, rate limits, TLS failures or validation errors.
                 if attempt or str(exc) not in ("Source request timed out.",
-                                               "Source request exceeded its time limit."):
+                                               "Source request exceeded its time limit.",
+                                               "Source returned HTTP 504."):
                     raise
                 self.requests.append({"url": redact_url(url), "retrieved_at": now(),
                                       "http_status": None, "error": str(exc), "retry": 1})
