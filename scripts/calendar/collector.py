@@ -121,8 +121,8 @@ class CalendarCollector:
     """Fetch each source and its bounded configured public feed, sequentially.
 
     Known Middle East list and Scullers list routes directly serve the same
-    official calendar, avoiding their slower calendar shells. No pagination or
-    retry loops are run. Royale reads its page, script and published feed.
+    official calendar, avoiding their slower calendar shells. No pagination loops
+    are run. A timeout receives one retry. Royale reads its page, script and published feed.
     A transport may be injected to replay captured bytes.
     """
     def __init__(self, source_policies, transport=None, minimum_spacing=2.0):
@@ -137,16 +137,27 @@ class CalendarCollector:
         self.requests = []
 
     def _get(self, url, stopped, public_headers=None):
-        delay = self.minimum_spacing - (time.monotonic() - self.last_request)
-        if delay > 0 and stopped.wait(delay):
-            raise Stopped()
-        if stopped.is_set():
-            raise Stopped()
-        self.last_request = time.monotonic()
-        page = self.transport.fetch(url, stopped, public_headers=public_headers)
-        self.requests.append({"url": redact_url(url), "final_url": redact_url(page.final_url),
-                              "retrieved_at": page.retrieved_at, "http_status": page.status})
-        return page
+        for attempt in range(2):
+            delay = self.minimum_spacing - (time.monotonic() - self.last_request)
+            if delay > 0 and stopped.wait(delay):
+                raise Stopped()
+            if stopped.is_set():
+                raise Stopped()
+            self.last_request = time.monotonic()
+            try:
+                page = self.transport.fetch(url, stopped, public_headers=public_headers)
+            except ValidationError as exc:
+                # One bounded retry for transient timeouts only. Never retry
+                # access denials, rate limits, TLS failures or validation errors.
+                if attempt or str(exc) not in ("Source request timed out.",
+                                               "Source request exceeded its time limit."):
+                    raise
+                self.requests.append({"url": redact_url(url), "retrieved_at": now(),
+                                      "http_status": None, "error": str(exc), "retry": 1})
+                continue
+            self.requests.append({"url": redact_url(url), "final_url": redact_url(page.final_url),
+                                  "retrieved_at": page.retrieved_at, "http_status": page.status})
+            return page
 
     def fetch(self, source_url, stop_event):
         from feed_parsers import parse_ical, parse_axs, parse_ticketmaster

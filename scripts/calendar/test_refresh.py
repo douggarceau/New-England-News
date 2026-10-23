@@ -8,6 +8,7 @@ import refresh
 import threading
 from collector import CalendarCollector, CITY_FEED, TICKETMASTER_VENUES
 from urllib.parse import urlsplit, parse_qs
+from core import ValidationError
 
 class RefreshTests(unittest.TestCase):
     def setUp(self):
@@ -36,6 +37,25 @@ class RefreshTests(unittest.TestCase):
         self.assertEqual(saved['events'],[self.other]); self.assertEqual(result['sources_failed'],19)
 
 class DirectFeedTests(unittest.TestCase):
+    def test_timeout_retries_once_but_access_denial_does_not_retry(self):
+        class Transport:
+            def __init__(self,message,always=False):self.calls=0;self.message=message;self.always=always
+            def fetch(self,url,stop,public_headers=None):
+                self.calls+=1
+                if self.calls==1 or self.always:raise ValidationError(self.message)
+                return SimpleNamespace(body=b'ok',final_url=url,status=200,retrieved_at='2026-10-23T23:00:00+00:00')
+        for message,always,expected_calls,success in [
+            ('Source request timed out.',False,2,True),
+            ('Source request timed out.',True,2,False),
+            ('Source returned HTTP 403.',True,1,False),
+            ('Source returned HTTP 429.',True,1,False)]:
+            transport=Transport(message,always)
+            collector=CalendarCollector({},transport=transport,minimum_spacing=0)
+            if success:self.assertEqual(collector._get('https://example.com/',threading.Event()).status,200)
+            else:
+                with self.assertRaises(ValidationError):collector._get('https://example.com/',threading.Event())
+            self.assertEqual(transport.calls,expected_calls)
+
     def test_wilbur_early_and_late_performances_keep_separate_existing_ids(self):
         source='https://thewilbur.com/calendar/'
         class Transport:

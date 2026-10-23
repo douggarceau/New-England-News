@@ -4,6 +4,8 @@ The daily GitHub Actions job collects the 25 configured venues at 09:17 UTC
 (05:17 Boston daylight time / 04:17 standard time). It uses Python's standard
 library, bounded public requests spaced at least two seconds apart, and no AI
 API. Manual runs use Actions > Refresh Boston calendar > Run workflow.
+Timeouts receive one bounded retry; access denials and rate limits are never
+retried. A second timeout retains the last verified listings for that source.
 
 `data/cal.json` is the persisted event state, including each observed source and
 retrieval time. Failed sources retain their previously observed future events.
