@@ -1111,7 +1111,7 @@ h2.room{text-shadow:0 2px 0 #000,0 0 30px rgba(0,0,0,.7)!important;filter:satura
       </div>
       <div class="approw"><a class="appbtn xhd" href="https://twitter.com/intent/tweet?text=The%20Boston%20Rambler&url=https%3A%2F%2Fthebostonrambler.com%2F" target="_blank" rel="noopener">𝕏 Share on X</a></div>
       <form class="subbox" id="subBox" novalidate>
-        <div class="sb-head"><b>Join The Boston Rambler</b><span>Free account · full stories &amp; comments</span></div>
+        <div class="sb-head"><b>Join The Boston Rambler</b><span>Reader account · full stories &amp; comments</span></div>
         <div class="sb-tabs" role="tablist"><button type="button" class="on" data-m="up">Subscribe</button><button type="button" data-m="in">Log in</button></div>
         <div class="sb-in" id="sbIn" hidden><b>Signed in as <span id="sbWho"></span></b><button type="button" id="sbOut">Log out</button></div>
         <div class="sb-f" id="sbF">
@@ -1529,7 +1529,7 @@ function vStories(){
 /* Members: national cover stories are for $4.99/month members; everything else stays free. */
 const PAY_LINK='';
 function memberBox(){const u=window.SS_USER;const go=u?`<a class="mb-go" href="${PAY_LINK}?prefilled_email=${encodeURIComponent(u.email)}" target="_blank" rel="noopener">Become a member · $4.99/month</a>`:`<button type="button" class="mb-go" data-join="story">Sign up free, then become a member</button>`;
- return `<div class="mbox"><b>Keep reading</b><p>The national cover stories are for members of The Boston Rambler: $4.99 a month, cancel anytime. Boston news stays free.</p>${go}${u?'':'<small>Already a member? Log in with the email you used.</small>'}</div>`}
+ return `<div class="mbox"><b>Keep reading</b><p>The national cover stories are for members of The Boston Rambler: $4.99 a month, cancel anytime. Boston news stays open to every reader.</p>${go}${u?'':'<small>Already a member? Log in with the email you used.</small>'}</div>`}
 function xShare(s){const u='https://thebostonrambler.com/'+(s?'?story='+s.slug:'');const t=s?s.title+' | The Boston Rambler':'The Boston Rambler';return 'https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(u)}
 function xBtn(s){return `<a class="xbtn" href="${xShare(s)}" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8.1-9.3L1 2h7l4.8 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>Share on X</a>`}
 /* Top Crime Story banner: the most serious recent Boston crime headline from data/crime.json (refreshed by the Crime Watch desk). */
@@ -2066,7 +2066,7 @@ document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest
   <div class="apbox">
     <img src="https://seattlesinner.com/app/icon-192.png" alt="">
     <div class="ttl">The Boston Rambler</div>
-    <div class="sub">Free · No App Store needed</div>
+    <div class="sub">No App Store needed</div>
     <div id="appSteps"></div>
     <button type="button" class="x" id="appClose">Not now</button>
   </div>
@@ -2084,14 +2084,14 @@ document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest
   const ua=navigator.userAgent, ios=/iPhone|iPad|iPod/.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1), android=/Android/.test(ua);
   const open=()=>{
     if(ev){
-      st.innerHTML='<p>Put the Report on your home screen. It opens full screen, like any other app.</p><button type="button" class="go" id="appGo">Add to Home Screen</button>';
+      st.innerHTML='<p>Put the Rambler on your home screen. It opens full screen, like any other app.</p><button type="button" class="go" id="appGo">Add to Home Screen</button>';
       document.getElementById('appGo').onclick=async()=>{const e=ev;ev=null;sh.hidden=true;e.prompt();const r=await e.userChoice.catch(()=>null);if(r&&r.outcome==='accepted')btn.hidden=true;};
     }else if(ios){
       st.innerHTML='<ol><li>Tap the <b>Share</b> button at the bottom of Safari (the square with the arrow).</li><li>Tap <b>Add to Home Screen</b>.</li><li>Tap <b>Add</b>.</li></ol>';
     }else if(android){
       st.innerHTML='<ol><li>Tap the <b>⋮</b> menu at the top right of Chrome.</li><li>Tap <b>Add to Home screen</b>.</li><li>Tap <b>Add</b>.</li></ol>';
     }else{
-      st.innerHTML='<p>Open <b>seattlesinner.com</b> on your phone and tap <b>Get the App</b>.</p>';
+      st.innerHTML='<p>Open <b>thebostonrambler.com</b> on your phone and tap <b>Get the App</b>.</p>';
     }
     sh.hidden=false;
   };
