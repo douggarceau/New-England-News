@@ -1228,7 +1228,7 @@ function applyCalendarFeed(j,isCalendar){
   for(const e of j.events){if(!e.date||!e.artists||e.date<todayKey||e.reported_status==='EventCancelled')continue;const k=calendarKey(e);if(seen.has(k))continue;seen.add(k);
     let url=e.url||e.source_url||'';if(!/^https?:\/\//i.test(url))url='';
     const x={...e,time:calendarClock(e.time),doors_time:calendarClock(e.doors_time),venue:e.venue||'',hood:e.hood||'',genre:GENRE[e.genre]?e.genre:'other',price:e.price||'',ages:e.ages||'',url};CAL2.push(x);up.push(x)}
-  const so=(a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||''));CAL2.sort(so);up.sort(so);
+  const order=e=>{const m=/^(\d{1,2}):(\d{2})\s*(AM|PM)?$/i.exec(e.time||'');if(!m)return e.date+'00:00';let h=Number(m[1]);if(m[3])h=h%12+(/PM/i.test(m[3])?12:0);return e.date+String(h).padStart(2,'0')+':'+m[2]};const so=(a,b)=>order(a).localeCompare(order(b));CAL2.sort(so);up.sort(so);
   if(isCalendar&&j.asof)CAL_UPDATED=j.asof;
   const stat=document.querySelector('#mstat .ms:nth-child(2) b');if(stat)stat.textContent=up.length;
   if(['cal','front'].includes(STATE.view)&&!document.activeElement.matches('input,select,textarea'))render();
