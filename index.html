@@ -1200,7 +1200,7 @@ const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const MON=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'],DOW=['SUN','MON','TUE','WED','THU','FRI','SAT'];
 const pd=s=>{const [y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)};
-const todayKey=(()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')})();
+const todayKey=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const longDay=s=>pd(s).toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
 const shortDay=s=>pd(s).toLocaleDateString('en-US',{month:'short',day:'numeric'});
 const gGuess=t=>{t=(t||'').toLowerCase();for(const [k,re] of [['metal',/metal|doom|sludge|thrash|hardcore/],['punk',/punk|post-hardcore|ska/],['hip-hop',/hip.?hop|rap/],['r&b',/r&b|soul|funk/],['jazz',/jazz|blues/],['country',/country|americana|rockabilly|bluegrass/],['folk',/folk|acoustic|singer/],['electronic',/electronic|dj|techno|house|edm|synth/],['latin',/latin|cumbia|reggaeton/],['world',/reggae|world|afro/],['indie',/indie|shoegaze|dream pop|emo|post-punk/],['pop',/pop/],['rock',/rock|grunge|garage|psych|surf/]])if(re.test(t))return k;return 'live'};
@@ -1218,10 +1218,22 @@ const VURL=(()=>{const m={};const n=x=>(x||'').toLowerCase().replace(/^the\s+/,'
 function bestUrl(e){const u=e.url||'';if(u&&!GENERIC_URL.test(u))return u;const v=VURL(e.venue);return v||u}
 CAL2.forEach(e=>{e.url=bestUrl(e)});SCENE.forEach(e=>{e.url=bestUrl(e)});
 const up=CAL2.filter(e=>e.date>=todayKey);
-['data/cal.json','data/sports.json'].forEach(u=>fetch(u+'?'+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>{if(!j||!Array.isArray(j.events))return;
-  const key=e=>e.date+'|'+(e.venue||'').toLowerCase().replace(/[^a-z0-9]/g,'').replace(/^the/,'').slice(0,10)+'|'+(e.artists||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,12);
-  const seen=new Set(CAL2.map(key));let n=0;for(const e of j.events){if(!e.date||!e.artists||e.date<todayKey)continue;const k=key(e);if(seen.has(k))continue;seen.add(k);const x={date:e.date,time:e.time||'',venue:e.venue||'',hood:e.hood||'',artists:e.artists,genre:GENRE[e.genre]?e.genre:'other',price:e.price||'',ages:e.ages||'',url:e.url||''};CAL2.push(x);up.push(x);n++}
-  if(!n)return;const so=(a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||''));CAL2.sort(so);up.sort(so);if(['cal','front'].includes(STATE.view)&&!document.activeElement.matches('input,select,textarea'))render()}).catch(()=>{}));
+let CAL_UPDATED=UPDATED;
+function calendarKey(e){return e.external_identity||[e.date,e.time||'',e.venue||'',e.artists||''].map(x=>String(x).trim().toLowerCase()).join('|')}
+function calendarClock(t){if(!/^\d{2}:\d{2}$/.test(t||''))return t||'';const [h,m]=t.split(':').map(Number);return (h%12||12)+':'+String(m).padStart(2,'0')+(h<12?' AM':' PM')}
+function applyCalendarFeed(j,isCalendar){
+  if(!j||!Array.isArray(j.events))return;
+  if(isCalendar&&Array.isArray(j.managed_venues)&&j.events.length){const managed=new Set(j.managed_venues);for(const rows of [CAL2,up])for(let i=rows.length-1;i>=0;i--)if(managed.has(rows[i].venue))rows.splice(i,1)}
+  const seen=new Set(CAL2.map(calendarKey));
+  for(const e of j.events){if(!e.date||!e.artists||e.date<todayKey||e.reported_status==='EventCancelled')continue;const k=calendarKey(e);if(seen.has(k))continue;seen.add(k);
+    let url=e.url||e.source_url||'';if(!/^https?:\/\//i.test(url))url='';
+    const x={...e,time:calendarClock(e.time),doors_time:calendarClock(e.doors_time),venue:e.venue||'',hood:e.hood||'',genre:GENRE[e.genre]?e.genre:'other',price:e.price||'',ages:e.ages||'',url};CAL2.push(x);up.push(x)}
+  const so=(a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||''));CAL2.sort(so);up.sort(so);
+  if(isCalendar&&j.asof)CAL_UPDATED=j.asof;
+  const stat=document.querySelector('#mstat .ms:nth-child(2) b');if(stat)stat.textContent=up.length;
+  if(['cal','front'].includes(STATE.view)&&!document.activeElement.matches('input,select,textarea'))render();
+}
+['data/cal.json','data/sports.json'].forEach(u=>fetch(u+'?'+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>applyCalendarFeed(j,u==='data/cal.json')).catch(()=>{}));
 const upScene=SCENE.filter(e=>(e.end||e.date)>=todayKey);
 const tc=t=>(TOPIC[t]||['#8fb3d9',t])[0], tl=t=>(TOPIC[t]||['',t])[1];
 
@@ -1250,7 +1262,7 @@ function storyCard(s){return `<button class="sc styled" style="--tc:${tc(s.topic
   <h4>${esc(s.title)}</h4><p>${esc(s.dek)}</p><span class="meta">${s.minutes} min read</span></button>`}
 function showRow(e){const d=pd(e.date);return `<a class="sh" href="${esc(e.url)}" target="_blank" rel="noopener">
   <span class="dt"><small>${MON[d.getMonth()]}</small><b>${d.getDate()}</b><i>${DOW[d.getDay()]}</i></span>
-  <span class="who"><b>${esc(e.artists)}</b><span>${esc(e.venue)}${e.hood?' · '+esc(e.hood):''}${e.time?' · '+esc(e.time):''}${e.price?' · '+esc(e.price):''}${e.ages?' · '+esc(e.ages):''}</span></span>
+  <span class="who"><b>${esc(e.artists)}</b><span>${esc(e.venue)}${e.hood?' · '+esc(e.hood):''}${e.time?' · '+esc(e.time):''}${e.doors_time?' · Doors '+esc(e.doors_time):''}${e.price?' · '+esc(e.price):''}${e.ages?' · '+esc(e.ages):''}</span>${(e.location_evidence||'').includes('official_club_calendar_default')?'<small style="display:block;color:var(--muted)">Venue inferred from the official Club Calendar; confirm with venue.</small>':''}</span>
   <span class="gtag" style="--gc:${GENRE[e.genre]||'#6f8aa8'}">${esc(e.genre)}</span></a>`}
 function evCard(e){return `<a class="ev" style="--gc:${KIND[e.kind]||'#8b949c'}" href="${esc(e.url)}" target="_blank" rel="noopener">
   <span class="kick" style="--tc:${KIND[e.kind]||'#8b949c'}"><span class="dot"></span>${esc(e.kind)}</span>
@@ -1559,7 +1571,7 @@ function vCal(){
   let html='',day='';
   for(const e of L){ if(e.date!==day){if(day)html+='</div>';day=e.date;html+=`<div class="dayh">${longDay(e.date)} · ${L.filter(x=>x.date===day).length} shows</div><div class="cald">`;} html+=showRow(e); } if(day)html+='</div>';
   return `<h2 class="room">Music calendar</h2>
-  <div class="intro"><b>Every sound in the city</b><p>Hip-hop to jazz, techno to cumbia, metal to folk. Real shows at real rooms; tap one for tickets. Updated ${esc(UPDATED)}.</p></div>
+  <div class="intro"><b>Every sound in the city</b><p>Hip-hop to jazz, techno to cumbia, metal to folk. Venue and ticketing listings; tap one for details. Updated ${esc(CAL_UPDATED)}. Doors and show times are listed separately; inferred venue assignments are labeled.</p></div>
   <div class="pads">${['all',...gs].map(g=>`<button class="pad${STATE.genre===g?' on':''}" data-genre="${g}" style="--gc:${g==='all'?'#8fb3d9':GENRE[g]||'#6f8aa8'}"><span>${g==='all'?'All':esc(g)}</span><small>${g==='all'?up.length:up.filter(e=>e.genre===g).length} shows</small></button>`).join('')}</div>
   <div class="ctrl"><div class="fld"><label for="cq">Search shows</label><input type="search" id="cq" value="${esc(STATE.cq)}" placeholder="Artist or venue…" autocomplete="off"></div>
     <div class="fld"><label for="hood">Neighborhood</label><select id="hood"><option value="all">Everywhere</option>${hoods.map(h=>`<option${STATE.hood===h?' selected':''}>${esc(h)}</option>`).join('')}</select></div></div>
