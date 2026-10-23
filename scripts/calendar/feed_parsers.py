@@ -339,6 +339,8 @@ def parse_ticketmaster(text, source_url, retrieved_at=None):
                 raise ValueError("test_event")
             if item.get("type", "event") != "event":
                 raise ValueError("non_event_product")
+            if _text(item.get("name")).casefold() == "wilbur theatre gift certificate":
+                raise ValueError("non_event_product")
             identity = "ticketmaster:discovery:" + _identity(item.get("id"))
             dates = item.get("dates") if isinstance(item.get("dates"), dict) else {}
             start = dates.get("start") if isinstance(dates.get("start"), dict) else {}

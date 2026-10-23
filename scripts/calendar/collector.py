@@ -4,6 +4,7 @@ import html as html_module
 import json
 import re
 import time
+from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
@@ -19,11 +20,12 @@ from network import LocalNetworkHTTP, approved_hosts_from_urls
 BOSTON_ZONE = ZoneInfo("America/New_York")
 MIDDLE_LIST = "https://www.mideastoffers.com/all-shows-list/"
 CITY_FEED = "https://awsapi.citywinery.com/feeds/Boston/events.ics"
-WILBUR_FEED = "https://thewilbur.com/wp-json/wp/v2/pages/39"
 # Public Discovery widget configuration observed on the official Crossroads
 # venue pages and homepage on 2026-10-23. These are public browser widget
 # parameters, not account credentials. Read the feed directly: Shopify's page
 # shell returns 404 to the scheduled runner even while the feed remains live.
+# Wilbur's Discovery venue ID was verified against its official Ticketmaster
+# listing (venue 8252); its own website endorses Ticketmaster as its seller.
 TICKETMASTER_ENDPOINT = "https://app.ticketmaster.com/discovery/v2/events.json"
 CROSSROADS_PUBLIC_WIDGET_KEY = "oo1qd0wzLe7WJpm61ALQuUCTMXGK7U5z"
 TICKETMASTER_VENUES = {
@@ -31,12 +33,13 @@ TICKETMASTER_VENUES = {
     "https://crossroadspresents.com/pages/paradise-rock-club": "KovZpZA11JtA",
     "https://crossroadspresents.com/pages/mgm-fenway-music-hall": "KovZ917AEJz",
     "https://www.ticketmaster.com/big-night-live-tickets-boston/venue/9293": "KovZ917AxdQ",
+    "https://thewilbur.com/calendar/": "KovZpZAEAIvA",
 }
 ROAD_FEED = "https://aegwebprod.blob.core.windows.net/json/events/219/events.json"
 SCULLERS_FEED = "https://musicidb.com/venue/getVenueEvents.htm?listType=upcoming&page=0&frameType=listWidget&descrip=1&venueId=715"
 BSO_ENDPOINT = "https://go8f04wi19tuvlyrp-1.a1.typesense.net/collections/performances/documents/search"
 DICE_ENDPOINT = "https://partners-endpoint.dice.fm/api/v2/events"
-FEED_URLS = [MIDDLE_LIST, CITY_FEED, WILBUR_FEED, ROAD_FEED, SCULLERS_FEED, BSO_ENDPOINT, DICE_ENDPOINT,
+FEED_URLS = [MIDDLE_LIST, CITY_FEED, ROAD_FEED, SCULLERS_FEED, BSO_ENDPOINT, DICE_ENDPOINT,
              adapters_remaining.ROYALE_ORIGIN, adapters_remaining.WAREHOUSE_URL,
              "https://www.mideastclub.com/all-shows-list/",
              "https://app.ticketmaster.com/discovery/v2/events.json"]
@@ -151,10 +154,6 @@ class CalendarCollector:
         venue = policy.get("fallback_venue") or "Shared calendar"
         offset = len(self.requests)
         fetch_url = MIDDLE_LIST if host == "www.mideastoffers.com" else SCULLERS_FEED if host == "scullersjazz.com" else CITY_FEED if host == "citywinery.com" else source_url
-        if source_url == "https://thewilbur.com/calendar/":
-            # The calendar advertises this public WordPress REST representation.
-            # It contains the same rendered performance rows and identities.
-            fetch_url = WILBUR_FEED
         if source_url in TICKETMASTER_VENUES:
             fetch_url = TICKETMASTER_ENDPOINT + "?" + urlencode({
                 "size": 100, "page": 0, "sort": "date,asc",
@@ -169,15 +168,14 @@ class CalendarCollector:
                 # former doors-only timestamp with the explicit show time.
                 for event in events:
                     event["external_identity"] = "event-url:" + event["url"]
-        elif fetch_url == WILBUR_FEED:
-            document = json.loads(text)
-            if (document.get("id") != 39 or document.get("status") != "publish"
-                    or document.get("link") != source_url):
-                raise ValidationError("Unexpected Wilbur calendar representation.")
-            rendered = document.get("content", {}).get("rendered")
-            if not isinstance(rendered, str):
-                raise ValidationError("Wilbur calendar is missing its rendered performances.")
-            events, parsing = adapters_boston_html.extract(rendered, source_url, page.retrieved_at)
+            elif source_url == "https://thewilbur.com/calendar/":
+                identities = json.loads((Path(__file__).parent / "wilbur-performance-identities.json").read_text())["identities"]
+                for event in events:
+                    ticket_id = re.search(r"/event/([0-9A-Fa-f]+)(?:[/?#]|$)", event["url"])
+                    if not ticket_id:
+                        raise ValidationError("Wilbur performance is missing its provider ticket ID.")
+                    provider_id = ticket_id[1].upper()
+                    event["external_identity"] = identities.get(provider_id, "ticketmaster:event:" + provider_id)
         elif host in ("www.mideastoffers.com", "www.mideastclub.com"):
             events, parsing = adapters_middle_east.extract(text, fetch_url, page.retrieved_at)
         elif host == "scullersjazz.com":

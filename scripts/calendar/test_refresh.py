@@ -6,7 +6,7 @@ from types import SimpleNamespace
 from unittest.mock import patch
 import refresh
 import threading
-from collector import CalendarCollector, CITY_FEED, WILBUR_FEED, TICKETMASTER_VENUES
+from collector import CalendarCollector, CITY_FEED, TICKETMASTER_VENUES
 from urllib.parse import urlsplit, parse_qs
 
 class RefreshTests(unittest.TestCase):
@@ -36,18 +36,21 @@ class RefreshTests(unittest.TestCase):
         self.assertEqual(saved['events'],[self.other]); self.assertEqual(result['sources_failed'],19)
 
 class DirectFeedTests(unittest.TestCase):
-    def test_wilbur_public_representation_keeps_performance_identity(self):
+    def test_wilbur_early_and_late_performances_keep_separate_existing_ids(self):
         source='https://thewilbur.com/calendar/'
-        html='<div class="event-modal" id="event-modal-example"><h2 class="modal-event-name">Example</h2><a class="modal-show-info" href="https://thewilbur.com/event/example/">Info</a><div class="modal-ticket-row" data-date="2026-11-01"><span class="modal-ticket-when">Nov 1, 2026 at 7:00 PM</span></div></div>'
         class Transport:
             def fetch(self,url,stop,public_headers=None):
-                self.url=url
-                body=json.dumps({'id':39,'status':'publish','link':source,'content':{'rendered':html}}).encode()
-                return SimpleNamespace(body=body,final_url=url,status=200,retrieved_at='2026-10-23T23:00:00+00:00')
-        transport=Transport()
-        result=CalendarCollector({source:{'fallback_venue':'Wilbur Theatre'}},transport=transport,minimum_spacing=0).fetch(source,threading.Event())
-        self.assertEqual(transport.url,WILBUR_FEED)
-        self.assertEqual(result.parsed_events[0]['external_identity'],'html:https://thewilbur.com/event/example/#2026-11-01T19:00')
+                events=[]
+                for ticket,clock in [('0100654FA86FCA06','19:00'),('0100654FA86CC9F7','21:45')]:
+                    events.append({'id':ticket,'name':'Anthony Jeselnik: Wrath of Man',
+                        'url':'https://www.ticketmaster.com/event/'+ticket,
+                        'dates':{'start':{'localDate':'2027-01-16','localTime':clock+':00'}},
+                        '_embedded':{'venues':[{'name':'The Wilbur'}]}})
+                return SimpleNamespace(body=json.dumps({'_embedded':{'events':events}}).encode(),final_url=url,status=200,retrieved_at='2026-10-23T23:00:00+00:00')
+        result=CalendarCollector({source:{'fallback_venue':'Wilbur Theatre'}},transport=Transport(),minimum_spacing=0).fetch(source,threading.Event())
+        self.assertEqual([e['external_identity'] for e in result.parsed_events],[
+            'html:https://thewilbur.com/event/anthony-jeselnik-wrath-of-man/#2027-01-16T19:00',
+            'html:https://thewilbur.com/event/anthony-jeselnik-wrath-of-man/#2027-01-16T21:45'])
 
     def test_ticketmaster_routes_and_existing_big_night_identity(self):
         for source, venue_id in TICKETMASTER_VENUES.items():

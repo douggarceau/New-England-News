@@ -22,6 +22,7 @@ Brighton Music Hall, Paradise, MGM and Big Night Live use the public
 Ticketmaster Discovery feeds embedded by their official promoter, Crossroads
 Presents. The public widget key and venue IDs were verified on October 23,
 2026; every returned event still passes the exact venue/room policy. The
-Wilbur uses the public WordPress REST representation advertised by its
-calendar page, validating the page ID, published status and canonical link.
+Wilbur uses its official Ticketmaster venue feed. A checked-in mapping of
+91 existing performance identities preserves separate show times and prevents
+duplicates when changing providers. New performances use their ticket ID.
 These routes avoid making collection depend on the presentation page shell.
