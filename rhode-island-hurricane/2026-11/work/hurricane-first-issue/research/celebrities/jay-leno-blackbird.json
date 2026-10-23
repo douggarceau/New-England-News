@@ -1,0 +1,151 @@
+{
+  "slug": "jay-leno-blackbird",
+  "title": "Jay Leno Meets the $2.5 Million Stick Shift",
+  "dek": "Hennessey’s Blackbird preview puts an extravagant price on a familiar pleasure: changing your own gears.",
+  "bodyparagraphs": [
+    "The man with the Newport mansion once admitted that he rented a car when he came to town. Jay Leno told Forbes in 2021 that the salt air was too hard on automobiles to keep his collection at Seafair. The house even had a six-car garage. A famous car collector still has to think about rust.",
+    "That practical streak makes an amusing companion to the machine getting a walkaround on Jay Leno’s Garage: Hennessey’s proposed Blackbird, with designer Nathan Malinick there to explain it. That is the pleasure of a walkaround: a chance to ask what the designer was thinking before anyone reaches for the keys.",
+    "Hennessey plans 71 cars, starting at $2.5 million before taxes, with customer production targeted for 2029–2030. Its August announcement describes a six-speed manual, rear-wheel drive and an interior with physical controls and no screens. The design takes its name and inspiration from the SR-71 Blackbird aircraft.",
+    "The proposed 6.2-liter V8, developed with Ilmor, has no turbochargers. Hennessey is targeting 800–850 horsepower and more than 9,000 rpm. Those are development targets for a car still several years from customer production.",
+    "The promise also includes room for two carry-on bags and four cup holders. That is a wonderfully ordinary detail to find inside such an expensive fantasy. Someone, somewhere, has considered what happens to your coffee.",
+    "The interesting question is what this buys the person holding the wheel. A manual gearbox gives the driver another job: choosing a gear and getting the change right. An awkward change belongs to you. So does a good one. There is pleasure in learning a machine well enough to stop thinking about every movement. Paying millions for that pleasure is a different matter, but the pleasure itself is easy to understand.",
+    "Leno offered his own explanation of expensive enthusiasms in that Forbes interview. He and Mavis had bought Seafair in 2017 for $13.5 million after spotting it during a visit to Newport. He described asking to buy the place furnished, right down to the ketchup in the refrigerator. The appeal, he said, was having a house he liked, ready to use.",
+    "“I don’t buy things for investment. I buy things because I like them,” he told Forbes.",
+    "Production is years away. The useful questions will be how it shifts, how it rides and whether the owner wants to take the long way home. A specification sheet cannot settle those.",
+    "Meanwhile, anyone tempted by the Blackbird’s sales pitch can try the inexpensive part first: find a manual car, put away the phone and enjoy the drive. The $2.5 million can wait."
+  ],
+  "source_notes": [
+    {
+      "id": 1,
+      "url": "https://www.forbes.com/sites/michellehofmann/2021/04/22/comic-jay-leno-opens-up-about-buying-a-newport-mansion-and-returning-to-primetime-as-the-host-of-you-bet-your-life/",
+      "ref": "turn88view0",
+      "outlet": "Forbes, Michelle Hofmann interview",
+      "date": "2021-04-22",
+      "claims": [
+        "Leno said he rented cars at Seafair because of salt air; this is dated testimony, not verified current practice.",
+        "Jay and Mavis bought Seafair in 2017 for $13.5 million; Leno described buying it furnished, including refrigerator contents.",
+        "The single direct quotation about buying what he likes is 13 words."
+      ],
+      "paragraph_numbers": [
+        1,
+        7,
+        8
+      ],
+      "word_limit": 200,
+      "conservative_derived_word_count": 132,
+      "source_key": "leno-forbes-2021",
+      "title": "Jay Leno on buying a Newport mansion and buying things he likes"
+    },
+    {
+      "id": 2,
+      "url": "https://www.hennesseyspecialvehicles.com/news/all-new-hennessey-blackbird-hypercar-revealed/",
+      "ref": "turn86view0",
+      "outlet": "Hennessey Special Vehicles",
+      "date": "2026-08-03",
+      "claims": [
+        "71 planned examples; $2.5 million base price before taxes; customer production targeted for 2029–2030.",
+        "Six-speed manual, rear-wheel drive, screen-free control philosophy, SR-71 inspiration.",
+        "Ilmor-developed naturally aspirated 6.2-liter V8; target power, rpm, weight and performance are manufacturer projections.",
+        "Planned luggage space and four cup holders."
+      ],
+      "paragraph_numbers": [
+        3,
+        4,
+        5
+      ],
+      "additional_derived_text": "Title, dek and final paragraph price reference count toward this source’s budget.",
+      "word_limit": 200,
+      "conservative_derived_word_count": 191,
+      "source_key": "hennessey-announcement",
+      "title": "All new Hennessey Blackbird hypercar revealed"
+    },
+    {
+      "id": 3,
+      "url": "https://www.facebook.com/jaylenosgarage/posts/when-a-hennessey-comes-to-the-garage-you-know-things-are-about-to-get-interestin/1423793666595564/",
+      "ref": "turn90search12",
+      "outlet": "Jay Leno’s Garage official social post, indexed text",
+      "date": "Accessed 2026-10-23",
+      "claims": [
+        "Official post identifies Nathan Malinick and a YouTube Blackbird walkaround.",
+        "Preview status also appears in the official Garage video metadata supplied by the editor; no first-person viewing or driving claim is made."
+      ],
+      "paragraph_numbers": [
+        2
+      ],
+      "word_limit": 200,
+      "video_url": "https://www.youtube.com/watch?v=Mp4u3oIpba4",
+      "access_limit": "YouTube and full Facebook page fetches were throttled. Indexed official social text was available. No transcript or exact video quotations used.",
+      "conservative_derived_word_count": 50,
+      "source_key": "official-garage-preview",
+      "title": "Jay Leno’s Garage announces the Blackbird walkaround with Nathan Malinick"
+    }
+  ],
+  "word_count": 430,
+  "reporting_limits": [
+    "Written for a November 2026 issue using sources checked October 23, 2026; no original interview, car inspection or test drive.",
+    "All Blackbird performance figures, production quantities and timing are attributed manufacturer plans. No claim that Leno bought or drove it.",
+    "Seafair material is explicitly from a 2021 interview; no claim of current full-time Newport residence or current rental-car practice.",
+    "Paragraphs 6, 9 and 10 are original editorial commentary, not descriptions of a witnessed drive.",
+    "The manufacturer source budget includes headline/dek and the closing price reference; source-word counts should be checked again if expanded."
+  ],
+  "word_count_includes": "Body paragraphs only; excludes headline, dek and editorial source notes.",
+  "body": [
+    {
+      "text": "The man with the Newport mansion once admitted that he rented a car when he came to town. Jay Leno told Forbes in 2021 that the salt air was too hard on automobiles to keep his collection at Seafair. The house even had a six-car garage. A famous car collector still has to think about rust.",
+      "sources": [
+        1
+      ]
+    },
+    {
+      "text": "That practical streak makes an amusing companion to the machine getting a walkaround on Jay Leno’s Garage: Hennessey’s proposed Blackbird, with designer Nathan Malinick there to explain it. That is the pleasure of a walkaround: a chance to ask what the designer was thinking before anyone reaches for the keys.",
+      "sources": [
+        3
+      ]
+    },
+    {
+      "text": "Hennessey plans 71 cars, starting at $2.5 million before taxes, with customer production targeted for 2029–2030. Its August announcement describes a six-speed manual, rear-wheel drive and an interior with physical controls and no screens. The design takes its name and inspiration from the SR-71 Blackbird aircraft.",
+      "sources": [
+        2
+      ]
+    },
+    {
+      "text": "The proposed 6.2-liter V8, developed with Ilmor, has no turbochargers. Hennessey is targeting 800–850 horsepower and more than 9,000 rpm. Those are development targets for a car still several years from customer production.",
+      "sources": [
+        2
+      ]
+    },
+    {
+      "text": "The promise also includes room for two carry-on bags and four cup holders. That is a wonderfully ordinary detail to find inside such an expensive fantasy. Someone, somewhere, has considered what happens to your coffee.",
+      "sources": [
+        2
+      ]
+    },
+    {
+      "text": "The interesting question is what this buys the person holding the wheel. A manual gearbox gives the driver another job: choosing a gear and getting the change right. An awkward change belongs to you. So does a good one. There is pleasure in learning a machine well enough to stop thinking about every movement. Paying millions for that pleasure is a different matter, but the pleasure itself is easy to understand.",
+      "sources": []
+    },
+    {
+      "text": "Leno offered his own explanation of expensive enthusiasms in that Forbes interview. He and Mavis had bought Seafair in 2017 for $13.5 million after spotting it during a visit to Newport. He described asking to buy the place furnished, right down to the ketchup in the refrigerator. The appeal, he said, was having a house he liked, ready to use.",
+      "sources": [
+        1
+      ]
+    },
+    {
+      "text": "“I don’t buy things for investment. I buy things because I like them,” he told Forbes.",
+      "sources": [
+        1
+      ]
+    },
+    {
+      "text": "Production is years away. The useful questions will be how it shifts, how it rides and whether the owner wants to take the long way home. A specification sheet cannot settle those.",
+      "sources": []
+    },
+    {
+      "text": "Meanwhile, anyone tempted by the Blackbird’s sales pitch can try the inexpensive part first: find a manual car, put away the phone and enjoy the drive. The $2.5 million can wait.",
+      "sources": []
+    }
+  ],
+  "direct_quote_word_counts": [
+    13
+  ]
+}

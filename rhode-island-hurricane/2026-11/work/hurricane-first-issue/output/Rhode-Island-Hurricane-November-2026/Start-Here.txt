@@ -1,0 +1,8 @@
+RHODE ISLAND HURRICANE
+NOVEMBER 2026
+
+Open the Word manuscript to read the complete issue text and proposed cover copy.
+The Stories folder contains one copyable text file for each article, with its sources at the bottom.
+Cover-Copy.txt contains only the proposed cover wording.
+Editorial-Handoff.txt records art direction, article update notes and the unfinished cover-image status.
+Sources.txt contains every source URL in plain text.

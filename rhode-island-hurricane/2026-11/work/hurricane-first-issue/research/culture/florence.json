@@ -1,0 +1,82 @@
+{
+  "slug": "next-stop-florence",
+  "section": "Culture",
+  "title": "Next Stop Florence",
+  "dek": "Ten Rhode Island Philharmonic musicians are bound for Italy and an anniversary with Mozart at its center.",
+  "body": [
+    {
+      "text": "For ten members of the Rhode Island Philharmonic, the next engagement starts with a flight to Florence. The musicians are scheduled to leave November 3, according to the Brown Daily Herald, for what festival founder Joyce Acciaioli Rudge describes as the orchestra’s first international appearance.",
+      "sources": [
+        1,
+        3
+      ]
+    },
+    {
+      "text": "On November 7, they are due to join the Accademia del Maggio Musicale Fiorentino for Mozart’s Requiem at the Basilica of Santa Croce. The festival’s published program lists a 9 p.m. performance.",
+      "sources": [
+        2
+      ]
+    },
+    {
+      "text": "The occasion is Rising from the Arno, a November 1–8 festival marking sixty years since the 1966 flood that devastated Florence. Water and mud threatened the city’s paintings, books and historic buildings. Volunteers remembered as the Mud Angels joined the effort to rescue its cultural treasures.",
+      "sources": [
+        2
+      ]
+    },
+    {
+      "text": "Acciaioli Rudge founded Splendor of Florence in Providence in 1999. She told Rhode Island Monthly that she wanted to honor her Italian grandparents, including her artisan grandfathers, by bringing Florentine culture to Rhode Island.",
+      "sources": [
+        3
+      ]
+    },
+    {
+      "text": "The exchange returned to Providence in 2024 with photographs linking Florence’s disaster to the flooding caused by Hurricane Carol in 1954. The Philharmonic also performed with visiting Florentine opera singers at Grace Church.",
+      "sources": [
+        3
+      ]
+    },
+    {
+      "text": "Now the musicians are making the return journey. Santa Croce was itself damaged in the 1966 flood. Sixty years later, Rhode Island will have a place in the music marking its survival.",
+      "sources": [
+        3
+      ]
+    }
+  ],
+  "source_notes": [
+    {
+      "id": 1,
+      "outlet": "The Brown Daily Herald",
+      "date": "October 22, 2026",
+      "title": "R I Philharmonic Orchestra to take first international trip to Florence",
+      "url": "https://www.browndailyherald.com/article/ri-philharmonic-orchestra-to-take-first-international-trip-to-florence-20261022",
+      "ref": "turn82search0",
+      "claims": "Indexed original report identifies ten professional-orchestra musicians and departure on November 3. Full page returned an access error.",
+      "word_limit": 200
+    },
+    {
+      "id": 2,
+      "outlet": "Splendor of Florence",
+      "date": "Accessed October 23, 2026",
+      "title": "Rising from the Arno official festival program",
+      "url": "https://splendorofflorence.com/pages/rising-from-the-arno",
+      "ref": "turn84view0",
+      "claims": "November 1–8 festival, sixty-year commemoration, Mud Angels, Mozart Requiem with Rhode Island Philharmonic and Accademia del Maggio at Santa Croce on November 7 at 9 p.m.",
+      "word_limit": 200
+    },
+    {
+      "id": 3,
+      "outlet": "Rhode Island Monthly",
+      "date": "August 19, 2026",
+      "title": "Providence Founded Splendor of Florence Festival is Heading to Italy",
+      "url": "https://www.rimonthly.com/splendor-of-florence-italy/",
+      "ref": "turn105view0",
+      "claims": "Founder’s account of the first international appearance, Italian grandparents, 1999 origin, 2024 Providence exchange, and Santa Croce’s flood damage.",
+      "word_limit": 200
+    }
+  ],
+  "reporting_limits": [
+    "Preview written October 23 for a November 2026 issue. If the issue appears after November 7, verify the concert occurred and rewrite as a reported follow-up.",
+    "Ten orchestra members are traveling; do not describe the delegation as the entire orchestra or as a youth orchestra.",
+    "The first-international-appearance claim is attributed to the festival founder. No original interview was conducted."
+  ]
+}

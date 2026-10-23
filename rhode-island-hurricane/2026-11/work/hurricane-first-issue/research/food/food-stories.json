@@ -1,0 +1,576 @@
+[
+  {
+    "slug": "scialo-the-ovens-stayed-on",
+    "category": "Italian food",
+    "title": "The Ovens Stayed On",
+    "dek": "Scialo Bros. nearly became a Federal Hill memory. Keeping its Italian baking tradition alive took working ovens, old recipes and a new beginning.",
+    "bodyparagraphs": [
+      "When Scialo Bros. Bakery closed in 2020, the ovens kept going. In his report on the shop’s return the following year, WJAR’s R.J. Heim explained why: the old brick structures had been kept heated because there was concern that cooling them could cause damage. Even with the door shut, this bakery required care.",
+      "The shop had opened on Providence’s Federal Hill in 1916. Sisters Carol Scialo Gaeta and Lois Scialo Ellis later carried on their father Luigi’s business. By the time investors arranged its 2021 reopening, preserving the name was only part of the deal. The family recipes and working ovens mattered, too. WJAR reported that Carol returned as an employee, bringing her knowledge into the next chapter.",
+      "The job came with a change of status, from owner to employee, but Gaeta sounded pleased to be back. “Retirement is no fun!” she told WJAR in 2021.",
+      "The current menu at 257 Atwells Avenue includes ricotta pie, blackberry crostata, wine biscuits and cannoli. The fall selection adds an apricot-and-almond-paste tart. Somebody still has to settle the argument over what to bring to dinner.",
+      "There are new hands in the story. In its October 12, 2026 feature, Providence Business News identified general manager Olivia DeAngelis as the bakery’s public face since the reopening. The business continues beyond the original family’s ownership, with the old name still above the work.",
+      "In 2026, the Scialo name is 110 years old. The bakery has changed hands and survived a closure. There are still cannoli on Atwells Avenue bearing that name."
+    ],
+    "source_notes": [
+      {
+        "url": "https://turnto10.com/news/local/story-behind-surprise-reopening-of-scialo-bros-bakery-on-federal-hill-in-providence",
+        "refs": [
+          "turn98view1"
+        ],
+        "title": "Story behind surprise reopening of Scialo Bros. Bakery on Federal Hill in Providence",
+        "publisher": "WJAR / R.J. Heim",
+        "published": "2021-05-21",
+        "type": "Independent firsthand reporting",
+        "claims": [
+          "Heated brick ovens during closure; reopening conditions; Carol’s return as an employee; father Luigi and sister Lois.",
+          "Gaeta’s four-word retirement remark is explicitly dated to her 2021 interview."
+        ],
+        "paragraphs": [
+          1,
+          2
+        ],
+        "id": 1,
+        "outlet": "WJAR / R.J. Heim",
+        "date": "2021-05-21",
+        "ref": "turn98view1",
+        "word_limit": 200
+      },
+      {
+        "url": "https://www.scialobakery1916.com/",
+        "refs": [
+          "turn92view0",
+          "turn100view2",
+          "turn100view6"
+        ],
+        "title": "Scialo Bros. Bakery: current menu and company history",
+        "publisher": "Scialo Bros. Bakery",
+        "type": "Primary business source",
+        "claims": [
+          "Current address, listed pastries and cookies, 2021 reopening under new ownership."
+        ],
+        "paragraphs": [
+          2,
+          4,
+          5
+        ],
+        "id": 2,
+        "outlet": "Scialo Bros. Bakery",
+        "date": "Accessed October 23, 2026",
+        "ref": "turn92view0",
+        "word_limit": 200
+      },
+      {
+        "url": "https://pbn.com/america-250-enduring-success-scialo-bros-bakery/",
+        "refs": [
+          "turn98view0"
+        ],
+        "title": "America 250—Enduring Success: Scialo Bros. Bakery",
+        "publisher": "Providence Business News / Mica Kanner-Mascolo",
+        "published": "2026-10-12",
+        "type": "Independent reporting; accessible introduction and photo caption only",
+        "claims": [
+          "1916 founding; current general manager Olivia DeAngelis; ongoing business in October 2026."
+        ],
+        "paragraphs": [
+          2,
+          5
+        ],
+        "id": 3,
+        "outlet": "Providence Business News / Mica Kanner-Mascolo",
+        "date": "2026-10-12",
+        "ref": "turn98view0",
+        "word_limit": 200
+      }
+    ],
+    "word_count": 255,
+    "reporting_limits": [
+      "Desk-reported feature; no visit, tasting or new interview. Descriptive judgments are editorial reflection, not firsthand sensory reporting.",
+      "Only the publicly accessible introduction and caption of the October 2026 PBN feature were used; its subscription-only body was not read.",
+      "The company history contains an imprecise chronology around Lois’s death and the pandemic. The draft does not reproduce that sequence or assert uninterrupted original-family ownership.",
+      "No recipes, preparation instructions, prices, photographs are reproduced. Confirm seasonal pastry availability at editing time.",
+      "The single four-word quotation comes from WJAR’s 2021 interview and is attributed and dated in the copy."
+    ],
+    "business_status": "Operating: active official fall menu and an independent October 12, 2026 business feature.",
+    "status_checked_at": "2026-10-23",
+    "reporting_opportunity": "A future visit to 257 Atwells Avenue could document today’s bakery work and seek a new, attributed interview with Olivia DeAngelis; no contact or visit has been made.",
+    "body": [
+      {
+        "text": "When Scialo Bros. Bakery closed in 2020, the ovens kept going. In his report on the shop’s return the following year, WJAR’s R.J. Heim explained why: the old brick structures had been kept heated because there was concern that cooling them could cause damage. Even with the door shut, this bakery required care.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "text": "The shop had opened on Providence’s Federal Hill in 1916. Sisters Carol Scialo Gaeta and Lois Scialo Ellis later carried on their father Luigi’s business. By the time investors arranged its 2021 reopening, preserving the name was only part of the deal. The family recipes and working ovens mattered, too. WJAR reported that Carol returned as an employee, bringing her knowledge into the next chapter.",
+        "sources": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "text": "The job came with a change of status, from owner to employee, but Gaeta sounded pleased to be back. “Retirement is no fun!” she told WJAR in 2021.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "text": "The current menu at 257 Atwells Avenue includes ricotta pie, blackberry crostata, wine biscuits and cannoli. The fall selection adds an apricot-and-almond-paste tart. Somebody still has to settle the argument over what to bring to dinner.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "text": "There are new hands in the story. In its October 12, 2026 feature, Providence Business News identified general manager Olivia DeAngelis as the bakery’s public face since the reopening. The business continues beyond the original family’s ownership, with the old name still above the work.",
+        "sources": [
+          2,
+          3
+        ]
+      },
+      {
+        "text": "In 2026, the Scialo name is 110 years old. The bakery has changed hands and survived a closure. There are still cannoli on Atwells Avenue bearing that name.",
+        "sources": [
+          2,
+          3
+        ]
+      }
+    ],
+    "section": "Italian food"
+  },
+  {
+    "slug": "venda-ravioli-sunday-table",
+    "category": "Italian food",
+    "title": "Sunday Starts at Venda",
+    "dek": "Ravioli, pumpkin tortelloni and the Costantino family’s long life on Federal Hill.",
+    "bodyparagraphs": [
+      "Somebody has to make the ravioli. At Venda, that job has supported a Federal Hill business for generations and given the rest of us a head start on Sunday dinner.",
+      "Venda dates its pasta business to 1938. Alan Costantino bought it in 1972, and the company says he remains involved alongside his children. The market expanded into its present home on DePasquale Square in 2001. That is a substantial span of dinners, holidays and changing households for one pasta business to have accompanied.",
+      "The current pickup menu includes five-cheese and spinach ravioli, plus prosciutto-and-provolone ravioli. For an autumn dinner, there is pumpkin tortelloni. Picking a filling may turn out to be the difficult part.",
+      "“It all starts with the ingredients,” Costantino told Food Finessa in 2022. He pointed to flour and cheeses, including ricotta and pecorino paglierino. The interview returned a growing business to the contents of the pasta itself.",
+      "Venda’s own account now lists more than 150 varieties of fresh and frozen pasta. Across the square, the family’s restaurant offers another way to gather. Together, the businesses accommodate different amounts of time, energy and ambition: the meal you assemble at home, or the one somebody else serves.",
+      "The company’s catalog stretches well past ravioli, through manicotti, stuffed shells, tortellini and angel hair. That is plenty of room to change dinner without giving up the Sunday ritual."
+    ],
+    "source_notes": [
+      {
+        "url": "https://vendaraviolistore.com/pages/about-us",
+        "refs": [
+          "turn98view4",
+          "turn100view0"
+        ],
+        "title": "About Us: Venda Ravioli",
+        "publisher": "Costantino’s Venda Ravioli",
+        "type": "Primary business history and current operations",
+        "claims": [
+          "1938 origin; Alan’s 1972 purchase and involvement with his children; 2001 move; 150-plus pasta varieties; restaurant across the square."
+        ],
+        "paragraphs": [
+          2,
+          5
+        ],
+        "id": 1,
+        "outlet": "Costantino’s Venda Ravioli",
+        "date": "Accessed October 23, 2026",
+        "ref": "turn98view4",
+        "word_limit": 200
+      },
+      {
+        "url": "https://vendaraviolistore.com/collections/in-store-pickup-delivery",
+        "refs": [
+          "turn98view5",
+          "turn100view3"
+        ],
+        "title": "Order for Pickup or Delivery",
+        "publisher": "Costantino’s Venda Ravioli",
+        "type": "Primary current menu",
+        "claims": [
+          "Five-cheese, spinach, and prosciutto/provolone ravioli; pumpkin tortelloni listed for pickup."
+        ],
+        "paragraphs": [
+          3
+        ],
+        "id": 2,
+        "outlet": "Costantino’s Venda Ravioli",
+        "date": "Accessed October 23, 2026",
+        "ref": "turn98view5",
+        "word_limit": 200
+      },
+      {
+        "url": "https://www.foodfinessa.com/2022/03/28/a-love-of-pasta-the-story-of-venda-ravioli/",
+        "refs": [
+          "turn92view7",
+          "turn94view2"
+        ],
+        "title": "A Love of Pasta: The Story of Venda Ravioli",
+        "publisher": "Food Finessa",
+        "published": "2022-03-28",
+        "type": "Published owner interview",
+        "claims": [
+          "Costantino’s comments about flour and cheeses as foundations of the pasta.",
+          "Six-word quotation about ingredients, plus the cheeses identified in that same published interview."
+        ],
+        "paragraphs": [
+          4
+        ],
+        "id": 3,
+        "outlet": "Food Finessa",
+        "date": "2022-03-28",
+        "ref": "turn92view7",
+        "word_limit": 200
+      }
+    ],
+    "word_count": 227,
+    "reporting_limits": [
+      "Desk-reported feature; no visit, tasting or new interview. The Sunday-table framing is editorial reflection, not a claim to have observed a particular family’s Sunday meal.",
+      "The company’s 1938 origin date is used. Food Finessa’s separate 1928 biographical narrative and generalized pasta history are not used.",
+      "The current official site gives 275 Atwells Avenue; some older directories give 265. The article uses DePasquale Square instead of propagating the address discrepancy.",
+      "No recipe or cooking directions reproduced. One six-word quotation is attributed to the published 2022 interview. Current menu availability should be checked if individual items are highlighted at publication."
+    ],
+    "business_status": "Operating: current official store, pickup menu, published hours, and family/restaurant pages.",
+    "status_checked_at": "2026-10-23",
+    "reporting_opportunity": "A future market visit could ask the Costantino family which pastas customers take home for Sunday dinners. No family dinner, interview or visit has been arranged.",
+    "body": [
+      {
+        "text": "Somebody has to make the ravioli. At Venda, that job has supported a Federal Hill business for generations and given the rest of us a head start on Sunday dinner.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "text": "Venda dates its pasta business to 1938. Alan Costantino bought it in 1972, and the company says he remains involved alongside his children. The market expanded into its present home on DePasquale Square in 2001. That is a substantial span of dinners, holidays and changing households for one pasta business to have accompanied.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "text": "The current pickup menu includes five-cheese and spinach ravioli, plus prosciutto-and-provolone ravioli. For an autumn dinner, there is pumpkin tortelloni. Picking a filling may turn out to be the difficult part.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "text": "“It all starts with the ingredients,” Costantino told Food Finessa in 2022. He pointed to flour and cheeses, including ricotta and pecorino paglierino. The interview returned a growing business to the contents of the pasta itself.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "text": "Venda’s own account now lists more than 150 varieties of fresh and frozen pasta. Across the square, the family’s restaurant offers another way to gather. Together, the businesses accommodate different amounts of time, energy and ambition: the meal you assemble at home, or the one somebody else serves.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "text": "The company’s catalog stretches well past ravioli, through manicotti, stuffed shells, tortellini and angel hair. That is plenty of room to change dinner without giving up the Sunday ritual.",
+        "sources": [
+          1
+        ]
+      }
+    ],
+    "section": "Italian food"
+  },
+  {
+    "slug": "matunuck-before-the-table-the-pond",
+    "category": "Seafood",
+    "title": "The Farmer Behind Matunuck Oyster Bar",
+    "dek": "Perry Raso needed a dock for his oyster boats. The restaurant came next. Then a fire tested everything he had built.",
+    "bodyparagraphs": [
+      "Perry Raso’s restaurant story starts underwater. He founded Matunuck Oyster Farm on Potter Pond in South Kingstown in 2002, seven years before opening Matunuck Oyster Bar. The business began with growing shellfish and finding a way to get the work done.",
+      "Raso had started digging littlenecks in Point Judith Pond at twelve, according to the company’s biography, and went on to study aquaculture and fisheries technology at the University of Rhode Island. In a July 2026 interview with Ocean State Media’s Ian Donnis, he recalled the lean first years of the oyster farm, when harvesting other shellfish helped bring in money while the oysters grew.",
+      "The restaurant followed a practical need. Raso wanted commercial dock access for his oyster boats. He bought the waterside property and opened the restaurant in 2009. The boats needed a place to land; the restaurant gave the farm another way to reach customers.",
+      "Then came the fire in May 2025. In Donnis’s July 9, 2026 report, Raso was serving customers under a temporary tent while rebuilding the original restaurant. He was looking toward a fall reopening. It was an account of a business still in recovery, with the next stage unfinished.",
+      "The farm’s published tour description traces aquaculture and shellfish through different stages of growth. Matunuck’s own oysters are raised in Potter Pond. That connection between a specific pond and the plate was there before the fire, before the tent and before there was a restaurant.",
+      "Raso told Donnis that he initially resisted a suggestion to put a tent across the street, worrying it would damage the business’s reputation. He changed his mind. “It really saved us,” he said."
+    ],
+    "source_notes": [
+      {
+        "url": "https://rhodyoysters.com/about/",
+        "refs": [
+          "turn92view2"
+        ],
+        "title": "About: Perry Raso, Owner",
+        "publisher": "Matunuck Oyster Bar",
+        "type": "Primary biography and business history",
+        "claims": [
+          "2002 farm, 2009 restaurant; childhood shellfishing; URI study; commercial-dock motivation."
+        ],
+        "paragraphs": [
+          1,
+          2,
+          3
+        ],
+        "id": 1,
+        "outlet": "Matunuck Oyster Bar",
+        "date": "Accessed October 23, 2026",
+        "ref": "turn92view2",
+        "word_limit": 200
+      },
+      {
+        "url": "https://www.oceanstatemedia.org/2026-07-09/just-keep-grinding-perry-raso-on-rebuilding-matunuck-oyster-bar",
+        "refs": [
+          "turn92view6"
+        ],
+        "title": "‘Just keep grinding’: Perry Raso on rebuilding Matunuck Oyster Bar",
+        "publisher": "Ocean State Media / Ian Donnis",
+        "published": "2026-07-09",
+        "type": "Independent firsthand interview",
+        "claims": [
+          "Early farm finances; dock access; May 2025 fire; temporary dining and ongoing rebuilding in July 2026.",
+          "Raso’s initial objection to the temporary tent, his changed view, and the four-word quotation that it saved the business."
+        ],
+        "paragraphs": [
+          2,
+          3,
+          4
+        ],
+        "id": 2,
+        "outlet": "Ocean State Media / Ian Donnis",
+        "date": "2026-07-09",
+        "ref": "turn92view6",
+        "word_limit": 200
+      },
+      {
+        "url": "https://rhodyoysters.com/oyster_farm_tours/",
+        "refs": [
+          "turn92view3"
+        ],
+        "title": "Oyster Farm Tours",
+        "publisher": "Matunuck Oyster Bar",
+        "type": "Primary farm and tour description",
+        "claims": [
+          "Potter Pond oyster production and educational visits showing shellfish growth stages."
+        ],
+        "paragraphs": [
+          5
+        ],
+        "id": 3,
+        "outlet": "Matunuck Oyster Bar",
+        "date": "Accessed October 23, 2026",
+        "ref": "turn92view3",
+        "word_limit": 200
+      },
+      {
+        "url": "https://rhodyoysters.com/",
+        "refs": [
+          "turn100view7",
+          "turn94search8"
+        ],
+        "title": "Matunuck Oyster Bar: current operating notice",
+        "publisher": "Matunuck Oyster Bar",
+        "type": "Primary status check; conflicting seasonal/static sections",
+        "claims": [
+          "Site currently advertises seasonal tent service at 650 Succotash Road while the new restaurant is built; a lower block retains old 629-address/year-round wording."
+        ],
+        "paragraphs": [],
+        "id": 4,
+        "outlet": "Matunuck Oyster Bar",
+        "date": "Accessed October 23, 2026",
+        "ref": "turn100view7",
+        "word_limit": 200
+      }
+    ],
+    "word_count": 274,
+    "reporting_limits": [
+      "Desk-reported farm and recovery feature; no farm visit, tasting or new interview. All reported statements by Raso are attributed to his published July 2026 interview.",
+      "PREPUBLICATION STATUS CHECK: the original restaurant’s actual reopening date was not verified. The official home page still leads with seasonal tent dining and rebuilding, but also carries older year-round/629 Succotash Road text lower down. Do not turn this into a November invitation to a particular dining room without a fresh confirmation.",
+      "The article deliberately dates the tent/rebuilding account to July 2026. It does not claim that the main restaurant has reopened, that the tent will serve in November, or that a specific tour is available to book.",
+      "No claims about oyster flavors, food safety, environmental benefits, or farm production volumes; no preparation instructions.",
+      "One four-word quotation comes from the July 2026 Ocean State Media interview. The original dining room’s reopening remains an unresolved publication update."
+    ],
+    "business_status": "Farm/business remains active in 2026 reporting and current official pages. Original restaurant reopening and November dining arrangements remain unconfirmed.",
+    "status_checked_at": "2026-10-23",
+    "reporting_opportunity": "A future reported farm visit could follow one oyster crop and ask Raso about rebuilding. Verify available tours and the meeting location first; nothing has been booked or requested.",
+    "body": [
+      {
+        "text": "Perry Raso’s restaurant story starts underwater. He founded Matunuck Oyster Farm on Potter Pond in South Kingstown in 2002, seven years before opening Matunuck Oyster Bar. The business began with growing shellfish and finding a way to get the work done.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "text": "Raso had started digging littlenecks in Point Judith Pond at twelve, according to the company’s biography, and went on to study aquaculture and fisheries technology at the University of Rhode Island. In a July 2026 interview with Ocean State Media’s Ian Donnis, he recalled the lean first years of the oyster farm, when harvesting other shellfish helped bring in money while the oysters grew.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "text": "The restaurant followed a practical need. Raso wanted commercial dock access for his oyster boats. He bought the waterside property and opened the restaurant in 2009. The boats needed a place to land; the restaurant gave the farm another way to reach customers.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "text": "Then came the fire in May 2025. In Donnis’s July 9, 2026 report, Raso was serving customers under a temporary tent while rebuilding the original restaurant. He was looking toward a fall reopening. It was an account of a business still in recovery, with the next stage unfinished.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "text": "The farm’s published tour description traces aquaculture and shellfish through different stages of growth. Matunuck’s own oysters are raised in Potter Pond. That connection between a specific pond and the plate was there before the fire, before the tent and before there was a restaurant.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "text": "Raso told Donnis that he initially resisted a suggestion to put a tent across the street, worrying it would damage the business’s reputation. He changed his mind. “It really saved us,” he said.",
+        "sources": [
+          2
+        ]
+      }
+    ],
+    "section": "Seafood"
+  },
+  {
+    "slug": "iggys-chowder-weather",
+    "category": "Seafood",
+    "title": "Chowder Weather",
+    "dek": "How a father’s nickname and a son’s promise became a Rhode Island clam-shack fixture.",
+    "bodyparagraphs": [
+      "November is a perfectly reasonable month to think about clam cakes. The beach towel may be put away; dinner still needs deciding. At Oakland Beach in Warwick, Iggy’s Doughboys & Chowder House keeps the pairing of chowder and clam cakes on the menu through the year.",
+      "The business began in 1989 with Gaetano and Sally Gravino. Gaetano was a hairstylist who had taken extra work at the beach stand before the couple had the chance to lease it. Even the name came from home: the family’s history traces Iggy to a nickname his son David made from the letters on Gaetano’s license plate.",
+      "Rhode Island Monthly traced the early chowder specialty to Sally’s side of the family: Manhattan red. A restaurant now known for offering choices started with a particular family recipe.",
+      "Today, the Warwick menu offers three chowders: New England white, Manhattan red and Rhode Island clear. It also lists stuffed quahogs, whole-belly clams, calamari and fish and chips. The chowder-and-clam-cake combinations keep the original relationship easy to find amid the larger selection. Doughboys, the fried-dough sweet in the business’s name, occupy their own part of the menu.",
+      "The original Warwick location operates year-round, according to its official page. The clam cakes do not disappear with the beach towels. Neither does the argument over which chowder belongs beside them.",
+      "The family’s history records a more serious promise behind the business. Before Gaetano died, he asked David to carry it on. David was a senior at Johnson & Wales, with choices ahead of him. He kept the promise."
+    ],
+    "source_notes": [
+      {
+        "url": "https://iggysri.com/about/",
+        "refs": [
+          "turn103view0"
+        ],
+        "title": "The Iggy’s Family",
+        "publisher": "Iggy’s",
+        "type": "Primary family/business history",
+        "claims": [
+          "Gaetano and Sally’s 1989 start; hairstyling and beach-stand work; nickname origin; David’s succession promise.",
+          "David was a Johnson & Wales senior when his father asked him to carry on the business."
+        ],
+        "paragraphs": [
+          2,
+          5
+        ],
+        "id": 1,
+        "outlet": "Iggy’s",
+        "date": "Accessed October 23, 2026",
+        "ref": "turn103view0",
+        "word_limit": 200
+      },
+      {
+        "url": "https://www.rimonthly.com/clam-shacks/",
+        "refs": [
+          "turn103view2"
+        ],
+        "title": "Where to Shack Up with Clam Cakes, Chowder and More in Rhode Island",
+        "publisher": "Rhode Island Monthly",
+        "type": "Independent reporting and operations-manager interview",
+        "claims": [
+          "Early red chowder specialty came from Sally’s side of the family; David continued the business."
+        ],
+        "paragraphs": [
+          3,
+          5
+        ],
+        "id": 2,
+        "outlet": "Rhode Island Monthly",
+        "date": "Accessed October 23, 2026",
+        "ref": "turn103view2",
+        "word_limit": 200
+      },
+      {
+        "url": "https://iggysri.com/locations/warwick/",
+        "refs": [
+          "turn103view1"
+        ],
+        "title": "Warwick Doughboys and Chowder House",
+        "publisher": "Iggy’s",
+        "type": "Primary current location/operations page",
+        "claims": [
+          "Warwick original location remains open year-round at 889 Oakland Beach Avenue."
+        ],
+        "paragraphs": [
+          1,
+          5
+        ],
+        "id": 3,
+        "outlet": "Iggy’s",
+        "date": "Accessed October 23, 2026",
+        "ref": "turn103view1",
+        "word_limit": 200
+      },
+      {
+        "url": "https://iggysri.com/wp-content/uploads/2025/07/WARWICK-MENU-BOARDS.pdf",
+        "refs": [
+          "turn104view0",
+          "turn103view3"
+        ],
+        "title": "Warwick menu boards, linked from the current official location page",
+        "publisher": "Iggy’s",
+        "type": "Primary menu PDF",
+        "claims": [
+          "Three chowder choices; clam-cake combinations; stuffed quahogs, whole-belly clams, calamari, fish and chips, and doughboys."
+        ],
+        "paragraphs": [
+          1,
+          4
+        ],
+        "id": 4,
+        "outlet": "Iggy’s",
+        "date": "Accessed October 23, 2026",
+        "ref": "turn104view0",
+        "word_limit": 200
+      }
+    ],
+    "word_count": 258,
+    "reporting_limits": [
+      "Desk-reported food/culture feature; no visit, tasting or new interview. Warmth and seasonality are editorial framing, not claims about an observed meal.",
+      "The menu PDF is hosted in a July 2025 directory but remains the menu linked by the official Warwick page checked October 23, 2026. No prices or daily hours are included.",
+      "No claim that all seafood is caught in Rhode Island, and no recipe, allergy, gluten-free or food-safety claims are made. The red-chowder family attribution comes from published reporting.",
+      "Historical family members are discussed only in the roles established by the sources; no unsupported claim about the present staffing of every Gravino relative."
+    ],
+    "business_status": "Operating: current official Warwick page expressly states year-round service and links its menu and ordering services.",
+    "status_checked_at": "2026-10-23",
+    "reporting_opportunity": "A future Oakland Beach visit could compare the three chowder traditions through a new, attributed family interview and the writer’s own tasting. No outreach or visit has occurred.",
+    "body": [
+      {
+        "text": "November is a perfectly reasonable month to think about clam cakes. The beach towel may be put away; dinner still needs deciding. At Oakland Beach in Warwick, Iggy’s Doughboys & Chowder House keeps the pairing of chowder and clam cakes on the menu through the year.",
+        "sources": [
+          3,
+          4
+        ]
+      },
+      {
+        "text": "The business began in 1989 with Gaetano and Sally Gravino. Gaetano was a hairstylist who had taken extra work at the beach stand before the couple had the chance to lease it. Even the name came from home: the family’s history traces Iggy to a nickname his son David made from the letters on Gaetano’s license plate.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "text": "Rhode Island Monthly traced the early chowder specialty to Sally’s side of the family: Manhattan red. A restaurant now known for offering choices started with a particular family recipe.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "text": "Today, the Warwick menu offers three chowders: New England white, Manhattan red and Rhode Island clear. It also lists stuffed quahogs, whole-belly clams, calamari and fish and chips. The chowder-and-clam-cake combinations keep the original relationship easy to find amid the larger selection. Doughboys, the fried-dough sweet in the business’s name, occupy their own part of the menu.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "text": "The original Warwick location operates year-round, according to its official page. The clam cakes do not disappear with the beach towels. Neither does the argument over which chowder belongs beside them.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "text": "The family’s history records a more serious promise behind the business. Before Gaetano died, he asked David to carry it on. David was a senior at Johnson & Wales, with choices ahead of him. He kept the promise.",
+        "sources": [
+          1
+        ]
+      }
+    ],
+    "section": "Seafood"
+  }
+]

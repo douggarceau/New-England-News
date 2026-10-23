@@ -1,0 +1,49 @@
+{
+  "publication": "Rhode Island Hurricane",
+  "issue": "November 2026",
+  "status": "Cover wording and layout direction completed. Revised cover image remains unfinished after the image tool blocked the earlier revision.",
+  "reference": "The original red hood portrait of Irina Vladi holding a pocket watch, with a white masthead area, navy lettering and gold anchor and star accents.",
+  "hierarchy": [
+    {
+      "element": "Masthead",
+      "placement": "Top white band",
+      "instruction": "RHODE ISLAND above HURRICANE. Preserve the navy and gold identity. Fit the longer name with condensed lettering rather than narrowing or stretching Irina’s portrait."
+    },
+    {
+      "element": "Identity and date",
+      "placement": "Immediately below the masthead",
+      "instruction": "PEOPLE • POWER • CULTURE • TECH with NOVEMBER 2026 kept small but readable."
+    },
+    {
+      "element": "Main cover story",
+      "placement": "Lower portrait area",
+      "instruction": "Taylor Swift and Ashley Taunton receive the dominant headline. Keep Irina’s face, hands and pocket watch visible. Preserve enough contrast for the supporting two-line explanation."
+    },
+    {
+      "element": "Celebrity teasers",
+      "placement": "Left white space beside the portrait",
+      "instruction": "Jay Leno above Vinny Paz, with shorter sublines than the main story."
+    },
+    {
+      "element": "National and technology teasers",
+      "placement": "Right white space beside the portrait",
+      "instruction": "Rhode Island vs Meta above OpenAI. Do not place allegations about Meta in language that implies a court finding."
+    },
+    {
+      "element": "Food line",
+      "placement": "Small line near the lower edge",
+      "instruction": "RAVIOLI, CANNOLI & CLAM CAKES. Use one line when space allows."
+    },
+    {
+      "element": "Model credit",
+      "placement": "Bottom edge",
+      "instruction": "Use the exact credit and illustrative-portrait clarification from the cover copy. It must be readable."
+    }
+  ],
+  "production_notes": [
+    "The existing art reference is 1024 by 1536 pixels with a 2 to 3 aspect ratio. It is a concept image, not a print-ready cover file.",
+    "Final physical trim, bleed, color profile and image resolution must follow the selected printer’s specifications after a printer is chosen.",
+    "No finished Hurricane cover image was produced in this pass, and the image-tool block was not bypassed.",
+    "No cover price, paid advertisement, sponsor endorsement or publication claim has been added."
+  ]
+}

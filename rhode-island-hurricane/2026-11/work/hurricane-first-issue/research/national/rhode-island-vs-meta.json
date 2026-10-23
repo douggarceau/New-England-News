@@ -1,0 +1,256 @@
+{
+  "slug": "rhode-island-vs-meta",
+  "title": "Rhode Island vs. Meta’s Ad Machine",
+  "dek": "The state’s new lawsuit challenges the promises behind Facebook and Instagram’s advertising business. Meta says the case is unfounded.",
+  "issue": "Rhode Island Hurricane — November 2026",
+  "reporting_as_of": "2026-10-23",
+  "genre": "Reported analysis",
+  "headline_sources": [
+    1
+  ],
+  "dek_sources": [
+    1,
+    2
+  ],
+  "body": [
+    {
+      "text": "For a scammer, an advertisement is a purchased introduction. Rhode Island’s attorney general wants the company selling that introduction to answer for the protection it promises.",
+      "sources": [
+        1
+      ],
+      "kind": "reported"
+    },
+    {
+      "text": "On October 22, Attorney General Peter F. Neronha filed suit against Meta, alleging that it failed to curb ads for fraudulent products and financial schemes while telling the public it had sophisticated systems to keep those ads away. His office calls Rhode Island the first state to bring this kind of case against the company, following a similar lawsuit by Santa Clara County in California.",
+      "sources": [
+        1
+      ],
+      "kind": "reported"
+    },
+    {
+      "text": "Reuters reports that the Providence Superior Court suit seeks civil penalties, restitution for consumers, repayment of alleged illicit profits and an order requiring changes. It also describes an allegation that Meta’s AI tools helped scammers improve their ads. Meta called the allegations “unfounded” and said it would fight the case.",
+      "sources": [
+        2
+      ],
+      "kind": "reported"
+    },
+    {
+      "text": "The fight turns on a gap between a promise of protection and the protection actually delivered. That gap will need proving. A filing opens a dispute; it does not establish liability. The state’s argument deserves scrutiny, as does the company’s account of its defenses.",
+      "sources": [
+        1
+      ],
+      "kind": "analysis"
+    },
+    {
+      "text": "National loss reports show the scale of the problem. The Federal Trade Commission says people reported $2.1 billion in losses from scams that began on social media in 2025. About $1.1 billion involved investments. Those nationwide figures cover several kinds of contact; they cannot be read as Rhode Island losses or the damage from paid Meta ads alone.",
+      "sources": [
+        3
+      ],
+      "kind": "reported"
+    },
+    {
+      "text": "Shopping was a route in, too. More than 40 percent of people who reported losing money to a social media scam said it began with an order for something seen in an ad, the FTC reports. Most said they paid for goods that never arrived.",
+      "sources": [
+        3
+      ],
+      "kind": "reported"
+    },
+    {
+      "text": "Buying ads also gives swindlers access to the same tools legitimate businesses use to target people by age, interests and shopping habits, the FTC notes. A con can be delivered to an audience chosen for its likely response. That efficiency is part of what an advertiser buys.",
+      "sources": [
+        3
+      ],
+      "kind": "reported"
+    },
+    {
+      "text": "Meta offers its own account of policing the problem. In March, the company said it had removed more than 159 million scam ads during 2025, with 92 percent taken down before anyone reported them. Those are company figures. They describe the scale of its claimed enforcement without establishing how many fraudulent ads got through or how much harm they caused.",
+      "sources": [
+        4
+      ],
+      "kind": "reported"
+    },
+    {
+      "text": "The same announcement described tests of Facebook warnings about suspicious friend requests and wider scam detection on Messenger. Meta also wanted verified advertisers to generate 90 percent of its advertising revenue by the end of 2026, up from 70 percent. That was a target. Revenue share measures spending; it does not tell us what fraction of all advertisers have been verified.",
+      "sources": [
+        4
+      ],
+      "kind": "reported"
+    },
+    {
+      "text": "The company has also taken alleged scammers to court. In February, it announced suits against four advertisers in Brazil, China and Vietnam, describing fake celebrity endorsements, investment lures and deceptive shopping offers. One case, according to Meta, involved bogus discounts that led to card details being collected and unauthorized recurring subscription charges.",
+      "sources": [
+        5
+      ],
+      "kind": "reported"
+    },
+    {
+      "text": "Meta said it suspended payment methods, disabled related accounts and blocked the web domains used. These were company announcements about specific enforcement efforts months before Rhode Island sued. They show what Meta says it did against particular operators; assessing the protection across its advertising business requires a broader view.",
+      "sources": [
+        5
+      ],
+      "kind": "reported"
+    },
+    {
+      "text": "Counting removals is an incomplete measure. A huge number might reflect strong enforcement, a huge infestation, or both. A useful assessment would connect what was removed to how quickly it disappeared, how widely it spread and whether the same operators returned. Those are questions worth asking of any platform selling advertising.",
+      "sources": [],
+      "kind": "analysis"
+    },
+    {
+      "text": "For the person considering an offer on a screen, being careful before clicking is sensible. It cannot settle what an advertising business owes the people reached by its product. The advertiser’s obligation to tell the truth and the platform’s responsibility for its own promises belong in the same conversation.",
+      "sources": [],
+      "kind": "analysis"
+    },
+    {
+      "text": "The public should expect a clear accounting of how protection works and where it fails. A warning to watch out for scams leaves unfinished the harder question of what the business selling access to us should do.",
+      "sources": [],
+      "kind": "analysis"
+    }
+  ],
+  "source_notes": [
+    {
+      "id": 1,
+      "outlet": "Rhode Island Attorney General",
+      "title": "Official announcement index",
+      "date": "2026-10-22",
+      "url": "https://riag.ri.gov/press-releases",
+      "ref": "turn106view0",
+      "claims": [
+        "October 22 filing; alleged protection failures; first-state qualifier."
+      ],
+      "word_limit": 200,
+      "related_url": "https://riag.ri.gov/press-releases/attorney-general-neronha-sues-meta-fraudulent-advertisements"
+    },
+    {
+      "id": 2,
+      "outlet": "Reuters",
+      "title": "Report on Rhode Island’s Meta lawsuit",
+      "date": "2026-10-22",
+      "url": "https://www.reuters.com/world/rhode-island-sues-meta-over-alleged-tolerance-scam-advertising-2026-10-22/",
+      "ref": "turn110news15",
+      "claims": [
+        "Court, remedies, AI-ad allegation and Meta’s denial."
+      ],
+      "word_limit": 100,
+      "supporting_refs": [
+        "turn74news19",
+        "turn89news2"
+      ]
+    },
+    {
+      "id": 3,
+      "outlet": "Federal Trade Commission",
+      "title": "National social media fraud data",
+      "date": "2026-04-27",
+      "url": "https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2026/04/reported-losses-scams-social-media-eight-times-higher-2020",
+      "ref": "turn109view2",
+      "claims": [
+        "2025 national losses; shopping-ad origin; audience targeting."
+      ],
+      "word_limit": 200
+    },
+    {
+      "id": 4,
+      "outlet": "Meta",
+      "title": "March anti-scam announcement",
+      "date": "2026-03-11; updated 2026-03-30",
+      "url": "https://about.fb.com/news/2026/03/fighting-scammers-protecting-people-with-new-technology-and-partnerships/",
+      "ref": "turn109view1",
+      "claims": [
+        "Company-reported 2025 removals; March warnings; year-end verification revenue target."
+      ],
+      "word_limit": 200
+    },
+    {
+      "id": 5,
+      "outlet": "Meta",
+      "title": "February advertiser litigation announcement",
+      "date": "2026-02-26",
+      "url": "https://about.fb.com/news/2026/02/meta-takes-legal-action-against-scam-advertisers/",
+      "ref": "turn110view0",
+      "claims": [
+        "Company-announced lawsuits and related enforcement actions."
+      ],
+      "word_limit": 200
+    }
+  ],
+  "reporting_limits": [
+    "Drafted from published records and reporting; no interviews or outreach were conducted.",
+    "The official index was accessible. The full AG release returned HTTP 403, and the complaint itself was not obtained. No claim is made to have reviewed its exhibits, complete legal theories or docket.",
+    "The direct litigation response and requested remedies rely on Reuters. The full article had been indexed in the prior verification; the direct Reuters page was inaccessible during this drafting pass.",
+    "Meta’s February and March statements are historical background, not its October response. Enforcement figures and targets are attributed company claims.",
+    "The FTC totals are national reports across social media. They are neither a census of all harm nor a Rhode Island or Meta-advertising loss estimate.",
+    "The final three paragraphs are editorial analysis, not a claim about an adjudicated outcome. Update case status before publication after the reporting cutoff."
+  ],
+  "word_count": 694,
+  "word_count_basis": "Body only; excludes title, dek, source notes and reference markers.",
+  "source_allocation": [
+    {
+      "source_id": 1,
+      "body_paragraphs": [
+        1,
+        2,
+        4
+      ],
+      "body_words": 135,
+      "headline_dek_words": 25,
+      "source_note_words": 16,
+      "allocated_words": 176,
+      "word_limit": 200,
+      "within_limit": true
+    },
+    {
+      "source_id": 2,
+      "body_paragraphs": [
+        3
+      ],
+      "body_words": 50,
+      "headline_dek_words": 19,
+      "source_note_words": 15,
+      "allocated_words": 84,
+      "word_limit": 100,
+      "within_limit": true
+    },
+    {
+      "source_id": 3,
+      "body_paragraphs": [
+        5,
+        6,
+        7
+      ],
+      "body_words": 150,
+      "headline_dek_words": 0,
+      "source_note_words": 16,
+      "allocated_words": 166,
+      "word_limit": 200,
+      "within_limit": true
+    },
+    {
+      "source_id": 4,
+      "body_paragraphs": [
+        8,
+        9
+      ],
+      "body_words": 121,
+      "headline_dek_words": 0,
+      "source_note_words": 16,
+      "allocated_words": 137,
+      "word_limit": 200,
+      "within_limit": true
+    },
+    {
+      "source_id": 5,
+      "body_paragraphs": [
+        10,
+        11
+      ],
+      "body_words": 101,
+      "headline_dek_words": 0,
+      "source_note_words": 12,
+      "allocated_words": 113,
+      "word_limit": 200,
+      "within_limit": true
+    }
+  ],
+  "budget_method": "Conservative assignment of entire source-tagged paragraphs, relevant title/dek and concise source-note prose to each source. Untagged paragraphs are original explanation or analysis; they introduce no new reported incident or litigation facts. JSON and Markdown are two formats of the same text, not additional articles.",
+  "direct_quote_words": 1
+}

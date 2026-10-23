@@ -1,0 +1,121 @@
+RHODE ISLAND HURRICANE
+NOVEMBER 2026 EDITORIAL HANDOFF
+
+COMPLETED
+
+Ten story drafts totaling 4,117 body words, final proposed cover wording, a source register and this production handoff.
+
+COVER IMAGE STATUS
+
+Cover wording and layout direction completed. Revised cover image remains unfinished after the image tool blocked the earlier revision.
+
+ART DIRECTION
+
+The original red hood portrait of Irina Vladi holding a pocket watch, with a white masthead area, navy lettering and gold anchor and star accents.
+
+MASTHEAD - Top white band
+RHODE ISLAND above HURRICANE. Preserve the navy and gold identity. Fit the longer name with condensed lettering rather than narrowing or stretching Irina’s portrait.
+
+IDENTITY AND DATE - Immediately below the masthead
+PEOPLE • POWER • CULTURE • TECH with NOVEMBER 2026 kept small but readable.
+
+MAIN COVER STORY - Lower portrait area
+Taylor Swift and Ashley Taunton receive the dominant headline. Keep Irina’s face, hands and pocket watch visible. Preserve enough contrast for the supporting two-line explanation.
+
+CELEBRITY TEASERS - Left white space beside the portrait
+Jay Leno above Vinny Paz, with shorter sublines than the main story.
+
+NATIONAL AND TECHNOLOGY TEASERS - Right white space beside the portrait
+Rhode Island vs Meta above OpenAI. Do not place allegations about Meta in language that implies a court finding.
+
+FOOD LINE - Small line near the lower edge
+RAVIOLI, CANNOLI & CLAM CAKES. Use one line when space allows.
+
+MODEL CREDIT - Bottom edge
+Use the exact credit and illustrative-portrait clarification from the cover copy. It must be readable.
+
+COVER PRODUCTION
+
+The existing art reference is 1024 by 1536 pixels with a 2 to 3 aspect ratio. It is a concept image, not a print-ready cover file.
+
+Final physical trim, bleed, color profile and image resolution must follow the selected printer’s specifications after a printer is chosen.
+
+No finished Hurricane cover image was produced in this pass, and the image-tool block was not bypassed.
+
+No cover price, paid advertisement, sponsor endorsement or publication claim has been added.
+
+ARTICLE HANDOFF NOTES
+
+These pieces are based on identified published interviews, records and official materials. No original interview, restaurant visit or tasting has been represented as having occurred. Photo sourcing and a final printed page design are separate production work.
+
+TAYLOR SWIFT’S $50,000 GIFT TO A HERO MOM
+- The rescue occurred in July and the donation was reported in August. The November issue must not present either as a new event.
+- The most recent recovery interview cited is dated September 1. The fundraising total is a dated October 23 snapshot.
+- No new interview with the family or Taylor Swift was conducted. Irina Vladi is the cover model and is not Ashley Taunton.
+
+JAY LENO MEETS THE $2.5 MILLION STICK SHIFT
+- Written for a November 2026 issue using sources checked October 23, 2026; no original interview, car inspection or test drive.
+- All Blackbird performance figures, production quantities and timing are attributed manufacturer plans. No claim that Leno bought or drove it.
+- Seafair material is explicitly from a 2021 interview; no claim of current full-time Newport residence or current rental-car practice.
+- Paragraphs 6, 9 and 10 are original editorial commentary, not descriptions of a witnessed drive.
+- The manufacturer source budget includes headline/dek and the closing price reference; source-word counts should be checked again if expanded.
+
+THE PART OF VINNY PAZ’S MOVIE THAT MADE HIM CRY
+- November 2026 anniversary retrospective, not a fresh interview, firsthand film review or report of an anniversary screening.
+- Paz’s remarks come from AP’s 2016 interview; no new quotations are invented or implied.
+- No present-day medical or residence claims. The halo-training account is attributed historical material, not medical advice.
+- The film’s family depiction is described as Paz’s assessment, not this writer’s firsthand critical judgment.
+- The reaction to his induction selection is from the Hall’s December 2024 release; the ceremony occurred June 2025.
+- Streaming access was verified October 23, 2026 and may change before publication.
+- AP source budget includes headline/dek and closing reflection, and should be rechecked if expanded.
+
+RHODE ISLAND VS. META’S AD MACHINE
+- Drafted from published records and reporting; no interviews or outreach were conducted.
+- The official index was accessible. The full AG release returned HTTP 403, and the complaint itself was not obtained. No claim is made to have reviewed its exhibits, complete legal theories or docket.
+- The direct litigation response and requested remedies rely on Reuters. The full article had been indexed in the prior verification; the direct Reuters page was inaccessible during this drafting pass.
+- Meta’s February and March statements are historical background, not its October response. Enforcement figures and targets are attributed company claims.
+- The FTC totals are national reports across social media. They are neither a census of all harm nor a Rhode Island or Meta-advertising loss estimate.
+- The final three paragraphs are editorial analysis, not a claim about an adjudicated outcome. Update case status before publication after the reporting cutoff.
+
+THE TEST THAT BROKE OUT
+- This is an original synthesis of published incident accounts, not an independent technical reproduction or an interview-based investigation.
+- The operational descriptions and impact estimates remain attributed to the organizations reporting them; the draft does not certify those accounts as exhaustive.
+- Interpretations of the agents’ objectives describe observed behavior and researchers’ reconstructions. They do not establish consciousness or human motives.
+- The article distinguishes a deliberately modified internal evaluation from ordinary ChatGPT use and distinguishes the controlled test from an unauthorized real-world intrusion.
+- Reported remediation is not a guarantee against recurrence. No claim is made that the August investigation assessed every later change as of October 23.
+- Technical details are deliberately limited to what readers need to understand the boundary failure; no operational exploit instructions are included.
+
+THE OVENS STAYED ON
+- Desk-reported feature; no visit, tasting or new interview. Descriptive judgments are editorial reflection, not firsthand sensory reporting.
+- Only the publicly accessible introduction and caption of the October 2026 PBN feature were used; its subscription-only body was not read.
+- The company history contains an imprecise chronology around Lois’s death and the pandemic. The draft does not reproduce that sequence or assert uninterrupted original-family ownership.
+- No recipes, preparation instructions, prices, photographs are reproduced. Confirm seasonal pastry availability at editing time.
+- The single four-word quotation comes from WJAR’s 2021 interview and is attributed and dated in the copy.
+
+SUNDAY STARTS AT VENDA
+- Desk-reported feature; no visit, tasting or new interview. The Sunday-table framing is editorial reflection, not a claim to have observed a particular family’s Sunday meal.
+- The company’s 1938 origin date is used. Food Finessa’s separate 1928 biographical narrative and generalized pasta history are not used.
+- The current official site gives 275 Atwells Avenue; some older directories give 265. The article uses DePasquale Square instead of propagating the address discrepancy.
+- No recipe or cooking directions reproduced. One six-word quotation is attributed to the published 2022 interview. Current menu availability should be checked if individual items are highlighted at publication.
+
+THE FARMER BEHIND MATUNUCK OYSTER BAR
+- Desk-reported farm and recovery feature; no farm visit, tasting or new interview. All reported statements by Raso are attributed to his published July 2026 interview.
+- PREPUBLICATION STATUS CHECK: the original restaurant’s actual reopening date was not verified. The official home page still leads with seasonal tent dining and rebuilding, but also carries older year-round/629 Succotash Road text lower down. Do not turn this into a November invitation to a particular dining room without a fresh confirmation.
+- The article deliberately dates the tent/rebuilding account to July 2026. It does not claim that the main restaurant has reopened, that the tent will serve in November, or that a specific tour is available to book.
+- No claims about oyster flavors, food safety, environmental benefits, or farm production volumes; no preparation instructions.
+- One four-word quotation comes from the July 2026 Ocean State Media interview. The original dining room’s reopening remains an unresolved publication update.
+
+CHOWDER WEATHER
+- Desk-reported food/culture feature; no visit, tasting or new interview. Warmth and seasonality are editorial framing, not claims about an observed meal.
+- The menu PDF is hosted in a July 2025 directory but remains the menu linked by the official Warwick page checked October 23, 2026. No prices or daily hours are included.
+- No claim that all seafood is caught in Rhode Island, and no recipe, allergy, gluten-free or food-safety claims are made. The red-chowder family attribution comes from published reporting.
+- Historical family members are discussed only in the roles established by the sources; no unsupported claim about the present staffing of every Gravino relative.
+
+NEXT STOP FLORENCE
+- Preview written October 23 for a November 2026 issue. If the issue appears after November 7, verify the concert occurred and rewrite as a reported follow-up.
+- Ten orchestra members are traveling; do not describe the delegation as the entire orchestra or as a youth orchestra.
+- The first-international-appearance claim is attributed to the festival founder. No original interview was conducted.
+
+PUBLICATION STATUS
+
+No website was changed and nothing was published or sent to a third party.

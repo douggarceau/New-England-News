@@ -1,0 +1,53 @@
+RHODE ISLAND VS. META’S AD MACHINE
+
+The state’s new lawsuit challenges the promises behind Facebook and Instagram’s advertising business. Meta says the case is unfounded.
+
+For a scammer, an advertisement is a purchased introduction. Rhode Island’s attorney general wants the company selling that introduction to answer for the protection it promises.
+
+On October 22, Attorney General Peter F. Neronha filed suit against Meta, alleging that it failed to curb ads for fraudulent products and financial schemes while telling the public it had sophisticated systems to keep those ads away. His office calls Rhode Island the first state to bring this kind of case against the company, following a similar lawsuit by Santa Clara County in California.
+
+Reuters reports that the Providence Superior Court suit seeks civil penalties, restitution for consumers, repayment of alleged illicit profits and an order requiring changes. It also describes an allegation that Meta’s AI tools helped scammers improve their ads. Meta called the allegations “unfounded” and said it would fight the case.
+
+The fight turns on a gap between a promise of protection and the protection actually delivered. That gap will need proving. A filing opens a dispute; it does not establish liability. The state’s argument deserves scrutiny, as does the company’s account of its defenses.
+
+National loss reports show the scale of the problem. The Federal Trade Commission says people reported $2.1 billion in losses from scams that began on social media in 2025. About $1.1 billion involved investments. Those nationwide figures cover several kinds of contact; they cannot be read as Rhode Island losses or the damage from paid Meta ads alone.
+
+Shopping was a route in, too. More than 40 percent of people who reported losing money to a social media scam said it began with an order for something seen in an ad, the FTC reports. Most said they paid for goods that never arrived.
+
+Buying ads also gives swindlers access to the same tools legitimate businesses use to target people by age, interests and shopping habits, the FTC notes. A con can be delivered to an audience chosen for its likely response. That efficiency is part of what an advertiser buys.
+
+Meta offers its own account of policing the problem. In March, the company said it had removed more than 159 million scam ads during 2025, with 92 percent taken down before anyone reported them. Those are company figures. They describe the scale of its claimed enforcement without establishing how many fraudulent ads got through or how much harm they caused.
+
+The same announcement described tests of Facebook warnings about suspicious friend requests and wider scam detection on Messenger. Meta also wanted verified advertisers to generate 90 percent of its advertising revenue by the end of 2026, up from 70 percent. That was a target. Revenue share measures spending; it does not tell us what fraction of all advertisers have been verified.
+
+The company has also taken alleged scammers to court. In February, it announced suits against four advertisers in Brazil, China and Vietnam, describing fake celebrity endorsements, investment lures and deceptive shopping offers. One case, according to Meta, involved bogus discounts that led to card details being collected and unauthorized recurring subscription charges.
+
+Meta said it suspended payment methods, disabled related accounts and blocked the web domains used. These were company announcements about specific enforcement efforts months before Rhode Island sued. They show what Meta says it did against particular operators; assessing the protection across its advertising business requires a broader view.
+
+Counting removals is an incomplete measure. A huge number might reflect strong enforcement, a huge infestation, or both. A useful assessment would connect what was removed to how quickly it disappeared, how widely it spread and whether the same operators returned. Those are questions worth asking of any platform selling advertising.
+
+For the person considering an offer on a screen, being careful before clicking is sensible. It cannot settle what an advertising business owes the people reached by its product. The advertiser’s obligation to tell the truth and the platform’s responsibility for its own promises belong in the same conversation.
+
+The public should expect a clear accounting of how protection works and where it fails. A warning to watch out for scams leaves unfinished the harder question of what the business selling access to us should do.
+
+SOURCES
+
+1. Rhode Island Attorney General | 2026-10-22
+Official announcement index
+https://riag.ri.gov/press-releases
+
+2. Reuters | 2026-10-22
+Report on Rhode Island’s Meta lawsuit
+https://www.reuters.com/world/rhode-island-sues-meta-over-alleged-tolerance-scam-advertising-2026-10-22/
+
+3. Federal Trade Commission | 2026-04-27
+National social media fraud data
+https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2026/04/reported-losses-scams-social-media-eight-times-higher-2020
+
+4. Meta | 2026-03-11; updated 2026-03-30
+March anti-scam announcement
+https://about.fb.com/news/2026/03/fighting-scammers-protecting-people-with-new-technology-and-partnerships/
+
+5. Meta | 2026-02-26
+February advertiser litigation announcement
+https://about.fb.com/news/2026/02/meta-takes-legal-action-against-scam-advertisers/
