@@ -16,3 +16,12 @@ preserved. Source response caps mean this is not an exhaustive city calendar.
 The job commits only `data/cal.json`, then requests the repository's existing
 GitHub Pages build. A concurrent conflicting push fails safely instead of
 replacing other work. Check Actions for collection or deployment failures.
+
+The collector reads City Winery's advertised Boston iCalendar feed directly.
+Brighton Music Hall, Paradise, MGM and Big Night Live use the public
+Ticketmaster Discovery feeds embedded by their official promoter, Crossroads
+Presents. The public widget key and venue IDs were verified on October 23,
+2026; every returned event still passes the exact venue/room policy. The
+Wilbur uses the public WordPress REST representation advertised by its
+calendar page, validating the page ID, published status and canonical link.
+These routes avoid making collection depend on the presentation page shell.
