@@ -289,6 +289,8 @@ button{font:inherit;color:inherit}
 .lspot{--k:#e3170a;position:absolute;top:150px;z-index:40;width:var(--ls);height:var(--lsh);box-sizing:border-box;border-radius:6px;background:var(--panel,#08090b);border:1px solid var(--line,#1e2227);border-top:3px solid var(--k);box-shadow:0 14px 34px #000c,0 0 26px color-mix(in srgb,var(--k) 16%,transparent);overflow:hidden;transition:opacity .45s ease}
 .lspot::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 80% 0%,color-mix(in srgb,var(--k) 26%,transparent),transparent 62%),linear-gradient(180deg,transparent 55%,#000 100%);pointer-events:none}
 .lspot a{transition:opacity .45s ease,transform .45s ease}.lspot.flip a{opacity:0;transform:translateY(6px)}
+.lspot[hidden]{display:none!important}
+@media (max-width:1279px){.lsrow .lspot.ls-extra{display:none!important}}
 .lspot.l{left:calc(max(10px,(100vw - 1760px)/2 - var(--ls) - 20px) - max(0px,(100vw - 1760px)/2))}.lspot.r{right:calc(max(10px,(100vw - 1760px)/2 - var(--ls) - 20px) - max(0px,(100vw - 1760px)/2))}
 .lspot.t2{top:calc(150px + var(--lsh) + 24px)}.lspot.t3{top:calc(150px + 2*var(--lsh) + 48px)}.lspot.t4{top:calc(150px + 3*var(--lsh) + 72px)}
 .lspot a>*{max-width:100%;min-width:0}
@@ -332,7 +334,7 @@ button{font:inherit;color:inherit}
 @media (min-width:1280px){:root{--ls:250px}}
 @media (min-width:1600px){:root{--ls:300px}}
 @media (min-width:1280px){.wrap{padding-left:max(0px,min(calc(var(--ls) + 35px),calc(var(--ls) + 35px - (100vw - 1760px)/2)));padding-right:max(0px,min(calc(var(--ls) + 35px),calc(var(--ls) + 35px - (100vw - 1760px)/2)))}}
-@media (max-width:1279px){:root{--ls:min(46vw,300px)}.lsrow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;justify-items:center;margin:12px 0}.lspot,.lspot.t2,.lspot.t3,.lspot.t4{position:relative;top:auto;left:auto!important;right:auto!important;--lsh:calc(var(--ls)*1.3)}.lspot a{padding:12px 12px 14px;gap:6px}.lspot .ls-go{margin-top:8px}}
+@media (max-width:1279px){:root{--ls:300px}.lsrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px;margin:12px 0}.lsrow>.lspot{position:relative;top:auto!important;left:auto!important;right:auto!important;width:100%;min-width:0;height:auto;min-height:166px}.lsrow>.lspot>a:not(.eadv){min-height:166px}.lspot a{padding:12px 12px 14px;gap:6px}.lspot .ls-go{margin-top:8px}}
 @media (prefers-reduced-motion:reduce){.lspot,.lspot .ls-tag::before,.lspot.t-cw .ls-big{animation:none}.lspot{transition:none}}
 @keyframes nsadGlow{0%,100%{box-shadow:0 0 6px #e3170a66;border-color:#e3170a}50%{box-shadow:0 0 28px #ff2b1aee,0 0 60px #ffb30055;border-color:#ffd21a}}
 @keyframes nsadBlink{0%{opacity:1}50%{opacity:.25}100%{opacity:1}}
@@ -456,6 +458,8 @@ h2.room{font:600 clamp(28px,5vw,44px)/1.05 var(--display);margin:0;letter-spacin
 
 /* front page */
 .front{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:14px;align-items:start}
+.front-local{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:14px;align-items:start;margin-top:14px}
+@media(max-width:900px){.front-local{grid-template-columns:minmax(0,1fr)}}
 .lead{all:unset;cursor:pointer;display:grid;gap:12px;padding:22px;border-radius:6px;background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--red);position:relative;overflow:hidden}
 .lead::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 85% 0%,rgba(227,23,10,.22),transparent 60%);pointer-events:none}
 .lead:hover{border-color:#3a2a2a}
@@ -926,8 +930,8 @@ main input:not([type=checkbox]):not([type=radio]):not([type=file]):focus,main se
 .aud audio{width:100%;height:40px;color-scheme:dark}
 .lead-aud{display:inline-block;margin-left:10px;font:800 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#ff9a4a;border:1px solid #ff6a0088;padding:8px 10px;border-radius:4px;vertical-align:middle;position:relative}
 
-@media (max-width:1279px){.wrap>.lsrow{order:2}.wrap>.nsad{order:3}.wrap>.foot{order:4}}
-.wrap>.nsad{margin-top:18px}
+.site-footer{display:grid;gap:14px;min-width:0}
+.site-footer>.nsad{margin:0}
 a.crrow{color:inherit;text-decoration:none;cursor:pointer}a.crrow:hover{background:#140a0c}
 .crrow.spot{outline:2px solid #ff2a14;outline-offset:-2px;background:#2a0508!important;box-shadow:0 0 24px #ff2a1466;transition:background 1s}
 .lspot.t-spd{--k:#ff2a14;background:radial-gradient(ellipse at 50% 0%,#2a0505,#070708 60%)!important;border-top-color:#ff2a14}
@@ -1137,15 +1141,18 @@ h2.room{text-shadow:0 2px 0 #000,0 0 30px rgba(0,0,0,.7)!important;filter:satura
 .lspot.t-cw::after{height:4px}
 @media (min-width:1700px){:root{--ls:max(300px,calc((100vw - 1760px)/2 - 30px))}}
 </style>
-  <div class="lsrow" aria-label="The Boston Rambler features"><div class="lspot l t1"><a id="lsC"></a></div><div class="lspot r t1"><a id="lsB"></a></div><div class="lspot l t3"><a id="lsA"></a></div><div class="lspot r t2"><a id="lsD"></a></div><div class="lspot l t4"><a id="lsE"></a></div><div class="lspot r t4"><a id="lsF"></a></div><div class="lspot l t2"><a id="lsG"></a></div><div class="lspot r t3"><a id="lsH"></a></div><div class="lspot l t5"><a id="lsI"></a></div><div class="lspot r t5"><a id="lsJ"></a></div><div class="lspot l t6"><a id="lsK"></a></div><div class="lspot r t6"><a id="lsL"></a></div><div class="lspot l t7"><a id="lsM"></a></div><div class="lspot r t7"><a id="lsN"></a></div><div class="lspot l t8"><a id="lsO"></a></div><div class="lspot r t8"><a id="lsP"></a></div></div>
+
 
   <main id="view"></main>
+  <div class="lsrow" aria-label="The Boston Rambler features"><div class="lspot l t1"><a id="lsC"></a></div><div class="lspot r t1"><a id="lsB"></a></div><div class="lspot l t3"><a id="lsA"></a></div><div class="lspot r t2"><a id="lsD"></a></div><div class="lspot l t4"><a id="lsE"></a></div><div class="lspot r t4"><a id="lsF"></a></div><div class="lspot l t2"><a id="lsG"></a></div><div class="lspot r t3"><a id="lsH"></a></div><div class="lspot l t5"><a id="lsI"></a></div><div class="lspot r t5"><a id="lsJ"></a></div><div class="lspot l t6"><a id="lsK"></a></div><div class="lspot r t6"><a id="lsL"></a></div><div class="lspot l t7"><a id="lsM"></a></div><div class="lspot r t7"><a id="lsN"></a></div><div class="lspot l t8"><a id="lsO"></a></div><div class="lspot r t8"><a id="lsP"></a></div></div>
+  <footer class="site-footer">
   <a class="nsad" href="https://newspace.douggarceau.workers.dev/signup" target="_blank" rel="noopener" aria-label="The Boston Rambler is on Newspace exclusively. Join to interact."><span class="nsad-tag">EXCLUSIVE</span><b>The Boston Rambler is on <i>Newspace</i> exclusively</b><span class="nsad-go">Join to interact →</span></a>
 
   <div class="foot"><span>The Boston Rambler</span><span>Sources linked on every story</span></div>
   <div class="fsnd" style="text-align:center;margin:14px 0 0"><button type="button" id="sndBtn" aria-pressed="true" style="all:unset;cursor:pointer;margin:0 6px;padding:5px 10px;border:1px solid #3a4048;border-radius:4px;font:700 11px/1 var(--mono,ui-monospace,monospace);letter-spacing:.08em;text-transform:uppercase;color:#9aa4ad">🔊 Sound on</button><button type="button" id="ambBtn" aria-pressed="false" title="Low background drone." style="all:unset;cursor:pointer;margin:0 6px;padding:5px 10px;border:1px solid #3a4048;border-radius:4px;font:700 11px/1 var(--mono,ui-monospace,monospace);letter-spacing:.08em;text-transform:uppercase;color:#9aa4ad">🎧 Ambience off</button></div>
   <p class="pv" style="margin:14px 0 0;text-align:center;font:600 12px/1.4 var(--mono,ui-monospace,monospace);letter-spacing:.08em;color:#c9a227">Page visits: <b id="visits">…</b></p>
   <p class="legal" style="margin:10px 0 0;text-align:center;font:400 10.5px/1.5 var(--mono,ui-monospace,monospace);letter-spacing:.04em;color:#7d858d">© 2026 The Boston Rambler. All stories, content, designs and software on this site, including Newspace and the Tech &amp; AI Power Map, are the sole property of The Boston Rambler. All rights reserved.</p>
+  </footer>
 </div>
 
 <script>
@@ -1252,7 +1259,7 @@ function evCard(e){return `<a class="ev" style="--gc:${KIND[e.kind]||'#8b949c'}"
 
 function vFront(){setTimeout(()=>{cwFill();cwLoad()},0);
   const [lead,...rest]=STORIES.filter(x=>x.slug!=='ballard-light-rail-2042-forum');
-  const wk=up.filter(e=>e.date<=addDays(todayKey,7)).slice(0,10);
+  const wk=up.filter(e=>e.date<=addDays(todayKey,7)).slice(0,6);
   return `${crimeBanner()}<div class="front">
     <div class="stack">
       <section class="box" style="--c:#d9a400"><div class="bh"><b>The wire · nightlife &amp; scene</b><span>${BARS.length} items</span></div>
@@ -1261,19 +1268,24 @@ function vFront(){setTimeout(()=>{cwFill();cwLoad()},0);
       <div class="lbl"><b>Also in this issue</b><span>${rest.length} stories</span></div>
       <div class="sgrid">${[lead,...rest].filter(Boolean).slice(1,7).map(storyCard).join('')}</div>
 
-      ${vGuide(true)}
       
     </div>
     <div class="stack">
       ${(()=>{const t=STORIES.find(x=>x.trailer&&x.trailer.src);return t?`<section class="box nowp" style="--c:#c9a227"><div class="bh"><b>Now playing · ${esc(t.title)}</b><span>${esc(t.trailer.label||'Trailer')} · ${esc(t.trailer.credit||'')}</span></div><video controls playsinline preload="none" poster="${esc(t.trailer.poster||'')}"><source src="${esc(t.trailer.src)}" type="video/mp4"></video><div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-story="${t.slug}">Read our story →</button></div></section>`:''})()}
       <section class="box" style="--c:#1e90ff"><div class="bh"><b>Shows this week</b><span>tap for tickets</span></div><div class="rows">${wk.map(showRow).join('')||'<div class="empty">No shows listed this week.</div>'}</div>
         <div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="cal">Full calendar →</button></div></section>
-      <section class="box" style="--c:#2fd3c8"><div class="bh"><b>Tech &amp; AI wire</b><span class="techsrc">via AI Signals</span></div><div class="bwl">${((TECH&&TECH.news)||[]).slice(0,6).map(techRow).join('')||'<div class="empty">Feed is loading.</div>'}</div>
+      <section class="box" style="--c:#2fd3c8"><div class="bh"><b>Tech &amp; AI wire</b><span class="techsrc">via AI Signals</span></div><div class="bwl">${((TECH&&TECH.news)||[]).slice(0,4).map(techRow).join('')||'<div class="empty">Feed is loading.</div>'}</div>
         <div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="tech">Tech &amp; AI room →</button></div></section>
       <section class="box crw" style="--c:#ff2a14"><div class="bh"><b><img class="cwmark sm" src="img/prowler-mark.jpg" alt=""><span class="live">● LIVE</span> Crime Watch</b><span>Boston only</span></div><div id="cwFront"></div><div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="crime">Crime Watch →</button></div></section>
-      <section class="box" style="--c:#39ff14"><div class="bh"><b>Scene picks</b><span>not concerts</span></div><div style="display:grid;gap:10px;padding:12px">${upScene.slice(0,3).map(evCard).join('')||'<div class="empty">No events listed.</div>'}</div></section>
-      <section class="box" style="--c:#1e90ff"><div class="bh"><b>Band watch</b><span>200 Boston bands</span></div>${BNEWS.slice().sort((a,b)=>(b.published_at||'').localeCompare(a.published_at||'')).slice(0,2).map(bnRow).join('')}${upEv(BEV).slice(0,2).map(evRow).join('')}${!BNEWS.length&&!upEv(BEV).length?'<div class="empty">The band desk is on it.</div>':''}<div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="bands">All 200 bands →</button></div></section>
+    </div></div>
+    <div class="front-local">
+    <div class="stack">
+      ${vGuide(true)}
       ${VNEWS.length?`<section class="box" style="--c:#ff3a2a"><div class="bh"><b>Venue desk</b><span>${VENUES.length} venues watched</span></div>${VNEWS.slice().sort((a,b)=>(b.published_at||'').localeCompare(a.published_at||'')).slice(0,3).map(vnRow).join('')}<div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="venues">All venues →</button></div></section>`:''}
+    </div>
+    <div class="stack">
+      <section class="box" style="--c:#39ff14"><div class="bh"><b>Scene picks</b><span>not concerts</span></div><div style="display:grid;gap:10px;padding:12px">${upScene.slice(0,3).map(evCard).join('')||'<div class="empty">No events listed.</div>'}</div><div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="scene">More scene picks →</button></div></section>
+      <section class="box" style="--c:#1e90ff"><div class="bh"><b>Band watch</b><span>200 Boston bands</span></div>${BNEWS.slice().sort((a,b)=>(b.published_at||'').localeCompare(a.published_at||'')).slice(0,2).map(bnRow).join('')}${upEv(BEV).slice(0,2).map(evRow).join('')}${!BNEWS.length&&!upEv(BEV).length?'<div class="empty">The band desk is on it.</div>':''}<div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="bands">All 200 bands →</button></div></section>
     </div></div>`;
 }
 function vGuide(compact){const cats=Object.keys(VSHORT).filter(c=>VENUES.some(v=>v.cat===c));const ex=c=>VENUES.filter(v=>v.cat===c).slice(0,40).sort(()=>0).slice(0,3).map(v=>v.name).join(', ');
@@ -1955,7 +1967,22 @@ const AIF=(()=>{try{const t=(typeof TECH!=='undefined'&&TECH)||{};return [].conc
 const WRF=(typeof BARS!=='undefined'?BARS:[]).filter(x=>x&&x.headline&&x.url&&/shoot|gunfire|crime|charged|robber|assault|homicide|murder|missing|threat|abduct|kidnap|stalk|rape|overdose|fentanyl|drug|death|dead|body|stab|arson|burglar|crash|arrest|police|suspect|sheriff|ufo|occult|satan/i.test(x.headline+' '+(x.blurb||''))&&!/corrupt|scandal|misconduct|fraud|lawsuit|investigat|reprimand|complaint/i.test(x.headline)).slice(0,40).map(x=>({tag:'BOSTON WIRE · '+(x.kind||'news'),bigText:x.headline,name:(x.venue||x.hood||'Boston'),when:(typeof shortDay==='function'&&x.date?shortDay(x.date):(x.date||''))+(x.outlet?' · '+x.outlet:''),sub:x.blurb||'',go:'Read it',theme:'st',href:x.url,ext:1}));
 const STF=ST.map(x=>({tag:x.audio?"FEATURED STORY · 🎧 LISTEN":"FEATURED STORY",bigText:x.title,name:"The Boston Rambler",sub:x.dek,go:"Read it",theme:"st",href:"#",story:x.slug}));
 const $=id=>document.getElementById(id),esc=t=>String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;');
-function fill(a,s){if(!a||!s)return;const box=a.parentNode;box.className=box.className.replace(/\bt-\S+/g,'').replace(/\bcwi\b/g,'').trim()+' t-'+s.theme+(s.cwi?' cwi':'');
+// Reserve visible and incoming items so small pools cannot repeat across cards.
+const promoTimers=new WeakMap();
+const promoKey=s=>s.rep?'report:'+s.rep:'title:'+String(s.bigText||s.big||s.name||s.story||s.href).replace(/\s+/g,' ').trim().toLowerCase();
+const narrowExtra=box=>innerWidth<1280&&box.classList.contains('ls-extra');
+function showPromo(id,pool,offset=0,flip=false){
+ const a=$(id);if(!a||a.parentNode.style.display==='none')return;const box=a.parentNode;
+ if(flip&&a.contains(document.activeElement))return;
+ clearTimeout(promoTimers.get(a));box.classList.remove('flip');delete a.dataset.promoNext;
+ if(narrowExtra(box)){box.hidden=true;delete a.dataset.promoKey;return}
+ const used=new Set();document.querySelectorAll('.lsrow a[data-promo-key],.lsrow a[data-promo-next]').forEach(other=>{const b=other.parentNode;if(other===a||b.hidden||b.style.display==='none'||narrowExtra(b))return;if(other.dataset.promoKey)used.add(other.dataset.promoKey);if(other.dataset.promoNext)used.add(other.dataset.promoNext)});
+ let s;for(const list of [pool||[],STF]){for(let n=0;n<list.length;n++){const item=list[(offset+n)%list.length];if(item&&!used.has(promoKey(item))){s=item;break}}if(s)break}
+ if(!s){box.hidden=true;delete a.dataset.promoKey;return}
+ box.hidden=false;const key=promoKey(s);if(a.dataset.promoKey===key)return;
+ a.dataset.promoNext=key;if(flip&&a.dataset.promoKey)flipTo(a,s);else fill(a,s)
+}
+function fill(a,s){if(!a||!s)return;clearTimeout(promoTimers.get(a));a.dataset.promoKey=promoKey(s);delete a.dataset.promoNext;const box=a.parentNode;box.className=box.className.replace(/\bt-\S+/g,'').replace(/\bcwi\b/g,'').trim()+' t-'+s.theme+(s.cwi?' cwi':'');
  a.href=s.href;if(s.view)a.dataset.go=s.view;else delete a.dataset.go;if(s.story)a.dataset.story=s.story;else delete a.dataset.story;if(s.rep){a.dataset.rep=s.rep;a.dataset.hood=s.hood}else{delete a.dataset.rep;delete a.dataset.hood}
  if(s.ext){a.target='_blank';a.rel='noopener'}else{a.removeAttribute('target');a.removeAttribute('rel')}
  a.setAttribute('aria-label',s.bigText||s.name);box.style.setProperty('--k',s.k||'');if(!s.k)box.style.removeProperty('--k');
@@ -1980,32 +2007,32 @@ function pmTeaser(a){if(!a)return;const box=a.parentNode;box.className=box.class
   setInterval(()=>{if(!live())return;sk.classList.add('out');setTimeout(()=>{showS();sk.classList.remove('out')},260)},1800);
   setInterval(()=>{if(live())showC(false)},4200)}).catch(()=>{})}
 const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
-function flipTo(a,s){if(!a)return;if(still){fill(a,s);return}const b=a.parentNode;b.classList.add('flip');setTimeout(()=>{fill(a,s);b.classList.remove('flip')},460)}
-let i=0,j=0;fill($('lsA'),{tag:'BOSTON CRIME',bigText:'Crime headlines',name:'Boston',sub:'Loading the latest…',go:'Crime Watch',theme:'cw',href:'#crime',view:'crime'});fill($('lsB'),NW[0]);fill($('lsC'),CWX[0]);j=Math.min(4,Math.max(0,WRF.length-1));fill($('lsD'),WRF[j]||STF[0]);let q=0;fill($('lsE'),SCF[0]);let a2=0;const BEAT=/corrupt|scandal|misconduct|fraud|brib|ethic|indict|lawsuit|\bsued\b|investigat|reprimand|complaint|probe|resign|fired|deficit|hiding|cover-?up|subpoena|audit|kickback|embezzl|police chief|lieutenant|officers? (fired|charged|disciplined)/i;
+function flipTo(a,s){if(!a)return;clearTimeout(promoTimers.get(a));if(still){fill(a,s);return}const b=a.parentNode;b.classList.add('flip');promoTimers.set(a,setTimeout(()=>{fill(a,s);b.classList.remove('flip')},460))}
+let i=0,j=0;fill($('lsA'),{tag:'BOSTON CRIME',bigText:'Crime headlines',name:'Boston',sub:'Loading the latest…',go:'Crime Watch',theme:'cw',href:'#crime',view:'crime'});fill($('lsB'),NW[0]);fill($('lsC'),CWX[0]);j=Math.min(4,Math.max(0,WRF.length-1));showPromo('lsD',WRF,j);let q=0;showPromo('lsE',SCF);let a2=0;const BEAT=/corrupt|scandal|misconduct|fraud|brib|ethic|indict|lawsuit|\bsued\b|investigat|reprimand|complaint|probe|resign|fired|deficit|hiding|cover-?up|subpoena|audit|kickback|embezzl|police chief|lieutenant|officers? (fired|charged|disciplined)/i;
 const CORR=(typeof BARS!=='undefined'?BARS:[]).filter(x=>x&&x.url&&x.headline&&BEAT.test(x.headline)).slice(0,40).map(x=>({tag:'BOSTON · CORRUPTION & SCANDAL',bigText:x.headline,name:(x.venue||x.hood||'Boston'),when:(typeof shortDay==='function'&&x.date?shortDay(x.date):(x.date||''))+(x.outlet?' · '+x.outlet:''),sub:x.blurb||'',go:'Read it',theme:'cw',cwi:1,href:x.url,ext:1}));
-let CRX=[];fill($('lsH'),CORR[0]||AIF[0]);
+let CRX=[];showPromo('lsH',CORR.length?CORR:AIF);
 const spdIntro={tag:'BPD LIVE · Boston police reports',big:'Live<em>from the BPD report stream</em>',name:'Updated every few minutes',sub:'Assaults, robberies and shootings as Boston police log them, straight from the city\'s open data.',go:'Watch the stream',theme:'spd',href:'#crime',view:'crime'};
 let sp=0,SPF=[spdIntro];fill($('lsG'),spdIntro);
 const spdPull=()=>{try{const g=(typeof CW!=='undefined'&&CW.spd)||[];const V=g.filter(r=>/shooting|homicide|robbery|assault/.test(cwSpdKind(r))&&!/simple assault|intimidation/i.test(r.nibrs_offense_code_description||'')).slice(0,20);if(!V.length)return;
  SPF=V.map(r=>{const k=CRK[cwSpdKind(r)]||CRK.other;const cap=t=>(t||'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase());return {tag:'BPD LIVE · '+k[1],big:esc(r.nibrs_offense_code_description||k[1])+'<em>'+esc(cap(r.neighborhood||r.precinct||'Boston'))+'</em>',name:cap(r.block_address||''),when:(typeof cwLocal==='function'?cwLocal(r.offense_date):''),go:'See it on Crime Watch',theme:'spd',href:'#crime',rep:r.report_number,hood:r.neighborhood||'',k:k[0]}})}catch(e){}};
 setInterval(spdPull,15000);setTimeout(spdPull,4000);
-let u=0;fill($('lsF'),MUF[0]);
+let u=0;showPromo('lsF',MUF);
 let c=0;fetch('data/crime.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d||!d.items)return;
  const it=d.items.slice(0,40).map(x=>({tag:'CRIME WATCH · '+(x.kind||'police'),bigText:x.headline,name:(x.hood||'Boston'),when:(typeof shortDay==='function'?shortDay(x.date):x.date)+(x.outlet?' · '+x.outlet:''),sub:x.blurb,go:'Read it',theme:'cw',cwi:1,href:x.url,ext:1}));
- CWX=CWX.concat(it);CRX=d.items.slice(0,40).map(x=>({tag:'BOSTON CRIME · '+(x.kind||'police'),bigText:x.headline,name:(x.hood||'Boston'),when:(typeof shortDay==='function'?shortDay(x.date):x.date)+(x.outlet?' · '+x.outlet:''),sub:x.blurb,go:'Read it',theme:'cw',cwi:1,href:x.url,ext:1}));if(CRX.length)fill($('lsA'),CRX[0])}).catch(()=>{});
-setInterval(()=>{i++;setTimeout(()=>flipTo($('lsB'),NW[i%NW.length]),450);setTimeout(()=>{if(SCF.length>1){q=(q+1)%SCF.length;flipTo($('lsE'),SCF[q])}},1350);setTimeout(()=>{if(MUF.length>1){u=(u+1)%MUF.length;flipTo($('lsF'),MUF[u])}},1800);setTimeout(()=>{if(SPF.length>1){sp=(sp+1)%SPF.length;flipTo($('lsG'),SPF[sp])}},2250);setTimeout(()=>{if(CORR.length>1){a2=(a2+1)%CORR.length;flipTo($('lsH'),CORR[a2])}},2700);setTimeout(()=>{if(CRX.length>1){c=(c+1)%CRX.length;flipTo($('lsA'),CRX[c])}},900)},5600);
-if(WRF.length>1)setInterval(()=>{j=(j+1)%WRF.length;flipTo($('lsD'),WRF[j])},6000);
+ CWX=CWX.concat(it);CRX=d.items.slice(0,40).map(x=>({tag:'BOSTON CRIME · '+(x.kind||'police'),bigText:x.headline,name:(x.hood||'Boston'),when:(typeof shortDay==='function'?shortDay(x.date):x.date)+(x.outlet?' · '+x.outlet:''),sub:x.blurb,go:'Read it',theme:'cw',cwi:1,href:x.url,ext:1}));if(CRX.length)showPromo('lsA',CRX)}).catch(()=>{});
+setInterval(()=>{i++;setTimeout(()=>showPromo('lsB',NW,i%NW.length,true),450);setTimeout(()=>{if(SCF.length>1){q=(q+1)%SCF.length;showPromo('lsE',SCF,q,true)}},1350);setTimeout(()=>{if(MUF.length>1){u=(u+1)%MUF.length;showPromo('lsF',MUF,u,true)}},1800);setTimeout(()=>{if(SPF.length>1){sp=(sp+1)%SPF.length;showPromo('lsG',SPF,sp,true)}},2250);setTimeout(()=>{if(CORR.length>1){a2=(a2+1)%CORR.length;showPromo('lsH',CORR,a2,true)}},2700);setTimeout(()=>{if(CRX.length>1){c=(c+1)%CRX.length;showPromo('lsA',CRX,c,true)}},900)},5600);
+if(WRF.length>1)setInterval(()=>{j=(j+1)%WRF.length;showPromo('lsD',WRF,j,true)},6000);
 const XT=[['lsI',()=>CRX.length?CRX:WRF,4],['lsJ',()=>WRF,2],['lsK',()=>WRF,12],['lsL',()=>CORR,1],['lsM',()=>CRX.length?CRX:WRF,12],['lsN',()=>MUF,3],['lsO',()=>SCF,2],['lsP',()=>WRF,7]];
 const xk=XT.map(()=>0),xf=XT.map(()=>false);
-const xtFill=(n,flip)=>{const [id,g,o]=XT[n];const L=g()||[];if(!L.length)return;const s=L[(o+xk[n])%L.length];if(flip&&xf[n])flipTo($(id),s);else fill($(id),s);xf[n]=true};
+const xtFill=(n,flip)=>{const [id,g,o]=XT[n];showPromo(id,g(),o+xk[n],flip&&xf[n]);xf[n]=true};
 XT.forEach((_,n)=>xtFill(n,false));
 setInterval(()=>XT.forEach((_,n)=>setTimeout(()=>{xk[n]++;xtFill(n,true)},300+(n%10)*420)),6400);
 /* Fill the side margins with news boxes all the way down the page */
 const XP=[()=>WRF,()=>CRX.length?CRX:WRF,()=>CORR.length?CORR:WRF,()=>STF,()=>CRX.length?CRX:WRF,()=>WRF];
-const lsMore=()=>{if(innerWidth<1280)return;const row=document.querySelector('.lsrow'),w=document.querySelector('.wrap'),s=document.querySelector('.lspot');if(!row||!w||!s)return;
+const lsMore=()=>{XT.forEach(([id],n)=>{if(id.startsWith('lsX'))xtFill(n,false)});if(innerWidth<1280)return;const row=document.querySelector('.lsrow'),w=document.querySelector('.wrap'),s=document.querySelector('.lspot');if(!row||!w||!s)return;
  const step=s.offsetHeight+12,rows=Math.floor((w.offsetHeight-150-40)/step);
  for(let t=9;t<=rows;t++)['l','r'].forEach((side,si)=>{const id='lsX'+t+side;if(document.getElementById(id))return;
-  const d=document.createElement('div');d.className='lspot '+side;d.style.top='calc(150px + '+(t-1)+'*(var(--lsh) + 12px))';d.innerHTML='<a id="'+id+'"></a>';row.appendChild(d);
+  const d=document.createElement('div');d.className='lspot '+side+' ls-extra';d.style.top='calc(150px + '+(t-1)+'*(var(--lsh) + 12px))';d.innerHTML='<a id="'+id+'"></a>';row.appendChild(d);
   XT.push([id,XP[(t*2+si)%XP.length],9+t*3+si*5]);xk.push(0);xf.push(false);xtFill(XT.length-1,false)})};
 setTimeout(lsMore,1500);setTimeout(lsMore,5000);let lsR;addEventListener('resize',()=>{clearTimeout(lsR);lsR=setTimeout(lsMore,400)});
 
@@ -2061,29 +2088,6 @@ document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest
   if(/[?&]app=1\b/.test(location.search)) addEventListener('load',()=>setTimeout(open,600));
 })();
 </script>
-<script>
-/* Front page: keep the two columns the same height (no empty space under the shorter one) */
-(()=>{let busy=false,t;const run=()=>{const fr=document.querySelector('#view .front');if(!fr)return;const st=fr.querySelectorAll(':scope>.stack');if(st.length<2)return;const L=st[0],R=st[1];busy=true;
- // put back anything moved earlier, in its original order
- [...L.querySelectorAll(':scope>[data-mv]')].sort((a,b)=>a.dataset.mv-b.dataset.mv).forEach(e=>{const nx=[...R.children].find(c=>+c.dataset.ord>+e.dataset.mv);R.insertBefore(e,nx||null);delete e.dataset.mv});
- [...R.children].forEach((c,i)=>{if(!c.dataset.ord)c.dataset.ord=i});
- for(let k=0;k<6;k++){const d=R.offsetHeight-L.offsetHeight;const last=R.lastElementChild;if(!last||R.children.length<2)break;const hh=last.offsetHeight+14;if(Math.abs(d-2*hh)>=Math.abs(d))break;last.dataset.mv=last.dataset.ord;L.appendChild(last)}
- // moved boxes keep their order at the bottom of the left column
- [...L.querySelectorAll(':scope>[data-mv]')].sort((a,b)=>a.dataset.mv-b.dataset.mv).forEach(e=>L.appendChild(e));
- // close the last few hundred pixels: trim the bottom box of the taller column
- [...fr.querySelectorAll('[data-trim]')].forEach(e=>{e.style.maxHeight='';e.removeAttribute('data-trim')});
- {const d=R.offsetHeight-L.offsetHeight,T=d>0?R:L,last=T.lastElementChild,ad=Math.abs(d);
-  if(last&&ad>8&&last.offsetHeight-ad>260){last.style.maxHeight=(last.offsetHeight-ad)+'px';last.setAttribute('data-trim','')}}
- setTimeout(()=>busy=false,50)};
- const go=()=>{if(busy)return;clearTimeout(t);t=setTimeout(run,250)};
- const v=document.getElementById('view');if(v)new MutationObserver(go).observe(v,{childList:true,subtree:true});addEventListener('resize',go);addEventListener('load',go);setTimeout(go,3000);
-})();
-</script>
-<style>
-#view [data-trim]{overflow:hidden;position:relative}
-#view [data-trim]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(transparent,var(--panel,#0b0d10) 75%);pointer-events:none}
-#view [data-trim]>:last-child:is(button,a,div){position:absolute;left:14px;right:14px;bottom:12px;z-index:2}
-</style>
 <style>
 /* Story grids: masonry columns, no holes */
 html body #view .sgrid{display:block!important;column-width:270px;column-gap:14px}
