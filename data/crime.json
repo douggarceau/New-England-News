@@ -1,6 +1,16 @@
 {
- "asof": "2026-10-19T22:30:00-04:00",
+ "asof": "2026-10-25T06:00:00-04:00",
  "items": [
+  {
+   "kind": "homicide",
+   "headline": "Man fatally shot in a car in Dorchester Friday night",
+   "blurb": "Police say a man was shot inside a car outside 12 Beauford Lane around 10:25 p.m. Friday and was pronounced dead at the scene. No arrests or suspect information were reported.",
+   "hood": "Dorchester",
+   "spd": [],
+   "date": "2026-10-23",
+   "url": "https://www.universalhub.com/crime/2026/man-shot-dead-car-dacia-street-roxbury",
+   "outlet": "Universal Hub"
+  },
   {
    "kind": "crash",
    "headline": "Car crashes through fences into Jamaica Plain home; two hurt",
