@@ -2,6 +2,16 @@
  "asof": "2026-10-25T06:00:00-04:00",
  "items": [
   {
+   "kind": "courts",
+   "headline": "Former MBTA track inspector pleads guilty to falsifying Red Line records",
+   "blurb": "Andy Vicente, 37, of Bridgewater pleaded guilty in federal court to conspiracy to falsify records and conspiracy to commit wire fraud. Prosecutors allege he and co-conspirators falsified track inspection reports at Cabot Yard in 2024 and submitted overtime for hours not worked. Sentencing is set for Jan. 13.",
+   "hood": "Boston",
+   "spd": [],
+   "date": "2026-10-23",
+   "url": "https://www.boston.com/news/crime/2026/10/23/mbta-cabot-yard-guilty-plea-falsified-track-inspections/",
+   "outlet": "Boston.com"
+  },
+  {
    "kind": "homicide",
    "headline": "Man fatally shot in a car in Dorchester Friday night",
    "blurb": "Police say a man was shot inside a car outside 12 Beauford Lane around 10:25 p.m. Friday and was pronounced dead at the scene. No arrests or suspect information were reported.",
