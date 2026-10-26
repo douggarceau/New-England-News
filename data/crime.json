@@ -1,6 +1,16 @@
 {
- "asof": "2026-10-25T06:00:00-04:00",
+ "asof": "2026-10-26T06:00:00-04:00",
  "items": [
+  {
+   "kind": "robbery",
+   "headline": "Man accused of trying to rob three Boston banks in about half an hour",
+   "blurb": "Police say Anthony Matarazzo, 68, of New Jersey, passed notes demanding cash at East West, Cathay and Bank of America branches on Saturday. He was detained nearby; no gun was recovered. He is expected to be arraigned in Boston Municipal Court on armed robbery.",
+   "hood": "Boston",
+   "spd": [],
+   "date": "2026-10-25",
+   "url": "https://www.boston.com/news/crime/2026/10/25/new-jersey-man-68-allegedly-tries-to-rob-3-boston-banks-in-1-day/",
+   "outlet": "Boston.com"
+  },
   {
    "kind": "courts",
    "headline": "Former MBTA track inspector pleads guilty to falsifying Red Line records",
