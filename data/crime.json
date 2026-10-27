@@ -1,6 +1,16 @@
 {
- "asof": "2026-10-26T06:00:00-04:00",
+ "asof": "2026-10-27T06:00:00-04:00",
  "items": [
+  {
+   "kind": "arrest",
+   "headline": "Man charged with machine gun possession after Dorchester traffic stop",
+   "blurb": "Police say a 25-year-old East Boston man was found with a Glock pistol fitted with a sear switch under the driver's seat after a stop near Dorchester Avenue and Van Winkle Street. He faces machine gun and firearm charges and was expected to be arraigned in Dorchester District Court.",
+   "hood": "Dorchester",
+   "spd": [],
+   "date": "2026-10-26",
+   "url": "https://www.boston.com/news/crime/2026/10/26/man-charged-with-possession-of-a-machine-gun-after-dorchester-traffic-stop/",
+   "outlet": "Boston.com"
+  },
   {
    "kind": "robbery",
    "headline": "Man accused of trying to rob three Boston banks in about half an hour",
