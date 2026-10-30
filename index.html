@@ -2779,9 +2779,9 @@ const cycle=()=>{if(Date.now()>=END){if(ad)ad.classList.remove('on');return}
 setTimeout(cycle,8000);
 })();
 </script>
-<aside id="dirCol" aria-label="Boston business board"><div class="bulbs"></div><header><button class="dx" type="button" aria-label="Close directory">×</button><h2>Boston Business Board</h2><p>The best of Boston, every neighborhood</p><input id="dirQ" type="search" placeholder="Search businesses" aria-label="Search businesses" autocomplete="off"><select id="dirCat" aria-label="Filter by type"></select></header><div id="dirList" role="list"><div class="none">Loading…</div></div><div class="bf">Details gathered from public sources, Oct. 2026. Confirm hours before you go.</div><div class="bulbs"></div></aside>
+<aside id="dirCol" aria-label="Boston business board"><div class="bulbs"></div><header><button class="dx" type="button" aria-label="Close directory">×</button><h2>Boston Business Board</h2><p>The best of Boston, every neighborhood</p><input id="dirQ" type="search" placeholder="Search businesses" aria-label="Search businesses" autocomplete="off"><select id="dirCat" aria-label="Filter by type"></select><select id="dirHood" aria-label="Filter by neighborhood"></select></header><div id="dirList" role="list"><div class="none">Loading…</div></div><div class="bf">Details gathered from public sources, Oct. 2026. Confirm hours before you go.</div><div class="bulbs"></div></aside>
 <script id="dirJs">(()=>{
-const col=document.getElementById('dirCol'),list=document.getElementById('dirList'),q=document.getElementById('dirQ'),sel=document.getElementById('dirCat');
+const col=document.getElementById('dirCol'),list=document.getElementById('dirList'),q=document.getElementById('dirQ'),sel=document.getElementById('dirCat'),hood=document.getElementById('dirHood');
 if(!col||!list)return;
 const E=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const U=u=>/^(https?:|mailto:|tel:)/i.test(u||'')?u:'#';
@@ -2795,21 +2795,23 @@ function row(x){
  const notes=(x.nt||[]).filter(n=>!/TEMPORARILY CLOSED/i.test(n)).map(n=>'<small class="note">'+E(n)+'</small>').join('');
  return '<div class="drow'+(open===x.i?' open':'')+'" role="listitem" data-i="'+E(x.i)+'"><button class="dn" type="button" aria-expanded="'+(open===x.i)+'"><span class="nm">'+E(x.n)+'</span><span class="ty">'+E(/goes here/.test(x.a)?x.c:x.a)+'</span></button>'+
  '<div class="dd"'+(open===x.i?'':' hidden')+'>'+(x.cl?'<div class="clo">Temporarily closed — confirm before visiting</div>':'')+
- '<div class="ad">'+E(x.a)+', RI</div><div class="ct">'+[ph,em,web].filter(Boolean).join('')+'</div>'+
+ '<div class="ad">'+E(x.a)+(x.h&&!x.a.toLowerCase().includes(x.h.split(' ')[0].toLowerCase())?' · '+E(x.h):'')+'</div><div class="ct">'+[ph,em,web].filter(Boolean).join('')+'</div>'+
  '<button class="dmb" type="button" aria-expanded="false">More</button><div class="dm" hidden><p>'+E(x.b)+'</p>'+notes+(src?'<small>Sources: '+src+'</small>':'')+'</div></div></div>';
 }
 function draw(){
  if(!D)return;
- const t=q.value.trim().toLowerCase(),c=sel.value;
- const L=D.items.filter(x=>(c==='all'||x.c===c)&&(!t||(x.n+' '+x.c+' '+x.a+' '+x.b).toLowerCase().includes(t)));
+ const t=q.value.trim().toLowerCase(),c=sel.value,h=hood?hood.value:'all';
+ const L=D.items.filter(x=>(c==='all'||x.c===c)&&(h==='all'||x.h===h)&&(!t||(x.n+' '+x.c+' '+x.a+' '+x.b).toLowerCase().includes(t)));
  list.innerHTML=L.length?L.map(row).join(''):'<div class="none">No matches. Try a different word.</div>';
 }
 fetch('data/directory.json?'+Math.floor(Date.now()/6e5),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{
  if(!d||!d.items)throw 0;D=d;
  sel.innerHTML='<option value="all">All businesses ('+d.items.length+')</option>'+d.cats.map(c=>'<option value="'+E(c)+'">'+E(c)+' ('+d.items.filter(x=>x.c===c).length+')</option>').join('');
+ const fillCats=()=>{const h=hood?hood.value:'all',I=d.items.filter(x=>h==='all'||x.h===h),v=sel.value;sel.innerHTML='<option value="all">All businesses ('+I.length+')</option>'+d.cats.filter(c=>I.some(x=>x.c===c)).map(c=>'<option value="'+E(c)+'">'+E(c)+' ('+I.filter(x=>x.c===c).length+')</option>').join('');sel.value=[...sel.options].some(o=>o.value===v)?v:'all'};
+ if(hood){hood.innerHTML='<option value="all">All neighborhoods</option>'+(d.hoods||[]).map(h=>'<option value="'+E(h)+'">'+E(h)+' ('+d.items.filter(x=>x.h===h).length+')</option>').join('');hood.hidden=!(d.hoods&&d.hoods.length);hood.addEventListener('change',()=>{fillCats();list.scrollTop=0;draw()})}
  sel.value=d.cats.find(c=>d.items.some(x=>x.c===c))||'all';draw();
  const rc=d.cats.filter(c=>d.items.some(x=>x.c===c));let idle=0,hov=false;
- const busy=()=>hov||q.value.trim()||open||col.contains(document.activeElement);
+ const busy=()=>hov||q.value.trim()||open||(hood&&hood.value!=='all')||col.contains(document.activeElement);
  ['pointerenter','touchstart'].forEach(ev=>col.addEventListener(ev,()=>{hov=true},{passive:true}));
  col.addEventListener('pointerleave',()=>{hov=false;idle=0});
  ['input','change','click','scroll'].forEach(ev=>col.addEventListener(ev,()=>{idle=0},true));
