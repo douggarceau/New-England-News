@@ -2752,14 +2752,16 @@ html body .lsrow .lspot.hasad{height:auto!important;min-height:0!important;max-h
    To add one: put it in ADS with its start date; it goes to the top. Ads drop off after their end date. */
 (function(){
 const ADS=[
+{img:'img/ad-show-doja-cat.jpg',href:'https://www.tdgarden.com/events/detail/doja-cat',label:'Live show: Doja Cat with Latto, TD Garden, Monday Nov. 23',start:'2026-10-31',end:'2026-11-23'},
 {img:'img/ad-td-garden.jpg',href:'https://www.tdgarden.com',label:'Featured: TD Garden, 100 Legends Way',start:'2026-10-30',end:'2026-11-29'},
 {img:'img/ad-mgm-music-hall.jpg',href:'https://www.mgmmusichall.com',label:'Featured: MGM Music Hall at Fenway, 2 Lansdowne St',start:'2026-10-30',end:'2026-11-29'},
 {img:'img/ad-house-of-blues.jpg',href:'https://www.houseofblues.com/boston',label:'Featured: House of Blues Boston, 15 Lansdowne St',start:'2026-10-30',end:'2026-11-29'},
- {img:'img/ad-eric-maluk.jpg',href:'https://www.rate.com/ericmaluk',label:'Advertisement: Eric Maluk, Rate. Visit his page or call (401) 254-4403',start:'2026-10-20',end:'2026-11-19'}];
+ {img:'img/ad-eric-maluk.jpg',at:6,href:'https://www.rate.com/ericmaluk',label:'Advertisement: Eric Maluk, Rate. Visit his page or call (401) 254-4403',start:'2026-10-20',end:'2026-11-19'}];
 const live=()=>ADS.filter(a=>!a.end||Date.now()<Date.parse(a.end+'T23:59:59-05:00')).sort((x,y)=>y.start.localeCompare(x.start));
 const boxes=()=>[...document.querySelectorAll('.lsrow .lspot')].filter(b=>!b.hidden&&b.getBoundingClientRect().width>0).sort((x,y)=>{const r=x.getBoundingClientRect(),s=y.getBoundingClientRect();return (r.top-s.top)||(r.left-s.left)});
-const place=()=>{const A=live(),B=boxes();if(!A.length)return;if(B.length<A.length)return;
- B.forEach((bx,i)=>{const ad=A[i];const cur=bx.querySelector(':scope > a.radv');
+const place=()=>{const A=live(),B=boxes();if(!A.length)return;if(!B.length)return;
+ const SL=new Array(B.length).fill(null);A.filter(a=>a.at!=null).forEach(a=>{let k=Math.min(a.at,B.length-1);while(k>=0&&SL[k])k--;if(k>=0)SL[k]=a});A.filter(a=>a.at==null).forEach(a=>{const k=SL.indexOf(null);if(k>=0)SL[k]=a});
+ B.forEach((bx,i)=>{const ad=SL[i];const cur=bx.querySelector(':scope > a.radv');
   if(!ad){if(cur){cur.remove();bx.classList.remove('hasad');delete bx.dataset.frozen}return}
   if(cur&&cur.dataset.img===ad.img)return;
   if(cur)cur.remove();
