@@ -1,4 +1,1394 @@
 {
- "asof": "2026-10-29T22:45:00-04:00",
- "sections": []
+ "asof": "2026-10-29T23:45:00-04:00",
+ "sections": [
+  {
+   "key": "beaches",
+   "title": "Beaches & Harbor Islands",
+   "items": [
+    {
+     "name": "Spectacle Island",
+     "blurb": "The harbor's best swimming island, about 15 minutes by ferry from Long Wharf North. Once a city dump and later capped with Big Dig fill, the 121-acre island opened to the public in 2006 and now has two lifeguarded sandy beaches with showers and changing areas, about five miles of trails up to skyline views, a solar-powered visitor center with a cafe and a marina. Beachcombers turn up sea glass and old pottery, and summer Sunday afternoons have brought jazz concerts. Public ferries run roughly May through Indigenous Peoples Day weekend, so plan a visit for next season.",
+     "address": "Spectacle Island, Boston Harbor Islands (ferry from Long Wharf North, Boston)",
+     "phone": "617-223-8666",
+     "hours": "Seasonal ferry service, about May to mid-October",
+     "url": "https://www.bostonharborislands.org/",
+     "src": "https://boston-discovery-guide.com/boston-harbor-islands.html"
+    },
+    {
+     "name": "Georges Island and Fort Warren",
+     "blurb": "Georges is the traditional hub of the Harbor Islands, a 39-acre island crowned by Fort Warren, an 1845 granite fort that served as a Civil War prison and is now a National Historic Landmark. Expect a gravel beach, paved paths, ranger-led fort tours and the old \"Lady in Black\" legend. Important: the park reports Georges is currently closed for facility repairs, with ferry service there cancelled until the work is done, so check the Boston Harbor Islands site before planning. When open, ferries leave from Long Wharf North downtown.",
+     "address": "Georges Island, Boston Harbor Islands (ferry from Long Wharf North, Boston)",
+     "phone": "617-223-8666",
+     "hours": "Currently closed for repairs; seasonal ferries when open",
+     "url": "https://www.bostonharborislands.org/",
+     "src": "https://www.bostonharborislands.org/little-brewster-island/"
+    },
+    {
+     "name": "Lovells Island",
+     "blurb": "One of the quieter, more rustic Harbor Islands, Lovells offers beach areas, picnic spots, walking trails and ranger programs without the crowds of Spectacle. There are no lifeguards, so swimming is at your own risk. It is also one of the islands with primitive campsites, a handful of individual and group sites with composting toilets and picnic tables but no fresh water, electricity or food, so campers carry everything in. Reservations are required. Access is by the seasonal inter-island water shuttle, so check the current schedule given the Georges Island closure.",
+     "address": "Lovells Island, Boston Harbor Islands",
+     "phone": "1-877-422-6762",
+     "hours": "Seasonal, roughly May to October",
+     "url": "https://www.bostonharborislands.org/",
+     "src": "https://boston-discovery-guide.com/boston-harbor-islands.html"
+    },
+    {
+     "name": "Carson, L Street and M Street Beaches",
+     "blurb": "A long sandy shoreline along Dorchester Bay in South Boston, where Carson, L Street and M Street beaches run together for about three miles. There is a bathhouse, and Joe Moakley Park sits at the southern end with basketball courts, a playground and lawns. L Street is home to the New Year's Day plunge by the L Street Brownies. Take the Red Line to JFK/UMass and walk about half a mile, then stroll north toward Castle Island for a snack at Sullivan's.",
+     "address": "South Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.mass.gov/locations/castle-island-pleasure-bay-m-street-beach-and-carson-beach",
+     "src": "https://www.timeout.com/boston/things-to-do/best-boston-beaches"
+    },
+    {
+     "name": "Pleasure Bay",
+     "blurb": "A bay in South Boston ringed by a waterside loop that leads straight to Castle Island and Fort Independence. Families like the public restrooms and showers, and a picnic area where grilling is allowed. Sullivan's nearby serves fried seafood, lobster rolls and hot dogs. Ride the Red Line to Broadway and walk, or catch the 9 or 11 bus to the City Point terminal. It is a lovely walk in any season even when it is too cold to swim.",
+     "address": "Pleasure Bay, South Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.mass.gov/locations/castle-island-pleasure-bay-m-street-beach-and-carson-beach",
+     "src": "https://www.timeout.com/boston/things-to-do/best-boston-beaches"
+    },
+    {
+     "name": "Revere Beach",
+     "blurb": "Billed as America's first public beach, dating to 1896, Revere Beach stretches about three miles just north of the city and is an easy ride on the Blue Line to Wonderland. It hosts the annual International Sand Sculpting Festival plus kite and pumpkin-run events, and the original Kelly's Roast Beef is here too, a local tradition for roast beef sandwiches after a day on the sand. Wide, flat and family friendly.",
+     "address": "Revere, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://www.timeout.com/boston/things-to-do/best-boston-beaches"
+    },
+    {
+     "name": "Constitution Beach",
+     "blurb": "A sheltered man-made beach in an inlet of East Boston's Orient Heights neighborhood, set right across the water from Logan Airport, so kids can watch planes take off and land. Facilities include a bathhouse with restrooms, a concession stand, a picnic area, athletic fields and tennis courts, and fishing is permitted. Take the Blue Line to Orient Heights and walk over. A low-key neighborhood beach that is easy to reach from downtown.",
+     "address": "Orient Heights, East Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://www.timeout.com/boston/things-to-do/best-boston-beaches"
+    },
+    {
+     "name": "Wollaston Beach",
+     "blurb": "The largest public beach on Boston Harbor, dating to 1908, with more than two miles of shoreline in Quincy's Quincy Shore Reservation. A waterside walkway runs its length, and concession stands line Quincy Shore Drive. It is a classic spot for an evening stroll as much as a swim. From downtown, take the Red Line to North Quincy and transfer to the 211 bus.",
+     "address": "Quincy Shore Reservation, Quincy, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://www.timeout.com/boston/things-to-do/best-boston-beaches"
+    },
+    {
+     "name": "Savin Hill and Malibu Beach",
+     "blurb": "A pair of connected Dorchester beaches, with Malibu Beach running into Savin Hill Beach, long loved by local families for low-key summer days. There is a children's playground and a ballfield nearby. Getting there is simple: take the Red Line to Savin Hill, then walk a few minutes by way of Savin Hill Avenue and Denny Street. A good pick for parents with young kids.",
+     "address": "Savin Hill, Dorchester, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://www.timeout.com/boston/things-to-do/best-boston-beaches"
+    },
+    {
+     "name": "Winthrop Beach",
+     "blurb": "A sandy beach just outside the city in Winthrop, open to the public year-round, with lifeguards on duty from late June to early September. It is quieter than Revere and reachable by public transportation, making it a good choice for a relaxed day by the water close to Boston. Bring a chair and a picnic for an easy, unhurried afternoon by the water.",
+     "address": "Winthrop, MA",
+     "phone": "",
+     "hours": "Open year-round; lifeguards late June to early September",
+     "url": "",
+     "src": "https://www.meetboston.com/blog/post/best-beaches-in-and-around-boston/"
+    }
+   ]
+  },
+  {
+   "key": "parks",
+   "title": "Parks & Green Spaces",
+   "items": [
+    {
+     "name": "Boston Common",
+     "blurb": "Founded in 1634 and called America's oldest public park, the nearly 50-acre Common is the starting point of the Freedom Trail. It has been a grazing ground, militia training field and British army camp. Today you will find ballfields, a playground, a carousel, the Frog Pond with a summer spray pool and winter skating rink, and monuments including the Robert Gould Shaw and 54th Regiment memorial. The visitor center at 139 Tremont Street is open daily 8:30 a.m. to 4:45 p.m. Park Street station on the Red and Green lines sits on its edge.",
+     "address": "139 Tremont Street, Boston, MA 02111 (visitor center)",
+     "phone": "1-888-733-2678",
+     "hours": "Visitor center daily 8:30 a.m. to 4:45 p.m.",
+     "url": "https://friendsofthepublicgarden.org/our-parks/the-common/",
+     "src": "https://www.meetboston.com/things-to-do/outdoor-activities/parks/"
+    },
+    {
+     "name": "Boston Public Garden",
+     "blurb": "Across Charles Street from the Common, the 24-acre Public Garden is the city's showpiece of Victorian flower beds, with some 80 plant species, a lagoon crossed by an 1860s bridge, and the famous Swan Boats in the warm months. Kids head straight for the nine bronze ducklings from \"Make Way for Ducklings\" near the Charles and Beacon Street entrance, and there is a George Washington statue and the Ether Monument fountain. In December the trees are lit for the holidays.",
+     "address": "Across from Boston Common, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.boston.gov/parks/public-garden",
+     "src": "https://www.meetboston.com/things-to-do/outdoor-activities/parks/"
+    },
+    {
+     "name": "Arnold Arboretum",
+     "blurb": "Harvard's 281-acre arboretum in Jamaica Plain and Roslindale, founded in 1872 and part of the Emerald Necklace, holds about 15,000 trees, shrubs and vines. Wander the paths on your own with the arboretum's mobile app or join guided tours and events. Families can borrow Discovery Packs with kid activities. The grounds are open sunrise to sunset, and the visitor center at 125 Arborway has restrooms and is open weekdays 9 to 5 and weekends 10 to 5.",
+     "address": "125 Arborway, Boston, MA",
+     "phone": "617-524-1718",
+     "hours": "Sunrise to sunset",
+     "url": "https://arboretum.harvard.edu",
+     "src": "https://www.care.com/c/10-best-bike-paths-for-families-around-boston-massachusetts/"
+    },
+    {
+     "name": "Franklin Park",
+     "blurb": "Boston's largest open space at 485 acres, Franklin Park links Roxbury, Dorchester, Jamaica Plain, Mattapan and Roslindale and is the crown jewel of Olmsted's Emerald Necklace. Explore hiking trails, Scarboro Pond, the 99 Steps, Ellicott Arch and the wooded Wilderness area, play a round at the William J. Devine golf course, or visit Franklin Park Zoo. The Elma Lewis Playhouse stage hosts summer concerts. Ideal for a long loop walk in the fall leaves.",
+     "address": "Franklin Park, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.boston.gov/parks/franklin-park",
+     "src": "https://www.meetboston.com/things-to-do/outdoor-activities/parks/"
+    },
+    {
+     "name": "Jamaica Pond",
+     "blurb": "A 68-acre pond in Jamaica Plain wrapped by a 1.5-mile path that is one of the city's favorite walking and jogging loops. The boathouse offers sailing and rowing in season, the pond is stocked with trout, and picnic fields slope down to the water. Community events such as Summer Sundays in the Park and the autumn Lantern Festival draw neighbors from across the city. It is a key link in the Emerald Necklace between the Arboretum and Olmsted Park.",
+     "address": "Jamaica Plain, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://www.meetboston.com/things-to-do/outdoor-activities/parks/"
+    },
+    {
+     "name": "Rose Kennedy Greenway",
+     "blurb": "A 1.5-mile ribbon of parks running from Chinatown to the North End atop the old Central Artery. Stop for rotating public art installations, fountains, the Greenway Carousel with hand-carved characters, food trucks and farmers markets, plus events throughout the year, including the farmers markets. It is the easiest green break downtown, steps from Faneuil Hall, the waterfront and the Harbor Islands Welcome Center.",
+     "address": "Chinatown to the North End, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://www.meetboston.com/things-to-do/outdoor-activities/parks/"
+    },
+    {
+     "name": "Castle Island and Fort Independence",
+     "blurb": "Once a true island and now joined to South Boston by landfill, this 22-acre park anchors Pleasure Bay with lawns, harbor views and a waterside path loved by joggers and dog walkers. At its center is Fort Independence, a star-shaped granite fort and National Historic Landmark. Then grab a bite at Sullivan's food stand. Take the Red Line to Broadway and the 9 or 11 bus to City Point.",
+     "address": "South Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.mass.gov/locations/castle-island-pleasure-bay-m-street-beach-and-carson-beach",
+     "src": "https://www.meetboston.com/things-to-do/outdoor-activities/parks/"
+    },
+    {
+     "name": "Christopher Columbus Waterfront Park",
+     "blurb": "A 4.5-acre harbor-side park a short walk from the North End, known for its long trellis walkway, flower beds, lawns and playground. In summer it hosts outdoor movie nights, and in the fall a festival; during the holidays the trellis glows with blue lights. It makes a fine stop between Faneuil Hall and the North End's restaurants, with seating and harbor views.",
+     "address": "Boston waterfront near the North End, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://foccp.org/about",
+     "src": "https://www.meetboston.com/things-to-do/outdoor-activities/parks/"
+    },
+    {
+     "name": "Back Bay Fens",
+     "blurb": "An Olmsted-designed stretch of the Emerald Necklace near Fenway Park, the Museum of Fine Arts and the Gardner Museum. Highlights include the Kelleher Rose Garden with more than 200 rose varieties, the Fenway Victory Gardens community plots, Korean and Vietnam War memorials, ballfields, a playground and good bird watching. Nearby Ramler Park is designed to attract migrating birds. Pair a stroll here with a museum visit; the MFA stop on the Green Line E branch is close by.",
+     "address": "The Fenway, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.emeraldnecklace.org/park-overview/back-bay-fens/",
+     "src": "https://www.meetboston.com/things-to-do/outdoor-activities/parks/"
+    },
+    {
+     "name": "Mount Auburn Cemetery",
+     "blurb": "A 175-acre garden cemetery in Cambridge and one of the region's most peaceful places to walk, with more than 5,500 trees, shrubs and plants, ponds, statues, mausoleums and views over Boston and Cambridge. Literary visitors seek out the graves of Henry Wadsworth Longfellow, Julia Ward Howe and Charles Sumner. Its ponds and plantings make it a fine place for a quiet autumn walk. Please be respectful, as it remains an active cemetery.",
+     "address": "Cambridge, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://mountauburn.org",
+     "src": "https://www.meetboston.com/things-to-do/outdoor-activities/parks/"
+    },
+    {
+     "name": "Cambridge Common",
+     "blurb": "The historic green next to Harvard Square, crossed every day by more than 10,000 people on foot and bike. Look for the plaque marking the site of the Washington Elm, three cannons and the Irish Famine Memorial, and let kids loose on the playground. It makes an easy break during a Harvard Square visit and a natural starting point for the riverside walk toward MIT. Harvard station on the Red Line is a short walk away.",
+     "address": "Harvard Square, Cambridge, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.cambridgeusa.org/listing/cambridge-common-park",
+     "src": "https://www.meetboston.com/things-to-do/outdoor-activities/parks/"
+    },
+    {
+     "name": "Stony Brook Reservation",
+     "blurb": "A 475-acre state reservation spanning Boston and Dedham, with picnic areas, a pool, and about 12 miles of trails suited to hiking and mountain biking. Families like Turtle Pond, where kids can watch ducks and sunfish from the pier, and the rocky outcrops for scrambling. It is open dawn to dusk. The Orange Line to Forest Hills is the closest T connection, or drive in via Turtle Pond Parkway.",
+     "address": "Turtle Pond Parkway, Hyde Park, MA 02136",
+     "phone": "",
+     "hours": "Dawn to dusk",
+     "url": "",
+     "src": "https://www.care.com/c/10-best-bike-paths-for-families-around-boston-massachusetts/"
+    }
+   ]
+  },
+  {
+   "key": "walks",
+   "title": "Walks & Trails",
+   "items": [
+    {
+     "name": "The Freedom Trail",
+     "blurb": "Boston's signature walk follows a 2.5-mile red line of brick and paint linking 16 Revolutionary-era sites, from Boston Common past the State House, Old State House, Faneuil Hall, the Paul Revere House and Old North Church to the USS Constitution and Bunker Hill Monument. Start at the Boston Common visitor center at 139 Tremont Street near Park Street station. Go on your own or join a 90-minute tour led by costumed guides; listed prices are about $17 for adults, $15 for seniors and students and $8 for children.",
+     "address": "139 Tremont Street, Boston, MA (start)",
+     "phone": "617-357-8300",
+     "hours": "Visitor center daily 8:30 a.m. to 4:45 p.m.",
+     "url": "https://www.thefreedomtrail.org",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "Boston Harborwalk",
+     "blurb": "A 43-mile public pathway tracing the city's waterfront through Charlestown, Downtown, the Seaport, East Boston and Dorchester. Along the way you can reach the New England Aquarium, the Children's Museum, the USS Constitution, the ICA Watershed and the JFK Library, plus beaches, parks and restaurants. It ties into the Freedom Trail, Rose Kennedy Greenway, Emerald Necklace, Charles River paths and Black Heritage Trail. Pick a stretch, such as the Seaport section, and walk as far as you like.",
+     "address": "Boston waterfront, Boston, MA",
+     "phone": "",
+     "hours": "Open daily",
+     "url": "https://www.bostonharbornow.org/what-we-do/explore/harborwalk/",
+     "src": "https://www.seaportboston.com/visit-boston/boston-harborwalk"
+    },
+    {
+     "name": "Emerald Necklace Walk",
+     "blurb": "Frederick Law Olmsted's 1,100-acre chain of parks makes a roughly nine-mile walk with some hills, about four hours at a steady pace. Start at Franklin Park, then pass through the Arnold Arboretum, around Jamaica Pond, through Olmsted Park and the Riverway along the Muddy River, past the Back Bay Fens near the MFA and Gardner Museum, down the Commonwealth Avenue Mall and into the Public Garden, finishing on Boston Common. The Emerald Necklace Conservancy offers an app with walking tours and park maps.",
+     "address": "Franklin Park to Boston Common, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.emeraldnecklace.org",
+     "src": "https://gocity.com/en/boston/things-to-do/best-walks-in-boston"
+    },
+    {
+     "name": "Charles River Esplanade",
+     "blurb": "About three miles of riverfront parkland on the Boston side of the Charles, running from Boston University to the Museum of Science. Paved paths carry walkers, runners and cyclists past sailboats, ducklings, three playgrounds, murals and five docks, with the Hatch Memorial Shell hosting music and movie nights and the Boston Pops Fourth of July fireworks. Take the Red Line to Charles/MGH and cross the footbridge. Open dawn to dusk; it gets busy on sunny weekends.",
+     "address": "47 David G. Mugar Way, Boston, MA",
+     "phone": "",
+     "hours": "Dawn to dusk",
+     "url": "",
+     "src": "https://www.care.com/c/10-best-bike-paths-for-families-around-boston-massachusetts/"
+    },
+    {
+     "name": "Black Heritage Trail",
+     "blurb": "A roughly 1.4-mile walk through Beacon Hill tracing the history of Boston's 19th-century Black community. It begins at the memorial to the Massachusetts 54th Regiment across from the State House and ends at the Museum of African American History. National Park Service rangers led 90-minute tours Wednesday through Sunday at 10 a.m. and 1 p.m. from late May to October 11 this year with no activity fee and advance registration required. Off season, walk it yourself using the museum's audio tour app and printable map. Park Street station is close to the start.",
+     "address": "Shaw/54th Regiment Memorial, Beacon Street, Boston, MA (start)",
+     "phone": "617-429-6760",
+     "hours": "Ranger tours seasonal, late May to mid-October",
+     "url": "https://www.nps.gov/boaf/",
+     "src": "https://www.nps.gov/thingstodo/black-heritage-trail-tour.htm"
+    },
+    {
+     "name": "Walking City Trail",
+     "blurb": "A 27-mile urban hiking route created by Boston hikers in 2022 that strings together 17 neighborhoods, from the Neponset River Reservation all the way to the Bunker Hill Monument. It passes parks, urban wilds, gardens and residential streets, giving a ground-level view of the city most visitors never see. You can tackle the whole thing or pick one of its four sections for a half-day outing. A map is available through Boston Trails.",
+     "address": "Neponset River Reservation to Bunker Hill Monument, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://bostontrails.org",
+     "src": "https://boston.gov/news/step-2025-parks-five-ideas-first-day-walks-and-urban-hikes-boston"
+    },
+    {
+     "name": "Commonwealth Avenue Mall",
+     "blurb": "A 32-acre tree-lined promenade running down the middle of Commonwealth Avenue through Back Bay, linking the Public Garden to the Fens. It is one of the city's most elegant strolls and a favorite with dog walkers. During the holidays its trees glow with lights, and it is a key leg of the Emerald Necklace walk between the Fens and the Public Garden, so it pairs well with a longer outing.",
+     "address": "Commonwealth Avenue, Back Bay, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://www.boston.com/travel/guides/2021/09/16/guide-boston-parks-and-green-spaces"
+    },
+    {
+     "name": "The Riverway",
+     "blurb": "A 34-acre park along the Muddy River on the Boston and Brookline line, part of Olmsted's Emerald Necklace. Paths follow the water past historic stone bridges and a stone gazebo, making a shady, peaceful walk that connects the Back Bay Fens with Olmsted Park and Jamaica Pond. It is near several bus routes and T stops, and it makes a fine middle section of a longer Emerald Necklace outing.",
+     "address": "Riverway, Boston and Brookline, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.emeraldnecklace.org",
+     "src": "https://www.cbsnews.com/boston/news/bostons-best-bike-trails"
+    },
+    {
+     "name": "Harvard to MIT Riverside Walk",
+     "blurb": "A self-guided walk linking two famous campuses about a mile apart. From Harvard Square, cross the Anderson Memorial Bridge to see Harvard Stadium and Harvard Business School, then return over the Western Avenue Bridge and follow the Charles River past Magazine Beach east to MIT, where the List Visual Arts Center is worth a stop. Plan a couple of hours with detours. Begin at Harvard station on the Red Line.",
+     "address": "Harvard Square, Cambridge, MA (start)",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-walks-in-boston"
+    },
+    {
+     "name": "Lexington Battle Green",
+     "blurb": "Just outside Boston, the Lexington Battle Green is where the first shots of the Revolution rang out in April 1775. Walk the green and its surroundings to see the Old Belfry, Buckman Tavern, the Revolutionary War Monument, the Old Burying Ground and the Henry H. Kitson Minuteman Statue. One-hour guided tours of the area are offered. Cyclists can combine the visit with the Minuteman Bikeway, which passes nearby.",
+     "address": "Lexington Battle Green, Lexington, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-walks-in-boston"
+    }
+   ]
+  },
+  {
+   "key": "bike",
+   "title": "Bike Paths",
+   "items": [
+    {
+     "name": "Minuteman Bikeway",
+     "blurb": "A popular rail trail converted for cyclists and walkers in the early 1990s, running between Bedford and Cambridge through Lexington and Arlington. Riders pass close to the Battle of Lexington Green, the Old Burying Ground and Arlington's Great Meadows. Because it crosses several train and bus routes, it is easy to combine with transit. A great family ride with Revolutionary history along the way.",
+     "address": "Bedford to Cambridge, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.minutemanbikeway.org",
+     "src": "https://www.cbsnews.com/boston/news/bostons-best-bike-trails"
+    },
+    {
+     "name": "Charles River Bike Path",
+     "blurb": "More than 14 miles of mostly smooth, mixed-use path along both banks of the Charles from Boston to Newton, including the Esplanade stretch from Boston University to the Museum of Science. Expect tree-lined sections, river views and plenty of access points, though some stretches run beside busy roads and it can be crowded on nice days. Charles/MGH on the Red Line is a convenient start. Shared with walkers, so ride at an easy pace.",
+     "address": "Charles River, Boston to Newton, MA",
+     "phone": "",
+     "hours": "Dawn to dusk",
+     "url": "",
+     "src": "https://www.cbsnews.com/boston/news/bostons-best-bike-trails"
+    },
+    {
+     "name": "Southwest Corridor Park",
+     "blurb": "A flat, paved path of roughly four to six miles through the South End, Back Bay, Roxbury and Jamaica Plain, built on land that neighbors saved from a planned highway. Bikes and pedestrians have separate lanes, and along the way there are two splash pads and 11 toddler-friendly playgrounds, so watch for kids near play areas. Every Orange Line stop from Back Bay to Forest Hills sits along the route, and bike-share stations are nearby.",
+     "address": "38 New Heath Street, Jamaica Plain, MA (headquarters)",
+     "phone": "",
+     "hours": "Dawn to dusk",
+     "url": "https://swcpc.org",
+     "src": "https://www.care.com/c/10-best-bike-paths-for-families-around-boston-massachusetts/"
+    },
+    {
+     "name": "East Boston Greenway",
+     "blurb": "A just-over-two-mile path along a former rail line on the East Boston waterfront, with separate lanes for bikes and walkers. Enjoy skyline and harbor views and watch planes take off and land at Logan, which can be noisy. Begin near Piers Park (no biking inside the park), turn left onto Marginal Street and follow it about a quarter mile to reach the greenway. Open dawn to dusk.",
+     "address": "95 Marginal Street, East Boston, MA",
+     "phone": "",
+     "hours": "Dawn to dusk",
+     "url": "",
+     "src": "https://www.care.com/c/10-best-bike-paths-for-families-around-boston-massachusetts/"
+    },
+    {
+     "name": "Neponset River Trail",
+     "blurb": "The lower Neponset trail is a roughly two-mile ride through Dorchester marshlands, starting at Pope John Paul II Park, which has parking and a playground, with birds and other wildlife along the way. It is part of the larger 8.2-mile Neponset River Greenway linking Dorchester, Mattapan, Hyde Park and Milton parks, and the nearby Quincy Riverwalk lets you extend the ride. Open dawn to dusk.",
+     "address": "Neponset Circle and Hallet Street, Dorchester, MA 02124",
+     "phone": "",
+     "hours": "Dawn to dusk",
+     "url": "",
+     "src": "https://www.care.com/c/10-best-bike-paths-for-families-around-boston-massachusetts/"
+    },
+    {
+     "name": "Millennium Park",
+     "blurb": "Built atop a former landfill in West Roxbury, Millennium Park offers about six miles of paved bike trails with views of the city skyline and the Blue Hills from its summit. There is a playground, access to the Charles River and nearby parking, and dogs are welcome. A relaxed, open setting for beginners and families looking for loops away from road traffic. Open dawn to dusk.",
+     "address": "398 Gardner Street, West Roxbury, MA 02132",
+     "phone": "",
+     "hours": "Dawn to dusk",
+     "url": "",
+     "src": "https://www.care.com/c/10-best-bike-paths-for-families-around-boston-massachusetts/"
+    }
+   ]
+  },
+  {
+   "key": "lights",
+   "title": "Lighthouses",
+   "items": [
+    {
+     "name": "Boston Light",
+     "blurb": "First lit on September 14, 1716, Boston Light on Little Brewster Island is the oldest continually operated light station in the country and a National Historic Landmark. The British damaged the original in 1774, and the tower that stands today was built in 1783 and raised to 89 feet in the 1850s. The light is now automated, flashing every ten seconds and visible up to 27 miles. The island is closed to visitors, but summer lighthouse cruises pass close by.",
+     "address": "Little Brewster Island, Boston Harbor",
+     "phone": "",
+     "hours": "Island closed to visitors; view by seasonal cruise",
+     "url": "https://www.bostonharborislands.org/little-brewster-island/",
+     "src": "https://www.bostonharborislands.org/little-brewster-island/"
+    },
+    {
+     "name": "Graves Light",
+     "blurb": "Commissioned by an act of Congress in 1905, Graves Light stands on Graves Ledge at the outer northeast edge of Boston Harbor and is the tallest lighthouse in the harbor. The grey tower is privately owned and not open to the public. The best way to see it is the two-hour narrated Boston Harbor Lighthouse Cruise, which departs in summer from the Boston Harbor Islands Welcome Center at 191 W. Atlantic Avenue on the Rose Kennedy Greenway.",
+     "address": "Graves Ledge, outer Boston Harbor (off Hull)",
+     "phone": "",
+     "hours": "Not open to the public",
+     "url": "https://www.nps.gov/boha/learn/historyculture/lighthouses.htm",
+     "src": "https://www.visitma.com/greater-boston-south-of-boston-lighthouse-trail/"
+    },
+    {
+     "name": "Long Island Head Light",
+     "blurb": "A white tower set among trees on Long Island in Boston Harbor, helping guide ships through the Broad Sound Channel. A light was first installed here in 1794 and rebuilt several times; the National Park Service acquired it in 2011 and today it is a solar-powered automated light. It is not open to the public, but it is one of the three lights featured on the summer Boston Harbor Lighthouse Cruise.",
+     "address": "Long Island, Boston Harbor",
+     "phone": "",
+     "hours": "Not open to the public",
+     "url": "https://www.nps.gov/boha/learn/historyculture/lighthouses.htm",
+     "src": "https://www.visitma.com/greater-boston-south-of-boston-lighthouse-trail/"
+    },
+    {
+     "name": "Scituate Lighthouse",
+     "blurb": "A historic light on the South Shore at 100 Lighthouse Road in Scituate, famous for the local legend of Abigail and Rebecca Bates, the keeper's daughters, who are said to have scared off British troops during the War of 1812. The lighthouse opens on select dates, and the keeper's cottage is a private home, so please be respectful of the grounds. It is a pleasant day-trip drive south of Boston.",
+     "address": "100 Lighthouse Road, Scituate, MA",
+     "phone": "",
+     "hours": "Open select dates",
+     "url": "",
+     "src": "https://www.visitma.com/greater-boston-south-of-boston-lighthouse-trail/"
+    },
+    {
+     "name": "Minot's Ledge Light",
+     "blurb": "Rising from a rocky ledge offshore between Scituate and Cohasset, Minot's Ledge Light is a striking offshore tower dating to the mid-1800s, more than 150 years old. The way to see it up close is on a boat tour from Boston or Hingham, a memorable trip for anyone who loves the region's maritime history. A classic sight for lighthouse fans exploring the South Shore.",
+     "address": "Minot's Ledge, off Cohasset and Scituate, MA",
+     "phone": "",
+     "hours": "View from the water",
+     "url": "",
+     "src": "https://www.boston.com/culture/new-england-travel/2014/08/11/five-lighthouses-to-visit-in-massachusetts/"
+    }
+   ]
+  },
+  {
+   "key": "history",
+   "title": "History & Museums",
+   "items": [
+    {
+     "name": "Massachusetts State House",
+     "blurb": "Designed by Charles Bulfinch and completed in 1798 on land once owned by John Hancock, the State House is topped by its gleaming gold-leaf dome and is the seat of state government. Visitors can take guided tours on weekdays from 10 a.m. to 3:30 p.m.; calling ahead is recommended. The building is open Monday to Friday 8:45 a.m. to 5 p.m. and closed weekends and holidays. Park Street station on the Red and Green lines is just across Boston Common.",
+     "address": "Beacon Street, Boston, MA",
+     "phone": "617-727-3676",
+     "hours": "Mon-Fri 8:45 a.m.-5 p.m.; tours 10 a.m.-3:30 p.m.",
+     "url": "https://www.sec.state.ma.us/tours",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "Park Street Church",
+     "blurb": "Founded in 1809, this landmark church on the corner of Park and Tremont Streets has a 217-foot steeple that was once the tallest structure in the country. It hosted early anti-slavery speeches, and the hymn \"America\" was first sung here in 1831. It remains an active congregation with Sunday worship at 8:30 a.m., 11 a.m. and 4 p.m. and visitor hours that vary in summer. It sits beside Park Street station on the Freedom Trail.",
+     "address": "Park and Tremont Streets, Boston, MA",
+     "phone": "617-523-3383",
+     "hours": "Sunday worship 8:30 a.m., 11 a.m., 4 p.m.",
+     "url": "https://www.parkstreet.org",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "Granary Burying Ground",
+     "blurb": "One of Boston's most visited historic cemeteries, holding Paul Revere, Samuel Adams, John Hancock, Benjamin Franklin's parents and Peter Faneuil among an estimated 5,000 burials with 2,345 markers. Walk among the old slate headstones and carved skull-and-wings motifs right on Tremont Street, next to Park Street Church. It is open daily from 10 a.m. to 4 p.m. and is a quick, worthwhile stop on the Freedom Trail.",
+     "address": "Tremont Street, Boston, MA",
+     "phone": "617-635-4505",
+     "hours": "Daily 10 a.m.-4 p.m.",
+     "url": "https://www.boston.gov/parks",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "King's Chapel and Burying Ground",
+     "blurb": "Founded in 1686 as New England's first Anglican church, King's Chapel worships in a 1754 granite building that later became the country's first Unitarian church. Its adjoining burying ground, the oldest in the city, holds Governor John Winthrop and Mayflower passenger Mary Chilton. The chapel is open Friday and Saturday 10 a.m. to 4 p.m. from October through March, with Sunday worship at 11 a.m.; the burying ground is open daily 10 a.m. to 4 p.m.",
+     "address": "Tremont and School Streets, Boston, MA",
+     "phone": "617-227-2155",
+     "hours": "Chapel Oct-Mar Fri-Sat 10 a.m.-4 p.m.; burying ground daily 10-4",
+     "url": "https://www.kings-chapel.org",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "Old South Meeting House",
+     "blurb": "Built in 1729 as a Puritan meetinghouse, Old South was the largest building in colonial Boston and the setting for the December 16, 1773 meeting that set off the Boston Tea Party. Today it hosts exhibits and programs on freedom of speech and protest in American history. It is open daily 10 a.m. to 5 p.m., with a paid combination ticket that also covers the Old State House. It is a short walk from the Old State House.",
+     "address": "310 Washington Street, Boston, MA",
+     "phone": "617-720-1713",
+     "hours": "Daily 10 a.m.-5 p.m.",
+     "url": "https://www.revolutionaryspaces.org",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "Old State House",
+     "blurb": "Built in 1713, the Old State House was the seat of royal government in colonial Boston, and in July 1776 the Declaration of Independence was first read to Bostonians from its balcony. Inside, exhibits trace the road to revolution. It is open daily from 10 a.m. to 5 p.m., closed on major holidays, and a single paid ticket covers both this site and Old South Meeting House. It stands at the corner of Washington and State Streets.",
+     "address": "206 Washington Street, Boston, MA",
+     "phone": "617-720-1713",
+     "hours": "Daily 10 a.m.-5 p.m.",
+     "url": "https://www.revolutionaryspaces.org",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "Faneuil Hall",
+     "blurb": "Opened in 1741 as a public meeting hall and marketplace, Faneuil Hall earned the nickname \"Cradle of Liberty\" for the patriot speeches given here. The Great Hall upstairs is still used for civic events, including naturalization ceremonies, and the National Park Service runs a visitor center inside. Faneuil Hall is open Monday to Saturday 10 a.m. to 7 p.m. and Sunday 10 a.m. to 6 p.m. Group tours can be arranged by calling ahead.",
+     "address": "Faneuil Hall Square, Boston, MA",
+     "phone": "617-242-5642",
+     "hours": "Mon-Sat 10 a.m.-7 p.m.; Sun 10 a.m.-6 p.m.",
+     "url": "https://www.nps.gov/bost",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "Paul Revere House",
+     "blurb": "Built around 1680, this is the oldest remaining structure in downtown Boston and the home Paul Revere owned from 1770 to 1800, including the night of his famous ride. A self-guided tour shows period furnishings and Revere family pieces. It is open daily 10 a.m. to 5:15 p.m. through October 31, then 10 a.m. to 4:15 p.m. from November 1, with Monday closures January through March. Admission is modest: about $6 for adults and $1 for children. Haymarket station is nearby.",
+     "address": "19 North Square, Boston, MA",
+     "phone": "617-523-2338",
+     "hours": "Daily 10 a.m.-5:15 p.m. (4:15 p.m. from Nov. 1)",
+     "url": "https://www.paulreverehouse.org",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "Old North Church",
+     "blurb": "Formally Christ Church, built in 1723, Old North is Boston's oldest surviving church building and the place where two lanterns hung in the steeple on April 18, 1775 signaled the British route. Tours visit the box pews, crypt, bell chamber and the Clough House. Site tours carry a fee, while worship services have no admission fee. Hours vary from mid-February through December, so check before visiting. It is in the heart of the North End on Salem Street.",
+     "address": "193 Salem Street, Boston, MA",
+     "phone": "617-523-6676",
+     "hours": "Mid-Feb to Dec; hours vary",
+     "url": "https://www.oldnorth.com",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "USS Constitution",
+     "blurb": "Launched in Boston in 1797 and nicknamed \"Old Ironsides\" during the War of 1812, the USS Constitution is the world's oldest commissioned warship still afloat and remains in active U.S. Navy commission. Boarding has no admission fee, though visitors 18 and older need government photo ID and pass through security. From November through March the ship is open Wednesday to Sunday 10 a.m. to 4 p.m. The neighboring USS Constitution Museum asks a suggested donation.",
+     "address": "Charlestown Navy Yard, Charlestown, MA",
+     "phone": "617-593-2025",
+     "hours": "Nov-Mar Wed-Sun 10 a.m.-4 p.m.",
+     "url": "https://www.navy.mil/local/constitution",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "Bunker Hill Monument and Museum",
+     "blurb": "A 221-foot granite obelisk in Charlestown marks the site of the June 17, 1775 Battle of Bunker Hill, the last stop on the Freedom Trail. Across the street, the Bunker Hill Museum tells the story with exhibits and dioramas and is open Wednesday to Sunday 10 a.m. to 5 p.m. Check the park website for monument climbing hours. Both are run by Boston National Historical Park.",
+     "address": "43 Monument Square, Charlestown, MA",
+     "phone": "617-242-5641",
+     "hours": "Museum Wed-Sun 10 a.m.-5 p.m.",
+     "url": "https://www.nps.gov/bost",
+     "src": "https://www.thefreedomtrail.org/sites/default/files/content/PDFs/Freedom%20Trail%20Brochure%202025.pdf"
+    },
+    {
+     "name": "Museum of Fine Arts, Boston",
+     "blurb": "One of the country's great art museums, the MFA holds nearly 500,000 works spanning ancient Egypt to contemporary art, plus special exhibitions, studio classes and on-site restaurants. Plan at least half a day. Listed hours are Saturday through Monday and Wednesday 10 a.m. to 5 p.m., with late hours to 10 p.m. Thursday and Friday; it is closed Tuesday. Adult admission is about $27, $10 for ages 7 to 17. Take the Green Line E branch to Museum of Fine Arts.",
+     "address": "465 Huntington Avenue, Boston, MA",
+     "phone": "",
+     "hours": "Wed, Sat-Mon 10-5; Thu-Fri 10-10",
+     "url": "https://www.mfa.org",
+     "src": "https://www.boston.com/travel/arts/2022/02/18/12-best-boston-museums"
+    },
+    {
+     "name": "Isabella Stewart Gardner Museum",
+     "blurb": "Built like a Venetian palazzo around a central courtyard, the Gardner holds more than 7,500 paintings, sculptures, furniture and textiles, still arranged just as its founder left them. It is one of Boston's most memorable museum visits. Hours are Monday, Wednesday and Friday 11 a.m. to 5 p.m., Thursday to 9 p.m., and weekends 10 a.m. to 5 p.m. Adults pay about $22, and visitors 17 and under have no admission fee. Take the Green Line E to Museum of Fine Arts.",
+     "address": "25 Evans Way, Boston, MA",
+     "phone": "",
+     "hours": "Mon, Wed, Fri 11-5; Thu 11-9; Sat-Sun 10-5",
+     "url": "https://www.gardnermuseum.org",
+     "src": "https://www.boston.com/travel/arts/2022/02/18/12-best-boston-museums"
+    },
+    {
+     "name": "John F. Kennedy Presidential Library and Museum",
+     "blurb": "Set on Columbia Point overlooking the harbor, the JFK Library tells the story of President Kennedy's 1,000 days in office through films, artifacts and interactive displays, along with his scrimshaw and ship model collections and exhibits on Jacqueline Kennedy. It is open daily 10 a.m. to 5 p.m. Adult admission is about $18, and children 12 and under have no admission fee. Take the Red Line to JFK/UMass, then the shuttle to the Kennedy/Archives stop.",
+     "address": "Columbia Point, 220 Morrissey Boulevard, Boston, MA",
+     "phone": "",
+     "hours": "Daily 10 a.m.-5 p.m.",
+     "url": "https://www.jfklibrary.org",
+     "src": "https://www.boston.com/travel/arts/2022/02/18/12-best-boston-museums"
+    },
+    {
+     "name": "Boston Tea Party Ships and Museum",
+     "blurb": "A lively, hands-on museum on Congress Street that brings the 1773 protest to life. Visitors board a restored 18th-century ship, toss tea into the harbor, see the Robinson Half Chest, one of two surviving tea chests, and watch the film \"Let It Begin Here.\" Tours run daily starting at 10 a.m.; reservations are required and tickets start around $35. Walk over from South Station on the Red Line.",
+     "address": "306 Congress Street, Boston, MA",
+     "phone": "",
+     "hours": "Daily, tours from 10 a.m.",
+     "url": "https://www.bostonteapartyship.com",
+     "src": "https://www.boston.com/travel/arts/2022/02/18/12-best-boston-museums"
+    },
+    {
+     "name": "Museum of African American History",
+     "blurb": "New England's largest museum devoted to African American history and culture, set in two Beacon Hill landmarks: the African Meeting House, a National Historic Landmark and the oldest Black church building in the country, and the Abiel Smith School. It is the end point of the Black Heritage Trail. Open Tuesday to Sunday 10 a.m. to 4 p.m.; adult admission is about $15. Park Street and Bowdoin stations are nearby.",
+     "address": "46 Joy Street, Boston, MA",
+     "phone": "",
+     "hours": "Tue-Sun 10 a.m.-4 p.m.",
+     "url": "https://www.maah.org",
+     "src": "https://www.boston.com/travel/arts/2022/02/18/12-best-boston-museums"
+    }
+   ]
+  },
+  {
+   "key": "art",
+   "title": "Art & Gardens",
+   "items": [
+    {
+     "name": "Arnold Arboretum",
+     "blurb": "More than 280 acres of trees, shrubs and rolling paths make the Arnold Arboretum one of the great walking landscapes in the city, and there is never an admission fee. The grounds stay open from early morning into the evening, so it works for a sunrise stroll, a lunchtime loop or an after-work walk. Wear comfortable shoes, since the hills and long lanes reward an unhurried visit of an hour or more.",
+     "address": "125 Arborway, Boston, MA 02130",
+     "phone": "",
+     "hours": "Daily 7am–9pm",
+     "url": "https://www.arboretum.harvard.edu/visit",
+     "src": "https://www.wgbh.org/culture/2024-07-16/your-guide-to-free-museums-in-boston-and-beyond-plus-discount-days"
+    },
+    {
+     "name": "Boston Public Garden",
+     "blurb": "The Public Garden sits beside Boston Common and centers on its lagoon, home to the famous Swan Boats in warm months. Paths wind around the pond and past the George Washington statue, and it is the classic spot for photos and a slow loop on a nice afternoon. Arlington Station on the Green Line is the closest T stop. Drivers can use metered street parking or the Boston Common Parking Garage on Charles Street (4 Charles St works for GPS).",
+     "address": "Public Garden, next to Boston Common (Arlington Station, Green Line)",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://hot969boston.com/2026/04/15/swan-boats-return-to-boston-public-garden-on-april-18/"
+    },
+    {
+     "name": "Institute of Contemporary Art (ICA)",
+     "blurb": "The ICA sits right on the Seaport waterfront at 25 Harbor Shore Drive, showing contemporary art with sweeping harbor views. Thursday evenings from 5 to 9pm have been offered with no admission fee; day-of tickets are released at 10am and reservations are recommended. In season, the ICA Watershed gallery across the harbor at 256 Marginal St in East Boston is open with no admission fee, and ICA ticket holders ride the water shuttle there at no charge.",
+     "address": "25 Harbor Shore Dr, Boston, MA 02210",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.icaboston.org",
+     "src": "https://www.wgbh.org/culture/2024-07-16/your-guide-to-free-museums-in-boston-and-beyond-plus-discount-days"
+    },
+    {
+     "name": "Isabella Stewart Gardner Museum",
+     "blurb": "Isabella Stewart Gardner skipped conventional wall labels when she arranged her museum near the Fenway, so visitors are invited to simply look closely, wander and form their own impressions; audio guides and gallery QR codes fill in the stories. Adult tickets are $25, seniors $22, students $15, and anyone 17 and under gets in at no charge. Thursday nights from 5 to 9pm carry no admission fee, as does anyone named Isabella with ID and a reservation. Book ahead since tickets can sell out, keep bags to 12x12x3 inches, and leave water bottles at coat check.",
+     "address": "25 Evans Way, Boston, MA 02115",
+     "phone": "617-278-5156",
+     "hours": "",
+     "url": "https://www.gardnermuseum.org",
+     "src": "https://gardnermuseum.org/visit"
+    },
+    {
+     "name": "Museum of Fine Arts, Boston",
+     "blurb": "The MFA on Huntington Avenue is one of the country's great encyclopedic art museums, and it rewards a full day. It has listed hours of 10am to 5pm on Saturday through Tuesday and late hours to 10pm on Thursday and Friday, with no admission fee on Martin Luther King Jr. Day, Memorial Day, Juneteenth and Indigenous Peoples' Day. Boston Public Library cardholders can also reserve MFA museum passes through the library for a discounted visit.",
+     "address": "465 Huntington Ave, Boston, MA 02115",
+     "phone": "",
+     "hours": "Sat–Tue 10am–5pm; Thu–Fri 10am–10pm",
+     "url": "https://www.mfa.org",
+     "src": "https://www.wgbh.org/culture/2024-07-16/your-guide-to-free-museums-in-boston-and-beyond-plus-discount-days"
+    },
+    {
+     "name": "Harvard Art Museums",
+     "blurb": "In Cambridge, the Harvard Art Museums on Quincy Street are a major collection where admission carries no charge with no ticketing required. Galleries are open Tuesday through Sunday from 10am to 5pm and close on major holidays. On the last Thursday of each month there is an evening event from 5 to 9pm. Pair a visit with a walk around Harvard Square's bookstores and cafes for an easy Cambridge afternoon.",
+     "address": "32 Quincy St, Cambridge, MA 02138",
+     "phone": "",
+     "hours": "Tue–Sun 10am–5pm",
+     "url": "https://harvardartmuseums.org",
+     "src": "https://www.wgbh.org/culture/2024-07-16/your-guide-to-free-museums-in-boston-and-beyond-plus-discount-days"
+    },
+    {
+     "name": "MassArt Art Museum (MAAM)",
+     "blurb": "Run by the Massachusetts College of Art and Design, MAAM on Huntington Avenue shows changing exhibitions of contemporary work, and there is no admission charge or ticketing. It is open Thursday from noon to 8pm and Friday through Sunday from noon to 5pm. Because it sits along the same avenue as the MFA and near the Gardner, it makes a good add-on stop for a day spent in the Fenway arts corridor.",
+     "address": "621 Huntington Ave, Boston, MA 02115",
+     "phone": "",
+     "hours": "Thu 12–8pm; Fri–Sun 12–5pm",
+     "url": "https://maam.massart.edu",
+     "src": "https://www.wgbh.org/culture/2024-07-16/your-guide-to-free-museums-in-boston-and-beyond-plus-discount-days"
+    },
+    {
+     "name": "Rose Kennedy Greenway",
+     "blurb": "The Greenway is a chain of landscaped parks running through downtown, stretching from Chinatown up toward the Charles River basin above the tunneled I-93 highway. It is an easy place to stroll between sights, rest on a bench with a takeout lunch, or connect to the waterfront along the Boston HarborWalk, which follows the harbor from the Charles to Fort Point Channel with public art, parks and cafes along the way. Admission is never charged; just walk in from any downtown street.",
+     "address": "Downtown Boston, from Chinatown to the North End",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.rosekennedygreenway.org",
+     "src": "https://www.soulofamerica.com/us-cities/boston/boston-family-attractions/"
+    }
+   ]
+  },
+  {
+   "key": "family",
+   "title": "Family & Science",
+   "items": [
+    {
+     "name": "Museum of Science",
+     "blurb": "At Science Park, the Museum of Science fills a day with interactive exhibits, a towering T. rex and a planetarium. It is one of the most popular family stops in the city, so arrive early on weekends and school vacations. Boston Public Library cardholders can reserve discounted museum passes. Boston Duck Tours also pick up right outside, which makes it easy to combine a morning of exhibits with an afternoon land-and-water ride.",
+     "address": "1 Science Park, Boston, MA 02114",
+     "phone": "617-723-2500",
+     "hours": "",
+     "url": "https://www.mos.org",
+     "src": "https://www.soulofamerica.com/us-cities/boston/boston-family-attractions/"
+    },
+    {
+     "name": "New England Aquarium",
+     "blurb": "On Central Wharf at the edge of the harbor, the New England Aquarium is home to penguins, coral reef residents, lionfish and more, and most families spend three to four hours. The Simons IMAX Theatre can be added on a combined ticket. The Aquarium stop on the Blue Line is a short walk away, and harbor cruises, whale watches and Harbor Islands ferries leave from neighboring Long Wharf. Library museum passes can bring the price down for Boston cardholders.",
+     "address": "1 Central Wharf, Boston, MA 02110",
+     "phone": "617-973-5200",
+     "hours": "",
+     "url": "https://www.neaq.org",
+     "src": "https://www.soulofamerica.com/us-cities/boston/boston-family-attractions/"
+    },
+    {
+     "name": "Boston Children's Museum",
+     "blurb": "Look for the giant Hood Milk Bottle on the Fort Point Channel and you have found Boston Children's Museum, a hands-on museum built for young kids, with art-making, climbing and construction-themed play spaces. It is a natural rainy-day plan for toddlers through early grade-schoolers. The Boston Tea Party Ships are right next door, so older siblings have something nearby too. Boston Public Library cardholders can reserve museum passes, and online reservations are recommended for special-price days.",
+     "address": "308 Congress St, Boston, MA 02210",
+     "phone": "617-426-6500",
+     "hours": "",
+     "url": "https://bostonchildrensmuseum.org",
+     "src": "https://www.wgbh.org/culture/2024-07-16/your-guide-to-free-museums-in-boston-and-beyond-plus-discount-days"
+    },
+    {
+     "name": "Franklin Park Zoo",
+     "blurb": "Tucked inside Franklin Park, the zoo brings African lions, giraffes, gorillas and tigers within reach of the city. Younger children love the Franklin Farm area, and Butterfly Landing opens in the warm months, roughly June through September. Hours shift with the seasons, with shorter days through the colder months, so check before heading out. It pairs well with a walk in the surrounding park, and half-price entry has been offered on some first-Saturday mornings.",
+     "address": "1 Franklin Park Rd, Boston, MA 02121",
+     "phone": "617-442-2002",
+     "hours": "",
+     "url": "https://www.zoonewengland.org/franklin-park-zoo",
+     "src": "https://www.soulofamerica.com/us-cities/boston/boston-family-attractions/"
+    },
+    {
+     "name": "Boston Tea Party Ships & Museum",
+     "blurb": "History comes alive in the Seaport District, where costumed interpreters lead a one-hour tour aboard restored 18th-century sailing ships and through interactive exhibits. Visitors get to pretend to toss tea overboard just like the original protesters, then taste the five teas that went into the harbor. Abigail's Tea Room serves baked goods, savory lunch items and period-inspired drinks. It opens daily from 10am to 5pm and sits right beside the Children's Museum.",
+     "address": "306 Congress St, Boston, MA 02210",
+     "phone": "",
+     "hours": "Daily 10am–5pm",
+     "url": "https://www.bostonteapartyship.com",
+     "src": "https://timeout.com/boston/museums/boston-tea-party-ships-museum"
+    },
+    {
+     "name": "USS Constitution Museum",
+     "blurb": "In the Charlestown Navy Yard, the USS Constitution Museum tells the story of Old Ironsides, the oldest commissioned warship afloat. The museum is open daily from 9:30am to 5pm on a pay-what-you-can model, with suggested levels from $25 down to no charge. Boarding the ship itself costs nothing; it is open Wednesday through Sunday, 10am to 4pm, first come, first served, with Navy security screening since it is an active-duty vessel. Use 88 Constitution Road (Nautica garage) for GPS.",
+     "address": "Charlestown Navy Yard, 88 Constitution Rd (GPS), Boston, MA 02129",
+     "phone": "",
+     "hours": "Museum daily 9:30am–5pm; ship Wed–Sun 10am–4pm",
+     "url": "https://ussconstitutionmuseum.org",
+     "src": "https://ussconstitutionmuseum.org/plan-your-visit"
+    },
+    {
+     "name": "Harvard Museum of Natural History",
+     "blurb": "Dinosaurs, meteorites, dazzling gems, a huge Kronosaurus skeleton and the famous Blaschka glass flowers fill the galleries on Oxford Street in Cambridge. One ticket also covers the Peabody Museum of Archaeology & Ethnology next door. Massachusetts residents have been offered no-charge entry with proof of residency on Sunday mornings from 9am to noon and Wednesday afternoons from 3 to 5pm. It is a short walk from Harvard Square and the Red Line.",
+     "address": "26 Oxford St, Cambridge, MA 02138",
+     "phone": "617-495-3045",
+     "hours": "",
+     "url": "https://hmnh.harvard.edu",
+     "src": "https://www.soulofamerica.com/us-cities/boston/boston-family-attractions/"
+    },
+    {
+     "name": "The Sports Museum at TD Garden",
+     "blurb": "Up on the fifth and sixth levels of TD Garden, home of the Celtics and Bruins, The Sports Museum celebrates New England's sports history with artifacts, multimedia and interactive exhibits. Entry runs on timed slots through the day, and the museum closes early on game days, so check the schedule before you go. Family discounts are offered. It is an easy stop before a game or a concert at the 19,600-seat arena.",
+     "address": "100 Legends Way, Boston, MA 02114",
+     "phone": "617-624-1235",
+     "hours": "",
+     "url": "https://www.tdgarden.com/sportsmuseum",
+     "src": "https://www.soulofamerica.com/us-cities/boston/boston-family-attractions/"
+    },
+    {
+     "name": "Boston Fire Museum",
+     "blurb": "On Congress Street, a short walk from the Children's Museum, the Boston Fire Museum is a small stop for kids who love fire trucks and firefighting history. It opens on Saturdays from 10am to 4pm, and there is no admission charge, which makes it an easy add-on to a Seaport or Fort Point weekend outing. Combine it with the Tea Party Ships or a snack at the Hood Milk Bottle down the block.",
+     "address": "344 Congress St, Boston, MA 02210",
+     "phone": "",
+     "hours": "Sat 10am–4pm",
+     "url": "https://www.bostonfiremuseum.com",
+     "src": "https://www.wgbh.org/culture/2024-07-16/your-guide-to-free-museums-in-boston-and-beyond-plus-discount-days"
+    },
+    {
+     "name": "Bunker Hill Museum & Monument",
+     "blurb": "Across from the Bunker Hill Monument in Charlestown, this National Park Service museum tells the story of the famous Revolutionary War battle, and there is no admission fee. It is open Wednesday through Sunday from 10am to 4:30pm. Climbing the monument is limited to 20 people at a time, so expect a short wait on busy days. Pair it with the USS Constitution in the Navy Yard and ride the MBTA F4 ferry back to Long Wharf for a harbor view.",
+     "address": "43 Monument Square, Charlestown, MA 02129",
+     "phone": "",
+     "hours": "Wed–Sun 10am–4:30pm",
+     "url": "https://www.nps.gov/bost",
+     "src": "https://www.wgbh.org/culture/2024-07-16/your-guide-to-free-museums-in-boston-and-beyond-plus-discount-days"
+    }
+   ]
+  },
+  {
+   "key": "water",
+   "title": "Ferries & Boat Trips",
+   "items": [
+    {
+     "name": "Boston Harbor Islands Ferry",
+     "blurb": "Ferries run by Boston City Cruises (City Experiences) leave Long Wharf North for Georges and Spectacle islands, and Hingham Shipyard for Peddocks, opening up beaches, walking paths, picnic areas, camping and a Civil War fort. Spectacle and Peddocks run until Columbus Day and service is daily only from mid-June to Labor Day, so the islands are closed for the season now and return in spring. Georges and Spectacle combine well in one day. There is no parking at Long Wharf; take the Blue Line to Aquarium.",
+     "address": "Long Wharf North, Boston (Aquarium station, Blue Line)",
+     "phone": "",
+     "hours": "Seasonal, mid-May to Columbus Day",
+     "url": "https://www.cityexperiences.com/boston/city-cruises/harbor-islands/",
+     "src": "https://npplan.com/parks-by-state/massachusetts-national-parks/boston-harbor-islands-national-recreation-area-park-at-a-glance/boston-harbor-islands-national-recreation-area-ferry-service/"
+    },
+    {
+     "name": "MBTA F4 Charlestown Ferry",
+     "blurb": "One of the best-value harbor rides in town is a regular MBTA ferry. The F4 crosses from Long Wharf, near the Aquarium, to the Charlestown Navy Yard in about ten minutes, dropping you near USS Constitution and the Bunker Hill Monument and saving a 25-minute walk. MBTA ferry fares run from $2.40 to $9.75 depending on route, and you can pay with a contactless card or phone, the mTicket app, a paper ticket or cash.",
+     "address": "Long Wharf, Boston, to Charlestown Navy Yard",
+     "phone": "",
+     "hours": "Year-round; see MBTA timetable",
+     "url": "https://www.mbta.com/schedules/Boat-F4/line",
+     "src": "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-ferries-and-cruises.html"
+    },
+    {
+     "name": "Boston Harbor Cruises & Whale Watch",
+     "blurb": "City Experiences, formerly Boston Harbor Cruises, runs sightseeing trips around Boston Harbor and beyond from the downtown waterfront. Its whale watch cruises, offered with the New England Aquarium, leave from Long Wharf next to the Aquarium and head out toward the open ocean. Schedules change with the seasons, so check the website for current departures and book ahead on busy weekends. The Aquarium Blue Line stop is a short walk from the dock.",
+     "address": "Long Wharf, Boston, MA",
+     "phone": "",
+     "hours": "Seasonal; check schedule",
+     "url": "https://www.cityexperiences.com/boston/city-cruises/",
+     "src": "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-ferries-and-cruises.html"
+    },
+    {
+     "name": "Salem Ferry",
+     "blurb": "In the warm months, a ferry links Boston with Salem on the North Shore in about 45 minutes, a scenic alternative to driving. A popular plan is to ride the boat one way, spend the day exploring Salem's historic streets and waterfront, then come back on the MBTA Commuter Rail. Service is seasonal, so check the operator's site for this year's schedule and fares before planning a trip.",
+     "address": "Boston waterfront to Salem",
+     "phone": "",
+     "hours": "Seasonal, warm months",
+     "url": "https://www.salemferry.com/",
+     "src": "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-ferries-and-cruises.html"
+    },
+    {
+     "name": "Provincetown Fast Ferries",
+     "blurb": "Summer fast ferries make a day trip to the tip of Cape Cod possible without a long drive. Bay State Cruise Company makes the Boston to Provincetown run in about 1 hour 35 minutes with three sailings a day, leaving roughly seven hours to explore before heading back, and City Experiences runs a similar daily fast-ferry schedule. Both operate in the summer season, so book early for holiday weekends and check sites for the coming year's dates.",
+     "address": "Boston waterfront to Provincetown",
+     "phone": "",
+     "hours": "Summer season",
+     "url": "https://baystatecruisecompany.com/",
+     "src": "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-ferries-and-cruises.html"
+    },
+    {
+     "name": "Charles Riverboat Company",
+     "blurb": "For a look at the city from the river, the Charles Riverboat Company departs from the Lechmere Canal behind the CambridgeSide mall. Its menu includes narrated Charles River tours, architecture cruises and sunset cruises, and the river tours and sunset trips are the best fits for families. The boats offer a relaxed look at the skyline from the water. Check the website for the current season and times.",
+     "address": "100 CambridgeSide Pl, Cambridge, MA 02141",
+     "phone": "",
+     "hours": "Seasonal",
+     "url": "https://www.charlesriverboat.com",
+     "src": "https://mommypoppins.com/boston-kids/boats/sailing-kayaking-duck-tours-and-other-fun-ways-to-experience-the-charles-river"
+    },
+    {
+     "name": "Boston Duck Tours",
+     "blurb": "The amphibious Duck Tours roll past Boston's landmarks on land and then splash into the Charles River for the water leg, a favorite with kids and first-time visitors. Tours pick up at three spots: the Museum of Science, the Prudential Center on Huntington Avenue and the New England Aquarium. Buy tickets ahead in busy months, and pick the departure point that fits the rest of your day.",
+     "address": "Museum of Science, Prudential Center (53 Huntington Ave) or New England Aquarium",
+     "phone": "",
+     "hours": "Seasonal",
+     "url": "https://www.bostonducktours.com",
+     "src": "https://mommypoppins.com/boston-kids/boats/sailing-kayaking-duck-tours-and-other-fun-ways-to-experience-the-charles-river"
+    },
+    {
+     "name": "Swan Boats of the Public Garden",
+     "blurb": "A Boston tradition tracing back to 1877, the pedal-powered Swan Boats glide around the Public Garden lagoon on a gentle 10 to 15 minute ride. The 2026 season ran April 18 through September 7 from 10am to 4pm, later 5pm in summer, so the boats are resting until spring. Fares were $4.75 for adults, $4.25 for seniors and $3.25 for kids 2 to 15. No reservations are needed; tickets are sold at the dock near Arlington Station.",
+     "address": "Public Garden lagoon, Boston (near Arlington Station)",
+     "phone": "",
+     "hours": "Seasonal, mid-April to early September",
+     "url": "https://www.swanboats.com",
+     "src": "https://hot969boston.com/2026/04/15/swan-boats-return-to-boston-public-garden-on-april-18/"
+    }
+   ]
+  },
+  {
+   "key": "boating",
+   "title": "Paddling & Sailing",
+   "items": [
+    {
+     "name": "Community Boating",
+     "blurb": "Billed as the oldest continuously running public sailing center in the country, Community Boating on the Esplanade teaches sailing to kids and adults and rents kayaks and stand-up paddleboards on a walk-up basis. Rentals are $40 per person, with $5 off for students or Boston residents. The 2026 season runs through October 31, with weekday rentals from 1pm and weekends from 9am, ending 30 minutes before sunset. Windsurfing lessons are offered to members, with monthly memberships starting at $99.",
+     "address": "21 David G Mugar Way, Boston, MA 02114",
+     "phone": "617-523-1038",
+     "hours": "Through Oct 31: weekdays from 1pm, weekends from 9am",
+     "url": "https://www.community-boating.org",
+     "src": "https://www.community-boating.org/rentals/kayak-paddling-rentals/"
+    },
+    {
+     "name": "Charles River Canoe & Kayak (Paddle Boston)",
+     "blurb": "Paddle Boston, the outfit behind Charles River Canoe & Kayak, rents kayaks, canoes and stand-up paddleboards with no training or reservation needed: just show up on a nice day. Launch spots include Kendall Square at 15 Broad Canal Way in Cambridge and Soldiers Field Road in Allston/Brighton, plus sites on the Mystic River and Spot Pond. Adult kayak or board rentals start at $35 for an hour and a half, with kids at $17. Family-size boats and kid kayaks are available.",
+     "address": "15 Broad Canal Way, Cambridge, MA 02142 (Kendall Square)",
+     "phone": "",
+     "hours": "Seasonal",
+     "url": "https://paddleboston.com/",
+     "src": "https://www.wbur.org/news/2026/06/26/boston-paddling-windsurfing-boating-summer"
+    },
+    {
+     "name": "Courageous Sailing at Jamaica Pond",
+     "blurb": "For a calm first paddle, Courageous Sailing & Boating rents kayaks by the hour on Jamaica Pond, a sheltered spot with no river current or boat traffic. Single kayaks start at about $25 an hour, and Boston residents get a discount. Rentals are walk-up, which makes it an easy add-on to an afternoon in Jamaica Plain. It is a relaxed choice for beginners, couples and parents with older kids.",
+     "address": "Jamaica Pond, Jamaica Plain, Boston",
+     "phone": "",
+     "hours": "Seasonal",
+     "url": "https://courageoussailing.org/jamaica-pond/",
+     "src": "https://www.wbur.org/news/2026/06/26/boston-paddling-windsurfing-boating-summer"
+    },
+    {
+     "name": "Boating in Boston (Newton Boathouse)",
+     "blurb": "From the historic Newton boathouse on Commonwealth Avenue, Boating in Boston rents canoes, kayaks and stand-up paddleboards for exploring the Charles River's calm Lakes District. That stretch runs about six calm miles between Newton Lower Falls and the Moody Street Dam in Waltham, well away from the busier water downtown. It is a good pick for families and first-timers who want flat, sheltered water.",
+     "address": "2401 Commonwealth Ave, Newton, MA 02466",
+     "phone": "",
+     "hours": "Seasonal",
+     "url": "https://www.boatinginboston.com",
+     "src": "https://mommypoppins.com/boston-kids/boats/sailing-kayaking-duck-tours-and-other-fun-ways-to-experience-the-charles-river"
+    },
+    {
+     "name": "Community Rowing",
+     "blurb": "Community Rowing in Brighton opens the sport of rowing to the public on the Charles River, and its youth programs welcome ages 12 to 18 with Learn to Row classes, a Crew League, competitive teams and summer programs. It is a great way for teens to get on the river, build fitness and join a team, and the boathouse sits right on Nonantum Road along the Charles.",
+     "address": "20 Nonantum Rd, Brighton, MA 02135",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.communityrowing.org",
+     "src": "https://mommypoppins.com/boston-kids/boats/sailing-kayaking-duck-tours-and-other-fun-ways-to-experience-the-charles-river"
+    },
+    {
+     "name": "Electric Boats Boston",
+     "blurb": "No boating experience is needed to captain a quiet electric boat around Boston Harbor. Staff give instructions on the dock and run a demo loop before you take the helm, and boats top out at a gentle 6 mph. The be-your-own-captain experience runs about $439 to $561 for up to six people depending on length, or you can add a licensed captain for about $200 more. Larger 12-person boats are also available for groups.",
+     "address": "Boston Harbor",
+     "phone": "",
+     "hours": "Seasonal",
+     "url": "https://www.electricboatsboston.com/",
+     "src": "https://www.wbur.org/news/2026/06/26/boston-paddling-windsurfing-boating-summer"
+    }
+   ]
+  },
+  {
+   "key": "farms",
+   "title": "Markets",
+   "items": [
+    {
+     "name": "Boston Public Market",
+     "blurb": "Steps from the Freedom Trail, Boston Public Market is an indoor, year-round hall of New England vendors selling produce, regional cheeses, seafood, baked goods, maple syrup, local honey and craft chocolate. It is a great place to grab cider donuts, a Boston cream pie or a sandwich for a picnic, and there are cooking demonstrations. Crescent Ridge scoops its ice cream here too. Open daily, it is a reliable stop in any season.",
+     "address": "100 Hanover St, Boston, MA 02108",
+     "phone": "",
+     "hours": "Daily, year-round",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-markets-in-boston"
+    },
+    {
+     "name": "Haymarket",
+     "blurb": "Running since the 1800s between Faneuil Hall and the North End, Haymarket is Boston's lively open-air produce market, known for low prices on fruit, vegetables and herbs. Vendors set up on Fridays and Saturdays, roughly 6am to 7pm, year-round. Bargains get even better near closing time, and the crowds can be thick, so bring a sturdy bag and some patience. It is a classic slice of old Boston that has barely changed in generations.",
+     "address": "Blackstone St, between Faneuil Hall and the North End",
+     "phone": "",
+     "hours": "Fri–Sat about 6am–7pm",
+     "url": "",
+     "src": "https://bostonuncovered.com/boston-farmers-market-guide/"
+    },
+    {
+     "name": "SoWa Open Market",
+     "blurb": "SoWa in the South End is one of Boston's biggest outdoor markets, with more than 250 vendors on Sundays from 11am to 4pm, May through October. Expect fresh produce, small-batch foods, handmade jewelry, pottery, art prints and vintage finds, plus a lineup of food trucks and live music. The season wrapped at the end of October and returns in spring. Neighboring artist studios and galleries make it easy to stay for the afternoon.",
+     "address": "South End, Boston (SoWa district, Harrison Ave)",
+     "phone": "",
+     "hours": "Sun 11am–4pm, May–Oct",
+     "url": "https://www.meetboston.com/event/sowa-open-market/90395/",
+     "src": "https://bostonuncovered.com/boston-farmers-market-guide/"
+    },
+    {
+     "name": "Copley Square Farmers Market",
+     "blurb": "Set in Copley Square near Trinity Church and the Boston Public Library, this open-air market runs Tuesdays and Fridays from 11am to 6pm, May through November. Farmers bring Massachusetts berries, heirloom tomatoes and greens in season, joined by artisan bread, local creamery cheeses, galettes, scones, flowers, jams, honey and coffee from local roasters. It is a handy midday stop for Back Bay office workers and visitors alike.",
+     "address": "Copley Square, Boston, MA 02116",
+     "phone": "",
+     "hours": "Tue & Fri 11am–6pm, May–Nov",
+     "url": "",
+     "src": "https://bostonuncovered.com/boston-farmers-market-guide/"
+    },
+    {
+     "name": "Union Square Farmers Market",
+     "blurb": "Somerville's Union Square market runs on Saturdays from late spring through November and draws crowds for heirloom tomatoes, leafy greens, specialty mushrooms, artisan cheeses, wildflower honey and pastries. Prepared food is a highlight, with options like Filipino empanadas, vegan dishes, hand-rolled bagels and dumplings, along with food trucks and local musicians. Make a morning of it with breakfast at the market and a walk around the square.",
+     "address": "Union Square, Somerville, MA",
+     "phone": "",
+     "hours": "Sat, late spring–Nov",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-markets-in-boston"
+    },
+    {
+     "name": "Fish and Farm Market at Boston Fish Pier",
+     "blurb": "On Saturdays through October 31, the historic Boston Fish Pier on the South Boston waterfront hosts a market of fresh local seafood and farm products. It is a chance to buy straight from the working waterfront and see the historic pier up close. With the season ending this Saturday, it is a good weekend to stock up, then stroll over to the Seaport's restaurants and the HarborWalk.",
+     "address": "Boston Fish Pier, South Boston Waterfront",
+     "phone": "",
+     "hours": "Saturdays through Oct 31",
+     "url": "https://www.meetboston.com/event/fish-and-farm-market/93217/",
+     "src": "https://www.meetboston.com/things-to-do/shopping"
+    }
+   ]
+  },
+  {
+   "key": "icecream",
+   "title": "Ice Cream & Treats",
+   "items": [
+    {
+     "name": "JP Licks",
+     "blurb": "JP Licks is Boston's homegrown scoop shop, with a cow theme, funky rotating flavors and vegan options, and it makes its ice cream at the original Centre Street shop in Jamaica Plain. The chain has grown to more than a dozen locations around the area, so there is likely one near you. Fresh Peach is a summer favorite. The Jamaica Plain flagship stays open late, making it a popular after-dinner stop.",
+     "address": "659 Centre St, Jamaica Plain, MA 02130",
+     "phone": "",
+     "hours": "Daily 11am–11pm",
+     "url": "https://www.jplicks.com",
+     "src": "https://bostoncentral.com/ice-cream-boston"
+    },
+    {
+     "name": "Toscanini's",
+     "blurb": "A Cambridge institution on Main Street, Toscanini's turns out small-batch flavors that have built a loyal following; burnt caramel is the one regulars rave about. Its ice cream also turns up in many Whole Foods stores and other retailers, but the shop is the place to sample the more adventurous rotating flavors. Long hours, from 8am to late night, make it a coffee stop by morning and a dessert stop by night.",
+     "address": "899 Main St, Cambridge, MA 02139",
+     "phone": "",
+     "hours": "Sun–Thu 8am–11pm; Fri–Sat 8am–12am",
+     "url": "https://www.tosci.com",
+     "src": "https://bostoncentral.com/ice-cream-boston"
+    },
+    {
+     "name": "Honeycomb Creamery",
+     "blurb": "On Massachusetts Avenue in Cambridge, Honeycomb Creamery makes its ice cream from scratch using milk and cream from Jersey cows at Mapleline Farm in Hadley, with no stabilizers or growth hormones. Seasonal fruit flavors are the draw, so the menu changes with the harvest. It opens Tuesday through Sunday from 1pm to 10pm, and the short menu rewards repeat visits as the seasons turn.",
+     "address": "1702 Massachusetts Ave, Cambridge, MA 02138",
+     "phone": "",
+     "hours": "Tue–Sun 1pm–10pm",
+     "url": "https://www.honeycombcreamery.com",
+     "src": "https://bostoncentral.com/ice-cream-boston"
+    },
+    {
+     "name": "Christina's Ice Cream",
+     "blurb": "Christina's in Inman Square is famous for more than 50 inventive, spice-inspired flavors, from cinnamon to adzuki bean, and for being the kind of place where you need several tastes before deciding. It opens daily from late morning, closing at 9:30pm Sunday through Thursday and 10:30pm on weekends. It is an easy dessert stop after dinner in Inman Square, and a fun place to bring friends who like to experiment.",
+     "address": "1255 Cambridge St, Cambridge, MA 02139",
+     "phone": "",
+     "hours": "Sun–Thu 11:30am–9:30pm; Fri–Sat 11:30am–10:30pm",
+     "url": "https://www.christinasicecream.com",
+     "src": "https://bostoncentral.com/ice-cream-boston"
+    },
+    {
+     "name": "Emack & Bolio's",
+     "blurb": "A Newbury Street favorite in Back Bay, Emack & Bolio's is known for big waffle cones dipped in chocolate and rolled in candy toppings, with Cosmic Crunch a signature choice. It is a natural treat stop during a day of shopping on Newbury, and it stays open until 10pm Sunday through Thursday and 11pm on Friday and Saturday. Grab a cone and keep strolling past the brownstones.",
+     "address": "290 Newbury St, Boston, MA 02115",
+     "phone": "",
+     "hours": "Sun–Thu 12–10pm; Fri–Sat 12–11pm",
+     "url": "https://www.emackandbolios.com",
+     "src": "https://bostoncentral.com/ice-cream-boston"
+    },
+    {
+     "name": "The Ice Creamsmith",
+     "blurb": "Family-run for more than four decades on Dorchester Avenue, The Ice Creamsmith makes small batches on site from whole ingredients, the kind of neighborhood scoop shop that generations of Dorchester families grew up with. The fresh peach sundae is a summer standout. It is open daily from noon to 10pm, a sweet reward after an afternoon in the neighborhood, and a true local favorite.",
+     "address": "2295 Dorchester Ave, Dorchester, MA 02124",
+     "phone": "",
+     "hours": "Daily 12pm–10pm",
+     "url": "https://www.icecreamsmith.com",
+     "src": "https://bostoncentral.com/ice-cream-boston"
+    },
+    {
+     "name": "Lizzy's Homemade Ice Cream",
+     "blurb": "Just off Harvard Square on Church Street, Lizzy's scoops more than 50 flavors, with good choices for guests avoiding dairy or gluten and no-sugar-added options, so everyone in the group can find something. There is also a Waltham location. Hours run from noon to 9:30pm Sunday through Thursday and to 10pm on weekends, making it a handy stop after a Harvard Square stroll or a show.",
+     "address": "29 Church St, Cambridge, MA 02138",
+     "phone": "",
+     "hours": "Sun–Thu 12–9:30pm; Fri–Sat 12–10pm",
+     "url": "https://www.lizzysicecream.com",
+     "src": "https://bostoncentral.com/ice-cream-boston"
+    },
+    {
+     "name": "Ron's Gourmet Ice Cream & Bowling",
+     "blurb": "Where else can you bowl a few strings of candlepin and then dig into homemade ice cream? Ron's on Belgrade Avenue in Roslindale pairs the two old-school New England pastimes, and its make-your-own sundae kit is a family favorite. A Dedham location serves ice cream only, and online ordering for pickup is available. It is open daily from noon to 10pm, a fun cold-weather outing too.",
+     "address": "123 Belgrade Ave, Roslindale, MA 02131",
+     "phone": "",
+     "hours": "Daily 12pm–10pm",
+     "url": "https://www.ronsicecream.com",
+     "src": "https://bostoncentral.com/ice-cream-boston"
+    }
+   ]
+  },
+  {
+   "key": "eat",
+   "title": "Eat & Drink",
+   "items": [
+    {
+     "name": "North End Cannoli: Mike's vs. Modern",
+     "blurb": "No trip to the North End is complete without a cannoli, and the friendly rivalry between Mike's Pastry and Modern Pastry is part of the fun. Mike's, a family bakery making cannoli since 1946, sends them out in its signature white boxes tied with string, while Modern is run by three generations of bakers. Crisp shells filled with sweet ricotta come finished with chocolate, nuts or fruit. Try one from each and pick your side.",
+     "address": "Hanover St, North End, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://theculturetrip.com/usa/massachusetts/articles/10-signature-boston-dishes-you-need-to-try"
+    },
+    {
+     "name": "Quincy Market & Faneuil Hall",
+     "blurb": "Gathering Bostonians since 1742, Faneuil Hall Marketplace is the city's classic food-and-browsing stop. Inside the Quincy Market colonnade, stalls serve clam chowder, lobster rolls, Boston cream pie and food from around the world, while the cobblestone plazas outside fill with pop-up vendors, souvenir shops and street performers. Grab a bowl of chowder and a spot on a bench, then catch a show. The Salty Dog inside also serves fish and chips.",
+     "address": "Faneuil Hall Marketplace, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-markets-in-boston"
+    },
+    {
+     "name": "Chinatown",
+     "blurb": "Boston's compact Chinatown is a feast for curious eaters, packed with mom-and-pop snack counters, bakeries and bubble tea parlors. Grocery shelves hold lychees, pomelos, unusual greens and rice crackers, shops sell teas, herbs and spices from across Asia, and sidewalk vendors hand out skewers, bao and coconut buns. It is open year-round and easy to explore on foot from the Chinatown stop on the Orange Line or the southern end of the Greenway.",
+     "address": "Chinatown, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-markets-in-boston"
+    },
+    {
+     "name": "Clam Chowder at Union Oyster House",
+     "blurb": "Boston's creamy white New England clam chowder, made with clams, onions, potatoes and milk or cream and thickened with oyster crackers, is the city's signature bowl. Union Oyster House, serving since 1826, is the historic place to try it, and it also offers Boston baked beans as a side, the dish behind the Beantown nickname. James Hook & Co and Legal Sea Foods are other dependable stops for a bowl.",
+     "address": "Union Oyster House, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://theculturetrip.com/usa/massachusetts/articles/10-signature-boston-dishes-you-need-to-try"
+    },
+    {
+     "name": "Boston Cream Pie at the Omni Parker House",
+     "blurb": "Boston cream pie was born at the Parker House in 1856, when French chef Augustine Francois Anezin layered sponge cake with custard, brushed it with rum syrup and topped it with chocolate. The Omni Parker House still serves the original, and the hotel also gave the world Parker House rolls. Flour Bakery, Union Square Donuts and Bova's Bakery offer their own takes, including doughnut versions.",
+     "address": "Omni Parker House, School & Tremont streets, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://theculturetrip.com/usa/massachusetts/articles/10-signature-boston-dishes-you-need-to-try"
+    },
+    {
+     "name": "Lobster Rolls",
+     "blurb": "Maine may claim the lobster roll, but Boston serves plenty of great ones on griddled, buttered rolls, either warm with melted butter or cold with mayo. Neptune Oyster is the famous choice, so expect a line, while Yankee Lobster Co on the harbor piles on claw and knuckle meat in a casual waterfront setting. Quincy Market stalls are another quick option for visitors on the Freedom Trail.",
+     "address": "Neptune Oyster or Yankee Lobster Co (on the harbor), Boston",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://theculturetrip.com/usa/massachusetts/articles/10-signature-boston-dishes-you-need-to-try"
+    },
+    {
+     "name": "Fenway Franks",
+     "blurb": "Hot dogs have been sold at Fenway Park since it opened more than a century ago, and a Fenway Frank is part of the ballpark ritual. They are boiled, then grilled, and served in a New England split-top bun with relish or mustard. Eat one in the shadow of the Green Monster during a Red Sox game, and the experience tastes even better. Pair it with peanuts and a seventh-inning stretch for the full Boston ritual.",
+     "address": "Fenway Park, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.mlb.com/redsox",
+     "src": "https://theculturetrip.com/usa/massachusetts/articles/10-signature-boston-dishes-you-need-to-try"
+    },
+    {
+     "name": "Oysters at B&G Oysters & Boston Public Market",
+     "blurb": "With the harbor at its doorstep, Boston is an oyster town. B&G Oysters serves bivalves from both coasts, perfect plain or with a squeeze of lemon, and is a favorite of local seafood lovers. For something more casual, the vendors at Boston Public Market shuck local oysters by the counter. Ask what came in that day and try a few varieties side by side.",
+     "address": "B&G Oysters; Boston Public Market, 100 Hanover St, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://theculturetrip.com/usa/massachusetts/articles/10-signature-boston-dishes-you-need-to-try"
+    }
+   ]
+  },
+  {
+   "key": "shop",
+   "title": "Neighborhoods & Shopping",
+   "items": [
+    {
+     "name": "Newbury Street",
+     "blurb": "Starting at the Public Garden and running eight blocks through Back Bay, Newbury Street mixes high-end fashion houses such as Chanel and Valentino with independent shops, vintage stores, record stores and home décor boutiques, all set in handsome brownstones. Trident Booksellers & Café is a beloved stop for books and brunch, and outdoor dining spills onto the sidewalks in warmer months. Save time for an ice cream at Emack & Bolio's at 290 Newbury.",
+     "address": "Newbury St, Back Bay, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-places-to-shop-in-boston"
+    },
+    {
+     "name": "Beacon Hill & Charles Street",
+     "blurb": "Gas lamps, brick sidewalks and Federal-style rowhouses make Beacon Hill Boston's most photogenic neighborhood, and Charles Street at its foot is lined with independent boutiques, antique dealers, galleries, bookshops and home décor stores. Black Ink stocks clever stationery and gadgets, Follain specializes in clean beauty, and Tatte Bakery is the place for coffee and a pastry. Cobblestone sidewalks add to the old-Boston charm.",
+     "address": "Charles St, Beacon Hill, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-places-to-shop-in-boston"
+    },
+    {
+     "name": "North End",
+     "blurb": "Boston's oldest neighborhood packs cobblestone lanes with Italian delis, fishmongers, wine and spice shops, imported ceramics and one-of-a-kind jewelry. It is also ground zero for the city's great pastry rivalry between Mike's and Modern on Hanover Street. Wander the side streets for specialty food stores, then follow the Freedom Trail to the Paul Revere House and Old North Church. Bring an appetite and comfortable shoes.",
+     "address": "North End, Boston (Hanover & Salem streets)",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-places-to-shop-in-boston"
+    },
+    {
+     "name": "Harvard Square",
+     "blurb": "Across the river in Cambridge, Harvard Square is a browser's paradise of independent bookstores, quirky gift shops and university-themed stores. The Harvard Coop is the classic stop for books and campus gear, Newbury Comics stocks vinyl, comics and collectibles, and Cardullo's sells international treats and teas. It is a lively place to spend an afternoon browsing, and the Harvard museums are close by.",
+     "address": "Harvard Square, Cambridge, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-places-to-shop-in-boston"
+    },
+    {
+     "name": "Seaport District",
+     "blurb": "Boston's newest neighborhood has grown into a waterfront playground of shops, restaurants and attractions. Browse the Superette courtyard on Pier 4 Boulevard, grab a fish-shaped taiyaki cone on Seaport Boulevard, and visit the ICA right on the harbor. Nearby Fort Point adds the Children's Museum, the Tea Party Ships and the Hood Milk Bottle. The Silver Line connects the Seaport to South Station and Logan Airport.",
+     "address": "Seaport District, South Boston Waterfront",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://bostoncentral.com/ice-cream-boston"
+    },
+    {
+     "name": "Downtown Crossing",
+     "blurb": "Downtown Crossing is the city's busy pedestrian shopping hub, mixing department stores and well-known brands with budget fashion and discount finds. Macy's anchors the district, Primark has its only U.S. store here, and Brattle Book Shop sells used books with outdoor bargain bins. Grab a coffee at Ogawa Coffee between stops, and enjoy the pedestrian-friendly streets, which are busy with shoppers and office workers alike.",
+     "address": "Downtown Crossing, Washington & Summer streets, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-places-to-shop-in-boston"
+    },
+    {
+     "name": "Prudential Center & Copley Place",
+     "blurb": "Linked by sky bridges in Back Bay, the Prudential Center and Copley Place make a weatherproof shopping day, with Saks Fifth Avenue, Gucci, Louis Vuitton, Apple, Sephora and dozens of popular brands. Eataly brings an Italian food market under the same roof, and View Boston, the observation deck atop the Prudential tower, offers sweeping city views. It is a smart rainy-day plan.",
+     "address": "Prudential Center & Copley Place, Back Bay, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.meetboston.com/listing/prudential-center/10726/",
+     "src": "https://gocity.com/en/boston/things-to-do/best-places-to-shop-in-boston"
+    },
+    {
+     "name": "Faneuil Hall Marketplace",
+     "blurb": "At the heart of downtown, Faneuil Hall Marketplace bundles souvenir shops, well-known brands and small local stalls for gifts, clothing and Boston-themed keepsakes alongside the food hall of Quincy Market. Street performers draw crowds on the cobblestones outside, and the holiday market brings local makers and festive gifts later in the season. It is an easy downtown stop for gifts and people-watching.",
+     "address": "Faneuil Hall Marketplace, Boston, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-places-to-shop-in-boston"
+    },
+    {
+     "name": "South End",
+     "blurb": "The South End holds some of Boston's best independent shopping and dining. The SoWa district is home to artist studios, galleries and the Sunday SoWa Open Market in season, with handmade ceramics, jewelry, vintage finds and screen-printed clothing. Tremont Street adds cafes, bakeries and restaurants such as Picco, known for pizza and house-made ice cream. FoMu on Tremont Street adds plant-based ice cream.",
+     "address": "South End, Boston (Tremont St & SoWa district)",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-places-to-shop-in-boston"
+    },
+    {
+     "name": "Assembly Row",
+     "blurb": "Just over the line in Somerville, Assembly Row is an easy outdoor complex of outlet stores and local boutiques with brands like Nike, J.Crew and Le Creuset, plus sweet-treat shops. A riverside boardwalk, a movie theater, indoor play spaces for kids and restaurants such as River Bar and Tony C's round out a full family day. It is an easy half-day outing from downtown.",
+     "address": "Assembly Row, Somerville, MA",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://gocity.com/en/boston/things-to-do/best-places-to-shop-in-boston"
+    }
+   ]
+  },
+  {
+   "key": "stay",
+   "title": "Places to Stay",
+   "items": [
+    {
+     "name": "Omni Parker House",
+     "blurb": "Opened in 1855 by Harvey D. Parker at the corner of School and Tremont streets, the Omni Parker House is described as one of the longest continuously operating hotels in the country. Emerson, Hawthorne, Longfellow and Charles Dickens all stayed or gathered here, and its kitchen gave the world Boston cream pie and Parker House rolls. Staying here puts guests in the middle of downtown history.",
+     "address": "School & Tremont streets, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.meetboston.com/listing/omni-parker-house/11956/",
+     "src": "https://www.meetboston.com/stay/historic-hotels/"
+    },
+    {
+     "name": "Fairmont Copley Plaza",
+     "blurb": "Filling a full city block on Copley Square, the Fairmont Copley Plaza opened in 1912 on the site of Boston's original Museum of Fine Arts, with Mayor John F. \"Honey Fitz\" Fitzgerald presiding over its debut. Its grand public rooms draw on French and Venetian Renaissance design. Trinity Church, the Boston Public Library, Newbury Street and the Boston Marathon finish line are all at the doorstep.",
+     "address": "Copley Square, Back Bay, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.meetboston.com/listing/fairmont-copley-plaza/11870/",
+     "src": "https://www.meetboston.com/stay/historic-hotels/"
+    },
+    {
+     "name": "The Liberty Hotel",
+     "blurb": "Few hotels have a backstory like the Liberty. The granite building by the Charles River was the Charles Street Jail, completed in 1851 and designed by Gridley James Fox Bryant, and it reopened as a hotel in 2007. Guests walk under a 90-foot central rotunda with preserved catwalks and exposed brick, a striking blend of history and modern style. It is one of the most memorable places to stay in Boston.",
+     "address": "Beside the Charles River, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.meetboston.com/listing/the-liberty-hotel-boston/11933/",
+     "src": "https://www.meetboston.com/stay/historic-hotels/"
+    },
+    {
+     "name": "XV Beacon",
+     "blurb": "Built in 1903 and designed by William Gibbons Preston, this Beacon Hill building once housed the Boston Transit Commission and the Boston School Committee before becoming a boutique hotel in 1999. Listed on the National Register of Historic Places, it pairs turn-of-the-century details with contemporary art and design. It is an intimate, stylish base on Beacon Hill for travelers who like boutique hotels with a sense of history.",
+     "address": "15 Beacon St, Boston, MA 02108",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.meetboston.com/listing/xv-beacon-hotel/12000/",
+     "src": "https://www.meetboston.com/stay/historic-hotels/"
+    },
+    {
+     "name": "The Eliot Hotel",
+     "blurb": "On Commonwealth Avenue in Back Bay, the Eliot opened in 1926 to house visiting Harvard lecturers, commissioned by the family of Harvard president Charles William Eliot and designed by Harold Field Kellogg. Its Georgian Revival architecture carries French touches, and it joined Historic Hotels of America in 2024. It offers a quiet, residential feel in the heart of Back Bay.",
+     "address": "Commonwealth Ave, Back Bay, Boston",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.meetboston.com/listing/the-eliot-hotel/11945/",
+     "src": "https://www.meetboston.com/stay/historic-hotels/"
+    },
+    {
+     "name": "The Kendall Hotel",
+     "blurb": "Across the river in Cambridge's Kendall Square, the Kendall Hotel occupies Engine 7, a firehouse completed in 1895. After the station closed in 1993, preservationists restored the building and reopened it as a boutique hotel in 2002, keeping its distinctive cupolas and red-brick exterior. It is a characterful base for visitors to Cambridge, and the firehouse heritage gives a stay here a story worth telling back home.",
+     "address": "Kendall Square, Cambridge, MA",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.kendallhotel.com/",
+     "src": "https://www.meetboston.com/stay/historic-hotels/"
+    }
+   ]
+  },
+  {
+   "key": "getting",
+   "title": "Getting Around",
+   "items": [
+    {
+     "name": "MBTA Subway (the T)",
+     "blurb": "The T is the fastest way around Boston, with color-coded Red, Orange, Green and Blue lines plus the Silver Line bus rapid transit. A one-way subway ride costs $2.40, and children 11 and under ride at no charge. Service generally runs from about 5am to 1am, with no overnight trains. Tap a contactless bank card or phone, or use a CharlieCard. Beginning September 1, 2026, a pilot allows unlimited subway, bus and ferry transfers within two hours.",
+     "address": "",
+     "phone": "",
+     "hours": "About 5am–1am",
+     "url": "https://www.mbta.com",
+     "src": "https://mbta.com/fares_and_passes/subway/"
+    },
+    {
+     "name": "MBTA Buses & Silver Line",
+     "blurb": "A local MBTA bus ride costs $1.70 one way, and buses fill the gaps between subway lines across the city and nearby towns. The Silver Line connects South Station with the Seaport and Logan Airport. You can pay with a CharlieCard, CharlieTicket or a contactless card or phone. A Monthly Local Bus Pass is $55, and the 1-day ($11) and 7-day ($22.50) passes also cover buses and the subway.",
+     "address": "",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.mbta.com",
+     "src": "https://mbta.com/fares_and_passes/subway/"
+    },
+    {
+     "name": "Commuter Rail",
+     "blurb": "MBTA Commuter Rail trains fan out to the suburbs and beyond from North Station and South Station, with Back Bay Station another key stop. Fares range from $2.40 to $13.25 depending on distance, paid with a CharlieTicket or the mTicket app; contactless tap is not accepted on Commuter Rail. Through November, monthly Commuter Rail passes are half off, and monthly passholders can buy $1 companion passes. Concord and Salem make easy day trips by rail.",
+     "address": "North Station, South Station, Back Bay Station",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.mbta.com",
+     "src": "https://mbta.com/fares_and_passes/subway/"
+    },
+    {
+     "name": "Logan Airport",
+     "blurb": "Logan sits just across the harbor from downtown. The Silver Line SL1 bus runs from every terminal at no charge to South Station every 10 to 15 minutes, where you can connect to the Red Line. Alternatively, Massport shuttle buses carry passengers to Airport Station on the Blue Line, where a regular subway fare applies. Taxis typically run $30 to $40, and ride-hailing roughly $20 to $30. Allow at least two hours to reach the airport for a flight.",
+     "address": "East Boston, MA 02128",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.massport.com",
+     "src": "https://freetoursbyfoot.com/logan-airport-to-downtown-boston/"
+    },
+    {
+     "name": "Bluebikes",
+     "blurb": "Boston's bike-share system has hundreds of docking stations across the city and neighboring communities, so you can pick up a bike in one spot and drop it at another. Rent for a single trip or by the hour through the Bluebikes app. It is a great way to cruise the Charles River paths or hop between neighborhoods. Bikes face restrictions on the MBTA and the Mattapan Trolley, so check the rules before combining a ride with transit.",
+     "address": "",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.bluebikes.com",
+     "src": "https://viatravelers.com/how-to-get-around-boston"
+    },
+    {
+     "name": "Driving & Parking",
+     "blurb": "Driving in Boston is best avoided when you can. Major routes include I-93 north and south, I-90 east and west, and Storrow Drive along the Charles River. Street parking is scarce and garages are plentiful but expensive, so many visitors park once and use transit. For the Public Garden and Beacon Hill area, the Boston Common Parking Garage on Charles Street (use 4 Charles St for GPS) is a central option.",
+     "address": "Boston Common Garage, 4 Charles St (GPS)",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://viatravelers.com/how-to-get-around-boston"
+    },
+    {
+     "name": "Water Taxi & Airport Ferry",
+     "blurb": "For a scenic arrival, take the shuttle from your Logan terminal to the airport dock and cross the harbor by boat in 10 to 15 minutes. The MBTA ferry to Rowe's Wharf or Long Wharf costs $9.75 one way, and the water taxi is $15 one way for adults. You will still need a short walk, bus or ride from the downtown dock to your final stop, but the harbor views make a memorable welcome to the city.",
+     "address": "Logan Airport dock to Rowe's Wharf or Long Wharf",
+     "phone": "",
+     "hours": "",
+     "url": "",
+     "src": "https://freetoursbyfoot.com/logan-airport-to-downtown-boston/"
+    },
+    {
+     "name": "CharlieCard & Fares",
+     "blurb": "The reusable plastic CharlieCard is the way to go for regular bus and subway riders, while paper CharlieTickets suit visitors and Commuter Rail or ferry riders and are sold at any subway station. You can also simply tap a contactless bank card or phone on the subway, buses, Silver Line and ferries. A 1-day pass is $11, a 7-day pass $22.50 and a monthly LinkPass $90. Reduced fares are available for eligible riders.",
+     "address": "Charlie Service Center and subway fare machines",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.mbta.com/fares",
+     "src": "https://mbta.com/fares_and_passes/subway/"
+    }
+   ]
+  },
+  {
+   "key": "give",
+   "title": "Give Back",
+   "items": [
+    {
+     "name": "Greater Boston Food Bank",
+     "blurb": "The Greater Boston Food Bank, which serves mainly Eastern Massachusetts, welcomes volunteers to its South Bay warehouse to inspect produce and bread, sort groceries and pack food boxes for seniors. Individual shifts run Monday through Saturday, 9am to noon and 1 to 4pm, plus Wednesday evenings from 5:30 to 8pm. Register online at least 24 hours ahead; volunteers must be 16 or older, with an adult chaperone under 18. Wear closed-toed shoes. Andrew Station on the Red Line is about a mile away.",
+     "address": "70 South Bay Ave, Boston, MA 02118",
+     "phone": "617-427-5200",
+     "hours": "Mon–Sat 9am–12pm & 1–4pm; Wed 5:30–8pm",
+     "url": "https://www.gbfb.org/get-involved/volunteer/",
+     "src": "https://www.gbfb.org/get-involved/volunteer/volunteering-faqs/"
+    },
+    {
+     "name": "Community Servings",
+     "blurb": "Community Servings prepares nutritious, medically tailored meals for neighbors living with chronic illness, and volunteers do the hands-on kitchen work, chopping vegetables and stirring pots alongside the staff. Around Thanksgiving, volunteers with their own cars can also help deliver holiday meals. Shifts are posted on the organization's volunteer calendar, so browse the dates and sign up for a time that fits. It is a rewarding way for families, friends and coworkers to give a few hours together.",
+     "address": "",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.servings.org/volunteer-calendar",
+     "src": "https://www.bostonmagazine.com/?p=2592858"
+    },
+    {
+     "name": "Rosie's Place",
+     "blurb": "Rosie's Place, a shelter and support center for women in need, offers several ways to help. Volunteers can lend a hand in the food pantry, teach classes or mentor guests working toward stability. It is a meaningful fit for people who want to share a skill or build a relationship over time, not just give a single afternoon. Visit the volunteer page to see current openings and application steps.",
+     "address": "",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.rosiesplace.org/volunteer",
+     "src": "https://www.bostonmagazine.com/?p=2592858"
+    },
+    {
+     "name": "Pine Street Inn",
+     "blurb": "Pine Street Inn, one of Boston's best-known homeless services organizations, relies on volunteers to serve daily meals to guests, and some help as receptionists at its health clinic. Serving a meal is one of the most direct ways to support neighbors facing hard times, and it is a popular option for church groups, friends and coworkers. Check the volunteer opportunities page on its website for current needs and sign-up details.",
+     "address": "",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.pinestreetinn.org",
+     "src": "https://www.bostonmagazine.com/?p=2592858"
+    },
+    {
+     "name": "Haley House",
+     "blurb": "Haley House runs soup kitchens in the South End and Roxbury, and volunteers help prepare and serve meals to guests. It is a welcoming, hands-on way to support the community, whether you can give a single morning or a regular weekly shift. Groups and individuals are both welcome. See the volunteer page on its website to find openings and learn what to expect before your first shift.",
+     "address": "",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.haleyhouse.org/give/volunteer",
+     "src": "https://www.bostonmagazine.com/?p=2592858"
+    },
+    {
+     "name": "Cradles to Crayons",
+     "blurb": "At Cradles to Crayons' Giving Factory warehouse, volunteers inspect and package donated clothing, toys and books so that local children have what they need at home, at school and at play. Shifts are a great fit for families, friends and coworkers who want to work side by side, and you can also donate gently used items. Visit the volunteer page to reserve a Giving Factory shift.",
+     "address": "",
+     "phone": "",
+     "hours": "",
+     "url": "https://www.cradlestocrayons.org/boston/take-action/volunteer/in-the-giving-factory",
+     "src": "https://www.bostonmagazine.com/?p=2592858"
+    }
+   ]
+  }
+ ]
 }
