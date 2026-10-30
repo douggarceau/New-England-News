@@ -1,0 +1,26 @@
+name: Story share pages
+# Builds a share page and preview card for every story so links posted to
+# Facebook, X or texts show the story itself. Runs on GitHub, not Claude.
+on:
+  push:
+    branches: [main]
+    paths: [index.html, tools/share_pages.py]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: share-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y -qq fonts-dejavu-core >/dev/null && pip install -q pillow
+      - run: python3 tools/share_pages.py
+      - name: Commit if anything changed
+        run: |
+          git add s img/share
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git -c user.name="The Boston Rambler" -c user.email="douggarceau@users.noreply.github.com" commit -m "Update story share pages"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
