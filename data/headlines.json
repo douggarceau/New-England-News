@@ -38,22 +38,13 @@
    "rank": 4
   },
   {
-   "h": "Tatum's overtime buzzer-beater lifts Celtics past the Nets",
-   "sum": "Jayson Tatum hit a jumper at the horn in overtime to give the Celtics a 125-124 win over Brooklyn.",
-   "outlet": "Boston 25 News",
-   "url": "https://www.boston25news.com/news/local/jayson-tatum-hits-buzzer-beating-jumper-ot-give-celtics-125-124-win-over-nets/UFVUEWUXLFFJRKXPTYHXIITKDA/",
-   "town": "Boston",
-   "date": "2026-10-28",
-   "rank": 5
-  },
-  {
    "h": "Noah Kahan adds four Fenway Park shows for 2027",
    "sum": "The singer-songwriter returns to Fenway Park for concerts on May 29, May 30, June 1 and June 2.",
    "outlet": "NBC Boston",
    "url": "https://www.nbcboston.com/news/local/noah-kahan-2027-tour-mastercard-tickets-fenway-park/4039710/",
    "town": "Fenway",
    "date": "2026-10-29",
-   "rank": 6
+   "rank": 5
   },
   {
    "h": "Harvard Book Store opening a second shop in downtown Boston",
@@ -62,7 +53,7 @@
    "url": "https://www.wbur.org/news/2026/10/23/harvard-book-store-downtown-boston",
    "town": "Downtown",
    "date": "2026-10-23",
-   "rank": 7
+   "rank": 6
   },
   {
    "h": "Bostonhenge sunset lines up with Back Bay streets this week",
@@ -71,7 +62,7 @@
    "url": "https://www.wbur.org/news/2026/10/27/bostonhenge-back-bay-october",
    "town": "Back Bay",
    "date": "2026-10-27",
-   "rank": 8
+   "rank": 7
   },
   {
    "h": "Hello, Old Friend brings Detroit-style pizza to West Roxbury",
@@ -80,25 +71,7 @@
    "url": "https://www.nbcboston.com/entertainment/food-drink-nightlife/hello-old-friend-detroit-style-pizza-business-opens-location-in-boston/4039021/",
    "town": "West Roxbury",
    "date": "2026-10-28",
-   "rank": 9
-  },
-  {
-   "h": "Pritchard's hot third quarter powers Celtics rout of the Bulls",
-   "sum": "Payton Pritchard scored 28 points as the Celtics rolled past Chicago 134-99 at TD Garden.",
-   "outlet": "Boston 25 News",
-   "url": "https://www.boston25news.com/news/local/pritchard-scores-28-points-has-red-hot-3rd-quarter-carry-celtics-134-99-rout-over-bulls/23GBOS4EU5FHVI4MKHYQ6NNOXA/",
-   "town": "Boston",
-   "date": "2026-10-27",
-   "rank": 10
-  },
-  {
-   "h": "Tatum scores 36 as Celtics hold off the Knicks for first win",
-   "sum": "Jayson Tatum came through down the stretch in the home opener as Boston beat New York 107-103.",
-   "outlet": "Boston 25 News",
-   "url": "https://www.boston25news.com/news/local/jayson-tatum-scores-36-sizzles-down-stretch-celtics-fend-off-knicks-107-103/K3RSP7OVU5BNDEU362VQCMBEJM/",
-   "town": "Boston",
-   "date": "2026-10-26",
-   "rank": 11
+   "rank": 8
   },
   {
    "h": "Wu proposes faster path for new neighborhood restaurants",
@@ -107,7 +80,7 @@
    "url": "https://www.boston25news.com/news/local/boston-mayor-proposes-zoning-reforms-cut-red-tape-speed-up-process-local-restaurants/6DMLRQU2XZAJXJKAISHARGCQJU/",
    "town": "Boston",
    "date": "2026-10-27",
-   "rank": 12
+   "rank": 9
   },
   {
    "h": "Hasbro's CEO talks about the toymaker's move to the Seaport",
@@ -116,7 +89,7 @@
    "url": "https://www.wbur.org/news/2026/10/23/hasbro-chris-cocks-pawtucket-seaport-relocation",
    "town": "Seaport",
    "date": "2026-10-23",
-   "rank": 13
+   "rank": 10
   },
   {
    "h": "Fields Corner Post Office will stay open after all",
@@ -125,25 +98,7 @@
    "url": "https://www.wbur.org/news/2026/10/23/fields-corner-dorchester-post-office-will-stay-open",
    "town": "Dorchester",
    "date": "2026-10-23",
-   "rank": 14
-  },
-  {
-   "h": "Bruins name their first new NHL governor in 51 years",
-   "sum": "Jeremy Jacobs has stepped aside as the team's governor on the league's board, a role he held since 1975.",
-   "outlet": "Boston Business Journal",
-   "url": "https://www.nbcboston.com/boston-business-journal/bruins-name-first-new-nhl-governor-in-51-years/4039156/",
-   "town": "Boston",
-   "date": "2026-10-28",
-   "rank": 15
-  },
-  {
-   "h": "Rookie James Hagens has been a big boost for the Bruins",
-   "sum": "The young forward has delivered everything Boston hoped for early in the season, putting him in the rookie-of-the-year conversation.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/rookie-james-hagens-stats-highlights-bruins-calder-trophy/4037407/",
-   "town": "Boston",
-   "date": "2026-10-26",
-   "rank": 16
+   "rank": 11
   },
   {
    "h": "Somerville looks to save arts spaces with a cultural trust",
@@ -152,7 +107,7 @@
    "url": "https://www.wbur.org/news/2026/10/28/somerville-cultural-trust-arts-space",
    "town": "Somerville",
    "date": "2026-10-28",
-   "rank": 17
+   "rank": 12
   },
   {
    "h": "Nikki Giovanni's archives open to the public at Boston University",
@@ -161,7 +116,7 @@
    "url": "https://www.wbur.org/news/2026/10/22/poet-nikki-giovanni-archive-boston-university-howard-gotlieb-center",
    "town": "Fenway",
    "date": "2026-10-22",
-   "rank": 18
+   "rank": 13
   },
   {
    "h": "Voice of Logan contest narrowed to eight finalists",
@@ -170,7 +125,7 @@
    "url": "https://www.wbur.org/news/2026/10/27/massport-voice-of-logan-competition-finalists",
    "town": "East Boston",
    "date": "2026-10-27",
-   "rank": 19
+   "rank": 14
   },
   {
    "h": "State mails letters to help residents claim lost money",
@@ -179,61 +134,7 @@
    "url": "https://www.wbur.org/news/2026/10/27/massachusetts-unclaimed-property-letter",
    "town": "Statewide",
    "date": "2026-10-27",
-   "rank": 20
-  },
-  {
-   "h": "Brockton's AJ Dybantsa scores 19 in his NBA debut",
-   "sum": "The Brockton native, taken first overall in the draft, opened his pro career with a 19-point night.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/sports/brockton-native-aj-dybantsa-picked-1st-overall-scores-19-in-nba-debut/4039600/",
-   "town": "Brockton",
-   "date": "2026-10-29",
-   "rank": 21
-  },
-  {
-   "h": "Red Sox trade Nate Eaton as offseason roster moves begin",
-   "sum": "Boston dealt utility player Nate Eaton, the first of several expected roster decisions this winter.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/nate-eaton-trade-roster-cut-candidates/4040032/",
-   "town": "Fenway",
-   "date": "2026-10-29",
-   "rank": 22
-  },
-  {
-   "h": "Patriots fall to the Bears 30-24 on Thursday night",
-   "sum": "Too many mistakes cost New England in a prime-time loss to Chicago.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/sports/nfl/new-england-patriots/live-updates-bears-highlights-score-thursday-night-football/4035881/",
-   "town": "Foxborough",
-   "date": "2026-10-23",
-   "rank": 23
-  },
-  {
-   "h": "Patriots tight ends Henry and Raridon stepping up",
-   "sum": "Hunter Henry and Eli Raridon are producing at a key time as New England prepares for the Dolphins.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/patriots-tight-ends-hunter-henry-eli-raridon-stats-dolphins/4038301/",
-   "town": "Foxborough",
-   "date": "2026-10-27",
-   "rank": 24
-  },
-  {
-   "h": "Patriots weigh moves before the NFL trade deadline",
-   "sum": "With the deadline approaching, a look at the positions New England could try to upgrade.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/patriots-2026-nfl-trade-deadline-targets-khalil-mack/4038623/",
-   "town": "Foxborough",
-   "date": "2026-10-28",
-   "rank": 25
-  },
-  {
-   "h": "What to expect from a retooled Celtics team this season",
-   "sum": "Boston opens a new season without Jaylen Brown and with Paul George on the roster.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/boston-celtics-jaylen-brown-paul-george-retooling",
-   "town": "Boston",
-   "date": "2026-10-23",
-   "rank": 26
+   "rank": 15
   },
   {
    "h": "Red Line to pick up speed between JFK/UMass and North Quincy",
@@ -242,7 +143,7 @@
    "url": "https://www.wbur.org/news/2026/10/22/mbta-red-line-speeds-north-quincy-jfk",
    "town": "Dorchester",
    "date": "2026-10-22",
-   "rank": 27
+   "rank": 16
   },
   {
    "h": "Fallen leaves caused an hours-long Commuter Rail delay",
@@ -251,7 +152,7 @@
    "url": "https://www.nbcboston.com/news/local/hourslong-delay-on-mbta-commuter-rail-was-caused-by-fallen-leaves/4039539/",
    "town": "Statewide",
    "date": "2026-10-29",
-   "rank": 28
+   "rank": 17
   },
   {
    "h": "Galvin urges voters to cast ballots early",
@@ -260,7 +161,7 @@
    "url": "https://www.wbur.org/news/2026/10/28/massachusetts-election-day-ballot-questions-bill-galvin-early-voting",
    "town": "Statewide",
    "date": "2026-10-28",
-   "rank": 29
+   "rank": 18
   },
   {
    "h": "High-end Japanese restaurant group from a James Beard winner heading to Boston",
@@ -269,7 +170,7 @@
    "url": "https://www.nbcboston.com/news/local/james-beard-winners-high-end-japanese-restaurant-chain-is-expanding-to-boston/4037644/",
    "town": "Boston",
    "date": "2026-10-26",
-   "rank": 30
+   "rank": 19
   },
   {
    "h": "Popular sub shop chain closes its Downtown Crossing spot",
@@ -278,7 +179,7 @@
    "url": "https://www.nbcboston.com/news/local/popular-sub-shop-chain-in-bostons-downtown-crossing-has-closed/4038037/",
    "town": "Downtown",
    "date": "2026-10-27",
-   "rank": 31
+   "rank": 20
   },
   {
    "h": "Saus is leaving Somerville's Bow Market",
@@ -287,7 +188,7 @@
    "url": "https://www.nbcboston.com/news/local/saus-bow-market-restaurant-somerville-closing/4036446/",
    "town": "Somerville",
    "date": "2026-10-23",
-   "rank": 32
+   "rank": 21
   },
   {
    "h": "Attleboro's Stone-E-Lea Golf Course to close after 70-plus years",
@@ -296,7 +197,7 @@
    "url": "https://www.nbcboston.com/boston-business-journal/mass-golf-course-closing-after-70-years-listed-for-sale-and-redevelopment/4040012/",
    "town": "Attleboro",
    "date": "2026-10-29",
-   "rank": 33
+   "rank": 22
   },
   {
    "h": "mRNA cancer vaccine cuts melanoma recurrence in study",
@@ -305,7 +206,7 @@
    "url": "https://www.wbur.org/news/2026/10/23/moderna-mrna-cancer-vaccine-melanoma-study-results",
    "town": "Cambridge",
    "date": "2026-10-23",
-   "rank": 34
+   "rank": 23
   },
   {
    "h": "MWRA picks MassDOT highway chief Gulliver as its new leader",
@@ -314,7 +215,7 @@
    "url": "https://www.wbur.org/news/2026/10/22/mwra-water-jonathan-gulliver-massdot",
    "town": "Statewide",
    "date": "2026-10-22",
-   "rank": 35
+   "rank": 24
   },
   {
    "h": "Glass shards turn up on a Swampscott school field",
@@ -323,7 +224,7 @@
    "url": "https://www.nbcboston.com/news/local/swampscott-mass-glass-school-field/4039455/",
    "town": "Swampscott",
    "date": "2026-10-29",
-   "rank": 36
+   "rank": 25
   },
   {
    "h": "Brigham nurses vote down tentative contract",
@@ -332,7 +233,7 @@
    "url": "https://www.wbur.org/news/2026/10/23/brigham-nurses-union-contract-vote-no",
    "town": "Mission Hill",
    "date": "2026-10-23",
-   "rank": 37
+   "rank": 26
   },
   {
    "h": "Which Massachusetts ZIP codes made the Wealthy 1000 list",
@@ -341,7 +242,7 @@
    "url": "https://www.nbcboston.com/boston-business-journal/which-areas-in-massachusetts-made-the-national-wealthy-1000-list/4039235/",
    "town": "Statewide",
    "date": "2026-10-28",
-   "rank": 38
+   "rank": 27
   },
   {
    "h": "Mass. Lottery tries scented scratch tickets for the holidays",
@@ -350,7 +251,7 @@
    "url": "https://www.wbur.org/news/2026/10/28/massachusetts-scented-scratch-ticket-holidays",
    "town": "Statewide",
    "date": "2026-10-28",
-   "rank": 39
+   "rank": 28
   },
   {
    "h": "Boston opens public comment on its yearly housing and community report",
@@ -359,7 +260,7 @@
    "url": "https://www.boston.gov/news/request-public-comment-py25-consolidated-annual-performance-and-evaluation-report",
    "town": "Boston",
    "date": "2026-10-23",
-   "rank": 40
+   "rank": 29
   }
  ]
 }
