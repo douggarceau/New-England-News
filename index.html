@@ -2752,8 +2752,9 @@ html body .lsrow .lspot.hasad{height:auto!important;min-height:0!important;max-h
    To add one: put it in ADS with its start date; it goes to the top. Ads drop off after their end date. */
 (function(){
 const ADS=[
-{img:'img/ad-boston-symphony.jpg',href:'https://www.bso.org',label:'Featured: Boston Symphony Orchestra at Symphony Hall, 301 Massachusetts Ave',start:'2026-10-30',end:'2026-11-29'},
-{img:'img/ad-club-passim.jpg',href:'https://www.passim.org',label:'Featured: Club Passim, 47 Palmer St, Cambridge',start:'2026-10-30',end:'2026-11-29'},
+{img:'img/ad-td-garden.jpg',href:'https://www.tdgarden.com',label:'Featured: TD Garden, 100 Legends Way',start:'2026-10-30',end:'2026-11-29'},
+{img:'img/ad-mgm-music-hall.jpg',href:'https://www.mgmmusichall.com',label:'Featured: MGM Music Hall at Fenway, 2 Lansdowne St',start:'2026-10-30',end:'2026-11-29'},
+{img:'img/ad-house-of-blues.jpg',href:'https://www.houseofblues.com/boston',label:'Featured: House of Blues Boston, 15 Lansdowne St',start:'2026-10-30',end:'2026-11-29'},
  {img:'img/ad-eric-maluk.jpg',href:'https://www.rate.com/ericmaluk',label:'Advertisement: Eric Maluk, Rate. Visit his page or call (401) 254-4403',start:'2026-10-20',end:'2026-11-19'}];
 const live=()=>ADS.filter(a=>!a.end||Date.now()<Date.parse(a.end+'T23:59:59-05:00')).sort((x,y)=>y.start.localeCompare(x.start));
 const boxes=()=>[...document.querySelectorAll('.lsrow .lspot')].filter(b=>!b.hidden&&b.getBoundingClientRect().width>0).sort((x,y)=>{const r=x.getBoundingClientRect(),s=y.getBoundingClientRect();return (r.top-s.top)||(r.left-s.left)});
