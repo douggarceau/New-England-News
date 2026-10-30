@@ -2467,7 +2467,7 @@ document.readyState==="loading"?document.addEventListener("DOMContentLoaded",()=
 const H=/^(the wire · nightlife|the wire|shows this week|tech & ai wire|scene picks|band watch|venue desk)/i;
 const go=()=>{document.querySelectorAll('#view section.box').forEach(s=>{const b=s.querySelector('.bh b');const g=s.querySelector('.vguide');if((b&&H.test(b.textContent.trim()))||g)s.style.display='none'});document.querySelectorAll('#view .front').forEach(f=>{const st=f.querySelector(':scope>.stack');if(st&&![...st.children].some(c=>c.offsetHeight>0)){st.style.display='none';f.style.gridTemplateColumns='minmax(0,1fr)'}})};
 const V=()=>document.getElementById('view');const st=()=>{const v=V();if(!v)return setTimeout(st,200);go();new MutationObserver(go).observe(v,{childList:true,subtree:true})};
-document.readyState==='loading'?document.addEventListener('DOMContentLoaded',st):st()})();</script><script id="backCover">(()=>{const BK='img/back-cover-ad.jpg?v=5';new Image().src=BK;
+document.readyState==='loading'?document.addEventListener('DOMContentLoaded',st):st()})();</script><script id="backCover">(()=>{const BK='img/back-cover-ad.jpg?v=9';new Image().src=BK;
 const st=document.createElement('style');st.textContent='.cvr .cimg .cback{position:absolute;inset:0;display:none;z-index:6;cursor:pointer;background:#0b1a38}.cvr .cimg .cback img{display:block;width:100%;height:100%;object-fit:cover;animation:none!important;transform:none!important}.cvr .cimg.back .cback{display:block}';document.head.appendChild(st);
 const vidOn=()=>{const v=document.getElementById('irBox');return v&&getComputedStyle(v).display!=='none'&&getComputedStyle(v).opacity!=='0'};
 let busy=false;
@@ -2542,7 +2542,7 @@ function openBook(){const b=document.querySelector('.cvr .cimg');if(!b||busy||do
  busy=true;if(getComputedStyle(cv).position==='static')cv.style.position='relative';
  const r=b.getBoundingClientRect(),c=cv.getBoundingClientRect();const L=r.left-c.left,T=r.top-c.top,w=Math.min(r.width*2,c.right-r.left);
  const s=document.createElement('div');s.className='bkSpread';s.style.cssText='position:absolute;left:'+L+'px;top:'+T+'px;width:'+w+'px;height:'+r.height+'px;z-index:3;display:flex;opacity:0;transition:opacity .5s ease;cursor:pointer;box-shadow:0 18px 40px rgba(0,0,0,.7);border-radius:6px;overflow:hidden';
- s.innerHTML='<img src="img/inside-cover-ad.jpg?v=3" alt="Inside front cover ad space" style="width:50%;height:100%;object-fit:cover;display:block"><img src="img/page-one-ad.jpg?v=3" alt="Page one ad space" style="width:50%;height:100%;object-fit:cover;display:block">';
+ s.innerHTML='<img src="img/inside-cover-ad.jpg?v=9" alt="Inside front cover ad space" style="width:50%;height:100%;object-fit:cover;display:block"><img src="img/page-one-ad.jpg?v=3" alt="Page one ad space" style="width:50%;height:100%;object-fit:cover;display:block">';
  s.addEventListener('click',e=>{if(e.target.closest('.frzC'))return;e.preventDefault();e.stopPropagation();if(e.target.closest('.frzX')){frozen=false;unbar();close();return}if(e.target.closest('.frzP')){frozen=!frozen;bar(s);return}if(e.target.closest('.frzA')||frozen){frozen=false;unbar();close();setTimeout(()=>{try{go('advertise')}catch(_){}},50);return}frozen=true;bar(s)});
  cv.appendChild(s);bar(s);b.style.position='relative';b.style.zIndex='8';b.style.transformOrigin='0 50%';
  requestAnimationFrame(()=>{s.style.opacity='1';b.style.transition='transform 1.1s cubic-bezier(.5,.05,.3,1),opacity .3s ease .8s';b.style.transform='perspective(1600px) rotateY(-110deg)';b.style.opacity='0'});
@@ -2752,6 +2752,8 @@ html body .lsrow .lspot.hasad{height:auto!important;min-height:0!important;max-h
    To add one: put it in ADS with its start date; it goes to the top. Ads drop off after their end date. */
 (function(){
 const ADS=[
+{img:'img/ad-boston-symphony.jpg',href:'https://www.bso.org',label:'Featured: Boston Symphony Orchestra at Symphony Hall, 301 Massachusetts Ave',start:'2026-10-30',end:'2026-11-29'},
+{img:'img/ad-club-passim.jpg',href:'https://www.passim.org',label:'Featured: Club Passim, 47 Palmer St, Cambridge',start:'2026-10-30',end:'2026-11-29'},
  {img:'img/ad-eric-maluk.jpg',href:'https://www.rate.com/ericmaluk',label:'Advertisement: Eric Maluk, Rate. Visit his page or call (401) 254-4403',start:'2026-10-20',end:'2026-11-19'}];
 const live=()=>ADS.filter(a=>!a.end||Date.now()<Date.parse(a.end+'T23:59:59-05:00')).sort((x,y)=>y.start.localeCompare(x.start));
 const boxes=()=>[...document.querySelectorAll('.lsrow .lspot')].filter(b=>!b.hidden&&b.getBoundingClientRect().width>0).sort((x,y)=>{const r=x.getBoundingClientRect(),s=y.getBoundingClientRect();return (r.top-s.top)||(r.left-s.left)});
