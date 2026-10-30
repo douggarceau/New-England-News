@@ -2245,6 +2245,7 @@ setTimeout(()=>{const P=adShuf(adPool());['l','r'].forEach((sd,n)=>{if(document.
 function showPromo0(id,pool,offset=0,flip=false){{const el=document.getElementById(id);const bx=el&&el.parentNode;if(bx&&(bx.matches(':hover')||bx.dataset.frozen))return}
  const a=$(id);if(!a||a.parentNode.style.display==='none')return;const box=a.parentNode;
  if(flip&&a.contains(document.activeElement))return;
+ if(flip&&a.dataset.promoKey&&document.hidden)return;
  clearTimeout(promoTimers.get(a));box.classList.remove('flip');delete a.dataset.promoNext;
  if(narrowExtra(box)){box.hidden=true;delete a.dataset.promoKey;return}
  const used=new Set();document.querySelectorAll('.lsrow a[data-promo-key],.lsrow a[data-promo-next]').forEach(other=>{const b=other.parentNode;if(other===a||b.hidden||b.style.display==='none'||narrowExtra(b))return;if(other.dataset.promoKey)used.add(other.dataset.promoKey);if(other.dataset.promoNext)used.add(other.dataset.promoNext)});
@@ -2306,11 +2307,11 @@ XT.forEach((_,n)=>xtFill(n,false));
 setInterval(()=>XT.forEach((_,n)=>setTimeout(()=>{xk[n]++;xtFill(n,true)},300+(n%10)*420)),6400);
 /* Fill the side margins with news boxes all the way down the page */
 const XP=[()=>WRF,()=>CRX.length?CRX:WRF,()=>CORR.length?CORR:WRF,()=>STF,()=>CRX.length?CRX:WRF,()=>WRF];
-const lsMore=()=>{if(innerWidth<1280)return;const row=document.querySelector('.lsrow'),w=document.querySelector('.wrap'),s=document.querySelector('.lspot'),V=document.getElementById('view');if(!row||!w||!s||!V)return;
+const lsMore=()=>{if(innerWidth<1280)return;const row=document.querySelector('.lsrow'),w=document.querySelector('.wrap'),s=[...document.querySelectorAll('.lsrow .lspot')].find(x=>x.offsetHeight>40),V=document.getElementById('view');if(!row||!w||!s||!V)return;
  row.querySelectorAll('.lspot').forEach(x=>{x.style.removeProperty('height');x.classList.remove('ri-cut')});
  const step=s.offsetHeight+12,lsh=s.offsetHeight,rt=row.getBoundingClientRect().top,vb=V.getBoundingClientRect().bottom-rt,rg=document.getElementById('regSpot'),rgH=rg&&rg.offsetParent?rg.offsetHeight+24:0;
  const mt=side=>{const x=[...row.querySelectorAll('.lspot.'+side)].find(e=>e.offsetParent&&!e.classList.contains('t1')&&e!==rg);return x?parseFloat(getComputedStyle(x).marginTop)||0:0};
- const cap={l:0,r:0};['l','r'].forEach(side=>{const m=mt(side),extra=side==='r'?rgH:0;let n=8;while(150+n*step+m+lsh+extra<=vb)n++;cap[side]=n});
+ const cap={l:0,r:0};['l','r'].forEach(side=>{if(![...row.querySelectorAll('.lspot.'+side+':not(.ls-extra)')].some(e=>e.offsetParent))return;const m=mt(side),extra=side==='r'?rgH:0;let n=8;while(150+n*step+m+lsh+extra<=vb)n++;cap[side]=n});
  row.querySelectorAll('a[id^=lsX]').forEach(a=>{const n=parseInt(a.id.slice(3)),side=a.id.slice(-1);if(n>cap[side]&&a.parentNode)a.parentNode.remove()});
  for(let t=9;t<=Math.max(cap.l,cap.r);t++)['l','r'].forEach((side,si)=>{if(t>cap[side])return;const id='lsX'+t+side;if(document.getElementById(id))return;
   const d=document.createElement('div');d.className='lspot '+side+' ls-extra';d.style.top='calc(150px + '+(t-1)+'*(var(--lsh) + 12px))';d.innerHTML='<a id="'+id+'"></a>';row.appendChild(d);
@@ -2318,7 +2319,7 @@ const lsMore=()=>{if(innerWidth<1280)return;const row=document.querySelector('.l
  if(rg&&rg.offsetParent){let m=0;row.querySelectorAll('.lspot.r').forEach(x=>{if(x!==rg&&x.offsetParent)m=Math.max(m,x.offsetTop+x.offsetHeight)});if(m)rg.style.setProperty('top',(m+24)+'px','important')}
  {const vb2=V.getBoundingClientRect().bottom;row.querySelectorAll('.lspot').forEach(x=>{if(x.offsetParent&&x.getBoundingClientRect().bottom>vb2+1)x.classList.add('ri-cut')})}
  ['l','r'].forEach(side=>{const L=[...row.querySelectorAll('.lspot.'+side)].filter(x=>x.offsetParent);if(!L.length)return;const last=L.reduce((a,x)=>x.getBoundingClientRect().bottom>a.getBoundingClientRect().bottom?x:a);const g=vb-(last.getBoundingClientRect().bottom-rt);if(Math.abs(g)<step)last.style.setProperty('height',(last.offsetHeight+g)+'px','important')})};
-setTimeout(lsMore,1500);setTimeout(lsMore,5000);let lsR;const lsQ=()=>{clearTimeout(lsR);lsR=setTimeout(lsMore,400)};addEventListener('resize',lsQ);try{const V=document.getElementById('view');if(V&&window.ResizeObserver)new ResizeObserver(lsQ).observe(V)}catch(_){}
+setTimeout(lsMore,1500);setTimeout(lsMore,5000);let lsR,lsK='';const lsQ=()=>{clearTimeout(lsR);lsR=setTimeout(()=>{const V=document.getElementById('view'),k=innerWidth+'x'+(V?Math.round(V.offsetHeight/8):0);if(k===lsK)return;lsK=k;lsMore()},400)};addEventListener('resize',lsQ);try{const V=document.getElementById('view');if(V&&window.ResizeObserver)new ResizeObserver(lsQ).observe(V)}catch(_){}
 
 })();
 </script>
