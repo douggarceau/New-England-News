@@ -2840,5 +2840,13 @@ addEventListener('keydown',e=>{if(e.key==='Escape')close()});
 const slugs=()=>{return [];const S=[];try{const n=Date.now();STORIES.forEach(x=>{if(!SKIP.includes(x.slug)&&!S.includes(x.slug)&&VRX.test(x.title+' '+(x.dek||''))&&n-Date.parse(x.date)<14*864e5)S.push(x.slug)})}catch(e){}return S};
 const deco=()=>{const want=new Set();slugs().forEach(k=>{const el=[...document.querySelectorAll(`button[data-story="${k}"]`)].find(e=>!e.closest('article,.reader')&&!e.classList.contains('spr')&&e.offsetParent);if(el)want.add(el)});
 document.querySelectorAll('.cop').forEach(el=>{if(!want.has(el))el.classList.remove('cop')});want.forEach(el=>el.classList.add('cop'))};
-new MutationObserver(()=>{clearTimeout(window.__cp);window.__cp=setTimeout(deco,80)}).observe(document.documentElement,{childList:true,subtree:true});deco()})();</script></body>
+new MutationObserver(()=>{clearTimeout(window.__cp);window.__cp=setTimeout(deco,80)}).observe(document.documentElement,{childList:true,subtree:true});deco()})();</script><script id="evFill">(()=>{/* Until the edition has its own stories, keep every margin box filled with real calendar shows so the column lines up. */
+const C=['#ff7a1a','#2fd3c8','#b07cff','#4fa3ff','#5fdc6a','#ff5fa2'];let E=[],k=0;
+const day=d=>{const x=new Date(d+'T12:00:00');return x.toLocaleDateString('en-US',{month:'short',day:'numeric'})};
+fetch('data/cal.json?'+Math.floor(Date.now()/6e5)).then(r=>r.ok?r.json():null).then(d=>{if(!d)return;const today=new Date().toISOString().slice(0,10);const seen=new Set();
+E=(d.events||[]).filter(e=>e.date>=today&&e.artists&&e.venue&&!/worship|support|civic/.test(e.genre||'')).filter(e=>{const n=e.artists.toLowerCase().slice(0,30);if(seen.has(n))return false;seen.add(n);return true}).slice(0,120).map((e,i)=>({tag:'COMING UP · '+day(e.date),bigText:e.artists.replace(/\s*\([^)]*\)/g,'').trim(),name:e.venue,when:e.time||'',sub:'',go:'Details',theme:'mu',href:e.url||'#cal',ext:e.url?1:0,view:e.url?'':'cal',k:C[i%C.length]}))}).catch(()=>{});
+const go=()=>{try{if(!E.length||!window.__fill0)return;const nz=s=>String(s||'').toLowerCase().trim();const vis=new Set([...document.querySelectorAll('.lsrow .lspot:not([hidden]) .ls-big')].map(x=>nz(x.textContent)));
+document.querySelectorAll('.lsrow .lspot[hidden] > a[id]').forEach(el=>{if(innerWidth<1280&&el.parentNode.classList.contains('ls-extra'))return;let it=null;for(let n=0;n<E.length;n++){const c=E[(k+n)%E.length];if(!vis.has(nz(c.bigText))){it=c;k=k+n+1;break}}if(!it)return;vis.add(nz(it.bigText));el.parentNode.hidden=false;el.parentNode.style.display='';window.__fill0(el,it)})}catch(_){}};
+setTimeout(go,1500);setInterval(go,3000)})();</script>
+</body>
 </html>
