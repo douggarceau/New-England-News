@@ -8,6 +8,7 @@
   "Health beauty and fitness",
   "Boating and recreation",
   "Lodging",
+  "Automotive",
   "Building landscaping and home services",
   "Architecture and creative services",
   "Finance law property and consulting",
@@ -16,6 +17,33 @@
   "Restaurants"
  ],
  "items": [
+  {
+   "n": "Abe & Louie's",
+   "c": "Food and drink",
+   "a": "793 Boylston St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A classic American steakhouse on Boylston Street with a clubby dining room and a busy patio. Boston Magazine named it the best neighborhood restaurant in Back Bay for 2025.",
+   "nt": [],
+   "s": [
+    [
+     "All the Best of Boston 2025 Food Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803164"
+    ],
+    [
+     "Readers' favorite places to eat and drink in Back Bay (Boston.com)",
+     "https://www.boston.com/community/readers-say/best-places-to-eat-and-drink-in-back-bay"
+    ],
+    [
+     "Best Back Bay restaurants (Time Out)",
+     "https://timeout.com/boston/restaurants/best-back-bay-restaurants"
+    ]
+   ],
+   "cl": false,
+   "i": "001"
+  },
   {
    "n": "anoush'ella",
    "c": "Food and drink",
@@ -33,7 +61,7 @@
     ]
    ],
    "cl": false,
-   "i": "001"
+   "i": "002"
   },
   {
    "n": "Aquitaine",
@@ -56,7 +84,30 @@
     ]
    ],
    "cl": false,
-   "i": "002"
+   "i": "003"
+  },
+  {
+   "n": "Bakey",
+   "c": "Food and drink",
+   "a": "151 Tremont St, Downtown",
+   "p": "(617) 670-0114",
+   "e": "",
+   "w": "https://bakeybabka.com/",
+   "wl": "Website",
+   "b": "A bakery specializing in babka, the braided sweet bread, in classic and seasonal flavors, plus Israeli and European-influenced breads and sandwiches. Its Tremont Street shop faces Boston Common.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Time Out, May 2026)",
+     "https://www.timeout.com/boston/restaurants/best-bakeries-in-boston"
+    ],
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "004"
   },
   {
    "n": "Bar Mezzana",
@@ -79,7 +130,7 @@
     ]
    ],
    "cl": false,
-   "i": "003"
+   "i": "005"
   },
   {
    "n": "Barcelona Wine Bar",
@@ -98,7 +149,7 @@
     ]
    ],
    "cl": false,
-   "i": "004"
+   "i": "006"
   },
   {
    "n": "Beehive",
@@ -121,7 +172,7 @@
     ]
    ],
    "cl": false,
-   "i": "005"
+   "i": "007"
   },
   {
    "n": "Berkeley Perk Cafe",
@@ -140,7 +191,7 @@
     ]
    ],
    "cl": false,
-   "i": "006"
+   "i": "008"
   },
   {
    "n": "Black Lamb",
@@ -163,7 +214,7 @@
     ]
    ],
    "cl": false,
-   "i": "007"
+   "i": "009"
   },
   {
    "n": "Blackbird Doughnuts",
@@ -182,7 +233,7 @@
     ]
    ],
    "cl": false,
-   "i": "008"
+   "i": "010"
   },
   {
    "n": "Blunch",
@@ -201,7 +252,7 @@
     ]
    ],
    "cl": false,
-   "i": "009"
+   "i": "011"
   },
   {
    "n": "Boston Chops",
@@ -224,7 +275,57 @@
     ]
    ],
    "cl": false,
-   "i": "010"
+   "i": "012"
+  },
+  {
+   "n": "Bova's Bakery",
+   "c": "Food and drink",
+   "a": "134 Salem St, North End",
+   "p": "(617) 523-5601",
+   "e": "",
+   "w": "https://bovabakeryboston.net/",
+   "wl": "Website",
+   "b": "A family-owned Italian bakery in the North End since 1932, open around the clock. Locals stop in at all hours for breads, pastries and Sicilian pizza.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Time Out, May 2026)",
+     "https://www.timeout.com/boston/restaurants/best-bakeries-in-boston"
+    ],
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "013"
+  },
+  {
+   "n": "Buttermilk & Bourbon",
+   "c": "Food and drink",
+   "a": "160 Commonwealth Ave, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Back Bay restaurant serving Southern-inspired food, including fried chicken and an oyster bar. It is a reader favorite for lively dinners in the neighborhood.",
+   "nt": [],
+   "s": [
+    [
+     "Neighborhood gem restaurants, South End (OpenTable, live listing 2026)",
+     "https://www.opentable.com/features/neighborhood-gem-restaurants-boston-south-end-ma"
+    ],
+    [
+     "Readers' favorite places to eat and drink in Back Bay (Boston.com)",
+     "https://www.boston.com/community/readers-say/best-places-to-eat-and-drink-in-back-bay"
+    ],
+    [
+     "Best Back Bay restaurants (Time Out)",
+     "https://timeout.com/boston/restaurants/best-back-bay-restaurants"
+    ]
+   ],
+   "cl": false,
+   "i": "014"
   },
   {
    "n": "Capri",
@@ -243,7 +344,7 @@
     ]
    ],
    "cl": false,
-   "i": "011"
+   "i": "015"
   },
   {
    "n": "Cinquecento",
@@ -262,7 +363,26 @@
     ]
    ],
    "cl": false,
-   "i": "012"
+   "i": "016"
+  },
+  {
+   "n": "Cocorico",
+   "c": "Food and drink",
+   "a": "450 Summer St, Seaport",
+   "p": "(617) 476-6664",
+   "e": "",
+   "w": "http://cocoricocafe.com/",
+   "wl": "Website",
+   "b": "A French-style boulangerie in the Seaport known for its Boston cream doughnuts and pastries. It is a favorite morning stop in the neighborhood.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "017"
   },
   {
    "n": "Coppa",
@@ -289,7 +409,49 @@
     ]
    ],
    "cl": false,
-   "i": "013"
+   "i": "018"
+  },
+  {
+   "n": "Corner Cafe Bakery",
+   "c": "Food and drink",
+   "a": "62 Harrison Ave, Chinatown",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Chinatown pastry shop known for baby bundt cakes, lemon bars and cream cheese brownies. It stays open late every evening.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Time Out, May 2026)",
+     "https://www.timeout.com/boston/restaurants/best-bakeries-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "019"
+  },
+  {
+   "n": "Crazy Good Kitchen",
+   "c": "Food and drink",
+   "a": "268 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A casual Newbury Street spot for smash burgers, fried chicken sandwiches, loaded fries and milkshakes. Readers name it among their favorite places to eat in Back Bay.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ],
+    [
+     "Readers' favorite places to eat and drink in Back Bay (Boston.com)",
+     "https://www.boston.com/community/readers-say/best-places-to-eat-and-drink-in-back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "020"
   },
   {
    "n": "Cuppacoffee",
@@ -308,7 +470,45 @@
     ]
    ],
    "cl": false,
-   "i": "014"
+   "i": "021"
+  },
+  {
+   "n": "DeLuca's Market",
+   "c": "Food and drink",
+   "a": "239 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A neighborhood market open since 1905, stocking produce, cheeses, Italian specialties, a deli counter and a wine cellar. It is a true Back Bay institution.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ]
+   ],
+   "cl": false,
+   "i": "022"
+  },
+  {
+   "n": "Dirty Water Dough Co.",
+   "c": "Food and drink",
+   "a": "222 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Newbury Street pizzeria whose crust is made with its own IPA. It is an easy, crowd-pleasing stop between shops.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ]
+   ],
+   "cl": false,
+   "i": "023"
   },
   {
    "n": "Elephant Walk",
@@ -327,7 +527,26 @@
     ]
    ],
    "cl": false,
-   "i": "015"
+   "i": "024"
+  },
+  {
+   "n": "Emack & Bolio's",
+   "c": "Food and drink",
+   "a": "290 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A homegrown ice cream shop known for playful, over-the-top flavors. It was founded in 1975 as a late-night hangout for local musicians.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ]
+   ],
+   "cl": false,
+   "i": "025"
   },
   {
    "n": "Estragon",
@@ -346,7 +565,7 @@
     ]
    ],
    "cl": false,
-   "i": "016"
+   "i": "026"
   },
   {
    "n": "Flour Bakery + Cafe",
@@ -369,7 +588,53 @@
     ]
    ],
    "cl": false,
-   "i": "017"
+   "i": "027"
+  },
+  {
+   "n": "Forge Baking Co.",
+   "c": "Food and drink",
+   "a": "626 Somerville Ave, Somerville",
+   "p": "(617) 764-5365",
+   "e": "",
+   "w": "https://forgebakingco.com/",
+   "wl": "Website",
+   "b": "An artisanal bakery and coffee bar in a former warehouse, with breads, bagels, pastries, local provisions and bread-making classes. It is a Somerville favorite.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Time Out, May 2026)",
+     "https://www.timeout.com/boston/restaurants/best-bakeries-in-boston"
+    ],
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "028"
+  },
+  {
+   "n": "Frenchie",
+   "c": "Food and drink",
+   "a": "560 Tremont St, South End",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A French bistro and wine bar on Tremont Street cooking with ingredients sourced from France, with a year-round greenhouse dining room. It stays one of the South End's most-booked spots.",
+   "nt": [],
+   "s": [
+    [
+     "Neighborhood gem restaurants, South End (OpenTable, live listing 2026)",
+     "https://www.opentable.com/features/neighborhood-gem-restaurants-boston-south-end-ma"
+    ],
+    [
+     "Things to do in the South End (Boston Uncovered)",
+     "https://bostonuncovered.com/things-to-do-south-end-boston/"
+    ]
+   ],
+   "cl": false,
+   "i": "029"
   },
   {
    "n": "Fuji at Ink Block",
@@ -388,7 +653,30 @@
     ]
    ],
    "cl": false,
-   "i": "018"
+   "i": "030"
+  },
+  {
+   "n": "Greenhills Irish Bakery",
+   "c": "Food and drink",
+   "a": "780 Adams St, Dorchester",
+   "p": "(617) 825-8187",
+   "e": "",
+   "w": "http://greenhillsbakery.com/",
+   "wl": "Website",
+   "b": "An Irish bakery in Adams Village known for soda bread, scones, pies and sandwiches. It is a Dorchester favorite.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Time Out, May 2026)",
+     "https://www.timeout.com/boston/restaurants/best-bakeries-in-boston"
+    ],
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "031"
   },
   {
    "n": "Greystone Café, Bakery and Provisions",
@@ -411,7 +699,160 @@
     ]
    ],
    "cl": false,
-   "i": "019"
+   "i": "032"
+  },
+  {
+   "n": "Grill 23 & Bar",
+   "c": "Food and drink",
+   "a": "161 Berkeley St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A grand Back Bay steakhouse in a historic building, known for dry-aged steaks and one of the city's most celebrated wine programs. It won Boston Magazine's 2025 readers' poll for best fine dining and its editors' pick for best steakhouse.",
+   "nt": [],
+   "s": [
+    [
+     "Best of Boston 2025: Readers' Poll Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803240"
+    ],
+    [
+     "All the Best of Boston 2025 Food Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803164"
+    ],
+    [
+     "Best Back Bay restaurants (Time Out)",
+     "https://timeout.com/boston/restaurants/best-back-bay-restaurants"
+    ]
+   ],
+   "cl": false,
+   "i": "033"
+  },
+  {
+   "n": "haley.henry",
+   "c": "Food and drink",
+   "a": "45 Province St, Downtown",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A snug downtown wine bar pouring low-intervention bottles alongside seafood, tinned fish and charcuterie. Time Out ranks it among the city's best right now.",
+   "nt": [],
+   "s": [
+    [
+     "The best restaurants in Boston right now (Time Out, Feb 2026)",
+     "https://www.timeout.com/boston/restaurants/the-34-best-boston-restaurants-right-now"
+    ]
+   ],
+   "cl": false,
+   "i": "034"
+  },
+  {
+   "n": "Hi-Rise Bread Company",
+   "c": "Food and drink",
+   "a": "208 Concord Ave, Cambridge",
+   "p": "(617) 876-8766",
+   "e": "",
+   "w": "http://hi-risebread.com/",
+   "wl": "Website",
+   "b": "A family-owned bakery with rustic breads, macarons, pies and quiches made in an open kitchen. It has long been a Cambridge neighborhood staple.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Time Out, May 2026)",
+     "https://www.timeout.com/boston/restaurants/best-bakeries-in-boston"
+    ],
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "035"
+  },
+  {
+   "n": "Ho Yuen Bakery",
+   "c": "Food and drink",
+   "a": "54 Beach St, Chinatown",
+   "p": "(617) 426-8320",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Chinatown bakery known for its mooncakes and coconut bread. It is a classic stop for traditional Chinese baked goods.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "036"
+  },
+  {
+   "n": "Iggy's Bread",
+   "c": "Food and drink",
+   "a": "130 Fawcett St, Cambridge",
+   "p": "(617) 924-0949",
+   "e": "",
+   "w": "http://iggysbread.com/",
+   "wl": "Website",
+   "b": "A bakery making all-natural, European-style loaves and bagels, also supplied to restaurants around the area. Its bread is a staple on many Boston tables.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "037"
+  },
+  {
+   "n": "J.P. Licks",
+   "c": "Food and drink",
+   "a": "173 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "The homegrown ice cream and frozen yogurt chain's Newbury Street shop, with seasonal flavors, coffee and patio seating. Boston Magazine readers voted J.P. Licks the best ice cream in 2025.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ],
+    [
+     "Best of Boston 2025: Readers' Poll Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803240"
+    ]
+   ],
+   "cl": false,
+   "i": "038"
+  },
+  {
+   "n": "Joe's on Newbury",
+   "c": "Food and drink",
+   "a": "181 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An American comfort food restaurant in a Newbury Street brownstone. Its patio is one of the most popular people-watching spots on the street.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ],
+    [
+     "Readers' favorite places to eat and drink in Back Bay (Boston.com)",
+     "https://www.boston.com/community/readers-say/best-places-to-eat-and-drink-in-back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "039"
   },
   {
    "n": "Kaia",
@@ -434,7 +875,7 @@
     ]
    ],
    "cl": false,
-   "i": "020"
+   "i": "040"
   },
   {
    "n": "Kava Neo-Taverna",
@@ -457,7 +898,91 @@
     ]
    ],
    "cl": false,
-   "i": "021"
+   "i": "041"
+  },
+  {
+   "n": "La Saison Bakery",
+   "c": "Food and drink",
+   "a": "407 Concord Ave, Cambridge",
+   "p": "(617) 547-0009",
+   "e": "",
+   "w": "http://lasaison-bakery.com/",
+   "wl": "Website",
+   "b": "A West Cambridge bake shop with a wide range of loaves, French pastries, crackers and pizza. Its croissants and breads draw fans from across the region.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Time Out, May 2026)",
+     "https://www.timeout.com/boston/restaurants/best-bakeries-in-boston"
+    ],
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "042"
+  },
+  {
+   "n": "Levain Bakery",
+   "c": "Food and drink",
+   "a": "180 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "The famous New York bakery's Newbury Street shop, turning out its thick, gooey, oversized cookies along with loaf cakes and breads. Boston Magazine named it the best cookie in Boston for 2025.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ],
+    [
+     "All the Best of Boston 2025 Food Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803164"
+    ]
+   ],
+   "cl": false,
+   "i": "043"
+  },
+  {
+   "n": "Lyndell's Bakery",
+   "c": "Food and drink",
+   "a": "720 Broadway, Somerville",
+   "p": "(617) 625-1793",
+   "e": "",
+   "w": "http://lyndells.com/",
+   "wl": "Website",
+   "b": "A historic Somerville bakery dating to 1887, known for cakes, doughnuts and Italian pastries. Generations of local families have stopped here.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "044"
+  },
+  {
+   "n": "Mamaleh's Delicatessen",
+   "c": "Food and drink",
+   "a": "15 Hampshire St, Cambridge",
+   "p": "(617) 958-3354",
+   "e": "",
+   "w": "http://mamalehs.com/",
+   "wl": "Website",
+   "b": "A Jewish deli in Cambridge serving bagels, pastrami and rugelach. It brings classic deli comfort food across the river.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "045"
   },
   {
    "n": "Maná Escondido Café",
@@ -476,7 +1001,7 @@
     ]
    ],
    "cl": false,
-   "i": "022"
+   "i": "046"
   },
   {
    "n": "Metropolis Cafe",
@@ -499,7 +1024,7 @@
     ]
    ],
    "cl": false,
-   "i": "023"
+   "i": "047"
   },
   {
    "n": "Mida",
@@ -522,7 +1047,7 @@
     ]
    ],
    "cl": false,
-   "i": "024"
+   "i": "048"
   },
   {
    "n": "Myers + Chang",
@@ -545,7 +1070,26 @@
     ]
    ],
    "cl": false,
-   "i": "025"
+   "i": "049"
+  },
+  {
+   "n": "Parziale's Bakery",
+   "c": "Food and drink",
+   "a": "80 Prince St, North End",
+   "p": "(617) 523-6368",
+   "e": "",
+   "w": "http://parzialesbakery.com/",
+   "wl": "Website",
+   "b": "A family bakery dating to 1907, known for its pizza by the slice and Italian breads. It is a beloved North End stop away from the Hanover Street crowds.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "050"
   },
   {
    "n": "Petit Robert Bistro",
@@ -564,7 +1108,26 @@
     ]
    ],
    "cl": false,
-   "i": "026"
+   "i": "051"
+  },
+  {
+   "n": "Petsi Pies",
+   "c": "Food and drink",
+   "a": "285 Beacon St, Somerville",
+   "p": "(617) 661-7437",
+   "e": "",
+   "w": "http://petsipies.com/",
+   "wl": "Website",
+   "b": "A pie shop and bakery open since 2003, with pies, pastries, cookies and cupcakes. It is a go-to for a slice and a coffee.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "052"
   },
   {
    "n": "Picco",
@@ -587,7 +1150,76 @@
     ]
    ],
    "cl": false,
-   "i": "027"
+   "i": "053"
+  },
+  {
+   "n": "Rosa y Marigold",
+   "c": "Food and drink",
+   "a": "400 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A restaurant in the Lyrik development serving Peruvian-inspired dishes. Reservations are recommended.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ]
+   ],
+   "cl": false,
+   "i": "054"
+  },
+  {
+   "n": "Saltie Girl",
+   "c": "Food and drink",
+   "a": "279 Dartmouth St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A cozy seafood bar known for its lobster frites, raw bar and huge selection of tinned fish. Boston Magazine named it the best caviar service in town for 2025.",
+   "nt": [],
+   "s": [
+    [
+     "All the Best of Boston 2025 Food Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803164"
+    ],
+    [
+     "Best Back Bay restaurants (Time Out)",
+     "https://timeout.com/boston/restaurants/best-back-bay-restaurants"
+    ],
+    [
+     "Readers' favorite places to eat and drink in Back Bay (Boston.com)",
+     "https://www.boston.com/community/readers-say/best-places-to-eat-and-drink-in-back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "055"
+  },
+  {
+   "n": "Sofra Bakery & Cafe",
+   "c": "Food and drink",
+   "a": "1 Belmont St, Cambridge",
+   "p": "(617) 661-3161",
+   "e": "",
+   "w": "http://sofrabakery.com/",
+   "wl": "Website",
+   "b": "A Middle Eastern bakery and café serving Turkish, Greek and Lebanese pastries, pita and sweets. It is one of the most beloved bakeries in Greater Boston.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Time Out, May 2026)",
+     "https://www.timeout.com/boston/restaurants/best-bakeries-in-boston"
+    ],
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "056"
   },
   {
    "n": "South End Buttery",
@@ -614,7 +1246,26 @@
     ]
    ],
    "cl": false,
-   "i": "028"
+   "i": "057"
+  },
+  {
+   "n": "Spoke Wine Bar",
+   "c": "Food and drink",
+   "a": "89 Holland St, Somerville",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A cozy Davis Square wine bar with pared-down, seasonal small plates. Time Out ranks it among the best restaurants in Boston right now.",
+   "nt": [],
+   "s": [
+    [
+     "The best restaurants in Boston right now (Time Out, Feb 2026)",
+     "https://www.timeout.com/boston/restaurants/the-34-best-boston-restaurants-right-now"
+    ]
+   ],
+   "cl": false,
+   "i": "058"
   },
   {
    "n": "SRV",
@@ -637,7 +1288,7 @@
     ]
    ],
    "cl": false,
-   "i": "029"
+   "i": "059"
   },
   {
    "n": "Stella",
@@ -656,7 +1307,26 @@
     ]
    ],
    "cl": false,
-   "i": "030"
+   "i": "060"
+  },
+  {
+   "n": "Sushi @ Temple Records",
+   "c": "Food and drink",
+   "a": "11 Temple Pl, Downtown",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A stylish below-street-level sushi bar serving Edomae-style fish with a strong sake program. It is one of Time Out's current picks for the best restaurants in Boston.",
+   "nt": [],
+   "s": [
+    [
+     "The best restaurants in Boston right now (Time Out, Feb 2026)",
+     "https://www.timeout.com/boston/restaurants/the-34-best-boston-restaurants-right-now"
+    ]
+   ],
+   "cl": false,
+   "i": "061"
   },
   {
    "n": "Tatte Bakery & Cafe",
@@ -679,7 +1349,26 @@
     ]
    ],
    "cl": false,
-   "i": "031"
+   "i": "062"
+  },
+  {
+   "n": "The Bittersweet Shoppe",
+   "c": "Food and drink",
+   "a": "257 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An old-school soda fountain and café on Newbury Street with sweets, espresso drinks and classic diner fare. It brings a dose of nostalgia to the shopping strip.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ]
+   ],
+   "cl": false,
+   "i": "063"
   },
   {
    "n": "The Gallows",
@@ -702,7 +1391,26 @@
     ]
    ],
    "cl": false,
-   "i": "032"
+   "i": "064"
+  },
+  {
+   "n": "Thinking Cup",
+   "c": "Food and drink",
+   "a": "85 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An award-winning coffee shop at the quieter end of Newbury Street, serving classic and specialty coffee drinks plus a food menu. It is a go-to stop for shoppers and students alike.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ]
+   ],
+   "cl": false,
+   "i": "065"
   },
   {
    "n": "Toro",
@@ -729,7 +1437,72 @@
     ]
    ],
    "cl": false,
-   "i": "033"
+   "i": "066"
+  },
+  {
+   "n": "Trident Booksellers & Cafe",
+   "c": "Food and drink",
+   "a": "338 Newbury St, Back Bay",
+   "p": "(617) 267-8688",
+   "e": "",
+   "w": "http://www.tridentbookscafe.com/",
+   "wl": "Website",
+   "b": "A two-story bookstore and café on Newbury Street serving all-day breakfast among the shelves, with events and trivia nights. It has been a Back Bay favorite for decades.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ],
+    [
+     "Best Back Bay restaurants (Time Out)",
+     "https://timeout.com/boston/restaurants/best-back-bay-restaurants"
+    ],
+    [
+     "Readers' favorite places to eat and drink in Back Bay (Boston.com)",
+     "https://www.boston.com/community/readers-say/best-places-to-eat-and-drink-in-back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "067"
+  },
+  {
+   "n": "Union Park Pizza",
+   "c": "Food and drink",
+   "a": "244 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A pizza shop on Newbury Street that has quickly built a devoted following. Boston Magazine readers voted it the best pizza in the city in 2025.",
+   "nt": [],
+   "s": [
+    [
+     "Best of Boston 2025: Readers' Poll Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803240"
+    ]
+   ],
+   "cl": false,
+   "i": "068"
+  },
+  {
+   "n": "Union Square Donuts",
+   "c": "Food and drink",
+   "a": "20 Bow St, Somerville",
+   "p": "(617) 209-2257",
+   "e": "",
+   "w": "http://unionsquaredonuts.com/",
+   "wl": "Website",
+   "b": "A brioche doughnut shop in Union Square with creative sweet and savory flavors and good coffee. It is a Somerville favorite.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "069"
   },
   {
    "n": "Vejigante",
@@ -748,7 +1521,156 @@
     ]
    ],
    "cl": false,
-   "i": "034"
+   "i": "070"
+  },
+  {
+   "n": "Verveine Café & Bakery",
+   "c": "Food and drink",
+   "a": "298 Massachusetts Ave, Cambridge",
+   "p": "(617) 395-3125",
+   "e": "",
+   "w": "http://verveinecafe.com/",
+   "wl": "Website",
+   "b": "A Central Square café and bakery made for diners avoiding gluten, known for its cinnamon rolls and breads. Boston Magazine gave it its 2025 award in that category.",
+   "nt": [],
+   "s": [
+    [
+     "All the Best of Boston 2025 Food Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803164"
+    ],
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "071"
+  },
+  {
+   "n": "Vinal Bakery",
+   "c": "Food and drink",
+   "a": "222 Somerville Ave, Somerville",
+   "p": "(617) 718-0148",
+   "e": "",
+   "w": "https://www.vinalbakery.com",
+   "wl": "Website",
+   "b": "A small bakery celebrated for its English muffins in several varieties, plus scones and coffee. Everything is handmade with local flavors.",
+   "nt": [],
+   "s": [
+    [
+     "Best bakeries in Boston (Time Out, May 2026)",
+     "https://www.timeout.com/boston/restaurants/best-bakeries-in-boston"
+    ],
+    [
+     "Best bakeries in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/5390/bakeries"
+    ]
+   ],
+   "cl": false,
+   "i": "072"
+  },
+  {
+   "n": "Alan Bilzerian",
+   "c": "Shops and gifts",
+   "a": "34 Newbury St, Back Bay",
+   "p": "(617) 536-1001",
+   "e": "",
+   "w": "http://www.alanbilzerian.com/",
+   "wl": "Website",
+   "b": "A Newbury Street boutique for upscale designer men's and women's clothing and accessories. It is a fixture of Boston's fashion scene.",
+   "nt": [],
+   "s": [
+    [
+     "Best gift and specialty shops in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/757096/best-gift-and-souvenir-shops-speciality-and-artisan-stores-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "073"
+  },
+  {
+   "n": "Anime Zakka",
+   "c": "Shops and gifts",
+   "a": "349 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A family-owned shop packed with anime figures, plushies, posters and stationery. It is a destination for fans across the region.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ]
+   ],
+   "cl": false,
+   "i": "074"
+  },
+  {
+   "n": "Armageddon Shop",
+   "c": "Shops and gifts",
+   "a": "12B Eliot St, Harvard Square, Cambridge",
+   "p": "(617) 492-1235",
+   "e": "",
+   "w": "https://armageddonshop.com/",
+   "wl": "Website",
+   "b": "A Harvard Square record store known for punk, metal and heavy music. It has been a go-to for heavy-music fans for years.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ],
+    [
+     "The Best Record Stores in Boston, 2026 Guide (Keep Them Spinning)",
+     "https://keepthemspinning.com/blogs/record-stores/best-record-stores-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "075"
+  },
+  {
+   "n": "Big Dig Records",
+   "c": "Shops and gifts",
+   "a": "2325 Massachusetts Ave, Cambridge",
+   "p": "(617) 864-2583",
+   "e": "",
+   "w": "https://www.bigdigrecords.com/",
+   "wl": "Website",
+   "b": "A Cambridge record store known for fair prices, rare finds and friendly staff. It is one of the area's highest-rated shops.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ],
+    [
+     "The Best Record Stores in Boston, 2026 Guide (Keep Them Spinning)",
+     "https://keepthemspinning.com/blogs/record-stores/best-record-stores-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "076"
+  },
+  {
+   "n": "Bob Slate Stationer",
+   "c": "Shops and gifts",
+   "a": "30 Brattle St, Cambridge",
+   "p": "(617) 547-1230",
+   "e": "",
+   "w": "http://bobslatestationer.com/",
+   "wl": "Website",
+   "b": "A Harvard Square stationer with personalized stationery, cards, pens and gift wrap. It is a go-to for paper lovers.",
+   "nt": [],
+   "s": [
+    [
+     "Best gift and specialty shops in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/757096/best-gift-and-souvenir-shops-speciality-and-artisan-stores-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "077"
   },
   {
    "n": "Bos. Shop South End",
@@ -767,7 +1689,163 @@
     ]
    ],
    "cl": false,
-   "i": "035"
+   "i": "078"
+  },
+  {
+   "n": "Boston Public Market",
+   "c": "Shops and gifts",
+   "a": "100 Hanover St, Downtown",
+   "p": "(617) 973-4909",
+   "e": "",
+   "w": "http://bostonpublicmarket.org/",
+   "wl": "Website",
+   "b": "A year-round indoor market of local food producers and makers, with gifts, crafts and New England goods. It is a one-stop way to support local businesses.",
+   "nt": [],
+   "s": [
+    [
+     "Best gift and specialty shops in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/757096/best-gift-and-souvenir-shops-speciality-and-artisan-stores-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "079"
+  },
+  {
+   "n": "Brattle Book Shop",
+   "c": "Shops and gifts",
+   "a": "9 West St, Downtown Crossing",
+   "p": "(617) 542-0210",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "One of the country's oldest used and antiquarian bookstores, with crowded indoor shelves and an outdoor bargain lot in the alley. It is a must for book lovers.",
+   "nt": [],
+   "s": [
+    [
+     "Boston boutiques and local shops, 2025-2026 guide (Cities Insider)",
+     "https://citiesinsider.com/country/united-states/boston/boutiques-and-local-shops/en"
+    ],
+    [
+     "Shop Like a Local: Boston's Must-Visit Retail Spots (Go City, Apr 2026)",
+     "https://gocity.com/en/boston/things-to-do/best-places-to-shop-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "080"
+  },
+  {
+   "n": "Cheapo Records",
+   "c": "Shops and gifts",
+   "a": "538 Massachusetts Ave, Central Square, Cambridge",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Central Square record store with one of the biggest vinyl selections in the Boston area. It is a longtime haunt for collectors.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ]
+   ],
+   "cl": false,
+   "i": "081"
+  },
+  {
+   "n": "Covet",
+   "c": "Shops and gifts",
+   "a": "176 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A secondhand designer clothing shop with locations around the city, including this Newbury Street store. Sellers book drop-off appointments, keeping the racks fresh.",
+   "nt": [],
+   "s": [
+    [
+     "Boston boutiques and local shops, 2025-2026 guide (Cities Insider)",
+     "https://citiesinsider.com/country/united-states/boston/boutiques-and-local-shops/en"
+    ]
+   ],
+   "cl": false,
+   "i": "082"
+  },
+  {
+   "n": "December Thieves",
+   "c": "Shops and gifts",
+   "a": "88 Charles St, Beacon Hill",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An independent fashion and lifestyle boutique on Charles Street with a distinctive, curated mix. It is one of Beacon Hill's signature shops.",
+   "nt": [],
+   "s": [
+    [
+     "Boston boutiques and local shops, 2025-2026 guide (Cities Insider)",
+     "https://citiesinsider.com/country/united-states/boston/boutiques-and-local-shops/en"
+    ]
+   ],
+   "cl": false,
+   "i": "083"
+  },
+  {
+   "n": "Dress Boston",
+   "c": "Shops and gifts",
+   "a": "62 Charles St, Beacon Hill",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Beacon Hill boutique that recently moved into a larger space on Charles Street. Shoppers come for its curated women's clothing.",
+   "nt": [],
+   "s": [
+    [
+     "Boston boutiques and local shops, 2025-2026 guide (Cities Insider)",
+     "https://citiesinsider.com/country/united-states/boston/boutiques-and-local-shops/en"
+    ]
+   ],
+   "cl": false,
+   "i": "084"
+  },
+  {
+   "n": "DTR Modern Galleries",
+   "c": "Shops and gifts",
+   "a": "167 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Newbury Street gallery selling works by modern and contemporary artists. Boston Magazine readers named it the best art gallery in 2025.",
+   "nt": [],
+   "s": [
+    [
+     "Best of Boston 2025: Readers' Poll Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803240"
+    ]
+   ],
+   "cl": false,
+   "i": "085"
+  },
+  {
+   "n": "Flat of the Hill",
+   "c": "Shops and gifts",
+   "a": "60 Charles St, Beacon Hill",
+   "p": "(617) 619-9977",
+   "e": "",
+   "w": "http://www.flatofthehill.com/",
+   "wl": "Website",
+   "b": "A Charles Street gift shop with designer handbags, jewelry and home decor. It is a favorite for thoughtful presents on Beacon Hill.",
+   "nt": [],
+   "s": [
+    [
+     "Best gift and specialty shops in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/757096/best-gift-and-souvenir-shops-speciality-and-artisan-stores-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "086"
   },
   {
    "n": "Flock",
@@ -790,7 +1868,205 @@
     ]
    ],
    "cl": false,
-   "i": "036"
+   "i": "087"
+  },
+  {
+   "n": "Good Taste Records",
+   "c": "Shops and gifts",
+   "a": "4 Thacher St, North End",
+   "p": "(617) 209-9953",
+   "e": "",
+   "w": "https://goodtasterecords.com/",
+   "wl": "Website",
+   "b": "A North End record store praised by shoppers for its deep selection and friendly owners. It is among the highest-rated record shops in the area.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ],
+    [
+     "The Best Record Stores in Boston, 2026 Guide (Keep Them Spinning)",
+     "https://keepthemspinning.com/blogs/record-stores/best-record-stores-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "088"
+  },
+  {
+   "n": "Harvard Book Store",
+   "c": "Shops and gifts",
+   "a": "1256 Massachusetts Ave, Cambridge",
+   "p": "(617) 661-1515",
+   "e": "",
+   "w": "http://harvard.com/",
+   "wl": "Website",
+   "b": "A celebrated independent bookstore in Harvard Square with new and used titles and a discounted basement of used and remainder books. It is a Cambridge institution.",
+   "nt": [],
+   "s": [
+    [
+     "Best gift and specialty shops in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/757096/best-gift-and-souvenir-shops-speciality-and-artisan-stores-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "089"
+  },
+  {
+   "n": "Lekker Home",
+   "c": "Shops and gifts",
+   "a": "38 Wareham St, South End",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A home goods and furniture store in the South End's design district. It is a go-to for modern pieces for the home.",
+   "nt": [],
+   "s": [
+    [
+     "Boston boutiques and local shops, 2025-2026 guide (Cities Insider)",
+     "https://citiesinsider.com/country/united-states/boston/boutiques-and-local-shops/en"
+    ]
+   ],
+   "cl": false,
+   "i": "090"
+  },
+  {
+   "n": "Magpie",
+   "c": "Shops and gifts",
+   "a": "416 Highland Ave, Somerville",
+   "p": "(617) 623-3330",
+   "e": "",
+   "w": "https://magpie-store.com/",
+   "wl": "Website",
+   "b": "A Somerville shop full of locally made crafts, jewelry, cards and stationery. It is a showcase for local makers, with a sister store for kids.",
+   "nt": [],
+   "s": [
+    [
+     "Best gift and specialty shops in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/757096/best-gift-and-souvenir-shops-speciality-and-artisan-stores-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "091"
+  },
+  {
+   "n": "Music Research Library",
+   "c": "Shops and gifts",
+   "a": "24 Joy St, Beacon Hill",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A carefully curated record store on Beacon Hill. Fans call it one of the best-curated shops in the Northeast.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ]
+   ],
+   "cl": false,
+   "i": "092"
+  },
+  {
+   "n": "Newbury Comics",
+   "c": "Shops and gifts",
+   "a": "348 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "The homegrown chain's Newbury Street store for music, vinyl, comics, manga and pop-culture collectibles. Readers love its selection and quirky finds.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ],
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ]
+   ],
+   "cl": false,
+   "i": "093"
+  },
+  {
+   "n": "Nuggets",
+   "c": "Shops and gifts",
+   "a": "486 Commonwealth Ave, Kenmore Square",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Kenmore Square record store packed with used vinyl. Crate-diggers love its time-machine feel.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ]
+   ],
+   "cl": false,
+   "i": "094"
+  },
+  {
+   "n": "On Centre",
+   "c": "Shops and gifts",
+   "a": "676 Centre St, Jamaica Plain",
+   "p": "(617) 522-2255",
+   "e": "",
+   "w": "http://www.oncentrejp.com/",
+   "wl": "Website",
+   "b": "A Jamaica Plain gift boutique with bags, jewelry, clothing and toys. Neighbors rely on it for well-chosen presents.",
+   "nt": [],
+   "s": [
+    [
+     "Best gift and specialty shops in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/757096/best-gift-and-souvenir-shops-speciality-and-artisan-stores-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "095"
+  },
+  {
+   "n": "Orpheus Performing Arts Treasures",
+   "c": "Shops and gifts",
+   "a": "362 Commonwealth Ave, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A shop for records and performing-arts treasures, with hidden rock, jazz, soundtrack and exotica gems. It rewards patient browsing.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ]
+   ],
+   "cl": false,
+   "i": "096"
+  },
+  {
+   "n": "Ouimillie",
+   "c": "Shops and gifts",
+   "a": "133 Charles St, Beacon Hill",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An independent apparel and lifestyle boutique on Charles Street. It is part of Beacon Hill's cluster of well-loved local shops.",
+   "nt": [],
+   "s": [
+    [
+     "Boston boutiques and local shops, 2025-2026 guide (Cities Insider)",
+     "https://citiesinsider.com/country/united-states/boston/boutiques-and-local-shops/en"
+    ]
+   ],
+   "cl": false,
+   "i": "097"
   },
   {
    "n": "Parkside Bookshop",
@@ -809,7 +2085,297 @@
     ]
    ],
    "cl": false,
-   "i": "037"
+   "i": "098"
+  },
+  {
+   "n": "Planet Records",
+   "c": "Shops and gifts",
+   "a": "144 Mt Auburn St, Cambridge",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Cambridge record store loved for its vibe and its staff. It is a classic stop for used vinyl.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ]
+   ],
+   "cl": false,
+   "i": "099"
+  },
+  {
+   "n": "Posman Books",
+   "c": "Shops and gifts",
+   "a": "127 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A family-owned bookshop on Newbury Street with a carefully chosen selection of books, gifts and toys. It is a welcome independent among the big brands.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ]
+   ],
+   "cl": false,
+   "i": "100"
+  },
+  {
+   "n": "Rainbows Pottery Studio",
+   "c": "Shops and gifts",
+   "a": "216 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A paint-your-own pottery studio where visitors decorate and glaze their own pieces, with finished pottery for sale too. It is a fun family and date stop.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ]
+   ],
+   "cl": false,
+   "i": "101"
+  },
+  {
+   "n": "SAULT New England",
+   "c": "Shops and gifts",
+   "a": "577 Tremont St, South End",
+   "p": "(857) 239-9434",
+   "e": "",
+   "w": "https://saultne.com/",
+   "wl": "Website",
+   "b": "A South End men's shop with classic and vintage-inspired apparel, accessories, grooming products and gifts. Boston Magazine readers named it the best men's clothing store in 2025.",
+   "nt": [],
+   "s": [
+    [
+     "Best of Boston 2025: Readers' Poll Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803240"
+    ],
+    [
+     "Best gift and specialty shops in Boston (Wanderlog)",
+     "https://wanderlog.com/list/geoCategory/757096/best-gift-and-souvenir-shops-speciality-and-artisan-stores-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "102"
+  },
+  {
+   "n": "Stereo Jack's Records",
+   "c": "Shops and gifts",
+   "a": "736 Broadway, Somerville",
+   "p": "(617) 764-0284",
+   "e": "",
+   "w": "http://stereojacks.com/",
+   "wl": "Website",
+   "b": "A Somerville record store that is one of the area's highest-rated shops. Shoppers love having a great record store within walking distance.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ],
+    [
+     "The Best Record Stores in Boston, 2026 Guide (Keep Them Spinning)",
+     "https://keepthemspinning.com/blogs/record-stores/best-record-stores-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "103"
+  },
+  {
+   "n": "Taurus Records",
+   "c": "Shops and gifts",
+   "a": "1282 Blue Hill Ave, Mattapan",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Mattapan record store known for reggae on vinyl. Readers praise its selection of Caribbean music.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ]
+   ],
+   "cl": false,
+   "i": "104"
+  },
+  {
+   "n": "Vinyl Index",
+   "c": "Shops and gifts",
+   "a": "1 Bow Market Way #25, Somerville",
+   "p": "(617) 764-3667",
+   "e": "",
+   "w": "http://www.vinylindex.com/",
+   "wl": "Website",
+   "b": "A record shop inside Union Square's Bow Market with a community feel. Regulars say it always has the goods.",
+   "nt": [],
+   "s": [
+    [
+     "The ultimate guide to independent record stores in Massachusetts 2025 (Boston.com)",
+     "https://www.boston.com/community/music/2025/04/11/the-ultimate-guide-to-independent-record-stores-in-massachusetts-2025/"
+    ],
+    [
+     "The Best Record Stores in Boston, 2026 Guide (Keep Them Spinning)",
+     "https://keepthemspinning.com/blogs/record-stores/best-record-stores-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "105"
+  },
+  {
+   "n": "Vivant Vintage",
+   "c": "Shops and gifts",
+   "a": "332 Newbury St, Back Bay",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A vintage clothing store that began as a mobile boutique on a cart and now has a Newbury Street home. Shoppers come for well-curated finds.",
+   "nt": [],
+   "s": [
+    [
+     "Getting to Know Your Neighborhood: Newbury Street (BU Today, 2026)",
+     "https://www.bu.edu/articles/2026/getting-to-know-your-neighborhood-newbury-street/"
+    ]
+   ],
+   "cl": false,
+   "i": "106"
+  },
+  {
+   "n": "Central Square Farmers Market",
+   "c": "Farms and flowers",
+   "a": "76 Bishop Allen Dr., Cambridge",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Monday market in Cambridge's Central Square. It has served the neighborhood with local farm goods for years.",
+   "nt": [
+    "Mon, noon-6 p.m. (2025 season)"
+   ],
+   "s": [
+    [
+     "Boston-area farmers markets (WBUR, May 2025)",
+     "https://www.wbur.org/news/2025/05/23/boston-massachusetts-farmers-markets-mbta"
+    ]
+   ],
+   "cl": false,
+   "i": "107"
+  },
+  {
+   "n": "Copley Square Farmers Market",
+   "c": "Farms and flowers",
+   "a": "227-230 Dartmouth St., Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "https://www.massfarmersmarkets.org/copley",
+   "wl": "Website",
+   "b": "A Back Bay farmers market in Copley Square selling local produce, flowers and baked goods. It runs Tuesdays and Fridays into late November.",
+   "nt": [
+    "Tue & Fri, 11 a.m.-6 p.m. (2025 season)"
+   ],
+   "s": [
+    [
+     "Boston-area farmers markets (WBUR, May 2025)",
+     "https://www.wbur.org/news/2025/05/23/boston-massachusetts-farmers-markets-mbta"
+    ]
+   ],
+   "cl": false,
+   "i": "108"
+  },
+  {
+   "n": "Davis Square Farmers Market",
+   "c": "Farms and flowers",
+   "a": "44 Day St., Somerville",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Wednesday market in Davis Square. It is a Somerville favorite for local produce through late November.",
+   "nt": [
+    "Wed, noon-6 p.m. (2025 season)"
+   ],
+   "s": [
+    [
+     "Boston-area farmers markets (WBUR, May 2025)",
+     "https://www.wbur.org/news/2025/05/23/boston-massachusetts-farmers-markets-mbta"
+    ]
+   ],
+   "cl": false,
+   "i": "109"
+  },
+  {
+   "n": "Fish & Farm Market",
+   "c": "Farms and flowers",
+   "a": "212 Northern Ave., Seaport, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Saturday-morning Seaport market pairing local seafood with farm goods. It runs from early summer into fall.",
+   "nt": [
+    "Sat, 9:30 a.m.-1:30 p.m. (2025 season)"
+   ],
+   "s": [
+    [
+     "Boston-area farmers markets (WBUR, May 2025)",
+     "https://www.wbur.org/news/2025/05/23/boston-massachusetts-farmers-markets-mbta"
+    ]
+   ],
+   "cl": false,
+   "i": "110"
+  },
+  {
+   "n": "Jamaica Plain Farmers Market",
+   "c": "Farms and flowers",
+   "a": "677 Centre St., Jamaica Plain, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A year-round Jamaica Plain market on Centre Street. It is a weekend ritual for JP neighbors.",
+   "nt": [
+    "Sat noon-3 p.m.; Tue noon-5 p.m. in season"
+   ],
+   "s": [
+    [
+     "Boston-area farmers markets (WBUR, May 2025)",
+     "https://www.wbur.org/news/2025/05/23/boston-massachusetts-farmers-markets-mbta"
+    ]
+   ],
+   "cl": false,
+   "i": "111"
+  },
+  {
+   "n": "Kendall Square Farmers Market",
+   "c": "Farms and flowers",
+   "a": "One Broad Canal Way, Cambridge",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Thursday market along the Broad Canal in Kendall Square. It is a midweek stop for local produce.",
+   "nt": [
+    "Thu, noon-6 p.m. (2025 season)"
+   ],
+   "s": [
+    [
+     "Boston-area farmers markets (WBUR, May 2025)",
+     "https://www.wbur.org/news/2025/05/23/boston-massachusetts-farmers-markets-mbta"
+    ]
+   ],
+   "cl": false,
+   "i": "112"
   },
   {
    "n": "Niche Urban Garden Supply",
@@ -828,7 +2394,28 @@
     ]
    ],
    "cl": false,
-   "i": "038"
+   "i": "113"
+  },
+  {
+   "n": "Nubian Square Farmers Market",
+   "c": "Farms and flowers",
+   "a": "2300 Washington St., Roxbury, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Saturday farmers market in the heart of Nubian Square. It brings fresh local produce to Roxbury from summer into fall.",
+   "nt": [
+    "Sat, 11 a.m.-3 p.m. (2025 season)"
+   ],
+   "s": [
+    [
+     "Boston-area farmers markets (WBUR, May 2025)",
+     "https://www.wbur.org/news/2025/05/23/boston-massachusetts-farmers-markets-mbta"
+    ]
+   ],
+   "cl": false,
+   "i": "114"
   },
   {
    "n": "SoWa Open Market",
@@ -851,7 +2438,7 @@
     ]
    ],
    "cl": false,
-   "i": "039"
+   "i": "115"
   },
   {
    "n": "Table & Tulip",
@@ -874,7 +2461,30 @@
     ]
    ],
    "cl": false,
-   "i": "040"
+   "i": "116"
+  },
+  {
+   "n": "Winston Flowers",
+   "c": "Farms and flowers",
+   "a": "Multiple Boston-area locations",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A family-owned Boston florist known for modern, custom arrangements. Readers voted it the city's best florist in 2025.",
+   "nt": [],
+   "s": [
+    [
+     "Best of Boston 2025: Readers' Poll Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803240"
+    ],
+    [
+     "Top florist picks in Boston (Time Out)",
+     "https://www.timeout.com/boston/shopping/top-florist-picks-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "117"
   },
   {
    "n": "Boston Dog Butlers",
@@ -893,7 +2503,45 @@
     ]
    ],
    "cl": false,
-   "i": "041"
+   "i": "118"
+  },
+  {
+   "n": "Boston's Best Dog Walkers and Pet Services",
+   "c": "Pets",
+   "a": "Boston",
+   "p": "857-312-0746",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A full-service pet care company offering walking, boarding, grooming and training. It has hundreds of five-star reviews from Boston owners.",
+   "nt": [],
+   "s": [
+    [
+     "Pet Boarding & Daycare in Boston (Lantern, updated May 2026)",
+     "https://lantern.llc/ma/boston/pet-services/pet-boarding"
+    ]
+   ],
+   "cl": false,
+   "i": "119"
+  },
+  {
+   "n": "Boston's Groomer",
+   "c": "Pets",
+   "a": "East Broadway, South Boston",
+   "p": "617-595-6650",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An independent South Boston grooming salon for dogs of every size and coat. Customers give it perfect ratings.",
+   "nt": [],
+   "s": [
+    [
+     "Top Dog Groomers in Boston (Lantern, updated April 2026)",
+     "https://lantern.llc/ma/boston/pet-services/dog-grooming"
+    ]
+   ],
+   "cl": false,
+   "i": "120"
   },
   {
    "n": "D'Tails Pet Boutique",
@@ -916,7 +2564,26 @@
     ]
    ],
    "cl": false,
-   "i": "042"
+   "i": "121"
+  },
+  {
+   "n": "Harbor Hounds",
+   "c": "Pets",
+   "a": "Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A dog daycare and boarding facility with indoor and outdoor play areas, grooming and basic training. Local owners give it near-perfect reviews.",
+   "nt": [],
+   "s": [
+    [
+     "Pet Boarding & Daycare in Boston (Lantern, updated May 2026)",
+     "https://lantern.llc/ma/boston/pet-services/pet-boarding"
+    ]
+   ],
+   "cl": false,
+   "i": "122"
   },
   {
    "n": "Kelly's Underground Dog Grooming",
@@ -935,7 +2602,45 @@
     ]
    ],
    "cl": false,
-   "i": "043"
+   "i": "123"
+  },
+  {
+   "n": "Pawmenities",
+   "c": "Pets",
+   "a": "Seaport, Boston",
+   "p": "617-890-7387",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A cageless daycare and boarding spot with round-the-clock human supervision, grooming and training. It is among the most highly reviewed pet care businesses in the city.",
+   "nt": [],
+   "s": [
+    [
+     "Pet Boarding & Daycare in Boston (Lantern, updated May 2026)",
+     "https://lantern.llc/ma/boston/pet-services/pet-boarding"
+    ]
+   ],
+   "cl": false,
+   "i": "124"
+  },
+  {
+   "n": "Pawsh Dog Boutique",
+   "c": "Pets",
+   "a": "Boston",
+   "p": "617-391-0880",
+   "e": "",
+   "w": "https://pawsh.com",
+   "wl": "Website",
+   "b": "A grooming salon and retail boutique for dogs of all sizes and coat types. It pairs grooming with a retail shop for pet supplies.",
+   "nt": [],
+   "s": [
+    [
+     "Top Dog Groomers in Boston (Lantern, updated April 2026)",
+     "https://lantern.llc/ma/boston/pet-services/dog-grooming"
+    ]
+   ],
+   "cl": false,
+   "i": "125"
   },
   {
    "n": "Polkadog Bakery",
@@ -954,7 +2659,49 @@
     ]
    ],
    "cl": false,
-   "i": "044"
+   "i": "126"
+  },
+  {
+   "n": "Red Dog Pet Resort & Spa at North Station",
+   "c": "Pets",
+   "a": "109 Canal St., North Station, Boston",
+   "p": "617-546-5900",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A downtown pet resort offering boarding, daycare, grooming and spa services. Owners can check in on their pets by webcam.",
+   "nt": [],
+   "s": [
+    [
+     "Top Dog Groomers in Boston (Lantern, updated April 2026)",
+     "https://lantern.llc/ma/boston/pet-services/dog-grooming"
+    ],
+    [
+     "Pet Boarding & Daycare in Boston (Lantern, updated May 2026)",
+     "https://lantern.llc/ma/boston/pet-services/pet-boarding"
+    ]
+   ],
+   "cl": false,
+   "i": "127"
+  },
+  {
+   "n": "Red Dog Pet Resort & Spa Boston",
+   "c": "Pets",
+   "a": "Boston",
+   "p": "617-427-2220",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A climate-controlled facility for dog and cat boarding, daycare, grooming and spa care. It has hundreds of strong reviews from local pet owners.",
+   "nt": [],
+   "s": [
+    [
+     "Pet Boarding & Daycare in Boston (Lantern, updated May 2026)",
+     "https://lantern.llc/ma/boston/pet-services/pet-boarding"
+    ]
+   ],
+   "cl": false,
+   "i": "128"
   },
   {
    "n": "South Bay Veterinary Group",
@@ -973,7 +2720,45 @@
     ]
    ],
    "cl": false,
-   "i": "045"
+   "i": "129"
+  },
+  {
+   "n": "Suite Escape",
+   "c": "Pets",
+   "a": "Charlestown, Boston",
+   "p": "617-886-9004",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A small luxury dog hotel in Charlestown with modern suites. Dogs get daily walks and outdoor play near the Navy Yard.",
+   "nt": [],
+   "s": [
+    [
+     "Pet Boarding & Daycare in Boston (Lantern, updated May 2026)",
+     "https://lantern.llc/ma/boston/pet-services/pet-boarding"
+    ]
+   ],
+   "cl": false,
+   "i": "130"
+  },
+  {
+   "n": "The Mindful Mutt",
+   "c": "Pets",
+   "a": "Allston, Boston",
+   "p": "617-987-0026",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An Allston dog daycare, boarding and grooming business. It tailors care to each dog's temperament.",
+   "nt": [],
+   "s": [
+    [
+     "Pet Boarding & Daycare in Boston (Lantern, updated May 2026)",
+     "https://lantern.llc/ma/boston/pet-services/pet-boarding"
+    ]
+   ],
+   "cl": false,
+   "i": "131"
   },
   {
    "n": "The Urban Hound",
@@ -992,7 +2777,64 @@
     ]
    ],
    "cl": false,
-   "i": "046"
+   "i": "132"
+  },
+  {
+   "n": "Woof Gang Bakery & Grooming West Roxbury",
+   "c": "Pets",
+   "a": "West Roxbury, Boston",
+   "p": "617-618-3225",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A pet store and grooming salon in West Roxbury. It is ranked among Boston's top dog groomers.",
+   "nt": [],
+   "s": [
+    [
+     "Top Dog Groomers in Boston (Lantern, updated April 2026)",
+     "https://lantern.llc/ma/boston/pet-services/dog-grooming"
+    ]
+   ],
+   "cl": false,
+   "i": "133"
+  },
+  {
+   "n": "3L Barber Co.",
+   "c": "Health beauty and fitness",
+   "a": "518 Tremont St., South End, Boston",
+   "p": "857-305-3106",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A neighborhood barbershop on Tremont Street in the South End. It serves locals near the theater district end of the neighborhood.",
+   "nt": [],
+   "s": [
+    [
+     "Barbershops in Boston (Fresha)",
+     "https://fresha.com/lp/en/bt/barbershops/in/us-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "134"
+  },
+  {
+   "n": "Andrea Sacco Skin & Body",
+   "c": "Health beauty and fitness",
+   "a": "224 Clarendon St. #21, Back Bay, Boston",
+   "p": "617-529-3684",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Back Bay skin and body studio offering facials and skincare treatments. It sits on a quiet stretch of Clarendon Street.",
+   "nt": [],
+   "s": [
+    [
+     "Beauty salons in Back Bay, Boston (Fresha)",
+     "https://www.fresha.com/lp/fi/bt/kauneushoitolat/us-boston/back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "135"
   },
   {
    "n": "Anita Kurl",
@@ -1011,7 +2853,7 @@
     ]
    ],
    "cl": false,
-   "i": "047"
+   "i": "136"
   },
   {
    "n": "Back Bay Skincare & Spa",
@@ -1034,7 +2876,131 @@
     ]
    ],
    "cl": false,
-   "i": "048"
+   "i": "137"
+  },
+  {
+   "n": "Barbershop Lounge",
+   "c": "Health beauty and fitness",
+   "a": "245 Newbury St., Back Bay, Boston",
+   "p": "617-450-0021",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A barbershop on Newbury Street offering cuts and grooming in a lounge setting. It is a handy stop for Back Bay shoppers and workers.",
+   "nt": [],
+   "s": [
+    [
+     "Barbershops in Boston (Fresha)",
+     "https://fresha.com/lp/en/bt/barbershops/in/us-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "138"
+  },
+  {
+   "n": "Beacon Hill Barbershop",
+   "c": "Health beauty and fitness",
+   "a": "121 Charles St., Beacon Hill, Boston",
+   "p": "857-239-9560",
+   "e": "",
+   "w": "https://beaconhillbarbershops.com",
+   "wl": "Website",
+   "b": "An old-school-meets-modern barbershop on Charles Street offering cuts and straight-razor shaves. Boston Magazine named it 2025's best spot for a men's haircut, praising barbers who know their regulars.",
+   "nt": [],
+   "s": [
+    [
+     "Best of Boston 2025: Beacon Hill Barbershop (Boston Magazine)",
+     "https://www.bostonmagazine.com/best-of-boston-archive/2025/beacon-hill-barbershop/"
+    ]
+   ],
+   "cl": false,
+   "i": "139"
+  },
+  {
+   "n": "Bella Santé Day Spa & Med Spa",
+   "c": "Health beauty and fitness",
+   "a": "38 Newbury St., 2nd Floor, Back Bay, Boston",
+   "p": "617-424-9930",
+   "e": "",
+   "w": "https://bellasante.com",
+   "wl": "Website",
+   "b": "A long-established Newbury Street day spa and med spa offering massage, facials, nails and body treatments. It won Boston Magazine honors for best waxing in 2025 and best day spa in 2024.",
+   "nt": [
+    "Late booking on Thursdays"
+   ],
+   "s": [
+    [
+     "Bella Santé press page",
+     "https://bellasante.com/pages/press"
+    ],
+    [
+     "Beauty salons in Back Bay, Boston (Fresha)",
+     "https://www.fresha.com/lp/fi/bt/kauneushoitolat/us-boston/back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "140"
+  },
+  {
+   "n": "Boston Body Pilates",
+   "c": "Health beauty and fitness",
+   "a": "North End/Waterfront and Newbury Street, Boston",
+   "p": "617-284-4226",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Pilates studio with group reformer classes, private sessions and instructor training. It has a waterfront studio and a Newbury Street location.",
+   "nt": [
+    "Newbury Street phone: 617-262-3333"
+   ],
+   "s": [
+    [
+     "Top Pilates Studios in Boston (Lantern, updated 2026)",
+     "https://lantern.llc/ma/boston/fitness/pilates"
+    ]
+   ],
+   "cl": false,
+   "i": "141"
+  },
+  {
+   "n": "Boston Yoga Union",
+   "c": "Health beauty and fitness",
+   "a": "364 Boylston St., 2nd Floor, Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Back Bay yoga studio offering classes for every level steps from the Public Garden. Readers picked it as Boston's best yoga studio in 2025.",
+   "nt": [
+    "Also has a Brookline studio"
+   ],
+   "s": [
+    [
+     "Best of Boston 2025: Readers' Poll Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803240"
+    ]
+   ],
+   "cl": false,
+   "i": "142"
+  },
+  {
+   "n": "Bradley & Diegel Salon",
+   "c": "Health beauty and fitness",
+   "a": "77 Newbury St., Back Bay, Boston",
+   "p": "617-266-7707",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A full-service hair salon in a Newbury Street storefront. It is a fixture of the Back Bay salon scene.",
+   "nt": [],
+   "s": [
+    [
+     "Beauty salons in Back Bay, Boston (Fresha)",
+     "https://www.fresha.com/lp/fi/bt/kauneushoitolat/us-boston/back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "143"
   },
   {
    "n": "City Nails & Spa",
@@ -1053,7 +3019,7 @@
     ]
    ],
    "cl": false,
-   "i": "049"
+   "i": "144"
   },
   {
    "n": "DeluxeBar Medical Aesthetics",
@@ -1072,7 +3038,26 @@
     ]
    ],
    "cl": false,
-   "i": "050"
+   "i": "145"
+  },
+  {
+   "n": "District Barbers Boston",
+   "c": "Health beauty and fitness",
+   "a": "190 High St., Financial District, Boston",
+   "p": "857-233-2427",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A downtown barbershop near the Greenway. It caters to the Financial District crowd.",
+   "nt": [],
+   "s": [
+    [
+     "Barbershops in Boston (Fresha)",
+     "https://fresha.com/lp/en/bt/barbershops/in/us-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "146"
   },
   {
    "n": "Down Under Yoga South End",
@@ -1091,7 +3076,45 @@
     ]
    ],
    "cl": false,
-   "i": "051"
+   "i": "147"
+  },
+  {
+   "n": "Drybar Back Bay",
+   "c": "Health beauty and fitness",
+   "a": "234 Clarendon St., Back Bay, Boston",
+   "p": "857-371-7600",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A blowout bar a block off Newbury Street. It is a go-to for a quick, polished style before an event.",
+   "nt": [],
+   "s": [
+    [
+     "Beauty salons in Back Bay, Boston (Fresha)",
+     "https://www.fresha.com/lp/fi/bt/kauneushoitolat/us-boston/back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "148"
+  },
+  {
+   "n": "Endurance Pilates and Yoga",
+   "c": "Health beauty and fitness",
+   "a": "Boston",
+   "p": "617-982-3205",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A studio teaching classical Pilates on Gratz equipment along with yoga. It caters to athletes, runners and clients coming back from injury.",
+   "nt": [],
+   "s": [
+    [
+     "Top Pilates Studios in Boston (Lantern, updated 2026)",
+     "https://lantern.llc/ma/boston/fitness/pilates"
+    ]
+   ],
+   "cl": false,
+   "i": "149"
   },
   {
    "n": "Essentially Bare Laser MedSpa",
@@ -1114,7 +3137,7 @@
     ]
    ],
    "cl": false,
-   "i": "052"
+   "i": "150"
   },
   {
    "n": "European Wax Center South End",
@@ -1137,7 +3160,7 @@
     ]
    ],
    "cl": false,
-   "i": "053"
+   "i": "151"
   },
   {
    "n": "Face Facts Healing Spa",
@@ -1160,7 +3183,7 @@
     ]
    ],
    "cl": false,
-   "i": "054"
+   "i": "152"
   },
   {
    "n": "Fantasia Nails",
@@ -1183,7 +3206,7 @@
     ]
    ],
    "cl": false,
-   "i": "055"
+   "i": "153"
   },
   {
    "n": "Fenny's Salon",
@@ -1202,7 +3225,45 @@
     ]
    ],
    "cl": false,
-   "i": "056"
+   "i": "154"
+  },
+  {
+   "n": "Healthworks Fitness",
+   "c": "Health beauty and fitness",
+   "a": "Multiple Boston-area locations",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A women-focused fitness club with group classes, strength floors and spa-style amenities. It took the best gym title in Boston Magazine's 2025 readers' poll.",
+   "nt": [],
+   "s": [
+    [
+     "Best of Boston 2025: Readers' Poll Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803240"
+    ]
+   ],
+   "cl": false,
+   "i": "155"
+  },
+  {
+   "n": "JPPilates",
+   "c": "Health beauty and fitness",
+   "a": "Charlestown, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Charlestown studio offering private and small-group Pilates. It holds seasonal outdoor classes at the Bunker Hill Monument.",
+   "nt": [],
+   "s": [
+    [
+     "Top Pilates Studios in Boston (Lantern, updated 2026)",
+     "https://lantern.llc/ma/boston/fitness/pilates"
+    ]
+   ],
+   "cl": false,
+   "i": "156"
   },
   {
    "n": "Lan Nail Salon",
@@ -1225,7 +3286,53 @@
     ]
    ],
    "cl": false,
-   "i": "057"
+   "i": "157"
+  },
+  {
+   "n": "Lash L'Amour Boston",
+   "c": "Health beauty and fitness",
+   "a": "129 Newbury St. #201, Back Bay, Boston",
+   "p": "617-247-1871",
+   "e": "",
+   "w": "https://lashlamour.com",
+   "wl": "Website",
+   "b": "A lash studio on Newbury Street specializing in eyelash extensions. It was named best lash extensions in Boston Magazine's Best of Boston.",
+   "nt": [],
+   "s": [
+    [
+     "Beauty salons in Back Bay, Boston (Fresha)",
+     "https://www.fresha.com/lp/fi/bt/kauneushoitolat/us-boston/back-bay"
+    ],
+    [
+     "Best of Boston 2022: Service (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2687922"
+    ]
+   ],
+   "cl": false,
+   "i": "158"
+  },
+  {
+   "n": "Marvelous Barber Lounge",
+   "c": "Health beauty and fitness",
+   "a": "82 Broad St., Financial District, Boston",
+   "p": "857-449-0072",
+   "e": "",
+   "w": "https://marvelouscuts.com",
+   "wl": "Website",
+   "b": "A barber lounge serving downtown professionals. Boston Magazine named it Best Barber Shop in its Best of Boston awards.",
+   "nt": [],
+   "s": [
+    [
+     "Barbershops in Boston (Fresha)",
+     "https://fresha.com/lp/en/bt/barbershops/in/us-boston"
+    ],
+    [
+     "Best of Boston 2022: Service (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2687922"
+    ]
+   ],
+   "cl": false,
+   "i": "159"
   },
   {
    "n": "Medical Aesthetics on Tremont",
@@ -1248,7 +3355,7 @@
     ]
    ],
    "cl": false,
-   "i": "058"
+   "i": "160"
   },
   {
    "n": "MiniLuxe South End",
@@ -1271,7 +3378,26 @@
     ]
    ],
    "cl": false,
-   "i": "059"
+   "i": "161"
+  },
+  {
+   "n": "Mondi's Brow Studio",
+   "c": "Health beauty and fitness",
+   "a": "33 Newbury St., Suite 204, Back Bay, Boston",
+   "p": "617-356-7052",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A brow studio tucked upstairs on Newbury Street. It focuses on shaping and tinting brows.",
+   "nt": [],
+   "s": [
+    [
+     "Beauty salons in Back Bay, Boston (Fresha)",
+     "https://www.fresha.com/lp/fi/bt/kauneushoitolat/us-boston/back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "162"
   },
   {
    "n": "My Nail Salon",
@@ -1294,7 +3420,87 @@
     ]
    ],
    "cl": false,
-   "i": "060"
+   "i": "163"
+  },
+  {
+   "n": "My Pilates Studio",
+   "c": "Health beauty and fitness",
+   "a": "South End, Boston",
+   "p": "603-860-7153",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A South End reformer studio with small groups capped at six plus private sessions. It also offers classes for seniors and people with chronic conditions.",
+   "nt": [],
+   "s": [
+    [
+     "Top Pilates Studios in Boston (Lantern, updated 2026)",
+     "https://lantern.llc/ma/boston/fitness/pilates"
+    ]
+   ],
+   "cl": false,
+   "i": "164"
+  },
+  {
+   "n": "Patrice Vinci Salon",
+   "c": "Health beauty and fitness",
+   "a": "91 Newbury St., Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A longtime Newbury Street hair salon known for polished cuts and color. Boston Magazine readers named it the city's best hair salon in 2025.",
+   "nt": [],
+   "s": [
+    [
+     "Best of Boston 2025: Readers' Poll Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803240"
+    ],
+    [
+     "Best of Boston 2023: Service (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2736897"
+    ]
+   ],
+   "cl": false,
+   "i": "165"
+  },
+  {
+   "n": "Persona Salon",
+   "c": "Health beauty and fitness",
+   "a": "331 Newbury St. #2, Back Bay, Boston",
+   "p": "617-859-7744",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An upper Newbury Street hair salon near Massachusetts Avenue. It serves Back Bay regulars looking for cuts and color.",
+   "nt": [],
+   "s": [
+    [
+     "Beauty salons in Back Bay, Boston (Fresha)",
+     "https://www.fresha.com/lp/fi/bt/kauneushoitolat/us-boston/back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "166"
+  },
+  {
+   "n": "Pilates Back Bay",
+   "c": "Health beauty and fitness",
+   "a": "Back Bay, Boston",
+   "p": "617-266-8080",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Back Bay Pilates studio offering private and small-group sessions. It is known for programs for back pain, joint replacement, pre- and postnatal clients and osteoporosis.",
+   "nt": [],
+   "s": [
+    [
+     "Top Pilates Studios in Boston (Lantern, updated 2026)",
+     "https://lantern.llc/ma/boston/fitness/pilates"
+    ]
+   ],
+   "cl": false,
+   "i": "167"
   },
   {
    "n": "Pure Hair Design",
@@ -1313,7 +3519,26 @@
     ]
    ],
    "cl": false,
-   "i": "061"
+   "i": "168"
+  },
+  {
+   "n": "Quin Pilates",
+   "c": "Health beauty and fitness",
+   "a": "South Boston",
+   "p": "617-545-0491",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A South Boston reformer studio that keeps classes to eight people or fewer. It is among the city's top-rated Pilates studios.",
+   "nt": [],
+   "s": [
+    [
+     "Top Pilates Studios in Boston (Lantern, updated 2026)",
+     "https://lantern.llc/ma/boston/fitness/pilates"
+    ]
+   ],
+   "cl": false,
+   "i": "169"
   },
   {
    "n": "Recharge on Clarendon Medspa",
@@ -1332,7 +3557,66 @@
     ]
    ],
    "cl": false,
-   "i": "062"
+   "i": "170"
+  },
+  {
+   "n": "Release Well-Being Center",
+   "c": "Health beauty and fitness",
+   "a": "28 Arlington St., Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A wellness spa and well-being center just off the Public Garden in Back Bay. Readers voted it Boston's best spa in Boston Magazine's 2025 poll.",
+   "nt": [
+    "Second location in Westborough"
+   ],
+   "s": [
+    [
+     "Best of Boston 2025: Readers' Poll Winners (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2803240"
+    ]
+   ],
+   "cl": false,
+   "i": "171"
+  },
+  {
+   "n": "Roffi Salon & Day Spa",
+   "c": "Health beauty and fitness",
+   "a": "10 Newbury St., Back Bay, Boston",
+   "p": "617-536-9600",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A salon and day spa at the Public Garden end of Newbury Street. It pairs hair services with spa treatments under one roof.",
+   "nt": [],
+   "s": [
+    [
+     "Beauty salons in Back Bay, Boston (Fresha)",
+     "https://www.fresha.com/lp/fi/bt/kauneushoitolat/us-boston/back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "172"
+  },
+  {
+   "n": "Roxbury YMCA",
+   "c": "Health beauty and fitness",
+   "a": "285 Martin Luther King Blvd., Roxbury, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A community YMCA serving Roxbury families with fitness and programs. It is a long-standing neighborhood anchor.",
+   "nt": [],
+   "s": [
+    [
+     "Gyms (Bay State Banner local directory)",
+     "https://local.baystatebanner.com/categories/beauty-and-wellness/gyms"
+    ]
+   ],
+   "cl": false,
+   "i": "173"
   },
   {
    "n": "Skin Laundry South End",
@@ -1355,7 +3639,26 @@
     ]
    ],
    "cl": false,
-   "i": "063"
+   "i": "174"
+  },
+  {
+   "n": "Skips Barbershop",
+   "c": "Health beauty and fitness",
+   "a": "603 Tremont St., South End, Boston",
+   "p": "617-982-7981",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A South End barbershop on Tremont Street. It is a neighborhood stop for regular trims and fades.",
+   "nt": [],
+   "s": [
+    [
+     "Barbershops in Boston (Fresha)",
+     "https://fresha.com/lp/en/bt/barbershops/in/us-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "175"
   },
   {
    "n": "skoah South End",
@@ -1378,7 +3681,121 @@
     ]
    ],
    "cl": false,
-   "i": "064"
+   "i": "176"
+  },
+  {
+   "n": "Street Salon & Barber Shop",
+   "c": "Health beauty and fitness",
+   "a": "164 Newbury St., Back Bay, Boston",
+   "p": "857-239-8384",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A combined salon and barbershop on Newbury Street. It handles everything from classic cuts to styling.",
+   "nt": [],
+   "s": [
+    [
+     "Barbershops in Boston (Fresha)",
+     "https://fresha.com/lp/en/bt/barbershops/in/us-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "177"
+  },
+  {
+   "n": "Studio78",
+   "c": "Health beauty and fitness",
+   "a": "K Street, South Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A South Boston studio offering mat Pilates and fusion classes that mix in strength, barre and cardio. It earns near-perfect reviews from its members.",
+   "nt": [],
+   "s": [
+    [
+     "Top Pilates Studios in Boston (Lantern, updated 2026)",
+     "https://lantern.llc/ma/boston/fitness/pilates"
+    ]
+   ],
+   "cl": false,
+   "i": "178"
+  },
+  {
+   "n": "Temple of Groom Barbershop Lounge",
+   "c": "Health beauty and fitness",
+   "a": "464 Commonwealth Ave., Kenmore, Boston",
+   "p": "857-350-4020",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A barbershop lounge in Kenmore Square near Fenway and BU. It offers cuts and grooming services.",
+   "nt": [],
+   "s": [
+    [
+     "Barbershops in Boston (Fresha)",
+     "https://fresha.com/lp/en/bt/barbershops/in/us-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "179"
+  },
+  {
+   "n": "The Spa at Mandarin Oriental, Boston",
+   "c": "Health beauty and fitness",
+   "a": "776 Boylston St., Back Bay, Boston",
+   "p": "617-535-8888",
+   "e": "",
+   "w": "https://www.mandarinoriental.com",
+   "wl": "Website",
+   "b": "A serene, low-lit luxury spa inside the Mandarin Oriental with a vitality pool and signature body rituals. Boston Magazine named it the best day spa of 2025.",
+   "nt": [],
+   "s": [
+    [
+     "Best of Boston 2025: Mandarin Oriental, Boston (Boston Magazine)",
+     "https://www.bostonmagazine.com/best-of-boston-archive/2025/mandarin-oriental-boston-6/"
+    ]
+   ],
+   "cl": false,
+   "i": "180"
+  },
+  {
+   "n": "Treasured Hand Nails & Beauty Salon",
+   "c": "Health beauty and fitness",
+   "a": "715 Boylston St., Suite 220, Back Bay, Boston",
+   "p": "617-236-5529",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A nail and beauty salon on the second floor of a Boylston Street building near Copley. It offers manicures, pedicures and beauty services.",
+   "nt": [],
+   "s": [
+    [
+     "Beauty salons in Back Bay, Boston (Fresha)",
+     "https://www.fresha.com/lp/fi/bt/kauneushoitolat/us-boston/back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "181"
+  },
+  {
+   "n": "Z Barbershop",
+   "c": "Health beauty and fitness",
+   "a": "536 Columbus Ave., South End, Boston",
+   "p": "774-777-8777",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A barbershop on Columbus Avenue in the South End. It serves the neighborhood with cuts and beard work.",
+   "nt": [],
+   "s": [
+    [
+     "Barbershops in Boston (Fresha)",
+     "https://fresha.com/lp/en/bt/barbershops/in/us-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "182"
   },
   {
    "n": "étant, A Spa for Well Being",
@@ -1401,7 +3818,30 @@
     ]
    ],
    "cl": false,
-   "i": "065"
+   "i": "183"
+  },
+  {
+   "n": "Arnold Arboretum",
+   "c": "Boating and recreation",
+   "a": "125 Arborway, Jamaica Plain, Boston, MA 02130",
+   "p": "617-524-1718",
+   "e": "",
+   "w": "https://arboretum.harvard.edu/",
+   "wl": "Website",
+   "b": "A 281-acre Harvard arboretum and Emerald Necklace park with more than 2,000 plant species and no admission fee. Lilac Sunday each May is a beloved Boston tradition.",
+   "nt": [],
+   "s": [
+    [
+     "REI: Boston outdoor activities guide",
+     "https://www.rei.com/blog/travel/boston-outdoor-activities-guide"
+    ],
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "184"
   },
   {
    "n": "BCYF Blackstone Community Center",
@@ -1420,7 +3860,7 @@
     ]
    ],
    "cl": false,
-   "i": "066"
+   "i": "185"
   },
   {
    "n": "Blackstone Square",
@@ -1443,7 +3883,114 @@
     ]
    ],
    "cl": false,
-   "i": "067"
+   "i": "186"
+  },
+  {
+   "n": "Boston Common",
+   "c": "Boating and recreation",
+   "a": "Tremont St and Beacon St, Downtown, Boston, MA 02108",
+   "p": "617-635-4505",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "Established in 1634, it is the nation's oldest public park and the starting point of the Freedom Trail. Bostonians use it year-round for strolling, picnics, events and winter skating.",
+   "nt": [],
+   "s": [
+    [
+     "Freedom Trail sites rack card",
+     "https://thefreedomtrail.org/sites/default/files/content/Education/freedom_trail_sites_group_rack_card.pdf"
+    ],
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "187"
+  },
+  {
+   "n": "Boston Harbor Islands National and State Park",
+   "c": "Boating and recreation",
+   "a": "Ferries from Long Wharf, Downtown, Boston, MA",
+   "p": "617-223-8666",
+   "e": "",
+   "w": "https://www.bostonharborislands.org/",
+   "wl": "Website",
+   "b": "A park of 34 islands reached by ferry, with beaches, trails, camping and the Civil War-era Fort Warren on Georges Island. A day on the islands is a summer favorite.",
+   "nt": [],
+   "s": [
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ],
+    [
+     "REI: Boston outdoor activities guide",
+     "https://www.rei.com/blog/travel/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "188"
+  },
+  {
+   "n": "Boston Public Garden",
+   "c": "Boating and recreation",
+   "a": "Charles St and Arlington St, Back Bay, Boston, MA 02116",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A historic park beside Boston Common with a four-acre lagoon, seasonal flowerbeds and the Swan Boats. Locals come for its blooms, benches and peaceful paths.",
+   "nt": [],
+   "s": [
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "189"
+  },
+  {
+   "n": "Castle Island and Carson Beach",
+   "c": "Boating and recreation",
+   "a": "165 William J Day Blvd, South Boston, MA 02125",
+   "p": "617-727-5290",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A harbor beach with volleyball courts and food vendors, linked by a waterfront path to Castle Island. South Boston families flock here for walks, swims and harbor views.",
+   "nt": [],
+   "s": [
+    [
+     "REI: Boston outdoor activities guide",
+     "https://www.rei.com/blog/travel/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "190"
+  },
+  {
+   "n": "Charles River Esplanade",
+   "c": "Boating and recreation",
+   "a": "Along the Charles River from Back Bay to the Museum of Science, Boston, MA",
+   "p": "617-227-0365",
+   "e": "",
+   "w": "https://esplanade.org/",
+   "wl": "Website",
+   "b": "A three-mile riverfront park with paths for running and biking, fitness classes, outdoor movies and boating access. It is Boston's front yard on the river.",
+   "nt": [],
+   "s": [
+    [
+     "REI: Boston outdoor activities guide",
+     "https://www.rei.com/blog/travel/boston-outdoor-activities-guide"
+    ],
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "191"
   },
   {
    "n": "Childe Hassam Park",
@@ -1466,7 +4013,102 @@
     ]
    ],
    "cl": false,
-   "i": "068"
+   "i": "192"
+  },
+  {
+   "n": "Commonwealth Avenue Mall",
+   "c": "Boating and recreation",
+   "a": "Commonwealth Ave from Arlington St to Kenmore, Back Bay, Boston, MA 02116",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A tree-lined pedestrian promenade running through the Back Bay brownstone district. It is a favorite walk in every season, especially when the magnolias bloom.",
+   "nt": [],
+   "s": [
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "193"
+  },
+  {
+   "n": "Community Boating",
+   "c": "Boating and recreation",
+   "a": "Charles River Esplanade, Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A public sailing program on the Esplanade offering day passes and longer memberships. It puts sailing on the Charles within reach of everyday Bostonians.",
+   "nt": [],
+   "s": [
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "194"
+  },
+  {
+   "n": "Copley Square",
+   "c": "Boating and recreation",
+   "a": "Boylston St at Dartmouth St, Back Bay, Boston, MA 02116",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A central plaza ringed by Trinity Church, the Boston Public Library and landmark hotels. It hosts festivals, a farmers' market and the Boston Marathon finish.",
+   "nt": [],
+   "s": [
+    [
+     "Frommer's: Boston attractions",
+     "https://www.frommers.com/destinations/boston/attractions/overview"
+    ]
+   ],
+   "cl": false,
+   "i": "195"
+  },
+  {
+   "n": "Courageous Sailing",
+   "c": "Boating and recreation",
+   "a": "Jamaica Pond and Charlestown, Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "https://www.courageoussailing.org/",
+   "wl": "Website",
+   "b": "A nonprofit sailing program offering lessons and boat rentals, including sailboats, kayaks and rowboats at Jamaica Pond. It makes getting out on the water easy and welcoming.",
+   "nt": [],
+   "s": [
+    [
+     "REI: Boston outdoor activities guide",
+     "https://www.rei.com/blog/travel/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "196"
+  },
+  {
+   "n": "Franklin Park",
+   "c": "Boating and recreation",
+   "a": "Franklin Park, Dorchester/Jamaica Plain/Roxbury, Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "The final park in Boston's Emerald Necklace chain, with wide lawns and wooded paths. It is a much-loved green heart for the surrounding neighborhoods.",
+   "nt": [],
+   "s": [
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "197"
   },
   {
    "n": "Franklin Square",
@@ -1489,7 +4131,7 @@
     ]
    ],
    "cl": false,
-   "i": "069"
+   "i": "198"
   },
   {
    "n": "Frieda Garcia Park",
@@ -1508,7 +4150,26 @@
     ]
    ],
    "cl": false,
-   "i": "070"
+   "i": "199"
+  },
+  {
+   "n": "Frog Pond Skating Rink",
+   "c": "Boating and recreation",
+   "a": "Boston Common, Downtown, Boston, MA 02108",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A public outdoor ice rink on Boston Common, open roughly November through March. Skating under the city lights is a cherished winter ritual for families.",
+   "nt": [],
+   "s": [
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "200"
   },
   {
    "n": "Hayes Park",
@@ -1531,7 +4192,30 @@
     ]
    ],
    "cl": false,
-   "i": "071"
+   "i": "201"
+  },
+  {
+   "n": "Jamaica Pond",
+   "c": "Boating and recreation",
+   "a": "507 Jamaicaway, Jamaica Plain, Boston, MA 02130",
+   "p": "617-522-5061",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A pond with a 1.5-mile loop path and seasonal sailboat and rowboat rentals from the boathouse. It is a favorite walking and jogging loop for much of the city.",
+   "nt": [],
+   "s": [
+    [
+     "REI: Boston outdoor activities guide",
+     "https://www.rei.com/blog/travel/boston-outdoor-activities-guide"
+    ],
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "202"
   },
   {
    "n": "Peters Park",
@@ -1558,7 +4242,45 @@
     ]
    ],
    "cl": false,
-   "i": "072"
+   "i": "203"
+  },
+  {
+   "n": "Piers Park Sailing Center",
+   "c": "Boating and recreation",
+   "a": "95 Marginal St, East Boston, MA 02128",
+   "p": "617-561-6677",
+   "e": "",
+   "w": "https://www.piersparksailing.org/",
+   "wl": "Website",
+   "b": "A community sailing center with youth, adult and adaptive programs. It gives East Boston families affordable access to sailing on the harbor.",
+   "nt": [],
+   "s": [
+    [
+     "REI: Boston outdoor activities guide",
+     "https://www.rei.com/blog/travel/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "204"
+  },
+  {
+   "n": "Public Garden Swan Boats",
+   "c": "Boating and recreation",
+   "a": "Lagoon, Boston Public Garden, Back Bay, Boston, MA 02116",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "The Swan Boats glide around the Public Garden lagoon from mid-April to mid-October. A ride is one of the most beloved and gentle Boston traditions for all ages.",
+   "nt": [],
+   "s": [
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "205"
   },
   {
    "n": "Ringgold Park",
@@ -1581,7 +4303,30 @@
     ]
    ],
    "cl": false,
-   "i": "073"
+   "i": "206"
+  },
+  {
+   "n": "Rose Kennedy Greenway",
+   "c": "Boating and recreation",
+   "a": "Atlantic Ave and Surface Rd, Downtown, Boston, MA",
+   "p": "617-292-0020",
+   "e": "",
+   "w": "https://www.rosekennedygreenway.org/",
+   "wl": "Website",
+   "b": "A 1.5-mile downtown park with fountains, a seasonal carousel, public art and food trucks. It is a lively green ribbon through the heart of the city.",
+   "nt": [],
+   "s": [
+    [
+     "REI: Boston outdoor activities guide",
+     "https://www.rei.com/blog/travel/boston-outdoor-activities-guide"
+    ],
+    [
+     "Nomado: Boston outdoor activities guide",
+     "https://www.nomadotravel.app/en/guides/boston-outdoor-activities-guide"
+    ]
+   ],
+   "cl": false,
+   "i": "207"
   },
   {
    "n": "South End Soccer",
@@ -1600,7 +4345,7 @@
     ]
    ],
    "cl": false,
-   "i": "074"
+   "i": "208"
   },
   {
    "n": "South End Youth Baseball",
@@ -1623,7 +4368,7 @@
     ]
    ],
    "cl": false,
-   "i": "075"
+   "i": "209"
   },
   {
    "n": "Southwest Corridor Park",
@@ -1646,7 +4391,7 @@
     ]
    ],
    "cl": false,
-   "i": "076"
+   "i": "210"
   },
   {
    "n": "Titus Sparrow Park",
@@ -1673,7 +4418,30 @@
     ]
    ],
    "cl": false,
-   "i": "077"
+   "i": "211"
+  },
+  {
+   "n": "Boston Harbor Hotel",
+   "c": "Lodging",
+   "a": "70 Rowes Wharf, Waterfront, Boston",
+   "p": "",
+   "e": "",
+   "w": "https://www.bostonharborhotel.com",
+   "wl": "Website",
+   "b": "A harborfront landmark known for its 60-foot archway, spa and lap pool. Boston Magazine has repeatedly named it a top hotel for romance and water views.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ],
+    [
+     "Best of Boston 2023: Service (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2736897"
+    ]
+   ],
+   "cl": false,
+   "i": "212"
   },
   {
    "n": "Clarendon Square Inn",
@@ -1692,7 +4460,171 @@
     ]
    ],
    "cl": false,
-   "i": "078"
+   "i": "213"
+  },
+  {
+   "n": "Fairmont Copley Plaza",
+   "c": "Lodging",
+   "a": "138 St. James Ave., Back Bay, Boston",
+   "p": "617-267-5300",
+   "e": "",
+   "w": "https://www.fairmont.com",
+   "wl": "Website",
+   "b": "A grand 1912 hotel overlooking Copley Square, home to the OAK Long Bar. Boston Magazine named it the best pet-friendly hotel of 2025.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ],
+    [
+     "Best of Boston 2025: Best Pet-Friendly Hotel (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2801418"
+    ]
+   ],
+   "cl": false,
+   "i": "214"
+  },
+  {
+   "n": "Four Seasons Hotel Boston",
+   "c": "Lodging",
+   "a": "200 Boylston St., Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A luxury hotel facing the Public Garden. It has 273 rooms and an eighth-floor heated pool.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "215"
+  },
+  {
+   "n": "Four Seasons Hotel One Dalton Street, Boston",
+   "c": "Lodging",
+   "a": "1 Dalton St., Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A sleek tower hotel near the Prudential Center with a spa and wellness center. Guests rate it among the city's best.",
+   "nt": [],
+   "s": [
+    [
+     "Boston spa and wellness hotels (Hotelier's Choice, checked Oct 2026)",
+     "https://hotelierschoice.com/guides/boston/boston-spa-wellness"
+    ]
+   ],
+   "cl": false,
+   "i": "216"
+  },
+  {
+   "n": "Hotel AKA Boston Common",
+   "c": "Lodging",
+   "a": "90 Tremont St., Downtown Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A 19-story hotel across from Boston Common with skyline views. Guests enjoy an evening wine hour.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "217"
+  },
+  {
+   "n": "InterContinental Boston",
+   "c": "Lodging",
+   "a": "Downtown Boston waterfront",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A centrally located hotel on the harbor side of downtown with a spa. It draws strong guest reviews.",
+   "nt": [],
+   "s": [
+    [
+     "Boston spa and wellness hotels (Hotelier's Choice, checked Oct 2026)",
+     "https://hotelierschoice.com/guides/boston/boston-spa-wellness"
+    ]
+   ],
+   "cl": false,
+   "i": "218"
+  },
+  {
+   "n": "Mandarin Oriental, Boston",
+   "c": "Lodging",
+   "a": "776 Boylston St., Back Bay, Boston",
+   "p": "617-535-8888",
+   "e": "",
+   "w": "https://www.mandarinoriental.com",
+   "wl": "Website",
+   "b": "A modern luxury hotel with 148 rooms on Boylston Street. Its spa won Boston Magazine's best day spa honor in 2025.",
+   "nt": [],
+   "s": [
+    [
+     "Back Bay hotels guide (Hotelier's Choice, 2026)",
+     "https://hotelierschoice.com/guides/boston/back-bay"
+    ],
+    [
+     "Best of Boston 2023: Service (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2736897"
+    ]
+   ],
+   "cl": false,
+   "i": "219"
+  },
+  {
+   "n": "Omni Boston Hotel at the Seaport",
+   "c": "Lodging",
+   "a": "450 Summer St., Seaport, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A large Seaport hotel with a spa and wellness center. Its Breve Spa was a Best of Boston pick for manicures and pedicures.",
+   "nt": [],
+   "s": [
+    [
+     "Boston spa and wellness hotels (Hotelier's Choice, checked Oct 2026)",
+     "https://hotelierschoice.com/guides/boston/boston-spa-wellness"
+    ],
+    [
+     "Best of Boston 2023: Service (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2736897"
+    ]
+   ],
+   "cl": false,
+   "i": "220"
+  },
+  {
+   "n": "Raffles Boston",
+   "c": "Lodging",
+   "a": "Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A luxury Back Bay hotel with a spa and wellness center. It is one of the city's newest high-end stays.",
+   "nt": [],
+   "s": [
+    [
+     "Boston spa and wellness hotels (Hotelier's Choice, checked Oct 2026)",
+     "https://hotelierschoice.com/guides/boston/boston-spa-wellness"
+    ]
+   ],
+   "cl": false,
+   "i": "221"
   },
   {
    "n": "The Alise Boston",
@@ -1715,7 +4647,175 @@
     ]
    ],
    "cl": false,
-   "i": "079"
+   "i": "222"
+  },
+  {
+   "n": "The Charles Hotel",
+   "c": "Lodging",
+   "a": "Harvard Square, Cambridge",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Harvard Square landmark hotel with a spa and wellness center. It is a classic base for visitors to Cambridge.",
+   "nt": [],
+   "s": [
+    [
+     "Boston spa and wellness hotels (Hotelier's Choice, checked Oct 2026)",
+     "https://hotelierschoice.com/guides/boston/boston-spa-wellness"
+    ]
+   ],
+   "cl": false,
+   "i": "223"
+  },
+  {
+   "n": "The Colonnade Hotel",
+   "c": "Lodging",
+   "a": "120 Huntington Ave., Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A modern Back Bay hotel known for its rooftop pool and cabanas. It sits steps from the Prudential Center.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "224"
+  },
+  {
+   "n": "The Eliot Hotel",
+   "c": "Lodging",
+   "a": "370 Commonwealth Ave., Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A boutique all-suite hotel in a 1925 Georgian Revival building on Commonwealth Avenue. It is a Relais & Châteaux property with a celebrated restaurant.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ],
+    [
+     "Back Bay hotels guide (Hotelier's Choice, 2026)",
+     "https://hotelierschoice.com/guides/boston/back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "225"
+  },
+  {
+   "n": "The Envoy Hotel, Autograph Collection",
+   "c": "Lodging",
+   "a": "70 Sleeper St., Seaport, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A glassy Seaport hotel with harbor views. Its rooftop bar is one of the most popular in town.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "226"
+  },
+  {
+   "n": "The Langham, Boston",
+   "c": "Lodging",
+   "a": "250 Franklin St., Financial District, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A luxury hotel set in a grand former bank building. It has a notable art collection and an indoor pool.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "227"
+  },
+  {
+   "n": "The Lenox Hotel",
+   "c": "Lodging",
+   "a": "61 Exeter St., Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A family-owned hotel dating to 1900, next to the Boston Public Library. Many rooms have working fireplaces.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ],
+    [
+     "Back Bay hotels guide (Hotelier's Choice, 2026)",
+     "https://hotelierschoice.com/guides/boston/back-bay"
+    ]
+   ],
+   "cl": false,
+   "i": "228"
+  },
+  {
+   "n": "The Liberty",
+   "c": "Lodging",
+   "a": "215 Charles St., West End, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A luxury hotel set in the former 1850s Charles Street Jail. It offers dining, bars and Charles River views.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "229"
+  },
+  {
+   "n": "The Newbury Boston",
+   "c": "Lodging",
+   "a": "1 Newbury St., Back Bay, Boston",
+   "p": "",
+   "e": "",
+   "w": "https://www.thenewburyboston.com",
+   "wl": "Website",
+   "b": "A luxury hotel in the 1927 former Ritz-Carlton building overlooking the Public Garden. Its rooftop restaurant is a city favorite, and Boston Magazine has named it a best city-escape hotel.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ],
+    [
+     "Back Bay hotels guide (Hotelier's Choice, 2026)",
+     "https://hotelierschoice.com/guides/boston/back-bay"
+    ],
+    [
+     "Best of Boston 2023: Service (Boston Magazine)",
+     "https://www.bostonmagazine.com/?p=2736897"
+    ]
+   ],
+   "cl": false,
+   "i": "230"
   },
   {
    "n": "The Revolution Hotel",
@@ -1734,7 +4834,131 @@
     ]
    ],
    "cl": false,
-   "i": "080"
+   "i": "231"
+  },
+  {
+   "n": "The Ritz-Carlton, Boston",
+   "c": "Lodging",
+   "a": "10 Avery St., Downtown Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A five-star hotel overlooking Boston Common. Its refreshed interiors nod to the city's literary history.",
+   "nt": [],
+   "s": [
+    [
+     "The 12 best hotels in Boston (Time Out, Oct 2025)",
+     "https://www.timeout.com/boston/hotels/best-hotels-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "232"
+  },
+  {
+   "n": "Landry's Bicycles",
+   "c": "Automotive",
+   "a": "1048 Commonwealth Ave., Allston, Boston",
+   "p": "",
+   "e": "",
+   "w": "https://www.landrys.com",
+   "wl": "Website",
+   "b": "An employee-owned Massachusetts bike shop chain with a flagship store near Packard's Corner. It is a multi-time Best of Boston bike shop and a strong cycling advocate.",
+   "nt": [
+    "Also has a Charlestown store at Hood Park"
+   ],
+   "s": [
+    [
+     "Landry's Bicycles store page",
+     "https://www.landrys.com/m/page.cfm?pageid=509"
+    ],
+    [
+     "Bike shops in Boston (BosToday)",
+     "https://bostoday.6amcity.com/bike-shops-boston-ma?_amp=true"
+    ]
+   ],
+   "cl": false,
+   "i": "233"
+  },
+  {
+   "n": "Charles Street Supply Ace Hardware",
+   "c": "Building landscaping and home services",
+   "a": "54 Charles St, Beacon Hill, Boston, MA 02114",
+   "p": "617-367-9046",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A small but well-stocked neighborhood hardware store on Beacon Hill, known for helpful staff. A multiple Best of Boston hardware winner, it is the go-to fix-it shop for the neighborhood.",
+   "nt": [],
+   "s": [
+    [
+     "Checkbook: Boston hardware stores",
+     "https://www.checkbook.org/ma/boston/hardware-stores/ratings"
+    ],
+    [
+     "Boston Magazine: Best of Boston hardware archive",
+     "https://bostonmagazine.com/best-of-boston-archive/award/hardware"
+    ]
+   ],
+   "cl": false,
+   "i": "234"
+  },
+  {
+   "n": "Economy True Value",
+   "c": "Building landscaping and home services",
+   "a": "219 Massachusetts Ave, Back Bay, Boston, MA 02115",
+   "p": "617-536-4280",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A neighborhood hardware store near Symphony Hall praised for its well-laid-out product displays. Back Bay and Fenway residents rely on it for everyday home repair supplies.",
+   "nt": [],
+   "s": [
+    [
+     "Checkbook: Boston hardware stores",
+     "https://www.checkbook.org/ma/boston/hardware-stores/ratings"
+    ]
+   ],
+   "cl": false,
+   "i": "235"
+  },
+  {
+   "n": "Garment Valet",
+   "c": "Building landscaping and home services",
+   "a": "860A Beacon St, Boston, MA",
+   "p": "617-442-5326",
+   "e": "",
+   "w": "https://garmentvalet.com/",
+   "wl": "Website",
+   "b": "A Boston dry cleaning service that picks up and returns your clothes, from tailored jackets to weekly shirts, pressed and ready to wear. Boston Magazine named it Best Dry Cleaner in its 2025 Best of Boston.",
+   "nt": [],
+   "s": [
+    [
+     "Boston Magazine: Best of Boston 2025, Garment Valet",
+     "https://www.bostonmagazine.com/best-of-boston-archive/2025/garment-valet/"
+    ]
+   ],
+   "cl": false,
+   "i": "236"
+  },
+  {
+   "n": "Home Depot South Bay",
+   "c": "Building landscaping and home services",
+   "a": "5 Allstate Rd, South Bay Center, Dorchester, Boston, MA 02125",
+   "p": "617-442-6110",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "The city's big-box home improvement store at South Bay Center. Shoppers praise the product selection and knowledgeable staff for bigger projects.",
+   "nt": [],
+   "s": [
+    [
+     "Checkbook: Boston hardware stores",
+     "https://www.checkbook.org/ma/boston/hardware-stores/ratings"
+    ]
+   ],
+   "cl": false,
+   "i": "237"
   },
   {
    "n": "Shawmut Design and Construction",
@@ -1753,7 +4977,121 @@
     ]
    ],
    "cl": false,
-   "i": "081"
+   "i": "238"
+  },
+  {
+   "n": "Bargmann Hendrie + Archetype (BH+A)",
+   "c": "Architecture and creative services",
+   "a": "Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Boston firm working in historic preservation, residential, community, hospitality and health care design. It was ranked among the top firms in Boston for 2026 by square footage designed in Massachusetts.",
+   "nt": [],
+   "s": [
+    [
+     "Novatr: Top Architecture Firms in Boston (2025)",
+     "https://www.novatr.com/blog/top-architecture-firms-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "239"
+  },
+  {
+   "n": "BUTZ + KLUG Architecture",
+   "c": "Architecture and creative services",
+   "a": "Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Boston studio focused on residential and institutional work that blends contemporary and traditional elements. Its projects include work for the Mandarin Oriental and the School of the MFA.",
+   "nt": [],
+   "s": [
+    [
+     "Novatr: Top Architecture Firms in Boston (2025)",
+     "https://www.novatr.com/blog/top-architecture-firms-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "240"
+  },
+  {
+   "n": "CBT Architects",
+   "c": "Architecture and creative services",
+   "a": "Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Boston firm working in architecture, interior design and urban planning, from district master plans to large mixed-use developments. Its projects include 585 Kendall in Cambridge.",
+   "nt": [],
+   "s": [
+    [
+     "Novatr: Top Architecture Firms in Boston (2025)",
+     "https://www.novatr.com/blog/top-architecture-firms-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "241"
+  },
+  {
+   "n": "Dimella Shaffer",
+   "c": "Architecture and creative services",
+   "a": "Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A privately owned Boston architecture firm serving academic, residential and workplace clients. It is known for a collaborative process and timeless design.",
+   "nt": [],
+   "s": [
+    [
+     "Novatr: Top Architecture Firms in Boston (2025)",
+     "https://www.novatr.com/blog/top-architecture-firms-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "242"
+  },
+  {
+   "n": "Elkus Manfredi Architects",
+   "c": "Architecture and creative services",
+   "a": "Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A full-service Boston firm offering architecture, master planning, urban design and interiors. Its local work includes the Pier 4 office building and the New Balance headquarters.",
+   "nt": [],
+   "s": [
+    [
+     "Novatr: Top Architecture Firms in Boston (2025)",
+     "https://www.novatr.com/blog/top-architecture-firms-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "243"
+  },
+  {
+   "n": "Embarc Studio",
+   "c": "Architecture and creative services",
+   "a": "Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Boston design studio founded by Dartagnan Brown, working on loft conversions, new homes, retail and restaurant spaces. Its work includes the SoWa Power Station.",
+   "nt": [],
+   "s": [
+    [
+     "Novatr: Top Architecture Firms in Boston (2025)",
+     "https://www.novatr.com/blog/top-architecture-firms-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "244"
   },
   {
    "n": "Hacin",
@@ -1776,7 +5114,45 @@
     ]
    ],
    "cl": false,
-   "i": "082"
+   "i": "245"
+  },
+  {
+   "n": "LDa Architecture & Interiors",
+   "c": "Architecture and creative services",
+   "a": "Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A residential, interior and commercial design firm that blends traditional New England architecture with how people live today. It is a favorite of homeowners renovating classic houses.",
+   "nt": [],
+   "s": [
+    [
+     "Novatr: Top Architecture Firms in Boston (2025)",
+     "https://www.novatr.com/blog/top-architecture-firms-in-boston"
+    ]
+   ],
+   "cl": false,
+   "i": "246"
+  },
+  {
+   "n": "Shepley Bulfinch",
+   "c": "Architecture and creative services",
+   "a": "200 State St, Suite 805, Downtown, Boston, MA 02109",
+   "p": "617-423-1700",
+   "e": "",
+   "w": "https://shepleybulfinch.com/",
+   "wl": "Website",
+   "b": "A woman-led architecture and design firm celebrating 150 years, whose first Boston project was Trinity Church in 1874. It designs hospitals, labs, libraries and campus buildings, including a renovation of Boston University's Mugar Library.",
+   "nt": [],
+   "s": [
+    [
+     "Shepley Bulfinch: Boston studio",
+     "https://shepleybulfinch.com/?p=23715"
+    ]
+   ],
+   "cl": false,
+   "i": "247"
   },
   {
    "n": "SoWa Artists Guild",
@@ -1795,7 +5171,7 @@
     ]
    ],
    "cl": false,
-   "i": "083"
+   "i": "248"
   },
   {
    "n": "Bank of America (Tremont Street)",
@@ -1818,7 +5194,7 @@
     ]
    ],
    "cl": false,
-   "i": "084"
+   "i": "249"
   },
   {
    "n": "Bank of America (Washington Street)",
@@ -1837,7 +5213,7 @@
     ]
    ],
    "cl": false,
-   "i": "085"
+   "i": "250"
   },
   {
    "n": "Boston City Properties",
@@ -1856,7 +5232,45 @@
     ]
    ],
    "cl": false,
-   "i": "086"
+   "i": "251"
+  },
+  {
+   "n": "Brookline Bank",
+   "c": "Finance law property and consulting",
+   "a": "Five Boston branches, Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A regional community bank with five branches across Boston. Neighbors appreciate its local focus for personal and small-business banking.",
+   "nt": [],
+   "s": [
+    [
+     "BranchSpot: Banks in Boston (Oct 2026)",
+     "https://branchspot.com/banks-in-boston-ma/"
+    ]
+   ],
+   "cl": false,
+   "i": "252"
+  },
+  {
+   "n": "Century Bank",
+   "c": "Finance law property and consulting",
+   "a": "Five Boston branches, Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A family-founded Massachusetts bank with five branches in Boston. It is known for relationship banking with local families and businesses.",
+   "nt": [],
+   "s": [
+    [
+     "BranchSpot: Banks in Boston (Oct 2026)",
+     "https://branchspot.com/banks-in-boston-ma/"
+    ]
+   ],
+   "cl": false,
+   "i": "253"
   },
   {
    "n": "Chase Bank South End",
@@ -1875,7 +5289,7 @@
     ]
    ],
    "cl": false,
-   "i": "087"
+   "i": "254"
   },
   {
    "n": "Citizens Bank South End",
@@ -1894,7 +5308,99 @@
     ]
    ],
    "cl": false,
-   "i": "088"
+   "i": "255"
+  },
+  {
+   "n": "Eastern Bank",
+   "c": "Finance law property and consulting",
+   "a": "145 Dartmouth St, Back Bay, Boston, MA 02116 (one of 10 Boston branches)",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Boston-area headquartered bank with ten branches across the city, from the North End and Back Bay to Dorchester, Jamaica Plain and South Boston. Its deep neighborhood roots make it a familiar local choice.",
+   "nt": [],
+   "s": [
+    [
+     "Bank Branch Locator: Eastern Bank in Boston",
+     "https://www.bankbranchlocator.com/eastern-bank-offices-in-boston-ma.html"
+    ],
+    [
+     "BranchSpot: Banks in Boston (Oct 2026)",
+     "https://branchspot.com/banks-in-boston-ma/"
+    ],
+    [
+     "DepositAccounts: Boston banks",
+     "https://www.depositaccounts.com/local/boston/"
+    ]
+   ],
+   "cl": false,
+   "i": "256"
+  },
+  {
+   "n": "Gibson Sotheby's International Realty",
+   "c": "Finance law property and consulting",
+   "a": "Boston, MA 02118 (offices in Back Bay, Charlestown, Jamaica Plain and more)",
+   "p": "",
+   "e": "",
+   "w": "https://gibsonsothebysrealty.com/",
+   "wl": "Website",
+   "b": "A Boston-based Sotheby's International Realty affiliate with hundreds of agents and offices across Massachusetts, Rhode Island and New Hampshire. It ranked among the top brokerages in the country by 2025 sales volume.",
+   "nt": [],
+   "s": [
+    [
+     "RealTrends: Gibson Sotheby's International Realty (2025 data)",
+     "https://www.realtrends.com/brokerage-profile/gibson-sotheby-s-international-realty-boston-ma/"
+    ],
+    [
+     "Boston.com: Top real estate brokerages in Massachusetts",
+     "https://www.boston.com/real-estate/real-estate-brokerages/2024/09/25/top-real-estate-brokerages-statista-massachusetts/"
+    ]
+   ],
+   "cl": false,
+   "i": "257"
+  },
+  {
+   "n": "Goodwin",
+   "c": "Finance law property and consulting",
+   "a": "Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A major Boston-rooted law firm ranked second among the city's most prestigious big law firms in a 2026 survey. It is a cornerstone of the city's legal community.",
+   "nt": [],
+   "s": [
+    [
+     "Pulse: The Most Prestigious Biglaw Firms in Boston (Apr 2026)",
+     "https://www.pulse.bot/legal/news/the-most-prestigious-biglaw-firms-in-boston-2027-4c36ea20-1229-41d7-8109-a120a18911a3/"
+    ]
+   ],
+   "cl": false,
+   "i": "258"
+  },
+  {
+   "n": "Hanscom Federal Credit Union",
+   "c": "Finance law property and consulting",
+   "a": "Five Boston branches, Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Boston-area headquartered credit union with five branches in the city. It is a well-known local, member-owned alternative to the big banks.",
+   "nt": [],
+   "s": [
+    [
+     "BranchSpot: Banks in Boston (Oct 2026)",
+     "https://branchspot.com/banks-in-boston-ma/"
+    ],
+    [
+     "DepositAccounts: Boston banks",
+     "https://www.depositaccounts.com/local/boston/"
+    ]
+   ],
+   "cl": false,
+   "i": "259"
   },
   {
    "n": "Hingham Institution for Savings",
@@ -1913,7 +5419,30 @@
     ]
    ],
    "cl": false,
-   "i": "089"
+   "i": "260"
+  },
+  {
+   "n": "Metro Credit Union",
+   "c": "Finance law property and consulting",
+   "a": "Four Boston branches, Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A Boston-area headquartered credit union with four branches in the city. Members like its local, member-owned approach to everyday banking.",
+   "nt": [],
+   "s": [
+    [
+     "BranchSpot: Banks in Boston (Oct 2026)",
+     "https://branchspot.com/banks-in-boston-ma/"
+    ],
+    [
+     "DepositAccounts: Boston banks",
+     "https://www.depositaccounts.com/local/boston/"
+    ]
+   ],
+   "cl": false,
+   "i": "261"
   },
   {
    "n": "Rockland Trust South End",
@@ -1932,7 +5461,49 @@
     ]
    ],
    "cl": false,
-   "i": "090"
+   "i": "262"
+  },
+  {
+   "n": "Ropes & Gray",
+   "c": "Finance law property and consulting",
+   "a": "800 Boylston St (Prudential Tower), Back Bay, Boston, MA 02199",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An international law firm founded in Boston in 1865, with leading practices in private equity, litigation, health care and intellectual property. It was ranked the most prestigious big law firm in Boston in a 2026 survey.",
+   "nt": [],
+   "s": [
+    [
+     "Salestools: Ropes & Gray headquarters",
+     "https://salestools.io/en/report/ropes-gray-headquarters"
+    ],
+    [
+     "Pulse: The Most Prestigious Biglaw Firms in Boston (Apr 2026)",
+     "https://www.pulse.bot/legal/news/the-most-prestigious-biglaw-firms-in-boston-2027-4c36ea20-1229-41d7-8109-a120a18911a3/"
+    ]
+   ],
+   "cl": false,
+   "i": "263"
+  },
+  {
+   "n": "Santander Bank",
+   "c": "Finance law property and consulting",
+   "a": "23 Boston branches, Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "One of the largest branch networks in the city, with 23 Boston locations. Its convenient branches cover nearly every neighborhood.",
+   "nt": [],
+   "s": [
+    [
+     "BranchSpot: Banks in Boston (Oct 2026)",
+     "https://branchspot.com/banks-in-boston-ma/"
+    ]
+   ],
+   "cl": false,
+   "i": "264"
   },
   {
    "n": "South End Realty Group",
@@ -1951,7 +5522,7 @@
     ]
    ],
    "cl": false,
-   "i": "091"
+   "i": "265"
   },
   {
    "n": "Sprogis & Neale Real Estate",
@@ -1970,7 +5541,7 @@
     ]
    ],
    "cl": false,
-   "i": "092"
+   "i": "266"
   },
   {
    "n": "Vaughn-Martel Law",
@@ -1989,7 +5560,7 @@
     ]
    ],
    "cl": false,
-   "i": "093"
+   "i": "267"
   },
   {
    "n": "Webster Bank South End",
@@ -2008,7 +5579,64 @@
     ]
    ],
    "cl": false,
-   "i": "094"
+   "i": "268"
+  },
+  {
+   "n": "WilmerHale",
+   "c": "Finance law property and consulting",
+   "a": "Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A leading law firm with a major Boston office, ranked third among the city's most prestigious big law firms in a 2026 survey. It is one of the pillars of Boston's legal scene.",
+   "nt": [],
+   "s": [
+    [
+     "Pulse: The Most Prestigious Biglaw Firms in Boston (Apr 2026)",
+     "https://www.pulse.bot/legal/news/the-most-prestigious-biglaw-firms-in-boston-2027-4c36ea20-1229-41d7-8109-a120a18911a3/"
+    ]
+   ],
+   "cl": false,
+   "i": "269"
+  },
+  {
+   "n": "Black Heritage Trail",
+   "c": "Community and cultural resources",
+   "a": "Starts at the Shaw Memorial, Beacon Hill, Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A 1.6-mile walk through Beacon Hill sites central to African American history, ending at the Museum of African American History. Ranger-led tours run in summer.",
+   "nt": [],
+   "s": [
+    [
+     "Frommer's: Boston attractions",
+     "https://www.frommers.com/destinations/boston/attractions/overview"
+    ]
+   ],
+   "cl": false,
+   "i": "270"
+  },
+  {
+   "n": "Boston Athenaeum",
+   "c": "Community and cultural resources",
+   "a": "10 1/2 Beacon St, Beacon Hill, Boston, MA 02108",
+   "p": "",
+   "e": "",
+   "w": "https://bostonathenaeum.org/",
+   "wl": "Website",
+   "b": "A membership library founded in 1807 with a historic collection of paintings and sculpture. Its quiet, book-lined reading rooms are among the most beautiful spaces in the city.",
+   "nt": [],
+   "s": [
+    [
+     "New England Travel Planner: Boston museums",
+     "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-museums.html"
+    ]
+   ],
+   "cl": false,
+   "i": "271"
   },
   {
    "n": "Boston Ballet",
@@ -2027,7 +5655,7 @@
     ]
    ],
    "cl": false,
-   "i": "095"
+   "i": "272"
   },
   {
    "n": "Boston Center for the Arts",
@@ -2054,7 +5682,30 @@
     ]
    ],
    "cl": false,
-   "i": "096"
+   "i": "273"
+  },
+  {
+   "n": "Boston Children's Museum",
+   "c": "Community and cultural resources",
+   "a": "308 Congress St, Fort Point, Boston, MA 02210",
+   "p": "",
+   "e": "",
+   "w": "https://bostonchildrensmuseum.org/",
+   "wl": "Website",
+   "b": "A hands-on museum on the harbor built for kids from infants to early teens. Families love it for rainy days, with themed play galleries and live programs.",
+   "nt": [],
+   "s": [
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ],
+    [
+     "New England Travel Planner: Boston museums",
+     "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-museums.html"
+    ]
+   ],
+   "cl": false,
+   "i": "274"
   },
   {
    "n": "Boston City Lights Foundation",
@@ -2077,7 +5728,72 @@
     ]
    ],
    "cl": false,
-   "i": "097"
+   "i": "275"
+  },
+  {
+   "n": "Boston Public Library, Central Library in Copley Square",
+   "c": "Community and cultural resources",
+   "a": "700 Boylston St, Back Bay, Boston, MA 02116",
+   "p": "617-536-5400",
+   "e": "",
+   "w": "https://www.bpl.org/",
+   "wl": "Website",
+   "b": "The 1895 McKim Building and its renovated wing hold the Sargent mural gallery and a Renaissance-style courtyard. Locals love it as a place to read, study and simply sit in one of the most beautiful buildings in the city.",
+   "nt": [],
+   "s": [
+    [
+     "Frommer's: Boston attractions",
+     "https://www.frommers.com/destinations/boston/attractions/overview"
+    ],
+    [
+     "Leventhal Map & Education Center: Hours & Directions",
+     "https://www.leventhalmap.org/about/hours-directions"
+    ]
+   ],
+   "cl": false,
+   "i": "276"
+  },
+  {
+   "n": "Boston Tea Party Ships & Museum",
+   "c": "Community and cultural resources",
+   "a": "306 Congress St, Fort Point, Boston, MA 02210",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "Recreated tall ships at the site of the 1773 protest, with costumed reenactors and interactive exhibits. It brings a famous Boston moment to life in a way kids and visitors remember.",
+   "nt": [],
+   "s": [
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ]
+   ],
+   "cl": false,
+   "i": "277"
+  },
+  {
+   "n": "Bunker Hill Monument",
+   "c": "Community and cultural resources",
+   "a": "Monument Square, Charlestown, MA 02129",
+   "p": "617-242-5641",
+   "e": "",
+   "w": "https://www.nps.gov/bost/",
+   "wl": "Website",
+   "b": "A 221-foot granite obelisk honoring the first major battle of the Revolution. Climbing its 294 steps for the view is a Charlestown tradition.",
+   "nt": [],
+   "s": [
+    [
+     "Freedom Trail sites rack card",
+     "https://thefreedomtrail.org/sites/default/files/content/Education/freedom_trail_sites_group_rack_card.pdf"
+    ],
+    [
+     "Wikivoyage: Freedom Trail (2025)",
+     "https://kwx.liehendr.com/content/wikivoyage_en_all_maxi_2025-02/A/Freedom_Trail"
+    ]
+   ],
+   "cl": false,
+   "i": "278"
   },
   {
    "n": "Cathedral of the Holy Cross",
@@ -2100,7 +5816,7 @@
     ]
    ],
    "cl": false,
-   "i": "098"
+   "i": "279"
   },
   {
    "n": "Columbus Avenue AME Zion Church",
@@ -2119,7 +5835,7 @@
     ]
    ],
    "cl": false,
-   "i": "099"
+   "i": "280"
   },
   {
    "n": "Community Music Center of Boston",
@@ -2142,7 +5858,7 @@
     ]
    ],
    "cl": false,
-   "i": "100"
+   "i": "281"
   },
   {
    "n": "Ebenezer Baptist Church",
@@ -2161,7 +5877,7 @@
     ]
    ],
    "cl": false,
-   "i": "101"
+   "i": "282"
   },
   {
    "n": "Eight Streets Neighborhood Association",
@@ -2184,7 +5900,7 @@
     ]
    ],
    "cl": false,
-   "i": "102"
+   "i": "283"
   },
   {
    "n": "Ellis Memorial",
@@ -2203,7 +5919,7 @@
     ]
    ],
    "cl": false,
-   "i": "103"
+   "i": "284"
   },
   {
    "n": "Ellis South End Neighborhood Association",
@@ -2226,7 +5942,7 @@
     ]
    ],
    "cl": false,
-   "i": "104"
+   "i": "285"
   },
   {
    "n": "Emmanuel Gospel Center",
@@ -2245,7 +5961,53 @@
     ]
    ],
    "cl": false,
-   "i": "105"
+   "i": "286"
+  },
+  {
+   "n": "Faneuil Hall",
+   "c": "Community and cultural resources",
+   "a": "1 Faneuil Hall Square, Downtown, Boston, MA 02109",
+   "p": "617-242-5689",
+   "e": "",
+   "w": "https://www.nps.gov/bost/",
+   "wl": "Website",
+   "b": "Built in 1742 as a market and town meeting hall and known as the Cradle of Liberty. Market stalls still operate there, making it a lively stop on the Freedom Trail.",
+   "nt": [],
+   "s": [
+    [
+     "Freedom Trail sites rack card",
+     "https://thefreedomtrail.org/sites/default/files/content/Education/freedom_trail_sites_group_rack_card.pdf"
+    ],
+    [
+     "Wikivoyage: Freedom Trail (2025)",
+     "https://kwx.liehendr.com/content/wikivoyage_en_all_maxi_2025-02/A/Freedom_Trail"
+    ]
+   ],
+   "cl": false,
+   "i": "287"
+  },
+  {
+   "n": "Freedom Trail",
+   "c": "Community and cultural resources",
+   "a": "Starts at Boston Common, Downtown Boston, MA (2.5-mile trail to Charlestown)",
+   "p": "617-357-8300",
+   "e": "",
+   "w": "https://www.thefreedomtrail.org/",
+   "wl": "Website",
+   "b": "A red-brick path linking 16 Revolutionary-era sites from Boston Common to Charlestown. Locals and visitors alike walk it to see the city's history up close.",
+   "nt": [],
+   "s": [
+    [
+     "Freedom Trail sites rack card",
+     "https://thefreedomtrail.org/sites/default/files/content/Education/freedom_trail_sites_group_rack_card.pdf"
+    ],
+    [
+     "Wikivoyage: Freedom Trail (2025)",
+     "https://kwx.liehendr.com/content/wikivoyage_en_all_maxi_2025-02/A/Freedom_Trail"
+    ]
+   ],
+   "cl": false,
+   "i": "288"
   },
   {
    "n": "Friends of the South End Library",
@@ -2268,7 +6030,64 @@
     ]
    ],
    "cl": false,
-   "i": "106"
+   "i": "289"
+  },
+  {
+   "n": "Galerie d'Orsay",
+   "c": "Community and cultural resources",
+   "a": "33 Newbury St, Back Bay, Boston, MA 02116",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A gallery holding works spanning six centuries, from Old Masters to contemporary artists, with rotating exhibitions. Its intimate rooms and personal service make it a favorite Newbury Street stop.",
+   "nt": [],
+   "s": [
+    [
+     "The 500 Hidden Secrets: Galleries on Newbury Street",
+     "https://www.the500hiddensecrets.com/united-states/boston/culture/galleries-newbury-street"
+    ]
+   ],
+   "cl": false,
+   "i": "290"
+  },
+  {
+   "n": "Harvard Art Museums",
+   "c": "Community and cultural resources",
+   "a": "32 Quincy St, Cambridge, MA 02138",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "Three museums under one roof with art spanning 5,000 years. It is a top-tier collection just across the river on the Harvard campus.",
+   "nt": [],
+   "s": [
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ]
+   ],
+   "cl": false,
+   "i": "291"
+  },
+  {
+   "n": "Harvard Museum of Natural History",
+   "c": "Community and cultural resources",
+   "a": "26 Oxford St, Cambridge, MA 02138",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "Natural history galleries covering fossils, minerals, birds and human evolution. Families come back again and again for its famous collections.",
+   "nt": [],
+   "s": [
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ]
+   ],
+   "cl": false,
+   "i": "292"
   },
   {
    "n": "Inquilinos Boricuas en Acción (IBA)",
@@ -2295,7 +6114,374 @@
     ]
    ],
    "cl": false,
-   "i": "107"
+   "i": "293"
+  },
+  {
+   "n": "Institute of Contemporary Art, Boston",
+   "c": "Community and cultural resources",
+   "a": "25 Harbor Shore Dr, Seaport, Boston, MA 02210",
+   "p": "",
+   "e": "",
+   "w": "https://www.icaboston.org/",
+   "wl": "Website",
+   "b": "A striking waterfront museum on Fan Pier showing new and established contemporary artists. Its harbor-view galleries and summer programs make it a Seaport favorite.",
+   "nt": [],
+   "s": [
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ],
+    [
+     "New England Travel Planner: Boston museums",
+     "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-museums.html"
+    ]
+   ],
+   "cl": false,
+   "i": "294"
+  },
+  {
+   "n": "Isabella Stewart Gardner Museum",
+   "c": "Community and cultural resources",
+   "a": "25 Evans Way, Fenway, Boston, MA 02115",
+   "p": "",
+   "e": "",
+   "w": "https://www.gardnermuseum.org/",
+   "wl": "Website",
+   "b": "A Venetian-style palace built around a glass-roofed garden courtyard that holds Isabella Stewart Gardner's own art collection. Bostonians love its flowering courtyard and intimate, one-of-a-kind galleries.",
+   "nt": [],
+   "s": [
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ],
+    [
+     "New England Travel Planner: Boston museums",
+     "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-museums.html"
+    ]
+   ],
+   "cl": false,
+   "i": "295"
+  },
+  {
+   "n": "John F. Kennedy Presidential Library and Museum",
+   "c": "Community and cultural resources",
+   "a": "Columbia Point, Dorchester, Boston, MA 02125",
+   "p": "",
+   "e": "",
+   "w": "https://www.jfklibrary.org/",
+   "wl": "Website",
+   "b": "The presidential library and museum honoring JFK, with exhibits on his life and a recreation of the Oval Office. It sits on Columbia Point overlooking the harbor in Dorchester.",
+   "nt": [],
+   "s": [
+    [
+     "New England Travel Planner: Boston museums",
+     "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-museums.html"
+    ]
+   ],
+   "cl": false,
+   "i": "296"
+  },
+  {
+   "n": "Krakow Witkin Gallery",
+   "c": "Community and cultural resources",
+   "a": "10 Newbury St, Back Bay, Boston, MA 02116",
+   "p": "617-262-4490",
+   "e": "info@krakowwitkingallery.com",
+   "w": "https://www.krakowwitkingallery.com/",
+   "wl": "Website",
+   "b": "A contemporary gallery known for minimal and conceptually driven work by established and emerging artists, with no admission fee. Collectors and curious walkers alike start their Newbury Street gallery stroll here.",
+   "nt": [],
+   "s": [
+    [
+     "Krakow Witkin Gallery: Gallery Information",
+     "https://www.krakowwitkingallery.com/?p=11"
+    ],
+    [
+     "The 500 Hidden Secrets: Galleries on Newbury Street",
+     "https://www.the500hiddensecrets.com/united-states/boston/culture/galleries-newbury-street"
+    ]
+   ],
+   "cl": false,
+   "i": "297"
+  },
+  {
+   "n": "Leventhal Map & Education Center",
+   "c": "Community and cultural resources",
+   "a": "700 Boylston St (McKim Building, Central Library), Back Bay, Boston, MA 02116",
+   "p": "",
+   "e": "",
+   "w": "https://www.leventhalmap.org/",
+   "wl": "Website",
+   "b": "A map gallery and research center on the ground floor of the Central Library in Copley Square. Its rotating map exhibitions and education programs are a hidden gem for curious locals.",
+   "nt": [],
+   "s": [
+    [
+     "Leventhal Map & Education Center: Hours & Directions",
+     "https://www.leventhalmap.org/about/hours-directions"
+    ]
+   ],
+   "cl": false,
+   "i": "298"
+  },
+  {
+   "n": "Massachusetts State House",
+   "c": "Community and cultural resources",
+   "a": "Beacon and Park Streets, Beacon Hill, Boston, MA",
+   "p": "617-727-3676",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "The Bulfinch-designed statehouse overlooking Boston Common, its cornerstone laid by Samuel Adams and Paul Revere in 1795. Its gold dome is one of the great icons of the city.",
+   "nt": [],
+   "s": [
+    [
+     "Freedom Trail sites rack card",
+     "https://thefreedomtrail.org/sites/default/files/content/Education/freedom_trail_sites_group_rack_card.pdf"
+    ],
+    [
+     "Wikivoyage: Freedom Trail (2025)",
+     "https://kwx.liehendr.com/content/wikivoyage_en_all_maxi_2025-02/A/Freedom_Trail"
+    ]
+   ],
+   "cl": false,
+   "i": "299"
+  },
+  {
+   "n": "Museum of African American History",
+   "c": "Community and cultural resources",
+   "a": "46 Joy St, Beacon Hill, Boston, MA 02114",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "Preserves and presents the history, art and culture of Black New Englanders through permanent and rotating exhibits. Its historic Beacon Hill sites are a treasured part of the city's story.",
+   "nt": [],
+   "s": [
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ]
+   ],
+   "cl": false,
+   "i": "300"
+  },
+  {
+   "n": "Museum of Fine Arts, Boston",
+   "c": "Community and cultural resources",
+   "a": "465 Huntington Ave, Fenway, Boston, MA 02115",
+   "p": "",
+   "e": "",
+   "w": "https://www.mfa.org/",
+   "wl": "Website",
+   "b": "One of the great art museums of the world, with nearly half a million works including a celebrated Japanese collection. Locals treat it as the city's living room for art, from ancient galleries to new exhibitions.",
+   "nt": [],
+   "s": [
+    [
+     "New England Travel Planner: Boston museums",
+     "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-museums.html"
+    ],
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ]
+   ],
+   "cl": false,
+   "i": "301"
+  },
+  {
+   "n": "Museum of Science",
+   "c": "Community and cultural resources",
+   "a": "1 Museum of Science Driveway, Science Park, Boston, MA 02114",
+   "p": "",
+   "e": "",
+   "w": "https://www.mos.org/",
+   "wl": "Website",
+   "b": "A science center with hundreds of interactive exhibits, a planetarium and a giant-screen theater. Its indoor lightning show is a rite of passage for Boston kids.",
+   "nt": [],
+   "s": [
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ],
+    [
+     "New England Travel Planner: Boston museums",
+     "https://www.newenglandtravelplanner.com/new-england-travel-guides/massachusetts/boston/boston-museums.html"
+    ]
+   ],
+   "cl": false,
+   "i": "302"
+  },
+  {
+   "n": "Old North Church",
+   "c": "Community and cultural resources",
+   "a": "193 Salem St, North End, Boston, MA 02113",
+   "p": "617-523-6676",
+   "e": "",
+   "w": "https://www.oldnorth.com/",
+   "wl": "Website",
+   "b": "Boston's oldest standing church building, completed in 1723, where two lanterns signaled the start of Paul Revere's ride. It remains one of the most visited and cherished landmarks in the city.",
+   "nt": [],
+   "s": [
+    [
+     "Freedom Trail sites rack card",
+     "https://thefreedomtrail.org/sites/default/files/content/Education/freedom_trail_sites_group_rack_card.pdf"
+    ],
+    [
+     "Wikivoyage: Freedom Trail (2025)",
+     "https://kwx.liehendr.com/content/wikivoyage_en_all_maxi_2025-02/A/Freedom_Trail"
+    ]
+   ],
+   "cl": false,
+   "i": "303"
+  },
+  {
+   "n": "Old South Meeting House",
+   "c": "Community and cultural resources",
+   "a": "310 Washington St, Downtown, Boston, MA 02108",
+   "p": "617-482-6439",
+   "e": "",
+   "w": "https://www.osmh.org/",
+   "wl": "Website",
+   "b": "The 1729 meeting house where the protest that became the Boston Tea Party began. Today it is a museum and a gathering place for talks and public programs.",
+   "nt": [],
+   "s": [
+    [
+     "Freedom Trail sites rack card",
+     "https://thefreedomtrail.org/sites/default/files/content/Education/freedom_trail_sites_group_rack_card.pdf"
+    ],
+    [
+     "Wikivoyage: Freedom Trail (2025)",
+     "https://kwx.liehendr.com/content/wikivoyage_en_all_maxi_2025-02/A/Freedom_Trail"
+    ]
+   ],
+   "cl": false,
+   "i": "304"
+  },
+  {
+   "n": "Old State House",
+   "c": "Community and cultural resources",
+   "a": "206 Washington St, Financial District, Boston, MA 02109",
+   "p": "617-720-1713",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "Built in 1713 as the seat of colonial government, it overlooks the site of the Boston Massacre and saw the city's first public reading of the Declaration of Independence. Now a museum of Revolutionary Boston.",
+   "nt": [],
+   "s": [
+    [
+     "Freedom Trail sites rack card",
+     "https://thefreedomtrail.org/sites/default/files/content/Education/freedom_trail_sites_group_rack_card.pdf"
+    ],
+    [
+     "Wikivoyage: Freedom Trail (2025)",
+     "https://kwx.liehendr.com/content/wikivoyage_en_all_maxi_2025-02/A/Freedom_Trail"
+    ]
+   ],
+   "cl": false,
+   "i": "305"
+  },
+  {
+   "n": "Park Street Church",
+   "c": "Community and cultural resources",
+   "a": "1 Park St, Downtown, Boston, MA 02108",
+   "p": "617-523-3383",
+   "e": "",
+   "w": "https://www.parkstreet.org/",
+   "wl": "Website",
+   "b": "An active congregation founded in 1809 whose white steeple rises over Boston Common. Known for its carillon and its place in the city's history, it draws worshippers from all over Boston.",
+   "nt": [],
+   "s": [
+    [
+     "Freedom Trail sites rack card",
+     "https://thefreedomtrail.org/sites/default/files/content/Education/freedom_trail_sites_group_rack_card.pdf"
+    ],
+    [
+     "Wikivoyage: Freedom Trail (2025)",
+     "https://kwx.liehendr.com/content/wikivoyage_en_all_maxi_2025-02/A/Freedom_Trail"
+    ]
+   ],
+   "cl": false,
+   "i": "306"
+  },
+  {
+   "n": "Paul Revere House",
+   "c": "Community and cultural resources",
+   "a": "19 North Square, North End, Boston, MA 02113",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "The restored home of the patriot and silversmith, with guided tours and Revolutionary-era artifacts. It is a beloved stop on the Freedom Trail in the heart of the North End.",
+   "nt": [],
+   "s": [
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ]
+   ],
+   "cl": false,
+   "i": "307"
+  },
+  {
+   "n": "Pucker Gallery",
+   "c": "Community and cultural resources",
+   "a": "240 Newbury St, 3rd Floor, Back Bay, Boston, MA 02116",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A gallery showing contemporary ceramics, sculpture and painting by international artists. It is especially known for museum-quality ceramics and frequent new shows.",
+   "nt": [],
+   "s": [
+    [
+     "The 500 Hidden Secrets: Galleries on Newbury Street",
+     "https://www.the500hiddensecrets.com/united-states/boston/culture/galleries-newbury-street"
+    ]
+   ],
+   "cl": false,
+   "i": "308"
+  },
+  {
+   "n": "Robert Gould Shaw and 54th Regiment Memorial",
+   "c": "Community and cultural resources",
+   "a": "Northeast corner of Boston Common (Beacon St), Beacon Hill, Boston, MA",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A celebrated memorial honoring the Black soldiers of the 54th Massachusetts who fought in the Civil War. It is also the starting point of the Black Heritage Trail.",
+   "nt": [],
+   "s": [
+    [
+     "Frommer's: Boston attractions",
+     "https://www.frommers.com/destinations/boston/attractions/overview"
+    ]
+   ],
+   "cl": false,
+   "i": "309"
+  },
+  {
+   "n": "Robert Klein Gallery",
+   "c": "Community and cultural resources",
+   "a": "38 Newbury St, Suite 402, Back Bay, Boston, MA 02116",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An intimate fine art photography gallery established in 1980 that has shown many of the great names in photography. It is a must for anyone who loves the photograph as art.",
+   "nt": [],
+   "s": [
+    [
+     "The 500 Hidden Secrets: Galleries on Newbury Street",
+     "https://www.the500hiddensecrets.com/united-states/boston/culture/galleries-newbury-street"
+    ],
+    [
+     "Frommer's: Shopping A-Z in Boston",
+     "https://www.frommers.com/destinations/boston/shopping/shopping-a-z"
+    ]
+   ],
+   "cl": false,
+   "i": "310"
   },
   {
    "n": "South End Branch Library",
@@ -2314,7 +6500,7 @@
     ]
    ],
    "cl": false,
-   "i": "108"
+   "i": "311"
   },
   {
    "n": "South End Historical Society",
@@ -2333,7 +6519,7 @@
     ]
    ],
    "cl": false,
-   "i": "109"
+   "i": "312"
   },
   {
    "n": "SoWa Art + Design District",
@@ -2356,7 +6542,7 @@
     ]
    ],
    "cl": false,
-   "i": "110"
+   "i": "313"
   },
   {
    "n": "St. John the Baptist Church",
@@ -2375,7 +6561,26 @@
     ]
    ],
    "cl": false,
-   "i": "111"
+   "i": "314"
+  },
+  {
+   "n": "Trinity Church",
+   "c": "Community and cultural resources",
+   "a": "206 Clarendon St, Copley Square, Back Bay, Boston, MA 02116",
+   "p": "617-536-0944",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "An 1877 Richardsonian Romanesque landmark with a 221-foot tower, La Farge murals and glowing stained glass. It anchors Copley Square and is one of the city's most admired buildings.",
+   "nt": [],
+   "s": [
+    [
+     "Frommer's: Boston attractions",
+     "https://www.frommers.com/destinations/boston/attractions/overview"
+    ]
+   ],
+   "cl": false,
+   "i": "315"
   },
   {
    "n": "Union Park Neighborhood Association",
@@ -2398,7 +6603,7 @@
     ]
    ],
    "cl": false,
-   "i": "112"
+   "i": "316"
   },
   {
    "n": "United South End Settlements",
@@ -2421,7 +6626,49 @@
     ]
    ],
    "cl": false,
-   "i": "113"
+   "i": "317"
+  },
+  {
+   "n": "USS Constitution",
+   "c": "Community and cultural resources",
+   "a": "Charlestown Navy Yard, Charlestown, MA 02129",
+   "p": "617-799-8198",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "Old Ironsides, the oldest commissioned warship afloat, berthed at the Charlestown Navy Yard. Walking her decks is a highlight of any trip along the Freedom Trail.",
+   "nt": [],
+   "s": [
+    [
+     "Freedom Trail sites rack card",
+     "https://thefreedomtrail.org/sites/default/files/content/Education/freedom_trail_sites_group_rack_card.pdf"
+    ],
+    [
+     "Wikivoyage: Freedom Trail (2025)",
+     "https://kwx.liehendr.com/content/wikivoyage_en_all_maxi_2025-02/A/Freedom_Trail"
+    ]
+   ],
+   "cl": false,
+   "i": "318"
+  },
+  {
+   "n": "USS Constitution Museum",
+   "c": "Community and cultural resources",
+   "a": "Building 22, Charlestown Navy Yard, Charlestown, MA 02129",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "A museum telling the story of Old Ironsides, the oldest commissioned warship afloat. Paired with a visit to the ship itself, it is a Charlestown classic.",
+   "nt": [],
+   "s": [
+    [
+     "Matador Network: Boston museums",
+     "https://matadornetwork.com/read/boston-museums/"
+    ]
+   ],
+   "cl": false,
+   "i": "319"
   },
   {
    "n": "Villa Victoria Center for the Arts",
@@ -2444,7 +6691,30 @@
     ]
    ],
    "cl": false,
-   "i": "114"
+   "i": "320"
+  },
+  {
+   "n": "Vose Galleries",
+   "c": "Community and cultural resources",
+   "a": "238 Newbury St, Back Bay, Boston, MA 02116",
+   "p": "617-536-6176",
+   "e": "",
+   "w": "https://vosegalleries.com/",
+   "wl": "Website",
+   "b": "A family-run fine art gallery that began in 1841 and is now in its sixth generation of Vose ownership, focused on American paintings. Its five floors of Impressionist and realist work make it a Newbury Street institution.",
+   "nt": [],
+   "s": [
+    [
+     "Vose Galleries: Copley Square Gallery centennial (Jan 2025)",
+     "https://vosegalleries.com/?p=5044"
+    ],
+    [
+     "The 500 Hidden Secrets: Galleries on Newbury Street",
+     "https://www.the500hiddensecrets.com/united-states/boston/culture/galleries-newbury-street"
+    ]
+   ],
+   "cl": false,
+   "i": "321"
   },
   {
    "n": "Worcester Square Area Neighborhood Association",
@@ -2467,7 +6737,7 @@
     ]
    ],
    "cl": false,
-   "i": "115"
+   "i": "322"
   },
   {
    "n": "Aeronaut Brewing Company",
@@ -2480,7 +6750,7 @@
    "b": "Somerville taproom and community space that hosts live bands, local showcases and community events.",
    "nt": [],
    "s": [],
-   "i": "116"
+   "i": "323"
   },
   {
    "n": "Agganis Arena",
@@ -2493,7 +6763,7 @@
    "b": "Boston University's arena, hosting touring concerts, comedy tours and college hockey.",
    "nt": [],
    "s": [],
-   "i": "117"
+   "i": "324"
   },
   {
    "n": "American Repertory Theater (Loeb Drama Center)",
@@ -2506,7 +6776,7 @@
    "b": "Harvard's acclaimed professional theater company, staging new plays and musicals that often head to Broadway.",
    "nt": [],
    "s": [],
-   "i": "118"
+   "i": "325"
   },
   {
    "n": "Arrow Street Arts",
@@ -2519,7 +6789,7 @@
    "b": "Intimate Harvard Square performance space for theater, music and small-stage productions.",
    "nt": [],
    "s": [],
-   "i": "119"
+   "i": "326"
   },
   {
    "n": "Arts at the Armory",
@@ -2532,7 +6802,7 @@
    "b": "Community arts center in a historic armory, hosting folk and world music, dance, theater and markets.",
    "nt": [],
    "s": [],
-   "i": "120"
+   "i": "327"
   },
   {
    "n": "Atwood's Tavern",
@@ -2545,7 +6815,7 @@
    "b": "Neighborhood tavern with a small stage for roots, Americana, blues and rock bands.",
    "nt": [],
    "s": [],
-   "i": "121"
+   "i": "328"
   },
   {
    "n": "Berklee Performance Center",
@@ -2558,7 +6828,7 @@
    "b": "Berklee College of Music's concert hall, featuring touring jazz, pop, folk and world acts alongside student and faculty shows.",
    "nt": [],
    "s": [],
-   "i": "122"
+   "i": "329"
   },
   {
    "n": "Big Night Live",
@@ -2571,7 +6841,7 @@
    "b": "Large club next to TD Garden presenting touring concerts, DJs and dance-music nights.",
    "nt": [],
    "s": [],
-   "i": "123"
+   "i": "330"
   },
   {
    "n": "Blue Man Group at the Charles Playhouse",
@@ -2584,7 +6854,7 @@
    "b": "Long-running home of Blue Man Group's percussion-and-comedy stage show.",
    "nt": [],
    "s": [],
-   "i": "124"
+   "i": "331"
   },
   {
    "n": "Boch Center Shubert Theatre",
@@ -2597,7 +6867,7 @@
    "b": "Historic Theater District stage for touring musicals, dance, concerts and comedy.",
    "nt": [],
    "s": [],
-   "i": "125"
+   "i": "332"
   },
   {
    "n": "Boch Center Wang Theatre",
@@ -2610,7 +6880,7 @@
    "b": "Grand historic theater presenting big touring productions, concerts, comedy and dance.",
    "nt": [],
    "s": [],
-   "i": "126"
+   "i": "333"
   },
   {
    "n": "Boston Center for the Arts",
@@ -2623,7 +6893,7 @@
    "b": "South End arts complex with several small theaters and galleries for local theater companies and performances.",
    "nt": [],
    "s": [],
-   "i": "127"
+   "i": "334"
   },
   {
    "n": "Brattle Theatre",
@@ -2636,7 +6906,7 @@
    "b": "Beloved single-screen repertory cinema showing independent, foreign and classic films and festivals.",
    "nt": [],
    "s": [],
-   "i": "128"
+   "i": "335"
   },
   {
    "n": "Brendan Behan Pub",
@@ -2649,7 +6919,7 @@
    "b": "Classic Jamaica Plain Irish pub known for traditional Irish sessions and acoustic music.",
    "nt": [],
    "s": [],
-   "i": "129"
+   "i": "336"
   },
   {
    "n": "Brighton Music Hall",
@@ -2662,7 +6932,7 @@
    "b": "Roughly 500-capacity club booking up-and-coming touring bands and local rock acts.",
    "nt": [],
    "s": [],
-   "i": "130"
+   "i": "337"
   },
   {
    "n": "Cantab Lounge",
@@ -2675,7 +6945,7 @@
    "b": "Long-running Central Square music bar with bluegrass, blues, open mics and comedy nights.",
    "nt": [],
    "s": [],
-   "i": "131"
+   "i": "338"
   },
   {
    "n": "Central Square Theater",
@@ -2688,7 +6958,7 @@
    "b": "Cambridge playhouse staging contemporary drama, science-themed plays and family shows.",
    "nt": [],
    "s": [],
-   "i": "132"
+   "i": "339"
   },
   {
    "n": "Charlie's Kitchen",
@@ -2701,7 +6971,7 @@
    "b": "Harvard Square diner-bar whose upstairs room hosts local punk, rock and indie bands.",
    "nt": [],
    "s": [],
-   "i": "133"
+   "i": "340"
   },
   {
    "n": "Chevalier Theatre",
@@ -2714,7 +6984,7 @@
    "b": "Restored Medford theater hosting touring rock and pop acts, comedians and tribute shows.",
    "nt": [],
    "s": [],
-   "i": "134"
+   "i": "341"
   },
   {
    "n": "Citizens Bank Opera House",
@@ -2727,7 +6997,7 @@
    "b": "Ornate historic theater for touring Broadway musicals and Boston Ballet's Nutcracker.",
    "nt": [],
    "s": [],
-   "i": "135"
+   "i": "342"
   },
   {
    "n": "City Winery Boston",
@@ -2740,7 +7010,7 @@
    "b": "Restaurant and winery with a seated concert room for singer-songwriters, soul, jazz and acoustic acts.",
    "nt": [],
    "s": [],
-   "i": "136"
+   "i": "343"
   },
   {
    "n": "Club Passim",
@@ -2753,7 +7023,7 @@
    "b": "Legendary nonprofit folk club presenting singer-songwriters, folk, roots and world music.",
    "nt": [],
    "s": [],
-   "i": "137"
+   "i": "344"
   },
   {
    "n": "Coolidge Corner Theatre",
@@ -2766,7 +7036,7 @@
    "b": "Historic nonprofit movie house showing art films, documentaries, classics and late-night cult screenings.",
    "nt": [],
    "s": [],
-   "i": "138"
+   "i": "345"
   },
   {
    "n": "Crystal Ballroom",
@@ -2779,7 +7049,7 @@
    "b": "Restored ballroom above the Somerville Theatre booking indie, rock and roots bands.",
    "nt": [],
    "s": [],
-   "i": "139"
+   "i": "346"
   },
   {
    "n": "Cutler Majestic Theatre",
@@ -2792,7 +7062,7 @@
    "b": "Emerson College's restored Beaux-Arts theater for opera, touring theater and international productions.",
    "nt": [],
    "s": [],
-   "i": "140"
+   "i": "347"
   },
   {
    "n": "Darryl's Corner Bar & Kitchen",
@@ -2805,7 +7075,7 @@
    "b": "South End soul-food restaurant with nightly jazz, R&B and blues.",
    "nt": [],
    "s": [],
-   "i": "141"
+   "i": "348"
   },
   {
    "n": "Deep Cuts",
@@ -2818,7 +7088,7 @@
    "b": "Mid-size Medford club booking indie, rock, punk and local bands.",
    "nt": [],
    "s": [],
-   "i": "142"
+   "i": "349"
   },
   {
    "n": "Druid Pub",
@@ -2831,7 +7101,7 @@
    "b": "Inman Square Irish pub with traditional Irish music sessions.",
    "nt": [],
    "s": [],
-   "i": "143"
+   "i": "350"
   },
   {
    "n": "Emerson Colonial Theatre",
@@ -2844,7 +7114,7 @@
    "b": "Boston's oldest continuously operating theater, presenting Broadway musicals and pre-Broadway premieres.",
    "nt": [],
    "s": [],
-   "i": "144"
+   "i": "351"
   },
   {
    "n": "Emerson Paramount Center",
@@ -2857,7 +7127,7 @@
    "b": "Restored Art Deco theater for contemporary plays, film, puppetry and circus arts.",
    "nt": [],
    "s": [],
-   "i": "145"
+   "i": "352"
   },
   {
    "n": "Faces Brewing",
@@ -2870,7 +7140,7 @@
    "b": "Malden brewpub with a small stage for local bands and touring indie acts.",
    "nt": [],
    "s": [],
-   "i": "146"
+   "i": "353"
   },
   {
    "n": "Fenway Park",
@@ -2883,7 +7153,7 @@
    "b": "Home of the Red Sox, which hosts major stadium concerts in summer.",
    "nt": [],
    "s": [],
-   "i": "147"
+   "i": "354"
   },
   {
    "n": "Gillette Stadium",
@@ -2896,7 +7166,7 @@
    "b": "Home of the Patriots and the region's biggest stadium for blockbuster concert tours.",
    "nt": [],
    "s": [],
-   "i": "148"
+   "i": "355"
   },
   {
    "n": "Greater Boston Stage Company",
@@ -2909,7 +7179,7 @@
    "b": "Professional regional theater presenting musicals, plays and youth productions.",
    "nt": [],
    "s": [],
-   "i": "149"
+   "i": "356"
   },
   {
    "n": "Hatch Memorial Shell",
@@ -2922,7 +7192,7 @@
    "b": "Riverside band shell known for outdoor summer concerts, films and the Fourth of July Pops show.",
    "nt": [],
    "s": [],
-   "i": "150"
+   "i": "357"
   },
   {
    "n": "Hennessy's",
@@ -2935,7 +7205,7 @@
    "b": "Multi-level Irish pub near Faneuil Hall with live cover bands and Irish music.",
    "nt": [],
    "s": [],
-   "i": "151"
+   "i": "358"
   },
   {
    "n": "Hibernian Hall",
@@ -2948,7 +7218,7 @@
    "b": "Historic Roxbury hall serving as a community arts center for music, dance and theater.",
    "nt": [],
    "s": [],
-   "i": "152"
+   "i": "359"
   },
   {
    "n": "House of Blues Boston",
@@ -2961,7 +7231,7 @@
    "b": "Large Lansdowne Street concert hall for national touring acts across rock, hip-hop, pop and metal.",
    "nt": [],
    "s": [],
-   "i": "153"
+   "i": "360"
   },
   {
    "n": "Huntington Theatre",
@@ -2974,7 +7244,7 @@
    "b": "Boston's leading professional theater company, staging classics, new plays and musicals.",
    "nt": [],
    "s": [],
-   "i": "154"
+   "i": "361"
   },
   {
    "n": "Improv Asylum",
@@ -2987,7 +7257,7 @@
    "b": "North End comedy theater with improv, sketch and stand-up shows.",
    "nt": [],
    "s": [],
-   "i": "155"
+   "i": "362"
   },
   {
    "n": "ImprovBoston",
@@ -3000,7 +7270,7 @@
    "b": "Long-running Cambridge comedy theater offering improv, sketch and stand-up.",
    "nt": [],
    "s": [],
-   "i": "156"
+   "i": "363"
   },
   {
    "n": "Jordan Hall (New England Conservatory)",
@@ -3013,7 +7283,7 @@
    "b": "Acoustically renowned concert hall for chamber music, recitals, orchestras and student concerts.",
    "nt": [],
    "s": [],
-   "i": "157"
+   "i": "364"
   },
   {
    "n": "Laugh Boston",
@@ -3026,7 +7296,7 @@
    "b": "Seaport comedy club featuring national headliners and local stand-up comics.",
    "nt": [],
    "s": [],
-   "i": "158"
+   "i": "365"
   },
   {
    "n": "Leader Bank Pavilion",
@@ -3039,7 +7309,7 @@
    "b": "Outdoor waterfront amphitheater for summer concerts by touring acts.",
    "nt": [],
    "s": [],
-   "i": "159"
+   "i": "366"
   },
   {
    "n": "Lil Chuck at the Charles Playhouse",
@@ -3052,7 +7322,7 @@
    "b": "Intimate stand-up comedy room beneath the Charles Playhouse.",
    "nt": [],
    "s": [],
-   "i": "160"
+   "i": "367"
   },
   {
    "n": "Lilli's",
@@ -3065,7 +7335,7 @@
    "b": "Somerville restaurant and bar with a stage for local bands and singer-songwriters.",
    "nt": [],
    "s": [],
-   "i": "161"
+   "i": "368"
   },
   {
    "n": "Lizard Lounge",
@@ -3078,7 +7348,7 @@
    "b": "Cozy basement club near Harvard Square for roots, rock and jazz bands plus poetry slams.",
    "nt": [],
    "s": [],
-   "i": "162"
+   "i": "369"
   },
   {
    "n": "Loretta's Last Call",
@@ -3091,7 +7361,7 @@
    "b": "Southern-style honky-tonk across from Fenway Park with live country music.",
    "nt": [],
    "s": [],
-   "i": "163"
+   "i": "370"
   },
   {
    "n": "Lynn Auditorium",
@@ -3104,7 +7374,7 @@
    "b": "Historic North Shore auditorium hosting touring rock acts, comedians and family shows.",
    "nt": [],
    "s": [],
-   "i": "164"
+   "i": "371"
   },
   {
    "n": "Lyric Stage Boston",
@@ -3117,7 +7387,7 @@
    "b": "Intimate professional theater producing musicals and plays in the round.",
    "nt": [],
    "s": [],
-   "i": "165"
+   "i": "372"
   },
   {
    "n": "MGM Music Hall at Fenway",
@@ -3130,7 +7400,7 @@
    "b": "5,000-capacity concert hall beside Fenway Park for major touring rock, pop and hip-hop acts.",
    "nt": [],
    "s": [],
-   "i": "166"
+   "i": "373"
   },
   {
    "n": "Midway Cafe",
@@ -3143,7 +7413,7 @@
    "b": "Jamaica Plain bar with punk, rock, indie and experimental bands plus karaoke and dance nights.",
    "nt": [],
    "s": [],
-   "i": "167"
+   "i": "374"
   },
   {
    "n": "Mosesian Center for the Arts",
@@ -3156,7 +7426,7 @@
    "b": "Watertown arts center with theater, concerts, dance and family programs.",
    "nt": [],
    "s": [],
-   "i": "168"
+   "i": "375"
   },
   {
    "n": "Nick's Comedy Stop",
@@ -3169,7 +7439,7 @@
    "b": "Classic Theater District comedy club with stand-up shows several nights a week.",
    "nt": [],
    "s": [],
-   "i": "169"
+   "i": "376"
   },
   {
    "n": "North Shore Music Theatre",
@@ -3182,7 +7452,7 @@
    "b": "Theater-in-the-round staging Broadway-style musicals, holiday shows and concerts.",
    "nt": [],
    "s": [],
-   "i": "170"
+   "i": "377"
   },
   {
    "n": "O'Brien's Pub",
@@ -3195,7 +7465,7 @@
    "b": "Small Allston rock bar booking punk, psych, metal and local bands.",
    "nt": [],
    "s": [],
-   "i": "171"
+   "i": "378"
   },
   {
    "n": "Orpheum Theatre",
@@ -3208,7 +7478,7 @@
    "b": "Historic downtown theater hosting rock, pop, indie and comedy tours.",
    "nt": [],
    "s": [],
-   "i": "172"
+   "i": "379"
   },
   {
    "n": "Paradise Rock Club",
@@ -3221,7 +7491,7 @@
    "b": "Storied rock club, mostly alternative and indie touring bands in an intimate room.",
    "nt": [],
    "s": [],
-   "i": "173"
+   "i": "380"
   },
   {
    "n": "Phoenix Landing",
@@ -3234,7 +7504,7 @@
    "b": "Central Square Irish pub known for DJ and dance-music nights and live sports.",
    "nt": [],
    "s": [],
-   "i": "174"
+   "i": "381"
   },
   {
    "n": "Puppet Showplace Theatre",
@@ -3247,7 +7517,7 @@
    "b": "Family puppet theater with shows for young children and evening puppetry for adults.",
    "nt": [],
    "s": [],
-   "i": "175"
+   "i": "382"
   },
   {
    "n": "Reagle Music Theatre",
@@ -3260,7 +7530,7 @@
    "b": "Greater Boston theater staging large-scale Broadway musicals.",
    "nt": [],
    "s": [],
-   "i": "176"
+   "i": "383"
   },
   {
    "n": "Regattabar",
@@ -3273,7 +7543,7 @@
    "b": "Jazz club in the Charles Hotel presenting jazz, Latin and world music artists.",
    "nt": [],
    "s": [],
-   "i": "177"
+   "i": "384"
   },
   {
    "n": "Regent Theatre",
@@ -3286,7 +7556,7 @@
    "b": "Restored Arlington theater with concerts, comedy, tribute shows and family events.",
    "nt": [],
    "s": [],
-   "i": "178"
+   "i": "385"
   },
   {
    "n": "Roadrunner",
@@ -3299,7 +7569,7 @@
    "b": "Large standing-room concert hall booking major touring acts across many genres.",
    "nt": [],
    "s": [],
-   "i": "179"
+   "i": "386"
   },
   {
    "n": "Royale",
@@ -3312,7 +7582,7 @@
    "b": "Theater District ballroom hosting touring concerts and late-night dance parties.",
    "nt": [],
    "s": [],
-   "i": "180"
+   "i": "387"
   },
   {
    "n": "Sally O'Brien's",
@@ -3325,7 +7595,7 @@
    "b": "Union Square music bar with local rock, country, blues and open-mic nights.",
    "nt": [],
    "s": [],
-   "i": "181"
+   "i": "388"
   },
   {
    "n": "Sanders Theatre",
@@ -3338,7 +7608,7 @@
    "b": "Wood-paneled hall at Harvard for classical, folk, world and holiday concerts.",
    "nt": [],
    "s": [],
-   "i": "182"
+   "i": "389"
   },
   {
    "n": "Scullers Jazz Club",
@@ -3351,7 +7621,7 @@
    "b": "Riverside jazz club presenting national jazz, R&B and soul artists.",
    "nt": [],
    "s": [],
-   "i": "183"
+   "i": "390"
   },
   {
    "n": "Shalin Liu Performance Center",
@@ -3364,7 +7634,7 @@
    "b": "Oceanfront concert hall on the North Shore for chamber music, jazz, folk and pop.",
    "nt": [],
    "s": [],
-   "i": "184"
+   "i": "391"
   },
   {
    "n": "Somerville Theatre",
@@ -3377,7 +7647,7 @@
    "b": "Historic Davis Square movie palace for films, concerts and film festivals.",
    "nt": [],
    "s": [],
-   "i": "185"
+   "i": "392"
   },
   {
    "n": "Sonia",
@@ -3390,7 +7660,7 @@
    "b": "Central Square club booking indie, electronic and international acts plus dance nights.",
    "nt": [],
    "s": [],
-   "i": "186"
+   "i": "393"
   },
   {
    "n": "State Park",
@@ -3403,7 +7673,7 @@
    "b": "Kendall-area bar with occasional live music and a laid-back Southern menu.",
    "nt": [],
    "s": [],
-   "i": "187"
+   "i": "394"
   },
   {
    "n": "Strand Theatre",
@@ -3416,7 +7686,7 @@
    "b": "Restored 1918 Dorchester theater hosting community concerts, theater, dance and film events.",
    "nt": [],
    "s": [],
-   "i": "188"
+   "i": "395"
   },
   {
    "n": "Symphony Hall",
@@ -3429,7 +7699,7 @@
    "b": "World-class concert hall, home of the Boston Symphony Orchestra and Boston Pops.",
    "nt": [],
    "s": [],
-   "i": "189"
+   "i": "396"
   },
   {
    "n": "Tavern at the End of the World",
@@ -3442,7 +7712,7 @@
    "b": "Charlestown pub with Irish sessions and local bands.",
    "nt": [],
    "s": [],
-   "i": "190"
+   "i": "397"
   },
   {
    "n": "TCAN (The Center for Arts in Natick)",
@@ -3455,7 +7725,7 @@
    "b": "Community arts center in a former firehouse with folk, blues, comedy and theater.",
    "nt": [],
    "s": [],
-   "i": "191"
+   "i": "398"
   },
   {
    "n": "TD Garden",
@@ -3468,7 +7738,7 @@
    "b": "Home of the Celtics and Bruins and Boston's top arena for major concert tours.",
    "nt": [],
    "s": [],
-   "i": "192"
+   "i": "399"
   },
   {
    "n": "The Beehive",
@@ -3481,7 +7751,7 @@
    "b": "South End restaurant and lounge with nightly jazz, soul, funk and blues.",
    "nt": [],
    "s": [],
-   "i": "193"
+   "i": "400"
   },
   {
    "n": "The Burren",
@@ -3494,7 +7764,7 @@
    "b": "Davis Square Irish pub with traditional sessions, folk, rock and comedy.",
    "nt": [],
    "s": [],
-   "i": "194"
+   "i": "401"
   },
   {
    "n": "The Cabot",
@@ -3507,7 +7777,7 @@
    "b": "Restored North Shore theater hosting concerts, comedy, films and family shows.",
    "nt": [],
    "s": [],
-   "i": "195"
+   "i": "402"
   },
   {
    "n": "The Comedy Studio",
@@ -3520,7 +7790,7 @@
    "b": "Cambridge stand-up room known for launching young comics and showcasing local talent.",
    "nt": [],
    "s": [],
-   "i": "196"
+   "i": "403"
   },
   {
    "n": "The Dance Complex",
@@ -3533,7 +7803,7 @@
    "b": "Central Square dance center with performances, classes and workshops.",
    "nt": [],
    "s": [],
-   "i": "197"
+   "i": "404"
   },
   {
    "n": "The Grand",
@@ -3546,7 +7816,7 @@
    "b": "Seaport nightclub with DJ sets and electronic-music nights.",
    "nt": [],
    "s": [],
-   "i": "198"
+   "i": "405"
   },
   {
    "n": "The Jungle",
@@ -3559,7 +7829,7 @@
    "b": "Small Somerville room for local indie, punk and experimental bands.",
    "nt": [],
    "s": [],
-   "i": "199"
+   "i": "406"
   },
   {
    "n": "The Lilypad",
@@ -3572,7 +7842,7 @@
    "b": "Intimate Inman Square space for jazz, classical, indie and experimental music.",
    "nt": [],
    "s": [],
-   "i": "200"
+   "i": "407"
   },
   {
    "n": "The Middle East",
@@ -3585,7 +7855,7 @@
    "b": "Central Square institution with upstairs and downstairs rooms for rock, punk, hip-hop and indie shows.",
    "nt": [],
    "s": [],
-   "i": "201"
+   "i": "408"
   },
   {
    "n": "The Outer Limits",
@@ -3598,7 +7868,7 @@
    "b": "Quincy rock bar booking local and touring punk, metal and rock bands.",
    "nt": [],
    "s": [],
-   "i": "202"
+   "i": "409"
   },
   {
    "n": "The Palladium",
@@ -3611,7 +7881,7 @@
    "b": "Worcester concert hall known for metal, hard rock and hip-hop tours.",
    "nt": [],
    "s": [],
-   "i": "203"
+   "i": "410"
   },
   {
    "n": "The Plough and Stars",
@@ -3624,7 +7894,7 @@
    "b": "Small Cambridge pub with nightly roots, blues and singer-songwriter music.",
    "nt": [],
    "s": [],
-   "i": "204"
+   "i": "411"
   },
   {
    "n": "The Rockwell",
@@ -3637,7 +7907,7 @@
    "b": "Davis Square performance space for comedy, music, cabaret and variety shows.",
    "nt": [],
    "s": [],
-   "i": "205"
+   "i": "412"
   },
   {
    "n": "The Sinclair",
@@ -3650,7 +7920,7 @@
    "b": "Harvard Square music hall booking indie rock, hip-hop and pop acts plus DJ nights.",
    "nt": [],
    "s": [],
-   "i": "206"
+   "i": "413"
   },
   {
    "n": "The Square Root",
@@ -3663,7 +7933,7 @@
    "b": "Roslindale neighborhood bar with live local bands and open mics.",
    "nt": [],
    "s": [],
-   "i": "207"
+   "i": "414"
   },
   {
    "n": "The Stage at Suffolk Downs",
@@ -3676,7 +7946,7 @@
    "b": "Outdoor summer stage at the former racetrack for concerts and festivals.",
    "nt": [],
    "s": [],
-   "i": "208"
+   "i": "415"
   },
   {
    "n": "Toad",
@@ -3689,7 +7959,7 @@
    "b": "Tiny Porter Square bar with live roots, rock and blues bands nightly.",
    "nt": [],
    "s": [],
-   "i": "209"
+   "i": "416"
   },
   {
    "n": "Tsongas Center",
@@ -3702,7 +7972,7 @@
    "b": "UMass Lowell arena for hockey, concerts, family shows and comedy tours.",
    "nt": [],
    "s": [],
-   "i": "210"
+   "i": "417"
   },
   {
    "n": "Union Tavern",
@@ -3715,7 +7985,7 @@
    "b": "Union Square bar hosting local bands and music nights.",
    "nt": [],
    "s": [],
-   "i": "211"
+   "i": "418"
   },
   {
    "n": "Wally's Cafe",
@@ -3728,7 +7998,7 @@
    "b": "Historic family-run jazz club with live jazz, blues and jam sessions every night.",
    "nt": [],
    "s": [],
-   "i": "212"
+   "i": "419"
   },
   {
    "n": "Wheelock Family Theatre",
@@ -3741,7 +8011,7 @@
    "b": "Boston University family theater producing musicals and plays for all ages.",
    "nt": [],
    "s": [],
-   "i": "213"
+   "i": "420"
   },
   {
    "n": "Wilbur Theatre",
@@ -3754,7 +8024,7 @@
    "b": "Historic theater that is Boston's top room for national touring stand-up comedians and concerts.",
    "nt": [],
    "s": [],
-   "i": "214"
+   "i": "421"
   },
   {
    "n": "ZuZu",
@@ -3767,7 +8037,7 @@
    "b": "Small Central Square bar next to the Middle East with DJs and local bands.",
    "nt": [],
    "s": [],
-   "i": "215"
+   "i": "422"
   },
   {
    "n": "A&B Kitchen & Bar",
@@ -3780,7 +8050,7 @@
    "b": "Burger-and-beer American spot that is a go-to before games at TD Garden.",
    "nt": [],
    "s": [],
-   "i": "216"
+   "i": "423"
   },
   {
    "n": "Amar",
@@ -3793,7 +8063,7 @@
    "b": "Modern Portuguese cooking from chef George Mendes high above Back Bay.",
    "nt": [],
    "s": [],
-   "i": "217"
+   "i": "424"
   },
   {
    "n": "Avra Boston",
@@ -3806,7 +8076,7 @@
    "b": "Aegean-style Mediterranean dining known for whole grilled fish.",
    "nt": [],
    "s": [],
-   "i": "218"
+   "i": "425"
   },
   {
    "n": "Bacco Ristorante & Bar",
@@ -3819,7 +8089,7 @@
    "b": "North End Italian restaurant praised for attentive service and classic dishes.",
    "nt": [],
    "s": [],
-   "i": "219"
+   "i": "426"
   },
   {
    "n": "Bar Vlaha",
@@ -3832,7 +8102,7 @@
    "b": "Lively Greek taverna cooking meats and breads over fire in the Vlach shepherd tradition.",
    "nt": [],
    "s": [],
-   "i": "220"
+   "i": "427"
   },
   {
    "n": "Bey",
@@ -3845,7 +8115,7 @@
    "b": "Modern Lebanese spot for hot and cold mezze, grilled branzino and kebabs.",
    "nt": [],
    "s": [],
-   "i": "221"
+   "i": "428"
   },
   {
    "n": "Bistro du Midi",
@@ -3858,20 +8128,7 @@
    "b": "Provençal French restaurant on Boylston Street.",
    "nt": [],
    "s": [],
-   "i": "222"
-  },
-  {
-   "n": "The Block at Woods Hill",
-   "c": "Restaurants",
-   "a": "Seaport, Boston",
-   "p": "",
-   "e": "",
-   "w": "",
-   "wl": "Website",
-   "b": "Meat-forward restaurant with butcher cuts and charcuterie.",
-   "nt": [],
-   "s": [],
-   "i": "223"
+   "i": "429"
   },
   {
    "n": "Blossom Bar",
@@ -3884,7 +8141,7 @@
    "b": "Sichuan cooking paired with tiki-style cocktails; known for dry hot chicken and dumplings.",
    "nt": [],
    "s": [],
-   "i": "224"
+   "i": "430"
   },
   {
    "n": "Blue Nile",
@@ -3897,7 +8154,7 @@
    "b": "Longtime Ethiopian favorite serving stews and vegetables on injera.",
    "nt": [],
    "s": [],
-   "i": "225"
+   "i": "431"
   },
   {
    "n": "Brassica Kitchen + Cafe",
@@ -3910,7 +8167,7 @@
    "b": "Global-minded neighborhood bistro known for fried chicken, pork belly and brick-oven pizza.",
    "nt": [],
    "s": [],
-   "i": "226"
+   "i": "432"
   },
   {
    "n": "Bricco",
@@ -3923,7 +8180,7 @@
    "b": "Upscale nouveau Italian on Hanover Street; reservations essential.",
    "nt": [],
    "s": [],
-   "i": "227"
+   "i": "433"
   },
   {
    "n": "Bánh Mì Ba Lẹ",
@@ -3936,7 +8193,7 @@
    "b": "Vietnamese sandwich shop and market famed for its grilled beef banh mi.",
    "nt": [],
    "s": [],
-   "i": "228"
+   "i": "434"
   },
   {
    "n": "Caffe Vittoria",
@@ -3949,7 +8206,7 @@
    "b": "Old-world Italian café on Hanover Street in the North End.",
    "nt": [],
    "s": [],
-   "i": "229"
+   "i": "435"
   },
   {
    "n": "Café Sushi",
@@ -3962,7 +8219,7 @@
    "b": "Four-decade-old Cambridge sushi bar known for spicy scallop hand rolls.",
    "nt": [],
    "s": [],
-   "i": "230"
+   "i": "436"
   },
   {
    "n": "Cantina Italiana",
@@ -3975,7 +8232,7 @@
    "b": "Welcoming North End Italian praised for excellent food.",
    "nt": [],
    "s": [],
-   "i": "231"
+   "i": "437"
   },
   {
    "n": "Carmelina's",
@@ -3988,7 +8245,7 @@
    "b": "Italian restaurant with an open kitchen looking onto Hanover Street.",
    "nt": [],
    "s": [],
-   "i": "232"
+   "i": "438"
   },
   {
    "n": "Celeste",
@@ -4001,7 +8258,7 @@
    "b": "Homestyle Peruvian known for ceviche, lomo saltado and pisco cocktails.",
    "nt": [],
    "s": [],
-   "i": "233"
+   "i": "439"
   },
   {
    "n": "Chickadee",
@@ -4014,7 +8271,7 @@
    "b": "Seasonal Mediterranean plates built on New England ingredients, like squid ink fusilli.",
    "nt": [],
    "s": [],
-   "i": "234"
+   "i": "440"
   },
   {
    "n": "Comfort Kitchen",
@@ -4027,7 +8284,7 @@
    "b": "James Beard-recognized spot exploring African diaspora flavors with themed menus.",
    "nt": [],
    "s": [],
-   "i": "235"
+   "i": "441"
   },
   {
    "n": "Coppa",
@@ -4040,20 +8297,7 @@
    "b": "Cozy Italian enoteca known for house-cured salumi and carbonara with uni.",
    "nt": [],
    "s": [],
-   "i": "236"
-  },
-  {
-   "n": "The Daily Catch",
-   "c": "Restaurants",
-   "a": "323 Hanover St, North End, Boston (also Seaport and Brookline)",
-   "p": "",
-   "e": "",
-   "w": "https://www.thedailycatch.com",
-   "wl": "Website",
-   "b": "Sicilian seafood since 1973, famous for fried calamari and squid ink pasta.",
-   "nt": [],
-   "s": [],
-   "i": "237"
+   "i": "442"
   },
   {
    "n": "Eastern Standard",
@@ -4066,7 +8310,7 @@
    "b": "Classic American brasserie with an oyster bar, baked rigatoni and roasted bone marrow.",
    "nt": [],
    "s": [],
-   "i": "238"
+   "i": "443"
   },
   {
    "n": "Euno Ristorante",
@@ -4079,7 +8323,7 @@
    "b": "Intimate North End Italian known for its chicken parm.",
    "nt": [],
    "s": [],
-   "i": "239"
+   "i": "444"
   },
   {
    "n": "Fallow Kin",
@@ -4092,7 +8336,7 @@
    "b": "Vegetable-forward seasonal cooking and fresh pasta from the Talulla team.",
    "nt": [],
    "s": [],
-   "i": "240"
+   "i": "445"
   },
   {
    "n": "Field & Vine",
@@ -4105,7 +8349,7 @@
    "b": "Farm-sourced, vegetable-forward American cooking under a vine-covered canopy.",
    "nt": [],
    "s": [],
-   "i": "241"
+   "i": "446"
   },
   {
    "n": "Flour Bakery + Café",
@@ -4118,7 +8362,7 @@
    "b": "Beloved bakery-café and a pastry-lover's favorite.",
    "nt": [],
    "s": [],
-   "i": "242"
+   "i": "447"
   },
   {
    "n": "Galleria Umberto",
@@ -4131,7 +8375,7 @@
    "b": "Old-school North End lunch counter famous for Sicilian slices; closes when the pizza runs out.",
    "nt": [],
    "s": [],
-   "i": "243"
+   "i": "448"
   },
   {
    "n": "Gene's Chinese Flatbread Cafe",
@@ -4144,7 +8388,7 @@
    "b": "Unassuming Chinese spot just outside Chinatown that is worth the walk.",
    "nt": [],
    "s": [],
-   "i": "244"
+   "i": "449"
   },
   {
    "n": "Giacomo's",
@@ -4157,7 +8401,7 @@
    "b": "Cash-only Italian institution for pasta and seafood; expect a line.",
    "nt": [],
    "s": [],
-   "i": "245"
+   "i": "450"
   },
   {
    "n": "Giulia",
@@ -4170,7 +8414,7 @@
    "b": "Handmade-pasta Italian, famous for pappardelle with wild boar.",
    "nt": [],
    "s": [],
-   "i": "246"
+   "i": "451"
   },
   {
    "n": "Gourmet Dumpling House",
@@ -4183,7 +8427,7 @@
    "b": "Chinatown dumpling spot best known for soup dumplings.",
    "nt": [],
    "s": [],
-   "i": "247"
+   "i": "452"
   },
   {
    "n": "Grace by Nia",
@@ -4196,7 +8440,7 @@
    "b": "Southern and soul cooking with live music and a busy weekend brunch.",
    "nt": [],
    "s": [],
-   "i": "248"
+   "i": "453"
   },
   {
    "n": "Holdfast Specialty Seafood Co.",
@@ -4209,7 +8453,7 @@
    "b": "Tiny 20-seat seafood restaurant with a thoughtful menu.",
    "nt": [],
    "s": [],
-   "i": "249"
+   "i": "454"
   },
   {
    "n": "Island Creek Oyster Bar",
@@ -4222,7 +8466,7 @@
    "b": "Seafood standout known for its oysters and lobster roe noodles.",
    "nt": [],
    "s": [],
-   "i": "250"
+   "i": "455"
   },
   {
    "n": "Judy's Bay",
@@ -4235,7 +8479,7 @@
    "b": "Izakaya-style spot blending Japanese flavors with New England seafood.",
    "nt": [],
    "s": [],
-   "i": "251"
+   "i": "456"
   },
   {
    "n": "Juliet",
@@ -4248,7 +8492,7 @@
    "b": "French spot with pastries and burgers by day and Niçoise dinners by night.",
    "nt": [],
    "s": [],
-   "i": "252"
+   "i": "457"
   },
   {
    "n": "Kahaani",
@@ -4261,7 +8505,7 @@
    "b": "Hyderabadi Indian cooking, including slow-cooked biryani, in a gastropub setting.",
    "nt": [],
    "s": [],
-   "i": "253"
+   "i": "458"
   },
   {
    "n": "Kava Neo-Taverna",
@@ -4274,7 +8518,7 @@
    "b": "Greek taverna loved for zucchini chips, keftedes and yogurt dessert.",
    "nt": [],
    "s": [],
-   "i": "254"
+   "i": "459"
   },
   {
    "n": "Krasi",
@@ -4287,7 +8531,7 @@
    "b": "Greek restaurant serving meze and fire-grilled souvla with a deep Greek wine list.",
    "nt": [],
    "s": [],
-   "i": "255"
+   "i": "460"
   },
   {
    "n": "La Padrona",
@@ -4300,7 +8544,7 @@
    "b": "Italian dining room named among Eater's and The New York Times' top Boston picks.",
    "nt": [],
    "s": [],
-   "i": "256"
+   "i": "461"
   },
   {
    "n": "La Royal",
@@ -4313,7 +8557,7 @@
    "b": "Peruvian restaurant with Chinese-Peruvian and Nikkei dishes and a pisco martini.",
    "nt": [],
    "s": [],
-   "i": "257"
+   "i": "462"
   },
   {
    "n": "Legal Sea Foods Long Wharf",
@@ -4326,7 +8570,7 @@
    "b": "Boston's homegrown seafood restaurant group, here on the Long Wharf waterfront.",
    "nt": [],
    "s": [],
-   "i": "258"
+   "i": "463"
   },
   {
    "n": "Lehrhaus",
@@ -4339,7 +8583,7 @@
    "b": "Tavern exploring Jewish food traditions from around the world.",
    "nt": [],
    "s": [],
-   "i": "259"
+   "i": "464"
   },
   {
    "n": "Little Sage",
@@ -4352,7 +8596,7 @@
    "b": "Italian spot reviving the beloved Sage, with house pastas like lobster ricotta gnocchi.",
    "nt": [],
    "s": [],
-   "i": "260"
+   "i": "465"
   },
   {
    "n": "Locale",
@@ -4365,7 +8609,7 @@
    "b": "Modern North End pizzeria counted among Boston's best pies.",
    "nt": [],
    "s": [],
-   "i": "261"
+   "i": "466"
   },
   {
    "n": "LoLa 42",
@@ -4378,7 +8622,7 @@
    "b": "Asian, American and Mediterranean mash-up known for lobster fried rice.",
    "nt": [],
    "s": [],
-   "i": "262"
+   "i": "467"
   },
   {
    "n": "Louis Corner",
@@ -4391,7 +8635,7 @@
    "b": "Upscale American comfort food like mac and cheese and smash burgers.",
    "nt": [],
    "s": [],
-   "i": "263"
+   "i": "468"
   },
   {
    "n": "Mahaniyom",
@@ -4404,7 +8648,7 @@
    "b": "Thai small plates inspired by Bangkok drinking-snack bars; crab fried rice is a star.",
    "nt": [],
    "s": [],
-   "i": "264"
+   "i": "469"
   },
   {
    "n": "Mamma Maria",
@@ -4417,7 +8661,7 @@
    "b": "Romantic Northern Italian dining on North Square.",
    "nt": [],
    "s": [],
-   "i": "265"
+   "i": "470"
   },
   {
    "n": "Marliave",
@@ -4430,7 +8674,7 @@
    "b": "Historic restaurant dating to 1885, with mosaic floors and a wide-ranging menu.",
    "nt": [],
    "s": [],
-   "i": "266"
+   "i": "471"
   },
   {
    "n": "Matria",
@@ -4443,7 +8687,7 @@
    "b": "Northern Italian steakhouse with a harbor-facing patio and fire pits.",
    "nt": [],
    "s": [],
-   "i": "267"
+   "i": "472"
   },
   {
    "n": "Merengue Restaurant",
@@ -4456,7 +8700,7 @@
    "b": "Dominican favorite for mofongo and stuffed shrimp tostones.",
    "nt": [],
    "s": [],
-   "i": "268"
+   "i": "473"
   },
   {
    "n": "Mike's City Diner",
@@ -4469,7 +8713,7 @@
    "b": "Classic diner known for corned beef hash and the Thanksgiving-style Pilgrim sandwich.",
    "nt": [],
    "s": [],
-   "i": "269"
+   "i": "474"
   },
   {
    "n": "Mike's Pastry",
@@ -4482,7 +8726,7 @@
    "b": "Iconic North End Italian bakery on Hanover Street.",
    "nt": [],
    "s": [],
-   "i": "270"
+   "i": "475"
   },
   {
    "n": "Modern Pastry",
@@ -4495,7 +8739,7 @@
    "b": "Classic North End Italian bakery on Hanover Street.",
    "nt": [],
    "s": [],
-   "i": "271"
+   "i": "476"
   },
   {
    "n": "Mooncusser",
@@ -4508,7 +8752,7 @@
    "b": "Seafood-leaning tasting menu that changes every few weeks.",
    "nt": [],
    "s": [],
-   "i": "272"
+   "i": "477"
   },
   {
    "n": "Moëca",
@@ -4521,7 +8765,7 @@
    "b": "Seafood restaurant with a changing global menu and house-made gelato.",
    "nt": [],
    "s": [],
-   "i": "273"
+   "i": "478"
   },
   {
    "n": "Myers + Chang",
@@ -4534,20 +8778,7 @@
    "b": "Pan-Asian small plates drawing on Chinese, Taiwanese, Thai and Vietnamese cooking, plus dim sum brunch.",
    "nt": [],
    "s": [],
-   "i": "274"
-  },
-  {
-   "n": "The Nautilus Pier 4",
-   "c": "Restaurants",
-   "a": "Seaport, Boston",
-   "p": "",
-   "e": "",
-   "w": "",
-   "wl": "Website",
-   "b": "Pan-Asian seafood plates with waterfront views.",
-   "nt": [],
-   "s": [],
-   "i": "275"
+   "i": "479"
   },
   {
    "n": "Neptune Oyster",
@@ -4560,7 +8791,7 @@
    "b": "Tiny walk-in oyster bar famous for its hot buttered lobster roll.",
    "nt": [],
    "s": [],
-   "i": "276"
+   "i": "480"
   },
   {
    "n": "No. 9 Park",
@@ -4573,7 +8804,7 @@
    "b": "French- and Italian-influenced tasting menus and a celebrated wine list.",
    "nt": [],
    "s": [],
-   "i": "277"
+   "i": "481"
   },
   {
    "n": "O Ya",
@@ -4586,7 +8817,7 @@
    "b": "Acclaimed high-end Japanese omakase in a former firehouse.",
    "nt": [],
    "s": [],
-   "i": "278"
+   "i": "482"
   },
   {
    "n": "Oleana",
@@ -4599,7 +8830,7 @@
    "b": "Eastern Mediterranean meze with a lush garden patio and standout desserts.",
    "nt": [],
    "s": [],
-   "i": "279"
+   "i": "483"
   },
   {
    "n": "Pammy's",
@@ -4612,7 +8843,7 @@
    "b": "Italian-inspired New American with handmade pastas and a cozy hearth.",
    "nt": [],
    "s": [],
-   "i": "280"
+   "i": "484"
   },
   {
    "n": "Parish Cafe",
@@ -4625,7 +8856,7 @@
    "b": "Sandwich spot whose menu features creations from chefs around the city.",
    "nt": [],
    "s": [],
-   "i": "281"
+   "i": "485"
   },
   {
    "n": "Parker's Restaurant",
@@ -4638,7 +8869,7 @@
    "b": "Historic hotel dining room and birthplace of Boston cream pie.",
    "nt": [],
    "s": [],
-   "i": "282"
+   "i": "486"
   },
   {
    "n": "Pauli's",
@@ -4651,7 +8882,7 @@
    "b": "Casual North End seafood counter on Salem Street.",
    "nt": [],
    "s": [],
-   "i": "283"
+   "i": "487"
   },
   {
    "n": "Peach Farm",
@@ -4664,7 +8895,7 @@
    "b": "Late-night Chinatown seafood spot known for ginger-scallion lobster.",
    "nt": [],
    "s": [],
-   "i": "284"
+   "i": "488"
   },
   {
    "n": "Pho Le",
@@ -4677,7 +8908,7 @@
    "b": "Vietnamese noodle-soup favorite in Fields Corner.",
    "nt": [],
    "s": [],
-   "i": "285"
+   "i": "489"
   },
   {
    "n": "Picco",
@@ -4690,7 +8921,7 @@
    "b": "Pizza from cold-fermented dough plus house-made ice cream.",
    "nt": [],
    "s": [],
-   "i": "286"
+   "i": "490"
   },
   {
    "n": "Pizzeria Regina",
@@ -4703,7 +8934,7 @@
    "b": "Brick-oven pizza institution in the North End since 1926.",
    "nt": [],
    "s": [],
-   "i": "287"
+   "i": "491"
   },
   {
    "n": "Puritan & Company",
@@ -4716,7 +8947,7 @@
    "b": "New England cooking with in-house curing and famous Parker House rolls.",
    "nt": [],
    "s": [],
-   "i": "288"
+   "i": "492"
   },
   {
    "n": "Puritan Oyster Bar",
@@ -4729,7 +8960,7 @@
    "b": "Raw bar sibling of Puritan & Company for oysters and shellfish towers.",
    "nt": [],
    "s": [],
-   "i": "289"
+   "i": "493"
   },
   {
    "n": "Row 34",
@@ -4742,7 +8973,7 @@
    "b": "Modern New England oyster bar known for lobster rolls and a creative beer list.",
    "nt": [],
    "s": [],
-   "i": "290"
+   "i": "494"
   },
   {
    "n": "Santarpio's Pizza",
@@ -4755,7 +8986,7 @@
    "b": "Old-school East Boston pizzeria and longtime local landmark.",
    "nt": [],
    "s": [],
-   "i": "291"
+   "i": "495"
   },
   {
    "n": "Sarma",
@@ -4768,7 +8999,7 @@
    "b": "Turkish-inspired meze house with playful small plates; book ahead.",
    "nt": [],
    "s": [],
-   "i": "292"
+   "i": "496"
   },
   {
    "n": "Select Oyster Bar",
@@ -4781,7 +9012,7 @@
    "b": "Small Back Bay raw bar for oysters, crudo and whole roasted fish.",
    "nt": [],
    "s": [],
-   "i": "293"
+   "i": "497"
   },
   {
    "n": "Shojo",
@@ -4794,7 +9025,7 @@
    "b": "Pan-Asian small plates known for duck-fat fries and Wu-Tang ribs.",
    "nt": [],
    "s": [],
-   "i": "294"
+   "i": "498"
   },
   {
    "n": "Si Cara",
@@ -4807,7 +9038,7 @@
    "b": "Puffy canotto-style pizza with seasonal toppings.",
    "nt": [],
    "s": [],
-   "i": "295"
+   "i": "499"
   },
   {
    "n": "Singh's Roti Shop",
@@ -4820,7 +9051,7 @@
    "b": "Trinidadian roti shop known for goat roti and doubles.",
    "nt": [],
    "s": [],
-   "i": "296"
+   "i": "500"
   },
   {
    "n": "SRV",
@@ -4833,7 +9064,7 @@
    "b": "Venetian-style osteria for cicchetti, fresh pasta and risotto.",
    "nt": [],
    "s": [],
-   "i": "297"
+   "i": "501"
   },
   {
    "n": "Sugidama",
@@ -4846,7 +9077,7 @@
    "b": "Japanese izakaya specializing in buckwheat soba.",
    "nt": [],
    "s": [],
-   "i": "298"
+   "i": "502"
   },
   {
    "n": "Sumiao Hunan Kitchen",
@@ -4859,7 +9090,7 @@
    "b": "Hunan Chinese cooking, including steamed fish and pumpkin cakes.",
    "nt": [],
    "s": [],
-   "i": "299"
+   "i": "503"
   },
   {
    "n": "Taiwan Cafe",
@@ -4872,7 +9103,7 @@
    "b": "Taiwanese spot for pan-fried dumplings and scallion pancake rolls.",
    "nt": [],
    "s": [],
-   "i": "300"
+   "i": "504"
   },
   {
    "n": "Talulla",
@@ -4885,7 +9116,46 @@
    "b": "Intimate dozen-table restaurant with a daily-changing seasonal menu.",
    "nt": [],
    "s": [],
-   "i": "301"
+   "i": "505"
+  },
+  {
+   "n": "The Block at Woods Hill",
+   "c": "Restaurants",
+   "a": "Seaport, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "Meat-forward restaurant with butcher cuts and charcuterie.",
+   "nt": [],
+   "s": [],
+   "i": "506"
+  },
+  {
+   "n": "The Daily Catch",
+   "c": "Restaurants",
+   "a": "323 Hanover St, North End, Boston (also Seaport and Brookline)",
+   "p": "",
+   "e": "",
+   "w": "https://www.thedailycatch.com",
+   "wl": "Website",
+   "b": "Sicilian seafood since 1973, famous for fried calamari and squid ink pasta.",
+   "nt": [],
+   "s": [],
+   "i": "507"
+  },
+  {
+   "n": "The Nautilus Pier 4",
+   "c": "Restaurants",
+   "a": "Seaport, Boston",
+   "p": "",
+   "e": "",
+   "w": "",
+   "wl": "Website",
+   "b": "Pan-Asian seafood plates with waterfront views.",
+   "nt": [],
+   "s": [],
+   "i": "508"
   },
   {
    "n": "Tip Tap Room",
@@ -4898,7 +9168,7 @@
    "b": "Gastropub known for steak tips and boar meatballs.",
    "nt": [],
    "s": [],
-   "i": "302"
+   "i": "509"
   },
   {
    "n": "Tonino",
@@ -4911,7 +9181,7 @@
    "b": "Homey neighborhood Italian with handmade pastas.",
    "nt": [],
    "s": [],
-   "i": "303"
+   "i": "510"
   },
   {
    "n": "Top of the Hub",
@@ -4924,7 +9194,7 @@
    "b": "Steaks and American dining with panoramic city views from the 52nd floor.",
    "nt": [],
    "s": [],
-   "i": "304"
+   "i": "511"
   },
   {
    "n": "Toro",
@@ -4937,7 +9207,7 @@
    "b": "Barcelona-style tapas from Ken Oringer, known for paella and pan con tomate.",
    "nt": [],
    "s": [],
-   "i": "305"
+   "i": "512"
   },
   {
    "n": "Tres Gatos",
@@ -4950,7 +9220,7 @@
    "b": "Spanish tapas restaurant with a record shop out back.",
    "nt": [],
    "s": [],
-   "i": "306"
+   "i": "513"
   },
   {
    "n": "Uni",
@@ -4963,7 +9233,7 @@
    "b": "Modern Asian seafood dining, including a signature uni spoon with caviar.",
    "nt": [],
    "s": [],
-   "i": "307"
+   "i": "514"
   },
   {
    "n": "Union Oyster House",
@@ -4976,7 +9246,7 @@
    "b": "America's oldest restaurant (since 1826), famous for chowder and oysters.",
    "nt": [],
    "s": [],
-   "i": "308"
+   "i": "515"
   },
   {
    "n": "Via Cannuccia",
@@ -4989,7 +9259,7 @@
    "b": "Roman-style trattoria with handmade pasta and morning pastries.",
    "nt": [],
    "s": [],
-   "i": "309"
+   "i": "516"
   },
   {
    "n": "Viale",
@@ -5002,7 +9272,7 @@
    "b": "Italian spot for handmade pastas and a seafood saffron broth.",
    "nt": [],
    "s": [],
-   "i": "310"
+   "i": "517"
   },
   {
    "n": "Warren Tavern",
@@ -5015,7 +9285,7 @@
    "b": "Historic tavern dating to the Revolutionary era, known for burgers and fish and chips.",
    "nt": [],
    "s": [],
-   "i": "311"
+   "i": "518"
   },
   {
    "n": "Willie's",
@@ -5028,7 +9298,7 @@
    "b": "Lively pizza spot with Spanish and Asian twists.",
    "nt": [],
    "s": [],
-   "i": "312"
+   "i": "519"
   },
   {
    "n": "Yume Ga Arukara",
@@ -5041,7 +9311,7 @@
    "b": "Tiny udon shop famous for its niku udon.",
    "nt": [],
    "s": [],
-   "i": "313"
+   "i": "520"
   },
   {
    "n": "Yume Wo Katare",
@@ -5054,7 +9324,7 @@
    "b": "Jiro-style ramen with a theatrical, communal experience.",
    "nt": [],
    "s": [],
-   "i": "314"
+   "i": "521"
   },
   {
    "n": "ZURiTO",
@@ -5067,7 +9337,7 @@
    "b": "Basque-style pintxos bar with a deep Spanish wine list.",
    "nt": [],
    "s": [],
-   "i": "315"
+   "i": "522"
   }
  ]
 }
