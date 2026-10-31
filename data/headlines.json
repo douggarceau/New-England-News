@@ -11,15 +11,6 @@
    "rank": 1
   },
   {
-   "h": "Warm Friday, then a cooler Halloween night for trick-or-treaters",
-   "sum": "Temperatures climb toward 70 on Friday before a cold front brings cooler air, so parents should plan a sweater or light jacket over costumes Saturday night.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/weather-boston-massachusetts-how-cold-halloween-trick-or-treat/4039649/",
-   "town": "Statewide",
-   "date": "2026-10-29",
-   "rank": 2
-  },
-  {
    "h": "Noah Kahan adds four Fenway Park shows for 2027",
    "sum": "The singer-songwriter returns to Fenway Park for concerts on May 29, May 30, June 1 and June 2.",
    "outlet": "NBC Boston",
@@ -45,15 +36,6 @@
    "town": "Statewide",
    "date": "2026-10-28",
    "rank": 5
-  },
-  {
-   "h": "Health Connector open enrollment is underway",
-   "sum": "Residents who buy coverage through the Massachusetts Health Connector can sign up or switch plans during open enrollment, which runs into January 2027.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/open-enrollment-massachusetts-health-connector-insurance",
-   "town": "Statewide",
-   "date": "2026-10-23",
-   "rank": 6
   },
   {
    "h": "About 70,000 Massachusetts residents see medical debt wiped away",
@@ -92,33 +74,6 @@
    "rank": 10
   },
   {
-   "h": "Wu proposes faster path for new neighborhood restaurants",
-   "sum": "The plan would let existing permits move to new owners without a fresh review in some takeout cases, cutting waits from about four months to under two weeks, pending licensing board and City Council approval.",
-   "outlet": "Boston 25 News",
-   "url": "https://www.boston25news.com/news/local/boston-mayor-proposes-zoning-reforms-cut-red-tape-speed-up-process-local-restaurants/6DMLRQU2XZAJXJKAISHARGCQJU/",
-   "town": "Boston",
-   "date": "2026-10-27",
-   "rank": 11
-  },
-  {
-   "h": "Hasbro's CEO talks about the toymaker's move to the Seaport",
-   "sum": "After more than a century in Rhode Island, Hasbro is relocating its headquarters to Boston's Seaport, and its chief executive explains why.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/hasbro-chris-cocks-pawtucket-seaport-relocation",
-   "town": "Seaport",
-   "date": "2026-10-23",
-   "rank": 12
-  },
-  {
-   "h": "Fields Corner Post Office will stay open after all",
-   "sum": "A lease extension reversed a planned closing, keeping the Dorchester post office serving the neighborhood.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/fields-corner-dorchester-post-office-will-stay-open",
-   "town": "Dorchester",
-   "date": "2026-10-23",
-   "rank": 13
-  },
-  {
    "h": "Nikki Giovanni's archives open to the public at Boston University",
    "sum": "BU's Howard Gotlieb center now holds the papers of the celebrated poet.",
    "outlet": "WBUR",
@@ -126,24 +81,6 @@
    "town": "Fenway",
    "date": "2026-10-22",
    "rank": 14
-  },
-  {
-   "h": "Voice of Logan contest narrowed to eight finalists",
-   "sum": "Massport's search for a new announcement voice at Logan Airport came down to eight finalists, with public voting closing Wednesday night.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/27/massport-voice-of-logan-competition-finalists",
-   "town": "East Boston",
-   "date": "2026-10-27",
-   "rank": 15
-  },
-  {
-   "h": "State mails letters to help residents claim lost money",
-   "sum": "The treasurer's office is testing a new approach that contacts people directly about unclaimed property instead of relying on an online search.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/27/massachusetts-unclaimed-property-letter",
-   "town": "Statewide",
-   "date": "2026-10-27",
-   "rank": 16
   },
   {
    "h": "Red Line to pick up speed between JFK/UMass and North Quincy",
@@ -162,15 +99,6 @@
    "town": "Statewide",
    "date": "2026-10-29",
    "rank": 18
-  },
-  {
-   "h": "Galvin urges voters to cast ballots early",
-   "sum": "The secretary of state expects a slower Election Day and encourages voters to use early voting.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/28/massachusetts-election-day-ballot-questions-bill-galvin-early-voting",
-   "town": "Statewide",
-   "date": "2026-10-28",
-   "rank": 19
   },
   {
    "h": "High-end Japanese restaurant group from a James Beard winner heading to Boston",
@@ -207,60 +135,6 @@
    "town": "Attleboro",
    "date": "2026-10-29",
    "rank": 23
-  },
-  {
-   "h": "mRNA cancer vaccine cuts melanoma recurrence in study",
-   "sum": "Cambridge-based Moderna and partner Merck report their vaccine lowered the chance of melanoma returning.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/moderna-mrna-cancer-vaccine-melanoma-study-results",
-   "town": "Cambridge",
-   "date": "2026-10-23",
-   "rank": 24
-  },
-  {
-   "h": "MWRA picks MassDOT highway chief Gulliver as its new leader",
-   "sum": "Jonathan Gulliver will run the agency that provides water and sewer service to about 3.1 million people.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/22/mwra-water-jonathan-gulliver-massdot",
-   "town": "Statewide",
-   "date": "2026-10-22",
-   "rank": 25
-  },
-  {
-   "h": "Glass shards turn up on a Swampscott school field",
-   "sum": "Town officials are dealing with what they call an odd problem of glass contaminating a school athletic field.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/swampscott-mass-glass-school-field/4039455/",
-   "town": "Swampscott",
-   "date": "2026-10-29",
-   "rank": 26
-  },
-  {
-   "h": "Brigham nurses vote down tentative contract",
-   "sum": "Nurses at Brigham and Women's Hospital rejected the deal and want to return to bargaining.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/brigham-nurses-union-contract-vote-no",
-   "town": "Mission Hill",
-   "date": "2026-10-23",
-   "rank": 27
-  },
-  {
-   "h": "Which Massachusetts ZIP codes made the Wealthy 1000 list",
-   "sum": "The annual national ranking of the richest ZIP codes includes a number of Massachusetts communities.",
-   "outlet": "Boston Business Journal",
-   "url": "https://www.nbcboston.com/boston-business-journal/which-areas-in-massachusetts-made-the-national-wealthy-1000-list/4039235/",
-   "town": "Statewide",
-   "date": "2026-10-28",
-   "rank": 28
-  },
-  {
-   "h": "Boston opens public comment on its yearly housing and community report",
-   "sum": "The city is taking resident feedback on its annual performance report for federal housing and community development funds.",
-   "outlet": "City of Boston",
-   "url": "https://www.boston.gov/news/request-public-comment-py25-consolidated-annual-performance-and-evaluation-report",
-   "town": "Boston",
-   "date": "2026-10-23",
-   "rank": 29
   }
  ]
 }
