@@ -48,7 +48,7 @@ window.evPoster=function(a,s){try{
  else if(st==='fair')h2=bunting(h)+k+title+'<span class="ep-d">'+H(dl)+(ven?' · '+ven:'')+'</span>';
  else h2=bauhaus(GALPAL[h%3],h)+k+title+'<span class="ep-foot"><span class="ep-d">'+H(dl)+'</span><span class="ep-v">'+vl+'</span></span>';
  const box=a.parentNode;box.classList.add('evp');['border','border-top','outline'].forEach(x=>box.style.setProperty(x,'0','important'));
- a.innerHTML='<span class="ep ep-'+st+'" style="'+sty+'">'+h2+'</span>';
+ a.innerHTML='<span class="ep ep-'+st+' pv'+(h%4)+'" style="'+sty+'">'+h2+'</span>';
 }catch(_){}};
 /* --- big poster (portrait 2:3, the flipping box under the cover) --- */
 window.bigPoster=function(e,region){try{
@@ -65,7 +65,7 @@ window.bigPoster=function(e,region){try{
  else if(st==='club')b='<span class="laser"></span><span class="floor"></span>'+eq(24)+'<span class="bp-k">'+reg+' · Live</span>'+title+'<span class="bp-d">'+H(w.dw)+' · '+H(w.MO)+' '+w.DY+(w.tm?' · '+H(w.tm):'')+'</span><span class="bp-v">'+ven+'</span>'+go;
  else if(st==='fair')b=bunting(h)+'<span class="bp-k">'+KICK.fair+'</span>'+title+'<span class="bp-ticket"><b>'+H(w.DW)+'</b><b class="n">'+H(w.MON)+' '+w.DY+'</b>'+(w.tm?'<b>'+H(w.tm)+'</b>':'')+'</span><span class="bp-v">'+ven+(addr?'<small>'+addr+'</small>':'')+'</span>'+go;
  else b=bauhaus(GALPAL[h%3],h)+'<span class="bp-k">'+KICK.gallery+' · '+reg+'</span>'+title+'<span class="bp-d">'+H(w.DW)+', '+H(w.MON)+' '+w.DY+(w.tm?' · '+H(w.tm):'')+'</span><span class="bp-v">'+ven+(addr?'<small>'+addr+'</small>':'')+'</span>'+go;
- return '<span class="bp bp-'+st+'" style="'+sty+'">'+b+'</span>';
+ return '<span class="bp bp-'+st+' pv'+(h%4)+'" style="'+sty+'">'+b+'</span>';
 }catch(_){return null}};
 
 /* --- story & headline cards: every margin card is artwork --- */
@@ -99,21 +99,40 @@ function refit(){document.querySelectorAll('[data-fit]').forEach(e=>{e.style.fon
 new MutationObserver(()=>requestAnimationFrame(fitAll)).observe(document.documentElement,{childList:true,subtree:true});
 addEventListener('resize',()=>{document.querySelectorAll('.ep[data-sc]').forEach(e=>delete e.dataset.sc);refit()});setInterval(scaleAll,1500);
 })();
-/* Top story box: alternates the story with full posters for the biggest upcoming shows */
+/* Top story box: story -> flips to the details (times, places) -> story -> poster of a big show -> ... */
 (function(){
+const H4=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const BIG=/madison square|msg|barclays|radio city|beacon|td garden|fenway|gillette|mgm music hall|agganis|wang|citizens|boch|amica|ppac|providence performing|vets|ryan center|bally|stadium theatre|park theatre|carnegie|lincoln center|geffen|metropolitan opera|symphony hall|apollo|kings theatre|united palace|brooklyn paramount|terminal 5|hammerstein|emerson colonial|trinity rep|newport/i;
-let i=0,on=false,timer=0;
+const STOP=/^(the|and|with|at|in|on|of|for|a|an|to|its|his|her|their|from|into|brings|returns|night|show|shows|live|new|what|expect|plays|marks|years|tour|nov|oct|dec)$/i;
+let pi=0,step=0;
 function region(){try{const t=(window.jtEvPool()[0]||{}).tag||'';const r=t.split(' · ')[0].replace(/^(IN|ON)\s+(THE\s+)?/i,'').toLowerCase();return r==='island'?'Jamestown':r.replace(/\b\w/g,c=>c.toUpperCase())}catch(_){return ''}}
-function list(){try{const P=(window.jtEvPool&&window.jtEvPool())||[];const E=P.map(p=>p.ev).filter(Boolean);const big=E.filter(e=>BIG.test(e.venue||''));return (big.length>=4?big:E).slice(0,24)}catch(_){return[]}}
+function evs(){try{return ((window.jtEvPool&&window.jtEvPool())||[]).map(p=>p.ev).filter(Boolean)}catch(_){return[]}}
+function bigList(){const E=evs();const big=E.filter(e=>BIG.test(e.venue||''));return (big.length>=4?big:E).slice(0,24)}
+function fmtD(ds){const d=ds?new Date(ds+'T12:00:00'):null;return d?d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}):''}
+function details(slug){const s=(typeof STORIES!=='undefined'&&STORIES.find(x=>x.slug===slug))||null;if(!s)return null;
+ /* 1. a table written in the story */
+ for(const b of (s.body||[])){if(typeof b==='string'&&b.startsWith('#T ')){try{const T=JSON.parse(b.slice(3));if(T.rows&&T.rows.length&&!/temp|wind|weather/i.test((T.head||[]).join(' ')))return {head:T.title||'The details',rows:T.rows.slice(0,8).map(r=>[r[0],r[1],r[2]||''])}}catch(_){}}}
+ /* 2. calendar listings that match the story */
+ const words=String(s.title).replace(/[^A-Za-z0-9' ]/g,' ').split(/\s+/).filter(w=>w.length>3&&!STOP.test(w));
+ const E=evs();const hits=E.filter(e=>{const a=(e.artists||'').toLowerCase(),v=(e.venue||'').toLowerCase();const W=words.map(w=>w.toLowerCase().replace(/'s$/,'')).filter(w=>!v.includes(w)&&w.length>3);return W.length&&W.filter(w=>a.includes(w)).length>=Math.min(2,W.length)});
+ if(hits.length)return {head:'When and where',rows:hits.slice(0,8).map(e=>[fmtD(e.date)+(e.time?' · '+e.time:''),e.artists,[e.venue,e.address&&!String(e.address).includes(e.venue||'@@')?String(e.address).split(',')[0]:''].filter(Boolean).join(', ')])};
+ /* 3. what else is on tonight and tomorrow */
+ const td=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});const tm=new Date(Date.now()+864e5).toLocaleDateString('en-CA',{timeZone:'America/New_York'});
+ const near=E.filter(e=>e.date===td||e.date===tm).slice(0,8);if(!near.length)return null;
+ return {head:'Also tonight & tomorrow',rows:near.map(e=>[(e.date===td?'Tonight':'Tomorrow')+(e.time?' · '+e.time:''),e.artists,e.venue||''])}}
+function itnHTML(slug,title){const D=details(slug);if(!D)return null;
+ return '<span class="itn-in"><span class="itn-k">The details</span><span class="itn-h">'+H4(D.head)+'</span><span class="itn-st">'+H4(title)+'</span><span class="itn-rows">'+D.rows.map(r=>'<span class="itn-r"><b>'+H4(r[0])+'</b><span><i>'+H4(r[1])+'</i>'+(r[2]?'<small>'+H4(r[2])+'</small>':'')+'</span></span>').join('')+'</span><span class="itn-go">Read the full story →</span></span>'}
+function layer(box,cls){let o=box.querySelector(':scope>.'+cls);if(!o){o=document.createElement('span');o.className=cls;box.appendChild(o);
+ if(cls==='bpx')o.addEventListener('click',e=>{if(!box.classList.contains('bpx-on'))return;e.preventDefault();e.stopPropagation();const u=o.dataset.href;if(u&&/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}},true)}return o}
+function turn(box,fn){box.style.transition='transform .33s ease-in';box.style.transform='perspective(1600px) rotateY(90deg)';
+ setTimeout(()=>{fn();box.style.transition='none';box.style.transform='perspective(1600px) rotateY(-90deg)';requestAnimationFrame(()=>requestAnimationFrame(()=>{box.style.transition='transform .33s ease-out';box.style.transform='';setTimeout(()=>{box.style.transition=''},360)}))},340)}
 function tick(){const box=document.querySelector('.cvr .cvbrk');if(!box||document.hidden||box.matches(':hover'))return;
- let ov=box.querySelector(':scope>.bpx');
- if(!ov){ov=document.createElement('span');ov.className='bpx';box.appendChild(ov);
-  ov.addEventListener('click',e=>{if(!box.classList.contains('bpx-on'))return;e.preventDefault();e.stopPropagation();const u=ov.dataset.href;if(u){if(/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}}},true)}
- if(on){box.classList.remove('bpx-on');on=false;return}
- const L=list();if(!L.length)return;const e=L[i++%L.length];const h=window.bigPoster&&window.bigPoster(e,region());if(!h)return;
- ov.innerHTML=h;ov.dataset.href=e.url||'';box.classList.add('bpx-on');on=true;
- requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})}
-setTimeout(()=>{tick();timer=setInterval(tick,9000)},9000);
+ const slug=box.dataset.story,title=(box.querySelector('b')||{}).textContent||'';const phase=step++%4;
+ if(phase===0){const h=itnHTML(slug,title);if(!h){step++;return tick()}const o=layer(box,'itn');turn(box,()=>{o.innerHTML=h;box.classList.remove('bpx-on');box.classList.add('itn-on')})}
+ else if(phase===1){turn(box,()=>box.classList.remove('itn-on'))}
+ else if(phase===2){const L=bigList();if(!L.length)return;const e=L[pi++%L.length];const h=window.bigPoster&&window.bigPoster(e,region());if(!h)return;const o=layer(box,'bpx');o.innerHTML=h;o.dataset.href=e.url||'';box.classList.remove('itn-on');box.classList.add('bpx-on');requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})}
+ else box.classList.remove('bpx-on')}
+setTimeout(()=>{tick();setInterval(tick,10000)},9000);
 })();
 /* Business cards on the left: a wave flips them one by one into events, then back to businesses */
 (function(){
@@ -123,7 +142,7 @@ function style(e,t){try{return (window.__epKind&&window.__epKind(e,t))||'gig'}ca
 function face(e,n){const t=String(e.artists||'').split(/\s+[|@]\s+/)[0].replace(/\s*\((also|rescheduled)[^)]*\)/i,'').trim();const st=style(e,t);
  const d=e.date?new Date(e.date+'T12:00:00'):null,MO=d?d.toLocaleDateString('en-US',{month:'short'}).toUpperCase():'',DY=d?d.getDate():'',DW=d?d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase():'';
  const tm=String(e.time||'').replace(/:00/g,'').replace(/\s*(am|pm)/gi,(m,x)=>' '+x.toUpperCase()).trim();
- return '<span class="fb fb-'+st+' fbv'+(n%4)+'"><span class="fb-d"><i>'+H2(MO)+'</i><b>'+DY+'</b></span><span class="fb-x"><span class="fb-t">'+H2(t)+'</span><span class="fb-v">'+H2([DW,tm,e.venue].filter(Boolean).join(' · '))+'</span></span></span>'}
+ let hh=7;for(const ch of t)hh=(hh*31+ch.charCodeAt(0))>>>0;return '<span class="fb fb-'+st+' fbv'+(n%4)+' pv'+(hh%4)+'"><span class="fb-d"><i>'+H2(MO)+'</i><b>'+DY+'</b></span><span class="fb-x"><span class="fb-t">'+H2(t)+'</span><span class="fb-v">'+H2([DW,tm,e.venue].filter(Boolean).join(' · '))+'</span></span></span>'}
 function rows(){const L=document.getElementById('dirList');if(!L||!L.offsetParent)return[];const R=L.getBoundingClientRect();
  return [...L.querySelectorAll(':scope>.drow')].filter(r=>{const b=r.getBoundingClientRect();return b.height>20&&b.height<90&&b.bottom>R.top&&b.top<R.bottom})}
 function flip(r,toEv,e,n){return new Promise(res=>{if(r.matches(':hover')||(r.querySelector('.dd')&&!r.querySelector('.dd').hidden)){res();return}
