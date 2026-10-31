@@ -123,20 +123,25 @@ function details(slug){const s=(typeof STORIES!=='undefined'&&STORIES.find(x=>x.
  /* 2. calendar listings that match the story */
  const words=String(s.title).replace(/[^A-Za-z0-9' ]/g,' ').split(/\s+/).filter(w=>w.length>3&&!STOP.test(w));
  const E=evs();const hits=E.filter(e=>{const a=(e.artists||'').toLowerCase(),v=(e.venue||'').toLowerCase();const W=words.map(w=>w.toLowerCase().replace(/'s$/,'')).filter(w=>!v.includes(w)&&w.length>3);return W.length&&W.filter(w=>a.includes(w)).length>=Math.min(2,W.length)});
- if(hits.length)return {head:'When and where',rows:hits.slice(0,8).map(e=>[fmtD(e.date)+(e.time?' · '+e.time:''),e.artists,[e.venue,e.address&&!String(e.address).includes(e.venue||'@@')?String(e.address).split(',')[0]:''].filter(Boolean).join(', ')])};
+ if(hits.length){const nm=e=>String(e.artists||'').split(/\s+[|@]\s+/)[0];const row=e=>[fmtD(e.date)+(e.time?' · '+e.time:''),nm(e),e.venue||''];const used=new Set(hits.map(e=>e.date+e.artists));const rows=hits.slice(0,3).map(row);
+  const wk=new Date(Date.now()+7*864e5).toLocaleDateString('en-CA',{timeZone:'America/New_York'});const v=(hits[0].venue||'').toLowerCase().replace(/[^a-z]/g,'').slice(0,10);
+  const same=E.filter(e=>!used.has(e.date+e.artists)&&e.date<=wk&&v&&(e.venue||'').toLowerCase().replace(/[^a-z]/g,'').startsWith(v)).slice(0,4);
+  if(same.length){rows.push(['§','Also this week at '+hits[0].venue,'']);same.forEach(e=>{used.add(e.date+e.artists);const r=row(e);r[2]='';rows.push(r)})}
+  const room=14-rows.length;if(room>1){const town=E.filter(e=>!used.has(e.date+e.artists)&&e.date<=wk).slice(0,room-1);if(town.length){rows.push(['§','Around town this week','']);town.forEach(e=>rows.push(row(e)))}}
+  return {head:'When and where',rows}}
  /* 3. what else is on tonight and tomorrow */
  const td=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});const tm=new Date(Date.now()+864e5).toLocaleDateString('en-CA',{timeZone:'America/New_York'});
  const near=E.filter(e=>e.date===td||e.date===tm).slice(0,8);if(!near.length)return null;
- return {head:'Also tonight & tomorrow',rows:near.map(e=>[(e.date===td?'Tonight':'Tomorrow')+(e.time?' · '+e.time:''),e.artists,e.venue||''])}}
+ return {head:'Also tonight & tomorrow',rows:near.map(e=>[(e.date===td?'Tonight':'Tomorrow')+(e.time?' · '+e.time:''),String(e.artists||'').split(/\s+[|@]\s+/)[0],e.venue||''])}}
 function itnHTML(slug,title){const D=details(slug);if(!D)return null;
- return '<span class="itn-in"><span class="itn-k">The details</span><span class="itn-h">'+H4(D.head)+'</span><span class="itn-st">'+H4(title)+'</span><span class="itn-rows">'+D.rows.map(r=>'<span class="itn-r"><b>'+H4(r[0])+'</b><span><i>'+H4(r[1])+'</i>'+(r[2]?'<small>'+H4(r[2])+'</small>':'')+'</span></span>').join('')+'</span><span class="itn-go">Read the full story →</span></span>'}
+ return '<span class="itn-in"><span class="itn-k">The details</span><span class="itn-h">'+H4(D.head)+'</span><span class="itn-st">'+H4(title)+'</span><span class="itn-rows">'+D.rows.map(r=>r[0]==='§'?'<span class="itn-sec">'+H4(r[1])+'</span>':'<span class="itn-r"><b>'+H4(r[0])+'</b><span><i>'+H4(r[1])+'</i>'+(r[2]?'<small>'+H4(r[2])+'</small>':'')+'</span></span>').join('')+'</span><span class="itn-go">Read the full story →</span></span>'}
 function layer(box,cls){let o=box.querySelector(':scope>.'+cls);if(!o){o=document.createElement('span');o.className=cls;box.appendChild(o);
  if(cls==='bpx')o.addEventListener('click',e=>{if(!box.classList.contains('bpx-on'))return;e.preventDefault();e.stopPropagation();const u=o.dataset.href;if(u&&/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}},true)}return o}
 function turn(box,fn){box.style.transition='transform .33s ease-in';box.style.transform='perspective(1600px) rotateY(90deg)';
  setTimeout(()=>{fn();box.style.transition='none';box.style.transform='perspective(1600px) rotateY(-90deg)';requestAnimationFrame(()=>requestAnimationFrame(()=>{box.style.transition='transform .33s ease-out';box.style.transform='';setTimeout(()=>{box.style.transition=''},360)}))},340)}
 function tick(){const box=document.querySelector('.cvr .cvbrk');if(!box||document.hidden||box.matches(':hover'))return;
  const slug=box.dataset.story,title=(box.querySelector('b')||{}).textContent||'';const phase=step++%4;
- if(phase===0){const h=itnHTML(slug,title);if(!h){step++;return tick()}const o=layer(box,'itn');turn(box,()=>{o.innerHTML=h;box.classList.remove('bpx-on');box.classList.add('itn-on')})}
+ if(phase===0){const h=itnHTML(slug,title);if(!h){step++;return tick()}const o=layer(box,'itn');turn(box,()=>{o.innerHTML=h;box.classList.remove('bpx-on');box.classList.add('itn-on');requestAnimationFrame(()=>{const R=o.querySelector('.itn-rows');let g=0;while(R&&R.scrollHeight>R.clientHeight+1&&g++<30){const k=R.lastElementChild;if(!k)break;k.remove();const l=R.lastElementChild;if(l&&l.classList.contains('itn-sec'))l.remove()}})})}
  else if(phase===1){turn(box,()=>box.classList.remove('itn-on'))}
  else if(phase===2){const L=bigList();if(!L.length)return;const e=L[pi++%L.length];const h=window.bigPoster&&window.bigPoster(e,region());if(!h)return;const o=layer(box,'bpx');o.innerHTML=h;o.dataset.href=e.url||'';box.classList.remove('itn-on');box.classList.add('bpx-on');requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})}
  else box.classList.remove('bpx-on')}

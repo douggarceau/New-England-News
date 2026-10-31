@@ -255,8 +255,8 @@ html body #coverSlot .cvr .cvbrk.itn-on>:not(.itn):not(.bpx){visibility:hidden}
 html body #coverSlot .itn .itn-k{font:800 2.8cqw/1 "Helvetica Neue",Arial,sans-serif!important;letter-spacing:.32em;text-transform:uppercase;color:#3a0508!important;background:linear-gradient(180deg,#ffe08a,#e2a017);align-self:flex-start;padding:1.6cqw 2.6cqw;border-radius:1cqw;box-shadow:0 0 3cqw #ffcf4d66}
 html body #coverSlot .itn .itn-h{font:500 7.4cqw/1.05 EpPlayfair,Georgia,serif!important;font-style:italic!important;color:#ffe7a3!important;margin-top:2cqw;text-shadow:0 0 4cqw #ff9d2a44}
 html body #coverSlot .itn .itn-st{font:700 2.9cqw/1.3 "Helvetica Neue",Arial,sans-serif!important;letter-spacing:.14em;text-transform:uppercase;color:#d9b98a!important;padding-bottom:2cqw;border-bottom:1px solid #ffcf5a44}
-.itn .itn-rows{display:flex;flex-direction:column;gap:0;overflow:hidden;flex:1;min-height:0}
-.itn .itn-r{display:grid;grid-template-columns:30% 1fr;gap:3cqw;padding:2.2cqw 0;border-bottom:1px dashed #ffcf5a26;align-items:baseline}
+.itn .itn-rows{display:flex;flex-direction:column;gap:0;overflow:hidden;flex:1 1 0;min-height:0}
+.itn .itn-r{display:grid;grid-template-columns:34% 1fr;gap:3cqw;flex:none;padding:2.2cqw 0;border-bottom:1px dashed #ffcf5a26;align-items:baseline}
 html body #coverSlot .itn .itn-r>b{font:800 3.1cqw/1.25 "Helvetica Neue",Arial,sans-serif!important;color:#ffcf5a!important;text-shadow:0 0 2cqw #ff9d2a55!important;letter-spacing:.02em}
 html body #coverSlot .itn .itn-r i{display:block;font:600 3.7cqw/1.25 Georgia,serif!important;font-style:normal!important;color:#fff6dc!important}
 html body #coverSlot .itn .itn-r small{display:block!important;font:500 2.9cqw/1.3 "Helvetica Neue",Arial,sans-serif!important;color:#c9b08a!important;margin-top:.6cqw}
@@ -350,3 +350,5 @@ html body .lsrow .lspot.evp .ep-blue.pv1 .ep-d b,html body .lsrow .lspot.evp .ep
 .bp-worship .wr b{font:600 4.2cqw/1.2 Georgia,serif;color:#2a1d0c}
 .bp-worship .wr i{font:700 2.9cqw/1.3 "Helvetica Neue",Arial,sans-serif;font-style:normal;letter-spacing:.06em;color:#8a6420;text-transform:uppercase}
 .bp-worship .wf{margin-top:auto;font:500 2.6cqw/1.3 "Helvetica Neue",Arial,sans-serif;color:#7a6a50;letter-spacing:.04em}
+html body #coverSlot .itn .itn-sec{display:block;font:800 2.6cqw/1 "Helvetica Neue",Arial,sans-serif!important;letter-spacing:.28em;text-transform:uppercase;color:#ff9d4a!important;padding:3cqw 0 .6cqw;text-shadow:0 0 2cqw #ff7a1a55}
+html body #coverSlot .itn .itn-r{padding:1.5cqw 0}
