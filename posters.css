@@ -216,3 +216,26 @@ html body #coverSlot .cvr .cvbrk>.bpx .bp-tear b.n{font:400 11cqw/1 EpAnton,Impa
 html body #coverSlot .cvr .cvbrk>.bpx .bp-ticket b{font:800 3.4cqw/1.3 "Helvetica Neue",Arial,sans-serif!important;color:#fff!important}
 html body #coverSlot .cvr .cvbrk>.bpx .bp-ticket b.n{font:400 8cqw/1.05 EpAbril,Georgia,serif!important}
 html body #coverSlot .cvr .cvbrk>.bpx .bp-v small{font:500 2.8cqw/1.3 "Helvetica Neue",Arial,sans-serif!important;opacity:.8}
+/* Business cards: event side */
+#dirList>.drow{transform-origin:50% 50%;will-change:transform}
+#dirList>.drow>.fb{display:none}
+#dirList>.drow.evf>.fb{position:absolute;inset:0;z-index:4;display:grid;grid-template-columns:46px 1fr;align-items:stretch;border-radius:7px;overflow:hidden;cursor:pointer;box-shadow:0 0 0 1px #0006,0 6px 16px #0008;font-family:"Helvetica Neue",Arial,sans-serif}
+#dirList>.drow.evf>.dn{visibility:hidden}
+.fb .fb-d{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;line-height:1}
+.fb .fb-d i{font:800 9px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.14em;font-style:normal}
+.fb .fb-d b{font:400 22px/1 EpAnton,Impact,sans-serif}
+.fb .fb-x{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:0 10px;gap:3px}
+.fb .fb-t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:16px;line-height:1.05}
+.fb .fb-v{font:700 9px/1.2 "Helvetica Neue",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:.85}
+.fb-gala{background:linear-gradient(180deg,#fffaf0,#efe1c2);color:#1d1408;box-shadow:inset 0 0 0 2px #f6ecd4,inset 0 0 0 3px #a8822f!important}
+.fb-gala .fb-d{background:#1d1408;color:#e8c977}.fb-gala .fb-t{font-family:EpPlayfair,Georgia,serif;font-style:italic;font-size:17px}.fb-gala .fb-v{color:#7a5a1a}
+.fb-marquee{background:repeating-linear-gradient(90deg,#4e050e 0 6px,#6d0a15 6px 10px);color:#fff4d6}
+.fb-marquee .fb-d{background:linear-gradient(180deg,#ffe08a,#e2a017);color:#3a0508}.fb-marquee .fb-t{font-family:EpBebas,"Arial Narrow",sans-serif;font-size:21px;letter-spacing:.02em;text-shadow:0 0 10px #ffbf3f88}.fb-marquee .fb-v{color:#ffd36a}
+.fb-gig{color:#fff}.fb-gig .fb-t{font-family:EpAnton,Impact,sans-serif;text-transform:uppercase;font-size:19px;letter-spacing:.01em}
+.fb-gig.fbv0{background:#e8341c}.fb-gig.fbv1{background:#1b4dff}.fb-gig.fbv2{background:#ff4fa3}.fb-gig.fbv3{background:#0f9d6b}
+.fb-gig .fb-d{background:#ffd400;color:#111}
+.fb-blue{background:linear-gradient(90deg,#0b2a5b,#123a7a);color:#fff}.fb-blue .fb-d{background:#e8b818;color:#0b2a5b}.fb-blue .fb-t{font-family:EpJost,Arial,sans-serif;font-weight:800;font-size:17px}.fb-blue .fb-v{color:#e8b818}
+.fb-club{background:radial-gradient(80% 140% at 100% 0,#ff2bd6aa,transparent 60%),#12052a;color:#fff}.fb-club .fb-d{background:#00e5ff;color:#12052a}.fb-club .fb-t{font-family:EpAudio,Arial,sans-serif;text-transform:uppercase;font-size:14px;text-shadow:-1px 0 #ff2bd6,1px 0 #00e5ff}.fb-club .fb-v{color:#7ff6ff}
+.fb-fair{background:repeating-conic-gradient(from 0deg at 0 100%,#ffd75e 0 6deg,#ffc02e 6deg 12deg);color:#5a1606}.fb-fair .fb-d{background:#c8321c;color:#fff}.fb-fair .fb-t{font-family:EpAbril,Georgia,serif;font-size:16px}.fb-fair .fb-v{color:#8a2a10}
+.fb-gallery{background:#f5f3ee;color:#111;box-shadow:inset -8px 0 0 #e3170a!important}.fb-gallery .fb-d{background:#1b4dff;color:#fff}.fb-gallery .fb-t{font-family:EpJost,Arial,sans-serif;font-weight:500;font-size:16px}.fb-gallery .fb-v{color:#555}
+#dirList>.drow.evf:hover>.fb{filter:brightness(1.1)}

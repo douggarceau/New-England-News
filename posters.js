@@ -18,6 +18,7 @@ function kind(e,t){const g=String(e.genre||'').toLowerCase(),T=t.toLowerCase(),T
 function when(e){const d=e.date?new Date(e.date+'T12:00:00'):null;
  return {DW:d?d.toLocaleDateString('en-US',{weekday:'long'}):'',dw:d?d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase():'',MO:d?d.toLocaleDateString('en-US',{month:'short'}).toUpperCase():'',MON:d?d.toLocaleDateString('en-US',{month:'long'}):'',DY:d?d.getDate():'',
   tm:String(e.time||'').replace(/:00/g,'').replace(/\s*(am|pm)/gi,(m,x)=>' '+x.toUpperCase()).trim()}}
+window.__epKind=(e,t)=>kind(e,t);
 const KICK={gala:'In Concert',marquee:'Now Playing',gig:'Live Music',blue:'Live Jazz',club:'Live',fair:'Come One, Come All',gallery:'The Arts'};
 const GIGPAL=[{bg:'#e8341c',ink:'#fff',acc:'#ffd400'},{bg:'#1b4dff',ink:'#fff',acc:'#ffd400'},{bg:'#ffcc00',ink:'#111',acc:'#e8341c'},{bg:'#0f9d6b',ink:'#fff',acc:'#ffe14d'},{bg:'#ff4fa3',ink:'#fff',acc:'#111'},{bg:'#111',ink:'#fff',acc:'#ff6a1a'}];
 const GALPAL=[['#ffd400','#e3170a','#1b4dff'],['#e3170a','#1b4dff','#ffd400'],['#1b4dff','#ffd400','#e3170a']];
@@ -113,4 +114,29 @@ function tick(){const box=document.querySelector('.cvr .cvbrk');if(!box||documen
  ov.innerHTML=h;ov.dataset.href=e.url||'';box.classList.add('bpx-on');on=true;
  requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})}
 setTimeout(()=>{tick();timer=setInterval(tick,9000)},9000);
+})();
+/* Business cards on the left: a wave flips them one by one into events, then back to businesses */
+(function(){
+const H2=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KIND=['gala','marquee','gig','blue','club','fair','gallery'];
+function style(e,t){try{return (window.__epKind&&window.__epKind(e,t))||'gig'}catch(_){return 'gig'}}
+function face(e,n){const t=String(e.artists||'').split(/\s+[|@]\s+/)[0].replace(/\s*\((also|rescheduled)[^)]*\)/i,'').trim();const st=style(e,t);
+ const d=e.date?new Date(e.date+'T12:00:00'):null,MO=d?d.toLocaleDateString('en-US',{month:'short'}).toUpperCase():'',DY=d?d.getDate():'',DW=d?d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase():'';
+ const tm=String(e.time||'').replace(/:00/g,'').replace(/\s*(am|pm)/gi,(m,x)=>' '+x.toUpperCase()).trim();
+ return '<span class="fb fb-'+st+' fbv'+(n%4)+'"><span class="fb-d"><i>'+H2(MO)+'</i><b>'+DY+'</b></span><span class="fb-x"><span class="fb-t">'+H2(t)+'</span><span class="fb-v">'+H2([DW,tm,e.venue].filter(Boolean).join(' · '))+'</span></span></span>'}
+function rows(){const L=document.getElementById('dirList');if(!L||!L.offsetParent)return[];const R=L.getBoundingClientRect();
+ return [...L.querySelectorAll(':scope>.drow')].filter(r=>{const b=r.getBoundingClientRect();return b.height>20&&b.height<90&&b.bottom>R.top&&b.top<R.bottom})}
+function flip(r,toEv,e,n){return new Promise(res=>{if(r.matches(':hover')||(r.querySelector('.dd')&&!r.querySelector('.dd').hidden)){res();return}
+ r.style.transition='transform .26s ease-in';r.style.transform='perspective(700px) rotateX(90deg)';
+ setTimeout(()=>{if(toEv){let f=r.querySelector(':scope>.fb');if(f)f.remove();r.insertAdjacentHTML('beforeend',face(e,n));f=r.querySelector(':scope>.fb');f.dataset.href=e.url||'';r.classList.add('evf')}else{r.classList.remove('evf');const f=r.querySelector(':scope>.fb');if(f)f.remove()}
+  r.style.transition='none';r.style.transform='perspective(700px) rotateX(-90deg)';
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{r.style.transition='transform .26s ease-out';r.style.transform='';setTimeout(()=>{r.style.transition='';res()},280)}))},260)})}
+const wait=ms=>new Promise(r=>setTimeout(r,ms));let k=0;
+async function loop(){for(;;){await wait(7000);if(document.hidden||matchMedia('(prefers-reduced-motion:reduce)').matches)continue;
+ const P=((window.jtEvPool&&window.jtEvPool())||[]).map(p=>p.ev).filter(Boolean);const R=rows();if(!P.length||!R.length)continue;
+ for(let i=0;i<R.length;i++){await flip(R[i],true,P[(k+i)%P.length],i);await wait(260)}k+=R.length;
+ await wait(6500);
+ const B=[...document.querySelectorAll('#dirList>.drow.evf')];for(const r of B){await flip(r,false);await wait(260)}}}
+document.addEventListener('click',e=>{const f=e.target.closest&&e.target.closest('#dirList .drow.evf>.fb');if(!f)return;e.preventDefault();e.stopPropagation();const u=f.dataset.href;if(u&&/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}},true);
+setTimeout(loop,2000);
 })();
