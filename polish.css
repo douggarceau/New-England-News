@@ -1,0 +1,49 @@
+/* Lighting pass: page titles lit like signs, top story as a lit stage, warmer cards. Loaded last. */
+
+/* Page titles: gold neon sign with a slow sheen (crime watch keeps its own red) */
+html body h2.room:not(.cwh){background:linear-gradient(100deg,#fff4cf 0%,#ffcf5a 22%,#fff8e1 32%,#ffb53d 48%,#ffe7a3 62%,#ffcf5a 80%,#fff4cf 100%) 0 0/220% 100%!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 0 1px #ffd77a) drop-shadow(0 0 14px #ff9d2a66) drop-shadow(0 2px 0 #2a1600)!important;animation:plSheen 9s linear infinite!important;border-bottom:0!important;padding-bottom:12px!important;position:relative}
+html body h2.room:not(.cwh)::after{content:"";position:absolute;left:0;bottom:0;width:min(420px,70%);height:3px;border-radius:3px;background:linear-gradient(90deg,#ffcf5a,#ff7a1a 60%,transparent);box-shadow:0 0 12px #ff9d2a,0 0 2px #ffe7a3}
+@keyframes plSheen{to{background-position:-220% 0}}
+
+/* Top story box: a lit stage instead of a flat slab */
+html body .cvbrk:not([class*="th-"]){background:radial-gradient(75% 55% at 50% -8%,#ffd8a066 0,transparent 62%),radial-gradient(120% 80% at 50% 120%,#ff3b1f55 0,transparent 60%),repeating-linear-gradient(90deg,#43050c 0 9px,#5c0812 9px 14px,#4c060e 14px 21px)!important;border:1px solid #ffcf5a55!important;box-shadow:inset 0 0 0 1px #00000080,inset 0 0 60px #000a,0 0 30px #ff5a2a33,0 14px 34px #000c!important;position:relative;overflow:hidden}
+html body .cvbrk:not([class*="th-"])::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,#fff3d01a 45%,#fff3d038 50%,#fff3d01a 55%,transparent 70%) 0 0/250% 100% no-repeat;animation:plSweep 7s ease-in-out infinite;pointer-events:none}
+@keyframes plSweep{0%,50%{background-position:120% 0}100%{background-position:-60% 0}}
+html body .cvbrk:not([class*="th-"]) .spr-tag{background:linear-gradient(180deg,#ffe08a,#e2a017)!important;color:#3a0508!important;border:0!important;box-shadow:0 0 16px #ffcf4d88,0 1px 0 #7a4a00!important}
+html body .cvbrk:not([class*="th-"]) .spr-tag::before{color:#3a0508!important;text-shadow:none!important}
+html body .cvbrk:not([class*="th-"]) b{color:#fff6dc!important;text-shadow:0 0 22px #ffbf3f55,0 2px 0 #1a0204!important}
+html body .cvbrk:not([class*="th-"]) small{color:#f3dcc0!important}
+html body .cvbrk:not([class*="th-"]) .spr-go{color:#ffd36a!important;border-color:#ffd36a!important;box-shadow:0 0 14px #ffcf4d44!important}
+
+/* Section headers glow softly */
+html body .box>.bh>b{text-shadow:0 0 12px color-mix(in srgb,currentColor 55%,transparent)}
+
+/* Story grid cards: lift and glow on hover */
+html body .sgrid .sc{transition:transform .25s ease,box-shadow .25s ease,filter .25s}
+html body .sgrid .sc:hover{transform:translateY(-3px);box-shadow:0 12px 26px #000a,0 0 22px color-mix(in srgb,var(--tc,#ffcf5a) 35%,transparent)!important;filter:brightness(1.08)}
+
+/* Calendar rows: warm light from above, glowing date tiles */
+html body .cald .sh{background:linear-gradient(180deg,#ffffff0d,#ffffff03)!important;border-radius:10px;transition:transform .2s ease,box-shadow .2s ease,background .2s}
+html body .cald .sh:hover{transform:translateY(-2px);background:linear-gradient(180deg,#ffcf5a1c,#ffffff05)!important;box-shadow:0 10px 24px #000b,0 0 0 1px #ffcf5a44,0 0 20px #ff9d2a2a}
+html body .cald .sh .dt{background:linear-gradient(180deg,#2a1a08,#140c04)!important;border:1px solid #ffcf5a66!important;box-shadow:inset 0 1px 0 #ffe7a344,0 0 14px #ff9d2a22;color:#ffe7a3!important}
+html body .cald .sh .dt b{color:#fff4cf!important;text-shadow:0 0 10px #ffb53d88}
+html body .cald .sh .who>b{color:#fff!important}
+html body .dayh{color:#ffcf5a!important;text-shadow:0 0 10px #ff9d2a55}
+
+/* Filter tiles: the selected one is lit */
+html body .pads .pad{transition:box-shadow .2s,transform .2s,background .2s}
+html body .pads .pad:hover{transform:translateY(-1px);box-shadow:0 0 0 1px #ffcf5a66,0 0 16px #ff9d2a33}
+html body .pads .pad.on,html body .pads .pad[aria-pressed="true"],html body .pads .pad.act{background:linear-gradient(180deg,#ffcf5a33,#ff7a1a1a)!important;box-shadow:0 0 0 1px #ffcf5a,0 0 22px #ff9d2a55!important}
+
+/* Visit cards: light from the top edge, glow on hover */
+html body .vgrid .vcard{background:radial-gradient(120% 60% at 50% 0,#ffffff12,transparent 60%),linear-gradient(180deg,#141b26,#0b0f16)!important;border-radius:12px!important;transition:transform .25s ease,box-shadow .25s ease}
+html body .vgrid .vcard:hover{transform:translateY(-3px);box-shadow:0 14px 30px #000c,0 0 0 1px #6fe3d655,0 0 24px #2ec4b633}
+html body .vgrid .vcard h4{color:#fff!important;text-shadow:0 0 14px #6fe3d633}
+
+/* Reading page: gilded drop cap and subheads */
+html body .reader .body>p:first-child::first-letter{background:linear-gradient(180deg,#fff4cf,#ffb53d 60%,#c97a10);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 10px #ff9d2a55)}
+html body .reader .body h3{color:#ffcf5a!important;text-shadow:0 0 12px #ff9d2a33}
+html body .reader .body a{color:#ffcf5a;text-decoration-color:#ffcf5a66;text-underline-offset:3px}
+html body .reader h1{text-shadow:0 0 30px #ffffff14}
+
+@media (prefers-reduced-motion:reduce){html body h2.room:not(.cwh),html body .cvbrk::after{animation:none!important}}
