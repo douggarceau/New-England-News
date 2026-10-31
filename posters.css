@@ -352,3 +352,42 @@ html body .lsrow .lspot.evp .ep-blue.pv1 .ep-d b,html body .lsrow .lspot.evp .ep
 .bp-worship .wf{margin-top:auto;font:500 2.6cqw/1.3 "Helvetica Neue",Arial,sans-serif;color:#7a6a50;letter-spacing:.04em}
 html body #coverSlot .itn .itn-sec{display:block;font:800 2.6cqw/1 "Helvetica Neue",Arial,sans-serif!important;letter-spacing:.28em;text-transform:uppercase;color:#ff9d4a!important;padding:3cqw 0 .6cqw;text-shadow:0 0 2cqw #ff7a1a55}
 html body #coverSlot .itn .itn-r{padding:1.5cqw 0}
+
+/* ===== GPT artwork backgrounds (big posters) ===== */
+.bp.art .fan,.bp.art .bp-frame,.bp.art .cur,.bp.art .beam,.bp.art .spk,.bp.art .disc,.bp.art .horn,.bp.art .laser,.bp.art .floor,.bp.art .eq,.bp.art .bunt,.bp.art .bau,.bp.art .warch,.bp.art .wcross{display:none!important}
+.bp-gala.art{background:url(img/posters/gala.jpg) center/cover!important;color:#2a1d0c!important;padding-top:30cqw}
+.bp-gala.art .bp-t{color:#2a1d0c!important;text-shadow:none!important}.bp-gala.art .bp-k{margin-top:0;background:transparent;color:#8a6420!important}.bp-gala.art .bp-d,.bp-gala.art .bp-v{color:#3a2a10!important}.bp-gala.art .bp-go{color:#8a6420!important}
+.bp-marquee.art{background:url(img/posters/marquee.jpg) center/cover!important;padding:8cqw 10cqw 9cqw}
+.bp-marquee.art .bp-t{text-shadow:0 0 6cqw #ffbf3fcc,0 1cqw 0 #1a0204,0 0 1cqw #000!important}
+.bp-gig.art{--bg:#ffcc00!important;--ink:#141414!important;--acc:#e8341c!important;background:url(img/posters/gig.jpg) center/cover!important}
+.bp-gig.art::after{content:"";position:absolute;z-index:0;left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,transparent,#000c 60%);pointer-events:none}
+.bp-gig.art .bp-t{color:#141414!important;text-shadow:none!important;margin-top:4cqw}
+.bp-gig.art .bp-k{color:#141414!important}
+.bp-gig.art .bp-tear{position:relative;z-index:1}.bp-gig.art .bp-v{color:#fff!important;position:relative;z-index:1;text-shadow:0 1px 3px #000}.bp-gig.art .bp-go{position:relative;z-index:1;background:#ffcc00!important;color:#141414!important;border-color:#ffcc00!important}
+.bp-blue.art{background:url(img/posters/jazz.jpg) 80% 0/auto 62% no-repeat,#0b1b33!important;padding-top:64cqw}
+.bp-blue.art .bp-t{margin:2cqw 0 3cqw}.bp-blue.art .bp-k{max-width:none}
+.bp-club.art{background:url(img/posters/club.jpg) center/cover!important;padding:10cqw}
+.bp-club.art .bp-t{text-shadow:-.8cqw 0 #ff2bd6,.8cqw 0 #00e5ff,0 0 6cqw #ff2bd6,0 0 1.5cqw #000!important}
+.bp-fair.art{background:url(img/posters/fair.jpg) center/cover!important;padding:22cqw 9cqw 6cqw}
+.bp-fair.art .bp-ticket{background:transparent!important;box-shadow:none!important;mask:none!important;-webkit-mask:none!important;position:absolute;left:12%;right:12%;bottom:11.5%;height:13.5%;justify-content:center;padding:0}
+.bp-fair.art .bp-v{margin-top:auto;margin-bottom:28cqw}.bp-fair.art .bp-go{position:absolute;bottom:2.4cqw;left:50%;transform:translateX(-50%);background:#fff6d0;border-color:#fff6d0;font-size:2.6cqw;padding:1.6cqw 3cqw}
+.bp-gallery.art{background:url(img/posters/gallery.jpg) center/cover!important;color:#111!important}
+.bp-gallery.art .bp-k{background:#f4efe3!important;color:#111!important}.bp-gallery.art .bp-t,.bp-gallery.art .bp-go{color:#111!important}.bp-gallery.art .bp-v{color:#444!important}
+.bp-gallery.art .bp-t{background:#f4efe3e6;padding:2cqw 2cqw 1cqw;margin-left:-2cqw}
+.bp-worship.art{background:url(img/posters/church.jpg) center/cover!important;padding-top:34cqw}
+.bp-worship.art .bp-k{margin-top:0}
+.bp-worship.art .wt{text-shadow:0 0 4cqw #fff8e8}
+.bp-worship.art .wrows{background:#fffaf0d9;border-radius:2cqw;padding:0 4cqw;box-shadow:0 1cqw 4cqw #0002;width:auto;align-self:stretch}
+.bp-worship.art .wf{color:#5a4a30;text-shadow:0 0 2cqw #fff}
+/* This Week lineup (bridge photo) */
+.bp-week{background:#0b1220;padding:0;justify-content:flex-start;text-align:left;align-items:stretch}
+.bp-week .wk-ph{position:relative;flex:0 0 46%;background:url(img/posters/bridge.jpg) center 42%/cover;box-shadow:inset 0 -12cqw 10cqw -6cqw #0b1220}
+.bp-week .wk-p{flex:1;display:flex;flex-direction:column;gap:0;padding:4cqw 7cqw 5cqw;min-height:0;overflow:hidden}
+.bp-week .bp-k{color:#ffcf5a;margin-bottom:2cqw;text-shadow:0 0 2cqw #ff9d2a66}
+.bp-week .wk-r{display:grid;grid-template-columns:12cqw 1fr;gap:3cqw;align-items:center;padding:1.4cqw 0;border-bottom:1px solid #ffffff1a}
+.bp-week .wk-r b{display:flex;flex-direction:column;align-items:center;font:800 2.6cqw/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.1em;color:#ffcf5a;text-transform:uppercase}
+.bp-week .wk-r b i{font:400 7cqw/1 EpAnton,Impact,sans-serif;font-style:normal;color:#fff6dc;letter-spacing:0}
+.bp-week .wk-r em{display:block;font:600 3.8cqw/1.15 Georgia,serif;font-style:normal;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bp-week .wk-r small{display:block;font:600 2.6cqw/1.3 "Helvetica Neue",Arial,sans-serif;color:#b9c6dc;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bp-gala.art{padding-top:40cqw!important}
+.bp-fair.art .bp-v small{display:none}.bp-fair.art .bp-v{margin-bottom:31cqw}
