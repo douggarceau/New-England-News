@@ -50,3 +50,6 @@ html body .reader h1{text-shadow:0 0 30px #ffffff14}
 
 /* Tide strip removed so the cover and top story sit higher */
 html body #jtSea{display:none!important}
+/* Tabs tucked up under the masthead */
+html body .wrap>header.mast{padding-bottom:2px!important}
+html body .wrap>nav#nav.navbar{top:0!important;margin-top:-8px!important}
