@@ -68,6 +68,14 @@ window.bigPoster=function(e,region){try{
  return '<span class="bp bp-'+st+' pv'+(h%4)+'" style="'+sty+'">'+b+'</span>';
 }catch(_){return null}};
 
+
+/* Church poster: every church with its next service, from each church's own calendar listings */
+let WS=null;function worshipLoad(){if(WS)return;WS=[];fetch('data/cal.json?'+Math.floor(Date.now()/6e5)).then(r=>r.json()).then(j=>{const td=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});const end=new Date(Date.now()+8*864e5).toLocaleDateString('en-CA',{timeZone:'America/New_York'});
+ const m=new Map();(j.events||[]).filter(e=>e.genre==='worship'&&e.date>=td&&e.date<=end&&/mass|service|worship|liturgy|eucharist|vespers|prayer|sunday/i.test((e.artists||'')+' '+(e.time||''))).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time)).forEach(e=>{if(!m.has(e.venue))m.set(e.venue,e)});WS=[...m.values()].slice(0,6)}).catch(()=>{})}
+window.worshipPoster=function(region){worshipLoad();if(!WS||WS.length<2)return null;
+ const cross='<svg class="wcross" viewBox="0 0 40 60" aria-hidden="true"><path d="M16 0h8v16h16v8H24v36h-8V24H0v-8h16z" fill="url(#wg)"/><defs><linearGradient id="wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3c4"/><stop offset=".5" stop-color="#e2b04a"/><stop offset="1" stop-color="#a8822f"/></linearGradient></defs></svg>';
+ const rows=WS.map(e=>{const d=new Date(e.date+'T12:00:00');return '<span class="wr"><b>'+H(e.venue)+'</b><i>'+H(d.toLocaleDateString('en-US',{weekday:'short'}))+' · '+H(String(e.time||'').split(/[–-]/)[0].trim())+' · '+H(String(e.artists||'').replace(/\s+at\s+.*$/i,''))+'</i></span>'}).join('');
+ return '<span class="bp bp-worship"><span class="warch"></span>'+cross+'<span class="bp-k">Worship · '+H(region||'')+'</span><span class="wt">Services This Week</span><span class="wrows">'+rows+'</span><span class="wf">Times from each church’s own calendar</span></span>'};
 /* --- story & headline cards: every margin card is artwork --- */
 function vinyl(lab){let s='<svg class="art vin" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="49" fill="#0c0c0c"/>';for(let r=46;r>20;r-=2.2)s+='<circle cx="50" cy="50" r="'+r.toFixed(1)+'" fill="none" stroke="#ffffff'+(r%4<2?'14':'0a')+'" stroke-width=".6"/>';return s+'<path d="M50 1a49 49 0 0 1 42 24L50 50z" fill="#ffffff10"/><circle cx="50" cy="50" r="17" fill="'+lab+'"/><circle cx="50" cy="50" r="2.2" fill="#0c0c0c"/></svg>'}
 function masks(c){return '<svg class="art msk" viewBox="0 0 120 80" aria-hidden="true"><g fill="none" stroke="'+c+'" stroke-width="2.2"><path d="M8 10q22-8 44 0v22c0 16-10 28-22 28S8 48 8 32z"/><path d="M68 18q22-8 44 0v22c0 16-10 28-22 28S68 56 68 40z"/></g><g fill="'+c+'"><path d="M18 26q5-4 10 0q-5 3-10 0zM32 26q5-4 10 0q-5 3-10 0zM20 42q10 9 20 0q-10 3-20 0z"/><path d="M78 34q5 4 10 0q-5-3-10 0zM92 34q5 4 10 0q-5-3-10 0zM80 56q10-9 20 0q-10-3-20 0z"/></g></svg>'}
@@ -191,16 +199,17 @@ window.factsCard=function(e){const d=e.date?new Date(e.date+'T12:00:00'):null;
  return '<span class="fc"><span class="fc-k">The details</span><span class="fc-t">'+H5(t)+'</span><span class="fc-big"><b>'+H5(d?d.toLocaleDateString('en-US',{month:'short'}).toUpperCase():'')+'</b><i>'+DY+'</i><small>'+H5(e.time||'')+'</small></span><span class="fc-rows">'+rows.map(r=>'<span class="fc-r"><em>'+H5(r[0])+'</em><span>'+H5(r[1])+'</span></span>').join('')+'</span>'+(e.blurb?'<span class="fc-b">'+H5(e.blurb)+'</span>':'')+'<span class="fc-go">'+(e.url?'Tickets &amp; info →':'See the calendar →')+'</span></span>'};
 function turn(el,fn){el.style.transition='transform .34s ease-in';el.style.transform='perspective(1600px) rotateY(90deg)';
  setTimeout(()=>{fn();el.style.transition='none';el.style.transform='perspective(1600px) rotateY(-90deg)';requestAnimationFrame(()=>requestAnimationFrame(()=>{el.style.transition='transform .34s ease-out';el.style.transform='';setTimeout(()=>{el.style.transition=''},380)}))},350)}
-function rotator(getHost,pick,ms,start){let i=start||0,face=0,cur=null;
+function rotator(getHost,pick,ms,start,opts){let i=start||0,face=0,cur=null;
  const host=()=>{const h=getHost();if(!h)return null;let o=h.querySelector(':scope>.rot');if(!o){o=document.createElement('span');o.className='rot';h.appendChild(o);h.classList.add('has-rot');
    o.addEventListener('click',ev=>{ev.preventDefault();ev.stopPropagation();ev.stopImmediatePropagation();const u=o.dataset.href;if(u&&/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}},true)}return o};
  const show=(o,first)=>{const L=pick();if(!L.length)return;
+  if(face===0&&opts&&opts.worship&&(i%5===4)){const w=window.worshipPoster&&window.worshipPoster(region());if(w){i++;const put=()=>{o.innerHTML=w;o.dataset.href='';o.dataset.face='w'};first?put():turn(o,put);return}}
   if(face===0){cur=L[i++%L.length];const h=window.bigPoster&&window.bigPoster(cur,region());if(!h)return;const put=()=>{o.innerHTML=h;o.dataset.href=cur.url||'';o.dataset.face='p';requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})};first?put():turn(o,put);face=1}
   else{const put=()=>{o.innerHTML=window.factsCard(cur);o.dataset.face='f'};turn(o,put);face=0}};
  let started=false;
  setInterval(()=>{const o=host();if(!o)return;if(!started){started=true;show(o,true);return}if(document.hidden||o.matches(':hover'))return;show(o,false)},ms)}
 /* the box under the cover: every show, poster then facts */
-rotator(()=>{const b=document.querySelector('.cvr .pbx');if(b)b._busy=true;return b},()=>evs(),8000,window.EP_COVER_POSTERS?7:0);
+rotator(()=>{const b=document.querySelector('.cvr .pbx');if(b)b._busy=true;return b},()=>evs(),8000,window.EP_COVER_POSTERS?7:0,{worship:1});
 /* the cover itself becomes a poster rotator when the page opts in */
 if(window.EP_COVER_POSTERS)rotator(()=>document.querySelector('.cvr .cimg'),()=>{const E=evs();const big=E.filter(e=>BIG.test(e.venue||''));return big.length>=3?big:E},9000);
 })();
