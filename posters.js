@@ -178,3 +178,29 @@ function bar(L){let b=L.parentNode.querySelector(':scope>.nl-bar');if(!b){b=docu
 setInterval(()=>{const L=document.querySelector('.nat-l');if(L&&!L.parentNode.querySelector(':scope>.nl-bar'))bar(L)},2000);
 setInterval(rotate,60000);
 })();
+/* Poster + facts rotators: the box under the cover (all sites) and the cover itself (where enabled) */
+(function(){
+const H5=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const BIG=/madison square|msg|barclays|radio city|beacon|td garden|fenway|gillette|mgm music hall|agganis|wang|citizens|boch|amica|ppac|providence performing|vets|ryan center|bally|stadium theatre|park theatre|carnegie|lincoln center|geffen|metropolitan opera|symphony hall|apollo|kings theatre|united palace|brooklyn paramount|terminal 5|hammerstein|emerson colonial|trinity rep|narragansett caf|arts center|recreation center|library/i;
+function region(){try{const t=(window.jtEvPool()[0]||{}).tag||'';const r=t.split(' · ')[0].replace(/^(IN|ON)\s+(THE\s+)?/i,'').toLowerCase();return r==='island'?'Jamestown':r.replace(/\b\w/g,c=>c.toUpperCase())}catch(_){return ''}}
+function evs(){try{return ((window.jtEvPool&&window.jtEvPool())||[]).map(p=>p.ev).filter(Boolean)}catch(_){return[]}}
+window.factsCard=function(e){const d=e.date?new Date(e.date+'T12:00:00'):null;
+ const DW=d?d.toLocaleDateString('en-US',{weekday:'long'}):'',MON=d?d.toLocaleDateString('en-US',{month:'long'}):'',DY=d?d.getDate():'';
+ const rows=[['When',[DW+(MON?', '+MON+' '+DY:''),e.time].filter(Boolean).join(' · ')],['Where',e.venue||''],['Address',String(e.address||'').replace(/,?\s*\d{5}(-\d{4})?\s*$/,'')],['Doors / hours',e.hours||''],['Tickets',e.price||''],['Ages',e.ages||'']].filter(r=>r[1]);
+ const t=String(e.artists||'').split(/\s+[|@]\s+/)[0];
+ return '<span class="fc"><span class="fc-k">The details</span><span class="fc-t">'+H5(t)+'</span><span class="fc-big"><b>'+H5(d?d.toLocaleDateString('en-US',{month:'short'}).toUpperCase():'')+'</b><i>'+DY+'</i><small>'+H5(e.time||'')+'</small></span><span class="fc-rows">'+rows.map(r=>'<span class="fc-r"><em>'+H5(r[0])+'</em><span>'+H5(r[1])+'</span></span>').join('')+'</span>'+(e.blurb?'<span class="fc-b">'+H5(e.blurb)+'</span>':'')+'<span class="fc-go">'+(e.url?'Tickets &amp; info →':'See the calendar →')+'</span></span>'};
+function turn(el,fn){el.style.transition='transform .34s ease-in';el.style.transform='perspective(1600px) rotateY(90deg)';
+ setTimeout(()=>{fn();el.style.transition='none';el.style.transform='perspective(1600px) rotateY(-90deg)';requestAnimationFrame(()=>requestAnimationFrame(()=>{el.style.transition='transform .34s ease-out';el.style.transform='';setTimeout(()=>{el.style.transition=''},380)}))},350)}
+function rotator(getHost,pick,ms,start){let i=start||0,face=0,cur=null;
+ const host=()=>{const h=getHost();if(!h)return null;let o=h.querySelector(':scope>.rot');if(!o){o=document.createElement('span');o.className='rot';h.appendChild(o);h.classList.add('has-rot');
+   o.addEventListener('click',ev=>{ev.preventDefault();ev.stopPropagation();ev.stopImmediatePropagation();const u=o.dataset.href;if(u&&/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}},true)}return o};
+ const show=(o,first)=>{const L=pick();if(!L.length)return;
+  if(face===0){cur=L[i++%L.length];const h=window.bigPoster&&window.bigPoster(cur,region());if(!h)return;const put=()=>{o.innerHTML=h;o.dataset.href=cur.url||'';o.dataset.face='p';requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})};first?put():turn(o,put);face=1}
+  else{const put=()=>{o.innerHTML=window.factsCard(cur);o.dataset.face='f'};turn(o,put);face=0}};
+ let started=false;
+ setInterval(()=>{const o=host();if(!o)return;if(!started){started=true;show(o,true);return}if(document.hidden||o.matches(':hover'))return;show(o,false)},ms)}
+/* the box under the cover: every show, poster then facts */
+rotator(()=>{const b=document.querySelector('.cvr .pbx');if(b)b._busy=true;return b},()=>evs(),8000,window.EP_COVER_POSTERS?7:0);
+/* the cover itself becomes a poster rotator when the page opts in */
+if(window.EP_COVER_POSTERS)rotator(()=>document.querySelector('.cvr .cimg'),()=>{const E=evs();const big=E.filter(e=>BIG.test(e.venue||''));return big.length>=3?big:E},9000);
+})();
