@@ -2459,11 +2459,6 @@ q.addEventListener("keydown",e=>{const L=[...p.querySelectorAll("a")];if(!L.leng
  else if(e.key==="Enter"&&i>=0){e.preventDefault();L[i].click()}else if(e.key==="Escape"){p.hidden=true;q.blur()}});
 document.addEventListener("click",e=>{if(!p.contains(e.target)&&e.target!==q)p.hidden=true});addEventListener("scroll",()=>{if(!p.hidden)place()},{passive:true});addEventListener("resize",()=>{p.hidden=true})};
 document.readyState==="loading"?document.addEventListener("DOMContentLoaded",()=>setTimeout(go,0)):setTimeout(go,0)})();</script>
-<style>
-.lspot a.eadv{position:absolute;inset:0;z-index:5;display:block;width:auto;height:auto;padding:0;gap:0;background:#08090b;border-radius:inherit;opacity:0;pointer-events:none;transition:opacity .6s ease}
-.lspot a.eadv.on{opacity:1;pointer-events:auto}
-@media (prefers-reduced-motion:reduce){.lspot a.eadv{transition:none}}
-</style>
 <!-- Rotating sponsor ad goes here -->
 <script id="riBoxes">(()=>{/* Boston edition: hide desks that have no Boston data yet */
 const H=/^(the wire · nightlife|the wire|shows this week|tech & ai wire|scene picks|band watch|venue desk)/i;
@@ -2766,21 +2761,6 @@ const place=()=>{const A=live(),B=boxes();if(!A.length)return;if(!B.length)retur
   const el=document.createElement('a');el.className='radv';el.dataset.img=ad.img;el.href=ad.href;if(/^https?:/.test(ad.href)){el.target='_blank';el.rel='noopener'}el.setAttribute('aria-label',ad.label);el.style.backgroundImage='url('+ad.img+')';bx.appendChild(el);bx.classList.add('hasad');bx.dataset.frozen='1'});
  document.querySelectorAll('.lspot.hasad').forEach(bx=>{if(!bx.querySelector(':scope > a.radv'))bx.classList.remove('hasad')})};
 setTimeout(place,1500);setInterval(place,3000);addEventListener('resize',()=>setTimeout(place,300));
-})();
-</script>
-<script>
-/* Eric Maluk ad: takes over one margin news box now and then; runs 30 days from 2026-10-20 */
-(function(){return;/* replaced by top-three ad boxes */
-const START=Date.parse('2026-10-20T00:00:00-04:00'),END=START+30*864e5;
-if(Date.now()>=END)return;
-let ad;const mk=()=>{const a=document.getElementById('lsB'),box=a&&a.parentNode;if(!box)return null;
- ad=document.createElement('a');ad.className='eadv';ad.href='tel:+14012544403';ad.setAttribute('role','img');ad.setAttribute('aria-label','Advertisement: Eric Maluk, Rate. Call (401) 254-4403');
- box.appendChild(ad);return ad};
-const cycle=()=>{if(Date.now()>=END){if(ad)ad.classList.remove('on');return}
- if(!ad&&!mk()){setTimeout(cycle,3000);return}
- ad.classList.add('on');setTimeout(()=>ad.classList.remove('on'),11000);
- setTimeout(cycle,11000+70000+Math.random()*30000)};
-setTimeout(cycle,8000);
 })();
 </script>
 <aside id="dirCol" aria-label="Boston business board"><div class="bulbs"></div><header><button class="dx" type="button" aria-label="Close directory">×</button><h2>Boston Business Board</h2><p>The best of Boston, every neighborhood</p><input id="dirQ" type="search" placeholder="Search businesses" aria-label="Search businesses" autocomplete="off"><select id="dirCat" aria-label="Filter by type"></select><select id="dirHood" aria-label="Filter by neighborhood"></select></header><div id="dirList" role="list"><div class="none">Loading…</div></div><div class="bf">Details gathered from public sources, Oct. 2026. Confirm hours before you go.</div><div class="bulbs"></div></aside>
