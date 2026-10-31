@@ -247,7 +247,7 @@ window.epMix=function(L){try{const r=L.slice();for(let i=r.length-1;i>0;i--){con
 (function(){
 const coast=()=>!!window.EP_COAST;
 function pick(s){const x=((s.title||'')+' '+(s.dek||'')+' '+(s.topic||'')).toLowerCase();const c=coast()&&Math.random()<.5;let k;
- if(/\bchurch|\bmass\b|worship|chapel|parish|hymn|prayer/.test(x))k=c?'church2':'church';
+ const ti=(s.title||'').toLowerCase();if(/\bmass\b|worship|vespers|hymn|prayer|church service|sunday service/.test(ti)&&!/parade|halloween|costume|fair|festival|party|concert/.test(x))k=c?'church2':'church';
  else if(/symphon|orchestra|philharmon|opera|ballet|nutcracker|choral|chorus|messiah|quartet|chamber|recital|baroque|classical/.test(x))k=c?'gala2':'gala';
  else if(/jazz|blues|swing|sax/.test(x))k=c?'jazz2':'jazz';
  else if(/theat|broadway|musical|comed|play\b|stage|carol|much ado|cabaret/.test(s.topic==='stage'?'stage':x))k=c?'marquee2':'marquee';
