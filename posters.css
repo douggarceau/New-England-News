@@ -391,3 +391,38 @@ html body #coverSlot .itn .itn-r{padding:1.5cqw 0}
 .bp-week .wk-r small{display:block;font:600 2.6cqw/1.3 "Helvetica Neue",Arial,sans-serif;color:#b9c6dc;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bp-gala.art{padding-top:40cqw!important}
 .bp-fair.art .bp-v small{display:none}.bp-fair.art .bp-v{margin-bottom:31cqw}
+
+/* ===== Coastal set (Jamestown & Rhode Island), mixed in with the first set ===== */
+.bp.alt{justify-content:flex-start;gap:2.6cqw}
+.bp.alt .bp-go{margin-top:auto}
+.bp-gala.art.alt{background:url(img/posters/gala2.jpg) center/cover!important;padding:12cqw 10cqw 8cqw!important}
+.bp-gala.alt .bp-t{margin:3cqw 0}.bp-gala.alt .bp-go{background:#fff6e0e6}
+.bp-marquee.art.alt{background:url(img/posters/marquee2.jpg) center/cover!important;padding:14cqw 22cqw 30cqw}
+.bp-marquee.alt .bp-t{color:#7a0f12!important;text-shadow:none!important;margin:4cqw 0}
+.bp-marquee.alt .bp-d{color:#3a1406}.bp-marquee.alt .bp-v{color:#5a2a10}.bp-marquee.alt .bp-go{color:#7a0f12;margin-top:auto}
+.bp-marquee.alt .bp-sign span{font-size:5cqw}
+.bp-gig.art.alt{background:url(img/posters/gig2.jpg) center/cover!important}
+.bp-gig.alt .bp-t,.bp-gig.alt .bp-k{color:#14324a!important}
+.bp-blue.art.alt{background:url(img/posters/jazz2.jpg) center/cover!important;padding:12cqw 8cqw 8cqw!important}
+.bp-blue.alt .bp-k,.bp-blue.alt .bp-t,.bp-blue.alt .bp-d,.bp-blue.alt .bp-v,.bp-blue.alt .bars{max-width:56%}
+.bp-blue.alt .bp-t{margin:6cqw 0 3cqw!important}
+.bp-club.art.alt{background:url(img/posters/club2.jpg) center/cover!important;padding:12cqw 10cqw 8cqw}
+.bp-club.alt .bp-t{margin:8cqw 0 2cqw}
+.bp-fair.art.alt{background:url(img/posters/fair2.jpg) center/cover!important;padding:22cqw 9cqw 6cqw}
+.bp-fair.alt .bp-t{margin:10cqw 0 2cqw}.bp-fair.alt .bp-v{margin:0}
+.bp-fair.art.alt .bp-ticket{left:10%;right:10%;bottom:4.5%;height:9.5%}
+.bp-fair.alt .bp-go{bottom:16%;background:#fff6d0e6}
+.bp-gallery.art.alt{background:url(img/posters/gallery2.jpg) center/cover!important;padding:68cqw 8cqw 8cqw}
+.bp-gallery.alt .bp-t{background:none;margin:2cqw 0}
+.bp-worship.art.alt{background:url(img/posters/church2.jpg) center/cover!important;padding:30cqw 12cqw 8cqw 30cqw}
+/* This Week variants: beach full-bleed, wharf photo */
+.bp-week.w2{background:url(img/posters/week2.jpg) center/cover}
+.bp-week.w2 .wk-ph{background:none;box-shadow:none}
+.bp-week.w2 .bp-k{color:#8a4a10;text-shadow:none}.bp-week.w2 .wk-r{border-color:#8a6a4033}
+.bp-week.w2 .wk-r b{color:#b35a10}.bp-week.w2 .wk-r b i{color:#2a1d0c}.bp-week.w2 .wk-r em{color:#2a1d0c}.bp-week.w2 .wk-r small{color:#6a5030}
+.bp-week.w3 .wk-ph{background:url(img/posters/wharf.jpg) center 70%/cover}
+.bp-gallery.art.alt{padding-top:100cqw}
+.bp-marquee.alt .bp-go{background:#fff6e0;border-color:#7a0f12}
+.bp-fair.alt .bp-go{bottom:19%}
+.bp-worship.alt .wrows{flex:0 0 auto}
+.bp-gala.alt .bp-k{background:#f6e6c4;padding:1cqw 2cqw}
