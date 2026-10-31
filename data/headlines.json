@@ -20,85 +20,13 @@
    "rank": 2
   },
   {
-   "h": "Health Connector open enrollment is underway",
-   "sum": "Residents who buy coverage through the Massachusetts Health Connector can sign up or switch plans during open enrollment, which runs into January 2027.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/open-enrollment-massachusetts-health-connector-insurance",
-   "town": "Statewide",
-   "date": "2026-10-23",
-   "rank": 3
-  },
-  {
-   "h": "About 70,000 Massachusetts residents see medical debt wiped away",
-   "sum": "A foundation and a nonprofit teamed up to erase roughly $38 million in medical debt for residents across the state.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/26/medical-debt-forgiveness-atrius-health-equity",
-   "town": "Statewide",
-   "date": "2026-10-26",
-   "rank": 4
-  },
-  {
    "h": "Noah Kahan adds four Fenway Park shows for 2027",
    "sum": "The singer-songwriter returns to Fenway Park for concerts on May 29, May 30, June 1 and June 2.",
    "outlet": "NBC Boston",
    "url": "https://www.nbcboston.com/news/local/noah-kahan-2027-tour-mastercard-tickets-fenway-park/4039710/",
    "town": "Fenway",
    "date": "2026-10-29",
-   "rank": 5
-  },
-  {
-   "h": "Harvard Book Store opening a second shop in downtown Boston",
-   "sum": "The Cambridge bookseller is bringing a new Union Street location with a cafe and a children's area this fall.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/harvard-book-store-downtown-boston",
-   "town": "Downtown",
-   "date": "2026-10-23",
-   "rank": 6
-  },
-  {
-   "h": "Bostonhenge sunset lines up with Back Bay streets this week",
-   "sum": "The twice-a-year moment when the setting sun aligns with Back Bay buildings is back, with tips on where and when to watch.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/27/bostonhenge-back-bay-october",
-   "town": "Back Bay",
-   "date": "2026-10-27",
-   "rank": 7
-  },
-  {
-   "h": "Hello, Old Friend brings Detroit-style pizza to West Roxbury",
-   "sum": "The pizza maker known for pop-ups and a Roslindale residency is opening its own West Roxbury location.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/entertainment/food-drink-nightlife/hello-old-friend-detroit-style-pizza-business-opens-location-in-boston/4039021/",
-   "town": "West Roxbury",
-   "date": "2026-10-28",
-   "rank": 8
-  },
-  {
-   "h": "Wu proposes faster path for new neighborhood restaurants",
-   "sum": "The plan would let existing permits move to new owners without a fresh review in some takeout cases, cutting waits from about four months to under two weeks, pending licensing board and City Council approval.",
-   "outlet": "Boston 25 News",
-   "url": "https://www.boston25news.com/news/local/boston-mayor-proposes-zoning-reforms-cut-red-tape-speed-up-process-local-restaurants/6DMLRQU2XZAJXJKAISHARGCQJU/",
-   "town": "Boston",
-   "date": "2026-10-27",
-   "rank": 9
-  },
-  {
-   "h": "Hasbro's CEO talks about the toymaker's move to the Seaport",
-   "sum": "After more than a century in Rhode Island, Hasbro is relocating its headquarters to Boston's Seaport, and its chief executive explains why.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/hasbro-chris-cocks-pawtucket-seaport-relocation",
-   "town": "Seaport",
-   "date": "2026-10-23",
-   "rank": 10
-  },
-  {
-   "h": "Fields Corner Post Office will stay open after all",
-   "sum": "A lease extension reversed a planned closing, keeping the Dorchester post office serving the neighborhood.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/fields-corner-dorchester-post-office-will-stay-open",
-   "town": "Dorchester",
-   "date": "2026-10-23",
-   "rank": 11
+   "rank": 3
   },
   {
    "h": "Somerville looks to save arts spaces with a cultural trust",
@@ -107,7 +35,88 @@
    "url": "https://www.wbur.org/news/2026/10/28/somerville-cultural-trust-arts-space",
    "town": "Somerville",
    "date": "2026-10-28",
+   "rank": 4
+  },
+  {
+   "h": "Mass. Lottery tries scented scratch tickets for the holidays",
+   "sum": "The lottery's first scented holiday tickets aim to give sagging scratch sales a lift.",
+   "outlet": "WBUR",
+   "url": "https://www.wbur.org/news/2026/10/28/massachusetts-scented-scratch-ticket-holidays",
+   "town": "Statewide",
+   "date": "2026-10-28",
+   "rank": 5
+  },
+  {
+   "h": "Health Connector open enrollment is underway",
+   "sum": "Residents who buy coverage through the Massachusetts Health Connector can sign up or switch plans during open enrollment, which runs into January 2027.",
+   "outlet": "WBUR",
+   "url": "https://www.wbur.org/news/2026/10/23/open-enrollment-massachusetts-health-connector-insurance",
+   "town": "Statewide",
+   "date": "2026-10-23",
+   "rank": 6
+  },
+  {
+   "h": "About 70,000 Massachusetts residents see medical debt wiped away",
+   "sum": "A foundation and a nonprofit teamed up to erase roughly $38 million in medical debt for residents across the state.",
+   "outlet": "WBUR",
+   "url": "https://www.wbur.org/news/2026/10/26/medical-debt-forgiveness-atrius-health-equity",
+   "town": "Statewide",
+   "date": "2026-10-26",
+   "rank": 7
+  },
+  {
+   "h": "Harvard Book Store opening a second shop in downtown Boston",
+   "sum": "The Cambridge bookseller is bringing a new Union Street location with a cafe and a children's area this fall.",
+   "outlet": "WBUR",
+   "url": "https://www.wbur.org/news/2026/10/23/harvard-book-store-downtown-boston",
+   "town": "Downtown",
+   "date": "2026-10-23",
+   "rank": 8
+  },
+  {
+   "h": "Bostonhenge sunset lines up with Back Bay streets this week",
+   "sum": "The twice-a-year moment when the setting sun aligns with Back Bay buildings is back, with tips on where and when to watch.",
+   "outlet": "WBUR",
+   "url": "https://www.wbur.org/news/2026/10/27/bostonhenge-back-bay-october",
+   "town": "Back Bay",
+   "date": "2026-10-27",
+   "rank": 9
+  },
+  {
+   "h": "Hello, Old Friend brings Detroit-style pizza to West Roxbury",
+   "sum": "The pizza maker known for pop-ups and a Roslindale residency is opening its own West Roxbury location.",
+   "outlet": "NBC Boston",
+   "url": "https://www.nbcboston.com/entertainment/food-drink-nightlife/hello-old-friend-detroit-style-pizza-business-opens-location-in-boston/4039021/",
+   "town": "West Roxbury",
+   "date": "2026-10-28",
+   "rank": 10
+  },
+  {
+   "h": "Wu proposes faster path for new neighborhood restaurants",
+   "sum": "The plan would let existing permits move to new owners without a fresh review in some takeout cases, cutting waits from about four months to under two weeks, pending licensing board and City Council approval.",
+   "outlet": "Boston 25 News",
+   "url": "https://www.boston25news.com/news/local/boston-mayor-proposes-zoning-reforms-cut-red-tape-speed-up-process-local-restaurants/6DMLRQU2XZAJXJKAISHARGCQJU/",
+   "town": "Boston",
+   "date": "2026-10-27",
+   "rank": 11
+  },
+  {
+   "h": "Hasbro's CEO talks about the toymaker's move to the Seaport",
+   "sum": "After more than a century in Rhode Island, Hasbro is relocating its headquarters to Boston's Seaport, and its chief executive explains why.",
+   "outlet": "WBUR",
+   "url": "https://www.wbur.org/news/2026/10/23/hasbro-chris-cocks-pawtucket-seaport-relocation",
+   "town": "Seaport",
+   "date": "2026-10-23",
    "rank": 12
+  },
+  {
+   "h": "Fields Corner Post Office will stay open after all",
+   "sum": "A lease extension reversed a planned closing, keeping the Dorchester post office serving the neighborhood.",
+   "outlet": "WBUR",
+   "url": "https://www.wbur.org/news/2026/10/23/fields-corner-dorchester-post-office-will-stay-open",
+   "town": "Dorchester",
+   "date": "2026-10-23",
+   "rank": 13
   },
   {
    "h": "Nikki Giovanni's archives open to the public at Boston University",
@@ -116,7 +125,7 @@
    "url": "https://www.wbur.org/news/2026/10/22/poet-nikki-giovanni-archive-boston-university-howard-gotlieb-center",
    "town": "Fenway",
    "date": "2026-10-22",
-   "rank": 13
+   "rank": 14
   },
   {
    "h": "Voice of Logan contest narrowed to eight finalists",
@@ -125,7 +134,7 @@
    "url": "https://www.wbur.org/news/2026/10/27/massport-voice-of-logan-competition-finalists",
    "town": "East Boston",
    "date": "2026-10-27",
-   "rank": 14
+   "rank": 15
   },
   {
    "h": "State mails letters to help residents claim lost money",
@@ -134,7 +143,7 @@
    "url": "https://www.wbur.org/news/2026/10/27/massachusetts-unclaimed-property-letter",
    "town": "Statewide",
    "date": "2026-10-27",
-   "rank": 15
+   "rank": 16
   },
   {
    "h": "Red Line to pick up speed between JFK/UMass and North Quincy",
@@ -143,7 +152,7 @@
    "url": "https://www.wbur.org/news/2026/10/22/mbta-red-line-speeds-north-quincy-jfk",
    "town": "Dorchester",
    "date": "2026-10-22",
-   "rank": 16
+   "rank": 17
   },
   {
    "h": "Fallen leaves caused an hours-long Commuter Rail delay",
@@ -152,7 +161,7 @@
    "url": "https://www.nbcboston.com/news/local/hourslong-delay-on-mbta-commuter-rail-was-caused-by-fallen-leaves/4039539/",
    "town": "Statewide",
    "date": "2026-10-29",
-   "rank": 17
+   "rank": 18
   },
   {
    "h": "Galvin urges voters to cast ballots early",
@@ -161,7 +170,7 @@
    "url": "https://www.wbur.org/news/2026/10/28/massachusetts-election-day-ballot-questions-bill-galvin-early-voting",
    "town": "Statewide",
    "date": "2026-10-28",
-   "rank": 18
+   "rank": 19
   },
   {
    "h": "High-end Japanese restaurant group from a James Beard winner heading to Boston",
@@ -170,7 +179,7 @@
    "url": "https://www.nbcboston.com/news/local/james-beard-winners-high-end-japanese-restaurant-chain-is-expanding-to-boston/4037644/",
    "town": "Boston",
    "date": "2026-10-26",
-   "rank": 19
+   "rank": 20
   },
   {
    "h": "Popular sub shop chain closes its Downtown Crossing spot",
@@ -179,7 +188,7 @@
    "url": "https://www.nbcboston.com/news/local/popular-sub-shop-chain-in-bostons-downtown-crossing-has-closed/4038037/",
    "town": "Downtown",
    "date": "2026-10-27",
-   "rank": 20
+   "rank": 21
   },
   {
    "h": "Saus is leaving Somerville's Bow Market",
@@ -188,7 +197,7 @@
    "url": "https://www.nbcboston.com/news/local/saus-bow-market-restaurant-somerville-closing/4036446/",
    "town": "Somerville",
    "date": "2026-10-23",
-   "rank": 21
+   "rank": 22
   },
   {
    "h": "Attleboro's Stone-E-Lea Golf Course to close after 70-plus years",
@@ -197,7 +206,7 @@
    "url": "https://www.nbcboston.com/boston-business-journal/mass-golf-course-closing-after-70-years-listed-for-sale-and-redevelopment/4040012/",
    "town": "Attleboro",
    "date": "2026-10-29",
-   "rank": 22
+   "rank": 23
   },
   {
    "h": "mRNA cancer vaccine cuts melanoma recurrence in study",
@@ -206,7 +215,7 @@
    "url": "https://www.wbur.org/news/2026/10/23/moderna-mrna-cancer-vaccine-melanoma-study-results",
    "town": "Cambridge",
    "date": "2026-10-23",
-   "rank": 23
+   "rank": 24
   },
   {
    "h": "MWRA picks MassDOT highway chief Gulliver as its new leader",
@@ -215,7 +224,7 @@
    "url": "https://www.wbur.org/news/2026/10/22/mwra-water-jonathan-gulliver-massdot",
    "town": "Statewide",
    "date": "2026-10-22",
-   "rank": 24
+   "rank": 25
   },
   {
    "h": "Glass shards turn up on a Swampscott school field",
@@ -224,7 +233,7 @@
    "url": "https://www.nbcboston.com/news/local/swampscott-mass-glass-school-field/4039455/",
    "town": "Swampscott",
    "date": "2026-10-29",
-   "rank": 25
+   "rank": 26
   },
   {
    "h": "Brigham nurses vote down tentative contract",
@@ -233,22 +242,13 @@
    "url": "https://www.wbur.org/news/2026/10/23/brigham-nurses-union-contract-vote-no",
    "town": "Mission Hill",
    "date": "2026-10-23",
-   "rank": 26
+   "rank": 27
   },
   {
    "h": "Which Massachusetts ZIP codes made the Wealthy 1000 list",
    "sum": "The annual national ranking of the richest ZIP codes includes a number of Massachusetts communities.",
    "outlet": "Boston Business Journal",
    "url": "https://www.nbcboston.com/boston-business-journal/which-areas-in-massachusetts-made-the-national-wealthy-1000-list/4039235/",
-   "town": "Statewide",
-   "date": "2026-10-28",
-   "rank": 27
-  },
-  {
-   "h": "Mass. Lottery tries scented scratch tickets for the holidays",
-   "sum": "The lottery's first scented holiday tickets aim to give sagging scratch sales a lift.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/28/massachusetts-scented-scratch-ticket-holidays",
    "town": "Statewide",
    "date": "2026-10-28",
    "rank": 28
