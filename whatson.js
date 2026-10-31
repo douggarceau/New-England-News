@@ -23,7 +23,7 @@ function list(r){const td=ymd(new Date()),nm=nowMins();
 function dayLbl(ds){const d=new Date(ds+'T12:00:00');return d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase()+' '+d.getDate()}
 function render(box){const R=ranges(),r=R[tab],L=list(r),multi=r.from!==r.to;
  const rows=L.slice(0,8).map(e=>{const name=String(e.artists||'').split(/\s+[|@]\s+/)[0];const u=/^https?:/.test(e.url||'')?e.url:'';
-  return '<a class="wo-r"'+(u?' href="'+H(u)+'" target="_blank" rel="noopener"':' href="#cal"')+'><span class="wo-t">'+(multi?'<i>'+H(dayLbl(e.date))+'</i>':'')+H(String(e.time||'All day').replace(/:00/g,''))+'</span><span class="wo-n"><b>'+H(name)+'</b><small>'+H(e.venue||'')+'</small></span></a>'}).join('');
+  return '<a class="wo-r"'+(u?' href="'+H(u)+'" target="_blank" rel="noopener"':' href="#cal"')+'><span class="wo-t">'+(multi?'<i>'+H(dayLbl(e.date))+'</i>':'')+H(String(e.time||'Time TBA').replace(/:00/g,''))+'</span><span class="wo-n"><b>'+H(name)+'</b><small>'+H(e.venue||'')+'</small></span></a>'}).join('');
  box.innerHTML='<div class="wo-h"><span class="wo-k">What’s on</span><span class="wo-tabs" role="tablist">'+R.map((x,i)=>'<button type="button" role="tab" aria-selected="'+(i===tab)+'" data-i="'+i+'">'+H(x.k)+'</button>').join('')+'</span></div>'+
   '<div class="wo-l">'+(rows||'<p class="wo-e">Nothing listed yet. See the full calendar for what’s coming up.</p>')+'</div>'+
   '<div class="wo-f"><a href="#cal" class="wo-all">'+(L.length>8?(L.length-8)+' more · ':'')+'Full calendar →</a></div>'}
