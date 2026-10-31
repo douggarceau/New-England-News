@@ -347,7 +347,19 @@ html body .lsrow .lspot.hasad{animation:hgAd 5s ease-in-out infinite}
 @keyframes hgStory{0%,100%{filter:drop-shadow(0 0 5px color-mix(in srgb,var(--gk,#4fa3ff) 45%,transparent))}50%{filter:drop-shadow(0 0 12px color-mix(in srgb,var(--gk,#4fa3ff) 75%,transparent))}}
 @keyframes hgAd{0%,100%{filter:drop-shadow(0 0 5px rgba(232,184,24,.4))}50%{filter:drop-shadow(0 0 13px rgba(232,184,24,.7))}}
 @media (prefers-reduced-motion:reduce){html body .lsrow .lspot{animation:none!important}}
-</style><style id="vwebCss">.vcard .vmeta a.vweb{font-weight:700;color:var(--k,#e8b818)!important;text-decoration:none}.vcard .vmeta a.vweb:hover{text-decoration:underline}.vcard p{margin:6px 0 8px}</style></head>
+</style><style id="vwebCss">.vcard .vmeta a.vweb{font-weight:700;color:var(--k,#e8b818)!important;text-decoration:none}.vcard .vmeta a.vweb:hover{text-decoration:underline}.vcard p{margin:6px 0 8px}</style><style id="evGlow">
+/* Events in the side margins: marquee lights, so shows outshine business names */
+html body .lsrow .lspot.t-mu{border:0!important;background:radial-gradient(140% 90% at 50% -10%,color-mix(in srgb,var(--k,#e8b818) 60%,transparent) 0,transparent 62%),linear-gradient(180deg,#1b0a24 0,#06040b 100%)!important;box-shadow:0 0 0 2px var(--k,#e8b818),0 0 26px color-mix(in srgb,var(--k,#e8b818) 75%,transparent),inset 0 0 34px color-mix(in srgb,var(--k,#e8b818) 30%,transparent)!important;overflow:hidden}
+html body .lsrow .lspot.t-mu::before{content:"";position:absolute;inset:4px;border:4px dotted #fff2a8;border-radius:8px;pointer-events:none;filter:drop-shadow(0 0 3px #ffd84a) drop-shadow(0 0 6px var(--k,#e8b818));animation:evBulb 1.1s steps(2,jump-none) infinite;z-index:1}
+html body .lsrow .lspot.t-mu:nth-of-type(odd)::before{animation-delay:.55s}
+html body .lsrow .lspot.t-mu .ls-big{color:#fff!important;font-size:clamp(20px,calc(var(--ls,300px)*.09),30px)!important;line-height:1.08!important;text-shadow:0 0 10px var(--k,#e8b818),0 0 22px color-mix(in srgb,var(--k,#e8b818) 70%,transparent)!important}
+html body .lsrow .lspot.t-mu .ls-tag{color:#fff2a8!important;text-shadow:0 0 8px #ffb800}
+html body .lsrow .lspot.t-mu b,html body .lsrow .lspot.t-mu .ls-go{color:var(--k,#e8b818)!important;filter:brightness(1.35)}
+html body .lsrow .lspot.t-mu a{position:relative;z-index:2}
+@keyframes evBulb{0%{border-color:#fff6c2}50%{border-color:color-mix(in srgb,var(--k,#e8b818) 85%,#fff)}}
+@media (prefers-reduced-motion:reduce){html body .lsrow .lspot.t-mu::before{animation:none}}
+</style>
+</head>
 <body>
 <title>The Boston Rambler</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -2256,7 +2268,7 @@ function showPromo0(id,pool,offset=0,flip=false){{const el=document.getElementBy
  box.hidden=false;const key=promoKey(s);if(a.dataset.promoKey===key)return;
  a.dataset.promoNext=key;if(flip&&a.dataset.promoKey)flipTo(a,s);else fill(a,s)
 }
-let JTEVI=0;function jtEvPool(){try{const L=(typeof jtWeekList==='function'?jtWeekList():[]);return L.map(e=>({tag:'IN BOSTON · '+(typeof shortDay==='function'?shortDay(e.date):e.date),bigText:(e.artists||'').replace(/\s*\([^)]*\)/g,'').trim(),name:e.venue||'Boston',when:e.time||'',sub:'',go:'Details',theme:'mu',href:e.url||'#cal',ext:e.url?1:0,view:e.url?'':'cal',k:(typeof GENRE!=='undefined'&&GENRE[e.genre])||'#e8b818'}))}catch(_){return[]}}
+let JTEVI=0;function jtEvPool(){try{const L=(typeof jtWeekList==='function'?jtWeekList():[]);return L.filter(e=>e.genre!=='sports').map(e=>({tag:'IN BOSTON · '+(typeof shortDay==='function'?shortDay(e.date):e.date),bigText:(e.artists||'').replace(/\s*\([^)]*\)/g,'').trim(),name:e.venue||'Boston',when:e.time||'',sub:'',go:'Details',theme:'mu',href:e.url||'#cal',ext:e.url?1:0,view:e.url?'':'cal',k:(typeof GENRE!=='undefined'&&GENRE[e.genre])||'#e8b818'}))}catch(_){return[]}}
 (function jtSweep(n){setTimeout(()=>{document.querySelectorAll('.lsrow .lspot.t-cw>a,.lsrow .lspot.t-spd>a,.lsrow .lspot.cwi>a').forEach(a=>{if(jtEvPool().length)fill(a,{theme:'cw',tag:'CRIME'})});if(n<8)jtSweep(n+1)},1500)})(0);
 function fill(a,s){if(s&&(s.theme==='cw'||s.theme==='spd'||s.cwi||/CRIME/i.test(s.tag||''))){const E=jtEvPool();if(E.length){s=E[JTEVI++%E.length]}}return fill0(a,s)}
 window.__fill0=(a,s)=>fill0(a,s);function fill0(a,s){if(!a||!s)return;try{const nz=x=>String(x||'').toLowerCase().replace(/\s+/g,' ').trim();const vis=new Set([...document.querySelectorAll('.lsrow .lspot:not([hidden]):not(.hasad) > a:not(.radv)')].filter(e=>e!==a).map(e=>nz((e.querySelector('.ls-big')||{}).textContent)).filter(Boolean));if(vis.has(nz(s.bigText||s.name))&&window.__PALT&&window.__PALT.length){const alt=window.__PALT.find(c=>!vis.has(nz(c.bigText||c.name)));if(alt)s=alt}}catch(_){}clearTimeout(promoTimers.get(a));a.dataset.promoKey=promoKey(s);delete a.dataset.promoNext;const box=a.parentNode;box.className=box.className.replace(/\bt-\S+/g,'').replace(/\bcwi\b/g,'').trim()+' t-'+s.theme+(s.cwi?' cwi':'');
@@ -2306,7 +2318,7 @@ const xtFill=(n,flip)=>{const [id,g,o]=XT[n];showPromo(id,g(),o+xk[n],flip&&xf[n
 XT.forEach((_,n)=>xtFill(n,false));
 setInterval(()=>XT.forEach((_,n)=>setTimeout(()=>{xk[n]++;xtFill(n,true)},300+(n%10)*420)),6400);
 /* Fill the side margins with news boxes all the way down the page */
-const XP=[()=>WRF,()=>CRX.length?CRX:WRF,()=>CORR.length?CORR:WRF,()=>STF,()=>CRX.length?CRX:WRF,()=>WRF];
+const EVP=()=>{const e=jtEvPool();return e.length?e:WRF};const XP=[EVP,()=>STF,EVP,EVP,()=>WRF,EVP];
 const lsMore=()=>{if(innerWidth<1280)return;const row=document.querySelector('.lsrow'),w=document.querySelector('.wrap'),s=[...document.querySelectorAll('.lsrow .lspot')].find(x=>x.offsetHeight>40),V=document.getElementById('view');if(!row||!w||!s||!V)return;
  row.querySelectorAll('.lspot').forEach(x=>{x.style.removeProperty('height');x.classList.remove('ri-cut')});
  const step=s.offsetHeight+12,lsh=s.offsetHeight,rt=row.getBoundingClientRect().top,vb=V.getBoundingClientRect().bottom-rt,rg=document.getElementById('regSpot'),rgH=rg&&rg.offsetParent?rg.offsetHeight+24:0;
