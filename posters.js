@@ -240,7 +240,14 @@ rotator(()=>{const b=document.querySelector('.cvr .pbx');if(b)b._busy=true;retur
 if(window.EP_COVER_POSTERS)rotator(()=>document.querySelector('.cvr .cimg'),()=>{const E=evs();const big=E.filter(e=>BIG.test(e.venue||''));return big.length>=3?big:E},9000);
 })();
 /* Variety: shuffle the event pool each visit, spread across venues and kinds, so the same few shows don't loop */
-window.epMix=function(L){try{const r=L.slice();for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]]}
+window.epMix=function(L){try{
+ const seed=window.__epSeed||(window.__epSeed=Math.floor(Math.random()*1e9));
+ const nm=x=>String((x.ev&&x.ev.artists)||x.bigText||x.name||'').toLowerCase().split(/\s+[-–—:|@]\s+|\s*\(/)[0].replace(/[^a-z0-9 ]/g,'').trim();
+ const DULL=/pantry|thrift|rehearsal|appointment|\bhours\b|donation|office hours|support group|meeting\b|teen center/i;
+ const seen=new Set(),u=[];
+ L.slice().sort((a,b)=>String((a.ev&&a.ev.date)||'').localeCompare(String((b.ev&&b.ev.date)||''))).forEach(x=>{const k=nm(x);if(!k||seen.has(k)||DULL.test((x.ev&&x.ev.artists)||x.bigText||''))return;seen.add(k);u.push(x)});
+ const h=s=>{let v=seed>>>0;for(const c of s)v=Math.imul(v^c.charCodeAt(0),2654435761)>>>0;return v};
+ const r=(u.length>=4?u:L).slice().sort((a,b)=>h(nm(a))-h(nm(b)));
  const by=new Map();r.forEach(x=>{const k=((x.ev&&x.ev.venue)||x.name||'').toLowerCase();if(!by.has(k))by.set(k,[]);by.get(k).push(x)});
  const out=[];let more=true;while(more){more=false;for(const q of by.values()){if(q.length){out.push(q.shift());more=true}}}return out}catch(_){return L}};
 /* Story art: every story gets a matching artwork that slowly moves (reader header + story cards) */
