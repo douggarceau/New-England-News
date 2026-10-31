@@ -86,6 +86,9 @@ function masks(c){return '<svg class="art msk" viewBox="0 0 120 80" aria-hidden=
 function confetti(h){const C=['#ff4fa3','#ffd400','#1b4dff','#0f9d6b','#ff6a1a','#7a2bd9'];let s='<svg class="art cft" viewBox="0 0 300 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true">';let x=h;for(let i=0;i<34;i++){x=(x*1103515245+12345)>>>0;const px=x%300,py=(x>>>9)%180,r=(x>>>17)%3,c=C[(x>>>5)%C.length];s+=r===0?'<circle cx="'+px+'" cy="'+py+'" r="3" fill="'+c+'"/>':'<rect x="'+px+'" y="'+py+'" width="7" height="3" fill="'+c+'" transform="rotate('+((x>>>11)%180)+' '+px+' '+py+')"/>'}return s+'</svg>'}
 const STPAL=[['#0b1f3a','#e8b818'],['#3a0b1f','#ff8fb1'],['#0b3a2e','#7fffd4'],['#2a0b3a','#d9a4ff'],['#3a240b','#ffb347']];
 window.artCard=function(a,s){try{
+ if(s.story&&!s.ext&&typeof STORIES!=='undefined'&&STORIES.some(x=>x.slug===s.story)){const st=STORIES.find(x=>x.slug===s.story);const box=a.parentNode;box.classList.add('evp');['border','border-top','outline'].forEach(x=>box.style.setProperty(x,'0','important'));
+  const mast=window.EP_MAST||{};const L=String(st.title).length;
+  a.innerHTML='<span class="ep os'+(mast.img?' os-img':'')+'" style="'+(mast.img?'--osimg:url('+mast.img+')':'')+'">'+(mast.img?'':'<span class="os-m"><i>'+H(mast.top||'')+'</i><b>'+H(mast.name||'')+'</b></span>')+'<span class="os-tag">Our story</span><span class="os-t'+(L>70?' sm':'')+'">'+H(st.title)+'</span><span class="os-go">Read the story →</span></span>';return}
  const t=String(s.bigText||s.name||'').trim();if(!t)return;const h=hash(t);
  const st=(typeof STORIES!=='undefined'&&s.story)?STORIES.find(x=>x.slug===s.story):null;
  const ext=!st&&s.ext;const topic=st?String(st.topic||''):'news';
@@ -222,4 +225,29 @@ function rotator(getHost,pick,ms,start,opts){let i=start||0,face=0,cur=null;
 rotator(()=>{const b=document.querySelector('.cvr .pbx');if(b)b._busy=true;return b},()=>evs(),8000,window.EP_COVER_POSTERS?7:0,{worship:1,noweek:!!window.EP_COVER_POSTERS});
 /* the cover itself becomes a poster rotator when the page opts in */
 if(window.EP_COVER_POSTERS)rotator(()=>document.querySelector('.cvr .cimg'),()=>{const E=evs();const big=E.filter(e=>BIG.test(e.venue||''));return big.length>=3?big:E},9000);
+})();
+/* Variety: shuffle the event pool each visit, spread across venues and kinds, so the same few shows don't loop */
+window.epMix=function(L){try{const r=L.slice();for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]]}
+ const by=new Map();r.forEach(x=>{const k=((x.ev&&x.ev.venue)||x.name||'').toLowerCase();if(!by.has(k))by.set(k,[]);by.get(k).push(x)});
+ const out=[];let more=true;while(more){more=false;for(const q of by.values()){if(q.length){out.push(q.shift());more=true}}}return out}catch(_){return L}};
+/* Story art: every story gets a matching artwork that slowly moves (reader header + story cards) */
+(function(){
+const coast=()=>!!window.EP_COAST;
+function pick(s){const x=((s.title||'')+' '+(s.dek||'')+' '+(s.topic||'')).toLowerCase();const c=coast()&&Math.random()<.5;let k;
+ if(/\bchurch|\bmass\b|worship|chapel|parish|hymn|prayer/.test(x))k=c?'church2':'church';
+ else if(/symphon|orchestra|philharmon|opera|ballet|nutcracker|choral|chorus|messiah|quartet|chamber|recital|baroque|classical/.test(x))k=c?'gala2':'gala';
+ else if(/jazz|blues|swing|sax/.test(x))k=c?'jazz2':'jazz';
+ else if(/theat|broadway|musical|comed|play\b|stage|carol|much ado|cabaret/.test(s.topic==='stage'?'stage':x))k=c?'marquee2':'marquee';
+ else if(/\bdj\b|dance party|nightclub|nightlife|club night/.test(x))k=c?'club2':'club';
+ else if(/museum|gallery|exhibit|art\b|arts center|paint|photograph|portrait|print|sculpt|film|screening/.test(x))k=c?'gallery2':'gallery';
+ else if(/parade|fair|festival|holiday|santa|halloween|pumpkin|lantern|family|kids|library|teddy|thanksgiving|tree|market|stroll/.test(x))k=c?'fair2':'fair';
+ else if(/music|band|rock|concert|tour|show|live|cafe|café/.test(x)||s.topic==='music')k=c?'gig2':'gig';
+ else k=coast()?['wharf','week2','bridge'][Math.floor(Math.random()*3)]:'gala';
+ return 'img/posters/'+k+'.jpg'}
+const seen=new WeakSet();const esc3=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function dress(){if(typeof STORIES==='undefined')return;
+ document.querySelectorAll('article.reader').forEach(a=>{if(a.querySelector(':scope>.rart'))return;let cur='';try{cur=STATE.story}catch(_){}const s=STORIES.find(x=>x.slug===cur);if(!s)return;
+  const u=pick(s);const d=document.createElement('div');d.className='rart';d.style.setProperty('--art','url('+u+')');const key=u.replace(/^.*\/|\.jpg$/g,'');const T=String(s.title).split(/:\s|\s[–—-]\s/)[0];d.innerHTML='<span class="rart-p r2"></span><span class="rart-p rp-'+key.replace(/2$/,'')+(/2$/.test(key)?' rp-alt':'')+'"><span class="rp-k">'+esc3((typeof tl==='function'?tl(s.topic):s.topic)||'Story')+'</span><span class="rp-t">'+esc3(T)+'</span></span>';d.setAttribute('aria-hidden','true');const k=a.querySelector('.kick');a.insertBefore(d,k||a.firstChild.nextSibling)});
+ document.querySelectorAll('.sgrid .sc[data-story],.hll a,.sea-g button[data-story]').forEach(b=>{if(seen.has(b))return;const s=STORIES.find(x=>x.slug===b.dataset.story);if(!s)return;seen.add(b);b.classList.add('has-art');b.style.setProperty('--art','url('+pick(s)+')')})}
+new MutationObserver(()=>requestAnimationFrame(dress)).observe(document.documentElement,{childList:true,subtree:true});
 })();

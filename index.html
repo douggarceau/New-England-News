@@ -348,7 +348,8 @@ html body .lsrow .lspot.hasad{animation:hgAd 5s ease-in-out infinite}
 @keyframes hgAd{0%,100%{filter:drop-shadow(0 0 5px rgba(232,184,24,.4))}50%{filter:drop-shadow(0 0 13px rgba(232,184,24,.7))}}
 @media (prefers-reduced-motion:reduce){html body .lsrow .lspot{animation:none!important}}
 </style><style id="vwebCss">.vcard .vmeta a.vweb{font-weight:700;color:var(--k,#e8b818)!important;text-decoration:none}.vcard .vmeta a.vweb:hover{text-decoration:underline}.vcard p{margin:6px 0 8px}</style><style id="natboxCss">.nat-l button.natbox{display:block;margin:4px 0 8px;padding:12px 14px!important;border:2px solid #ff7a1a!important;border-radius:6px;background:linear-gradient(180deg,#3a1a06,#241004);color:#ffb15c!important;box-shadow:0 0 14px #ff7a1a55}.nat-l button.natbox:hover{color:#fff!important;border-color:#ffb15c!important}.nat-l button.natbox .cvtag{background:#ff7a1a;color:#111}.nat-l button.natbox .cvtag{animation:natTagBlink 1.1s steps(1,end) infinite}@keyframes natTagBlink{0%{opacity:1}50%{opacity:.15}}@media (prefers-reduced-motion:reduce){.nat-l button.natbox .cvtag{animation:none}}</style>
-<script src="posters.js?v=17"></script>
+<script>window.EP_MAST={top:'The',name:'Boston Rambler'}</script>
+<script src="posters.js?v=20"></script>
 </head>
 <body>
 <title>The Boston Rambler</title>
@@ -2258,7 +2259,7 @@ function showPromo0(id,pool,offset=0,flip=false){{const el=document.getElementBy
  box.hidden=false;const key=promoKey(s);if(a.dataset.promoKey===key)return;
  a.dataset.promoNext=key;if(flip&&a.dataset.promoKey)flipTo(a,s);else fill(a,s)
 }
-let JTEVI=0;window.jtEvPool=()=>jtEvPool();function jtEvPool(){try{if(jtEvPool.c&&jtEvPool.c.length&&Date.now()-jtEvPool.t<60000)return jtEvPool.c;const L=(typeof jtWeekList==='function'?jtWeekList(28):[]);return jtEvPool.t=Date.now(),jtEvPool.c=L.filter(e=>e.genre!=='sports'&&e.genre!=='worship'&&e.genre!=='support').map(e=>({tag:'IN BOSTON · '+(typeof shortDay==='function'?shortDay(e.date):e.date),bigText:(e.artists||'').replace(/\s*\([^)]*\)/g,'').trim(),name:e.venue||'Boston',when:e.time||'',sub:'',go:'Details',theme:'mu',href:e.url||'#cal',ext:e.url?1:0,view:e.url?'':'cal',ev:e,k:(typeof GENRE!=='undefined'&&GENRE[e.genre])||'#e8b818'}))}catch(_){return[]}}
+let JTEVI=0;window.jtEvPool=()=>jtEvPool();function jtEvPool(){try{if(jtEvPool.c&&jtEvPool.c.length&&Date.now()-jtEvPool.t<60000)return jtEvPool.c;const L=(typeof jtWeekList==='function'?jtWeekList(28):[]);return jtEvPool.t=Date.now(),jtEvPool.c=(window.epMix||(x=>x))(L.filter(e=>e.genre!=='sports'&&e.genre!=='worship'&&e.genre!=='support').map(e=>({tag:'IN BOSTON · '+(typeof shortDay==='function'?shortDay(e.date):e.date),bigText:(e.artists||'').replace(/\s*\([^)]*\)/g,'').trim(),name:e.venue||'Boston',when:e.time||'',sub:'',go:'Details',theme:'mu',href:e.url||'#cal',ext:e.url?1:0,view:e.url?'':'cal',ev:e,k:(typeof GENRE!=='undefined'&&GENRE[e.genre])||'#e8b818'})))}catch(_){return[]}}
 (function jtSweep(n){setTimeout(()=>{document.querySelectorAll('.lsrow .lspot.t-cw>a,.lsrow .lspot.t-spd>a,.lsrow .lspot.cwi>a').forEach(a=>{if(jtEvPool().length)fill(a,{theme:'cw',tag:'CRIME'})});if(n<8)jtSweep(n+1)},1500)})(0);
 function fill(a,s){if(s&&(s.theme==='cw'||s.theme==='spd'||s.cwi||/CRIME/i.test(s.tag||''))){const E=jtEvPool();if(E.length){s=E[JTEVI++%E.length]}}return fill0(a,s)}
 window.__fill0=(a,s)=>fill0(a,s);function fill0(a,s){if(!a||!s)return;try{const nz=x=>String(x||'').toLowerCase().replace(/\s+/g,' ').trim();const vis=new Set([...document.querySelectorAll('.lsrow .lspot:not([hidden]):not(.hasad) > a:not(.radv)')].filter(e=>e!==a).map(e=>nz((e.querySelector('.ls-big')||{}).textContent)).filter(Boolean));if(vis.has(nz(s.bigText||s.name))&&window.__PALT&&window.__PALT.length){const alt=window.__PALT.find(c=>!vis.has(nz(c.bigText||c.name)));if(alt)s=alt}}catch(_){}clearTimeout(promoTimers.get(a));a.dataset.promoKey=promoKey(s);delete a.dataset.promoNext;const box=a.parentNode;box.className=box.className.replace(/\bt-\S+/g,'').replace(/\bcwi\b/g,'').trim()+' t-'+s.theme+(s.cwi?' cwi':'');
@@ -2834,7 +2835,7 @@ E=(d.events||[]).filter(e=>e.date>=today&&e.artists&&e.venue&&!/worship|support|
 const go=()=>{try{if(!E.length||!window.__fill0)return;const nz=s=>String(s||'').toLowerCase().trim();const vis=new Set([...document.querySelectorAll('.lsrow .lspot:not([hidden]) .ls-big')].map(x=>nz(x.textContent)));
 document.querySelectorAll('.lsrow .lspot[hidden] > a[id]').forEach(el=>{if(innerWidth<1280&&el.parentNode.classList.contains('ls-extra'))return;let it=null;for(let n=0;n<E.length;n++){const c=E[(k+n)%E.length];if(!vis.has(nz(c.bigText))){it=c;k=k+n+1;break}}if(!it)return;vis.add(nz(it.bigText));el.parentNode.hidden=false;el.parentNode.style.display='';window.__fill0(el,it)})}catch(_){}};
 setTimeout(go,1500);setInterval(go,3000)})();</script>
-<link rel="stylesheet" href="posters.css?v=17">
+<link rel="stylesheet" href="posters.css?v=20">
 <link rel="stylesheet" href="polish.css?v=3">
 </body>
 </html>
