@@ -84,16 +84,17 @@ window.artCard=function(a,s){try{
  else if(v==='vinyl'){const P=STPAL[h%STPAL.length];sty='--bg:'+P[0]+';--ac:'+P[1];b=vinyl(P[1])+'<span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read the story →</span>'}
  else if(v==='stage')b='<span class="beam b1"></span>'+masks('#e8b818')+'<span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read the story →</span>';
  else if(v==='party')b=confetti(h)+'<span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read the story →</span>';
- else{const P=GALPAL[h%3];sty='--c1:'+P[0]+';--c2:'+P[1];b='<span class="ac-drop">'+H(t.replace(/^[^A-Za-z0-9]+/,'').charAt(0))+'</span><span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read the story →</span>'}
+ else{const P=GALPAL[h%3];sty='--c1:'+P[0]+';--c2:'+P[1];b='<span class="ac-band"></span><span class="ac-dot"></span><span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read the story →</span>'}
  const box=a.parentNode;box.classList.add('evp');['border','border-top','outline'].forEach(x=>box.style.setProperty(x,'0','important'));
  a.innerHTML='<span class="ep ac ac-'+v+'" style="'+sty+'">'+b+'</span>';
 }catch(_){}};
 /* --- auto-fit titles so no word ever breaks --- */
 function fit(el){if(el.dataset.fit)return;const cs=getComputedStyle(el);let f=parseFloat(cs.fontSize);if(!f||!el.clientWidth)return;el.dataset.fit=1;let n=0;
  while((el.scrollWidth>el.clientWidth+1||el.scrollHeight-el.clientHeight>f*.55)&&f>9&&n++<40){f*=.93;el.style.fontSize=f.toFixed(1)+'px'}}
-function fitAll(){if(!fontsOk)return;document.querySelectorAll('.bp-t:not([data-fit]),.ep-t:not([data-fit]),.ac-t:not([data-fit])').forEach(fit)}
+function scaleAll(){document.querySelectorAll('.lsrow .lspot.evp>a>.ep').forEach(ep=>{const box=ep.parentNode;const W=box.clientWidth,Hh=box.clientHeight;if(!W||!Hh)return;const s=W/300;if(ep.dataset.sc===W+'x'+Hh)return;ep.dataset.sc=W+'x'+Hh;const S=(k,v)=>ep.style.setProperty(k,v,'important');S('width','300px');S('max-width','none');S('min-width','300px');S('height',(Hh/s).toFixed(1)+'px');S('max-height','none');S('right','auto');S('bottom','auto');S('left','0');S('top','0');S('transform-origin','0 0');S('transform','scale('+s.toFixed(4)+')')})}
+function fitAll(){scaleAll();if(!fontsOk)return;document.querySelectorAll('.bp-t:not([data-fit]),.ep-t:not([data-fit]),.ac-t:not([data-fit])').forEach(fit)}
 window.epFit=fitAll;let fontsOk=!document.fonts;if(document.fonts){document.fonts.ready.then(()=>{fontsOk=true;refit()});document.fonts.addEventListener&&document.fonts.addEventListener('loadingdone',()=>refit())}
 function refit(){document.querySelectorAll('[data-fit]').forEach(e=>{e.style.fontSize='';delete e.dataset.fit});fitAll()}
 new MutationObserver(()=>requestAnimationFrame(fitAll)).observe(document.documentElement,{childList:true,subtree:true});
-addEventListener('resize',refit);
+addEventListener('resize',()=>{document.querySelectorAll('.ep[data-sc]').forEach(e=>delete e.dataset.sc);refit()});setInterval(scaleAll,1500);
 })();

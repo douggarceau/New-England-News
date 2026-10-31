@@ -11,8 +11,8 @@
 html body .lsrow .lspot.evp{border:0!important;padding:0!important;background:#000!important;box-shadow:0 10px 28px #000c,0 0 0 1px #0008!important;overflow:hidden!important;border-radius:10px!important}
 html body .lsrow .lspot.evp::before,html body .lsrow .lspot.evp::after{display:none!important}
 html body .lsrow .lspot.evp>a{display:block!important;position:absolute!important;inset:0!important;padding:0!important;margin:0!important;text-decoration:none!important;overflow:hidden!important}
-.ep{position:absolute;inset:0;display:grid;box-sizing:border-box;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#fff;overflow:hidden;transition:transform .35s ease,filter .35s}
-.lspot.evp:hover .ep{transform:scale(1.03);filter:brightness(1.08)}
+.ep{position:absolute;inset:0;display:grid;box-sizing:border-box;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#fff;overflow:hidden;transition:filter .35s}
+.lspot.evp:hover .ep{filter:brightness(1.1) saturate(1.1)}
 .ep>*{position:relative;z-index:1}.ep>.art,.ep>.beam{position:absolute;z-index:0;pointer-events:none}
 html body .lsrow .lspot.evp .ep b,html body .lsrow .lspot.evp .ep i,html body .lsrow .lspot.evp .ep small{font:inherit!important;letter-spacing:inherit!important;color:inherit!important;text-transform:inherit!important;font-style:normal!important}
 .ep .ep-t{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;line-height:.98;word-break:normal;overflow-wrap:normal;hyphens:none;min-width:0}
@@ -195,10 +195,11 @@ html body .lsrow .lspot.evp .ep-blue .ep-d i{font:800 9.5px/1 EpJost,Arial,sans-
 .ac-party .cft{inset:0;width:100%;height:100%;opacity:.55;mask:radial-gradient(70% 45% at 45% 50%,transparent 60%,#000 75%)}
 .ac-party .ac-k{color:#c2185b}.ac-party .ac-go{color:#7a2bd9}
 .ac-party .ac-t{font-family:EpAbril,Georgia,serif;line-height:1.06;text-shadow:2px 2px 0 #fff}
-.ac-cover{background:#f5f3ee;color:#111;padding-left:86px}
-.ac-cover .ac-drop{position:absolute;z-index:0;left:-6px;top:50%;transform:translateY(-52%);font:500 150px/1 EpJost,"Helvetica Neue",Arial,sans-serif;color:var(--c1);letter-spacing:-.06em;text-transform:uppercase}
-.ac-cover::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:var(--c2)}
+.ac-cover{background:linear-gradient(180deg,#fbf8f1,#efe9dc);color:#111;padding-top:22px;box-shadow:inset 0 0 0 1px #0001}
+.ac-cover .ac-band{position:absolute;z-index:0;left:0;right:0;top:0;height:8px;background:linear-gradient(90deg,var(--c1) 0 55%,var(--c2) 55% 80%,#111 80%)}
+.ac-cover .ac-dot{position:absolute;z-index:0;right:-26px;bottom:-26px;width:92px;height:92px;border-radius:50%;background:var(--c1);opacity:.9;box-shadow:-30px 10px 0 -18px var(--c2)}
 .ac-cover .ac-k{color:#111}.ac-cover .ac-go{color:#111}
-.ac-cover .ac-t{font-family:EpJost,"Helvetica Neue",Arial,sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.02em}
+.ac-cover .ac-t{font-family:EpPlayfair,Georgia,serif;font-style:italic;font-weight:500;line-height:1.06;letter-spacing:-.01em;padding-right:34px}
+.ac-cover .ac-t.s1{font-size:25px}.ac-cover .ac-t.s2{font-size:21px}.ac-cover .ac-t.s3{font-size:18px}.ac-cover .ac-t.s4{font-size:15px}
 @keyframes acSpin{to{transform:translateY(-50%) rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.ac-vinyl .vin{animation:none}}
