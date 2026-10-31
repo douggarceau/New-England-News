@@ -53,3 +53,21 @@ html body #jtSea{display:none!important}
 /* Tabs tucked up under the masthead */
 html body .wrap>header.mast{padding-bottom:2px!important}
 html body .wrap>nav#nav.navbar{top:0!important;margin-top:-8px!important}
+
+/* ===== Phone first screen ===== */
+@media (max-width:760px){
+ /* never flash the old cover: poster box is solid until the rotator fills it */
+ html body .cvr .cimg{background:#0b0d12!important}
+ html body .cvr .cimg>img{opacity:0!important}
+ html body .cvr .cimg.has-rot>img{visibility:hidden!important}
+ html.ep-cov body .cvr .cimg{aspect-ratio:2/3;width:100%;max-width:440px;margin:0 auto}
+ /* tighter lists */
+ html body .cvside .sea-g>*:nth-child(n+4){display:none!important}
+ html body .cvside .nat-l>button:nth-child(n+9){display:none!important}
+ /* margin cards become a swipe row instead of a 3000px stack */
+ html body .wrap>.lsrow{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;scroll-snap-type:x mandatory;gap:12px!important;padding:6px 16px 14px!important;margin:0 -16px!important;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+ html body .wrap>.lsrow::-webkit-scrollbar{display:none}
+ html body .wrap>.lsrow>.lspot{flex:0 0 82vw!important;width:82vw!important;max-width:340px;height:calc(min(82vw,340px)*.6)!important;min-height:0!important;scroll-snap-align:center;margin:0!important}
+ html body .wrap>.lsrow>.lspot>a{min-height:0!important}
+ html body .wrap>.lsrow>.lspot.t-ad,html body .wrap>.lsrow>.lspot.t-adimg:not(.hasad){display:none!important}
+}
