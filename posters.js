@@ -98,3 +98,19 @@ function refit(){document.querySelectorAll('[data-fit]').forEach(e=>{e.style.fon
 new MutationObserver(()=>requestAnimationFrame(fitAll)).observe(document.documentElement,{childList:true,subtree:true});
 addEventListener('resize',()=>{document.querySelectorAll('.ep[data-sc]').forEach(e=>delete e.dataset.sc);refit()});setInterval(scaleAll,1500);
 })();
+/* Top story box: alternates the story with full posters for the biggest upcoming shows */
+(function(){
+const BIG=/madison square|msg|barclays|radio city|beacon|td garden|fenway|gillette|mgm music hall|agganis|wang|citizens|boch|amica|ppac|providence performing|vets|ryan center|bally|stadium theatre|park theatre|carnegie|lincoln center|geffen|metropolitan opera|symphony hall|apollo|kings theatre|united palace|brooklyn paramount|terminal 5|hammerstein|emerson colonial|trinity rep|newport/i;
+let i=0,on=false,timer=0;
+function region(){try{const t=(window.jtEvPool()[0]||{}).tag||'';const r=t.split(' · ')[0].replace(/^(IN|ON)\s+(THE\s+)?/i,'').toLowerCase();return r==='island'?'Jamestown':r.replace(/\b\w/g,c=>c.toUpperCase())}catch(_){return ''}}
+function list(){try{const P=(window.jtEvPool&&window.jtEvPool())||[];const E=P.map(p=>p.ev).filter(Boolean);const big=E.filter(e=>BIG.test(e.venue||''));return (big.length>=4?big:E).slice(0,24)}catch(_){return[]}}
+function tick(){const box=document.querySelector('.cvr .cvbrk');if(!box||document.hidden||box.matches(':hover'))return;
+ let ov=box.querySelector(':scope>.bpx');
+ if(!ov){ov=document.createElement('span');ov.className='bpx';box.appendChild(ov);
+  ov.addEventListener('click',e=>{if(!box.classList.contains('bpx-on'))return;e.preventDefault();e.stopPropagation();const u=ov.dataset.href;if(u){if(/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}}},true)}
+ if(on){box.classList.remove('bpx-on');on=false;return}
+ const L=list();if(!L.length)return;const e=L[i++%L.length];const h=window.bigPoster&&window.bigPoster(e,region());if(!h)return;
+ ov.innerHTML=h;ov.dataset.href=e.url||'';box.classList.add('bpx-on');on=true;
+ requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})}
+setTimeout(()=>{tick();timer=setInterval(tick,9000)},9000);
+})();

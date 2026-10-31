@@ -132,10 +132,10 @@ html body .lsrow .lspot.evp .ep-blue .ep-d i{font:800 9.5px/1 EpJost,Arial,sans-
 .bp-gig .bp-v{margin-top:4cqw}.bp-gig .bp-go{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 
 .bp-blue{background:#0b2a5b;align-items:flex-start;text-align:left;padding:8cqw}
-.bp .disc{right:-14cqw;top:-10cqw;width:70cqw;height:70cqw;border-radius:50%;background:#e8b818;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10cqw 10cqw 0 0;box-sizing:border-box;color:#0b2a5b}
+.bp .disc{right:-16cqw;top:-12cqw;width:64cqw;height:64cqw;border-radius:50%;background:#e8b818;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10cqw 10cqw 0 0;box-sizing:border-box;color:#0b2a5b}
 .bp .disc b{font:800 26cqw/.85 EpJost,"Futura",Arial,sans-serif;letter-spacing:-.04em}.bp .disc i{font:800 6cqw/1 EpJost,Arial,sans-serif;font-style:normal;letter-spacing:.2em}
 .bp-blue .horn{left:-6cqw;bottom:22cqw;width:30cqw;opacity:.22}
-.bp-blue .bp-k{color:#e8b818;max-width:52%;line-height:1.5}
+.bp-blue .bp-k{color:#e8b818;max-width:40%;line-height:1.6}
 .bp-blue .bp-t{font-family:EpJost,"Futura",Arial,sans-serif;font-weight:800;line-height:.95;letter-spacing:-.03em;margin:auto 0 3cqw;text-transform:lowercase}
 .bp-blue .bp-t.x1{font-size:22cqw}.bp-blue .bp-t.x2{font-size:15cqw}.bp-blue .bp-t.x3{font-size:11.5cqw}.bp-blue .bp-t.x4{font-size:9cqw}.bp-blue .bp-t.x5{font-size:7.4cqw}
 .bp-blue .bars{display:flex;gap:1.5cqw;width:100%;margin-bottom:3cqw}.bp-blue .bars i{height:2cqw;flex:1;background:#e3170a}.bp-blue .bars i:nth-child(2){background:#e8b818;flex:.5}.bp-blue .bars i:nth-child(3){background:#fff;flex:.25}
@@ -203,3 +203,16 @@ html body .lsrow .lspot.evp .ep-blue .ep-d i{font:800 9.5px/1 EpJost,Arial,sans-
 .ac-cover .ac-t.s1{font-size:25px}.ac-cover .ac-t.s2{font-size:21px}.ac-cover .ac-t.s3{font-size:18px}.ac-cover .ac-t.s4{font-size:15px}
 @keyframes acSpin{to{transform:translateY(-50%) rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.ac-vinyl .vin{animation:none}}
+/* Top story box poster overlay */
+html body .cvr .cvbrk>.bpx{position:absolute;inset:0;z-index:6;opacity:0;pointer-events:none;transition:opacity .9s ease;container-type:size;overflow:hidden;border-radius:inherit}
+html body .cvr .cvbrk.bpx-on>.bpx{opacity:1;pointer-events:auto;cursor:pointer}
+html body .cvr .cvbrk>.bpx>.bp{position:absolute;inset:0}
+@media (prefers-reduced-motion:reduce){html body .cvr .cvbrk>.bpx{transition:none}}
+html body .cvr .cvbrk>.bpx b,html body .cvr .cvbrk>.bpx i,html body .cvr .cvbrk>.bpx small{color:inherit!important;text-shadow:none!important;line-height:inherit!important}
+html body .cvr .cvbrk>.bpx .disc b{font:800 26cqw/.85 EpJost,"Futura",Arial,sans-serif!important;color:#0b2a5b!important}
+html body .cvr .cvbrk>.bpx .disc i{font:800 6cqw/1 EpJost,Arial,sans-serif!important;color:#0b2a5b!important}
+html body .cvr .cvbrk>.bpx .bp-tear b{font:800 3.6cqw/1.2 "Helvetica Neue",Arial,sans-serif!important;color:var(--bg)!important}
+html body .cvr .cvbrk>.bpx .bp-tear b.n{font:400 11cqw/1 EpAnton,Impact,sans-serif!important}
+html body .cvr .cvbrk>.bpx .bp-ticket b{font:800 3.4cqw/1.3 "Helvetica Neue",Arial,sans-serif!important;color:#fff!important}
+html body .cvr .cvbrk>.bpx .bp-ticket b.n{font:400 8cqw/1.05 EpAbril,Georgia,serif!important}
+html body .cvr .cvbrk>.bpx .bp-v small{font:500 2.8cqw/1.3 "Helvetica Neue",Arial,sans-serif!important;opacity:.8}

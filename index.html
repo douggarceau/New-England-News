@@ -348,7 +348,7 @@ html body .lsrow .lspot.hasad{animation:hgAd 5s ease-in-out infinite}
 @keyframes hgAd{0%,100%{filter:drop-shadow(0 0 5px rgba(232,184,24,.4))}50%{filter:drop-shadow(0 0 13px rgba(232,184,24,.7))}}
 @media (prefers-reduced-motion:reduce){html body .lsrow .lspot{animation:none!important}}
 </style><style id="vwebCss">.vcard .vmeta a.vweb{font-weight:700;color:var(--k,#e8b818)!important;text-decoration:none}.vcard .vmeta a.vweb:hover{text-decoration:underline}.vcard p{margin:6px 0 8px}</style><style id="natboxCss">.nat-l button.natbox{display:block;margin:4px 0 8px;padding:12px 14px!important;border:2px solid #ff7a1a!important;border-radius:6px;background:linear-gradient(180deg,#3a1a06,#241004);color:#ffb15c!important;box-shadow:0 0 14px #ff7a1a55}.nat-l button.natbox:hover{color:#fff!important;border-color:#ffb15c!important}.nat-l button.natbox .cvtag{background:#ff7a1a;color:#111}.nat-l button.natbox .cvtag{animation:natTagBlink 1.1s steps(1,end) infinite}@keyframes natTagBlink{0%{opacity:1}50%{opacity:.15}}@media (prefers-reduced-motion:reduce){.nat-l button.natbox .cvtag{animation:none}}</style>
-<script src="posters.js?v=2"></script>
+<script src="posters.js?v=4"></script>
 </head>
 <body>
 <title>The Boston Rambler</title>
@@ -2515,9 +2515,9 @@ function pbxFlip(b,r){const f=b.querySelector('.cevt');b._busy=true;b.style.tran
  setTimeout(()=>{f.dataset.kind=r.kind;f.innerHTML=r.html;b.style.transition='none';b.style.transform='perspective(1400px) rotateY(-90deg)';
   requestAnimationFrame(()=>requestAnimationFrame(()=>{b.style.transition='transform .38s ease-out';b.style.transform='perspective(1400px) rotateY(0deg)';setTimeout(()=>{b.style.transition='';b.style.transform='';b._busy=false},420)}))},380)}
 function pbxNext(first){const b=document.querySelector('.cvr .pbx');if(!b||b._busy||document.hidden)return;if(!first&&b.matches(':hover'))return;
- evLoad().then(()=>{const k=pk++%10;const kind=(k===4||k===9)?'biz':k===7?'worship':'ev';const r=evFace(kind)||evFace('ev');if(!r)return;if(first){const f=b.querySelector('.cevt');f.dataset.kind=r.kind;f.innerHTML=r.html}else pbxFlip(b,r)})}
+ evLoad().then(()=>{const k=pk++%10;const kind='ev';const r=evFace(kind)||evFace('ev');if(!r)return;if(first){const f=b.querySelector('.cevt');f.dataset.kind=r.kind;f.innerHTML=r.html}else pbxFlip(b,r)})}
 setInterval(()=>{const c=document.querySelector('.cvr');if(!c||!c.querySelector('.cimg')||c.querySelector('.pbx'))return;const b=document.createElement('div');b.className='pbx';b.innerHTML='<span class="cevt"></span>';c.appendChild(b);pbxNext(true)},1000);
-setTimeout(()=>setInterval(()=>pbxNext(false),14000),7000);
+setTimeout(()=>setInterval(()=>pbxNext(false),9000),5000);
 addEventListener('click',e=>{const c=e.target.closest&&e.target.closest('.cvr .pbx');if(!c)return;e.preventDefault();e.stopImmediatePropagation();const kd=(c.querySelector('.cevt')||{dataset:{}}).dataset.kind;if(kd==='biz'){const nb=document.getElementById('dirNb');if(nb&&nb.offsetParent)nb.click();else scrollTo({top:0,behavior:'smooth'})}else{try{go('cal')}catch(_){location.hash='cal'}}},true);
 
 let TK=null;
@@ -2834,7 +2834,7 @@ E=(d.events||[]).filter(e=>e.date>=today&&e.artists&&e.venue&&!/worship|support|
 const go=()=>{try{if(!E.length||!window.__fill0)return;const nz=s=>String(s||'').toLowerCase().trim();const vis=new Set([...document.querySelectorAll('.lsrow .lspot:not([hidden]) .ls-big')].map(x=>nz(x.textContent)));
 document.querySelectorAll('.lsrow .lspot[hidden] > a[id]').forEach(el=>{if(innerWidth<1280&&el.parentNode.classList.contains('ls-extra'))return;let it=null;for(let n=0;n<E.length;n++){const c=E[(k+n)%E.length];if(!vis.has(nz(c.bigText))){it=c;k=k+n+1;break}}if(!it)return;vis.add(nz(it.bigText));el.parentNode.hidden=false;el.parentNode.style.display='';window.__fill0(el,it)})}catch(_){}};
 setTimeout(go,1500);setInterval(go,3000)})();</script>
-<link rel="stylesheet" href="posters.css?v=2">
+<link rel="stylesheet" href="posters.css?v=4">
 <link rel="stylesheet" href="polish.css?v=1">
 </body>
 </html>
