@@ -271,3 +271,7 @@ function dress(){if(typeof STORIES==='undefined')return;
  document.querySelectorAll('.sgrid .sc[data-story],.hll a,.sea-g button[data-story]').forEach(b=>{if(seen.has(b))return;const s=STORIES.find(x=>x.slug===b.dataset.story);if(!s)return;seen.add(b);b.classList.add('has-art');b.style.setProperty('--art','url('+pick(s)+')')})}
 new MutationObserver(()=>requestAnimationFrame(dress)).observe(document.documentElement,{childList:true,subtree:true});
 })();
+/* Address bar follows the story being read, so copying it opens that story */
+(function(){setInterval(()=>{let s='';try{if(STATE.view==='read'&&STATE.story&&typeof STORIES!=='undefined'&&STORIES.some(x=>x.slug===STATE.story))s=STATE.story}catch(_){return}
+ const q=new URLSearchParams(location.search);if((q.get('story')||'')===s)return;if(s)q.set('story',s);else q.delete('story');
+ const qs=q.toString();try{history.replaceState(history.state,'',location.pathname+(qs?'?'+qs:'')+location.hash)}catch(_){}},700)})();
