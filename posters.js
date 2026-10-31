@@ -169,7 +169,7 @@ function flip(r,toEv,e,n){return new Promise(res=>{if(r.matches(':hover')||(r.qu
  r.style.transition='transform .26s ease-in';r.style.transform='perspective(700px) rotateX(90deg)';
  setTimeout(()=>{if(toEv){let f=r.querySelector(':scope>.fb');if(f)f.remove();r.insertAdjacentHTML('beforeend',face(e,n));f=r.querySelector(':scope>.fb');f.dataset.href=e.url||'';r.classList.add('evf')}else{r.classList.remove('evf');const f=r.querySelector(':scope>.fb');if(f)f.remove()}
   r.style.transition='none';r.style.transform='perspective(700px) rotateX(-90deg)';
-  requestAnimationFrame(()=>requestAnimationFrame(()=>{r.style.transition='transform .26s ease-out';r.style.transform='';setTimeout(()=>{r.style.transition='';res()},280)}))},260)})}
+  void r.offsetWidth;setTimeout(()=>{r.style.transition='transform .26s ease-out';r.style.transform='';setTimeout(()=>{r.style.transition='';res()},280)},20)},260)})}
 const wait=ms=>new Promise(r=>setTimeout(r,ms));let k=0;
 async function loop(){for(;;){await wait(2500);if(document.hidden||matchMedia('(prefers-reduced-motion:reduce)').matches)continue;
  const P=((window.jtEvPool&&window.jtEvPool())||[]).map(p=>p.ev).filter(Boolean);const R=rows();if(!P.length||!R.length)continue;
