@@ -140,3 +140,22 @@ async function loop(){for(;;){await wait(7000);if(document.hidden||matchMedia('(
 document.addEventListener('click',e=>{const f=e.target.closest&&e.target.closest('#dirList .drow.evf>.fb');if(!f)return;e.preventDefault();e.stopPropagation();const u=f.dataset.href;if(u&&/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}},true);
 setTimeout(loop,2000);
 })();
+/* Yellow cover lines: a fresh set of our written stories every minute */
+(function(){
+const H3=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const TL={music:'Music',stage:'On stage',culture:'Culture',family:'Family',people:'People',food:'Food',arts:'Arts',film:'Film',outdoors:'Outdoors',community:'Community',holiday:'Holiday'};
+const NO=/crime|politic|court|police|news|housing|business|cover|streets/i;
+let pos=0,last=0;
+function pool(){try{if(typeof STORIES==='undefined')return[];const td=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});
+ return STORIES.filter(s=>s&&s.slug&&s.title&&!NO.test(s.topic||'')&&!(s.until&&s.until<td))}catch(_){return[]}}
+function rotate(){const L=document.querySelector('.nat-l');if(!L||document.hidden||L.matches(':hover'))return;
+ const btns=[...L.querySelectorAll(':scope>button')];const keep=btns.filter(b=>b.classList.contains('natbox'));const rest=btns.filter(b=>!b.classList.contains('natbox'));if(!rest.length)return;
+ const P=pool();if(P.length<=rest.length)return;const skip=new Set(keep.map(b=>b.dataset.story));
+ const next=[];let guard=0;while(next.length<rest.length&&guard++<P.length*2){const s=P[pos++%P.length];if(!skip.has(s.slug)&&!next.includes(s))next.push(s)}
+ L.classList.add('nl-fade');
+ setTimeout(()=>{rest.forEach((b,i)=>{const s=next[i];if(!s)return;b.dataset.story=s.slug;b.className='';const tag=TL[String(s.topic||'').toLowerCase()]||'';b.innerHTML=(tag?'<span class="cvtag">'+H3(tag)+'</span>':'')+H3(s.title)});
+  L.classList.remove('nl-fade');bar(L)},450)}
+function bar(L){let b=L.parentNode.querySelector(':scope>.nl-bar');if(!b){b=document.createElement('div');b.className='nl-bar';L.parentNode.insertBefore(b,L)}b.classList.remove('go');void b.offsetWidth;b.classList.add('go')}
+setInterval(()=>{const L=document.querySelector('.nat-l');if(L&&!L.parentNode.querySelector(':scope>.nl-bar'))bar(L)},2000);
+setInterval(rotate,60000);
+})();

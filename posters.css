@@ -239,3 +239,11 @@ html body #coverSlot .cvr .cvbrk>.bpx .bp-v small{font:500 2.8cqw/1.3 "Helvetica
 .fb-fair{background:repeating-conic-gradient(from 0deg at 0 100%,#ffd75e 0 6deg,#ffc02e 6deg 12deg);color:#5a1606}.fb-fair .fb-d{background:#c8321c;color:#fff}.fb-fair .fb-t{font-family:EpAbril,Georgia,serif;font-size:16px}.fb-fair .fb-v{color:#8a2a10}
 .fb-gallery{background:#f5f3ee;color:#111;box-shadow:inset -8px 0 0 #e3170a!important}.fb-gallery .fb-d{background:#1b4dff;color:#fff}.fb-gallery .fb-t{font-family:EpJost,Arial,sans-serif;font-weight:500;font-size:16px}.fb-gallery .fb-v{color:#555}
 #dirList>.drow.evf:hover>.fb{filter:brightness(1.1)}
+/* Yellow cover lines rotation */
+.nat-l{transition:opacity .45s ease,transform .45s ease}
+.nat-l.nl-fade{opacity:0;transform:translateY(6px)}
+html body div.nl-bar{display:block!important;height:2px!important;min-height:0!important;margin:2px 0 8px!important;padding:0!important;border:0!important;box-shadow:none!important;background:#ffcf5a22!important;border-radius:2px!important;overflow:hidden!important;position:relative!important;animation:none!important;grid-column:1/-1}
+.nl-bar::after{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,#ffcf5a,#ff7a1a);box-shadow:0 0 8px #ff9d2a}
+.nl-bar.go::after{animation:nlBar 60s linear forwards}
+@keyframes nlBar{to{width:100%}}
+@media (prefers-reduced-motion:reduce){.nat-l{transition:none}.nl-bar.go::after{animation:none;width:100%}}
