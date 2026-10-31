@@ -17,6 +17,8 @@ LABEL = {'crime': 'Crime Watch', 'streets': 'Boston News', 'politics': 'City Hal
          'culture': 'Arts & Culture', 'music': 'Music', 'food': 'Food & Drink', 'people': 'People',
          'cover': 'Boston Stories', 'sports': 'Sports', 'stage': 'On Stage', 'business': 'Business',
          'news': 'Boston News', 'transit': 'Getting Around'}
+MASTHEAD = os.path.join(ROOT, 'img', 'rambler-masthead.png')
+DEFLABEL = 'Boston Stories'
 NAVY, GOLD, CREAM = (10, 26, 51), (232, 184, 24), (248, 244, 234)
 
 
@@ -54,32 +56,75 @@ def wrap(d, text, f, width):
     return lines
 
 
+def _art(x, coast):
+    s = ' '.join(str(x.get(k) or '') for k in ('title', 'dek', 'topic')).lower()
+    ti = (x.get('title') or '').lower()
+    def has(*w): return any(k in s for k in w)
+    if any(k in ti for k in ('mass', 'worship', 'vespers', 'hymn', 'prayer')) and not has('parade', 'halloween', 'concert', 'fair', 'party'): k = 'church'
+    elif has('symphon', 'orchestra', 'philharmon', 'opera', 'ballet', 'nutcracker', 'choral', 'chorus', 'messiah', 'quartet', 'chamber', 'recital', 'baroque', 'classical'): k = 'gala'
+    elif has('jazz', 'blues', 'swing'): k = 'jazz'
+    elif x.get('topic') == 'stage' or has('theat', 'broadway', 'musical', 'comed', 'christmas carol', 'cabaret', 'much ado'): k = 'marquee'
+    elif has(' dj ', 'dance party', 'nightclub', 'nightlife'): k = 'club'
+    elif has('museum', 'gallery', 'exhibit', 'arts center', 'painting', 'photograph', 'sculpt', 'film', 'screening'): k = 'gallery'
+    elif has('parade', 'fair', 'festival', 'holiday', 'halloween', 'pumpkin', 'lantern', 'family', 'kids', 'library', 'thanksgiving', 'tree', 'market', 'comic con'): k = 'fair'
+    elif has('music', 'band', 'rock', 'concert', 'tour', 'live', 'cafe', 'café') or x.get('topic') == 'music': k = 'gig'
+    else: k = 'wharf' if coast else 'gala'
+    for name in ([k + '2', k] if coast else [k, k + '2']):
+        p = os.path.join(ROOT, 'img', 'posters', name + '.jpg')
+        if os.path.exists(p): return p
+    return None
+
+
 def card(x, out):
+    from PIL import ImageFilter, ImageEnhance
     W, H = 1200, 630
-    im = Image.new('RGB', (W, H), NAVY)
+    coast = os.path.exists(os.path.join(ROOT, 'img', 'posters', 'wharf.jpg')) and ('jamestown' in SITE or 'hurricane' in SITE)
+    ap = _art(x, coast)
+    if ap:
+        bg = Image.open(ap).convert('RGB')
+        r = max(W / bg.width, H / bg.height); bg = bg.resize((int(bg.width * r) + 1, int(bg.height * r) + 1), Image.LANCZOS)
+        bg = bg.crop(((bg.width - W) // 2, (bg.height - H) // 2, (bg.width - W) // 2 + W, (bg.height - H) // 2 + H))
+        bg = ImageEnhance.Brightness(bg.filter(ImageFilter.GaussianBlur(2))).enhance(0.55)
+    else:
+        bg = Image.new('RGB', (W, H), NAVY)
+    sh = Image.new('L', (W, H), 0); sd = ImageDraw.Draw(sh)
+    for yy in range(H):
+        a = int(70 + 150 * abs(yy - H * 0.55) / H)
+        sd.line([(0, yy), (W, yy)], fill=min(200, a))
+    im = Image.composite(Image.new('RGB', (W, H), (8, 6, 14)), bg, sh)
+    glow = Image.new('RGB', (W, H), (0, 0, 0)); gd = ImageDraw.Draw(glow)
+    gd.ellipse((W * 0.15, H * 0.2, W * 0.85, H * 1.1), fill=(90, 50, 10)); glow = glow.filter(ImageFilter.GaussianBlur(120))
+    im = Image.fromarray(__import__('numpy').minimum(255, __import__('numpy').asarray(im, dtype='int16') + __import__('numpy').asarray(glow, dtype='int16')).astype('uint8'))
     d = ImageDraw.Draw(im)
-    mh = Image.open(os.path.join(ROOT, 'img', 'rambler-masthead.png')).convert('RGBA')
-    mw = 520; mh = mh.resize((mw, int(mh.height * mw / mh.width)), Image.LANCZOS)
-    im.paste(mh, ((W - mw) // 2, 34), mh)
-    top = 34 + mh.height + 26
-    lab = font(['LibreFranklin-Bold.ttf', 'DejaVuSans-Bold.ttf'], 26)
-    t = LABEL.get(x.get('topic'), 'Boston Stories').upper()
+    mh = Image.open(MASTHEAD).convert('RGBA')
+    mw = 420; mh = mh.resize((mw, int(mh.height * mw / mh.width)), Image.LANCZOS)
+    im.paste(mh, ((W - mw) // 2, 30), mh)
+    top = 30 + mh.height + 22
+    lab = font(['DejaVuSans-Bold.ttf'], 22)
+    t = LABEL.get(x.get('topic'), DEFLABEL).upper()
     tw = d.textlength(t, font=lab)
-    d.text(((W - tw) / 2, top), t, font=lab, fill=GOLD)
-    top += 50
-    # headline: biggest size that fits in 4 lines
-    for size in range(76, 34, -2):
-        f = font(['PlayfairDisplay-Bold.ttf', 'DejaVuSerif-Bold.ttf'], size)
-        lines = wrap(d, x['title'], f, W - 140)
-        lh = int(size * 1.14)
-        if len(lines) <= 4 and top + lh * len(lines) <= H - 60:
+    d.rounded_rectangle(((W - tw) / 2 - 16, top - 6, (W + tw) / 2 + 16, top + 30), 6, fill=GOLD)
+    d.text(((W - tw) / 2, top - 1), t, font=lab, fill=(30, 18, 0))
+    top += 54
+    hf = os.path.join(ROOT, 'fonts', 'ep-abril.woff')
+    for size in range(84, 34, -2):
+        try: f = ImageFont.truetype(hf, size)
+        except Exception: f = font(['DejaVuSerif-Bold.ttf'], size)
+        lines = wrap(d, x['title'], f, W - 120)
+        lh = int(size * 1.12)
+        if len(lines) <= 4 and top + lh * len(lines) <= H - 50:
             break
-    y = top + (H - 60 - top - lh * len(lines)) // 2
+    y = top + (H - 50 - top - lh * len(lines)) // 2
+    halo = Image.new('RGBA', (W, H), (0, 0, 0, 0)); hd = ImageDraw.Draw(halo); yy = y
+    for ln in lines:
+        lw = d.textlength(ln, font=f); hd.text(((W - lw) / 2, yy), ln, font=f, fill=(255, 170, 60, 200)); yy += lh
+    halo = halo.filter(ImageFilter.GaussianBlur(14)); im.paste(halo, (0, 0), halo); d = ImageDraw.Draw(im)
     for ln in lines:
         lw = d.textlength(ln, font=f)
-        d.text(((W - lw) / 2, y), ln, font=f, fill=CREAM)
+        d.text(((W - lw) / 2 + 2, y + 3), ln, font=f, fill=(10, 6, 0))
+        d.text(((W - lw) / 2, y), ln, font=f, fill=(255, 246, 220))
         y += lh
-    d.rectangle((0, H - 12, W, H), fill=GOLD)
+    d.rectangle((0, H - 10, W, H), fill=GOLD)
     im.save(out, quality=88, optimize=True)
 
 
@@ -121,7 +166,7 @@ def main():
     os.makedirs(os.path.join(ROOT, 'img', 'share'), exist_ok=True)
     keep_s, keep_i = set(), set()
     for x in L:
-        h = hashlib.sha1((x['title'] + '|' + str(x.get('topic')) + '|v1').encode()).hexdigest()[:8]
+        h = hashlib.sha1((x['title'] + '|' + str(x.get('topic')) + '|v2').encode()).hexdigest()[:8]
         img = f'img/share/{x["slug"]}-{h}.jpg'
         keep_i.add(os.path.basename(img)); keep_s.add(x['slug'])
         if not os.path.exists(os.path.join(ROOT, img)):
