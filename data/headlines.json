@@ -1,13 +1,53 @@
 {
- "asof": "2026-10-29T23:45:00-04:00",
+ "asof": "2026-10-31T07:49:58-04:00",
  "items": [
+  {
+   "h": "Coco in Concert: Boston Pops Scores Pixar's Film Live Today",
+   "sum": "The Boston Pops play the score of Coco at Symphony Hall for a 1:30 p.m. matinee.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=coco-in-concert-symphony-hall-2026",
+   "story": "coco-in-concert-symphony-hall-2026",
+   "box": true,
+   "town": "Back Bay",
+   "date": "2026-10-31",
+   "rank": 2
+  },
+  {
+   "h": "Igor Levit Brings an All-Beethoven Recital to Symphony Hall",
+   "sum": "A Sunday afternoon recital traces Beethoven's arc, ending with the Waldstein Sonata.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=igor-levit-beethoven-symphony-hall-2026",
+   "story": "igor-levit-beethoven-symphony-hall-2026",
+   "town": "Back Bay",
+   "date": "2026-10-31",
+   "rank": 3
+  },
+  {
+   "h": "Friday Organ Recitals at Trinity Church in Copley Square",
+   "sum": "Midday organ recitals on Nov. 6, 13 and 20, with no charge for admission.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=trinity-church-organ-recitals-nov-2026",
+   "story": "trinity-church-organ-recitals-nov-2026",
+   "town": "Back Bay",
+   "date": "2026-10-31",
+   "rank": 4
+  },
+  {
+   "h": "Walk-In Piano Stations Open at Boston Public Library Branches",
+   "sum": "Piano stations at four branches run through Nov. 30 on a walk-in basis.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bpl-piano-learning-stations-nov-2026",
+   "story": "bpl-piano-learning-stations-nov-2026",
+   "town": "Copley Square",
+   "date": "2026-10-31",
+   "rank": 6
+  },
   {
    "h": "Halloween Night in Boston: What to Expect",
    "sum": "A Saturday Halloween, a sunny weekend in the forecast, costume shows all over town, and the clocks fall back overnight.",
    "outlet": "The Boston Rambler",
    "url": "?story=halloween-night-in-boston",
    "story": "halloween-night-in-boston",
-   "box": true,
    "town": "",
    "date": "2026-10-30",
    "rank": 2
@@ -31,42 +71,6 @@
    "rank": 3
   },
   {
-   "h": "Somerville looks to save arts spaces with a cultural trust",
-   "sum": "The city is proposing a trust that could buy and preserve venues for artists and performers.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/28/somerville-cultural-trust-arts-space",
-   "town": "Somerville",
-   "date": "2026-10-28",
-   "rank": 4
-  },
-  {
-   "h": "Mass. Lottery tries scented scratch tickets for the holidays",
-   "sum": "The lottery's first scented holiday tickets aim to give sagging scratch sales a lift.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/28/massachusetts-scented-scratch-ticket-holidays",
-   "town": "Statewide",
-   "date": "2026-10-28",
-   "rank": 5
-  },
-  {
-   "h": "About 70,000 Massachusetts residents see medical debt wiped away",
-   "sum": "A foundation and a nonprofit teamed up to erase roughly $38 million in medical debt for residents across the state.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/26/medical-debt-forgiveness-atrius-health-equity",
-   "town": "Statewide",
-   "date": "2026-10-26",
-   "rank": 7
-  },
-  {
-   "h": "Harvard Book Store opening a second shop in downtown Boston",
-   "sum": "The Cambridge bookseller is bringing a new Union Street location with a cafe and a children's area this fall.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/23/harvard-book-store-downtown-boston",
-   "town": "Downtown",
-   "date": "2026-10-23",
-   "rank": 8
-  },
-  {
    "h": "Bostonhenge sunset lines up with Back Bay streets this week",
    "sum": "The twice-a-year moment when the setting sun aligns with Back Bay buildings is back, with tips on where and when to watch.",
    "outlet": "WBUR",
@@ -85,33 +89,6 @@
    "rank": 10
   },
   {
-   "h": "Nikki Giovanni's archives open to the public at Boston University",
-   "sum": "BU's Howard Gotlieb center now holds the papers of the celebrated poet.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/22/poet-nikki-giovanni-archive-boston-university-howard-gotlieb-center",
-   "town": "Fenway",
-   "date": "2026-10-22",
-   "rank": 14
-  },
-  {
-   "h": "Red Line to pick up speed between JFK/UMass and North Quincy",
-   "sum": "The MBTA plans to raise train speeds to 50 mph on that stretch of the Braintree branch.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/22/mbta-red-line-speeds-north-quincy-jfk",
-   "town": "Dorchester",
-   "date": "2026-10-22",
-   "rank": 17
-  },
-  {
-   "h": "Fallen leaves caused an hours-long Commuter Rail delay",
-   "sum": "The T says slippery leaves on the tracks were behind a lengthy disruption for Commuter Rail riders.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/hourslong-delay-on-mbta-commuter-rail-was-caused-by-fallen-leaves/4039539/",
-   "town": "Statewide",
-   "date": "2026-10-29",
-   "rank": 18
-  },
-  {
    "h": "High-end Japanese restaurant group from a James Beard winner heading to Boston",
    "sum": "An acclaimed chef's upscale Japanese restaurant chain is expanding into the Boston market.",
    "outlet": "NBC Boston",
@@ -119,33 +96,6 @@
    "town": "Boston",
    "date": "2026-10-26",
    "rank": 20
-  },
-  {
-   "h": "Popular sub shop chain closes its Downtown Crossing spot",
-   "sum": "A well-known sandwich chain has shut its location in Downtown Crossing.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/popular-sub-shop-chain-in-bostons-downtown-crossing-has-closed/4038037/",
-   "town": "Downtown",
-   "date": "2026-10-27",
-   "rank": 21
-  },
-  {
-   "h": "Saus is leaving Somerville's Bow Market",
-   "sum": "The Bow Market eatery says it is time to move on and is closing its Somerville spot.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/saus-bow-market-restaurant-somerville-closing/4036446/",
-   "town": "Somerville",
-   "date": "2026-10-23",
-   "rank": 22
-  },
-  {
-   "h": "Attleboro's Stone-E-Lea Golf Course to close after 70-plus years",
-   "sum": "The family-run course will close at the end of the season and is listed for sale for possible redevelopment.",
-   "outlet": "Boston Business Journal",
-   "url": "https://www.nbcboston.com/boston-business-journal/mass-golf-course-closing-after-70-years-listed-for-sale-and-redevelopment/4040012/",
-   "town": "Attleboro",
-   "date": "2026-10-29",
-   "rank": 23
   }
  ]
 }
