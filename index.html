@@ -1705,9 +1705,9 @@ async function cwLoad(force){if(!force&&Date.now()-CW.t<240000)return;const ago=
 
 /* Front page: the week ahead in Boston. Skips daily worship, meetings and services so real events stand out; one pick per event, grouped by day. */
 const JTSKIP=/^(worship|support)$/;const JTNOISE=/\b(mass|rosary|teen center|pantry|thrift|reconciliation|bible|prayer|morning glory|al-anon|aa meeting|step workshop|choir rehearsals?|chorus rehearsals?|rehearsals?|office hours)\b/i;
-function jtWeekList(){try{const end=addDays(todayKey,7);const now=new Date();const nowMin=now.getHours()*60+now.getMinutes();const mins=t=>{const m=/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i.exec(t||'');if(!m)return 9999;return (Number(m[1])%12+(/PM/i.test(m[3])?12:0))*60+Number(m[2])};const vn=v=>(v||'').toLowerCase().normalize('NFD').replace(/[^a-z]/g,'').replace(/^the/,'').slice(0,12);const seen=new Set(),per={};const out=[];
+function jtWeekList(D){try{const end=addDays(todayKey,D||7);const now=new Date();const nowMin=now.getHours()*60+now.getMinutes();const mins=t=>{const m=/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i.exec(t||'');if(!m)return 9999;return (Number(m[1])%12+(/PM/i.test(m[3])?12:0))*60+Number(m[2])};const vn=v=>(v||'').toLowerCase().normalize('NFD').replace(/[^a-z]/g,'').replace(/^the/,'').slice(0,12);const seen=new Set(),per={};const out=[];
  for(const e of up){if(e.date<todayKey||e.date>end||JTSKIP.test(e.genre||'')||JTNOISE.test(e.artists||''))continue;if(e.date===todayKey&&mins(e.time)!==9999&&mins(e.time)<nowMin-30)continue;
-  const k1=(e.artists||'').toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z]/g,'').slice(0,24),k2=e.date+'|'+(e.time||'')+'|'+vn(e.venue);if(seen.has(k1)||seen.has(k2))continue;if((per[e.date]||0)>=2)continue;seen.add(k1);seen.add(k2);per[e.date]=(per[e.date]||0)+1;out.push(e);if(out.length>=9)break}
+  const k1=(e.artists||'').toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z]/g,'').slice(0,24),k2=e.date+'|'+(e.time||'')+'|'+vn(e.venue);if(seen.has(k1)||seen.has(k2))continue;if((per[e.date]||0)>=(D?6:2))continue;seen.add(k1);seen.add(k2);per[e.date]=(per[e.date]||0)+1;out.push(e);if(out.length>=(D?60:9))break}
  return out}catch(_){return[]}}
 function jtWeekSpan(){const n=jtWeekList().length;return n?'next 7 days':'coming up'}
 function jtWeek(){let L=jtWeekList();if(!L.length){try{L=up.filter(e=>!JTSKIP.test(e.genre||'')&&!JTNOISE.test(e.artists||'')).slice(0,6)}catch(_){L=[]}}
@@ -2227,7 +2227,7 @@ const $=id=>document.getElementById(id),esc=t=>String(t).replace(/&/g,'&amp;').r
 const promoTimers=new WeakMap();
 const promoKey=s=>s.rep?'report:'+s.rep:'title:'+String(s.bigText||s.big||s.name||s.story||s.href).replace(/\s+/g,' ').trim().toLowerCase();
 const narrowExtra=box=>innerWidth<1280&&box.classList.contains('ls-extra');
-function showPromo(id,pool,off,flip){const A=adPool();const on=document.querySelectorAll('.lspot.t-ad,.lspot.t-adimg').length;
+function showPromo(id,pool,off,flip){if(/^ls[BDHFJNP]$/.test(id)&&window.jtEvPool){const e=window.jtEvPool();if(e.length)return showPromo0(id,e,off,flip)}const A=adPool();const on=document.querySelectorAll('.lspot.t-ad,.lspot.t-adimg').length;
  if(A.length&&on<Math.min(2,A.length)&&Math.random()<(on?0.15:0.3))return showPromo0(id,adShuf(A),0,flip);return showPromo0(id,pool,off,flip)}
 function adShuf(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 const ADS_ON=true; /* Advertise Here boxes: set true to turn back on */
@@ -2258,7 +2258,7 @@ function showPromo0(id,pool,offset=0,flip=false){{const el=document.getElementBy
  box.hidden=false;const key=promoKey(s);if(a.dataset.promoKey===key)return;
  a.dataset.promoNext=key;if(flip&&a.dataset.promoKey)flipTo(a,s);else fill(a,s)
 }
-let JTEVI=0;function jtEvPool(){try{const L=(typeof jtWeekList==='function'?jtWeekList():[]);return L.filter(e=>e.genre!=='sports').map(e=>({tag:'IN BOSTON · '+(typeof shortDay==='function'?shortDay(e.date):e.date),bigText:(e.artists||'').replace(/\s*\([^)]*\)/g,'').trim(),name:e.venue||'Boston',when:e.time||'',sub:'',go:'Details',theme:'mu',href:e.url||'#cal',ext:e.url?1:0,view:e.url?'':'cal',ev:e,k:(typeof GENRE!=='undefined'&&GENRE[e.genre])||'#e8b818'}))}catch(_){return[]}}
+let JTEVI=0;window.jtEvPool=()=>jtEvPool();function jtEvPool(){try{if(jtEvPool.c&&jtEvPool.c.length&&Date.now()-jtEvPool.t<60000)return jtEvPool.c;const L=(typeof jtWeekList==='function'?jtWeekList(28):[]);return jtEvPool.t=Date.now(),jtEvPool.c=L.filter(e=>e.genre!=='sports'&&e.genre!=='worship'&&e.genre!=='support').map(e=>({tag:'IN BOSTON · '+(typeof shortDay==='function'?shortDay(e.date):e.date),bigText:(e.artists||'').replace(/\s*\([^)]*\)/g,'').trim(),name:e.venue||'Boston',when:e.time||'',sub:'',go:'Details',theme:'mu',href:e.url||'#cal',ext:e.url?1:0,view:e.url?'':'cal',ev:e,k:(typeof GENRE!=='undefined'&&GENRE[e.genre])||'#e8b818'}))}catch(_){return[]}}
 (function jtSweep(n){setTimeout(()=>{document.querySelectorAll('.lsrow .lspot.t-cw>a,.lsrow .lspot.t-spd>a,.lsrow .lspot.cwi>a').forEach(a=>{if(jtEvPool().length)fill(a,{theme:'cw',tag:'CRIME'})});if(n<8)jtSweep(n+1)},1500)})(0);
 function fill(a,s){if(s&&(s.theme==='cw'||s.theme==='spd'||s.cwi||/CRIME/i.test(s.tag||''))){const E=jtEvPool();if(E.length){s=E[JTEVI++%E.length]}}return fill0(a,s)}
 window.__fill0=(a,s)=>fill0(a,s);function fill0(a,s){if(!a||!s)return;try{const nz=x=>String(x||'').toLowerCase().replace(/\s+/g,' ').trim();const vis=new Set([...document.querySelectorAll('.lsrow .lspot:not([hidden]):not(.hasad) > a:not(.radv)')].filter(e=>e!==a).map(e=>nz((e.querySelector('.ls-big')||{}).textContent)).filter(Boolean));if(vis.has(nz(s.bigText||s.name))&&window.__PALT&&window.__PALT.length){const alt=window.__PALT.find(c=>!vis.has(nz(c.bigText||c.name)));if(alt)s=alt}}catch(_){}clearTimeout(promoTimers.get(a));a.dataset.promoKey=promoKey(s);delete a.dataset.promoNext;const box=a.parentNode;box.className=box.className.replace(/\bt-\S+/g,'').replace(/\bcwi\b/g,'').trim()+' t-'+s.theme+(s.cwi?' cwi':'');
@@ -2302,13 +2302,13 @@ let c=0;fetch('data/crime.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).
  CWX=CWX.concat(it);CRX=d.items.slice(0,40).map(x=>({tag:'BOSTON CRIME · '+(x.kind||'police'),bigText:x.headline,name:(x.hood||'Boston'),when:(typeof shortDay==='function'?shortDay(x.date):x.date)+(x.outlet?' · '+x.outlet:''),sub:x.blurb,go:'Read it',theme:'cw',cwi:1,href:x.url,ext:1}));if(CRX.length)showPromo('lsA',CRX)}).catch(()=>{});
 setInterval(()=>{i++;setTimeout(()=>showPromo('lsB',NWX(),i%Math.max(1,NWX().length),true),450);setTimeout(()=>{if(SCF.length>1){q=(q+1)%SCF.length;showPromo('lsE',SCF,q,true)}},1350);setTimeout(()=>{if(MUF.length>1){u=(u+1)%MUF.length;showPromo('lsF',MUF,u,true)}},1800);setTimeout(()=>{if(SPF.length>1){sp=(sp+1)%SPF.length;showPromo('lsG',SPF,sp,true)}},2250);setTimeout(()=>{if(CORR.length>1){a2=(a2+1)%CORR.length;showPromo('lsH',CORR,a2,true)}},2700);setTimeout(()=>{if(CRX.length>1){c=(c+1)%CRX.length;showPromo('lsA',CRX,c,true)}},900)},5600);
 if(WRF.length>1)setInterval(()=>{j=(j+1)%WRF.length;showPromo('lsD',WRF.length?WRF:NWX(),WRF.length?j:(j+3),true)},6000);
-const XT=[['lsI',()=>CRX.length?CRX:WRF,4],['lsJ',()=>WRF,2],['lsK',()=>WRF,12],['lsL',()=>CORR,1],['lsM',()=>CRX.length?CRX:WRF,12],['lsN',()=>MUF,3],['lsO',()=>SCF,2],['lsP',()=>WRF,7]];
+const EVP=()=>{const e=jtEvPool();return e.length?e:WRF};const XT=[['lsI',EVP,4],['lsJ',EVP,9],['lsK',()=>WRF,12],['lsL',EVP,1],['lsM',EVP,14],['lsN',EVP,3],['lsO',()=>WRF,2],['lsP',EVP,7]];
 const xk=XT.map(()=>0),xf=XT.map(()=>false);
 const xtFill=(n,flip)=>{const [id,g,o]=XT[n];showPromo(id,g(),o+xk[n],flip&&xf[n]);xf[n]=true};
 XT.forEach((_,n)=>xtFill(n,false));
 setInterval(()=>XT.forEach((_,n)=>setTimeout(()=>{xk[n]++;xtFill(n,true)},300+(n%10)*420)),6400);
 /* Fill the side margins with news boxes all the way down the page */
-const EVP=()=>{const e=jtEvPool();return e.length?e:WRF};const XP=[EVP,()=>STF,EVP,EVP,()=>WRF,EVP];
+const XP=[EVP,EVP,()=>STF,EVP,EVP,EVP];
 const lsMore=()=>{if(innerWidth<1280)return;const row=document.querySelector('.lsrow'),w=document.querySelector('.wrap'),s=[...document.querySelectorAll('.lsrow .lspot')].find(x=>x.offsetHeight>40),V=document.getElementById('view');if(!row||!w||!s||!V)return;
  row.querySelectorAll('.lspot').forEach(x=>{x.style.removeProperty('height');x.classList.remove('ri-cut')});
  const step=s.offsetHeight+12,lsh=s.offsetHeight,rt=row.getBoundingClientRect().top,vb=V.getBoundingClientRect().bottom-rt,rg=document.getElementById('regSpot'),rgH=rg&&rg.offsetParent?rg.offsetHeight+24:0;
@@ -2460,7 +2460,7 @@ q.addEventListener("keydown",e=>{const L=[...p.querySelectorAll("a")];if(!L.leng
 document.addEventListener("click",e=>{if(!p.contains(e.target)&&e.target!==q)p.hidden=true});addEventListener("scroll",()=>{if(!p.hidden)place()},{passive:true});addEventListener("resize",()=>{p.hidden=true})};
 document.readyState==="loading"?document.addEventListener("DOMContentLoaded",()=>setTimeout(go,0)):setTimeout(go,0)})();</script>
 <style>
-.lspot a.eadv{position:absolute;inset:0;z-index:5;display:block;width:auto;height:auto;padding:0;gap:0;background:#08090b url(img/ad-eric-maluk.jpg) center/cover no-repeat;border-radius:inherit;opacity:0;pointer-events:none;transition:opacity .6s ease}
+.lspot a.eadv{position:absolute;inset:0;z-index:5;display:block;width:auto;height:auto;padding:0;gap:0;background:#08090b;border-radius:inherit;opacity:0;pointer-events:none;transition:opacity .6s ease}
 .lspot a.eadv.on{opacity:1;pointer-events:auto}
 @media (prefers-reduced-motion:reduce){.lspot a.eadv{transition:none}}
 </style>
@@ -2754,11 +2754,7 @@ html body .lsrow .lspot.hasad{height:auto!important;min-height:0!important;max-h
    To add one: put it in ADS with its start date; it goes to the top. Ads drop off after their end date. */
 (function(){
 const ADS=[
-{img:'img/ad-show-doja-cat.jpg',href:'https://www.tdgarden.com/events/detail/doja-cat',label:'Live show: Doja Cat with Latto, TD Garden, Monday Nov. 23',start:'2026-10-31',end:'2026-11-23'},
-{img:'img/ad-td-garden.jpg',href:'https://www.tdgarden.com',label:'Featured: TD Garden, 100 Legends Way',start:'2026-10-30',end:'2026-11-29'},
-{img:'img/ad-mgm-music-hall.jpg',href:'https://www.mgmmusichall.com',label:'Featured: MGM Music Hall at Fenway, 2 Lansdowne St',start:'2026-10-30',end:'2026-11-29'},
-{img:'img/ad-house-of-blues.jpg',href:'https://www.houseofblues.com/boston',label:'Featured: House of Blues Boston, 15 Lansdowne St',start:'2026-10-30',end:'2026-11-29'},
- {img:'img/ad-eric-maluk.jpg',at:6,href:'https://www.rate.com/ericmaluk',label:'Advertisement: Eric Maluk, Rate. Visit his page or call (401) 254-4403',start:'2026-10-20',end:'2026-11-19'}];
+{img:'img/ad-show-doja-cat.jpg',href:'https://www.tdgarden.com/events/detail/doja-cat',label:'Live show: Doja Cat with Latto, TD Garden, Monday Nov. 23',start:'2026-10-31',end:'2026-11-23'}];
 const live=()=>ADS.filter(a=>!a.end||Date.now()<Date.parse(a.end+'T23:59:59-05:00')).sort((x,y)=>y.start.localeCompare(x.start));
 const boxes=()=>[...document.querySelectorAll('.lsrow .lspot')].filter(b=>!b.hidden&&b.getBoundingClientRect().width>0).sort((x,y)=>{const r=x.getBoundingClientRect(),s=y.getBoundingClientRect();return (r.top-s.top)||(r.left-s.left)});
 const place=()=>{const A=live(),B=boxes();if(!A.length)return;if(!B.length)return;
