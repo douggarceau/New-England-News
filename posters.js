@@ -175,7 +175,8 @@ async function loop(){for(;;){await wait(7000);if(document.hidden||matchMedia('(
  const P=((window.jtEvPool&&window.jtEvPool())||[]).map(p=>p.ev).filter(Boolean);const R=rows();if(!P.length||!R.length)continue;
  for(let i=0;i<R.length;i++){await flip(R[i],true,P[(k+i)%P.length],i);await wait(260)}k+=R.length;
  await wait(6500);
- const B=[...document.querySelectorAll('#dirList>.drow.evf')];for(const r of B){await flip(r,false);await wait(260)}}}
+ const B=[...document.querySelectorAll('#dirList>.drow.evf')];for(const r of B){await flip(r,false);await wait(260)}
+ await wait(2500);const D=document.getElementById('dirList');if(D&&!D.matches(':hover')&&D.scrollHeight>D.clientHeight+10){const end=D.scrollTop+D.clientHeight>=D.scrollHeight-5;D.scrollTo({top:end?0:D.scrollTop+D.clientHeight-20,behavior:'smooth'})}}}
 document.addEventListener('click',e=>{const f=e.target.closest&&e.target.closest('#dirList .drow.evf>.fb');if(!f)return;e.preventDefault();e.stopPropagation();const u=f.dataset.href;if(u&&/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}},true);
 setTimeout(loop,2000);
 })();
