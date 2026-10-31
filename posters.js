@@ -151,8 +151,8 @@ function tick(){const box=document.querySelector('.cvr .cvbrk');if(!box||documen
  if(phase===0){const h=itnHTML(slug,title);if(!h){step++;return tick()}const o=layer(box,'itn');turn(box,()=>{o.innerHTML=h;box.classList.remove('bpx-on');box.classList.add('itn-on');requestAnimationFrame(()=>{const R=o.querySelector('.itn-rows');let g=0;while(R&&R.scrollHeight>R.clientHeight+1&&g++<30){const k=R.lastElementChild;if(!k)break;k.remove();const l=R.lastElementChild;if(l&&l.classList.contains('itn-sec'))l.remove()}})})}
  else if(phase===1){turn(box,()=>box.classList.remove('itn-on'))}
  else if(phase===2){const L=bigList();if(!L.length)return;const e=L[pi++%L.length];const h=window.bigPoster&&window.bigPoster(e,region());if(!h)return;const o=layer(box,'bpx');o.innerHTML=h;o.dataset.href=e.url||'';box.classList.remove('itn-on');box.classList.add('bpx-on');requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})}
- else{const F=feats(box);if(F.length>1){fi=(fi+1)%F.length;const s=F[fi];turn(box,()=>{box.classList.remove('bpx-on');setStory(box,s,fi===0)})}else box.classList.remove('bpx-on')}}
-let fi=0,F0=null,TH='',TAG='';
+ else{const F=feats(box);const _t=F[0]||{},_td=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'}),_lim=new Date(Date.now()+2*864e5).toLocaleDateString('en-CA',{timeZone:'America/New_York'});const _pin=_t.until&&_t.until>=_td&&_t.until<=_lim;if(F.length>1&&!_pin){if(fi===0){oi=oi%(F.length-1)+1;fi=oi}else fi=0;const s=F[fi];turn(box,()=>{box.classList.remove('bpx-on');setStory(box,s,fi===0)})}else box.classList.remove('bpx-on')}}
+let fi=0,oi=0,F0=null,TH='',TAG='';
 const NOF=/crime|politic|court|police|news|housing|business|cover|streets/i;
 const TLB={music:'MUSIC',stage:'ON STAGE',culture:'THE ARTS',arts:'THE ARTS',family:'FAMILY',people:'PEOPLE',food:'FOOD & DRINK',film:'FILM',outdoors:'OUTDOORS',community:'COMMUNITY',holiday:'HOLIDAY'};
 function feats(box){if(F0)return F0;if(typeof STORIES==='undefined')return [];const top=box.dataset.story;TAG=(box.querySelector('.spr-tag')||{}).textContent||'';TH=[...box.classList].filter(c=>c.startsWith('th-')).join(' ');
