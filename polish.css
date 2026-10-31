@@ -47,3 +47,6 @@ html body .reader .body a{color:#ffcf5a;text-decoration-color:#ffcf5a66;text-und
 html body .reader h1{text-shadow:0 0 30px #ffffff14}
 
 @media (prefers-reduced-motion:reduce){html body h2.room:not(.cwh),html body .cvbrk::after{animation:none!important}}
+
+/* Tide strip removed so the cover and top story sit higher */
+html body #jtSea{display:none!important}
