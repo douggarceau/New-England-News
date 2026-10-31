@@ -145,13 +145,25 @@ function itnHTML(slug,title){const D=details(slug);if(!D)return null;
 function layer(box,cls){let o=box.querySelector(':scope>.'+cls);if(!o){o=document.createElement('span');o.className=cls;box.appendChild(o);
  if(cls==='bpx')o.addEventListener('click',e=>{if(!box.classList.contains('bpx-on'))return;e.preventDefault();e.stopPropagation();const u=o.dataset.href;if(u&&/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}},true)}return o}
 function turn(box,fn){box.style.transition='transform .33s ease-in';box.style.transform='perspective(1600px) rotateY(90deg)';
- setTimeout(()=>{fn();box.style.transition='none';box.style.transform='perspective(1600px) rotateY(-90deg)';requestAnimationFrame(()=>requestAnimationFrame(()=>{box.style.transition='transform .33s ease-out';box.style.transform='';setTimeout(()=>{box.style.transition=''},360)}))},340)}
+ setTimeout(()=>{fn();box.style.transition='none';box.style.transform='perspective(1600px) rotateY(-90deg)';void box.offsetWidth;setTimeout(()=>{box.style.transition='transform .33s ease-out';box.style.transform='';setTimeout(()=>{box.style.transition=''},360)},20)},340)}
 function tick(){const box=document.querySelector('.cvr .cvbrk');if(!box||document.hidden||box.matches(':hover'))return;
  const slug=box.dataset.story,title=(box.querySelector('b')||{}).textContent||'';const phase=step++%4;
  if(phase===0){const h=itnHTML(slug,title);if(!h){step++;return tick()}const o=layer(box,'itn');turn(box,()=>{o.innerHTML=h;box.classList.remove('bpx-on');box.classList.add('itn-on');requestAnimationFrame(()=>{const R=o.querySelector('.itn-rows');let g=0;while(R&&R.scrollHeight>R.clientHeight+1&&g++<30){const k=R.lastElementChild;if(!k)break;k.remove();const l=R.lastElementChild;if(l&&l.classList.contains('itn-sec'))l.remove()}})})}
  else if(phase===1){turn(box,()=>box.classList.remove('itn-on'))}
  else if(phase===2){const L=bigList();if(!L.length)return;const e=L[pi++%L.length];const h=window.bigPoster&&window.bigPoster(e,region());if(!h)return;const o=layer(box,'bpx');o.innerHTML=h;o.dataset.href=e.url||'';box.classList.remove('itn-on');box.classList.add('bpx-on');requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})}
- else box.classList.remove('bpx-on')}
+ else{const F=feats(box);if(F.length>1){fi=(fi+1)%F.length;const s=F[fi];turn(box,()=>{box.classList.remove('bpx-on');setStory(box,s,fi===0)})}else box.classList.remove('bpx-on')}}
+let fi=0,F0=null,TH='',TAG='';
+const NOF=/crime|politic|court|police|news|housing|business|cover|streets/i;
+const TLB={music:'MUSIC',stage:'ON STAGE',culture:'THE ARTS',arts:'THE ARTS',family:'FAMILY',people:'PEOPLE',food:'FOOD & DRINK',film:'FILM',outdoors:'OUTDOORS',community:'COMMUNITY',holiday:'HOLIDAY'};
+function feats(box){if(F0)return F0;if(typeof STORIES==='undefined')return [];const top=box.dataset.story;TAG=(box.querySelector('.spr-tag')||{}).textContent||'';TH=[...box.classList].filter(c=>c.startsWith('th-')).join(' ');
+ const td=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});
+ const ok=STORIES.filter(s=>s&&s.slug&&s.title&&s.slug!==top&&!NOF.test(s.topic||'')&&!(s.until&&s.until<td));
+ const ev=ok.filter(s=>s.until),rest=ok.filter(s=>!s.until);const T=STORIES.find(s=>s.slug===top);
+ F0=[T||{slug:top}].concat(ev,rest).slice(0,10);return F0}
+function setStory(box,s,isTop){box.dataset.story=s.slug;box.classList.remove(...[...box.classList].filter(c=>c.startsWith('th-')));if(isTop&&TH)box.classList.add(...TH.split(' '));
+ const pre=TAG.split(' · ')[0]||'';const g=box.querySelector('.spr-tag');if(g)g.textContent=isTop?TAG:(pre+' · '+(TLB[String(s.topic||'').toLowerCase()]||'OUR STORY'));
+ const b=box.querySelector('.cvbrk-t b'),sm=box.querySelector('.cvbrk-t small');if(b&&s.title)b.textContent=s.title;if(sm)sm.textContent=s.dek||'';
+ requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})}
 setTimeout(()=>{tick();setInterval(tick,10000)},9000);
 })();
 /* Business cards on the left: a wave flips them one by one into events, then back to businesses */
