@@ -347,19 +347,40 @@ html body .lsrow .lspot.hasad{animation:hgAd 5s ease-in-out infinite}
 @keyframes hgStory{0%,100%{filter:drop-shadow(0 0 5px color-mix(in srgb,var(--gk,#4fa3ff) 45%,transparent))}50%{filter:drop-shadow(0 0 12px color-mix(in srgb,var(--gk,#4fa3ff) 75%,transparent))}}
 @keyframes hgAd{0%,100%{filter:drop-shadow(0 0 5px rgba(232,184,24,.4))}50%{filter:drop-shadow(0 0 13px rgba(232,184,24,.7))}}
 @media (prefers-reduced-motion:reduce){html body .lsrow .lspot{animation:none!important}}
-</style><style id="vwebCss">.vcard .vmeta a.vweb{font-weight:700;color:var(--k,#e8b818)!important;text-decoration:none}.vcard .vmeta a.vweb:hover{text-decoration:underline}.vcard p{margin:6px 0 8px}</style><style id="evGlow">
-/* Events in the side margins: marquee lights, so shows outshine business names */
-html body .lsrow .lspot.t-mu{border:0!important;background:radial-gradient(140% 90% at 50% -10%,color-mix(in srgb,var(--k,#e8b818) 60%,transparent) 0,transparent 62%),linear-gradient(180deg,#1b0a24 0,#06040b 100%)!important;box-shadow:0 0 0 2px var(--k,#e8b818),0 0 26px color-mix(in srgb,var(--k,#e8b818) 75%,transparent),inset 0 0 34px color-mix(in srgb,var(--k,#e8b818) 30%,transparent)!important;overflow:hidden}
-html body .lsrow .lspot.t-mu::before{content:"";position:absolute;inset:4px;border:4px dotted #fff2a8;border-radius:8px;pointer-events:none;filter:drop-shadow(0 0 3px #ffd84a) drop-shadow(0 0 6px var(--k,#e8b818));animation:evBulb 1.1s steps(2,jump-none) infinite;z-index:1}
-html body .lsrow .lspot.t-mu:nth-of-type(odd)::before{animation-delay:.55s}
-html body .lsrow .lspot.t-mu .ls-big{color:#fff!important;font-size:clamp(20px,calc(var(--ls,300px)*.09),30px)!important;line-height:1.08!important;text-shadow:0 0 10px var(--k,#e8b818),0 0 22px color-mix(in srgb,var(--k,#e8b818) 70%,transparent)!important}
-html body .lsrow .lspot.t-mu .ls-tag{color:#fff2a8!important;text-shadow:0 0 8px #ffb800}
-html body .lsrow .lspot.t-mu b,html body .lsrow .lspot.t-mu .ls-go{color:var(--k,#e8b818)!important;filter:brightness(1.35)}
-html body .lsrow .lspot.t-mu a{position:relative;z-index:2}
-@keyframes evBulb{0%{border-color:#fff6c2}50%{border-color:color-mix(in srgb,var(--k,#e8b818) 85%,#fff)}}
-@media (prefers-reduced-motion:reduce){html body .lsrow .lspot.t-mu::before{animation:none}}
-</style>
-<style id="natboxCss">.nat-l button.natbox{display:block;margin:4px 0 8px;padding:12px 14px!important;border:2px solid #ff7a1a!important;border-radius:6px;background:linear-gradient(180deg,#3a1a06,#241004);color:#ffb15c!important;box-shadow:0 0 14px #ff7a1a55}.nat-l button.natbox:hover{color:#fff!important;border-color:#ffb15c!important}.nat-l button.natbox .cvtag{background:#ff7a1a;color:#111}.nat-l button.natbox .cvtag{animation:natTagBlink 1.1s steps(1,end) infinite}@keyframes natTagBlink{0%{opacity:1}50%{opacity:.15}}@media (prefers-reduced-motion:reduce){.nat-l button.natbox .cvtag{animation:none}}</style>
+</style><style id="vwebCss">.vcard .vmeta a.vweb{font-weight:700;color:var(--k,#e8b818)!important;text-decoration:none}.vcard .vmeta a.vweb:hover{text-decoration:underline}.vcard p{margin:6px 0 8px}</style><style id="natboxCss">.nat-l button.natbox{display:block;margin:4px 0 8px;padding:12px 14px!important;border:2px solid #ff7a1a!important;border-radius:6px;background:linear-gradient(180deg,#3a1a06,#241004);color:#ffb15c!important;box-shadow:0 0 14px #ff7a1a55}.nat-l button.natbox:hover{color:#fff!important;border-color:#ffb15c!important}.nat-l button.natbox .cvtag{background:#ff7a1a;color:#111}.nat-l button.natbox .cvtag{animation:natTagBlink 1.1s steps(1,end) infinite}@keyframes natTagBlink{0%{opacity:1}50%{opacity:.15}}@media (prefers-reduced-motion:reduce){.nat-l button.natbox .cvtag{animation:none}}</style>
+<script id="evPosterJs">
+window.evPoster=function(a,s){try{
+ const e=s.ev||{},g=String(e.genre||'').toLowerCase(),t=String(s.bigText||'').split(/\s+[|@]\s+|\s+[–—]\s+(?=[A-Z][a-z]+ Tour)/)[0].replace(/\s*\b(all ages|21\+|18\+)\b.*$/i,'').trim();if(!t)return;
+ const T=t.toLowerCase(),TV=(t+' '+(e.venue||'')).toLowerCase();
+ const GS={classical:'gala',theater:'marquee',jazz:'blue','r&b':'blue',electronic:'club',pop:'club','hip-hop':'club',latin:'club',family:'fair',community:'fair',worship:'fair',support:'fair',arts:'gallery'};
+ let st=GS[g]||'';
+ if(!st){if(/symphon|philharmon|orchestra|opera\b|ballet|nutcracker|chamber|quartet|choral|chorus|choir|messiah|recital|baroque|requiem/.test(T)||/symphony hall|carnegie|lincoln center/.test(TV))st='gala';
+ else if(/broadway|musical|comedy|comedian|stand-up|improv/.test(T))st='marquee';
+ else if(/jazz|blues|swing|big band/.test(T))st='blue';
+ else if(/\bdj\b|dance party|rave/.test(T))st='club';
+ else if(/fair|festival|parade|tree lighting|holiday|santa|pumpkin|lantern|zoo|storytime|craft|market/.test(T))st='fair';
+ else if(/exhibit|gallery|museum|art show|lecture/.test(T))st='gallery';
+ else st='gig'}
+ const K={gala:'In Concert',marquee:'On Stage',gig:'Live Music',blue:'Live Jazz',club:'Live',fair:'Come One, Come All',gallery:'The Arts'}[st];
+ const d=e.date?new Date(e.date+'T12:00:00'):null,DW=d?d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase():'',MO=d?d.toLocaleDateString('en-US',{month:'short'}).toUpperCase():'',DY=d?d.getDate():'';
+ const tm=String(e.time||'').replace(/:00/g,'').replace(/\s*(AM|PM)/gi,(m,x)=>' '+x.toUpperCase()).trim();
+ const H=x=>String(x||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const L=t.length,sz=L<=12?'s1':L<=24?'s2':L<=40?'s3':'s4';
+ const ven=H(e.venue||''),hood=H(e.hood||''),vl=ven+(hood&&!ven.toLowerCase().includes(hood.toLowerCase())?' · '+hood:'');
+ const title='<span class="ep-t '+sz+'">'+H(t)+'</span>',k='<span class="ep-k">'+K+'</span>',cta='<span class="ep-cta">Tickets &amp; info →</span>';
+ const dl=[DW,MO&&(MO+' '+DY),tm].filter(Boolean).join(' · ');
+ let h;
+ if(st==='gala')h=k+title+'<span><span class="ep-d">'+H(dl)+'</span></span><span class="ep-v">'+vl+'</span>';
+ else if(st==='marquee')h='<span class="ep-k">'+(/comed/.test(T)?'Live Comedy':'Now Playing')+'</span>'+title+'<span class="ep-foot"><span><span class="ep-d" style="display:block">'+H(dl)+'</span><span class="ep-v" style="display:block">'+vl+'</span></span>'+cta+'</span>';
+ else if(st==='gig')h=k+title+'<span class="ep-d">'+H(MO)+'<b>'+DY+'</b>'+H(tm)+'</span><span class="ep-foot"><span class="ep-v">'+vl+'</span>'+cta+'</span>';
+ else if(st==='blue')h='<span class="ep-d">'+H(DW)+'<b>'+DY+'</b>'+H(MO)+'<i>'+H(tm)+'</i></span><span class="ep-main">'+k+title+'<span class="ep-v">'+vl+'</span></span>'+cta;
+ else if(st==='club')h=k+title+'<span class="ep-foot"><span><span class="ep-d" style="display:block">'+H(dl)+'</span><span class="ep-v" style="display:block">'+vl+'</span></span>'+cta+'</span>';
+ else if(st==='fair')h=k+title+'<span class="ep-d">'+H(dl)+(ven?' · '+ven:'')+'</span>';
+ else h=k+title+'<span class="ep-foot"><span class="ep-d">'+H(dl)+'</span><span class="ep-v">'+vl+'</span></span>';
+ const box=a.parentNode;box.classList.add('evp');['border','border-top','outline'].forEach(x=>box.style.setProperty(x,x==='outline'?'0':'0','important'));const kk=/^#(c9d1d9|e0e6ec|9aa4ad|8fb3d9|6f8aa8|b9a7e0)$/i.test(s.k||'')?'#ff7a1a':(s.k||'#ff7a1a');box.style.setProperty('--ek',kk);
+ a.innerHTML='<span class="ep ep-'+st+'">'+h+'</span>';
+}catch(_){}};
+</script>
 </head>
 <body>
 <title>The Boston Rambler</title>
@@ -2269,7 +2290,7 @@ function showPromo0(id,pool,offset=0,flip=false){{const el=document.getElementBy
  box.hidden=false;const key=promoKey(s);if(a.dataset.promoKey===key)return;
  a.dataset.promoNext=key;if(flip&&a.dataset.promoKey)flipTo(a,s);else fill(a,s)
 }
-let JTEVI=0;function jtEvPool(){try{const L=(typeof jtWeekList==='function'?jtWeekList():[]);return L.filter(e=>e.genre!=='sports').map(e=>({tag:'IN BOSTON · '+(typeof shortDay==='function'?shortDay(e.date):e.date),bigText:(e.artists||'').replace(/\s*\([^)]*\)/g,'').trim(),name:e.venue||'Boston',when:e.time||'',sub:'',go:'Details',theme:'mu',href:e.url||'#cal',ext:e.url?1:0,view:e.url?'':'cal',k:(typeof GENRE!=='undefined'&&GENRE[e.genre])||'#e8b818'}))}catch(_){return[]}}
+let JTEVI=0;function jtEvPool(){try{const L=(typeof jtWeekList==='function'?jtWeekList():[]);return L.filter(e=>e.genre!=='sports').map(e=>({tag:'IN BOSTON · '+(typeof shortDay==='function'?shortDay(e.date):e.date),bigText:(e.artists||'').replace(/\s*\([^)]*\)/g,'').trim(),name:e.venue||'Boston',when:e.time||'',sub:'',go:'Details',theme:'mu',href:e.url||'#cal',ext:e.url?1:0,view:e.url?'':'cal',ev:e,k:(typeof GENRE!=='undefined'&&GENRE[e.genre])||'#e8b818'}))}catch(_){return[]}}
 (function jtSweep(n){setTimeout(()=>{document.querySelectorAll('.lsrow .lspot.t-cw>a,.lsrow .lspot.t-spd>a,.lsrow .lspot.cwi>a').forEach(a=>{if(jtEvPool().length)fill(a,{theme:'cw',tag:'CRIME'})});if(n<8)jtSweep(n+1)},1500)})(0);
 function fill(a,s){if(s&&(s.theme==='cw'||s.theme==='spd'||s.cwi||/CRIME/i.test(s.tag||''))){const E=jtEvPool();if(E.length){s=E[JTEVI++%E.length]}}return fill0(a,s)}
 window.__fill0=(a,s)=>fill0(a,s);function fill0(a,s){if(!a||!s)return;try{const nz=x=>String(x||'').toLowerCase().replace(/\s+/g,' ').trim();const vis=new Set([...document.querySelectorAll('.lsrow .lspot:not([hidden]):not(.hasad) > a:not(.radv)')].filter(e=>e!==a).map(e=>nz((e.querySelector('.ls-big')||{}).textContent)).filter(Boolean));if(vis.has(nz(s.bigText||s.name))&&window.__PALT&&window.__PALT.length){const alt=window.__PALT.find(c=>!vis.has(nz(c.bigText||c.name)));if(alt)s=alt}}catch(_){}clearTimeout(promoTimers.get(a));a.dataset.promoKey=promoKey(s);delete a.dataset.promoNext;const box=a.parentNode;box.className=box.className.replace(/\bt-\S+/g,'').replace(/\bcwi\b/g,'').trim()+' t-'+s.theme+(s.cwi?' cwi':'');
@@ -2277,7 +2298,7 @@ window.__fill0=(a,s)=>fill0(a,s);function fill0(a,s){if(!a||!s)return;try{const 
  if(s.ext){a.target='_blank';a.rel='noopener'}else{a.removeAttribute('target');a.removeAttribute('rel')}
  a.setAttribute('aria-label',s.bigText||s.name);box.style.setProperty('--k',s.k||'');if(!s.k)box.style.removeProperty('--k');if(s.sty)box.dataset.adv=s.sty;else delete box.dataset.adv;
  const mid=s.img?'<img src="'+s.img+'" alt=""'+(s.round?' class="round'+(s.round>1?' dark':'')+'"':'')+'>':'<span class="ls-big">'+(s.bigText?esc(s.bigText):s.big)+'</span>';
- a.innerHTML='<span class="ls-tag">'+esc(s.tag)+'</span>'+mid+'<span><b>'+esc(s.name)+'</b>'+(s.when?'<i>'+esc(s.when)+'</i>':'')+(s.sub?'<small>'+esc(s.sub)+'</small>':'')+'<span class="ls-go">'+esc(s.go)+' →</span></span>'}
+ a.innerHTML='<span class="ls-tag">'+esc(s.tag)+'</span>'+mid+'<span><b>'+esc(s.name)+'</b>'+(s.when?'<i>'+esc(s.when)+'</i>':'')+(s.sub?'<small>'+esc(s.sub)+'</small>':'')+'<span class="ls-go">'+esc(s.go)+' →</span></span>';if(box.classList.contains('evp')){box.classList.remove('evp');['border','border-top','outline'].forEach(x=>box.style.removeProperty(x))}if(s.theme==='mu'&&s.ev&&window.evPoster)window.evPoster(a,s)}
 function pmTeaser(a){if(!a)return;const box=a.parentNode;box.className=box.className.replace(/\bt-\S+/g,'').trim()+' t-pmx';a.href='https://seattlesinner.com/tech/';a.removeAttribute('target');a.setAttribute('aria-label','Tech & AI Power Map: who controls AI and Big Tech');
  const pads=()=>'<span class="pmx-pads">'+'<b></b>'.repeat(15)+'</span>';
  a.innerHTML='<span class="pmx-bar"><span>■ Power Map</span><i>AI Signals live</i></span><span class="pmx-top">'+pads()+'<span class="pmx-eye"><img src="img/promo-powermap.jpg" alt=""></span>'+pads()+'</span><span class="pmx-ttl">Tech &amp; AI Power Map</span><span class="pmx-by">New software</span><span class="pmx-stk"><span class="tk">····</span><span class="pr"></span><span class="nm">Loading the market</span><span class="ch"></span></span><span class="pmx-rk"><h5>Power ranking</h5><ol><li></li><li></li><li></li><li></li></ol></span><span class="pmx-log">establishing link</span><span class="pmx-go">Enter the map →</span>';
@@ -2869,5 +2890,93 @@ E=(d.events||[]).filter(e=>e.date>=today&&e.artists&&e.venue&&!/worship|support|
 const go=()=>{try{if(!E.length||!window.__fill0)return;const nz=s=>String(s||'').toLowerCase().trim();const vis=new Set([...document.querySelectorAll('.lsrow .lspot:not([hidden]) .ls-big')].map(x=>nz(x.textContent)));
 document.querySelectorAll('.lsrow .lspot[hidden] > a[id]').forEach(el=>{if(innerWidth<1280&&el.parentNode.classList.contains('ls-extra'))return;let it=null;for(let n=0;n<E.length;n++){const c=E[(k+n)%E.length];if(!vis.has(nz(c.bigText))){it=c;k=k+n+1;break}}if(!it)return;vis.add(nz(it.bigText));el.parentNode.hidden=false;el.parentNode.style.display='';window.__fill0(el,it)})}catch(_){}};
 setTimeout(go,1500);setInterval(go,3000)})();</script>
+<style id="evPosterCss">
+/* Event posters in the side margins: each calendar event drawn as a real show poster */
+html body .lsrow .lspot.evp{border:0!important;border-top:0!important;outline:0!important;padding:0!important;background:#000!important;box-shadow:0 0 0 1px #0008,0 10px 28px #000c,0 0 22px color-mix(in srgb,var(--ek,#ff7a1a) 45%,transparent)!important;overflow:hidden!important;border-radius:10px!important}
+html body .lsrow .lspot.evp::before,html body .lsrow .lspot.evp::after{display:none!important}
+html body .lsrow .lspot.evp>a{display:block!important;position:absolute!important;inset:0!important;padding:0!important;margin:0!important;text-decoration:none!important;overflow:hidden!important}
+.ep{position:absolute;inset:0;display:grid;box-sizing:border-box;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#fff;overflow:hidden}
+.ep *{font-style:normal;text-decoration:none;letter-spacing:0;text-transform:none;margin:0;padding:0}
+.ep .ep-t{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;line-height:.98;word-break:break-word}
+.ep .ep-t.s1{font-size:34px}.ep .ep-t.s2{font-size:27px}.ep .ep-t.s3{font-size:21px}.ep .ep-t.s4{font-size:17px}
+.ep .ep-cta{font:800 10px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase}
+.ep .ep-v{font:700 10.5px/1.25 "Helvetica Neue",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ep .ep-k{font:800 9.5px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase}
+.lspot.evp:hover .ep{filter:brightness(1.12)}
+.lspot.evp:hover .ep-cta{text-decoration:underline}
+
+/* 1. GALA: symphony, opera, ballet, choral */
+.ep-gala{background:radial-gradient(120% 80% at 50% 0,#fffaf0 0,#f3e7cc 55%,#e4d2a8 100%);color:#1d1408;padding:16px 18px 12px;grid-template-rows:auto 1fr auto auto;text-align:center;box-shadow:inset 0 0 0 5px #f3e7cc,inset 0 0 0 6px #a8822f,inset 0 0 0 9px #f3e7cc,inset 0 0 0 10px #a8822f}
+.ep-gala .ep-k{color:#8a6420;letter-spacing:.42em;font-size:9px}
+.ep-gala .ep-t{align-self:center;font-family:Didot,"Bodoni 72","Bodoni MT","Playfair Display",Georgia,serif;font-weight:400;font-style:italic;color:#1d1408;line-height:1.02}
+.ep-gala .ep-d{font:600 11px/1.3 Didot,"Bodoni 72",Georgia,serif;letter-spacing:.22em;text-transform:uppercase;color:#1d1408;display:flex;justify-content:center;gap:10px;align-items:center}
+.ep-gala .ep-d::before,.ep-gala .ep-d::after{content:"";flex:0 0 22px;height:1px;background:#a8822f}
+.ep-gala .ep-v{color:#5a4318;font-family:Georgia,serif;font-weight:400;font-size:10px;letter-spacing:.2em;margin-top:3px}
+.ep-gala .ep-cta{display:none}
+
+/* 2. MARQUEE: theatre, Broadway, comedy */
+.ep-marquee{background:radial-gradient(90% 70% at 50% 110%,#ff3b2f55 0,transparent 60%),repeating-linear-gradient(90deg,#5b0710 0 6px,#6d0a15 6px 12px),#4a0510;padding:0;grid-template-rows:30px 1fr auto}
+.ep-marquee .ep-k{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#ffe08a,#e9a91c);color:#3a0508;font-size:10px;letter-spacing:.34em;position:relative;box-shadow:0 2px 0 #7a4a00,0 0 18px #ffcf4d88}
+.ep-marquee .ep-k::before,.ep-marquee .ep-k::after{content:"";position:absolute;left:6px;right:6px;height:5px;background:radial-gradient(circle,#fff8d6 0 1.6px,transparent 2.2px) 0 0/10px 5px;animation:epBulb 1s steps(2,jump-none) infinite}
+.ep-marquee .ep-k::before{top:1px}.ep-marquee .ep-k::after{bottom:1px;animation-delay:.5s}
+.ep-marquee .ep-t{align-self:center;text-align:center;padding:6px 14px 0;font-family:"Avenir Next Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:800;text-transform:uppercase;color:#fff4d6;text-shadow:0 0 12px #ffbf3f99,0 2px 0 #3a0508;letter-spacing:.01em}
+.ep-marquee .ep-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:8px;padding:6px 14px 10px}
+.ep-marquee .ep-d{font:800 11px/1.25 "Helvetica Neue",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#ffd36a}
+.ep-marquee .ep-v{color:#ffe7c2;font-size:9.5px;max-width:150px}
+.ep-marquee .ep-cta{color:#ffd36a;white-space:nowrap}
+
+/* 3. GIG: rock, punk, metal, indie, live */
+.ep-gig{background:radial-gradient(circle at 1px 1px,#ffffff14 1px,transparent 1.6px) 0 0/6px 6px,linear-gradient(155deg,#101010 0,#050505 60%,color-mix(in srgb,var(--ek) 35%,#050505) 100%);padding:12px 14px;grid-template-columns:1fr auto;grid-template-rows:auto 1fr auto;column-gap:10px}
+.ep-gig::before{content:"";position:absolute;left:-30%;right:-30%;top:52%;height:34px;background:var(--ek);transform:rotate(-8deg);opacity:.9;mix-blend-mode:screen;filter:saturate(1.3)}
+.ep-gig .ep-k{grid-column:1/3;color:var(--ek);position:relative}
+.ep-gig .ep-t{grid-column:1/2;align-self:center;position:relative;font-family:Impact,"Haettenschweiler","Arial Narrow Bold","Avenir Next Condensed",sans-serif;font-weight:900;text-transform:uppercase;color:#fff;text-shadow:3px 3px 0 #000,0 0 18px #0008;letter-spacing:.01em;line-height:.92}
+.ep-gig .ep-d{grid-column:2;grid-row:2;align-self:center;position:relative;background:#fff;color:#000;transform:rotate(4deg);padding:6px 7px;text-align:center;font:900 10px/1.05 "Helvetica Neue",Arial,sans-serif;text-transform:uppercase;box-shadow:3px 3px 0 #000;min-width:46px}
+.ep-gig .ep-d b{display:block;font-size:20px;line-height:1}
+.ep-gig .ep-foot{grid-column:1/3;position:relative;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.ep-gig .ep-v{color:#fff}.ep-gig .ep-cta{color:var(--ek);white-space:nowrap}
+
+/* 4. BLUE: jazz, blues, soul */
+.ep-blue{background:#0b2a5b;padding:0;grid-template-columns:78px 1fr;grid-template-rows:1fr auto}
+.ep-blue .ep-d{grid-row:1/3;background:#e8b818;color:#0b2a5b;display:flex;flex-direction:column;justify-content:center;align-items:center;font:900 11px/1 "Futura","Century Gothic","Avenir Next",Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em;gap:3px}
+.ep-blue .ep-d b{font-size:34px;letter-spacing:-.02em;line-height:.9}
+.ep-blue .ep-d i{font-size:9.5px;letter-spacing:.06em;margin-top:4px}
+.ep-blue .ep-main{display:flex;flex-direction:column;justify-content:center;padding:10px 14px;gap:6px;min-width:0;background:linear-gradient(90deg,#0b2a5b 0,#123a7a 100%)}
+.ep-blue .ep-k{color:#e8b818}
+.ep-blue .ep-t{font-family:"Futura","Century Gothic","Avenir Next",Arial,sans-serif;font-weight:800;color:#fff;letter-spacing:-.01em;line-height:1}
+.ep-blue .ep-v{color:#bcd0f2}
+.ep-blue .ep-cta{grid-column:2;background:#e3170a;color:#fff;padding:7px 14px}
+
+/* 5. CLUB: electronic, pop, hip-hop, latin, r&b */
+.ep-club{background:linear-gradient(0deg,#ff2bd61a 1px,transparent 1px) 0 0/100% 14px,linear-gradient(90deg,#00e5ff14 1px,transparent 1px) 0 0/14px 100%,radial-gradient(90% 90% at 80% 10%,#ff2bd6aa 0,transparent 55%),radial-gradient(90% 90% at 0 100%,#3b2bff 0,transparent 60%),#12052a;padding:12px 14px;grid-template-rows:auto 1fr auto}
+.ep-club .ep-k{color:#7ff6ff;text-shadow:0 0 8px #00e5ff}
+.ep-club .ep-t{align-self:center;font-family:"Avenir Next","Helvetica Neue",Arial,sans-serif;font-weight:900;text-transform:uppercase;color:#fff;text-shadow:-2px 0 #ff2bd6,2px 0 #00e5ff,0 0 22px #ff2bd688;letter-spacing:.02em}
+.ep-club .ep-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:8px}
+.ep-club .ep-d{font:800 11px/1.25 "Avenir Next",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#ffd1f6}
+.ep-club .ep-v{color:#cfc4ff;font-size:9.5px}.ep-club .ep-cta{color:#7ff6ff;white-space:nowrap}
+
+/* 6. FAIR: family, community, worship, holiday */
+.ep-fair{background:radial-gradient(70% 60% at 50% 55%,#fff1b8 0,transparent 70%),repeating-conic-gradient(from 0deg at 50% 120%,#ffd75e 0 6deg,#ffc02e 6deg 12deg);color:#3a1e00;padding:12px 14px 9px;grid-template-rows:auto 1fr auto;text-align:center}
+.ep-fair::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40px;background:radial-gradient(circle at 9px 0,transparent 8.5px,#c8321c 9px) 0 0/18px 100% repeat-x;box-shadow:inset 0 -30px 0 #c8321c}
+.ep-fair .ep-k{color:#b3260f;letter-spacing:.3em}
+.ep-fair .ep-t{align-self:center;padding-bottom:22px;font-family:"Cooper Black","Cooper Std","Rockwell Extra Bold",Rockwell,Georgia,serif;font-weight:900;color:#5a1606;line-height:1}
+.ep-fair .ep-d{position:relative;z-index:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:800 11px/1.2 "Helvetica Neue",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#fff;padding-bottom:2px}
+.ep-fair .ep-v{display:none}.ep-fair .ep-cta{display:none}
+
+/* 7. GALLERY: art shows, museums, talks */
+.ep-gallery{background:#f5f3ee;color:#111;padding:14px 16px 12px;grid-template-columns:1fr 46px;grid-template-rows:auto 1fr auto;column-gap:12px}
+.ep-gallery::before{content:"";position:absolute;right:0;top:0;bottom:0;width:58px;background:linear-gradient(180deg,var(--ek) 0 33%,#111 33% 66%,#e3170a 66%)}
+.ep-gallery .ep-k{color:#111;grid-column:1}
+.ep-gallery .ep-t{grid-column:1;align-self:center;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:300;color:#111;letter-spacing:-.02em;line-height:1}
+.ep-gallery .ep-foot{grid-column:1;display:flex;flex-direction:column;gap:3px}
+.ep-gallery .ep-d{font:700 10.5px/1.2 "Helvetica Neue",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.ep-gallery .ep-v{color:#555;font-size:9.5px}.ep-gallery .ep-cta{display:none}
+
+html body .lsrow .lspot.evp .ep b,html body .lsrow .lspot.evp .ep i,html body .lsrow .lspot.evp .ep small{font:inherit!important;letter-spacing:inherit!important;color:inherit!important;text-transform:inherit!important}
+html body .lsrow .lspot.evp .ep-gig .ep-d b{display:block!important;font:900 24px/1 Impact,"Arial Narrow Bold",sans-serif!important;margin:2px 0!important;color:#000!important}
+html body .lsrow .lspot.evp .ep-blue .ep-d b{color:#0b2a5b!important;font:900 36px/.9 "Futura","Century Gothic","Avenir Next",Arial,sans-serif!important;letter-spacing:-.02em!important}
+html body .lsrow .lspot.evp .ep-blue .ep-d i{font:800 9.5px/1 "Futura","Avenir Next",Arial,sans-serif!important;margin-top:4px}
+@keyframes epBulb{0%{opacity:1}50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.ep-marquee .ep-k::before,.ep-marquee .ep-k::after{animation:none}}
+</style>
 </body>
 </html>
