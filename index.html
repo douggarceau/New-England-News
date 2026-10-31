@@ -1450,7 +1450,7 @@ function applyCalendarFeed(j,isCalendar){
   const stat=document.querySelector('#mstat .ms:nth-child(2) b');if(stat)stat.textContent=up.length;
   if(['cal','front'].includes(STATE.view)&&!document.activeElement.matches('input,select,textarea'))render();
 }
-['data/cal.json'].forEach(u=>fetch(u+'?'+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>applyCalendarFeed(j,u==='data/cal.json')).catch(()=>{}));
+['data/cal.json','data/sports.json'].forEach(u=>fetch(u+'?'+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>applyCalendarFeed(j,u==='data/cal.json')).catch(()=>{}));
 const upScene=SCENE.filter(e=>(e.end||e.date)>=todayKey);
 const tc=t=>(TOPIC[t]||['#8fb3d9',t])[0], tl=t=>(TOPIC[t]||['',t])[1];
 
