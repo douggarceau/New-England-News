@@ -2834,7 +2834,7 @@ E=(d.events||[]).filter(e=>e.date>=today&&e.artists&&e.venue&&!/worship|support|
 const go=()=>{try{if(!E.length||!window.__fill0)return;const nz=s=>String(s||'').toLowerCase().trim();const vis=new Set([...document.querySelectorAll('.lsrow .lspot:not([hidden]) .ls-big')].map(x=>nz(x.textContent)));
 document.querySelectorAll('.lsrow .lspot[hidden] > a[id]').forEach(el=>{if(innerWidth<1280&&el.parentNode.classList.contains('ls-extra'))return;let it=null;for(let n=0;n<E.length;n++){const c=E[(k+n)%E.length];if(!vis.has(nz(c.bigText))){it=c;k=k+n+1;break}}if(!it)return;vis.add(nz(it.bigText));el.parentNode.hidden=false;el.parentNode.style.display='';window.__fill0(el,it)})}catch(_){}};
 setTimeout(go,1500);setInterval(go,3000)})();</script>
-<link rel="stylesheet" href="posters.css?v=4">
+<link rel="stylesheet" href="posters.css?v=5">
 <link rel="stylesheet" href="polish.css?v=1">
 </body>
 </html>

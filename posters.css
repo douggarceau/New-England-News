@@ -204,15 +204,15 @@ html body .lsrow .lspot.evp .ep-blue .ep-d i{font:800 9.5px/1 EpJost,Arial,sans-
 @keyframes acSpin{to{transform:translateY(-50%) rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.ac-vinyl .vin{animation:none}}
 /* Top story box poster overlay */
-html body .cvr .cvbrk>.bpx{position:absolute;inset:0;z-index:6;opacity:0;pointer-events:none;transition:opacity .9s ease;container-type:size;overflow:hidden;border-radius:inherit}
-html body .cvr .cvbrk.bpx-on>.bpx{opacity:1;pointer-events:auto;cursor:pointer}
-html body .cvr .cvbrk>.bpx>.bp{position:absolute;inset:0}
-@media (prefers-reduced-motion:reduce){html body .cvr .cvbrk>.bpx{transition:none}}
-html body .cvr .cvbrk>.bpx b,html body .cvr .cvbrk>.bpx i,html body .cvr .cvbrk>.bpx small{color:inherit!important;text-shadow:none!important;line-height:inherit!important}
-html body .cvr .cvbrk>.bpx .disc b{font:800 26cqw/.85 EpJost,"Futura",Arial,sans-serif!important;color:#0b2a5b!important}
-html body .cvr .cvbrk>.bpx .disc i{font:800 6cqw/1 EpJost,Arial,sans-serif!important;color:#0b2a5b!important}
-html body .cvr .cvbrk>.bpx .bp-tear b{font:800 3.6cqw/1.2 "Helvetica Neue",Arial,sans-serif!important;color:var(--bg)!important}
-html body .cvr .cvbrk>.bpx .bp-tear b.n{font:400 11cqw/1 EpAnton,Impact,sans-serif!important}
-html body .cvr .cvbrk>.bpx .bp-ticket b{font:800 3.4cqw/1.3 "Helvetica Neue",Arial,sans-serif!important;color:#fff!important}
-html body .cvr .cvbrk>.bpx .bp-ticket b.n{font:400 8cqw/1.05 EpAbril,Georgia,serif!important}
-html body .cvr .cvbrk>.bpx .bp-v small{font:500 2.8cqw/1.3 "Helvetica Neue",Arial,sans-serif!important;opacity:.8}
+html body #coverSlot .cvr .cvbrk>.bpx{position:absolute;inset:0;z-index:6;opacity:0;pointer-events:none;transition:opacity .9s ease;container-type:size;overflow:hidden;border-radius:inherit}
+html body #coverSlot .cvr .cvbrk.bpx-on>.bpx{opacity:1;pointer-events:auto;cursor:pointer}
+html body #coverSlot .cvr .cvbrk>.bpx>.bp{position:absolute;inset:0}
+@media (prefers-reduced-motion:reduce){html body #coverSlot .cvr .cvbrk>.bpx{transition:none}}
+html body #coverSlot .cvr .cvbrk>.bpx b,html body #coverSlot .cvr .cvbrk>.bpx i,html body #coverSlot .cvr .cvbrk>.bpx small{color:inherit!important;text-shadow:none!important;line-height:inherit!important}
+html body #coverSlot .cvr .cvbrk>.bpx .disc b{font:800 26cqw/.85 EpJost,"Futura",Arial,sans-serif!important;color:#0b2a5b!important}
+html body #coverSlot .cvr .cvbrk>.bpx .disc i{font:800 6cqw/1 EpJost,Arial,sans-serif!important;color:#0b2a5b!important}
+html body #coverSlot .cvr .cvbrk>.bpx .bp-tear b{font:800 3.6cqw/1.2 "Helvetica Neue",Arial,sans-serif!important;color:var(--bg)!important}
+html body #coverSlot .cvr .cvbrk>.bpx .bp-tear b.n{font:400 11cqw/1 EpAnton,Impact,sans-serif!important}
+html body #coverSlot .cvr .cvbrk>.bpx .bp-ticket b{font:800 3.4cqw/1.3 "Helvetica Neue",Arial,sans-serif!important;color:#fff!important}
+html body #coverSlot .cvr .cvbrk>.bpx .bp-ticket b.n{font:400 8cqw/1.05 EpAbril,Georgia,serif!important}
+html body #coverSlot .cvr .cvbrk>.bpx .bp-v small{font:500 2.8cqw/1.3 "Helvetica Neue",Arial,sans-serif!important;opacity:.8}
