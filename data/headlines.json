@@ -2,12 +2,22 @@
  "asof": "2026-10-31T07:49:58-04:00",
  "items": [
   {
+   "h": "Halloween in Boston: Today and Tonight",
+   "sum": "Coco with a live orchestra at Symphony Hall, glowing pumpkins at the Stone Zoo, then a 1920s horror classic at Symphony Hall and Halloween shows from Allston to Cambridge.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=halloween-boston-today-tonight-2026",
+   "story": "halloween-boston-today-tonight-2026",
+   "box": true,
+   "town": "Boston",
+   "date": "2026-10-31",
+   "rank": 1
+  },
+  {
    "h": "Coco in Concert: Boston Pops Scores Pixar's Film Live Today",
    "sum": "The Boston Pops play the score of Coco at Symphony Hall for a 1:30 p.m. matinee.",
    "outlet": "The Boston Rambler",
    "url": "?story=coco-in-concert-symphony-hall-2026",
    "story": "coco-in-concert-symphony-hall-2026",
-   "box": true,
    "town": "Back Bay",
    "date": "2026-10-31",
    "rank": 2
