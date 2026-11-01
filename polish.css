@@ -105,3 +105,5 @@ html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!imp
 #whatsOn button.wo-c{cursor:pointer;background:#ffffff0d;border:1px solid #ffcf5a66;border-radius:6px;padding:7px 12px;font:600 13px/1 "Helvetica Neue",Arial,sans-serif;color:#f3dcc0}
 #whatsOn button.wo-c:hover,#whatsOn button.wo-c[aria-pressed="true"]{background:#ffcf5a22;border-color:#ffcf5a}
 #whatsOn .wo-flat>.wo-r:last-child{border-bottom:0}
+#whatsOn .wo-hr{font:800 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#ffcf5a;padding:12px 2px 6px;border-bottom:1px solid #ffcf5a33}
+#whatsOn .wo-hr.wo-day{font-size:14px;color:#fff;letter-spacing:.06em;padding-top:16px}

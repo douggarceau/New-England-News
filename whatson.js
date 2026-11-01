@@ -19,7 +19,7 @@ function ranges(){const n=new Date(),td=ymd(n),tm=ymd(add(n,1));
   {k:'This Week',from:td,to:ymd(add(n,6))},
   {k:'This Weekend',from:fri<td?td:fri,to:sun}]}
 function list(r){const td=ymd(new Date()),nm=nowMins();
- return EV.filter(e=>e.date>=r.from&&e.date<=r.to&&!(e.date===td&&mins(e.time)<9999&&mins(e.time)<nm-90))
+ return EV.filter(e=>e.date>=r.from&&e.date<=r.to)
   .sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:mins(a.time)-mins(b.time))}
 function dayLbl(ds){const d=new Date(ds+'T12:00:00');return d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase()+' '+d.getDate()}
 const PLACE=(()=>{const t=(location.hostname+' '+document.title).toLowerCase();return /jamestown/.test(t)?'Jamestown':/hurricane|rhode/.test(t)?'Rhode Island':/boston|rambler/.test(t)?'Boston':/scream|new york|nyc/.test(t)?'New York City':'the Area'})();
@@ -31,7 +31,7 @@ let OPEN={},FLAT=false;
 function render(box){const R=ranges(),r=R[tab],L=list(r),multi=r.from!==r.to;
  const g={};L.forEach(e=>{const c=cat(e.genre);(g[c]=g[c]||[]).push(e)});
  const order=CATS.map(c=>c[0]).concat('Other Activities').filter(k=>g[k]);
- const secs=FLAT?('<div class="wo-flat">'+L.map(e=>row(e,multi)).join('')+'</div>'):order.map((k,i)=>'<details class="wo-d" data-k="'+H(k)+'"'+((k in OPEN?OPEN[k]:i===0)?' open':'')+'><summary>'+H(k)+'<span>'+g[k].length+'</span></summary>'+g[k].map(e=>row(e,multi)).join('')+'</details>').join('');
+ const secs=FLAT?('<div class="wo-flat">'+(()=>{let h='',lastD='',lastH=-2;return L.map(e=>{let pre='';if(multi&&e.date!==lastD){lastD=e.date;lastH=-2;pre+='<div class="wo-hr wo-day">'+H(new Date(e.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'}))+'</div>'}const m=mins(e.time),hr=m>=9999?-1:Math.floor(m/60);if(hr!==lastH){lastH=hr;pre+='<div class="wo-hr">'+(hr<0?'Time not listed':((hr%12)||12)+(hr<12?' AM':' PM'))+'</div>'}return pre+row(e,multi)}).join('')})()+'</div>'):order.map((k,i)=>'<details class="wo-d" data-k="'+H(k)+'"'+((k in OPEN?OPEN[k]:i===0)?' open':'')+'><summary>'+H(k)+'<span>'+g[k].length+'</span></summary>'+g[k].map(e=>row(e,multi)).join('')+'</details>').join('');
  box.innerHTML='<div class="wo-h"><span class="wo-k">All Activities in '+H(PLACE)+'</span><select class="wo-s" aria-label="When">'+R.map((x,i)=>'<option value="'+i+'"'+(i===tab?' selected':'')+'>'+H(x.k)+'</option>').join('')+'</select>'+(L.length?'<button type="button" class="wo-c" aria-pressed="'+FLAT+'">'+(FLAT?'Show by category':'Show all <b>'+L.length+'</b> listed')+'</button>':'')+'</div>'+
   '<div class="wo-l">'+(secs||'<p class="wo-e">Nothing listed yet. See the full calendar for what’s coming up.</p>')+'</div>'+
   '<div class="wo-f"><a href="#cal" class="wo-all">Full event calendar →</a></div>'}
