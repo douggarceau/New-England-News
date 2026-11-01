@@ -1265,9 +1265,9 @@ h2.room{text-shadow:0 2px 0 #000,0 0 30px rgba(0,0,0,.7)!important;filter:satura
     <button class="nb" data-go="bars">Boston News</button>
     <button class="nb" data-go="crime"><img class="cwmark xs" src="img/prowler-mark.jpg" alt="">Crime Watch</button>
     <button class="nb pmnb" data-go="tech">Tech &amp; AI</button>
-    <button class="nb" data-go="cal">Boston Calendar</button>
+    <button class="nb" data-go="cal">Boston Event Calendar</button>
     <button class="nb" data-go="visit">Visit Boston</button>
-    <button class="nb" data-go="scene">Boston Scene</button>
+    <button class="nb" data-go="scene">Boston Arts &amp; Entertainment</button>
     <button class="nb" data-go="venues">Boston Venues</button>
     <button class="nb" data-go="bands">Boston Bands</button>
     
@@ -1499,7 +1499,7 @@ function vFront(){setTimeout(()=>{cwFill();cwLoad()},0);
     <div class="stack">
       <section class="box" style="--c:#d9a400"><div class="bh"><b>The wire · nightlife &amp; scene</b><span>${BARS.length} items</span></div>
         <div class="bwl">${BARS.slice(0,7).map(b=>{const k=BK[b.kind]||BK.other;return `<a class="bwr" href="${esc(b.url)}" target="_blank" rel="noopener"><span class="gtag" style="--gc:${k[0]}">${k[1]}</span><span class="bwt"><b>${esc(b.headline)}</b><span>${esc(b.venue)}${b.hood?' · '+esc(b.hood):''} · ${shortDay(b.date)}</span></span></a>`}).join('')||'<div class="empty">The wire is loading.</div>'}</div>
-        <div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="bars">Full wire →</button></div></section>
+        <div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="bars">All news headlines →</button></div></section>
 
 
       
@@ -1509,7 +1509,7 @@ function vFront(){setTimeout(()=>{cwFill();cwLoad()},0);
       <section class="box" style="--c:#1e90ff"><div class="bh"><b>Shows this week</b><span>tap for tickets</span></div><div class="rows">${wk.map(showRow).join('')||'<div class="empty">No shows listed this week.</div>'}</div>
         <div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="cal">Full calendar →</button></div></section>
       <section class="box" style="--c:#2fd3c8"><div class="bh"><b>Tech &amp; AI wire</b><span class="techsrc">via AI Signals</span></div><div class="bwl">${((TECH&&TECH.news)||[]).slice(0,4).map(techRow).join('')||'<div class="empty">Feed is loading.</div>'}</div>
-        <div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="tech">Tech &amp; AI room →</button></div></section>
+        <div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="tech">All Tech &amp; AI →</button></div></section>
       <section class="box jtwk" style="--c:#e8b818"><div class="bh"><b><span class="live" style="background:#e8b818;color:#111">● THIS WEEK</span> In Boston</b><span>${jtWeekSpan()}</span></div><div id="jtWeek">${jtWeek()}</div><div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="cal">Full Boston calendar →</button></div></section>
     </div></div>
     <div class="front-local">
@@ -1518,8 +1518,8 @@ function vFront(){setTimeout(()=>{cwFill();cwLoad()},0);
       ${VNEWS.length?`<section class="box" style="--c:#ff3a2a"><div class="bh"><b>Venue desk</b><span>${VENUES.length} venues watched</span></div>${VNEWS.slice().sort((a,b)=>(b.published_at||'').localeCompare(a.published_at||'')).slice(0,3).map(vnRow).join('')}<div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="venues">All venues →</button></div></section>`:''}
     </div>
     <div class="stack">
-      <section class="box" style="--c:#39ff14"><div class="bh"><b>Scene picks</b><span>not concerts</span></div><div style="display:grid;gap:10px;padding:12px">${upScene.slice(0,3).map(evCard).join('')||'<div class="empty">No events listed.</div>'}</div><div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="scene">More scene picks →</button></div></section>
-      <section class="box" style="--c:#1e90ff"><div class="bh"><b>Band watch</b><span>Boston bands</span></div>${BNEWS.slice().sort((a,b)=>(b.published_at||'').localeCompare(a.published_at||'')).slice(0,2).map(bnRow).join('')}${upEv(BEV).slice(0,2).map(evRow).join('')}${!BNEWS.length&&!upEv(BEV).length?'<div class="empty">The band desk is on it.</div>':''}<div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="bands">All 200 bands →</button></div></section>
+      <section class="box" style="--c:#39ff14"><div class="bh"><b>Scene picks</b><span>not concerts</span></div><div style="display:grid;gap:10px;padding:12px">${upScene.slice(0,3).map(evCard).join('')||'<div class="empty">No events listed.</div>'}</div><div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="scene">More arts &amp; entertainment →</button></div></section>
+      <section class="box" style="--c:#1e90ff"><div class="bh"><b>Band watch</b><span>Boston bands</span></div>${BNEWS.slice().sort((a,b)=>(b.published_at||'').localeCompare(a.published_at||'')).slice(0,2).map(bnRow).join('')}${upEv(BEV).slice(0,2).map(evRow).join('')}${!BNEWS.length&&!upEv(BEV).length?'<div class="empty">The band desk is on it.</div>':''}<div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="bands">All Boston bands →</button></div></section>
     </div></div>`;
 }
 function vGuide(compact){const cats=Object.keys(VSHORT).filter(c=>VENUES.some(v=>v.cat===c));const ex=c=>VENUES.filter(v=>v.cat===c).slice(0,40).sort(()=>0).slice(0,3).map(v=>v.name).join(', ');
@@ -1760,7 +1760,7 @@ function vBars(){
   <div class="bwg">${L.map(brief).join('')||'<div class="empty">Nothing on the wire yet.</div>'}</div>`;
 }
 
-function vScreen(){const L=STORIES.filter(s=>s.topic==='screen');return `<h2 class="room">The Screen</h2><div class="intro"><b>Movie reviews</b><p>What's worth your ticket money this week, and what to skip. New verdicts every opening weekend.</p></div><div class="sgrid">${L.map(storyCard).join('')||'<div class="empty">Reviews coming.</div>'}</div>`}
+function vScreen(){const L=STORIES.filter(s=>s.topic==='screen');return `<h2 class="room">Movie Reviews</h2><div class="intro"><b>Movie reviews</b><p>What's worth your ticket money this week, and what to skip. New verdicts every opening weekend.</p></div><div class="sgrid">${L.map(storyCard).join('')||'<div class="empty">Reviews coming.</div>'}</div>`}
 function vInk(){const L=STORIES.filter(s=>s.topic==='ink');return `<h2 class="room">Ink &amp; Steel</h2>
   <div class="intro"><b>Tattoos · piercing · body mod</b><p>Shops, artists, the law, the ink, the regrets and what's next. Skin Deep is back.</p></div>
   <div class="sgrid">${L.map(storyCard).join('')}</div>`}
@@ -1768,7 +1768,7 @@ function vInk(){const L=STORIES.filter(s=>s.topic==='ink');return `<h2 class="ro
 const FEATURES=new Set([]);
 function vStories(){
   const LS=STORIES.filter(s=>!FEATURES.has(s.slug));
-  return `<h2 class="room">Stories</h2>
+  return `<h2 class="room">Boston Stories</h2>
   <div class="sgrid">${LS.map(storyCard).join('')}</div>`;
 }
 const PAY_LINK='';
@@ -1826,7 +1826,7 @@ function vCal(){
 function vScene(){
   const ks=[...new Set(upScene.map(e=>e.kind))];
   const L=upScene.filter(e=>STATE.kind==='all'||e.kind===STATE.kind);
-  return `<h2 class="room">The scene</h2>
+  return `<h2 class="room">Boston Arts &amp; Entertainment</h2>
   <div class="intro"><b>After dark, not on stage</b><p>Markets, art walks, screenings and family outings around Boston. Tap a card for the source.</p></div>
   <div class="pads">${['all',...ks].map(k=>`<button class="pad${STATE.kind===k?' on':''}" data-kind="${k}" style="--gc:${k==='all'?'#8fb3d9':KIND[k]||'#8b949c'}"><span>${k==='all'?'All':esc(k)}</span><small>${k==='all'?upScene.length:upScene.filter(e=>e.kind===k).length}</small></button>`).join('')}</div>
   <div class="sgrid">${L.map(evCard).join('')||'<div class="empty">No events listed.</div>'}</div>`;
@@ -1852,7 +1852,7 @@ function wireAd(){const m=$('#adMail');if(m){m.onclick=e=>{e.preventDefault();co
   try{await DB.collection('ideas').add({kind:'ad',venue,pkg:$('#aP').value,cat:STATE.adcat||'',name:$('#aN').value.trim(),email:contact,text:'AD REQUEST · '+venue+' · '+$('#aP').value+(STATE.adcat?' · '+STATE.adcat:'')+'\n'+$('#aM').value.trim(),t:Date.now()});say('#aMsg','ok','Request sent. The editor will be in touch.');f.reset()}
   catch(e){say('#aMsg','err',NOT_OPEN)}finally{$('#aGo').disabled=false}}}
 function vSubmit(){
-  return `<h2 class="room">Submit to the Report</h2>
+  return `<h2 class="room">Submit an Event or Story Tip</h2>
   <div class="intro"><b>The paper is yours too</b><p>Pitch a story, rat out a scandal, or send a photo of the city after dark. The best ones may run online and in print. You don't need to give your name.</p></div>
   <div class="two">
     <section class="box" style="--c:#e3170a"><div class="bh"><b>Story idea or tip</b><span>anonymous is fine</span></div>
@@ -1878,7 +1878,7 @@ function vSubmit(){
   <p class="note">Submissions go straight to the editor's inbox. Nothing you send is shown on the site unless the editor picks it.</p>`;
 }
 function vInbox(){
-  return `<h2 class="room">Editor's inbox</h2>
+  return `<h2 class="room">Inbox</h2>
   <div class="intro"><b>Only you see this</b><p>Tips and photos sent through the Submit page, newest first.</p></div>
   ${INBOX.ideas.some(x=>x.kind==='ad')?`<section class="box" style="--c:#ff6a00"><div class="bh"><b>Ad requests</b><span>${INBOX.ideas.filter(x=>x.kind==='ad').length}</span></div><div class="ibx">${INBOX.ideas.filter(x=>x.kind==='ad').map(x=>`<div class="it"><div class="h"><span>${new Date(x.t).toLocaleString()}</span><span>${esc(x.pkg||'')}</span></div><p><b>${esc(x.venue||'')}</b>${x.cat?' · '+esc(x.cat):''}</p><p>${esc((x.text||'').split('\n').slice(1).join('\n'))}</p><div class="h"><span>${esc(x.name||'')}</span><span>${esc(x.email||'')}</span></div></div>`).join('')}</div></section>`:''}
   <div class="two">
@@ -2839,6 +2839,6 @@ const go=()=>{try{if(!E.length||!window.__fill0)return;const nz=s=>String(s||'')
 document.querySelectorAll('.lsrow .lspot[hidden] > a[id]').forEach(el=>{if(innerWidth<1280&&el.parentNode.classList.contains('ls-extra'))return;let it=null;for(let n=0;n<E.length;n++){const c=E[(k+n)%E.length];if(!vis.has(nz(c.bigText))){it=c;k=k+n+1;break}}if(!it)return;vis.add(nz(it.bigText));el.parentNode.hidden=false;el.parentNode.style.display='';window.__fill0(el,it)})}catch(_){}};
 setTimeout(go,1500);setInterval(go,3000)})();</script>
 <link rel="stylesheet" href="posters.css?v=23">
-<link rel="stylesheet" href="polish.css?v=27"><script src="whatson.js?v=5" defer></script>
+<link rel="stylesheet" href="polish.css?v=27"><script src="whatson.js?v=6" defer></script>
 </body>
 </html>

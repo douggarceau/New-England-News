@@ -33,7 +33,7 @@ function render(box){const R=ranges(),r=R[tab],L=list(r),multi=r.from!==r.to;
  const secs=order.map((k,i)=>'<details class="wo-d" data-k="'+H(k)+'"'+((k in OPEN?OPEN[k]:i===0)?' open':'')+'><summary>'+H(k)+'<span>'+g[k].length+'</span></summary>'+g[k].map(e=>row(e,multi)).join('')+'</details>').join('');
  box.innerHTML='<div class="wo-h"><span class="wo-k">All Activities in '+H(PLACE)+'</span><select class="wo-s" aria-label="When">'+R.map((x,i)=>'<option value="'+i+'"'+(i===tab?' selected':'')+'>'+H(x.k)+'</option>').join('')+'</select>'+(L.length?'<span class="wo-c"><b>'+L.length+'</b> listed</span>':'')+'</div>'+
   '<div class="wo-l">'+(secs||'<p class="wo-e">Nothing listed yet. See the full calendar for what’s coming up.</p>')+'</div>'+
-  '<div class="wo-f"><a href="#cal" class="wo-all">Full calendar →</a></div>'}
+  '<div class="wo-f"><a href="#cal" class="wo-all">Full event calendar →</a></div>'}
 function mount(){const slot=document.getElementById('coverSlot');if(!slot)return;let box=document.getElementById('whatsOn');
  const front=slot.offsetParent!==null&&slot.childElementCount>0;
  if(!front){if(box)box.style.display='none';return}
