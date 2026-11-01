@@ -102,3 +102,6 @@ html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!imp
 
 /* Crime Watch paused */
 #nav>[data-go="crime"],#coverSlot .cvcrime,.crimeBanner,.crban{display:none!important}
+#whatsOn button.wo-c{cursor:pointer;background:#ffffff0d;border:1px solid #ffcf5a66;border-radius:6px;padding:7px 12px;font:600 13px/1 "Helvetica Neue",Arial,sans-serif;color:#f3dcc0}
+#whatsOn button.wo-c:hover,#whatsOn button.wo-c[aria-pressed="true"]{background:#ffcf5a22;border-color:#ffcf5a}
+#whatsOn .wo-flat>.wo-r:last-child{border-bottom:0}

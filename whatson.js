@@ -27,12 +27,12 @@ const CATS=[['Live Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|
 function cat(g){for(const c of CATS)if(c[1].test(g||''))return c[0];return 'Other Activities'}
 function row(e,multi){const name=String(e.artists||'').split(/\s+[|@]\s+/)[0];const u=/^https?:/.test(e.url||'')?e.url:'';
  return '<a class="wo-r"'+(u?' href="'+H(u)+'" target="_blank" rel="noopener"':' href="#cal"')+'><span class="wo-t">'+(multi?H(dayLbl(e.date))+' · ':'')+H(String(e.time||'TBA').replace(/:00/g,''))+'</span><span class="wo-n"><b>'+H(name)+'</b> <small>'+H(e.venue||'')+'</small></span></a>'}
-let OPEN={};
+let OPEN={},FLAT=false;
 function render(box){const R=ranges(),r=R[tab],L=list(r),multi=r.from!==r.to;
  const g={};L.forEach(e=>{const c=cat(e.genre);(g[c]=g[c]||[]).push(e)});
  const order=CATS.map(c=>c[0]).concat('Other Activities').filter(k=>g[k]);
- const secs=order.map((k,i)=>'<details class="wo-d" data-k="'+H(k)+'"'+((k in OPEN?OPEN[k]:i===0)?' open':'')+'><summary>'+H(k)+'<span>'+g[k].length+'</span></summary>'+g[k].map(e=>row(e,multi)).join('')+'</details>').join('');
- box.innerHTML='<div class="wo-h"><span class="wo-k">All Activities in '+H(PLACE)+'</span><select class="wo-s" aria-label="When">'+R.map((x,i)=>'<option value="'+i+'"'+(i===tab?' selected':'')+'>'+H(x.k)+'</option>').join('')+'</select>'+(L.length?'<span class="wo-c"><b>'+L.length+'</b> listed</span>':'')+'</div>'+
+ const secs=FLAT?('<div class="wo-flat">'+L.map(e=>row(e,multi)).join('')+'</div>'):order.map((k,i)=>'<details class="wo-d" data-k="'+H(k)+'"'+((k in OPEN?OPEN[k]:i===0)?' open':'')+'><summary>'+H(k)+'<span>'+g[k].length+'</span></summary>'+g[k].map(e=>row(e,multi)).join('')+'</details>').join('');
+ box.innerHTML='<div class="wo-h"><span class="wo-k">All Activities in '+H(PLACE)+'</span><select class="wo-s" aria-label="When">'+R.map((x,i)=>'<option value="'+i+'"'+(i===tab?' selected':'')+'>'+H(x.k)+'</option>').join('')+'</select>'+(L.length?'<button type="button" class="wo-c" aria-pressed="'+FLAT+'">'+(FLAT?'Show by category':'Show all <b>'+L.length+'</b> listed')+'</button>':'')+'</div>'+
   '<div class="wo-l">'+(secs||'<p class="wo-e">Nothing listed yet. See the full calendar for what’s coming up.</p>')+'</div>'+
   '<div class="wo-f"><a href="#cal" class="wo-all">Full event calendar →</a></div>'}
 function mount(){const slot=document.getElementById('coverSlot');if(!slot)return;let box=document.getElementById('whatsOn');
@@ -40,7 +40,7 @@ function mount(){const slot=document.getElementById('coverSlot');if(!slot)return
  if(!front){if(box)box.style.display='none';return}
  if(!box){box=document.createElement('section');box.id='whatsOn';box.setAttribute('aria-label','All activities');slot.parentNode.insertBefore(box,slot);
   box.addEventListener('change',e=>{if(e.target.classList.contains('wo-s')){tab=+e.target.value;render(box)}});box.addEventListener('toggle',e=>{const d=e.target;if(d.classList&&d.classList.contains('wo-d'))OPEN[d.dataset.k]=d.open},true);
-  box.addEventListener('click',e=>{
+  box.addEventListener('click',e=>{if(e.target.closest('.wo-c')){FLAT=!FLAT;render(box);return}
    const a=e.target.closest('a[href="#cal"]');if(a){e.preventDefault();try{go('cal')}catch(_){location.hash='cal'}}});render(box)}
  box.style.display=''}
 function expandMeetings(M){const DN=['sun','mon','tue','wed','thu','fri','sat'],out=[],n=new Date();for(let i=0;i<8;i++){const ds=ymd(add(n,i)),d=new Date(ds+'T12:00:00'),wd=DN[d.getDay()],nth=Math.floor((d.getDate()-1)/7)+1,last=new Date(d.getTime()+7*864e5).getMonth()!==d.getMonth();
