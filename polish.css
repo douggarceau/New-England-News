@@ -121,3 +121,4 @@ html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!imp
 #recov .rc-e{color:#c9bfa8}
 #nav>[data-go="recovery"]{display:none!important}
 #whatsOn button.wo-c{margin-left:0}
+#whatsOn .wo-lb{display:inline-flex;align-items:center;gap:6px;font:700 11px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#f3dcc0}#whatsOn .wo-lb .wo-s{margin:0}

@@ -32,14 +32,14 @@ function render(box){const R=ranges(),r=R[tab],L=list(r),multi=r.from!==r.to;
  const g={};L.forEach(e=>{const c=cat(e.genre);(g[c]=g[c]||[]).push(e)});
  const order=CATS.map(c=>c[0]).concat('Other Activities').filter(k=>g[k]);
  const secs=FLAT?('<div class="wo-flat">'+(()=>{let h='',lastD='',lastH=-2;return L.map(e=>{let pre='';if(multi&&e.date!==lastD){lastD=e.date;lastH=-2;pre+='<div class="wo-hr wo-day">'+H(new Date(e.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'}))+'</div>'}const m=mins(e.time),hr=m>=9999?-1:Math.floor(m/60);if(hr!==lastH){lastH=hr;pre+='<div class="wo-hr">'+(hr<0?'Time not listed':((hr%12)||12)+(hr<12?' AM':' PM'))+'</div>'}return pre+row(e,multi)}).join('')})()+'</div>'):order.map((k,i)=>'<details class="wo-d" data-k="'+H(k)+'"'+((k in OPEN?OPEN[k]:i===0)?' open':'')+'><summary>'+H(k)+'<span>'+g[k].length+'</span></summary>'+g[k].map(e=>row(e,multi)).join('')+'</details>').join('');
- box.innerHTML='<div class="wo-h"><span class="wo-k">All Activities in '+H(PLACE)+'</span><select class="wo-s" aria-label="When">'+R.map((x,i)=>'<option value="'+i+'"'+(i===tab?' selected':'')+'>'+H(x.k)+'</option>').join('')+'</select>'+(L.length?'<button type="button" class="wo-c" aria-pressed="'+FLAT+'">'+(FLAT?'Show by category':'Show all <b>'+L.length+'</b> '+H(r.k.toLowerCase()))+'</button>':'')+'</div>'+
+ box.innerHTML='<div class="wo-h"><span class="wo-k">All Activities in '+H(PLACE)+'</span><label class="wo-lb">When<select class="wo-s" aria-label="When">'+R.map((x,i)=>'<option value="'+i+'"'+(i===tab?' selected':'')+'>'+H(x.k)+'</option>').join('')+'</select></label><label class="wo-lb">Show<select class="wo-s wo-v" aria-label="Show"><option value="cat"'+(FLAT?'':' selected')+'>By category</option><option value="all"'+(FLAT?' selected':'')+'>All '+L.length+' by time</option></select></label></div>'+
   '<div class="wo-l">'+(secs||'<p class="wo-e">Nothing listed yet. See the full calendar for what’s coming up.</p>')+'</div>'+
   '<div class="wo-f"><a href="#cal" class="wo-all">Full event calendar →</a></div>'}
 function mount(){const slot=document.getElementById('coverSlot');if(!slot)return;let box=document.getElementById('whatsOn');
  const front=slot.offsetParent!==null&&slot.childElementCount>0;
  if(!front){if(box)box.style.display='none';return}
  if(!box){box=document.createElement('section');box.id='whatsOn';box.setAttribute('aria-label','All activities');slot.parentNode.insertBefore(box,slot);
-  box.addEventListener('change',e=>{if(e.target.classList.contains('wo-s')){tab=+e.target.value;render(box)}});box.addEventListener('toggle',e=>{const d=e.target;if(d.classList&&d.classList.contains('wo-d'))OPEN[d.dataset.k]=d.open},true);
+  box.addEventListener('change',e=>{if(e.target.classList.contains('wo-v')){FLAT=e.target.value==='all';render(box)}else if(e.target.classList.contains('wo-s')){tab=+e.target.value;render(box)}});box.addEventListener('toggle',e=>{const d=e.target;if(d.classList&&d.classList.contains('wo-d'))OPEN[d.dataset.k]=d.open},true);
   box.addEventListener('click',e=>{if(e.target.closest('.wo-c')){FLAT=!FLAT;render(box);return}
    const a=e.target.closest('a[href="#cal"]');if(a){e.preventDefault();try{go('cal')}catch(_){location.hash='cal'}}});render(box)}
  box.style.display=''}
