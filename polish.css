@@ -125,3 +125,4 @@ html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!imp
 #coverSlot .cvr>.pbx{display:none!important}
 #whatsOn .wo-z summary{opacity:.55}
 #nav>[data-go="cal"]{order:-1!important}
+#nav>#nbSis{order:9!important}#nav>#nbSub{order:10!important}#nav>#nbSearch{order:20!important}.subbox.sbpop{display:grid!important;position:fixed;z-index:9999;top:110px;right:16px;width:min(92vw,360px);margin:0}
