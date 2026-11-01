@@ -43,7 +43,10 @@ function mount(){const slot=document.getElementById('coverSlot');if(!slot)return
   box.addEventListener('click',e=>{
    const a=e.target.closest('a[href="#cal"]');if(a){e.preventDefault();try{go('cal')}catch(_){location.hash='cal'}}});render(box)}
  box.style.display=''}
+function expandMeetings(M){const DN=['sun','mon','tue','wed','thu','fri','sat'],out=[],n=new Date();for(let i=0;i<8;i++){const ds=ymd(add(n,i)),d=new Date(ds+'T12:00:00'),wd=DN[d.getDay()],nth=Math.floor((d.getDate()-1)/7)+1,last=new Date(d.getTime()+7*864e5).getMonth()!==d.getMonth();
+ for(const m of M){if(m.d!==wd)continue;const w=m.w;if(!(w==='every'||(w==='last'&&last)||(/^\d/.test(w)&&+w[0]===nth)))continue;out.push({date:ds,time:m.t,artists:m.n,venue:(m.v||'')+(m.h?(m.v?' · ':'')+m.h:''),genre:'support',url:m.u})}}return out}
 fetch('data/cal.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{EV=(d.events||[]).filter(e=>e&&e.date&&!SKIP.test(e.genre||''));
+ fetch('data/meetings.json',{cache:'no-cache'}).then(r=>r.ok?r.json():[]).then(M=>{if(M&&M.length){EV=EV.concat(expandMeetings(M));const b=document.getElementById('whatsOn');if(b)render(b)}}).catch(()=>{});
  /* default to Weekend on Fri-Sun evenings when today is empty */
  mount();setInterval(mount,1500);setInterval(()=>{const b=document.getElementById('whatsOn');if(b&&b.style.display!=='none')render(b)},300000)}).catch(()=>{});
 })();
