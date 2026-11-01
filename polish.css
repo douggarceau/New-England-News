@@ -79,19 +79,23 @@ html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!imp
 #whatsOn{margin:0 0 16px;border-radius:14px;padding:14px 16px 10px;background:radial-gradient(80% 120% at 0 0,#ffcf5a1f,transparent 60%),linear-gradient(180deg,#191109,#0d0905);border:1px solid #ffcf5a55;box-shadow:0 0 26px #ff9d2a22,0 10px 26px #000a;font-family:"Helvetica Neue",Arial,sans-serif}
 #whatsOn .wo-h{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:10px}
 #whatsOn .wo-k{font:800 13px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#ffcf5a;text-shadow:0 0 12px #ff9d2a88}
-#whatsOn .wo-tabs{display:flex;gap:6px;flex-wrap:wrap}
-#whatsOn .wo-tabs button{font:700 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;border-radius:999px;border:1px solid #ffcf5a55;background:#ffffff08;color:#f3dcc0;cursor:pointer}
-#whatsOn .wo-tabs button[aria-selected="true"]{background:linear-gradient(180deg,#ffe08a,#e2a017);color:#2a1600;border-color:#ffe08a;box-shadow:0 0 14px #ffcf4d88}
-#whatsOn .wo-l{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 14px;max-height:430px;overflow-y:auto;overscroll-behavior:contain;padding-right:4px;scrollbar-width:thin;scrollbar-color:#ffcf5a66 transparent}
-#whatsOn .wo-c{font:600 12px/1 "Helvetica Neue",Arial,sans-serif;color:#f3dcc0;margin-left:auto;order:3}#whatsOn .wo-c b{color:#ffcf5a;font-size:15px}
-#whatsOn .wo-r{display:grid;grid-template-columns:92px 1fr;gap:10px;align-items:center;padding:8px 10px;border-radius:9px;text-decoration:none;color:#fff;background:#ffffff06;transition:background .2s,box-shadow .2s}
-#whatsOn .wo-r:hover{background:#ffcf5a18;box-shadow:0 0 0 1px #ffcf5a55}
-#whatsOn .wo-t{font:700 13px/1.2 "Helvetica Neue",Arial,sans-serif;color:#ffcf5a;white-space:nowrap}
-#whatsOn .wo-t i{display:block;font-style:normal;font-size:10.5px;letter-spacing:.08em;color:#c9a96a;margin-bottom:2px}
-#whatsOn .wo-n{min-width:0}
-#whatsOn .wo-n b{display:block;font:600 14.5px/1.25 Georgia,serif;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-#whatsOn .wo-n small{display:block;font-size:12px;color:#c9bfa8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#whatsOn .wo-s{width:auto;flex:none;margin:0;font:700 12.5px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:7px 28px 7px 10px;border-radius:6px;border:1px solid #ffcf5a66;background:#1b130a url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23ffcf5a'/%3E%3C/svg%3E") no-repeat right 10px center;color:#ffcf5a;-webkit-appearance:none;appearance:none;cursor:pointer}
+#whatsOn .wo-c{font:600 12px/1 "Helvetica Neue",Arial,sans-serif;color:#f3dcc0;margin-left:auto}#whatsOn .wo-c b{color:#ffcf5a;font-size:15px}
+#whatsOn .wo-l{max-height:440px;overflow-y:auto;overscroll-behavior:contain;padding-right:4px;scrollbar-width:thin;scrollbar-color:#ffcf5a66 transparent}
+#whatsOn .wo-d{border-top:1px solid #ffcf5a26}
+#whatsOn .wo-d summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:9px 2px;font:700 13px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#f3dcc0}
+#whatsOn .wo-d summary::-webkit-details-marker{display:none}
+#whatsOn .wo-d summary::after{content:"";margin-left:auto;width:7px;height:7px;border:solid #ffcf5a;border-width:0 2px 2px 0;transform:rotate(45deg);transition:transform .2s}
+#whatsOn .wo-d[open] summary::after{transform:rotate(-135deg)}
+#whatsOn .wo-d summary span{color:#ffcf5a;font-size:12px;letter-spacing:0}
+#whatsOn .wo-r{display:flex;gap:12px;align-items:baseline;padding:5px 2px 5px 4px;text-decoration:none;color:#fff;border-bottom:1px dotted #ffffff14}
+#whatsOn .wo-d>.wo-r:last-child{border-bottom:0;margin-bottom:8px}
+#whatsOn .wo-r:hover b{color:#ffcf5a}
+#whatsOn .wo-t{flex:none;width:104px;font:700 12.5px/1.3 "Helvetica Neue",Arial,sans-serif;color:#ffcf5a;white-space:nowrap}
+#whatsOn .wo-n{min-width:0;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#whatsOn .wo-n b{font:600 14.5px/1.3 Georgia,serif;color:#fff;transition:color .15s}
+#whatsOn .wo-n small{font-size:12px;color:#c9bfa8}
 #whatsOn .wo-e{margin:6px 0;color:#c9bfa8;font-size:14px}
 #whatsOn .wo-f{text-align:right;margin-top:6px}
 #whatsOn .wo-all{font:700 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#ffcf5a;text-decoration:none}
-@media (max-width:760px){#whatsOn{padding:12px 12px 8px;margin:0 0 12px}#whatsOn .wo-l{grid-template-columns:1fr}#whatsOn .wo-l{max-height:360px}#whatsOn .wo-r{grid-template-columns:78px 1fr}#whatsOn .wo-tabs button{padding:7px 10px;font-size:11px}}
+@media (max-width:760px){#whatsOn{padding:12px 12px 8px;margin:0 0 12px}#whatsOn .wo-l{max-height:380px}#whatsOn .wo-t{width:84px}#whatsOn .wo-n{white-space:normal}}
