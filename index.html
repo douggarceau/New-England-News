@@ -1814,14 +1814,16 @@ function vCal(){
   const q=STATE.cq.toLowerCase(); if(q) L=L.filter(e=>(e.artists+' '+e.venue+' '+(e.hood||'')).toLowerCase().includes(q));
   if(STATE.hood!=='all') L=L.filter(e=>e.hood===STATE.hood);
   const hoods=[...new Set(up.map(e=>e.hood).filter(Boolean))].sort();
+  const DN={};for(const e of L)DN[e.date]=(DN[e.date]||0)+1;const DS=Object.keys(DN);const total=L.length;const lim=STATE.cdays||14;let more='';
+  if(!q&&DS.length>lim){const cut=DS[lim];L=L.filter(e=>e.date<cut);more=`<button type="button" class="pad calmore" onclick="STATE.cdays=(STATE.cdays||14)+14;render()">Show the next 14 days</button>`}
   let html='',day='';
-  for(const e of L){ if(e.date!==day){if(day)html+='</div>';day=e.date;html+=`<div class="dayh">${longDay(e.date)} · ${L.filter(x=>x.date===day).length} listings</div><div class="cald">`;} html+=showRow(e); } if(day)html+='</div>';
+  for(const e of L){ if(e.date!==day){if(day)html+='</div>';day=e.date;html+=`<div class="dayh">${longDay(e.date)} · ${DN[day]} listings</div><div class="cald">`;} html+=showRow(e); } if(day)html+='</div>';html+=more;
   return `<h2 class="room">Boston calendar</h2>
   <div class="intro"><b>Everything happening in Boston</b><p>Music, arts, family outings, town meetings, worship and community support, by date. Tap a listing to reach the organizer. Updated ${esc(CAL_UPDATED)}. Schedules can change, so confirm with the organizer.</p></div>
   <div class="pads">${['all',...gs].map(g=>`<button class="pad${STATE.genre===g?' on':''}" data-genre="${g}" style="--gc:${g==='all'?'#8fb3d9':GENRE[g]||'#6f8aa8'}"><span>${g==='all'?'All':esc(g)}</span><small>${(n=>n+' '+(g==='all'?'listings':g==='worship'?(n===1?'service':'services'):g==='support'?(n===1?'meeting':'meetings'):['live','rock','jazz','classical','theater'].includes(g)?(n===1?'show':'shows'):(n===1?'event':'events')))(g==='all'?up.length:up.filter(e=>e.genre===g).length)}</small></button>`).join('')}</div>
   <div class="ctrl"><div class="fld"><label for="cq">Search the calendar</label><input type="search" id="cq" value="${esc(STATE.cq)}" placeholder="Event, church or place…" autocomplete="off"></div>
     <div class="fld"><label for="hood">Neighborhood</label><select id="hood"><option value="all">Everywhere</option>${hoods.map(h=>`<option${STATE.hood===h?' selected':''}>${esc(h)}</option>`).join('')}</select></div></div>
-  <section class="box" style="--c:#1e90ff"><div class="bh"><b>${L.length} ${L.length===1?'listing':'listings'}</b><span>sorted by date</span></div><div class="rows">${html||'<div class="empty">Nothing matches. Clear the search or pick another genre.</div>'}</div></section>`;
+  <section class="box" style="--c:#1e90ff"><div class="bh"><b>${total} ${total===1?'listing':'listings'}</b><span>sorted by date</span></div><div class="rows">${html||'<div class="empty">Nothing matches. Clear the search or pick another genre.</div>'}</div></section>`;
 }
 function vScene(){
   const ks=[...new Set(upScene.map(e=>e.kind))];
@@ -2839,6 +2841,6 @@ const go=()=>{try{if(!E.length||!window.__fill0)return;const nz=s=>String(s||'')
 document.querySelectorAll('.lsrow .lspot[hidden] > a[id]').forEach(el=>{if(innerWidth<1280&&el.parentNode.classList.contains('ls-extra'))return;let it=null;for(let n=0;n<E.length;n++){const c=E[(k+n)%E.length];if(!vis.has(nz(c.bigText))){it=c;k=k+n+1;break}}if(!it)return;vis.add(nz(it.bigText));el.parentNode.hidden=false;el.parentNode.style.display='';window.__fill0(el,it)})}catch(_){}};
 setTimeout(go,1500);setInterval(go,3000)})();</script>
 <link rel="stylesheet" href="posters.css?v=23">
-<link rel="stylesheet" href="polish.css?v=28"><script src="whatson.js?v=10" defer></script>
+<link rel="stylesheet" href="polish.css?v=30"><script src="whatson.js?v=12" defer></script>
 </body>
 </html>

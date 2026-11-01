@@ -1,5 +1,6 @@
 /* What's On: Today/Tonight · Tomorrow · This Week · Weekend, at the top of the front page */
 (function(){
+const RD=()=>{const s=document.getElementById('coverSlot');document.documentElement.classList.toggle('rd',!(s&&s.offsetParent!==null&&s.childElementCount>0))};setInterval(RD,400);document.addEventListener('click',()=>setTimeout(RD,60),true);
 const H=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const SKIP=/^(sports)$/i;
 const TZ='America/New_York';
