@@ -2175,7 +2175,7 @@ const SFX=(function(){let ctx=null,out=null,on=true,last=0;try{on=localStorage.g
 (()=>{let last=null;setInterval(()=>{const t=[...document.querySelectorAll('.vtile')];if(!t.length||document.hidden)return;if(last)last.classList.remove('lit');const n=t[Math.floor(Math.random()*t.length)];if(n.matches(':hover'))return;n.classList.add('lit');last=n;setTimeout(()=>n.classList.remove('lit'),1600)},900)})();
 </script>
 <script>
-(()=>{const P=new URLSearchParams(location.search),g=P.get('go')||location.hash.slice(1);if(g&&['tech','crime','stories','bars','cal','scene','venues','bands','front'].includes(g)){go(g)}})();
+(()=>{const P=new URLSearchParams(location.search),g=P.get('go')||location.hash.slice(1);if(g&&['tech','stories','bars','cal','scene','venues','bands','front'].includes(g)){go(g)}})();
 (()=>{const q=new URLSearchParams(location.search).get('story');if(!q||typeof STORIES==='undefined'||!STORIES.some(s=>s.slug===q))return;STATE.story=q;STATE.prev='front';STATE.view='read';render();scrollTo(0,0)})();
 </script>
 <script>
@@ -2839,6 +2839,6 @@ const go=()=>{try{if(!E.length||!window.__fill0)return;const nz=s=>String(s||'')
 document.querySelectorAll('.lsrow .lspot[hidden] > a[id]').forEach(el=>{if(innerWidth<1280&&el.parentNode.classList.contains('ls-extra'))return;let it=null;for(let n=0;n<E.length;n++){const c=E[(k+n)%E.length];if(!vis.has(nz(c.bigText))){it=c;k=k+n+1;break}}if(!it)return;vis.add(nz(it.bigText));el.parentNode.hidden=false;el.parentNode.style.display='';window.__fill0(el,it)})}catch(_){}};
 setTimeout(go,1500);setInterval(go,3000)})();</script>
 <link rel="stylesheet" href="posters.css?v=23">
-<link rel="stylesheet" href="polish.css?v=27"><script src="whatson.js?v=6" defer></script>
+<link rel="stylesheet" href="polish.css?v=28"><script src="whatson.js?v=6" defer></script>
 </body>
 </html>

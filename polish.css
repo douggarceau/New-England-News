@@ -99,3 +99,6 @@ html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!imp
 #whatsOn .wo-f{text-align:right;margin-top:6px}
 #whatsOn .wo-all{font:700 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#ffcf5a;text-decoration:none}
 @media (max-width:760px){#whatsOn{padding:12px 12px 8px;margin:0 0 12px}#whatsOn .wo-l{max-height:380px}#whatsOn .wo-t{width:84px}#whatsOn .wo-n{white-space:normal}}
+
+/* Crime Watch paused */
+#nav>[data-go="crime"],#coverSlot .cvcrime,.crimeBanner,.crban{display:none!important}
