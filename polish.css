@@ -119,3 +119,4 @@ html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!imp
 #recov .rc-h{margin:22px 0 8px;font:700 18px/1.2 Georgia,serif;color:#fff}
 #recov .rc-o{margin:0;padding-left:18px;color:#e8e2d4;font-size:15px;line-height:1.7}#recov .rc-o a{color:#ffcf5a}
 #recov .rc-e{color:#c9bfa8}
+#nav>[data-go="recovery"]{display:none!important}
