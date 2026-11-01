@@ -21,22 +21,23 @@ function list(r){const td=ymd(new Date()),nm=nowMins();
  return EV.filter(e=>e.date>=r.from&&e.date<=r.to&&!(e.date===td&&mins(e.time)<9999&&mins(e.time)<nm-90))
   .sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:mins(a.time)-mins(b.time))}
 function dayLbl(ds){const d=new Date(ds+'T12:00:00');return d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase()+' '+d.getDate()}
-const CATS=[['Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country)$/i],['Classical & Opera',/^classical$/i],['Theater',/^theater$/i],['Art & Museums',/^arts$/i],['Kids & Family',/^family$/i],['Community',/^community$/i]];
-function cat(g){for(const c of CATS)if(c[1].test(g||''))return c[0];return 'More'}
+const PLACE=(()=>{const t=(location.hostname+' '+document.title).toLowerCase();return /jamestown/.test(t)?'Jamestown':/hurricane|rhode/.test(t)?'Rhode Island':/boston|rambler/.test(t)?'Boston':/scream|new york|nyc/.test(t)?'New York City':'the Area'})();
+const CATS=[['Live Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country)$/i],['Classical Music & Opera',/^classical$/i],['Theater',/^theater$/i],['Art Exhibits & Museums',/^arts$/i],['Children & Family Activities',/^family$/i],['Community Events',/^community$/i]];
+function cat(g){for(const c of CATS)if(c[1].test(g||''))return c[0];return 'Other Activities'}
 function row(e,multi){const name=String(e.artists||'').split(/\s+[|@]\s+/)[0];const u=/^https?:/.test(e.url||'')?e.url:'';
  return '<a class="wo-r"'+(u?' href="'+H(u)+'" target="_blank" rel="noopener"':' href="#cal"')+'><span class="wo-t">'+(multi?H(dayLbl(e.date))+' · ':'')+H(String(e.time||'TBA').replace(/:00/g,''))+'</span><span class="wo-n"><b>'+H(name)+'</b> <small>'+H(e.venue||'')+'</small></span></a>'}
 let OPEN={};
 function render(box){const R=ranges(),r=R[tab],L=list(r),multi=r.from!==r.to;
  const g={};L.forEach(e=>{const c=cat(e.genre);(g[c]=g[c]||[]).push(e)});
- const order=CATS.map(c=>c[0]).concat('More').filter(k=>g[k]);
+ const order=CATS.map(c=>c[0]).concat('Other Activities').filter(k=>g[k]);
  const secs=order.map((k,i)=>'<details class="wo-d" data-k="'+H(k)+'"'+((k in OPEN?OPEN[k]:i===0)?' open':'')+'><summary>'+H(k)+'<span>'+g[k].length+'</span></summary>'+g[k].map(e=>row(e,multi)).join('')+'</details>').join('');
- box.innerHTML='<div class="wo-h"><span class="wo-k">What’s on</span><select class="wo-s" aria-label="When">'+R.map((x,i)=>'<option value="'+i+'"'+(i===tab?' selected':'')+'>'+H(x.k)+'</option>').join('')+'</select>'+(L.length?'<span class="wo-c"><b>'+L.length+'</b> things to do</span>':'')+'</div>'+
+ box.innerHTML='<div class="wo-h"><span class="wo-k">All Activities in '+H(PLACE)+'</span><select class="wo-s" aria-label="When">'+R.map((x,i)=>'<option value="'+i+'"'+(i===tab?' selected':'')+'>'+H(x.k)+'</option>').join('')+'</select>'+(L.length?'<span class="wo-c"><b>'+L.length+'</b> listed</span>':'')+'</div>'+
   '<div class="wo-l">'+(secs||'<p class="wo-e">Nothing listed yet. See the full calendar for what’s coming up.</p>')+'</div>'+
   '<div class="wo-f"><a href="#cal" class="wo-all">Full calendar →</a></div>'}
 function mount(){const slot=document.getElementById('coverSlot');if(!slot)return;let box=document.getElementById('whatsOn');
  const front=slot.offsetParent!==null&&slot.childElementCount>0;
  if(!front){if(box)box.style.display='none';return}
- if(!box){box=document.createElement('section');box.id='whatsOn';box.setAttribute('aria-label','What’s on');slot.parentNode.insertBefore(box,slot);
+ if(!box){box=document.createElement('section');box.id='whatsOn';box.setAttribute('aria-label','All activities');slot.parentNode.insertBefore(box,slot);
   box.addEventListener('change',e=>{if(e.target.classList.contains('wo-s')){tab=+e.target.value;render(box)}});box.addEventListener('toggle',e=>{const d=e.target;if(d.classList&&d.classList.contains('wo-d'))OPEN[d.dataset.k]=d.open},true);
   box.addEventListener('click',e=>{
    const a=e.target.closest('a[href="#cal"]');if(a){e.preventDefault();try{go('cal')}catch(_){location.hash='cal'}}});render(box)}
