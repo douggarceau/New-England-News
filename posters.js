@@ -233,6 +233,7 @@ function rotator(getHost,pick,ms,start,opts){let i=start||0,face=0,cur=null;
   if(face===0){cur=L[i++%L.length];const h=window.bigPoster&&window.bigPoster(cur,region());if(!h)return;const put=()=>{o.innerHTML=h;o.dataset.href=cur.url||'';o.dataset.face='p';requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})};first?put():turn(o,put);face=1}
   else{const put=()=>{o.innerHTML=window.factsCard(cur);o.dataset.face='f'};turn(o,put);face=0}};
  let started=false;const kick=setInterval(()=>{if(started){clearInterval(kick);return}const o=host();if(o&&pick().length){started=true;show(o,true);clearInterval(kick)}},400);
+ setInterval(()=>{if(!started)return;const h=getHost();if(h&&!h.querySelector(':scope>.rot')){face=0;show(host(),true)}},400);/* the page re-draws the cover box after load; put the poster straight back instead of leaving it blank until the next turn */
  setInterval(()=>{const o=host();if(!o)return;if(!started){started=true;show(o,true);return}if(document.hidden||o.matches(':hover'))return;show(o,false)},ms)}
 /* the box under the cover: every show, poster then facts */
 rotator(()=>{const b=document.querySelector('.cvr .pbx');if(b)b._busy=true;return b},()=>evs(),8000,window.EP_COVER_POSTERS?7:0,{worship:1,noweek:!!window.EP_COVER_POSTERS});
