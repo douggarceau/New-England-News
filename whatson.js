@@ -2,7 +2,7 @@
 (function(){
 const RD=()=>{const s=document.getElementById('coverSlot');document.documentElement.classList.toggle('rd',!(s&&s.offsetParent!==null&&s.childElementCount>0))};setInterval(RD,400);document.addEventListener('click',()=>setTimeout(RD,60),true);
 const H=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const SKIP=/^(sports)$/i;
+const SKIP=/^(sports|support)$/i;
 const TZ='America/New_York';
 const ymd=d=>d.toLocaleDateString('en-CA',{timeZone:TZ});
 const add=(d,n)=>new Date(d.getTime()+n*864e5);
@@ -23,7 +23,7 @@ function list(r){const td=ymd(new Date()),nm=nowMins();
   .sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:mins(a.time)-mins(b.time))}
 function dayLbl(ds){const d=new Date(ds+'T12:00:00');return d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase()+' '+d.getDate()}
 const PLACE=(()=>{const t=(location.hostname+' '+document.title).toLowerCase();return /jamestown/.test(t)?'Jamestown':/hurricane|rhode/.test(t)?'Rhode Island':/boston|rambler/.test(t)?'Boston':/scream|new york|nyc/.test(t)?'New York City':'the Area'})();
-const CATS=[['Live Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country)$/i],['Classical Music & Opera',/^classical$/i],['Theater & Dance',/^(theater|dance)$/i],['Comedy',/^comedy$/i],['Film Screenings',/^film$/i],['Lectures, Talks & Book Events',/^talks$/i],['Art Exhibits & Museums',/^arts$/i],['Children & Family Activities',/^family$/i],['Fitness, Outdoors & Social Groups',/^recreation$/i],['Volunteer Opportunities',/^volunteer$/i],['Community Events',/^community$/i],['Church Services & Worship',/^worship$/i],['Recovery & Support Meetings',/^support$/i]];
+const CATS=[['Live Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country)$/i],['Classical Music & Opera',/^classical$/i],['Theater & Dance',/^(theater|dance)$/i],['Comedy',/^comedy$/i],['Film Screenings',/^film$/i],['Lectures, Talks & Book Events',/^talks$/i],['Art Exhibits & Museums',/^arts$/i],['Children & Family Activities',/^family$/i],['Fitness, Outdoors & Social Groups',/^recreation$/i],['Volunteer Opportunities',/^volunteer$/i],['Community Events',/^community$/i],['Church Services & Worship',/^worship$/i]];
 function cat(g){for(const c of CATS)if(c[1].test(g||''))return c[0];return 'Other Activities'}
 function row(e,multi){const name=String(e.artists||'').split(/\s+[|@]\s+/)[0];const u=/^https?:/.test(e.url||'')?e.url:'';
  return '<a class="wo-r"'+(u?' href="'+H(u)+'" target="_blank" rel="noopener"':' href="#cal"')+'><span class="wo-t">'+(multi?H(dayLbl(e.date))+' · ':'')+H(String(e.time||'TBA').replace(/:00/g,''))+'</span><span class="wo-n"><b>'+H(name)+'</b> <small>'+H(e.venue||'')+'</small></span></a>'}
@@ -46,7 +46,7 @@ function mount(){const slot=document.getElementById('coverSlot');if(!slot)return
 function expandMeetings(M){const DN=['sun','mon','tue','wed','thu','fri','sat'],out=[],n=new Date();for(let i=0;i<8;i++){const ds=ymd(add(n,i)),d=new Date(ds+'T12:00:00'),wd=DN[d.getDay()],nth=Math.floor((d.getDate()-1)/7)+1,last=new Date(d.getTime()+7*864e5).getMonth()!==d.getMonth();
  for(const m of M){if(m.d!==wd)continue;const w=m.w;if(!(w==='every'||(w==='last'&&last)||(/^\d/.test(w)&&+w[0]===nth)))continue;out.push({date:ds,time:m.t,artists:m.n,venue:(m.v||'')+(m.h?(m.v?' · ':'')+m.h:''),genre:'support',url:m.u})}}return out}
 fetch('data/cal.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{EV=(d.events||[]).filter(e=>e&&e.date&&!SKIP.test(e.genre||''));
- fetch('data/meetings.json',{cache:'no-cache'}).then(r=>r.ok?r.json():[]).then(M=>{if(M&&M.length){EV=EV.concat(expandMeetings(M));const b=document.getElementById('whatsOn');if(b)render(b)}}).catch(()=>{});
+
  /* default to Weekend on Fri-Sun evenings when today is empty */
  mount();setInterval(mount,1500);setInterval(()=>{const b=document.getElementById('whatsOn');if(b&&b.style.display!=='none')render(b)},300000)}).catch(()=>{});
 })();

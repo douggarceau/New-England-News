@@ -233,7 +233,6 @@ function rotator(getHost,pick,ms,start,opts){let i=start||0,face=0,cur=null;
   if(face===0){cur=L[i++%L.length];const h=window.bigPoster&&window.bigPoster(cur,region());if(!h)return;const put=()=>{o.innerHTML=h;o.dataset.href=cur.url||'';o.dataset.face='p';requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})};first?put():turn(o,put);face=1}
   else{const put=()=>{o.innerHTML=window.factsCard(cur);o.dataset.face='f'};turn(o,put);face=0}};
  let started=false;const kick=setInterval(()=>{if(started){clearInterval(kick);return}const o=host();if(o&&pick().length){started=true;show(o,true);clearInterval(kick)}},400);
- setInterval(()=>{if(!started)return;const h=getHost();if(h&&!h.querySelector(':scope>.rot')){face=0;show(host(),true)}},400);/* the page re-draws the cover box after load; put the poster straight back instead of leaving it blank until the next turn */
  setInterval(()=>{const o=host();if(!o)return;if(!started){started=true;show(o,true);return}if(document.hidden||o.matches(':hover'))return;show(o,false)},ms)}
 /* the box under the cover: every show, poster then facts */
 rotator(()=>{const b=document.querySelector('.cvr .pbx');if(b)b._busy=true;return b},()=>evs(),8000,window.EP_COVER_POSTERS?7:0,{worship:1,noweek:!!window.EP_COVER_POSTERS});
@@ -246,7 +245,7 @@ window.epMix=function(L){try{
  const nm=x=>String((x.ev&&x.ev.artists)||x.bigText||x.name||'').toLowerCase().split(/\s+[-–—:|@]\s+|\s*\(/)[0].replace(/[^a-z0-9 ]/g,'').trim();
  const DULL=/pantry|thrift|rehearsal|appointment|\bhours\b|donation|office hours|support group|meeting\b|teen center/i;
  const seen=new Set(),u=[];
- L.slice().sort((a,b)=>String((a.ev&&a.ev.date)||'').localeCompare(String((b.ev&&b.ev.date)||''))).forEach(x=>{const k=nm(x);if(!k||seen.has(k)||DULL.test((x.ev&&x.ev.artists)||x.bigText||''))return;seen.add(k);u.push(x)});
+ L.slice().sort((a,b)=>String((a.ev&&a.ev.date)||'').localeCompare(String((b.ev&&b.ev.date)||''))).forEach(x=>{const k=nm(x);if(!k||seen.has(k)||(x.ev&&/^(support|worship)$/i.test(x.ev.genre||''))||/anonymous|al-anon|recovery/i.test((x.ev&&x.ev.artists)||x.bigText||'')||DULL.test((x.ev&&x.ev.artists)||x.bigText||''))return;seen.add(k);u.push(x)});
  const h=s=>{let v=seed>>>0;for(const c of s)v=Math.imul(v^c.charCodeAt(0),2654435761)>>>0;return v};
  const r=(u.length>=4?u:L).slice().sort((a,b)=>h(nm(a))-h(nm(b)));
  const by=new Map();r.forEach(x=>{const k=((x.ev&&x.ev.venue)||x.name||'').toLowerCase();if(!by.has(k))by.set(k,[]);by.get(k).push(x)});
