@@ -1727,7 +1727,7 @@ function vVisit(){visitLoad();const S=(VISIT&&VISIT.sections)||[];const cur=(STA
  const sec=S.find(x=>x.key===cur)||S[0];
  const card=it=>`<div class="vcard" style="--k:${VCAT_COL[(sec||{}).key]||'#e8b818'}"><h4>${esc(it.name)}</h4>${it.blurb?`<p>${esc(it.blurb)}</p>`:''}<div class="vmeta">${it.address?`<span>📍 ${esc(it.address)}</span>`:''}${it.phone?`<a href="tel:${esc(it.phone.replace(/[^0-9+]/g,''))}">📞 ${esc(it.phone)}</a>`:''}${it.hours?`<span>🕒 ${esc(it.hours)}</span>`:''}${it.url?`<a class="vweb" href="${esc(it.url)}" target="_blank" rel="noopener">Website →</a>`:''}</div></div>`;
  return `<h2 class="room">Visit Boston</h2><div class="intro"><b>Your guide to Boston</b><p>Neighborhoods, parks, museums and historic sites, the harbor and the islands, food and places to stay. Many places run seasonal hours, so call ahead.</p><div class="vquick"><a class="vq em" href="tel:911"><i>Emergency</i>911</a><a class="vq" href="tel:+16173434500"><i>Boston Police</i>(617) 343-4500</a><a class="vq map" href="https://www.google.com/maps/place/Boston,+MA" target="_blank" rel="noopener"><i>City map</i>Open map →</a></div></div>
- <div class="pads">${tabs}<button class="pad" data-go="recovery" style="--gc:#7a8a99"><span>Recovery &amp; Support Meetings</span><small>&nbsp;</small></button></div>
+ <div class="pads">${tabs}</div>
  <div class="vgrid">${sec?(sec.items||[]).map(card).join(''):'<div class="empty">Loading the Boston guide…</div>'}</div>`}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-vsec]');if(!b)return;e.preventDefault();STATE.vsec=b.dataset.vsec;render()});
 function cwFill(){const q=id=>document.getElementById(id);
