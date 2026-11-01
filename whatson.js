@@ -1,7 +1,7 @@
 /* What's On: Today/Tonight · Tomorrow · This Week · Weekend, at the top of the front page */
 (function(){
 const H=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const SKIP=/^(worship|support|sports)$/i;
+const SKIP=/^(sports)$/i;
 const TZ='America/New_York';
 const ymd=d=>d.toLocaleDateString('en-CA',{timeZone:TZ});
 const add=(d,n)=>new Date(d.getTime()+n*864e5);
@@ -22,7 +22,7 @@ function list(r){const td=ymd(new Date()),nm=nowMins();
   .sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:mins(a.time)-mins(b.time))}
 function dayLbl(ds){const d=new Date(ds+'T12:00:00');return d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase()+' '+d.getDate()}
 const PLACE=(()=>{const t=(location.hostname+' '+document.title).toLowerCase();return /jamestown/.test(t)?'Jamestown':/hurricane|rhode/.test(t)?'Rhode Island':/boston|rambler/.test(t)?'Boston':/scream|new york|nyc/.test(t)?'New York City':'the Area'})();
-const CATS=[['Live Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country)$/i],['Classical Music & Opera',/^classical$/i],['Theater & Dance',/^(theater|dance)$/i],['Comedy',/^comedy$/i],['Film Screenings',/^film$/i],['Lectures, Talks & Book Events',/^talks$/i],['Art Exhibits & Museums',/^arts$/i],['Children & Family Activities',/^family$/i],['Community Events',/^community$/i]];
+const CATS=[['Live Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country)$/i],['Classical Music & Opera',/^classical$/i],['Theater & Dance',/^(theater|dance)$/i],['Comedy',/^comedy$/i],['Film Screenings',/^film$/i],['Lectures, Talks & Book Events',/^talks$/i],['Art Exhibits & Museums',/^arts$/i],['Children & Family Activities',/^family$/i],['Community Events',/^community$/i],['Church Services & Worship',/^worship$/i],['Recovery & Support Meetings',/^support$/i]];
 function cat(g){for(const c of CATS)if(c[1].test(g||''))return c[0];return 'Other Activities'}
 function row(e,multi){const name=String(e.artists||'').split(/\s+[|@]\s+/)[0];const u=/^https?:/.test(e.url||'')?e.url:'';
  return '<a class="wo-r"'+(u?' href="'+H(u)+'" target="_blank" rel="noopener"':' href="#cal"')+'><span class="wo-t">'+(multi?H(dayLbl(e.date))+' · ':'')+H(String(e.time||'TBA').replace(/:00/g,''))+'</span><span class="wo-n"><b>'+H(name)+'</b> <small>'+H(e.venue||'')+'</small></span></a>'}
