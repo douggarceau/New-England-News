@@ -82,7 +82,8 @@ html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!imp
 #whatsOn .wo-tabs{display:flex;gap:6px;flex-wrap:wrap}
 #whatsOn .wo-tabs button{font:700 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;border-radius:999px;border:1px solid #ffcf5a55;background:#ffffff08;color:#f3dcc0;cursor:pointer}
 #whatsOn .wo-tabs button[aria-selected="true"]{background:linear-gradient(180deg,#ffe08a,#e2a017);color:#2a1600;border-color:#ffe08a;box-shadow:0 0 14px #ffcf4d88}
-#whatsOn .wo-l{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 14px}
+#whatsOn .wo-l{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 14px;max-height:430px;overflow-y:auto;overscroll-behavior:contain;padding-right:4px;scrollbar-width:thin;scrollbar-color:#ffcf5a66 transparent}
+#whatsOn .wo-c{font:600 12px/1 "Helvetica Neue",Arial,sans-serif;color:#f3dcc0;margin-left:auto;order:3}#whatsOn .wo-c b{color:#ffcf5a;font-size:15px}
 #whatsOn .wo-r{display:grid;grid-template-columns:92px 1fr;gap:10px;align-items:center;padding:8px 10px;border-radius:9px;text-decoration:none;color:#fff;background:#ffffff06;transition:background .2s,box-shadow .2s}
 #whatsOn .wo-r:hover{background:#ffcf5a18;box-shadow:0 0 0 1px #ffcf5a55}
 #whatsOn .wo-t{font:700 13px/1.2 "Helvetica Neue",Arial,sans-serif;color:#ffcf5a;white-space:nowrap}
@@ -93,4 +94,4 @@ html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!imp
 #whatsOn .wo-e{margin:6px 0;color:#c9bfa8;font-size:14px}
 #whatsOn .wo-f{text-align:right;margin-top:6px}
 #whatsOn .wo-all{font:700 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#ffcf5a;text-decoration:none}
-@media (max-width:760px){#whatsOn{padding:12px 12px 8px;margin:0 0 12px}#whatsOn .wo-l{grid-template-columns:1fr}#whatsOn .wo-l>.wo-r:nth-child(n+6){display:none}#whatsOn .wo-r{grid-template-columns:78px 1fr}#whatsOn .wo-tabs button{padding:7px 10px;font-size:11px}}
+@media (max-width:760px){#whatsOn{padding:12px 12px 8px;margin:0 0 12px}#whatsOn .wo-l{grid-template-columns:1fr}#whatsOn .wo-l{max-height:360px}#whatsOn .wo-r{grid-template-columns:78px 1fr}#whatsOn .wo-tabs button{padding:7px 10px;font-size:11px}}
