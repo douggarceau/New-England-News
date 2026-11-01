@@ -14,7 +14,7 @@ function kind(e,t){const g=String(e.genre||'').toLowerCase(),T=t.toLowerCase(),T
  if(/\bdj\b|dance party|rave/.test(T))return 'club';
  if(/fair|festival|parade|tree lighting|holiday|santa|pumpkin|lantern|zoo|storytime|craft|market/.test(T))return 'fair';
  if(/exhibit|gallery|museum|art show|lecture/.test(T))return 'gallery';
- return 'gig'}
+ return /^(live|rock|indie|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country|music|blues|soul|reggae|funk)$/.test(g)?'gig':'fair'}
 function when(e){const d=e.date?new Date(e.date+'T12:00:00'):null;
  return {DW:d?d.toLocaleDateString('en-US',{weekday:'long'}):'',dw:d?d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase():'',MO:d?d.toLocaleDateString('en-US',{month:'short'}).toUpperCase():'',MON:d?d.toLocaleDateString('en-US',{month:'long'}):'',DY:d?d.getDate():'',
   tm:String(e.time||'').replace(/:00/g,'').replace(/\s*(am|pm)/gi,(m,x)=>' '+x.toUpperCase()).trim()}}
@@ -245,9 +245,9 @@ window.epMix=function(L){try{
  const nm=x=>String((x.ev&&x.ev.artists)||x.bigText||x.name||'').toLowerCase().split(/\s+[-–—:|@]\s+|\s*\(/)[0].replace(/[^a-z0-9 ]/g,'').trim();
  const DULL=/pantry|thrift|rehearsal|appointment|\bhours\b|donation|office hours|support group|meeting\b|teen center/i;
  const seen=new Set(),u=[];
- L.slice().sort((a,b)=>String((a.ev&&a.ev.date)||'').localeCompare(String((b.ev&&b.ev.date)||''))).forEach(x=>{const k=nm(x);if(!k||seen.has(k)||(x.ev&&/^(support|worship)$/i.test(x.ev.genre||''))||/anonymous|al-anon|recovery/i.test((x.ev&&x.ev.artists)||x.bigText||'')||DULL.test((x.ev&&x.ev.artists)||x.bigText||''))return;seen.add(k);u.push(x)});
+ L.slice().sort((a,b)=>String((a.ev&&a.ev.date)||'').localeCompare(String((b.ev&&b.ev.date)||''))).forEach(x=>{const k=nm(x);if(!k||seen.has(k)||(x.ev&&/^(support|worship|live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country|classical|blues|soul|reggae|funk)$/i.test(x.ev.genre||''))||/anonymous|al-anon|recovery/i.test((x.ev&&x.ev.artists)||x.bigText||'')||DULL.test((x.ev&&x.ev.artists)||x.bigText||''))return;seen.add(k);u.push(x)});
  const h=s=>{let v=seed>>>0;for(const c of s)v=Math.imul(v^c.charCodeAt(0),2654435761)>>>0;return v};
- const r=(u.length>=4?u:L).slice().sort((a,b)=>h(nm(a))-h(nm(b)));
+ const r=(u.length?u:L).slice().sort((a,b)=>h(nm(a))-h(nm(b)));
  const by=new Map();r.forEach(x=>{const k=((x.ev&&x.ev.venue)||x.name||'').toLowerCase();if(!by.has(k))by.set(k,[]);by.get(k).push(x)});
  const out=[];let more=true;while(more){more=false;for(const q of by.values()){if(q.length){out.push(q.shift());more=true}}}return out}catch(_){return L}};
 /* Story art: every story gets a matching artwork that slowly moves (reader header + story cards) */
