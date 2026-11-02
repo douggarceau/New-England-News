@@ -126,3 +126,4 @@ html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!imp
 #whatsOn .wo-z summary{opacity:.55}
 #nav>[data-go="cal"]{order:-1!important}
 #nav>#nbSis{order:9!important}#nav>#nbSub{order:10!important}#nav>#nbSearch{order:20!important}.subbox.sbpop{display:grid!important;position:fixed;z-index:9999;top:110px;right:16px;width:min(92vw,360px);margin:0}
+#view a.sh .dt{position:relative;overflow:visible!important}.tflag{position:absolute;left:50%;top:-9px;transform:translateX(-50%);padding:1px 6px;border-radius:3px;background:#ffd23a;color:#1a1200!important;font:800 9px/1.3 "Libre Franklin",system-ui,sans-serif!important;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;box-shadow:0 0 8px #ffd23a,0 0 16px #ffb30099;animation:tfg 2s ease-in-out infinite}@keyframes tfg{50%{box-shadow:0 0 12px #ffd23a,0 0 26px #ffb300cc}}
