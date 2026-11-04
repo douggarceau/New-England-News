@@ -224,6 +224,7 @@ window.factsCard=function(e){const d=e.date?new Date(e.date+'T12:00:00'):null;
  return '<span class="fc"><span class="fc-k">The details</span><span class="fc-t">'+H5(t)+'</span><span class="fc-big"><b>'+H5(d?d.toLocaleDateString('en-US',{month:'short'}).toUpperCase():'')+'</b><i>'+DY+'</i><small>'+H5(e.time||'')+'</small></span><span class="fc-rows">'+rows.map(r=>'<span class="fc-r"><em>'+H5(r[0])+'</em><span>'+H5(r[1])+'</span></span>').join('')+'</span>'+(e.blurb?'<span class="fc-b">'+H5(e.blurb)+'</span>':'')+'<span class="fc-go">'+(e.url?'Tickets &amp; info →':'See the calendar →')+'</span></span>'};
 function turn(el,fn){el.style.transition='transform .34s ease-in';el.style.transform='perspective(1600px) rotateY(90deg)';
  setTimeout(()=>{fn();el.style.transition='none';el.style.transform='perspective(1600px) rotateY(-90deg)';requestAnimationFrame(()=>requestAnimationFrame(()=>{el.style.transition='transform .34s ease-out';el.style.transform='';setTimeout(()=>{el.style.transition=''},380)}))},350)}
+const fresh=(L,h)=>{const on=[...document.querySelectorAll('.cvr .rot')].filter(o=>o.parentElement!==h).map(o=>o.dataset.href);const r=L.filter(e=>!on.includes(e.url||''));return r.length?r:L};
 function rotator(getHost,pick,ms,start,opts){let i=start||0,face=0,cur=null;
  const host=()=>{const h=getHost();if(!h)return null;let o=h.querySelector(':scope>.rot');if(!o){o=document.createElement('span');o.className='rot';h.appendChild(o);h.classList.add('has-rot');
    o.addEventListener('click',ev=>{ev.preventDefault();ev.stopPropagation();ev.stopImmediatePropagation();const u=o.dataset.href;if(u&&/^https?:/.test(u))window.open(u,'_blank','noopener');else{try{go('cal')}catch(_){location.hash='cal'}}},true)}return o};
@@ -235,9 +236,34 @@ function rotator(getHost,pick,ms,start,opts){let i=start||0,face=0,cur=null;
  let started=false;const kick=setInterval(()=>{if(started){clearInterval(kick);return}const o=host();if(o&&pick().length){started=true;show(o,true);clearInterval(kick)}},400);
  setInterval(()=>{const o=host();if(!o)return;if(!started){started=true;show(o,true);return}if(document.hidden||o.matches(':hover'))return;show(o,false)},ms)}
 /* the box under the cover: every show, poster then facts */
-rotator(()=>{const b=document.querySelector('.cvr .pbx');if(b)b._busy=true;return b},()=>evs(),8000,window.EP_COVER_POSTERS?7:0,{worship:1,noweek:!!window.EP_COVER_POSTERS});
+rotator(()=>{const b=document.querySelector('.cvr .pbx');if(b)b._busy=true;return b},()=>fresh(evs(),document.querySelector('.cvr .pbx')),8000,window.EP_COVER_POSTERS?7:0,{worship:1,noweek:!!window.EP_COVER_POSTERS});
 /* the cover itself becomes a poster rotator when the page opts in */
-if(window.EP_COVER_POSTERS)rotator(()=>document.querySelector('.cvr .cimg'),()=>{const E=evs();const big=E.filter(e=>BIG.test(e.venue||''));return big.length>=3?big:E},9000);
+if(window.EP_COVER_POSTERS)rotator(()=>document.querySelector('.cvr .cimg'),()=>{const E=evs();const big=E.filter(e=>BIG.test(e.venue||''));return fresh(big.length>=3?big:E,document.querySelector('.cvr .cimg'))},9000);
+/* Boston: extra flipping ads fill the left column down to the end of the news column, so it never runs out into black */
+(function(){const GAP=14,MAX=5;
+ const box=()=>document.querySelector('.cvr>.pbx-more');
+ for(let k=0;k<MAX;k++){const slot=()=>{const b=box();return b&&b.children[k]&&b.children[k].style.display!=='none'?b.children[k]:null};
+  rotator(slot,()=>fresh(evs(),slot()),8000+(k+1)*700,23+k*41,{worship:1,noweek:true})}
+ function fit(){const c=document.querySelector('#coverSlot .cvr'),a=c&&c.querySelector(':scope>.pbx');let w=box();
+  if(!a){if(w)w.style.display='none';return}
+  const A=a.getBoundingClientRect(),natural=Math.round(A.width*1.5);
+  const hide=()=>{if(w)w.style.display='none';if(a.style.height){a.style.height='';a.style.aspectRatio=''}};
+  const parts=[];for(const k of c.children){if(k===a||k===w||k.classList.contains('cimg'))continue;if(getComputedStyle(k).display==='contents')parts.push(...k.children);else parts.push(k)}
+  let right=0,under=Infinity;
+  for(const k of parts){const r=k.getBoundingClientRect();if(!r.height)continue;if(r.left>=A.right-1)right=Math.max(right,r.bottom);else if(r.top>=A.top)under=Math.min(under,r.top-GAP)}
+  if(!right)return hide();
+  const end=Math.min(right,under),gap=Math.round(end-(A.top+natural));
+  if(gap<8)return hide();
+  const n=gap<natural*.55?0:Math.min(MAX,Math.max(1,Math.round((gap+GAP)/(natural+GAP))));
+  if(!n){if(w)w.style.display='none';const h=natural+gap+'px';if(a.style.height!==h){a.style.height=h;a.style.aspectRatio='auto';requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})}return}
+  if(a.style.height){a.style.height='';a.style.aspectRatio=''}
+  if(!w){w=document.createElement('div');w.className='pbx-more';for(let k=0;k<MAX;k++){const s=document.createElement('div');s.className='pbx-x';w.appendChild(s)}c.appendChild(w)}
+  const C=c.getBoundingClientRect(),h=Math.floor((gap-GAP*n)/n),t=Math.round(A.top+natural+GAP-C.top)-c.clientTop,l=Math.round(A.left-C.left)-c.clientLeft;
+  const css=`display:flex;top:${t}px;left:${l}px;width:${Math.round(A.width)}px`;
+  let moved=w.style.cssText!==css;if(moved)w.style.cssText=css;
+  [...w.children].forEach((s,k)=>{const d=k<n?'':'none',H=h+'px';if(s.style.display!==d){s.style.display=d;moved=true}if(s.style.height!==H){s.style.height=H;moved=true}});
+  if(moved)requestAnimationFrame(()=>{try{window.epFit&&window.epFit()}catch(_){}})}
+ setInterval(fit,500);addEventListener('resize',fit)})();
 })();
 /* Variety: shuffle the event pool each visit, spread across venues and kinds, so the same few shows don't loop */
 window.epMix=function(L){try{
