@@ -277,3 +277,28 @@ new MutationObserver(()=>requestAnimationFrame(dress)).observe(document.document
  const q=new URLSearchParams(location.search);if((q.get('story')||'')!==s){if(s)q.set('story',s);else q.delete('story');const qs=q.toString();try{history.replaceState(history.state,'',location.pathname+(qs?'?'+qs:'')+location.hash)}catch(_){}}
  const st=s&&STORIES.find(x=>x.slug===s);document.title=st?st.title+' | '+window.__epT0:window.__epT0;
  try{if(s&&typeof gtag==='function')gtag('event','page_view',{page_title:document.title,page_location:location.href})}catch(_){}},700)})();
+/* Browser back arrow: every tab or story a reader opens gets its own history step, and returning restores the screen and scroll position. */
+(function(){
+if(typeof STATE==='undefined'||typeof render!=='function'||!window.history||!history.pushState)return;
+const share=!!document.querySelector('base[href="/"]');
+let touched=0,y=window.scrollY,busy=false;
+try{history.scrollRestoration='manual'}catch(_){}
+['pointerdown','touchstart','keydown'].forEach(t=>addEventListener(t,()=>{touched=Date.now();y=window.scrollY},{capture:true,passive:true}));
+addEventListener('scroll',()=>{y=window.scrollY},{passive:true});
+const key=()=>STATE.view==='read'?'read:'+STATE.story:STATE.view;
+const snap=top=>({ep:1,view:STATE.view,story:STATE.story,prev:STATE.prev,y:top||0});
+const addr=()=>{const q=new URLSearchParams(location.search);q.delete('story');const s=STATE.view==='read'&&STATE.story?STATE.story:'';
+ if(s&&!share)q.set('story',s);const qs=q.toString();return (s&&share?'/s/'+s+'/':'/')+(qs?'?'+qs:'')};
+let cur=key();
+const scrollBack=top=>{const to=()=>scrollTo({top,behavior:'instant'});requestAnimationFrame(to);setTimeout(to,250)};
+const restore=st=>{busy=true;STATE.view=st.view;STATE.story=st.story;STATE.prev=st.prev;try{render()}finally{busy=false}cur=key();y=st.y||0;scrollBack(y)};
+const sync=()=>{if(busy)return;const k=key();if(k===cur)return;cur=k;
+ try{if(Date.now()-touched<1500){if(history.state&&history.state.ep)history.replaceState({...history.state,y},'');history.pushState(snap(),'',addr())}
+ else history.replaceState(snap(),'',addr())}catch(_){}};
+const draw=render;render=function(){const r=draw.apply(this,arguments);sync();return r};
+addEventListener('popstate',e=>{if(e.state&&e.state.ep)restore(e.state)});
+/* Coming back from another site reloads the page: put the reader back on the screen they left. */
+const was=history.state;
+if(was&&was.ep&&(was.view!=='read'||STORIES.some(s=>s.slug===was.story))&&(was.view!==STATE.view||was.story!==STATE.story))restore(was);
+else{try{history.replaceState(snap(window.scrollY),'')}catch(_){}}
+})();
