@@ -137,5 +137,9 @@ html body #coverSlot .cvr:has(>.pbx)>.cvside>.nat-l{grid-row:5!important}
 html body #coverSlot .cvr:has(>.pbx)>.cvside>.nl-bar{grid-row:6!important}
 }
 @media (max-width:699px){html body #coverSlot .cvr:has(>.pbx)>.pbx{display:block!important}}
+/* the extra ads under the second one, sized by posters.js to end level with the news column */
+html body #coverSlot .cvr:has(>.pbx-more){position:relative;row-gap:0!important}
+.pbx-more{display:none;position:absolute;z-index:2;flex-direction:column;gap:14px;pointer-events:none}
+.pbx-x{position:relative;width:100%;border-radius:6px;overflow:hidden;background:#000;box-shadow:0 0 0 1px #3a1a12,0 18px 40px rgba(0,0,0,.7);pointer-events:auto;flex:none}
 /* the old face under the rotating poster stays hidden, so it never shows through during a flip */
 #coverSlot .cvr>.pbx.has-rot>.cevt{visibility:hidden}
