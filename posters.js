@@ -278,8 +278,9 @@ new MutationObserver(()=>requestAnimationFrame(dress)).observe(document.document
  const st=s&&STORIES.find(x=>x.slug===s);document.title=st?st.title+' | '+window.__epT0:window.__epT0;
  try{if(s&&typeof gtag==='function')gtag('event','page_view',{page_title:document.title,page_location:location.href})}catch(_){}},700)})();
 /* Browser back arrow: every tab or story a reader opens gets its own history step, and returning restores the screen and scroll position. */
-(function(){
-if(typeof STATE==='undefined'||typeof render!=='function'||!window.history||!history.pushState)return;
+(function wait(n){
+if(!window.history||!history.pushState)return;
+if(typeof STATE==='undefined'||typeof render!=='function'){if(n<200)setTimeout(()=>wait(n+1),50);return}
 const share=!!document.querySelector('base[href="/"]');
 let touched=0,y=window.scrollY,busy=false;
 try{history.scrollRestoration='manual'}catch(_){}
@@ -301,4 +302,4 @@ addEventListener('popstate',e=>{if(e.state&&e.state.ep)restore(e.state)});
 const was=history.state;
 if(was&&was.ep&&(was.view!=='read'||STORIES.some(s=>s.slug===was.story))&&(was.view!==STATE.view||was.story!==STATE.story))restore(was);
 else{try{history.replaceState(snap(window.scrollY),'')}catch(_){}}
-})();
+})(0);
