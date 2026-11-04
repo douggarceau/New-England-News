@@ -8,6 +8,8 @@ For every story in index.html this writes:
 Run from the repo root. Safe to run repeatedly; only changed stories are rewritten.
 """
 import hashlib, html, json, os, re, shutil, sys
+from email.utils import format_datetime
+from datetime import datetime, timezone
 from PIL import Image, ImageDraw, ImageFont
 
 SITE = 'https://thebostonrambler.com'
@@ -18,6 +20,7 @@ LABEL = {'crime': 'Crime Watch', 'streets': 'Boston News', 'politics': 'City Hal
          'cover': 'Boston Stories', 'sports': 'Sports', 'stage': 'On Stage', 'business': 'Business',
          'news': 'Boston News', 'transit': 'Getting Around'}
 MASTHEAD = os.path.join(ROOT, 'img', 'rambler-masthead.png')
+NAME = 'The Boston Rambler'
 DEFLABEL = 'Boston Stories'
 NAVY, GOLD, CREAM = (10, 26, 51), (232, 184, 24), (248, 244, 234)
 
@@ -76,7 +79,7 @@ def _art(x, coast):
 
 
 def card(x, out):
-    from PIL import ImageFilter, ImageEnhance
+    from PIL import ImageChops, ImageFilter, ImageEnhance
     W, H = 1200, 630
     coast = os.path.exists(os.path.join(ROOT, 'img', 'posters', 'wharf.jpg')) and ('jamestown' in SITE or 'hurricane' in SITE)
     ap = _art(x, coast)
@@ -94,7 +97,7 @@ def card(x, out):
     im = Image.composite(Image.new('RGB', (W, H), (8, 6, 14)), bg, sh)
     glow = Image.new('RGB', (W, H), (0, 0, 0)); gd = ImageDraw.Draw(glow)
     gd.ellipse((W * 0.15, H * 0.2, W * 0.85, H * 1.1), fill=(90, 50, 10)); glow = glow.filter(ImageFilter.GaussianBlur(120))
-    im = Image.fromarray(__import__('numpy').minimum(255, __import__('numpy').asarray(im, dtype='int16') + __import__('numpy').asarray(glow, dtype='int16')).astype('uint8'))
+    im = ImageChops.add(im, glow)
     d = ImageDraw.Draw(im)
     mh = Image.open(MASTHEAD).convert('RGBA')
     mw = 420; mh = mh.resize((mw, int(mh.height * mw / mh.width)), Image.LANCZOS)
@@ -128,6 +131,68 @@ def card(x, out):
     im.save(out, quality=88, optimize=True)
 
 
+def article_data(x, img):
+    """schema.org NewsArticle block so search engines can read the story."""
+    d = {'@context': 'https://schema.org', '@type': 'NewsArticle',
+         'headline': (x['title'] or '')[:110],
+         'description': x.get('dek') or NAME,
+         'image': [f'{SITE}/{img}'],
+         'mainEntityOfPage': f'{SITE}/s/{x["slug"]}/',
+         'author': {'@type': 'Organization', 'name': NAME, 'url': SITE + '/'},
+         'publisher': {'@type': 'Organization', 'name': NAME, 'url': SITE + '/',
+                       'logo': {'@type': 'ImageObject', 'url': SITE + '/' + os.path.relpath(MASTHEAD, ROOT).replace(os.sep, '/')}}}
+    if x.get('date'):
+        d['datePublished'] = d['dateModified'] = x['date']
+    return json.dumps(d, ensure_ascii=False).replace('</', '<\\/')
+
+
+def article_html(x):
+    """The story's own text, readable without scripts."""
+    e = lambda v: html.escape(str(v or ''), quote=True)
+    out = [f'<h1>{e(x["title"])}</h1>']
+    if x.get('dek'):
+        out.append(f'<p><em>{e(x["dek"])}</em></p>')
+    for p in x.get('body') or []:
+        if not isinstance(p, str) or not p.strip():
+            continue
+        out.append(f'<h2>{e(p[3:])}</h2>' if p.startswith('## ') else f'<p>{e(p)}</p>')
+    links = [f'<li><a href="{e(s.get("url"))}">{e(s.get("outlet") or s.get("title") or s.get("url"))}</a></li>'
+             for s in (x.get('sources') or []) if isinstance(s, dict) and str(s.get('url') or '').startswith('http')]
+    if links:
+        out.append('<h2>Sources</h2><ul>' + ''.join(links) + '</ul>')
+    return ''.join(out)
+
+
+def listed(L):
+    """Stories for the sitemap and feed: never crime, newest first."""
+    keep = [x for x in L if x.get('topic') != 'crime' and re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(x.get('date') or ''))]
+    return sorted(keep, key=lambda x: x['date'], reverse=True)
+
+
+def write_if_changed(name, text):
+    p = os.path.join(ROOT, name)
+    if not os.path.exists(p) or open(p, encoding='utf-8').read() != text:
+        open(p, 'w', encoding='utf-8').write(text)
+
+
+def sitemap(L):
+    S = listed(L)
+    e = lambda v: html.escape(str(v), quote=False)
+    top = S[0]['date'] if S else '2026-01-01'
+    rows = [f'<url><loc>{SITE}/</loc><lastmod>{top}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>']
+    rows += [f'<url><loc>{SITE}/s/{e(x["slug"])}/</loc><lastmod>{x["date"]}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>' for x in S]
+    write_if_changed('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(rows) + '\n</urlset>\n')
+
+
+def feed(L):
+    S = listed(L)[:30]
+    e = lambda v: html.escape(str(v or ''), quote=False)
+    rfc = lambda d: format_datetime(datetime(int(d[:4]), int(d[5:7]), int(d[8:10]), 12, tzinfo=timezone.utc))
+    items = [f'<item><title>{e(x["title"])}</title><link>{SITE}/s/{e(x["slug"])}/</link><guid isPermaLink="true">{SITE}/s/{e(x["slug"])}/</guid><pubDate>{rfc(x["date"])}</pubDate><description>{e(x.get("dek"))}</description></item>' for x in S]
+    built = f'<lastBuildDate>{rfc(S[0]["date"])}</lastBuildDate>' if S else ''
+    write_if_changed('feed.xml', f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>{e(NAME)}</title><link>{SITE}/</link><description>{e(NAME)}: latest stories</description><language>en-us</language>{built}<atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>\n' + '\n'.join(items) + '\n</channel></rss>\n')
+
+
 def page(x, img):
     e = lambda v: html.escape(v or '', quote=True)
     url = f'{SITE}/s/{x["slug"]}/'
@@ -155,9 +220,10 @@ def page(x, img):
 <meta name="twitter:title" content="{e(x["title"])}">
 <meta name="twitter:description" content="{e(desc)}">
 <meta name="twitter:image" content="{SITE}/{img}">
+<script type="application/ld+json">{article_data(x, img)}</script>
 <script>location.replace({json.dumps(dest)})</script>
 <style>body{{margin:0;background:#0a1a33;color:#f8f4ea;font:18px/1.5 Georgia,serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:24px;box-sizing:border-box}}a{{color:#e8b818}}</style>
-</head><body><p><a href="{dest}">{e(x["title"])}</a><br>The Boston Rambler</p></body></html>
+</head><body><main style="max-width:680px;padding:24px">{article_html(x)}<p><a href="{dest}">Read on The Boston Rambler</a></p></main></body></html>
 '''
 
 
@@ -179,6 +245,8 @@ def main():
     for f in os.listdir(os.path.join(ROOT, 'img', 'share')):
         if f.endswith('.jpg') and f not in keep_i and f.rsplit('-', 1)[0] in keep_s:
             os.remove(os.path.join(ROOT, 'img', 'share', f))
+    sitemap(L)
+    feed(L)
     print(f'{len(L)} stories')
 
 
