@@ -245,7 +245,7 @@ window.epMix=function(L){try{
  const nm=x=>String((x.ev&&x.ev.artists)||x.bigText||x.name||'').toLowerCase().split(/\s+[-–—:|@]\s+|\s*\(/)[0].replace(/[^a-z0-9 ]/g,'').trim();
  const DULL=/pantry|thrift|rehearsal|appointment|\bhours\b|donation|office hours|support group|meeting\b|teen center/i;
  const seen=new Set(),u=[];
- L.slice().sort((a,b)=>String((a.ev&&a.ev.date)||'').localeCompare(String((b.ev&&b.ev.date)||''))).forEach(x=>{const k=nm(x);if(!k||seen.has(k)||(x.ev&&/^(support|worship|live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country|classical|blues|soul|reggae|funk)$/i.test(x.ev.genre||'')||(x.ev&&window.__epKind&&/^(gala|gig|blue|club)$/.test(window.__epKind(x.ev,String(x.ev.artists||'')))))||/anonymous|al-anon|recovery/i.test((x.ev&&x.ev.artists)||x.bigText||'')||DULL.test((x.ev&&x.ev.artists)||x.bigText||''))return;seen.add(k);u.push(x)});
+ L.slice().sort((a,b)=>String((a.ev&&a.ev.date)||'').localeCompare(String((b.ev&&b.ev.date)||''))).forEach(x=>{const k=nm(x);if(!k||seen.has(k)||(x.ev&&/^(support|worship)$/i.test(x.ev.genre||''))||/anonymous|al-anon|recovery/i.test((x.ev&&x.ev.artists)||x.bigText||'')||DULL.test((x.ev&&x.ev.artists)||x.bigText||''))return;seen.add(k);u.push(x)});
  const h=s=>{let v=seed>>>0;for(const c of s)v=Math.imul(v^c.charCodeAt(0),2654435761)>>>0;return v};
  const r=(u.length?u:L).slice().sort((a,b)=>h(nm(a))-h(nm(b)));
  const by=new Map();r.forEach(x=>{const k=((x.ev&&x.ev.venue)||x.name||'').toLowerCase();if(!by.has(k))by.set(k,[]);by.get(k).push(x)});
