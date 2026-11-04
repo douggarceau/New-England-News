@@ -1,27 +1,6 @@
 {
- "asof": "2026-10-31T07:49:58-04:00",
+ "asof": "2026-11-04T07:35:00-05:00",
  "items": [
-  {
-   "h": "Halloween in Boston: Today and Tonight",
-   "sum": "Coco with a live orchestra at Symphony Hall, glowing pumpkins at the Stone Zoo, then a 1920s horror classic at Symphony Hall and Halloween shows from Allston to Cambridge.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=halloween-boston-today-tonight-2026",
-   "story": "halloween-boston-today-tonight-2026",
-   "box": true,
-   "town": "Boston",
-   "date": "2026-10-31",
-   "rank": 1
-  },
-  {
-   "h": "Coco in Concert: Boston Pops Scores Pixar's Film Live Today",
-   "sum": "The Boston Pops play the score of Coco at Symphony Hall for a 1:30 p.m. matinee.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=coco-in-concert-symphony-hall-2026",
-   "story": "coco-in-concert-symphony-hall-2026",
-   "town": "Back Bay",
-   "date": "2026-10-31",
-   "rank": 2
-  },
   {
    "h": "Igor Levit Brings an All-Beethoven Recital to Symphony Hall",
    "sum": "A Sunday afternoon recital traces Beethoven's arc, ending with the Waldstein Sonata.",
@@ -53,25 +32,6 @@
    "rank": 6
   },
   {
-   "h": "Halloween Night in Boston: What to Expect",
-   "sum": "A Saturday Halloween, a sunny weekend in the forecast, costume shows all over town, and the clocks fall back overnight.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=halloween-night-in-boston",
-   "story": "halloween-night-in-boston",
-   "town": "",
-   "date": "2026-10-30",
-   "rank": 2
-  },
-  {
-   "h": "Green Line shuts down across downtown for Halloween weekend",
-   "sum": "No Green Line trains run between North Station and Kenmore, Babcock Street or Heath Street this weekend, with shuttles and some bus routes at no fare, and the T warns trips may run 25 minutes longer.",
-   "outlet": "Boston 25 News",
-   "url": "https://www.boston25news.com/news/local/green-line-shutdown-disrupt-halloween-weekend-travel-boston/DBWNNG4QNNHZJD4YYOF7GDIPFY/",
-   "town": "Downtown",
-   "date": "2026-10-28",
-   "rank": 1
-  },
-  {
    "h": "Noah Kahan adds four Fenway Park shows for 2027",
    "sum": "The singer-songwriter returns to Fenway Park for concerts on May 29, May 30, June 1 and June 2.",
    "outlet": "NBC Boston",
@@ -79,15 +39,6 @@
    "town": "Fenway",
    "date": "2026-10-29",
    "rank": 3
-  },
-  {
-   "h": "Bostonhenge sunset lines up with Back Bay streets this week",
-   "sum": "The twice-a-year moment when the setting sun aligns with Back Bay buildings is back, with tips on where and when to watch.",
-   "outlet": "WBUR",
-   "url": "https://www.wbur.org/news/2026/10/27/bostonhenge-back-bay-october",
-   "town": "Back Bay",
-   "date": "2026-10-27",
-   "rank": 9
   },
   {
    "h": "Hello, Old Friend brings Detroit-style pizza to West Roxbury",
@@ -99,13 +50,145 @@
    "rank": 10
   },
   {
-   "h": "High-end Japanese restaurant group from a James Beard winner heading to Boston",
-   "sum": "An acclaimed chef's upscale Japanese restaurant chain is expanding into the Boston market.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/james-beard-winners-high-end-japanese-restaurant-chain-is-expanding-to-boston/4037644/",
+   "h": "Boston Today and Tonight: half•alive, Basia Bulat and More",
+   "sum": "half•alive and High Horse with Sweet Sally open at 7 PM, and Basia Bulat and Michelle Branch take the stage at 8 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-04",
+   "story": "today-and-tonight-2026-11-04",
+   "box": true,
    "town": "Boston",
-   "date": "2026-10-26",
-   "rank": 20
+   "date": "2026-11-04",
+   "rank": 1
+  },
+  {
+   "h": "Journey's Final Frontier Tour Rolls Into TD Garden Nov. 10",
+   "sum": "Neal Schon, Jonathan Cain and Arnel Pineda bring an evening with Journey to Boston on a Tuesday night.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=journey-final-frontier-td-garden-nov-10",
+   "story": "journey-final-frontier-td-garden-nov-10",
+   "town": "Downtown",
+   "date": "2026-11-04",
+   "rank": 2
+  },
+  {
+   "h": "Boston Baroque's X-tet Sings Songs of Italy",
+   "sum": "Nov. 13 and 14 at Seully Hall, with soprano Amanda Forsythe.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-baroque-x-tet-songs-of-italy-2026",
+   "story": "boston-baroque-x-tet-songs-of-italy-2026",
+   "town": "Fenway",
+   "date": "2026-11-04",
+   "rank": 3
+  },
+  {
+   "h": "Young Players of the Boston Philharmonic Take Symphony Hall",
+   "sum": "Friday, Nov. 6, at 8 PM with Stravinsky's Petrushka and Tchaikovsky's Fifth.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-philharmonic-youth-symphony-hall-nov-6-2026",
+   "story": "boston-philharmonic-youth-symphony-hall-nov-6-2026",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 4
+  },
+  {
+   "h": "Doja Cat's Tour Ma Vie Stops at TD Garden",
+   "sum": "Nov. 23 at TD Garden, with Latto on the bill.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=doja-cat-latto-td-garden-nov-23",
+   "story": "doja-cat-latto-td-garden-nov-23",
+   "town": "Downtown",
+   "date": "2026-11-04",
+   "rank": 5
+  },
+  {
+   "h": "A Saturday Recital Showcases the Passim School of Music",
+   "sum": "Nov. 14 at noon in Harvard Square, with roots and bluegrass on the program.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=passim-school-of-music-recital-nov-14-2026",
+   "story": "passim-school-of-music-recital-nov-14-2026",
+   "town": "Cambridge",
+   "date": "2026-11-04",
+   "rank": 6
+  },
+  {
+   "h": "Holiday Pops 2026 Opens a 41-Show Run at Symphony Hall",
+   "sum": "Shows run Dec. 3 through Dec. 28.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=holiday-pops-2026-symphony-hall",
+   "story": "holiday-pops-2026-symphony-hall",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 7
+  },
+  {
+   "h": "Boston Ballet's Nutcracker Returns to the Opera House",
+   "sum": "Performances begin Nov. 27.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-ballet-nutcracker-2026",
+   "story": "boston-ballet-nutcracker-2026",
+   "town": "Theatre District",
+   "date": "2026-11-04",
+   "rank": 8
+  },
+  {
+   "h": "Handel and Haydn's Messiah Returns to Symphony Hall",
+   "sum": "Three performances, Nov. 27 through 29.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
+   "story": "handel-haydn-messiah-symphony-hall-2026",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 9
+  },
+  {
+   "h": "Haydn's The Creation Opens the BSO's Early-November Weekend",
+   "sum": "Nov. 5 through 7 at Symphony Hall, including a Thursday evening performance.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-haydn-creation-symphony-hall-2026",
+   "story": "bso-haydn-creation-symphony-hall-2026",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 10
+  },
+  {
+   "h": "Golijov's Creation Gets Its World Premiere at Symphony Hall",
+   "sum": "Nov. 12 through 14 with the Boston Symphony Orchestra.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-golijov-creation-world-premiere-2026",
+   "story": "bso-golijov-creation-world-premiere-2026",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 11
+  },
+  {
+   "h": "Geese Play Two Nights at Roadrunner",
+   "sum": "Nov. 10 and 11 in Brighton.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=geese-roadrunner-two-nights-nov-10-11",
+   "story": "geese-roadrunner-two-nights-nov-10-11",
+   "town": "Brighton",
+   "date": "2026-11-04",
+   "rank": 12
+  },
+  {
+   "h": "Jan Lisiecki Plays Mendelssohn and Schumann at Symphony Hall",
+   "sum": "Nov. 19 through 21 with the BSO.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-lisiecki-mendelssohn-schumann-2026",
+   "story": "bso-lisiecki-mendelssohn-schumann-2026",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 13
+  },
+  {
+   "h": "Zander Conducts Bruckner's Fifth at Symphony Hall",
+   "sum": "A single Nov. 22 performance with the Boston Philharmonic.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-philharmonic-schubert-bruckner-2026",
+   "story": "boston-philharmonic-schubert-bruckner-2026",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 14
   }
  ]
 }
