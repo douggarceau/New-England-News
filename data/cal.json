@@ -1698,6 +1698,21 @@
   },
   {
    "date": "2026-11-06",
+   "time": "7:30 PM",
+   "artists": "Tim Dillon",
+   "venue": "Wilbur Theatre",
+   "hood": "Downtown",
+   "genre": "theater",
+   "price": "",
+   "ages": "",
+   "url": "https://www.ticketmaster.com/tim-dillon-boston-massachusetts-11-06-2026/event/01006505CB3A3F75",
+   "src": "",
+   "hours": "",
+   "address": "",
+   "blurb": ""
+  },
+  {
+   "date": "2026-11-06",
    "time": "10 PM",
    "artists": "Tim Dillon",
    "venue": "Wilbur Theatre",
