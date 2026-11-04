@@ -1546,8 +1546,7 @@ function techRow(n){return `<a class="bwr" href="${esc(n.u)}" target="_blank" re
 function rogueCard(r){const k=TK[r.kind]||'#2fd3c8';return `<a class="rg" style="--k:${k}" href="${esc(r.url)}" target="_blank" rel="noopener"><span class="kick" style="--tc:${k}"><span class="dot"></span>${esc(r.kind)}<time>${esc(mday(r.date))}</time></span><h4>${esc(r.title)}</h4><p>${esc(r.detail)}</p>${r.why?`<span class="why">${esc(r.why)}</span>`:''}<span class="sc meta" style="all:unset;font:600 11px/1.2 var(--body);color:var(--mute)">${esc(r.org||'')}</span></a>`}
 function vTech(){const T=TECH||{},B=T.bell||{};const ts=STORIES.filter(s=>['the-swarm','ai-flash','robot-price-tag','pink-slip-city'].includes(s.slug));
   return `<div class="troom"><h2 class="room">Tech &amp; AI</h2>
-  <a class="pmlink pmred" href="https://seattlesinner.com/tech/"><span class="pm-tag">EXCLUSIVE!</span><b>Tech &amp; AI <i>Power Map</i></b><span class="pm-go">Who controls AI and Big Tech →</span></a>
-  <div class="intro"><b>Wired in from AI Signals</b><p>Machines, money and the people building both. Headlines come from the AI Signals Tech &amp; AI Power Map and refresh every morning.</p></div>
+  <div class="intro"><b>Wired in from AI Signals</b><p>Machines, money and the people building both. Headlines refresh every morning.</p></div>
   <div class="lbl"><b>AI gone rogue</b><span>when the models misbehave</span></div><div class="tgrid">${(T.rogue||[]).map(rogueCard).join('')}</div>
   <div class="tsplit"><section class="box" style="--c:#2fd3c8"><div class="bh"><b>Tech &amp; AI headlines</b><span>${(T.news||[]).length} items</span></div><div class="bwl">${(T.news||[]).slice(0,24).map(techRow).join('')||'<div class="empty">Feed is loading.</div>'}</div></section>
   <div class="stack"><div class="lbl"><b>Report tech stories</b><span>${ts.length}</span></div>${ts.map(storyCard).join('')}</div></div>
@@ -2076,7 +2075,7 @@ const SFX=(function(){let ctx=null,out=null,on=true,last=0;try{on=localStorage.g
   const box=$('subBox');$('sbEmail').addEventListener('focus',()=>box.classList.add('open'));
   document.querySelectorAll('.sb-tabs button').forEach(b=>b.onclick=()=>{mode=b.dataset.m;document.querySelectorAll('.sb-tabs button').forEach(x=>x.classList.toggle('on',x===b));
     $('sbUser').hidden=mode==='in';box.classList.add('open');$('sbGo').textContent=mode==='up'?'Subscribe':'Log in';$('sbPass').autocomplete=mode==='up'?'new-password':'current-password';msg('')});
-  const LOCKS={tech:'the Tech & AI Power Map',terminal:'the Crypto & Investing terminal',submit:'Send a Tip',story:'the full story'};
+  const LOCKS={tech:'the Tech & AI page',terminal:'the Crypto & Investing terminal',submit:'Send a Tip',story:'the full story'};
   window.SS_USER=null;
   const join=k=>{scrollTo({top:0,behavior:'smooth'});box.classList.add('open');box.classList.remove('pulse');void box.offsetWidth;box.classList.add('pulse');msg('Subscribe (or log in) to unlock '+(LOCKS[k]||'that')+'.','ok');setTimeout(()=>$('sbEmail').focus({preventScroll:true}),400)};
   document.addEventListener('click',e=>{const j=e.target.closest('[data-join]');if(j){e.preventDefault();join(j.dataset.join);return}},true);
@@ -2206,13 +2205,8 @@ p.addEventListener('click',e=>{const a=e.target.closest('[data-sh]');if(!a)retur
  else if(k==='copy'){navigator.clipboard&&navigator.clipboard.writeText(U).then(()=>{a.textContent='Link copied ✓';setTimeout(()=>a.textContent='Copy link',1800)})}
  if(k!=='copy')p.hidden=true})})();</script>
 <script>
-/* Promo boxes: four margin boxes. Power Map and Newspace flip between their two faces,
-   Crime Watch stands still, Featured Story rotates to a new story every 6 seconds. */
+/* Promo boxes: four margin boxes. Crime Watch stands still, Featured Story rotates to a new story every 6 seconds. */
 (function(){
-const NS='https://newspace.douggarceau.workers.dev/signup';
-const PM=[
- {tag:"NEW SOFTWARE",img:"img/promo-powermap.jpg",round:2,name:"Tech & AI Power Map",sub:"Who controls AI and Big Tech",go:"Open the map",theme:"pm",href:"https://seattlesinner.com/tech/"},
- {tag:"POWER MAP",big:"140<em>companies</em>",name:"Investors, contracts, chips and money flows",go:"Open the map",theme:"pm2",href:"https://seattlesinner.com/tech/"}];
 const NW=[];const NWX=()=>{try{if(typeof STF!=='undefined'&&STF.length)return STF.slice().reverse()}catch(_){}return CWX};
 let CWX=[{tag:"CRIME WATCH",big:"Who's<em>out there tonight</em>",name:"Crime Watch",sub:"Police log, fire and crime news for Boston",go:"Check your block",theme:"cw",href:"#crime",view:"crime"}];
 let ST=[];try{const bySlug={};STORIES.forEach(x=>bySlug[x.slug]=x);
@@ -2275,24 +2269,6 @@ window.__fill0=(a,s)=>fill0(a,s);function fill0(a,s){if(!a||!s)return;try{const 
  a.setAttribute('aria-label',s.bigText||s.name);box.style.setProperty('--k',s.k||'');if(!s.k)box.style.removeProperty('--k');if(s.sty)box.dataset.adv=s.sty;else delete box.dataset.adv;
  const mid=s.img?'<img src="'+s.img+'" alt=""'+(s.round?' class="round'+(s.round>1?' dark':'')+'"':'')+'>':'<span class="ls-big">'+(s.bigText?esc(s.bigText):s.big)+'</span>';
  a.innerHTML='<span class="ls-tag">'+esc(s.tag)+'</span>'+mid+'<span><b>'+esc(s.name)+'</b>'+(s.when?'<i>'+esc(s.when)+'</i>':'')+(s.sub?'<small>'+esc(s.sub)+'</small>':'')+'<span class="ls-go">'+esc(s.go)+' →</span></span>';if(box.classList.contains('evp')){box.classList.remove('evp');['border','border-top','outline'].forEach(x=>box.style.removeProperty(x))}if(s.theme==='mu'&&s.ev&&window.evPoster)window.evPoster(a,s);else if(s.theme==='st'&&window.artCard)window.artCard(a,s)}
-function pmTeaser(a){if(!a)return;const box=a.parentNode;box.className=box.className.replace(/\bt-\S+/g,'').trim()+' t-pmx';a.href='https://seattlesinner.com/tech/';a.removeAttribute('target');a.setAttribute('aria-label','Tech & AI Power Map: who controls AI and Big Tech');
- const pads=()=>'<span class="pmx-pads">'+'<b></b>'.repeat(15)+'</span>';
- a.innerHTML='<span class="pmx-bar"><span>■ Power Map</span><i>AI Signals live</i></span><span class="pmx-top">'+pads()+'<span class="pmx-eye"><img src="img/promo-powermap.jpg" alt=""></span>'+pads()+'</span><span class="pmx-ttl">Tech &amp; AI Power Map</span><span class="pmx-by">New software</span><span class="pmx-stk"><span class="tk">····</span><span class="pr"></span><span class="nm">Loading the market</span><span class="ch"></span></span><span class="pmx-rk"><h5>Power ranking</h5><ol><li></li><li></li><li></li><li></li></ol></span><span class="pmx-log">establishing link</span><span class="pmx-go">Enter the map →</span>';
- const still=matchMedia('(prefers-reduced-motion:reduce)').matches,live=()=>!document.hidden&&!still;
- const PC=['#e3170a','#d9a400','#3ddc84','#4a9eff','#8fb3d9','#ff6a00'];const pb=[...a.querySelectorAll('.pmx-pads b')];pb.forEach(b=>b.style.setProperty('--pc',PC[Math.random()*PC.length|0]));
- setInterval(()=>{if(!live())return;pb.forEach(b=>b.classList.toggle('on',Math.random()<.3))},420);
- const LOG=['extracting entities :: 56 people · 13 orgs','cross-ref board seats ... 6 shared links','computing betweenness centrality :: pass 4/9','source URL check :: 200 OK','[!] unverified edge flagged','reasoning :: step 9/12 :: follow the money','scraping filings ... 438kb','hash verified','graph engine :: 420 links loaded','tracing government contracts','mapping chip supply chain'];
- const lg=a.querySelector('.pmx-log');setInterval(()=>{if(live())lg.textContent=LOG[Math.random()*LOG.length|0]},1700);
- fetch('data/pm-teaser.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d)return;
-  const st=d.stocks||[],cats=d.cats||[],sk=a.querySelector('.pmx-stk'),h=a.querySelector('.pmx-rk h5'),li=[...a.querySelectorAll('.pmx-rk li')];
-  
-  let si=0,ci=0;const showS=()=>{const x=st[si++%st.length];if(!x)return;sk.style.setProperty('--sc',x.c||'#8fb3d9');const up=!/^-/.test(x.ytd||'');
-   sk.innerHTML='<span class="tk">'+esc(x.tk)+'</span><span class="pr">'+esc(x.p)+'</span><span class="nm">'+esc(x.n)+' · '+esc(x.cap||'')+'</span><span class="ch '+(up?'up':'dn')+'">'+(up?'▲ ':'▼ ')+esc(x.ytd||'')+' YTD</span>'};
-  const showC=first=>{const c=cats[ci++%cats.length];if(!c)return;h.classList.add('out');setTimeout(()=>{h.textContent='Power ranking · '+c.t;h.classList.remove('out')},250);
-   li.forEach((el,k)=>{const r=c.rows[k];const put=()=>{el.style.setProperty('--c',r.c);el.innerHTML='<span>'+(k+1)+' '+esc(r.n)+'</span><em>'+esc(r.v)+'</em>'};if(first){put();return}setTimeout(()=>{el.classList.add('flip');setTimeout(()=>{put();el.classList.remove('flip')},300)},k*220)})};
-  showS();showC(true);
-  setInterval(()=>{if(!live())return;sk.classList.add('out');setTimeout(()=>{showS();sk.classList.remove('out')},260)},1800);
-  setInterval(()=>{if(live())showC(false)},4200)}).catch(()=>{})}
 const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
 function flipTo(a,s){if(!a)return;clearTimeout(promoTimers.get(a));if(still){fill(a,s);return}const b=a.parentNode;b.classList.add('flip');promoTimers.set(a,setTimeout(()=>{fill(a,s);b.classList.remove('flip')},460))}
 let i=0,j=0;fill($('lsA'),{tag:'BOSTON CRIME',bigText:'Crime headlines',name:'Boston',sub:'Loading the latest…',go:'Crime Watch',theme:'cw',href:'#crime',view:'crime'});fill($('lsB'),NWX()[0]);fill($('lsC'),CWX[0]);j=Math.min(4,Math.max(0,WRF.length-1));showPromo('lsD',WRF.length?WRF:NWX(),WRF.length?j:1);let q=0;showPromo('lsE',SCF);let a2=0;const BEAT=/corrupt|scandal|misconduct|fraud|brib|ethic|indict|lawsuit|\bsued\b|investigat|reprimand|complaint|probe|resign|fired|deficit|hiding|cover-?up|subpoena|audit|kickback|embezzl|police chief|lieutenant|officers? (fired|charged|disciplined)/i;
