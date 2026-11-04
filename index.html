@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script id="fetchOnce">/* Page scripts share one download of each data file per minute. */(()=>{const f=window.fetch,m=new Map(),re=/^(?:\/|\.\/)?data\/[\w-]+\.json(?:\?\d+)?$/;window.fetch=function(u,o){if(typeof u!=='string'||(o&&o.method&&o.method!=='GET')||!re.test(u))return f.apply(this,arguments);const k=u.split('?')[0].replace(/^\.?\//,''),t=Date.now(),h=m.get(k);if(h&&t-h.t<6e4)return h.p.then(r=>r.clone());const p=f.call(this,u,o);m.set(k,{t,p});p.catch(()=>m.delete(k));return p.then(r=>r.clone())}})();</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXZWD8F1CW"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HXZWD8F1CW');</script>
 
 <meta charset="utf-8">
@@ -22,6 +23,7 @@
 <meta name="twitter:description" content="Boston news, music, food and the city calendar.">
 <meta name="twitter:image" content="https://thebostonrambler.com/img/og-share.jpg">
 <link rel="canonical" href="https://thebostonrambler.com/">
+<link rel="alternate" type="application/rss+xml" title="The Boston Rambler" href="/feed.xml">
 <link rel="icon" type="image/png" href="/app/favicon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0b0d10">
