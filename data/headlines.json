@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-04T07:35:00-05:00",
+ "asof": "2026-11-05T07:37:21-05:00",
  "items": [
   {
    "h": "Igor Levit Brings an All-Beethoven Recital to Symphony Hall",
@@ -39,26 +39,6 @@
    "town": "Fenway",
    "date": "2026-10-29",
    "rank": 3
-  },
-  {
-   "h": "Hello, Old Friend brings Detroit-style pizza to West Roxbury",
-   "sum": "The pizza maker known for pop-ups and a Roslindale residency is opening its own West Roxbury location.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/entertainment/food-drink-nightlife/hello-old-friend-detroit-style-pizza-business-opens-location-in-boston/4039021/",
-   "town": "West Roxbury",
-   "date": "2026-10-28",
-   "rank": 10
-  },
-  {
-   "h": "Boston Today and Tonight: half•alive, Basia Bulat and More",
-   "sum": "half•alive and High Horse with Sweet Sally open at 7 PM, and Basia Bulat and Michelle Branch take the stage at 8 PM.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-04",
-   "story": "today-and-tonight-2026-11-04",
-   "box": true,
-   "town": "Boston",
-   "date": "2026-11-04",
-   "rank": 1
   },
   {
    "h": "Journey's Final Frontier Tour Rolls Into TD Garden Nov. 10",
@@ -141,16 +121,6 @@
    "rank": 9
   },
   {
-   "h": "Haydn's The Creation Opens the BSO's Early-November Weekend",
-   "sum": "Nov. 5 through 7 at Symphony Hall, including a Thursday evening performance.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=bso-haydn-creation-symphony-hall-2026",
-   "story": "bso-haydn-creation-symphony-hall-2026",
-   "town": "Back Bay",
-   "date": "2026-11-04",
-   "rank": 10
-  },
-  {
    "h": "Golijov's Creation Gets Its World Premiere at Symphony Hall",
    "sum": "Nov. 12 through 14 with the Boston Symphony Orchestra.",
    "outlet": "The Boston Rambler",
@@ -189,6 +159,106 @@
    "town": "Back Bay",
    "date": "2026-11-04",
    "rank": 14
+  },
+  {
+   "h": "Haydn's The Creation at Symphony Hall, Nov. 5-7",
+   "sum": "The Boston Symphony Orchestra and Philippe Jordan perform Haydn's oratorio Nov. 5, 6 and 7 at Symphony Hall on Massachusetts Avenue.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-haydn-creation-symphony-hall-2026",
+   "town": "Back Bay",
+   "date": "2026-11-05",
+   "rank": 2,
+   "story": "bso-haydn-creation-symphony-hall-2026",
+   "box": true
+  },
+  {
+   "h": "Boston Today and Tonight: Haydn's The Creation and Jazz",
+   "sum": "Haydn's The Creation at Symphony Hall at 7:30 p.m. leads a Thursday night with jazz at Berklee and Regattabar.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-05",
+   "town": "Boston",
+   "date": "2026-11-05",
+   "rank": 1,
+   "story": "today-and-tonight-2026-11-05"
+  },
+  {
+   "h": "Boston Lyric Opera Opens 'A Streetcar Named Desire' This Week",
+   "sum": "Performances run Thursday through Sunday at the Emerson Cutler Majestic Theatre.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=blo-streetcar-named-desire-majestic-nov-2026",
+   "town": "Downtown",
+   "date": "2026-11-05",
+   "rank": 3,
+   "story": "blo-streetcar-named-desire-majestic-nov-2026"
+  },
+  {
+   "h": "Huntington Premieres 'Adia & Clora Snatch Joy' This November",
+   "sum": "The world premiere, the final chapter of a nine-play cycle, runs Nov. 24 to Dec. 13.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=huntington-adia-clora-snatch-joy-2026",
+   "town": "Fenway",
+   "date": "2026-11-05",
+   "rank": 3,
+   "story": "huntington-adia-clora-snatch-joy-2026"
+  },
+  {
+   "h": "Rosin Brings Its 'Disreputable Classical Music' to Club Passim",
+   "sum": "The group plays Club Passim in Cambridge on Friday, Nov. 13.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=rosin-club-passim-nov-13-2026",
+   "town": "Cambridge",
+   "date": "2026-11-05",
+   "rank": 4,
+   "story": "rosin-club-passim-nov-13-2026"
+  },
+  {
+   "h": "Canadian Arabic Orchestra Honors Abdel Halim Hafez at Berklee",
+   "sum": "A Nov. 14 concert of Arabic golden-age song at the Berklee Performance Center.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=canadian-arabic-orchestra-nightingale-berklee-nov-2026",
+   "town": "Back Bay",
+   "date": "2026-11-05",
+   "rank": 6,
+   "story": "canadian-arabic-orchestra-nightingale-berklee-nov-2026"
+  },
+  {
+   "h": "Jazz Composers Alliance Plays Berklee Faculty Works on Nov. 9",
+   "sum": "Four Berklee faculty composers are featured at the Berklee Performance Center.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=jazz-composers-alliance-orchestra-berklee-nov-9-2026",
+   "town": "Back Bay",
+   "date": "2026-11-05",
+   "rank": 8,
+   "story": "jazz-composers-alliance-orchestra-berklee-nov-9-2026"
+  },
+  {
+   "h": "A Family Musical Retells 'The Emperor's New Clothes' at Berklee",
+   "sum": "A musical for families runs Thursday, Nov. 12 at 7 p.m.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=emperors-new-clothes-berklee-nov-12-2026",
+   "town": "Back Bay",
+   "date": "2026-11-05",
+   "rank": 10,
+   "story": "emperors-new-clothes-berklee-nov-12-2026"
+  },
+  {
+   "h": "Volunteers Turn Out for Second Saturdays at Jamaica Pond",
+   "sum": "A monthly stewardship morning with the Emerald Necklace Conservancy, Nov. 14.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=second-saturdays-jamaica-pond-nov-14-2026",
+   "town": "Jamaica Plain",
+   "date": "2026-11-05",
+   "rank": 12,
+   "story": "second-saturdays-jamaica-pond-nov-14-2026"
+  },
+  {
+   "h": "Crisscross Bakehouse Pops Up Inside Honeycomb Creamery",
+   "sum": "A bakery from the Honeycomb team serves pastries and coffee Thursday through Sunday mornings.",
+   "outlet": "Boston.com",
+   "url": "https://www.boston.com/food/restaurants/2026/10/29/best-restaurant-openings-october-29-2026/",
+   "town": "Cambridge",
+   "date": "2026-10-29",
+   "rank": 30
   }
  ]
 }
