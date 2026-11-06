@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-05T07:37:21-05:00",
+ "asof": "2026-11-06T07:47:04-05:00",
  "items": [
   {
    "h": "Igor Levit Brings an All-Beethoven Recital to Symphony Hall",
@@ -30,15 +30,6 @@
    "town": "Copley Square",
    "date": "2026-10-31",
    "rank": 6
-  },
-  {
-   "h": "Noah Kahan adds four Fenway Park shows for 2027",
-   "sum": "The singer-songwriter returns to Fenway Park for concerts on May 29, May 30, June 1 and June 2.",
-   "outlet": "NBC Boston",
-   "url": "https://www.nbcboston.com/news/local/noah-kahan-2027-tour-mastercard-tickets-fenway-park/4039710/",
-   "town": "Fenway",
-   "date": "2026-10-29",
-   "rank": 3
   },
   {
    "h": "Journey's Final Frontier Tour Rolls Into TD Garden Nov. 10",
@@ -161,27 +152,6 @@
    "rank": 14
   },
   {
-   "h": "Haydn's The Creation at Symphony Hall, Nov. 5-7",
-   "sum": "The Boston Symphony Orchestra and Philippe Jordan perform Haydn's oratorio Nov. 5, 6 and 7 at Symphony Hall on Massachusetts Avenue.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=bso-haydn-creation-symphony-hall-2026",
-   "town": "Back Bay",
-   "date": "2026-11-05",
-   "rank": 2,
-   "story": "bso-haydn-creation-symphony-hall-2026",
-   "box": true
-  },
-  {
-   "h": "Boston Today and Tonight: Haydn's The Creation and Jazz",
-   "sum": "Haydn's The Creation at Symphony Hall at 7:30 p.m. leads a Thursday night with jazz at Berklee and Regattabar.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-05",
-   "town": "Boston",
-   "date": "2026-11-05",
-   "rank": 1,
-   "story": "today-and-tonight-2026-11-05"
-  },
-  {
    "h": "Boston Lyric Opera Opens 'A Streetcar Named Desire' This Week",
    "sum": "Performances run Thursday through Sunday at the Emerson Cutler Majestic Theatre.",
    "outlet": "The Boston Rambler",
@@ -252,13 +222,74 @@
    "story": "second-saturdays-jamaica-pond-nov-14-2026"
   },
   {
-   "h": "Crisscross Bakehouse Pops Up Inside Honeycomb Creamery",
-   "sum": "A bakery from the Honeycomb team serves pastries and coffee Thursday through Sunday mornings.",
-   "outlet": "Boston.com",
-   "url": "https://www.boston.com/food/restaurants/2026/10/29/best-restaurant-openings-october-29-2026/",
-   "town": "Cambridge",
-   "date": "2026-10-29",
-   "rank": 30
+   "h": "Haydn's The Creation at Symphony Hall, Nov. 5-7",
+   "sum": "The BSO and Philippe Jordan perform Haydn's oratorio at Symphony Hall this weekend.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-haydn-creation-symphony-hall-2026",
+   "story": "bso-haydn-creation-symphony-hall-2026",
+   "box": true,
+   "town": "Back Bay",
+   "date": "2026-11-06",
+   "rank": 2
+  },
+  {
+   "h": "Boston Today and Tonight: Haydn's The Creation and Streetcar",
+   "sum": "Haydn's The Creation at 1:30 PM and Trinity Church's organ recital at 12:15 PM lead a day that ends with Streetcar at 7:30 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-06",
+   "story": "today-and-tonight-2026-11-06",
+   "town": "Boston",
+   "date": "2026-11-06",
+   "rank": 1
+  },
+  {
+   "h": "The Book of Esther Exhibition Runs Through January at the Gardner",
+   "sum": "Dutch paintings, tapestries and Jewish ceremonial objects tell Esther's story in the Hostetter Gallery.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=gardner-book-of-esther-rembrandt-2026",
+   "story": "gardner-book-of-esther-rembrandt-2026",
+   "town": "Fenway",
+   "date": "2026-11-06",
+   "rank": 3
+  },
+  {
+   "h": "Arlington Open Studios Opens Doors to 80 Local Artists",
+   "sum": "Saturday's 28th annual showcase spans Town Hall, the Community Center and Robbins Library, with no charge for admission.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=arlington-open-studios-2026",
+   "story": "arlington-open-studios-2026",
+   "town": "Arlington",
+   "date": "2026-11-06",
+   "rank": 4
+  },
+  {
+   "h": "The Boston International Antiquarian Book Fair Opens at the Hynes",
+   "sum": "Rare books, manuscripts and maps from about 110 dealers fill the Hynes through Sunday.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-antiquarian-book-fair-2026",
+   "story": "boston-antiquarian-book-fair-2026",
+   "town": "Back Bay",
+   "date": "2026-11-06",
+   "rank": 6
+  },
+  {
+   "h": "Pokey LaFarge Celebrates Rent Money in Somerville",
+   "sum": "Tuesday's show at the Armory marks the release of his new album.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=pokey-lafarge-armory-somerville-2026",
+   "story": "pokey-lafarge-armory-somerville-2026",
+   "town": "Somerville",
+   "date": "2026-11-06",
+   "rank": 8
+  },
+  {
+   "h": "Weekend Picks Include Streetcar, a Book Fair and Arlington Open Studios",
+   "sum": "WBUR's weekend preview covers Boston Lyric Opera's Streetcar, the book fair and Arlington's open studios.",
+   "outlet": "WBUR",
+   "url": "https://www.wbur.org/news/2026/11/04/5-things-to-do-this-weekend-including-a-streetcar-named-desire-and-the-return-of-snowport",
+   "town": "Boston",
+   "date": "2026-11-04",
+   "rank": 10
   }
  ]
 }
