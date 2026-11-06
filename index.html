@@ -1275,6 +1275,7 @@ h2.room{text-shadow:0 2px 0 #000,0 0 30px rgba(0,0,0,.7)!important;filter:satura
     
     
     <button class="nb" id="dirNb" type="button">Directory</button>
+    <button class="nb" id="appBtn" type="button">Get the App</button>
     <button class="nb" data-go="privacy" hidden style="display:none">Privacy, Editorial Standards &amp; Contact Us</button>
     <button class="nb" data-go="inbox" id="inboxBtn" hidden>Inbox <span class="n" id="inboxN">0</span></button>
   </nav>
@@ -2342,7 +2343,7 @@ document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest
   const ua=navigator.userAgent, ios=/iPhone|iPad|iPod/.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1), android=/Android/.test(ua);
   const open=()=>{
     if(ev){
-      st.innerHTML='<p>Put the Rambler on your home screen. It opens full screen, like any other app.</p><button type="button" class="go" id="appGo">Add to Home Screen</button>';
+      st.innerHTML='<p>Put The Boston Rambler on your home screen. It opens full screen, like any other app.</p><button type="button" class="go" id="appGo">Add to Home Screen</button>';
       document.getElementById('appGo').onclick=async()=>{const e=ev;ev=null;sh.hidden=true;e.prompt();const r=await e.userChoice.catch(()=>null);if(r&&r.outcome==='accepted')btn.hidden=true;};
     }else if(ios){
       st.innerHTML='<ol><li>Tap the <b>Share</b> button at the bottom of Safari (the square with the arrow).</li><li>Tap <b>Add to Home Screen</b>.</li><li>Tap <b>Add</b>.</li></ol>';
