@@ -2653,7 +2653,7 @@ addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.close
 let q=0;const go=()=>{if(q)return;q=requestAnimationFrame(()=>{q=0;place()})};new MutationObserver(go).observe(document.documentElement,{childList:true,subtree:true});go()})();</script>
 <style id="phoneFix">
 @media (max-width:640px){
- html body nav#nav.navbar{display:flex!important;flex-wrap:nowrap!important;justify-content:flex-start!important;overflow-x:auto!important;overflow-y:hidden!important;width:auto!important;max-width:none!important;margin-left:0!important;margin-right:0!important;transform:none!important;gap:6px!important;padding:8px 10px!important;scroll-snap-type:x proximity;scroll-padding-inline:10px;-webkit-overflow-scrolling:touch;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+ html body nav#nav.navbar{display:flex!important;flex-wrap:wrap!important;justify-content:flex-start!important;overflow-x:visible!important;overflow-y:hidden!important;width:auto!important;max-width:none!important;margin-left:0!important;margin-right:0!important;transform:none!important;gap:6px!important;padding:8px 10px!important;scroll-snap-type:x proximity;scroll-padding-inline:10px;-webkit-overflow-scrolling:touch;scrollbar-width:none;-webkit-mask-image:none;mask-image:none}
  html body nav#nav.navbar::-webkit-scrollbar{display:none}
  html body nav#nav.navbar>*{flex:none!important;scroll-snap-align:start}
  html body nav#nav.navbar .nb{min-height:36px!important;padding:9px 12px!important;font-size:12px!important;white-space:nowrap!important;align-items:center}
