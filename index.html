@@ -2180,7 +2180,7 @@ const SFX=(function(){let ctx=null,out=null,on=true,last=0;try{on=localStorage.g
 </script>
 <script>
 (()=>{const P=new URLSearchParams(location.search),g=P.get('go')||location.hash.slice(1);if(g&&['tech','recovery','stories','bars','cal','scene','venues','bands','front'].includes(g)){go(g)}})();
-(()=>{const q=new URLSearchParams(location.search).get('story');if(!q||typeof STORIES==='undefined'||!(STORIES.some(s=>s.slug===q)||(window.ALL_STORIES||[]).some(s=>s.slug===q)))return;STATE.story=q;STATE.prev='front';STATE.view='read';render();scrollTo(0,0)})();
+(()=>{const q=new URLSearchParams(location.search).get('story');if(!q||typeof STORIES==='undefined')return;const open=()=>{STATE.story=q;STATE.prev='front';STATE.view='read';render();scrollTo(0,0)};if(STORIES.some(s=>s.slug===q)||(window.ALL_STORIES||[]).some(s=>s.slug===q))return open();fetch('data/archive.json',{cache:'no-cache'}).then(r=>r.ok?r.json():[]).then(a=>{if(!Array.isArray(a))return;window.ALL_STORIES=(window.ALL_STORIES||[]).concat(a);if(a.some(s=>s.slug===q))open()}).catch(()=>{})})();
 </script>
 <script>
 setInterval(()=>{if(document.hidden)return;const r=document.querySelectorAll('.troom .bwl .bwr');if(r.length){const n=r[Math.floor(Math.random()*r.length)];n.classList.add('flash');setTimeout(()=>n.classList.remove('flash'),900)}
