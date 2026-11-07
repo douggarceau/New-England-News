@@ -2836,5 +2836,54 @@ html body #coverSlot .cvr button.cvbrk:hover{border-color:#1f3346!important}
 <script id="topSceneJs">(()=>{const S=[['01-bridge',50],['02-windmill',84],['03-harbor',70],['04-lighthouse',88],['05-mist',62],['06-redlight',84],['07-springlight',86],['08-lighthouse-cottage',16],['09-stonelight',10],['10-spring-harbor',40],['11-lobster-dock',82],['12-winter-boat',62],['13-ferry',72],['14-fort-bunker',80],['15-tide-cove',72],['16-shore-cottage',80],['17-winter-bridge',30],['18-autumn-village',75],['19-fort-wall',40],['20-ruin-point',15],['21-surf-beach',30],['22-misty-cove-path',60],['23-beach-chair',82],['24-dune-inlet',50],['25-winter-beach',60],['26-bicycle-fence',80]];
 const k=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});const d=Math.floor(Date.parse(k+'T12:00:00Z')/864e5);const s=S[d%S.length];
 const r=document.documentElement.style;r.setProperty('--tsimg','url(img/scenes/'+s[0]+'-1200.webp)');r.setProperty('--tspos',s[1]+'%')})();</script>
+<style id="sailColors">
+/* Authentic sailing colors for the side columns (owner's palette, Nov 7 2026):
+   navy #0A1428, Yankee blue #002D57, signal red #B5123A, cotton #FFFFFF, fluff #EEE9E5,
+   haint blue #D4ECF5, burlap #C2B2A3, Savannah mist #8A9DA1, burgee yellow #E8B820 */
+html body aside#dirCol{background:#0A1428!important;border:1px solid #1d3550!important;box-shadow:none!important;animation:none!important}
+html body aside#dirCol *,html body aside#dirCol *::before,html body aside#dirCol *::after{box-shadow:none!important;text-shadow:none!important;animation:none!important}
+html body aside#dirCol .bulbs{display:none!important}
+html body aside#dirCol h2{color:#FFFFFF!important}
+html body aside#dirCol header p{color:#D4ECF5!important}
+html body aside#dirCol input,html body aside#dirCol select{background:#002D57!important;color:#FFFFFF!important;border:1px solid #8A9DA1!important}
+html body aside#dirCol input::placeholder{color:#C2B2A3!important;opacity:1}
+/* business rows: navy cards, burgee-style left stripe in flag colors only */
+html body aside#dirCol .drow .dn{background:#0f1f36!important;background-image:none!important;border:1px solid #23395a!important;border-left:4px solid #B5123A!important}
+html body aside#dirCol .drow:nth-child(4n+2) .dn{border-left-color:#E8B820!important}
+html body aside#dirCol .drow:nth-child(4n+3) .dn{border-left-color:#FFFFFF!important}
+html body aside#dirCol .drow:nth-child(4n+4) .dn{border-left-color:#D4ECF5!important}
+html body aside#dirCol .drow .dn .nm{color:#FFFFFF!important}
+html body aside#dirCol .drow .dn .ty,html body aside#dirCol .drow .dn small{color:#C2B2A3!important}
+html body aside#dirCol .drow .dd,html body aside#dirCol .drow .dd *{background:#0f1f36!important;color:#EEE9E5!important}
+html body aside#dirCol .drow .dd a{color:#D4ECF5!important}
+/* event rows in the directory: no candy stripes or neon; navy tile, signal-red date */
+html body aside#dirCol .fb,html body aside#dirCol .fb *{background-image:none!important}
+html body aside#dirCol .fb{background:#0f1f36!important;border:1px solid #23395a!important}
+html body aside#dirCol .fb .fb-d{background:#B5123A!important}
+html body aside#dirCol .fb:nth-of-type(2n) .fb-d{background:#002D57!important;border-right:3px solid #E8B820!important}
+html body aside#dirCol .fb .fb-d *{color:#FFFFFF!important}
+html body aside#dirCol .fb .fb-t{color:#FFFFFF!important;font-family:Georgia,"Times New Roman",serif!important;font-style:normal!important;font-weight:700!important;letter-spacing:0!important;text-transform:none!important}
+html body aside#dirCol .fb .fb-v{color:#C2B2A3!important}
+html body aside#dirCol .bf,html body aside#dirCol .bf *{color:#C2B2A3!important;background:#0A1428!important}
+/* right column: no pulsing glow, plain navy frames */
+html body .lsrow .lspot{animation:none!important;box-shadow:0 2px 8px rgba(0,0,0,.35)!important;border-top:3px solid #002D57!important}
+html body .lsrow .lspot.t-ad{border-top-color:#B5123A!important}
+html body .lsrow .lspot::before,html body .lsrow .lspot::after{animation:none!important}
+
+html body aside#dirCol .drow .dn::before{display:none!important}
+html body aside#dirCol header,html body aside#dirCol header *{background:#0A1428!important;background-image:none!important}
+html body .lsrow .lspot.lspot,html body .lsrow .lspot .ep,html body .lsrow .lspot .os{box-shadow:0 2px 8px rgba(0,0,0,.35)!important}
+html body .lsrow .lspot .ep.os{box-shadow:inset 0 0 0 1.5px #002D57!important}
+
+html body aside#dirCol header{border-bottom:2px solid #B5123A!important}
+html body div.lsrow div.lspot,html body div.lsrow div.lspot[class]{box-shadow:0 2px 8px rgba(0,0,0,.35)!important;animation:none!important;filter:none!important}
+html body div.lsrow div.lspot .os,html body div.lsrow div.lspot .ep{box-shadow:inset 0 0 0 1.5px #002D57!important;animation:none!important}
+html body div.lsrow div.lspot.t-ad,html body div.lsrow div.lspot.t-ad>a{background:#002D57!important;background-image:none!important}
+html body div.lsrow div.lspot.t-ad *{color:#FFFFFF!important;text-shadow:none!important}
+html body div.lsrow div.lspot.t-ad .ls-tag{color:#E8B820!important}
+html body div.lsrow div.lspot.t-ad .ls-tag::before{background:#B5123A!important}
+html body div.lsrow div.lspot.t-ad .ls-big em,html body div.lsrow div.lspot.t-ad .ls-big i,html body div.lsrow div.lspot.t-ad .ls-big span{color:#D4ECF5!important}
+html body div.lsrow div.lspot.t-ad::before,html body div.lsrow div.lspot.t-ad::after{background:none!important;background-image:none!important}
+</style>
 </body>
 </html>
