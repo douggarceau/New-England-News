@@ -1,35 +1,37 @@
 {
- "asof": "2026-11-06T07:47:04-05:00",
+ "asof": "2026-11-07T07:40:00-05:00",
  "items": [
   {
-   "h": "Igor Levit Brings an All-Beethoven Recital to Symphony Hall",
-   "sum": "A Sunday afternoon recital traces Beethoven's arc, ending with the Waldstein Sonata.",
+   "h": "Boston Today and Tonight: The Creation, Snowport and Arlington Studios",
+   "sum": "Saturday's picks: Arlington Open Studios at 11 a.m., Snowport in the Seaport from 10 a.m., and Haydn's The Creation at Symphony Hall at 8 p.m.",
    "outlet": "The Boston Rambler",
-   "url": "?story=igor-levit-beethoven-symphony-hall-2026",
-   "story": "igor-levit-beethoven-symphony-hall-2026",
-   "town": "Back Bay",
-   "date": "2026-10-31",
-   "rank": 3
+   "url": "?story=today-and-tonight-2026-11-07",
+   "story": "today-and-tonight-2026-11-07",
+   "town": "Boston",
+   "date": "2026-11-07",
+   "rank": 1
   },
   {
-   "h": "Friday Organ Recitals at Trinity Church in Copley Square",
-   "sum": "Midday organ recitals on Nov. 6, 13 and 20, with no charge for admission.",
+   "h": "Snowport Returns to the Seaport With 130 Makers and Live Music",
+   "sum": "Opens Friday, Nov. 6, at 100 Seaport Boulevard in the Seaport District, with weekend hours from 10 a.m. and the market running through Dec. 27.",
    "outlet": "The Boston Rambler",
-   "url": "?story=trinity-church-organ-recitals-nov-2026",
-   "story": "trinity-church-organ-recitals-nov-2026",
-   "town": "Back Bay",
-   "date": "2026-10-31",
-   "rank": 4
+   "url": "?story=snowport-holiday-market-seaport-2026",
+   "story": "snowport-holiday-market-seaport-2026",
+   "town": "Seaport",
+   "date": "2026-11-07",
+   "rank": 2,
+   "lead": true
   },
   {
-   "h": "Walk-In Piano Stations Open at Boston Public Library Branches",
-   "sum": "Piano stations at four branches run through Nov. 30 on a walk-in basis.",
+   "h": "Haydn's The Creation at Symphony Hall, Nov. 5-7",
+   "sum": "The Boston Symphony Orchestra and Philippe Jordan perform Haydn's oratorio Nov. 5, 6 and 7 at Symphony Hall on Massachusetts Avenue.",
    "outlet": "The Boston Rambler",
-   "url": "?story=bpl-piano-learning-stations-nov-2026",
-   "story": "bpl-piano-learning-stations-nov-2026",
-   "town": "Copley Square",
-   "date": "2026-10-31",
-   "rank": 6
+   "url": "?story=bso-haydn-creation-symphony-hall-2026",
+   "story": "bso-haydn-creation-symphony-hall-2026",
+   "town": "Back Bay",
+   "date": "2026-11-07",
+   "rank": 2,
+   "box": true
   },
   {
    "h": "Journey's Final Frontier Tour Rolls Into TD Garden Nov. 10",
@@ -42,6 +44,36 @@
    "rank": 2
   },
   {
+   "h": "Dover Quartet Brings Brahms and Dvorak to Jordan Hall, Nov. 15",
+   "sum": "Sunday, Nov. 15 at 3 p.m. at NEC's Jordan Hall in the Fenway, presented by Vivo Performing Arts with Brahms, Dvorak and Pura Fe.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=dover-quartet-jordan-hall-nov-15-2026",
+   "story": "dover-quartet-jordan-hall-nov-15-2026",
+   "town": "Fenway",
+   "date": "2026-11-07",
+   "rank": 3
+  },
+  {
+   "h": "Unvarnished at the MFA: Conservators Restore a Dutch Group Portrait",
+   "sum": "Opens Dec. 9 in the William A. Coolidge Gallery at the Museum of Fine Arts, 465 Huntington Avenue in the Fenway, and runs through Feb. 14, 2028.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=mfa-unvarnished-dutch-group-portrait-2026",
+   "story": "mfa-unvarnished-dutch-group-portrait-2026",
+   "town": "Fenway",
+   "date": "2026-11-07",
+   "rank": 3
+  },
+  {
+   "h": "Igor Levit Brings an All-Beethoven Recital to Symphony Hall",
+   "sum": "A Sunday afternoon recital traces Beethoven's arc, ending with the Waldstein Sonata.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=igor-levit-beethoven-symphony-hall-2026",
+   "story": "igor-levit-beethoven-symphony-hall-2026",
+   "town": "Back Bay",
+   "date": "2026-10-31",
+   "rank": 3
+  },
+  {
    "h": "Boston Baroque's X-tet Sings Songs of Italy",
    "sum": "Nov. 13 and 14 at Seully Hall, with soprano Amanda Forsythe.",
    "outlet": "The Boston Rambler",
@@ -50,106 +82,6 @@
    "town": "Fenway",
    "date": "2026-11-04",
    "rank": 3
-  },
-  {
-   "h": "Young Players of the Boston Philharmonic Take Symphony Hall",
-   "sum": "Friday, Nov. 6, at 8 PM with Stravinsky's Petrushka and Tchaikovsky's Fifth.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=boston-philharmonic-youth-symphony-hall-nov-6-2026",
-   "story": "boston-philharmonic-youth-symphony-hall-nov-6-2026",
-   "town": "Back Bay",
-   "date": "2026-11-04",
-   "rank": 4
-  },
-  {
-   "h": "Doja Cat's Tour Ma Vie Stops at TD Garden",
-   "sum": "Nov. 23 at TD Garden, with Latto on the bill.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=doja-cat-latto-td-garden-nov-23",
-   "story": "doja-cat-latto-td-garden-nov-23",
-   "town": "Downtown",
-   "date": "2026-11-04",
-   "rank": 5
-  },
-  {
-   "h": "A Saturday Recital Showcases the Passim School of Music",
-   "sum": "Nov. 14 at noon in Harvard Square, with roots and bluegrass on the program.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=passim-school-of-music-recital-nov-14-2026",
-   "story": "passim-school-of-music-recital-nov-14-2026",
-   "town": "Cambridge",
-   "date": "2026-11-04",
-   "rank": 6
-  },
-  {
-   "h": "Holiday Pops 2026 Opens a 41-Show Run at Symphony Hall",
-   "sum": "Shows run Dec. 3 through Dec. 28.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=holiday-pops-2026-symphony-hall",
-   "story": "holiday-pops-2026-symphony-hall",
-   "town": "Back Bay",
-   "date": "2026-11-04",
-   "rank": 7
-  },
-  {
-   "h": "Boston Ballet's Nutcracker Returns to the Opera House",
-   "sum": "Performances begin Nov. 27.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=boston-ballet-nutcracker-2026",
-   "story": "boston-ballet-nutcracker-2026",
-   "town": "Theatre District",
-   "date": "2026-11-04",
-   "rank": 8
-  },
-  {
-   "h": "Handel and Haydn's Messiah Returns to Symphony Hall",
-   "sum": "Three performances, Nov. 27 through 29.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
-   "story": "handel-haydn-messiah-symphony-hall-2026",
-   "town": "Back Bay",
-   "date": "2026-11-04",
-   "rank": 9
-  },
-  {
-   "h": "Golijov's Creation Gets Its World Premiere at Symphony Hall",
-   "sum": "Nov. 12 through 14 with the Boston Symphony Orchestra.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=bso-golijov-creation-world-premiere-2026",
-   "story": "bso-golijov-creation-world-premiere-2026",
-   "town": "Back Bay",
-   "date": "2026-11-04",
-   "rank": 11
-  },
-  {
-   "h": "Geese Play Two Nights at Roadrunner",
-   "sum": "Nov. 10 and 11 in Brighton.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=geese-roadrunner-two-nights-nov-10-11",
-   "story": "geese-roadrunner-two-nights-nov-10-11",
-   "town": "Brighton",
-   "date": "2026-11-04",
-   "rank": 12
-  },
-  {
-   "h": "Jan Lisiecki Plays Mendelssohn and Schumann at Symphony Hall",
-   "sum": "Nov. 19 through 21 with the BSO.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=bso-lisiecki-mendelssohn-schumann-2026",
-   "story": "bso-lisiecki-mendelssohn-schumann-2026",
-   "town": "Back Bay",
-   "date": "2026-11-04",
-   "rank": 13
-  },
-  {
-   "h": "Zander Conducts Bruckner's Fifth at Symphony Hall",
-   "sum": "A single Nov. 22 performance with the Boston Philharmonic.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=boston-philharmonic-schubert-bruckner-2026",
-   "story": "boston-philharmonic-schubert-bruckner-2026",
-   "town": "Back Bay",
-   "date": "2026-11-04",
-   "rank": 14
   },
   {
    "h": "Boston Lyric Opera Opens 'A Streetcar Named Desire' This Week",
@@ -172,77 +104,6 @@
    "story": "huntington-adia-clora-snatch-joy-2026"
   },
   {
-   "h": "Rosin Brings Its 'Disreputable Classical Music' to Club Passim",
-   "sum": "The group plays Club Passim in Cambridge on Friday, Nov. 13.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=rosin-club-passim-nov-13-2026",
-   "town": "Cambridge",
-   "date": "2026-11-05",
-   "rank": 4,
-   "story": "rosin-club-passim-nov-13-2026"
-  },
-  {
-   "h": "Canadian Arabic Orchestra Honors Abdel Halim Hafez at Berklee",
-   "sum": "A Nov. 14 concert of Arabic golden-age song at the Berklee Performance Center.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=canadian-arabic-orchestra-nightingale-berklee-nov-2026",
-   "town": "Back Bay",
-   "date": "2026-11-05",
-   "rank": 6,
-   "story": "canadian-arabic-orchestra-nightingale-berklee-nov-2026"
-  },
-  {
-   "h": "Jazz Composers Alliance Plays Berklee Faculty Works on Nov. 9",
-   "sum": "Four Berklee faculty composers are featured at the Berklee Performance Center.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=jazz-composers-alliance-orchestra-berklee-nov-9-2026",
-   "town": "Back Bay",
-   "date": "2026-11-05",
-   "rank": 8,
-   "story": "jazz-composers-alliance-orchestra-berklee-nov-9-2026"
-  },
-  {
-   "h": "A Family Musical Retells 'The Emperor's New Clothes' at Berklee",
-   "sum": "A musical for families runs Thursday, Nov. 12 at 7 p.m.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=emperors-new-clothes-berklee-nov-12-2026",
-   "town": "Back Bay",
-   "date": "2026-11-05",
-   "rank": 10,
-   "story": "emperors-new-clothes-berklee-nov-12-2026"
-  },
-  {
-   "h": "Volunteers Turn Out for Second Saturdays at Jamaica Pond",
-   "sum": "A monthly stewardship morning with the Emerald Necklace Conservancy, Nov. 14.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=second-saturdays-jamaica-pond-nov-14-2026",
-   "town": "Jamaica Plain",
-   "date": "2026-11-05",
-   "rank": 12,
-   "story": "second-saturdays-jamaica-pond-nov-14-2026"
-  },
-  {
-   "h": "Haydn's The Creation at Symphony Hall, Nov. 5-7",
-   "sum": "The BSO and Philippe Jordan perform Haydn's oratorio at Symphony Hall this weekend.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=bso-haydn-creation-symphony-hall-2026",
-   "story": "bso-haydn-creation-symphony-hall-2026",
-   "box": true,
-   "town": "Back Bay",
-   "date": "2026-11-06",
-   "rank": 2
-  },
-  {
-   "h": "Boston Today and Tonight: Haydn's The Creation and Streetcar",
-   "sum": "Haydn's The Creation at 1:30 PM and Trinity Church's organ recital at 12:15 PM lead a day that ends with Streetcar at 7:30 PM.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-06",
-   "story": "today-and-tonight-2026-11-06",
-   "town": "Boston",
-   "date": "2026-11-06",
-   "rank": 1
-  },
-  {
    "h": "The Book of Esther Exhibition Runs Through January at the Gardner",
    "sum": "Dutch paintings, tapestries and Jewish ceremonial objects tell Esther's story in the Hostetter Gallery.",
    "outlet": "The Boston Rambler",
@@ -251,6 +112,36 @@
    "town": "Fenway",
    "date": "2026-11-06",
    "rank": 3
+  },
+  {
+   "h": "Pelin Su Yavuz Plays Piano at the Shaw-Roxbury Library, Nov. 14",
+   "sum": "Saturday, Nov. 14 at noon at the Shaw-Roxbury Branch Library, 149 Dudley Street in Roxbury, part of the Roxbury Concert Series.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=pelin-su-yavuz-roxbury-library-nov-14-2026",
+   "story": "pelin-su-yavuz-roxbury-library-nov-14-2026",
+   "town": "Roxbury",
+   "date": "2026-11-07",
+   "rank": 4
+  },
+  {
+   "h": "Friday Organ Recitals at Trinity Church in Copley Square",
+   "sum": "Midday organ recitals on Nov. 6, 13 and 20, with no charge for admission.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=trinity-church-organ-recitals-nov-2026",
+   "story": "trinity-church-organ-recitals-nov-2026",
+   "town": "Back Bay",
+   "date": "2026-10-31",
+   "rank": 4
+  },
+  {
+   "h": "Rosin Brings Its 'Disreputable Classical Music' to Club Passim",
+   "sum": "The group plays Club Passim in Cambridge on Friday, Nov. 13.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=rosin-club-passim-nov-13-2026",
+   "town": "Cambridge",
+   "date": "2026-11-05",
+   "rank": 4,
+   "story": "rosin-club-passim-nov-13-2026"
   },
   {
    "h": "Arlington Open Studios Opens Doors to 80 Local Artists",
@@ -263,6 +154,65 @@
    "rank": 4
   },
   {
+   "h": "Ballet BC Brings Its Contemporary Program to the Cutler Majestic, Nov. 21-22",
+   "sum": "Vancouver's Ballet BC performs at the Cutler Majestic Theatre on Nov. 21 at 8 p.m. and Nov. 22 at 2 p.m.",
+   "outlet": "Vivo Performing Arts",
+   "url": "https://www.vivoperformingarts.org/productions/ballet-bc/",
+   "town": "Downtown",
+   "date": "2026-11-07",
+   "rank": 5
+  },
+  {
+   "h": "Doja Cat's Tour Ma Vie Stops at TD Garden",
+   "sum": "Nov. 23 at TD Garden, with Latto on the bill.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=doja-cat-latto-td-garden-nov-23",
+   "story": "doja-cat-latto-td-garden-nov-23",
+   "town": "Downtown",
+   "date": "2026-11-04",
+   "rank": 5
+  },
+  {
+   "h": "48 Cellos Honor Pablo Casals in Roxbury, Nov. 8",
+   "sum": "Sunday, Nov. 8 at 3 p.m. at the Roxbury Community College Media Arts Center, marking Casals's 150th birthday, with no charge admission.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=all-cello-orchestra-casals-roxbury-nov-8-2026",
+   "story": "all-cello-orchestra-casals-roxbury-nov-8-2026",
+   "town": "Roxbury",
+   "date": "2026-11-07",
+   "rank": 6
+  },
+  {
+   "h": "Walk-In Piano Stations Open at Boston Public Library Branches",
+   "sum": "Piano stations at four branches run through Nov. 30 on a walk-in basis.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bpl-piano-learning-stations-nov-2026",
+   "story": "bpl-piano-learning-stations-nov-2026",
+   "town": "Copley Square",
+   "date": "2026-10-31",
+   "rank": 6
+  },
+  {
+   "h": "A Saturday Recital Showcases the Passim School of Music",
+   "sum": "Nov. 14 at noon in Harvard Square, with roots and bluegrass on the program.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=passim-school-of-music-recital-nov-14-2026",
+   "story": "passim-school-of-music-recital-nov-14-2026",
+   "town": "Cambridge",
+   "date": "2026-11-04",
+   "rank": 6
+  },
+  {
+   "h": "Canadian Arabic Orchestra Honors Abdel Halim Hafez at Berklee",
+   "sum": "A Nov. 14 concert of Arabic golden-age song at the Berklee Performance Center.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=canadian-arabic-orchestra-nightingale-berklee-nov-2026",
+   "town": "Back Bay",
+   "date": "2026-11-05",
+   "rank": 6,
+   "story": "canadian-arabic-orchestra-nightingale-berklee-nov-2026"
+  },
+  {
    "h": "The Boston International Antiquarian Book Fair Opens at the Hynes",
    "sum": "Rare books, manuscripts and maps from about 110 dealers fill the Hynes through Sunday.",
    "outlet": "The Boston Rambler",
@@ -271,6 +221,46 @@
    "town": "Back Bay",
    "date": "2026-11-06",
    "rank": 6
+  },
+  {
+   "h": "Holiday Pops 2026 Opens a 41-Show Run at Symphony Hall",
+   "sum": "Shows run Dec. 3 through Dec. 28.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=holiday-pops-2026-symphony-hall",
+   "story": "holiday-pops-2026-symphony-hall",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 7
+  },
+  {
+   "h": "Berklee Singers Night Takes On the Music of Journey, Nov. 17",
+   "sum": "Tuesday, Nov. 17 at 8 p.m. at the Berklee Performance Center, 136 Massachusetts Avenue in the Back Bay.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=berklee-singers-night-journey-nov-17-2026",
+   "story": "berklee-singers-night-journey-nov-17-2026",
+   "town": "Back Bay",
+   "date": "2026-11-07",
+   "rank": 8
+  },
+  {
+   "h": "Boston Ballet's Nutcracker Returns to the Opera House",
+   "sum": "Performances begin Nov. 27.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-ballet-nutcracker-2026",
+   "story": "boston-ballet-nutcracker-2026",
+   "town": "Theatre District",
+   "date": "2026-11-04",
+   "rank": 8
+  },
+  {
+   "h": "Jazz Composers Alliance Plays Berklee Faculty Works on Nov. 9",
+   "sum": "Four Berklee faculty composers are featured at the Berklee Performance Center.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=jazz-composers-alliance-orchestra-berklee-nov-9-2026",
+   "town": "Back Bay",
+   "date": "2026-11-05",
+   "rank": 8,
+   "story": "jazz-composers-alliance-orchestra-berklee-nov-9-2026"
   },
   {
    "h": "Pokey LaFarge Celebrates Rent Money in Somerville",
@@ -283,6 +273,44 @@
    "rank": 8
   },
   {
+   "h": "Heritage Chorale Opens Its 90th Anniversary Season in Framingham, Nov. 22",
+   "sum": "Nevins Hall hosts a Handel and Haydn program from 4 to 6 p.m. with four soloists and an 18-piece orchestra.",
+   "outlet": "The Boston Calendar",
+   "url": "https://www.thebostoncalendar.com/events/heritage-chorale-90th-anniversary-concert",
+   "town": "Framingham",
+   "date": "2026-11-07",
+   "rank": 9
+  },
+  {
+   "h": "Handel and Haydn's Messiah Returns to Symphony Hall",
+   "sum": "Three performances, Nov. 27 through 29.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
+   "story": "handel-haydn-messiah-symphony-hall-2026",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 9
+  },
+  {
+   "h": "Nemanja Radulović and Double Sens Play Beethoven and Bach at Jordan Hall",
+   "sum": "Beethoven and Bach, including a reimagined Kreutzer Sonata, on Nov. 13 at 8 p.m. at NEC's Jordan Hall.",
+   "outlet": "Vivo Performing Arts",
+   "url": "https://www.vivoperformingarts.org/productions/nemanja-radulovic-and-double-sens/",
+   "town": "Fenway",
+   "date": "2026-11-07",
+   "rank": 10
+  },
+  {
+   "h": "A Family Musical Retells 'The Emperor's New Clothes' at Berklee",
+   "sum": "A musical for families runs Thursday, Nov. 12 at 7 p.m.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=emperors-new-clothes-berklee-nov-12-2026",
+   "town": "Back Bay",
+   "date": "2026-11-05",
+   "rank": 10,
+   "story": "emperors-new-clothes-berklee-nov-12-2026"
+  },
+  {
    "h": "Weekend Picks Include Streetcar, a Book Fair and Arlington Open Studios",
    "sum": "WBUR's weekend preview covers Boston Lyric Opera's Streetcar, the book fair and Arlington's open studios.",
    "outlet": "WBUR",
@@ -290,6 +318,92 @@
    "town": "Boston",
    "date": "2026-11-04",
    "rank": 10
+  },
+  {
+   "h": "Coltrane 100 Brings Five Jazz Voices to Berklee on Nov. 21",
+   "sum": "A centennial tribute to John Coltrane with Joe Lovano, Melissa Aldana, Leo Genovese, Linda May Han Oh and Jeff Watts at 8 p.m.",
+   "outlet": "Berklee Performance Center",
+   "url": "https://www.berklee.edu/BPC/events/coltrane-100-both-directions-at-once",
+   "town": "Back Bay",
+   "date": "2026-11-07",
+   "rank": 11
+  },
+  {
+   "h": "Golijov's Creation Gets Its World Premiere at Symphony Hall",
+   "sum": "Nov. 12 through 14 with the Boston Symphony Orchestra.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-golijov-creation-world-premiere-2026",
+   "story": "bso-golijov-creation-world-premiere-2026",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 11
+  },
+  {
+   "h": "Flamenco Duo Triana Maciel and Nino de los Reyes Visit Roxbury Community College",
+   "sum": "PerpetuARTE, a no-charge afternoon program on Nov. 21 at 3 p.m., presented by Vivo Performing Arts.",
+   "outlet": "Vivo Performing Arts",
+   "url": "https://www.vivoperformingarts.org/productions/triana-maciel-nino-de-los-reyes/",
+   "town": "Roxbury",
+   "date": "2026-11-07",
+   "rank": 12
+  },
+  {
+   "h": "Geese Play Two Nights at Roadrunner",
+   "sum": "Nov. 10 and 11 in Brighton.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=geese-roadrunner-two-nights-nov-10-11",
+   "story": "geese-roadrunner-two-nights-nov-10-11",
+   "town": "Brighton",
+   "date": "2026-11-04",
+   "rank": 12
+  },
+  {
+   "h": "Volunteers Turn Out for Second Saturdays at Jamaica Pond",
+   "sum": "A monthly stewardship morning with the Emerald Necklace Conservancy, Nov. 14.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=second-saturdays-jamaica-pond-nov-14-2026",
+   "town": "Jamaica Plain",
+   "date": "2026-11-05",
+   "rank": 12,
+   "story": "second-saturdays-jamaica-pond-nov-14-2026"
+  },
+  {
+   "h": "Rob Kapilow Takes On Mozart's Clarinet Concerto With A Far Cry",
+   "sum": "A talk and performance at Jordan Hall on Nov. 22 at 3 p.m., part of the What Makes It Great? series.",
+   "outlet": "Vivo Performing Arts",
+   "url": "https://www.vivoperformingarts.org/productions/what-makes-it-great-mozart-2026/",
+   "town": "Fenway",
+   "date": "2026-11-07",
+   "rank": 13
+  },
+  {
+   "h": "Jan Lisiecki Plays Mendelssohn and Schumann at Symphony Hall",
+   "sum": "Nov. 19 through 21 with the BSO.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-lisiecki-mendelssohn-schumann-2026",
+   "story": "bso-lisiecki-mendelssohn-schumann-2026",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 13
+  },
+  {
+   "h": "The 38th Boston Jewish Film Festival Runs Through Nov. 15",
+   "sum": "Films screen at the Coolidge Corner Theatre, Brattle Theater, JCC Greater Boston and the MFA from Nov. 4 to 15.",
+   "outlet": "Boston JCC",
+   "url": "https://www.bostonjcc.org/program/boston-jewish-film-festival/",
+   "town": "Boston",
+   "date": "2026-11-07",
+   "rank": 14
+  },
+  {
+   "h": "Zander Conducts Bruckner's Fifth at Symphony Hall",
+   "sum": "A single Nov. 22 performance with the Boston Philharmonic.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-philharmonic-schubert-bruckner-2026",
+   "story": "boston-philharmonic-schubert-bruckner-2026",
+   "town": "Back Bay",
+   "date": "2026-11-04",
+   "rank": 14
   }
  ]
 }
