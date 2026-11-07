@@ -1263,7 +1263,7 @@ h2.room{text-shadow:0 2px 0 #000,0 0 30px rgba(0,0,0,.7)!important;filter:satura
   </header>
   <nav class="navbar" id="nav" aria-label="Sections">
     <button class="nb" data-go="front">Front page</button>
-    <button class="nb" data-go="stories">Boston Stories</button>
+    <button class="nb" data-go="stories">Arts &amp; Events Stories</button>
     <button class="nb" data-go="bars">Boston News</button>
     <button class="nb" data-go="crime"><img class="cwmark xs" src="img/prowler-mark.jpg" alt="">Crime Watch</button>
     <button class="nb pmnb" data-go="tech">Tech &amp; AI</button>
@@ -1770,7 +1770,7 @@ function vInk(){const L=STORIES.filter(s=>s.topic==='ink');return `<h2 class="ro
 const FEATURES=new Set([]);
 function vStories(){
   const LS=STORIES.filter(s=>!FEATURES.has(s.slug)).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
-  return `<h2 class="room">Boston Stories</h2>
+  return `<h2 class="room">Boston Arts &amp; Events Stories</h2>
   <div class="sgrid">${LS.map(storyCard).join('')}</div>`;
 }
 const PAY_LINK='';
