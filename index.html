@@ -2964,5 +2964,38 @@ const go=()=>{const m=document.querySelector('header.mast');if(!m||document.getE
 const d=document.createElement('span');d.id='flagLine';d.setAttribute('aria-hidden','true');d.title=W+' in signal flags';
 d.innerHTML=[...W].map(c=>c===' '?'<i class="sp"></i>':'<i class="f'+c+'" data-l="'+c+'"></i>').join('');m.appendChild(d)};
 go();addEventListener('DOMContentLoaded',go)})();</script>
+<style id="nauticalPage">
+/* Rest of the page in signal-flag colors; no yellow story lines */
+html,html.ep-cov,html body{background:#0A1428!important;background-image:none!important}
+html body .ovl-vig{background:none!important}
+html body #view section.box,html body #coverSlot>.box{background:#0f1f36!important;border-color:#D4ECF526!important;border-top:3px solid #B5123A!important;box-shadow:0 8px 22px #0008!important}
+html body .cvr .sea-h b,html body .sea-h.nat b{color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:none!important;font-family:Georgia,serif!important}
+html body .cvr .sea-h button{color:#D4ECF5!important;-webkit-text-fill-color:#D4ECF5!important}
+html body .cvr .nl-bar{background:#B5123A!important;box-shadow:none!important;animation:none!important}
+html body .cvr .sea-g button{background:#002D57!important;border-left:3px solid #B5123A!important;box-shadow:none!important}
+html body .cvr .sea-g button:nth-child(even){border-left-color:#fff!important}
+html body .cvr .sea-g button small{color:#D4ECF5!important;-webkit-text-fill-color:#D4ECF5!important}
+html body .cvr .sea-g button b{color:#fff!important;-webkit-text-fill-color:#fff!important}
+html body .cvr .sea-g button:hover{background:#0F4C9A!important}
+html body .cvr .nat-l button{color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:none!important;border-color:#D4ECF51f!important}
+html body .cvr .nat-l button:hover{color:#D4ECF5!important;-webkit-text-fill-color:#D4ECF5!important}
+html body .cvr .nat-l button.natbox{background:#002D57!important;background-image:none!important;border:1px solid #D4ECF540!important;border-left:4px solid #B5123A!important;box-shadow:none!important;animation:none!important}
+html body .cvr .cvtag{background:#D4ECF5!important;color:#002D57!important;-webkit-text-fill-color:#002D57!important;box-shadow:none!important;animation:none!important}
+html body .cvr .newtag{background:#B5123A!important;color:#fff!important;-webkit-text-fill-color:#fff!important;box-shadow:none!important;animation:none!important}
+html body #coverSlot .bp,html body #coverSlot .ep{border-color:#D4ECF5!important;box-shadow:0 6px 18px #0008!important;animation:none!important}
+html body .evtk{background:#002D57!important;border-color:#D4ECF540!important}
+html body .evtk .th{color:#fff!important;-webkit-text-fill-color:#fff!important}
+html body .evtk .th span{color:#D4ECF5!important}
+html body .evtk .td{color:#D4ECF5!important}
+html body .evtk .tr{border-color:#D4ECF51f!important}
+html body a.s2{background:#002D57!important;border:1px solid #D4ECF540!important;border-left:5px solid #B5123A!important;box-shadow:none!important;animation:none!important}
+html body a.s2,html body a.s2 *{color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:none!important}
+html body p.jtemg{background:#002D57!important;border-color:#B5123A!important}
+html body p.jtemg b{color:#fff!important}
+html body .site-footer a[href^="mailto"]{color:#D4ECF5!important;-webkit-text-fill-color:#D4ECF5!important}
+html body .site-footer .inmlogo{color:#fff!important}
+html body #coverSlot button.cimg{box-shadow:0 0 0 1px #D4ECF566,0 8px 20px #0009!important;animation:none!important}
+html body .cvr .sea-h button{margin-left:12px!important}
+</style>
 </body>
 </html>
