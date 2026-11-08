@@ -20,15 +20,15 @@ function when(e){const d=e.date?new Date(e.date+'T12:00:00'):null;
   tm:String(e.time||'').replace(/:00/g,'').replace(/\s*(am|pm)/gi,(m,x)=>' '+x.toUpperCase()).trim()}}
 window.__epKind=(e,t)=>kind(e,t);
 const KICK={gala:'In Concert',marquee:'Now Playing',gig:'Live Music',blue:'Live Jazz',club:'Live',fair:'Come One, Come All',gallery:'The Arts'};
-const GIGPAL=[{bg:'#e8341c',ink:'#fff',acc:'#ffd400'},{bg:'#1b4dff',ink:'#fff',acc:'#ffd400'},{bg:'#ffcc00',ink:'#111',acc:'#e8341c'},{bg:'#0f9d6b',ink:'#fff',acc:'#ffe14d'},{bg:'#ff4fa3',ink:'#fff',acc:'#111'},{bg:'#111',ink:'#fff',acc:'#ff6a1a'}];
-const GALPAL=[['#ffd400','#e3170a','#1b4dff'],['#e3170a','#1b4dff','#ffd400'],['#1b4dff','#ffd400','#e3170a']];
+const GIGPAL=[{bg:'#B5123A',ink:'#fff',acc:'#D4ECF5'},{bg:'#0F4C9A',ink:'#fff',acc:'#D4ECF5'},{bg:'#D4ECF5',ink:'#0A1428',acc:'#B5123A'},{bg:'#0F4C9A',ink:'#fff',acc:'#D4ECF5'},{bg:'#B5123A',ink:'#fff',acc:'#0A1428'},{bg:'#0A1428',ink:'#fff',acc:'#D4ECF5'}];
+const GALPAL=[['#D4ECF5','#B5123A','#0F4C9A'],['#B5123A','#0F4C9A','#D4ECF5'],['#0F4C9A','#D4ECF5','#B5123A']];
 /* --- art --- */
 function fan(col){let s='<svg class="art fan" viewBox="0 0 200 104" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><g fill="none" stroke="'+col+'" stroke-width=".8">';
  for(let i=0;i<=18;i++){const a=Math.PI*(i/18),x=100-Math.cos(a)*96,y=102-Math.sin(a)*96;s+='<line x1="100" y1="102" x2="'+x.toFixed(1)+'" y2="'+y.toFixed(1)+'"/>'}
  [30,52,74,96].forEach(r=>s+='<path d="M'+(100-r)+' 102A'+r+' '+r+' 0 0 1 '+(100+r)+' 102"/>');return s+'</g><circle cx="100" cy="102" r="14" fill="'+col+'"/></svg>'}
 function rule(col){return '<svg class="art rule" viewBox="0 0 120 10" aria-hidden="true"><g fill="'+col+'"><rect x="0" y="4.5" width="48" height="1"/><rect x="72" y="4.5" width="48" height="1"/><path d="M60 0l5 5-5 5-5-5z"/><circle cx="51" cy="5" r="1.5"/><circle cx="69" cy="5" r="1.5"/></g></svg>'}
 function speaker(c){let s='<svg class="art spk" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#0006"/>';[44,36,28,18].forEach((r,i)=>s+='<circle cx="50" cy="50" r="'+r+'" fill="none" stroke="'+c+'" stroke-opacity="'+(0.25+i*0.15)+'" stroke-width="'+(i===3?6:2)+'"/>');return s+'<circle cx="50" cy="50" r="8" fill="'+c+'"/></svg>'}
-function bunting(h){const C=['#e3170a','#1b4dff','#ffffff','#0f9d6b','#ff8a00','#7a2bd9'];let s='<svg class="art bunt" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 4 Q100 22 200 4" fill="none" stroke="#5a1606" stroke-width="1.2"/>';
+function bunting(h){const C=['#B5123A','#0F4C9A','#ffffff','#0F4C9A','#D4ECF5','#B5123A'];let s='<svg class="art bunt" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 4 Q100 22 200 4" fill="none" stroke="#5a1606" stroke-width="1.2"/>';
  for(let i=0;i<10;i++){const x=6+i*19,y=4+Math.sin(Math.PI*(x/200))*9.5;s+='<path d="M'+x+' '+y.toFixed(1)+'l14 '+(1).toFixed(1)+'l-7 16z" fill="'+C[(i+h)%C.length]+'" stroke="#0002" stroke-width=".5"/>'}return s+'</svg>'}
 function bauhaus(p,h){const r=h%3;return '<svg class="art bau" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="'+(r===0?68:34)+'" cy="34" r="30" fill="'+p[0]+'"/><rect x="'+(r===1?52:8)+'" y="56" width="40" height="40" fill="'+p[1]+'"/><path d="M'+(r===2?40:58)+' 96 L'+(r===2?70:88)+' 44 L'+(r===2?100:118)+' 96z" fill="'+p[2]+'"/><rect x="0" y="0" width="100" height="3" fill="#111"/></svg>'}
 function eq(n){let s='<span class="art eq" aria-hidden="true">';for(let i=0;i<n;i++)s+='<i style="animation-delay:-'+((i*0.37)%1.4).toFixed(2)+'s;height:'+(20+((i*53)%70))+'%"></i>';return s+'</span>'}
@@ -40,7 +40,7 @@ window.evPoster=function(a,s){try{
  const ven=H(e.venue||''),hood=H(e.hood||''),vl=ven+(hood&&!ven.toLowerCase().includes(hood.toLowerCase())?' · '+hood:'');
  const title='<span class="ep-t '+sz+'">'+H(t)+'</span>',k='<span class="ep-k">'+(st==='marquee'&&/comed/i.test(t)?'Live Comedy':KICK[st])+'</span>',cta='<span class="ep-cta">Tickets &amp; info →</span>';
  const dl=[w.dw,w.MO&&(w.MO+' '+w.DY),w.tm].filter(Boolean).join(' · ');let h2,sty='';
- if(st==='gala')h2=fan('#b48a2c')+k+title+'<span><span class="ep-d">'+H(dl)+'</span></span><span class="ep-v">'+vl+'</span>';
+ if(st==='gala')h2=fan('#D4ECF5')+k+title+'<span><span class="ep-d">'+H(dl)+'</span></span><span class="ep-v">'+vl+'</span>';
  else if(st==='marquee')h2='<span class="beam b1"></span><span class="beam b2"></span>'+k+title+'<span class="ep-foot"><span><span class="ep-d" style="display:block">'+H(dl)+'</span><span class="ep-v" style="display:block">'+vl+'</span></span>'+cta+'</span>';
  else if(st==='gig'){const P=GIGPAL[h%GIGPAL.length];sty='--bg:'+P.bg+';--ink:'+P.ink+';--acc:'+P.acc;h2=speaker(P.ink)+k+title+'<span class="ep-d">'+H(w.MO)+'<b>'+w.DY+'</b>'+H(w.tm)+'</span><span class="ep-foot"><span class="ep-v">'+vl+'</span>'+cta+'</span>'}
  else if(st==='blue')h2='<span class="ep-d">'+H(w.dw)+'<b>'+w.DY+'</b>'+H(w.MO)+'<i>'+H(w.tm)+'</i></span><span class="ep-main">'+k+title+'<span class="ep-v">'+vl+'</span></span>'+cta;
@@ -58,7 +58,7 @@ window.bigPoster=function(e,region){try{
  const title='<span class="bp-t '+sz+'">'+H(t)+'</span>';const reg=H(region||'');
  const go='<span class="bp-go">'+(e.url?'Tickets &amp; info':'See the calendar')+' →</span>';
  let b,sty='';
- if(st==='gala')b='<span class="bp-frame"></span>'+fan('#a8822f')+'<span class="bp-k">'+KICK.gala+' · '+reg+'</span>'+title+rule('#a8822f')+'<span class="bp-d">'+H(w.DW)+'<br>'+H(w.MON)+' '+w.DY+(w.tm?' · '+H(w.tm):'')+'</span><span class="bp-v">'+ven+(addr?'<small>'+addr+'</small>':'')+'</span>'+go;
+ if(st==='gala')b='<span class="bp-frame"></span>'+fan('#D4ECF5')+'<span class="bp-k">'+KICK.gala+' · '+reg+'</span>'+title+rule('#D4ECF5')+'<span class="bp-d">'+H(w.DW)+'<br>'+H(w.MON)+' '+w.DY+(w.tm?' · '+H(w.tm):'')+'</span><span class="bp-v">'+ven+(addr?'<small>'+addr+'</small>':'')+'</span>'+go;
  else if(st==='marquee')b='<span class="cur l"></span><span class="cur r"></span><span class="beam b1"></span><span class="beam b2"></span><span class="bp-sign"><span>'+(/comed/i.test(t)?'Live Comedy':'Now Playing')+'</span></span>'+title+'<span class="bp-d">'+H(w.dw)+' · '+H(w.MO)+' '+w.DY+(w.tm?' · '+H(w.tm):'')+'</span><span class="bp-v">'+ven+(hood?'<small>'+hood+'</small>':'')+'</span>'+go;
  else if(st==='gig'){const P=GIGPAL[h%GIGPAL.length];sty='--bg:'+P.bg+';--ink:'+P.ink+';--acc:'+P.acc;b='<span class="bp-k">'+reg+' · Live</span>'+title+speaker(P.ink)+'<span class="bp-tear"><b>'+H(w.dw)+'</b><b class="n">'+H(w.MO)+' '+w.DY+'</b>'+(w.tm?'<b>'+H(w.tm)+'</b>':'')+'</span><span class="bp-v">'+ven+(hood?' · '+hood:'')+'</span>'+go}
  else if(st==='blue')b='<span class="disc"><b>'+w.DY+'</b><i>'+H(w.MO)+'</i></span>'+'<span class="bp-k">'+KICK.blue+' · '+reg+'</span>'+title+'<span class="bars"><i></i><i></i><i></i></span><span class="bp-d">'+H(w.DW)+(w.tm?' · '+H(w.tm):'')+'</span><span class="bp-v">'+ven+(hood?'<small>'+hood+'</small>':'')+'</span>'+go;
@@ -83,8 +83,8 @@ window.weekPoster=function(region,E){if(!/jamestown|rhode island/i.test(region||
 /* --- story & headline cards: every margin card is artwork --- */
 function vinyl(lab){let s='<svg class="art vin" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="49" fill="#0c0c0c"/>';for(let r=46;r>20;r-=2.2)s+='<circle cx="50" cy="50" r="'+r.toFixed(1)+'" fill="none" stroke="#ffffff'+(r%4<2?'14':'0a')+'" stroke-width=".6"/>';return s+'<path d="M50 1a49 49 0 0 1 42 24L50 50z" fill="#ffffff10"/><circle cx="50" cy="50" r="17" fill="'+lab+'"/><circle cx="50" cy="50" r="2.2" fill="#0c0c0c"/></svg>'}
 function masks(c){return '<svg class="art msk" viewBox="0 0 120 80" aria-hidden="true"><g fill="none" stroke="'+c+'" stroke-width="2.2"><path d="M8 10q22-8 44 0v22c0 16-10 28-22 28S8 48 8 32z"/><path d="M68 18q22-8 44 0v22c0 16-10 28-22 28S68 56 68 40z"/></g><g fill="'+c+'"><path d="M18 26q5-4 10 0q-5 3-10 0zM32 26q5-4 10 0q-5 3-10 0zM20 42q10 9 20 0q-10 3-20 0z"/><path d="M78 34q5 4 10 0q-5-3-10 0zM92 34q5 4 10 0q-5-3-10 0zM80 56q10-9 20 0q-10-3-20 0z"/></g></svg>'}
-function confetti(h){const C=['#ff4fa3','#ffd400','#1b4dff','#0f9d6b','#ff6a1a','#7a2bd9'];let s='<svg class="art cft" viewBox="0 0 300 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true">';let x=h;for(let i=0;i<34;i++){x=(x*1103515245+12345)>>>0;const px=x%300,py=(x>>>9)%180,r=(x>>>17)%3,c=C[(x>>>5)%C.length];s+=r===0?'<circle cx="'+px+'" cy="'+py+'" r="3" fill="'+c+'"/>':'<rect x="'+px+'" y="'+py+'" width="7" height="3" fill="'+c+'" transform="rotate('+((x>>>11)%180)+' '+px+' '+py+')"/>'}return s+'</svg>'}
-const STPAL=[['#0b1f3a','#e8b818'],['#3a0b1f','#ff8fb1'],['#0b3a2e','#7fffd4'],['#2a0b3a','#d9a4ff'],['#3a240b','#ffb347']];
+function confetti(h){const C=['#B5123A','#D4ECF5','#0F4C9A','#0F4C9A','#D4ECF5','#B5123A'];let s='<svg class="art cft" viewBox="0 0 300 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true">';let x=h;for(let i=0;i<34;i++){x=(x*1103515245+12345)>>>0;const px=x%300,py=(x>>>9)%180,r=(x>>>17)%3,c=C[(x>>>5)%C.length];s+=r===0?'<circle cx="'+px+'" cy="'+py+'" r="3" fill="'+c+'"/>':'<rect x="'+px+'" y="'+py+'" width="7" height="3" fill="'+c+'" transform="rotate('+((x>>>11)%180)+' '+px+' '+py+')"/>'}return s+'</svg>'}
+const STPAL=[['#0F1F36','#D4ECF5'],['#0F1F36','#B5123A'],['#0F1F36','#D4ECF5'],['#002D57','#EEE9E5'],['#0F1F36','#D4ECF5']];
 window.artCard=function(a,s){try{
  if(s.story&&!s.ext&&typeof STORIES!=='undefined'&&STORIES.some(x=>x.slug===s.story)){const st=STORIES.find(x=>x.slug===s.story);const box=a.parentNode;box.classList.add('evp');['border','border-top','outline'].forEach(x=>box.style.setProperty(x,'0','important'));
   const mast=window.EP_MAST||{};const L=String(st.title).length;
@@ -98,7 +98,7 @@ window.artCard=function(a,s){try{
  const outlet=H(s.name||'');let b,sty='';
  if(v==='press')b='<span class="ac-mast">'+outlet+'</span><span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read it at '+outlet+' ↗</span>';
  else if(v==='vinyl'){const P=STPAL[h%STPAL.length];sty='--bg:'+P[0]+';--ac:'+P[1];b=vinyl(P[1])+'<span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read the story →</span>'}
- else if(v==='stage')b='<span class="beam b1"></span>'+masks('#e8b818')+'<span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read the story →</span>';
+ else if(v==='stage')b='<span class="beam b1"></span>'+masks('#D4ECF5')+'<span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read the story →</span>';
  else if(v==='party')b=confetti(h)+'<span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read the story →</span>';
  else{const P=GALPAL[h%3];sty='--c1:'+P[0]+';--c2:'+P[1];b='<span class="ac-band"></span><span class="ac-dot"></span><span class="ac-k">'+kick+'</span><span class="ac-t '+sz+'">'+H(t)+'</span><span class="ac-go">Read the story →</span>'}
  const box=a.parentNode;box.classList.add('evp');['border','border-top','outline'].forEach(x=>box.style.setProperty(x,'0','important'));
