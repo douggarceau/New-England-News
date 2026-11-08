@@ -2885,5 +2885,84 @@ html body div.lsrow div.lspot.t-ad .ls-tag::before{background:#B5123A!important}
 html body div.lsrow div.lspot.t-ad .ls-big em,html body div.lsrow div.lspot.t-ad .ls-big i,html body div.lsrow div.lspot.t-ad .ls-big span{color:#D4ECF5!important}
 html body div.lsrow div.lspot.t-ad::before,html body div.lsrow div.lspot.t-ad::after{background:none!important;background-image:none!important}
 </style>
+<style id="nauticalTop">
+/* Upper area in signal-flag colors: navy, white, signal red, signal yellow, haint blue */
+:root{--nv:#0A1428;--yb:#002D57;--sr:#B5123A;--sy:#E8B820;--hb:#D4ECF5;--sm:#8A9DA1}
+html body header.mast{background:linear-gradient(180deg,#0A1428 0%,#002D57 100%)!important;border-bottom:0!important;padding-bottom:4px!important}
+html body .clsbar.top,html body .clsbar.bot{background:#002D57!important;border-color:#B5123A!important;color:#fff!important}
+#flagLine{display:flex!important;flex-direction:row!important;width:100%;box-sizing:border-box;justify-content:center;align-items:flex-start;gap:8px;flex-wrap:nowrap;padding:12px 8px 14px;margin:0;background:transparent;border-bottom:3px solid #B5123A;position:relative;overflow:hidden}
+#flagLine::before{content:"";position:absolute;left:0;right:0;top:12px;height:1px;background:#D4ECF566}
+#flagLine i{position:relative;flex:none;width:40px;height:27px;box-shadow:0 2px 3px #0006;outline:1px solid #0A142833}
+#flagLine i.sp{width:14px;box-shadow:none;outline:0;background:none}
+#flagLine i[data-l]:hover::after{content:attr(data-l);position:absolute;left:50%;top:27px;transform:translateX(-50%);font:700 10px/1 Georgia,serif;color:#fff}
+.fA{background:#fff linear-gradient(90deg,#fff 50%,#0F4C9A 50%);clip-path:polygon(0 0,100% 0,72% 50%,100% 100%,0 100%)}
+.fB{background:#B5123A;clip-path:polygon(0 0,100% 0,72% 50%,100% 100%,0 100%)}
+.fC{background:linear-gradient(#0F4C9A 0 20%,#fff 20% 40%,#B5123A 40% 60%,#fff 60% 80%,#0F4C9A 80%)}
+.fD{background:linear-gradient(#E8B820 0 22%,#0F4C9A 22% 78%,#E8B820 78%)}
+.fE{background:linear-gradient(#0F4C9A 50%,#B5123A 50%)}
+.fF{background:#fff;position:relative}.fF::before{content:"";position:absolute;inset:0;background:#B5123A;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.fG{background:repeating-linear-gradient(90deg,#E8B820 0 16.66%,#0F4C9A 16.66% 33.33%)}
+.fH{background:linear-gradient(90deg,#fff 50%,#B5123A 50%)}
+.fI{background:radial-gradient(circle,#111 0 32%,#E8B820 33%)}
+.fJ{background:linear-gradient(#0F4C9A 0 33%,#fff 33% 67%,#0F4C9A 67%)}
+.fK{background:linear-gradient(90deg,#E8B820 50%,#0F4C9A 50%)}
+.fL{background:conic-gradient(#111 0 25%,#E8B820 0 50%,#111 0 75%,#E8B820 0)}
+.fM{background:linear-gradient(33deg,transparent 44%,#fff 44% 56%,transparent 56%),linear-gradient(-33deg,#0F4C9A 44%,#fff 44% 56%,#0F4C9A 56%)}
+.fN{background:conic-gradient(#0F4C9A 0 25%,#fff 0 50%,#0F4C9A 0 75%,#fff 0) 0 0/50% 50%}
+.fO{background:linear-gradient(to bottom left,#B5123A 50%,#E8B820 50%)}
+.fP{background:#0F4C9A;box-shadow:inset 0 0 0 8px #0F4C9A,inset 0 0 0 40px #fff!important}
+.fQ{background:#E8B820}
+.fR{background:linear-gradient(90deg,transparent 42%,#E8B820 42% 58%,transparent 58%),linear-gradient(#B5123A 40%,#E8B820 40% 60%,#B5123A 60%)}
+.fS{background:#fff;box-shadow:inset 0 0 0 8px #fff,inset 0 0 0 40px #0F4C9A!important}
+.fT{background:linear-gradient(90deg,#B5123A 0 33%,#fff 33% 67%,#0F4C9A 67%)}
+.fU{background:conic-gradient(#fff 0 25%,#B5123A 0 50%,#fff 0 75%,#B5123A 0)}
+.fV{background:linear-gradient(33deg,transparent 44%,#B5123A 44% 56%,transparent 56%),linear-gradient(-33deg,#fff 44%,#B5123A 44% 56%,#fff 56%)}
+.fW{background:#0F4C9A;box-shadow:inset 0 0 0 4px #0F4C9A,inset 0 0 0 8px #fff,inset 0 0 0 40px #B5123A!important}
+.fX{background:linear-gradient(90deg,transparent 42%,#0F4C9A 42% 58%,transparent 58%),linear-gradient(#fff 40%,#0F4C9A 40% 60%,#fff 60%)}
+.fY{background:repeating-linear-gradient(45deg,#E8B820 0 5px,#B5123A 5px 10px)}
+.fZ{background:conic-gradient(from -45deg,#E8B820 0 25%,#0F4C9A 0 50%,#B5123A 0 75%,#111 0)}
+@media(max-width:640px){#flagLine{gap:3px;padding:9px 4px 11px}#flagLine i{width:22px;height:15px}#flagLine i.sp{width:6px}#flagLine::before{top:9px}.fP,.fS{box-shadow:inset 0 0 0 5px currentColor}.fP{box-shadow:inset 0 0 0 5px #0F4C9A,inset 0 0 0 30px #fff!important}.fS{box-shadow:inset 0 0 0 5px #fff,inset 0 0 0 30px #0F4C9A!important}.fW{box-shadow:inset 0 0 0 3px #0F4C9A,inset 0 0 0 6px #fff,inset 0 0 0 30px #B5123A!important}}
+/* mast buttons: plain flag-style tabs, no glow */
+html body #paperBtn,html body #appBtn.mastApp{width:104px!important;height:70px!important;border-radius:4px!important;animation:none!important;text-shadow:none!important;font:700 12px/1.2 Georgia,serif!important;letter-spacing:.06em!important;text-transform:uppercase!important;padding:16px 8px 8px!important;overflow:hidden!important}
+html body #paperBtn{background:#fff!important;color:#002D57!important;-webkit-text-fill-color:#002D57!important;border:0!important;box-shadow:0 3px 8px #0008!important}
+html body #appBtn.mastApp{background:#B5123A!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:0!important;box-shadow:0 3px 8px #0008!important}
+html body #paperBtn::before,html body #appBtn.mastApp::before{content:""!important;position:absolute!important;left:0;right:0;top:0;height:7px;opacity:1!important;animation:none!important;background:linear-gradient(90deg,#0F4C9A 0 33%,#fff 33% 67%,#B5123A 67%)!important;border-radius:0!important;inset:0 0 auto 0!important}
+html body #appBtn.mastApp::before{background:linear-gradient(90deg,#E8B820 50%,#0A1428 50%)!important}
+html body #appBtn.mastApp::after,html body #paperBtn::after{display:none!important}
+html body #paperBtn:hover,html body #appBtn.mastApp:hover{filter:brightness(1.08);box-shadow:0 4px 12px #000a!important}
+@media(max-width:760px){html body #paperBtn,html body #appBtn.mastApp{width:92px!important;height:58px!important;font-size:10.5px!important;padding-top:12px!important}}
+/* nav: navy pills, white type, red for the current page */
+html body nav#nav.navbar{background:#0A1428!important;border:1px solid #D4ECF533!important;box-shadow:0 2px 10px #0008!important}
+html body nav#nav.navbar .nb.nb{background:#002D57!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #D4ECF540!important;box-shadow:none!important;text-shadow:none!important;animation:none!important}
+html body nav#nav.navbar .nb.nb::before,html body nav#nav.navbar .nb.nb::after{box-shadow:none!important;animation:none!important}
+html body nav#nav.navbar .nb.nb:hover{background:#0F4C9A!important;border-color:#D4ECF5!important}
+html body nav#nav.navbar .nb.nb[aria-current="page"]{background:#fff!important;color:#002D57!important;-webkit-text-fill-color:#002D57!important;border-color:#fff!important;box-shadow:inset 0 -3px 0 #B5123A!important}
+html body nav#nav .jpost{background:#E8B820!important;color:#0A1428!important;-webkit-text-fill-color:#0A1428!important;box-shadow:none!important;animation:none!important;font-family:Georgia,serif!important}
+html body nav#nav .new3-glow{background:#B5123A!important;color:#fff!important;box-shadow:none!important;animation:none!important}
+html body nav#nav input{background:#fff!important;color:#0A1428!important;border:1px solid #D4ECF5!important;box-shadow:none!important}
+/* All Activities box: navy chart-room panel with a flag stripe */
+html body #whatsOn{background:#0A1428!important;border:1px solid #D4ECF540!important;box-shadow:0 8px 22px #0008!important;position:relative;overflow:hidden;padding-top:20px!important}
+html body #whatsOn::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,#B5123A 0 20%,#fff 20% 40%,#0F4C9A 40% 60%,#E8B820 60% 80%,#B5123A 80%)}
+#whatsOn .wo-k{color:#fff!important;text-shadow:none!important;font-family:Georgia,serif!important;letter-spacing:.14em!important}
+#whatsOn .wo-lb,#whatsOn .wo-c,#whatsOn .wo-d summary,#whatsOn .wo-hr.wo-day{color:#D4ECF5!important}
+#whatsOn .wo-c b,#whatsOn .wo-d summary span,#whatsOn .wo-t,#whatsOn .wo-hr,#whatsOn .wo-all,#whatsOn .wo-r:hover b{color:#E8B820!important}
+#whatsOn .wo-hr.wo-day{color:#fff!important}
+#whatsOn .wo-s{background-color:#002D57!important;color:#fff!important;border-color:#D4ECF566!important}
+#whatsOn button.wo-c{background:#002D57!important;border-color:#D4ECF566!important}
+#whatsOn button.wo-c[aria-pressed="true"],#whatsOn button.wo-c:hover{background:#B5123A!important;border-color:#B5123A!important;color:#fff!important}
+#whatsOn .wo-d,#whatsOn .wo-hr{border-color:#D4ECF526!important}
+#whatsOn .wo-d summary::after{border-color:#E8B820!important}
+#whatsOn .wo-n small,#whatsOn .wo-e{color:#8A9DA1!important}
+#whatsOn .wo-l{scrollbar-color:#D4ECF555 transparent!important}
+html body nav#nav input::placeholder{color:#002D57!important;opacity:.7}
+html body #navToggle.nb{background:#002D57!important;border-color:#D4ECF540!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+html body #coverSlot>.box{border-top-color:#B5123A!important}
+</style>
+<script id="nauticalTopJs">(()=>{const t=(location.hostname+' '+document.title).toLowerCase();
+const W=/jamestown/.test(t)?'JAMESTOWN':/hurricane|rhode/.test(t)?'RHODE ISLAND':/boston|rambler/.test(t)?'BOSTON':/scream|new york|nyc/.test(t)?'NEW YORK':'AHOY';
+const go=()=>{const m=document.querySelector('header.mast');if(!m||document.getElementById('flagLine'))return;
+const d=document.createElement('span');d.id='flagLine';d.setAttribute('aria-hidden','true');d.title=W+' in signal flags';
+d.innerHTML=[...W].map(c=>c===' '?'<i class="sp"></i>':'<i class="f'+c+'" data-l="'+c+'"></i>').join('');m.appendChild(d)};
+go();addEventListener('DOMContentLoaded',go)})();</script>
 </body>
 </html>
