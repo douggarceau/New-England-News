@@ -1,49 +1,49 @@
 /* Lighting pass: page titles lit like signs, top story as a lit stage, warmer cards. Loaded last. */
 
-/* Page titles: gold neon sign with a slow sheen (crime watch keeps its own #A6322A) */
-html body h2.room:not(.cwh){background:linear-gradient(100deg,#F1EEEA 0%,#DCE6EE 22%,#F1EEEA 32%,#DCE6EE 48%,#DCE6EE 62%,#DCE6EE 80%,#F1EEEA 100%) 0 0/220% 100%!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 0 1px #DCE6EE) drop-shadow(0 0 14px #DCE6EE66) drop-shadow(0 2px 0 #14324A)!important;animation:plSheen 9s linear infinite!important;border-bottom:0!important;padding-bottom:12px!important;position:relative}
-html body h2.room:not(.cwh)::after{content:"";position:absolute;left:0;bottom:0;width:min(420px,70%);height:3px;border-radius:3px;background:linear-gradient(90deg,#DCE6EE,#DCE6EE 60%,transparent);box-shadow:0 0 12px #DCE6EE,0 0 2px #DCE6EE}
+/* Page titles: gold neon sign with a slow sheen (crime watch keeps its own #9B2A20) */
+html body h2.room:not(.cwh){background:linear-gradient(100deg,#F1EEEA 0%,#E3CF9F 22%,#F1EEEA 32%,#E3CF9F 48%,#E3CF9F 62%,#E3CF9F 80%,#F1EEEA 100%) 0 0/220% 100%!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 0 1px #E3CF9F) drop-shadow(0 0 14px #E3CF9F66) drop-shadow(0 2px 0 #1F2944)!important;animation:plSheen 9s linear infinite!important;border-bottom:0!important;padding-bottom:12px!important;position:relative}
+html body h2.room:not(.cwh)::after{content:"";position:absolute;left:0;bottom:0;width:min(420px,70%);height:3px;border-radius:3px;background:linear-gradient(90deg,#E3CF9F,#E3CF9F 60%,transparent);box-shadow:0 0 12px #E3CF9F,0 0 2px #E3CF9F}
 @keyframes plSheen{to{background-position:-220% 0}}
 
 /* Top story box: a lit stage instead of a flat slab */
-html body .cvbrk:not([class*="th-"]){background:radial-gradient(75% 55% at 50% -8%,#DCE6EE66 0,transparent 62%),radial-gradient(120% 80% at 50% 120%,#A6322A55 0,transparent 60%),repeating-linear-gradient(90deg,#14324A 0 9px,#14324A 9px 14px,#14324A 14px 21px)!important;border:1px solid #DCE6EE55!important;box-shadow:inset 0 0 0 1px #091F2F80,inset 0 0 60px #091F2FAA,0 0 30px #A6322A33,0 14px 34px #091F2FCC!important;position:relative;overflow:hidden}
+html body .cvbrk:not([class*="th-"]){background:radial-gradient(75% 55% at 50% -8%,#E3CF9F66 0,transparent 62%),radial-gradient(120% 80% at 50% 120%,#9B2A2055 0,transparent 60%),repeating-linear-gradient(90deg,#1F2944 0 9px,#1F2944 9px 14px,#1F2944 14px 21px)!important;border:1px solid #E3CF9F55!important;box-shadow:inset 0 0 0 1px #141A2C80,inset 0 0 60px #141A2CAA,0 0 30px #9B2A2033,0 14px 34px #141A2CCC!important;position:relative;overflow:hidden}
 html body .cvbrk:not([class*="th-"])::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,#F1EEEA1A 45%,#F1EEEA38 50%,#F1EEEA1A 55%,transparent 70%) 0 0/250% 100% no-repeat;animation:plSweep 7s ease-in-out infinite;pointer-events:none}
 @keyframes plSweep{0%,50%{background-position:120% 0}100%{background-position:-60% 0}}
-html body .cvbrk:not([class*="th-"]) .spr-tag{background:linear-gradient(180deg,#DCE6EE,#DCE6EE)!important;color:#14324A!important;border:0!important;box-shadow:0 0 16px #DCE6EE88,0 1px 0 #14324A!important}
-html body .cvbrk:not([class*="th-"]) .spr-tag::before{color:#14324A!important;text-shadow:none!important}
-html body .cvbrk:not([class*="th-"]) b{color:#F1EEEA!important;text-shadow:0 0 22px #DCE6EE55,0 2px 0 #091F2F!important}
+html body .cvbrk:not([class*="th-"]) .spr-tag{background:linear-gradient(180deg,#E3CF9F,#E3CF9F)!important;color:#1F2944!important;border:0!important;box-shadow:0 0 16px #E3CF9F88,0 1px 0 #1F2944!important}
+html body .cvbrk:not([class*="th-"]) .spr-tag::before{color:#1F2944!important;text-shadow:none!important}
+html body .cvbrk:not([class*="th-"]) b{color:#F1EEEA!important;text-shadow:0 0 22px #E3CF9F55,0 2px 0 #141A2C!important}
 html body .cvbrk:not([class*="th-"]) small{color:#F1EEEA!important}
-html body .cvbrk:not([class*="th-"]) .spr-go{color:#DCE6EE!important;border-color:#DCE6EE!important;box-shadow:0 0 14px #DCE6EE44!important}
+html body .cvbrk:not([class*="th-"]) .spr-go{color:#E3CF9F!important;border-color:#E3CF9F!important;box-shadow:0 0 14px #E3CF9F44!important}
 
 /* Section headers glow softly */
 html body .box>.bh>b{text-shadow:0 0 12px color-mix(in srgb,currentColor 55%,transparent)}
 
 /* Story grid cards: lift and glow on hover */
 html body .sgrid .sc{transition:transform .25s ease,box-shadow .25s ease,filter .25s}
-html body .sgrid .sc:hover{transform:translateY(-3px);box-shadow:0 12px 26px #091F2FAA,0 0 22px color-mix(in srgb,var(--tc,#DCE6EE) 35%,transparent)!important;filter:brightness(1.08)}
+html body .sgrid .sc:hover{transform:translateY(-3px);box-shadow:0 12px 26px #141A2CAA,0 0 22px color-mix(in srgb,var(--tc,#E3CF9F) 35%,transparent)!important;filter:brightness(1.08)}
 
 /* Calendar rows: warm light from above, glowing date tiles */
 html body .cald .sh{background:linear-gradient(180deg,#FFFFFF0d,#FFFFFF03)!important;border-radius:10px;transition:transform .2s ease,box-shadow .2s ease,background .2s}
-html body .cald .sh:hover{transform:translateY(-2px);background:linear-gradient(180deg,#DCE6EE1C,#FFFFFF05)!important;box-shadow:0 10px 24px #091F2FBB,0 0 0 1px #DCE6EE44,0 0 20px #DCE6EE2A}
-html body .cald .sh .dt{background:linear-gradient(180deg,#14324A,#091F2F)!important;border:1px solid #DCE6EE66!important;box-shadow:inset 0 1px 0 #DCE6EE44,0 0 14px #DCE6EE22;color:#DCE6EE!important}
-html body .cald .sh .dt b{color:#F1EEEA!important;text-shadow:0 0 10px #DCE6EE88}
+html body .cald .sh:hover{transform:translateY(-2px);background:linear-gradient(180deg,#E3CF9F1C,#FFFFFF05)!important;box-shadow:0 10px 24px #141A2CBB,0 0 0 1px #E3CF9F44,0 0 20px #E3CF9F2A}
+html body .cald .sh .dt{background:linear-gradient(180deg,#1F2944,#141A2C)!important;border:1px solid #E3CF9F66!important;box-shadow:inset 0 1px 0 #E3CF9F44,0 0 14px #E3CF9F22;color:#E3CF9F!important}
+html body .cald .sh .dt b{color:#F1EEEA!important;text-shadow:0 0 10px #E3CF9F88}
 html body .cald .sh .who>b{color:#fff!important}
-html body .dayh{color:#DCE6EE!important;text-shadow:0 0 10px #DCE6EE55}
+html body .dayh{color:#E3CF9F!important;text-shadow:0 0 10px #E3CF9F55}
 
 /* Filter tiles: the selected one is lit */
 html body .pads .pad{transition:box-shadow .2s,transform .2s,background .2s}
-html body .pads .pad:hover{transform:translateY(-1px);box-shadow:0 0 0 1px #DCE6EE66,0 0 16px #DCE6EE33}
-html body .pads .pad.on,html body .pads .pad[aria-pressed="true"],html body .pads .pad.act{background:linear-gradient(180deg,#DCE6EE33,#DCE6EE1A)!important;box-shadow:0 0 0 1px #DCE6EE,0 0 22px #DCE6EE55!important}
+html body .pads .pad:hover{transform:translateY(-1px);box-shadow:0 0 0 1px #E3CF9F66,0 0 16px #E3CF9F33}
+html body .pads .pad.on,html body .pads .pad[aria-pressed="true"],html body .pads .pad.act{background:linear-gradient(180deg,#E3CF9F33,#E3CF9F1A)!important;box-shadow:0 0 0 1px #E3CF9F,0 0 22px #E3CF9F55!important}
 
 /* Visit cards: light from the top edge, glow on hover */
-html body .vgrid .vcard{background:radial-gradient(120% 60% at 50% 0,#FFFFFF12,transparent 60%),linear-gradient(180deg,#091F2F,#091F2F)!important;border-radius:12px!important;transition:transform .25s ease,box-shadow .25s ease}
-html body .vgrid .vcard:hover{transform:translateY(-3px);box-shadow:0 14px 30px #091F2FCC,0 0 0 1px #DCE6EE55,0 0 24px #2272BF33}
-html body .vgrid .vcard h4{color:#fff!important;text-shadow:0 0 14px #DCE6EE33}
+html body .vgrid .vcard{background:radial-gradient(120% 60% at 50% 0,#FFFFFF12,transparent 60%),linear-gradient(180deg,#141A2C,#141A2C)!important;border-radius:12px!important;transition:transform .25s ease,box-shadow .25s ease}
+html body .vgrid .vcard:hover{transform:translateY(-3px);box-shadow:0 14px 30px #141A2CCC,0 0 0 1px #E3CF9F55,0 0 24px #4A5F8F33}
+html body .vgrid .vcard h4{color:#fff!important;text-shadow:0 0 14px #E3CF9F33}
 
 /* Reading page: gilded drop cap and subheads */
-html body .reader .body>p:first-child::first-letter{background:linear-gradient(180deg,#F1EEEA,#DCE6EE 60%,#DCE6EE);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 10px #DCE6EE55)}
-html body .reader .body h3{color:#DCE6EE!important;text-shadow:0 0 12px #DCE6EE33}
-html body .reader .body a{color:#DCE6EE;text-decoration-color:#DCE6EE66;text-underline-offset:3px}
+html body .reader .body>p:first-child::first-letter{background:linear-gradient(180deg,#F1EEEA,#E3CF9F 60%,#E3CF9F);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 10px #E3CF9F55)}
+html body .reader .body h3{color:#E3CF9F!important;text-shadow:0 0 12px #E3CF9F33}
+html body .reader .body a{color:#E3CF9F;text-decoration-color:#E3CF9F66;text-underline-offset:3px}
 html body .reader h1{text-shadow:0 0 30px #FFFFFF14}
 
 @media (prefers-reduced-motion:reduce){html body h2.room:not(.cwh),html body .cvbrk::after{animation:none!important}}
@@ -57,7 +57,7 @@ html body .wrap>nav#nav.navbar{top:0!important;margin-top:-8px!important}
 /* ===== Phone first screen ===== */
 @media (max-width:760px){
  /* never flash the old cover: poster box is solid until the rotator fills it */
- html body .cvr .cimg{background:#091F2F!important}
+ html body .cvr .cimg{background:#141A2C!important}
  html body .cvr .cimg>img{opacity:0!important}
  html body .cvr .cimg.has-rot>img{visibility:hidden!important}
  html.ep-cov body .cvr .cimg{aspect-ratio:2/3;width:100%;max-width:440px;margin:0 auto}
@@ -76,55 +76,55 @@ html body .wrap>nav#nav.navbar{top:0!important;margin-top:-8px!important}
 html body #coverSlot .cvr .cvbrk{position:relative!important;overflow:hidden!important}
 
 /* What's On box at the top of the front page */
-#whatsOn{margin:0 0 16px;border-radius:14px;padding:14px 16px 10px;background:radial-gradient(80% 120% at 0 0,#DCE6EE1F,transparent 60%),linear-gradient(180deg,#14324A,#091F2F);border:1px solid #DCE6EE55;box-shadow:0 0 26px #DCE6EE22,0 10px 26px #091F2FAA;font-family:"Helvetica Neue",Arial,sans-serif}
+#whatsOn{margin:0 0 16px;border-radius:14px;padding:14px 16px 10px;background:radial-gradient(80% 120% at 0 0,#E3CF9F1F,transparent 60%),linear-gradient(180deg,#1F2944,#141A2C);border:1px solid #E3CF9F55;box-shadow:0 0 26px #E3CF9F22,0 10px 26px #141A2CAA;font-family:"Helvetica Neue",Arial,sans-serif}
 #whatsOn .wo-h{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:10px}
-#whatsOn .wo-k{font:800 13px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#DCE6EE;text-shadow:0 0 12px #DCE6EE88}
-#whatsOn .wo-s{width:auto;flex:none;margin:0;font:700 12.5px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:7px 28px 7px 10px;border-radius:6px;border:1px solid #DCE6EE66;background:#14324A url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23D4ECF5'/%3E%3C/svg%3E") no-repeat right 10px center;color:#DCE6EE;-webkit-appearance:none;appearance:none;cursor:pointer}
-#whatsOn .wo-c{font:600 12px/1 "Helvetica Neue",Arial,sans-serif;color:#F1EEEA;margin-left:auto}#whatsOn .wo-c b{color:#DCE6EE;font-size:15px}
-#whatsOn .wo-l{max-height:440px;overflow-y:auto;overscroll-behavior:contain;padding-right:4px;scrollbar-width:thin;scrollbar-color:#DCE6EE66 transparent}
-#whatsOn .wo-d{border-top:1px solid #DCE6EE26}
+#whatsOn .wo-k{font:800 13px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#E3CF9F;text-shadow:0 0 12px #E3CF9F88}
+#whatsOn .wo-s{width:auto;flex:none;margin:0;font:700 12.5px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:7px 28px 7px 10px;border-radius:6px;border:1px solid #E3CF9F66;background:#1F2944 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23D4ECF5'/%3E%3C/svg%3E") no-repeat right 10px center;color:#E3CF9F;-webkit-appearance:none;appearance:none;cursor:pointer}
+#whatsOn .wo-c{font:600 12px/1 "Helvetica Neue",Arial,sans-serif;color:#F1EEEA;margin-left:auto}#whatsOn .wo-c b{color:#E3CF9F;font-size:15px}
+#whatsOn .wo-l{max-height:440px;overflow-y:auto;overscroll-behavior:contain;padding-right:4px;scrollbar-width:thin;scrollbar-color:#E3CF9F66 transparent}
+#whatsOn .wo-d{border-top:1px solid #E3CF9F26}
 #whatsOn .wo-d summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:9px 2px;font:700 13px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#F1EEEA}
 #whatsOn .wo-d summary::-webkit-details-marker{display:none}
-#whatsOn .wo-d summary::after{content:"";margin-left:auto;width:7px;height:7px;border:solid #DCE6EE;border-width:0 2px 2px 0;transform:rotate(45deg);transition:transform .2s}
+#whatsOn .wo-d summary::after{content:"";margin-left:auto;width:7px;height:7px;border:solid #E3CF9F;border-width:0 2px 2px 0;transform:rotate(45deg);transition:transform .2s}
 #whatsOn .wo-d[open] summary::after{transform:rotate(-135deg)}
-#whatsOn .wo-d summary span{color:#DCE6EE;font-size:12px;letter-spacing:0}
+#whatsOn .wo-d summary span{color:#E3CF9F;font-size:12px;letter-spacing:0}
 #whatsOn .wo-r{display:flex;gap:12px;align-items:baseline;padding:5px 2px 5px 4px;text-decoration:none;color:#fff;border-bottom:1px dotted #FFFFFF14}
 #whatsOn .wo-d>.wo-r:last-child{border-bottom:0;margin-bottom:8px}
-#whatsOn .wo-r:hover b{color:#DCE6EE}
-#whatsOn .wo-t{flex:none;width:104px;font:700 12.5px/1.3 "Helvetica Neue",Arial,sans-serif;color:#DCE6EE;white-space:nowrap}
+#whatsOn .wo-r:hover b{color:#E3CF9F}
+#whatsOn .wo-t{flex:none;width:104px;font:700 12.5px/1.3 "Helvetica Neue",Arial,sans-serif;color:#E3CF9F;white-space:nowrap}
 #whatsOn .wo-n{min-width:0;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #whatsOn .wo-n b{font:600 14.5px/1.3 Georgia,serif;color:#fff;transition:color .15s}
-#whatsOn .wo-n small{font-size:12px;color:#DCE6EE}
-#whatsOn .wo-e{margin:6px 0;color:#DCE6EE;font-size:14px}
+#whatsOn .wo-n small{font-size:12px;color:#E3CF9F}
+#whatsOn .wo-e{margin:6px 0;color:#E3CF9F;font-size:14px}
 #whatsOn .wo-f{text-align:right;margin-top:6px}
-#whatsOn .wo-all{font:700 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#DCE6EE;text-decoration:none}
+#whatsOn .wo-all{font:700 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#E3CF9F;text-decoration:none}
 @media (max-width:760px){#whatsOn{padding:12px 12px 8px;margin:0 0 12px}#whatsOn .wo-l{max-height:380px}#whatsOn .wo-t{width:84px}#whatsOn .wo-n{white-space:normal}}
 
 /* Crime Watch paused */
 #nav>[data-go="crime"],#coverSlot .cvcrime,.crimeBanner,.crban{display:none!important}
-#whatsOn button.wo-c{cursor:pointer;background:#FFFFFF0d;border:1px solid #DCE6EE66;border-radius:6px;padding:7px 12px;font:600 13px/1 "Helvetica Neue",Arial,sans-serif;color:#F1EEEA}
-#whatsOn button.wo-c:hover,#whatsOn button.wo-c[aria-pressed="true"]{background:#DCE6EE22;border-color:#DCE6EE}
+#whatsOn button.wo-c{cursor:pointer;background:#FFFFFF0d;border:1px solid #E3CF9F66;border-radius:6px;padding:7px 12px;font:600 13px/1 "Helvetica Neue",Arial,sans-serif;color:#F1EEEA}
+#whatsOn button.wo-c:hover,#whatsOn button.wo-c[aria-pressed="true"]{background:#E3CF9F22;border-color:#E3CF9F}
 #whatsOn .wo-flat>.wo-r:last-child{border-bottom:0}
-#whatsOn .wo-hr{font:800 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#DCE6EE;padding:12px 2px 6px;border-bottom:1px solid #DCE6EE33}
+#whatsOn .wo-hr{font:800 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#E3CF9F;padding:12px 2px 6px;border-bottom:1px solid #E3CF9F33}
 #whatsOn .wo-hr.wo-day{font-size:14px;color:#fff;letter-spacing:.06em;padding-top:16px}
 #nav>[data-go="recovery"]{order:10}
 #recov .rc-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:6px 0 10px}
-#recov label{font:700 13px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#DCE6EE;display:flex;gap:8px;align-items:center}
-#recov select{font:600 15px/1.2 "Helvetica Neue",Arial,sans-serif;padding:8px 10px;border-radius:6px;border:1px solid #DCE6EE66;background:#14324A;color:#fff}
-#recov .rc-c{margin-left:auto;color:#F1EEEA;font:600 14px/1 "Helvetica Neue",Arial,sans-serif}#recov .rc-c b{color:#DCE6EE;font-size:17px}
+#recov label{font:700 13px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#E3CF9F;display:flex;gap:8px;align-items:center}
+#recov select{font:600 15px/1.2 "Helvetica Neue",Arial,sans-serif;padding:8px 10px;border-radius:6px;border:1px solid #E3CF9F66;background:#1F2944;color:#fff}
+#recov .rc-c{margin-left:auto;color:#F1EEEA;font:600 14px/1 "Helvetica Neue",Arial,sans-serif}#recov .rc-c b{color:#E3CF9F;font-size:17px}
 #recov .rc-r{display:flex;gap:14px;align-items:baseline;padding:10px 4px;border-bottom:1px solid #FFFFFF14;text-decoration:none;color:#fff}
-#recov .rc-t{flex:none;width:96px;font:700 14px/1.3 "Helvetica Neue",Arial,sans-serif;color:#DCE6EE}
-#recov .rc-n b{display:block;font:600 16px/1.35 Georgia,serif;color:#fff}#recov .rc-n small{display:block;font-size:13.5px;color:#DCE6EE}
-#recov a.rc-r:hover b{color:#DCE6EE}
+#recov .rc-t{flex:none;width:96px;font:700 14px/1.3 "Helvetica Neue",Arial,sans-serif;color:#E3CF9F}
+#recov .rc-n b{display:block;font:600 16px/1.35 Georgia,serif;color:#fff}#recov .rc-n small{display:block;font-size:13.5px;color:#E3CF9F}
+#recov a.rc-r:hover b{color:#E3CF9F}
 #recov .rc-h{margin:22px 0 8px;font:700 18px/1.2 Georgia,serif;color:#fff}
-#recov .rc-o{margin:0;padding-left:18px;color:#F1EEEA;font-size:15px;line-height:1.7}#recov .rc-o a{color:#DCE6EE}
-#recov .rc-e{color:#DCE6EE}
+#recov .rc-o{margin:0;padding-left:18px;color:#F1EEEA;font-size:15px;line-height:1.7}#recov .rc-o a{color:#E3CF9F}
+#recov .rc-e{color:#E3CF9F}
 #nav>[data-go="recovery"]{display:none!important}
 #whatsOn button.wo-c{margin-left:0}
 #whatsOn .wo-lb{display:inline-flex;align-items:center;gap:6px;font:700 11px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#F1EEEA}#whatsOn .wo-lb .wo-s{margin:0}
 #whatsOn .wo-z summary{opacity:.55}
 #nav>#nbSis{order:9!important}#nav>#nbSub{order:10!important}#nav>#nbSearch{order:20!important}.subbox.sbpop{display:grid!important;position:fixed;z-index:9999;top:110px;right:16px;width:min(92vw,360px);margin:0}
-#view a.sh .dt{position:relative;overflow:visible!important}.tflag{position:absolute;left:50%;top:-9px;transform:translateX(-50%);padding:1px 6px;border-radius:3px;background:#DCE6EE;color:#091F2F!important;font:800 9px/1.3 "Libre Franklin",system-ui,sans-serif!important;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;box-shadow:0 0 8px #DCE6EE,0 0 16px #DCE6EE99;animation:tfg 2s ease-in-out infinite}@keyframes tfg{50%{box-shadow:0 0 12px #DCE6EE,0 0 26px #DCE6EECC}}
+#view a.sh .dt{position:relative;overflow:visible!important}.tflag{position:absolute;left:50%;top:-9px;transform:translateX(-50%);padding:1px 6px;border-radius:3px;background:#E3CF9F;color:#141A2C!important;font:800 9px/1.3 "Libre Franklin",system-ui,sans-serif!important;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;box-shadow:0 0 8px #E3CF9F,0 0 16px #E3CF9F99;animation:tfg 2s ease-in-out infinite}@keyframes tfg{50%{box-shadow:0 0 12px #E3CF9F,0 0 26px #E3CF9FCC}}
 
 /* two-column: left = top poster, then the second flipping poster; right = top story, then the news list */
 @media (min-width:700px){
@@ -140,6 +140,6 @@ html body #coverSlot .cvr:has(>.pbx)>.cvside>.nl-bar{grid-row:6!important}
 /* the extra ads under the second one, sized by posters.js to end level with the news column */
 html body #coverSlot .cvr:has(>.pbx-more){position:relative;row-gap:0!important}
 .pbx-more{display:none;position:absolute;z-index:2;flex-direction:column;gap:14px;pointer-events:none}
-.pbx-x{position:relative;width:100%;border-radius:6px;overflow:hidden;background:#091F2F;box-shadow:0 0 0 1px #14324A,0 18px 40px rgba(9,31,47,.7);pointer-events:auto;flex:none}
+.pbx-x{position:relative;width:100%;border-radius:6px;overflow:hidden;background:#141A2C;box-shadow:0 0 0 1px #1F2944,0 18px 40px rgba(9,31,47,.7);pointer-events:auto;flex:none}
 /* the old face under the rotating poster stays hidden, so it never shows through during a flip */
 #coverSlot .cvr>.pbx.has-rot>.cevt{visibility:hidden}
