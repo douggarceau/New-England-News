@@ -18,8 +18,11 @@ function ranges(){const n=new Date(),td=ymd(n),tm=ymd(add(n,1));
   {k:'Tomorrow',from:tm,to:tm},
   {k:'This Week',from:td,to:ymd(add(n,6))},
   {k:'This Weekend',from:fri<td?td:fri,to:sun}]}
-function list(r){const td=ymd(new Date()),nm=nowMins();
- return EV.filter(e=>e.date>=r.from&&e.date<=r.to)
+function endMins(t){const m=String(t||'').match(/[-–—]\s*(?:to\s*)?(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i)||String(t||'').match(/\bto\s+(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i);if(!m)return null;let h=+m[1]%12;if(/pm/i.test(m[3]))h+=12;return h*60+(+m[2]||0)}
+/* Today/Tonight: only what is still ahead or still going on. Unknown times stay, listed last. */
+function stillOn(e,nm,late){const s=mins(e.time);if(s===9999)return true;const en=endMins(e.time);if(en!==null&&en>s)return en>nm;if(late&&s<16*60)return false;return s>=nm-60}
+function list(r){const td=ymd(new Date()),nm=nowMins(),late=nm>=17*60;
+ return EV.filter(e=>e.date>=r.from&&e.date<=r.to&&(r.from!==td||r.to!==td||stillOn(e,nm,late)))
   .sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:mins(a.time)-mins(b.time))}
 function dayLbl(ds){const d=new Date(ds+'T12:00:00');return d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase()+' '+d.getDate()}
 const PLACE=(()=>{const t=(location.hostname+' '+document.title).toLowerCase();return /jamestown/.test(t)?'Jamestown':/hurricane|rhode/.test(t)?'Rhode Island':/boston|rambler/.test(t)?'Boston':/scream|new york|nyc/.test(t)?'New York City':'the Area'})();
