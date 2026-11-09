@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-08T07:40:00-05:00",
+ "asof": "2026-11-09T07:37:22-05:00",
  "items": [
   {
    "h": "Snowport Returns to the Seaport With 130 Makers and Live Music",
@@ -7,41 +7,61 @@
    "outlet": "The Boston Rambler",
    "url": "?story=snowport-holiday-market-seaport-2026",
    "story": "snowport-holiday-market-seaport-2026",
+   "lead": true,
    "town": "Seaport",
-   "date": "2026-11-08",
-   "rank": 2,
-   "lead": true
-  },
-  {
-   "h": "Igor Levit Brings an All-Beethoven Recital to Symphony Hall",
-   "sum": "Sunday, Nov. 8 from 3 to 5 p.m. at Symphony Hall, 301 Massachusetts Ave., Back Bay.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=igor-levit-beethoven-symphony-hall-2026",
-   "story": "igor-levit-beethoven-symphony-hall-2026",
-   "town": "Back Bay",
-   "date": "2026-11-08",
-   "rank": 2,
-   "box": true
-  },
-  {
-   "h": "Journey's Final Frontier Tour Rolls Into TD Garden Nov. 10",
-   "sum": "Neal Schon, Jonathan Cain and Arnel Pineda bring an evening with Journey to Boston on a Tuesday night.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=journey-final-frontier-td-garden-nov-10",
-   "story": "journey-final-frontier-td-garden-nov-10",
-   "town": "Downtown",
-   "date": "2026-11-04",
+   "date": "2026-11-09",
    "rank": 2
   },
   {
-   "h": "Poiesis Quartet Brings Beethoven to Calderwood Hall on Sunday",
-   "sum": "The Gardner's Weekend Concert Series hosts the quartet from 1:30 to 3:30 p.m. with works by Beethoven and Prokofiev.",
+   "h": "Journey's Final Frontier Tour Rolls Into TD Garden Nov. 10",
+   "sum": "Journey plays TD Garden on Tuesday, Nov. 10, on its Final Frontier tour.",
    "outlet": "The Boston Rambler",
-   "url": "?story=poiesis-quartet-gardner-nov-8-2026",
-   "story": "poiesis-quartet-gardner-nov-8-2026",
-   "town": "Fenway",
-   "date": "2026-11-08",
+   "url": "?story=journey-final-frontier-td-garden-nov-10",
+   "story": "journey-final-frontier-td-garden-nov-10",
+   "box": true,
+   "town": "West End",
+   "date": "2026-11-09",
+   "rank": 2
+  },
+  {
+   "h": "Boston Today and Tonight: Troy Roberts, Berklee Jazz and Club Passim",
+   "sum": "Troy Roberts Quartet at 7:30 PM in Cambridge, the Jazz Composers Alliance Orchestra at 8:00 PM at Berklee, and Club Passim's Monday Discovery Series at 8:00 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-09",
+   "story": "today-and-tonight-2026-11-09",
+   "town": "Boston",
+   "date": "2026-11-09",
+   "rank": 1
+  },
+  {
+   "h": "Ballet BC Brings Contemporary Dance to the Cutler Majestic, Nov. 21-22",
+   "sum": "Vancouver's Ballet BC plays the Cutler Majestic Theatre, with the Saturday show at 8:00 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=ballet-bc-cutler-majestic-nov-21-22-2026",
+   "story": "ballet-bc-cutler-majestic-nov-21-22-2026",
+   "town": "Downtown",
+   "date": "2026-11-09",
    "rank": 3
+  },
+  {
+   "h": "Nemanja Radulović and Double Sens Make Their U.S. Debut, Nov. 13",
+   "sum": "The violinist and his chamber orchestra play NEC's Jordan Hall at 8:00 PM on Friday, Nov. 13.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=radulovic-double-sens-jordan-hall-nov-13-2026",
+   "story": "radulovic-double-sens-jordan-hall-nov-13-2026",
+   "town": "Fenway",
+   "date": "2026-11-09",
+   "rank": 3
+  },
+  {
+   "h": "Troy Roberts Quartet Plays Arrow Street Arts Tonight, Nov. 9",
+   "sum": "The saxophonist's quartet takes the stage in Cambridge at 7:30 PM on Monday, Nov. 9.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=troy-roberts-quartet-arrow-street-arts-nov-9-2026",
+   "story": "troy-roberts-quartet-arrow-street-arts-nov-9-2026",
+   "town": "Cambridge",
+   "date": "2026-11-09",
+   "rank": 4
   },
   {
    "h": "Thibaudet and Yamada Bring Gershwin and Respighi to Symphony Hall",
@@ -84,16 +104,6 @@
    "rank": 3
   },
   {
-   "h": "Boston Lyric Opera Opens 'A Streetcar Named Desire' This Week",
-   "sum": "Performances run Thursday through Sunday at the Emerson Cutler Majestic Theatre.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=blo-streetcar-named-desire-majestic-nov-2026",
-   "town": "Downtown",
-   "date": "2026-11-05",
-   "rank": 3,
-   "story": "blo-streetcar-named-desire-majestic-nov-2026"
-  },
-  {
    "h": "Huntington Premieres 'Adia & Clora Snatch Joy' This November",
    "sum": "The world premiere, the final chapter of a nine-play cycle, runs Nov. 24 to Dec. 13.",
    "outlet": "The Boston Rambler",
@@ -112,16 +122,6 @@
    "town": "Fenway",
    "date": "2026-11-04",
    "rank": 3
-  },
-  {
-   "h": "Handmade for the Holidays Brings 60 Makers to Gore Place",
-   "sum": "The rain-or-shine market in Waltham runs from 10:00 a.m. Sunday, with service pets welcome.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=gore-place-handmade-for-the-holidays-2026",
-   "story": "gore-place-handmade-for-the-holidays-2026",
-   "town": "Waltham",
-   "date": "2026-11-08",
-   "rank": 4
   },
   {
    "h": "Pelin Su Yavuz Plays Piano at the Shaw-Roxbury Library, Nov. 14",
@@ -144,15 +144,6 @@
    "story": "rosin-club-passim-nov-13-2026"
   },
   {
-   "h": "Ballet BC Brings Its Contemporary Program to the Cutler Majestic, Nov. 21-22",
-   "sum": "Vancouver's Ballet BC performs at the Cutler Majestic Theatre on Nov. 21 at 8 p.m. and Nov. 22 at 2 p.m.",
-   "outlet": "Vivo Performing Arts",
-   "url": "https://www.vivoperformingarts.org/productions/ballet-bc/",
-   "town": "Downtown",
-   "date": "2026-11-07",
-   "rank": 5
-  },
-  {
    "h": "Doja Cat's Tour Ma Vie Stops at TD Garden",
    "sum": "Nov. 23 at TD Garden, with Latto on the bill.",
    "outlet": "The Boston Rambler",
@@ -161,36 +152,6 @@
    "town": "Downtown",
    "date": "2026-11-04",
    "rank": 5
-  },
-  {
-   "h": "Harboring Creativity Brings More Than 20 Artists to ICA Watershed",
-   "sum": "The family-friendly exhibit and sale runs Sunday from 11:00 a.m. to 4:00 p.m. in East Boston, at no charge.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=harboring-creativity-east-boston-2026",
-   "story": "harboring-creativity-east-boston-2026",
-   "town": "East Boston",
-   "date": "2026-11-08",
-   "rank": 6
-  },
-  {
-   "h": "48 Cellos Honor Pablo Casals in Roxbury, Nov. 8",
-   "sum": "Sunday, Nov. 8 at 3 p.m. at the Roxbury Community College Media Arts Center, marking Casals's 150th birthday, with no charge admission.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=all-cello-orchestra-casals-roxbury-nov-8-2026",
-   "story": "all-cello-orchestra-casals-roxbury-nov-8-2026",
-   "town": "Roxbury",
-   "date": "2026-11-07",
-   "rank": 6
-  },
-  {
-   "h": "The Boston International Antiquarian Book Fair Opens at the Hynes",
-   "sum": "Rare books, manuscripts and maps from about 110 dealers fill the Hynes through Sunday.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=boston-antiquarian-book-fair-2026",
-   "story": "boston-antiquarian-book-fair-2026",
-   "town": "Back Bay",
-   "date": "2026-11-06",
-   "rank": 6
   },
   {
    "h": "Canadian Arabic Orchestra Honors Abdel Halim Hafez at Berklee",
@@ -221,16 +182,6 @@
    "town": "Back Bay",
    "date": "2026-11-04",
    "rank": 7
-  },
-  {
-   "h": "Fenway Studios Opens Its Doors to More Than 25 Artists",
-   "sum": "The studios in the 1905 landmark building are open through 5:00 p.m. Sunday, with a food drive for The Home For Little Wanderers.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=fenway-studios-open-studios-2026",
-   "story": "fenway-studios-open-studios-2026",
-   "town": "Fenway",
-   "date": "2026-11-08",
-   "rank": 8
   },
   {
    "h": "Berklee Singers Night Takes On the Music of Journey, Nov. 17",
@@ -299,15 +250,6 @@
    "story": "lysander-piano-trio-gardner-nov-15-2026",
    "town": "Fenway",
    "date": "2026-11-08",
-   "rank": 10
-  },
-  {
-   "h": "Nemanja Radulović and Double Sens Play Beethoven and Bach at Jordan Hall",
-   "sum": "Beethoven and Bach, including a reimagined Kreutzer Sonata, on Nov. 13 at 8 p.m. at NEC's Jordan Hall.",
-   "outlet": "Vivo Performing Arts",
-   "url": "https://www.vivoperformingarts.org/productions/nemanja-radulovic-and-double-sens/",
-   "town": "Fenway",
-   "date": "2026-11-07",
    "rank": 10
   },
   {
