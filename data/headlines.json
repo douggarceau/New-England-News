@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-09T07:37:22-05:00",
+ "asof": "2026-11-10T07:40:06-05:00",
  "items": [
   {
    "h": "Snowport Returns to the Seaport With 130 Makers and Live Music",
@@ -9,29 +9,38 @@
    "story": "snowport-holiday-market-seaport-2026",
    "lead": true,
    "town": "Seaport",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "rank": 2
   },
   {
    "h": "Journey's Final Frontier Tour Rolls Into TD Garden Nov. 10",
-   "sum": "Journey plays TD Garden on Tuesday, Nov. 10, on its Final Frontier tour.",
+   "sum": "Neal Schon, Jonathan Cain and Arnel Pineda bring an evening with Journey to Boston on a Tuesday night.",
    "outlet": "The Boston Rambler",
    "url": "?story=journey-final-frontier-td-garden-nov-10",
    "story": "journey-final-frontier-td-garden-nov-10",
    "box": true,
    "town": "West End",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "rank": 2
   },
   {
-   "h": "Boston Today and Tonight: Troy Roberts, Berklee Jazz and Club Passim",
-   "sum": "Troy Roberts Quartet at 7:30 PM in Cambridge, the Jazz Composers Alliance Orchestra at 8:00 PM at Berklee, and Club Passim's Monday Discovery Series at 8:00 PM.",
+   "h": "Boston Today and Tonight: Journey, Pokey LaFarge and Kelsey Waldon",
+   "sum": "Journey plays TD Garden at 7:30 PM, Pokey LaFarge releases Rent Money at the Armory at 7:00 PM and Kelsey Waldon plays Club Passim at 8:00 PM.",
    "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-09",
-   "story": "today-and-tonight-2026-11-09",
+   "url": "?story=today-and-tonight-2026-11-10",
+   "story": "today-and-tonight-2026-11-10",
    "town": "Boston",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "rank": 1
+  },
+  {
+   "h": "Holiday Bazaar at Arsenal Yards in Watertown, Nov. 14",
+   "sum": "The Arsenal Holiday Bazaar takes place Saturday, Nov. 14, at Arsenal Yards.",
+   "outlet": "The Boston Calendar",
+   "url": "https://www.thebostoncalendar.com/events/the-arsenal-holiday-bazaar",
+   "town": "Watertown",
+   "date": "2026-11-10",
+   "rank": 12
   },
   {
    "h": "Ballet BC Brings Contemporary Dance to the Cutler Majestic, Nov. 21-22",
@@ -52,16 +61,6 @@
    "town": "Fenway",
    "date": "2026-11-09",
    "rank": 3
-  },
-  {
-   "h": "Troy Roberts Quartet Plays Arrow Street Arts Tonight, Nov. 9",
-   "sum": "The saxophonist's quartet takes the stage in Cambridge at 7:30 PM on Monday, Nov. 9.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=troy-roberts-quartet-arrow-street-arts-nov-9-2026",
-   "story": "troy-roberts-quartet-arrow-street-arts-nov-9-2026",
-   "town": "Cambridge",
-   "date": "2026-11-09",
-   "rank": 4
   },
   {
    "h": "Thibaudet and Yamada Bring Gershwin and Respighi to Symphony Hall",
@@ -202,16 +201,6 @@
    "town": "Somerville",
    "date": "2026-11-06",
    "rank": 8
-  },
-  {
-   "h": "Jazz Composers Alliance Plays Berklee Faculty Works on Nov. 9",
-   "sum": "Four Berklee faculty composers are featured at the Berklee Performance Center.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=jazz-composers-alliance-orchestra-berklee-nov-9-2026",
-   "town": "Back Bay",
-   "date": "2026-11-05",
-   "rank": 8,
-   "story": "jazz-composers-alliance-orchestra-berklee-nov-9-2026"
   },
   {
    "h": "Boston Ballet's Nutcracker Returns to the Opera House",

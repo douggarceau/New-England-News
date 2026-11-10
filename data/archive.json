@@ -336,5 +336,97 @@
     "url": "https://blo.org/streetcar/"
    }
   ]
+ },
+ {
+  "slug": "today-and-tonight-2026-11-09",
+  "topic": "family",
+  "date": "2026-11-09",
+  "until": "2026-11-09",
+  "title": "Boston Today and Tonight: Troy Roberts, Berklee Jazz and Club Passim",
+  "dek": "Troy Roberts Quartet at 7:30 PM in Cambridge, the Jazz Composers Alliance Orchestra at 8:00 PM at Berklee, and Club Passim's Monday Discovery Series at 8:00 PM.",
+  "body": [
+   "Monday in Boston brings a jazz-heavy evening: a quartet at The Studio at Arrow Street Arts, a faculty-composer orchestra at the Berklee Performance Center and an open Monday series at Club Passim. Times below come from each venue's listing.",
+   "## Tonight, for grown-ups",
+   "#T {\"title\": \"Tonight, for grown-ups\", \"head\": [\"Time\", \"What\", \"Where\"], \"rows\": [[\"7:30 PM\", \"Troy Roberts Quartet\", \"The Studio at Arrow Street Arts, Cambridge\"], [\"8:00 PM\", \"Jazz Composers Alliance Orchestra in Concert\", \"Berklee Performance Center, Back Bay\"], [\"8:00 PM\", \"Passim Monday Discovery Series\", \"Club Passim, Cambridge\"], [\"8:00 PM\", \"SIX60\", \"Brighton Music Hall, Allston\"], [\"8:00 PM\", \"George Clanton\", \"Paradise Rock Club, Allston\"]]}",
+   "Times come from each venue's listing. Check before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "HappeningNext",
+    "title": "Troy Roberts Quartet",
+    "date": "2026-11-09",
+    "url": "https://happeningnext.com/event/troy-roberts-quartet-eid3fk9asjenq"
+   },
+   {
+    "outlet": "Berklee Performance Center",
+    "title": "Jazz Composers Alliance Orchestra in Concert",
+    "date": "2026-11-09",
+    "url": "https://www.berklee.edu/BPC/events/jazz-composers-alliance-orchestra-in-concert-2"
+   },
+   {
+    "outlet": "Club Passim",
+    "title": "Passim Monday Discovery Series",
+    "date": "2026-11-09",
+    "url": "https://www.passim.org/live-music/events/passim-monday-discovery-series/"
+   }
+  ],
+  "minutes": 1
+ },
+ {
+  "slug": "troy-roberts-quartet-arrow-street-arts-nov-9-2026",
+  "topic": "music",
+  "date": "2026-11-09",
+  "until": "2026-11-09",
+  "title": "Troy Roberts Quartet Plays Arrow Street Arts Tonight, Nov. 9",
+  "dek": "Monday, Nov. 9, at The Studio at Arrow Street Arts, 2 Arrow Street in Cambridge, with doors at 6:30 PM and music at 7:30 PM.",
+  "body": [
+   "Troy Roberts, a GRAMMY-nominated saxophonist based in New York City, brings his quartet to Cambridge tonight for a jazz evening at The Studio at Arrow Street Arts. Roberts, an Australian immigrant, is a prolific bandleader with sixteen releases to his name, and he has recorded with artists including Joey DeFrancesco, Van Morrison and Kurt Elling.",
+   "His latest album is Green Lights, which features John Patitucci, Paul Bollenback and Jimmy Macbride. Tonight's lineup is Roberts on saxophone, Devin Thai on piano, Lois Majors on bass and Austin McMahon on drums.",
+   "## The evening",
+   "The show is presented by the New England Jazz Collaborative with Arrow Street Arts. Doors open at 6:30 PM, and the music runs from 7:30 to 9:30 PM, according to the event page. The Studio is at 2 Arrow Street in Cambridge, Massachusetts, so the concert suits a weeknight outing for anyone who wants a small room and a full quartet sound.",
+   "## Tickets",
+   "Tickets are sold through the event page on HappeningNext. Only digital tickets are accepted, so keep your ticket on your phone, because printed barcodes will not scan. The page does not list a price, so use the Find Tickets button on the event page for current pricing and availability."
+  ],
+  "sources": [
+   {
+    "outlet": "HappeningNext",
+    "title": "Troy Roberts Quartet",
+    "date": "2026-11-09",
+    "url": "https://happeningnext.com/event/troy-roberts-quartet-eid3fk9asjenq"
+   }
+  ],
+  "minutes": 1
+ },
+ {
+  "slug": "jazz-composers-alliance-orchestra-berklee-nov-9-2026",
+  "topic": "music",
+  "date": "2026-11-05",
+  "until": "2026-11-09",
+  "minutes": 1,
+  "title": "Jazz Composers Alliance Orchestra Plays Four Berklee Faculty Composers",
+  "dek": "Monday, Nov. 9 at 8 p.m. at the Berklee Performance Center, with music by four Berklee faculty composers.",
+  "body": [
+   "The Jazz Composers Alliance Orchestra plays the Berklee Performance Center on Monday, November 9, at 8 p.m. The program presents music by four Berklee faculty composers: Bob Pilkington, Dave Harris, Mimi Rabson and Darrell Katz.",
+   "## A Familiar Address",
+   "The orchestra has played this hall before. The group's own website lists a November 2025 concert at the Berklee Performance Center on Massachusetts Avenue, so this evening continues a relationship between the ensemble and the college's main stage.",
+   "## The Music",
+   "The listing does not name individual pieces, so the evening is best understood as a showcase of how four composers who teach at Berklee write for a large jazz ensemble. Listeners who enjoy big-band writing, with composed sections and improvised solos, will find this a natural fit.",
+   "## Tickets",
+   "Tickets are sold through Etix. Check the Etix link for current prices. The Berklee box office is at 136 Massachusetts Avenue and can be reached at 617-747-2261 or boxoffice@berklee.edu to confirm hours."
+  ],
+  "sources": [
+   {
+    "outlet": "Berklee",
+    "title": "Jazz Composers Alliance Orchestra in Concert",
+    "date": "",
+    "url": "https://www.berklee.edu/red-room-cafe-939/events/jazz-composers-alliance-orchestra-in-concert"
+   },
+   {
+    "outlet": "Jazz Composers Alliance",
+    "title": "Jazz Composers Alliance Orchestra",
+    "date": "2026-11-05",
+    "url": "https://jazzcomposersalliance.org/schedule/november-3-2025-8pm-berkee-performance-center-136-mass-ave-boston-ma/"
+   }
+  ]
  }
 ]
