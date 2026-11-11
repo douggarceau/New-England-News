@@ -428,5 +428,101 @@
     "url": "https://jazzcomposersalliance.org/schedule/november-3-2025-8pm-berkee-performance-center-136-mass-ave-boston-ma/"
    }
   ]
+ },
+ {
+  "slug": "journey-final-frontier-td-garden-nov-10",
+  "topic": "music",
+  "date": "2026-10-29",
+  "until": "2026-11-10",
+  "minutes": 1,
+  "title": "Journey's Final Frontier Tour Rolls Into TD Garden Nov. 10",
+  "dek": "Neal Schon, Jonathan Cain and Arnel Pineda bring an evening with Journey to Boston on a Tuesday night.",
+  "body": [
+   "Journey brings its Final Frontier Tour to TD Garden on Tuesday, Nov. 10, billed as an evening with the band, meaning no opener and a long set from the arena-rock giants.",
+   "The fall leg added 40 more North American dates to the tour, and Boston is one of them. For a band whose catalog doubles as the soundtrack of a few generations of road trips and ballgames, a full evening means plenty of room for the deep cuts as well as the singalongs.",
+   "## Who's on stage",
+   "Founding guitarist Neal Schon leads the lineup with longtime keyboardist and guitarist Jonathan Cain and lead singer Arnel Pineda. Deen Castronovo is on drums and vocals, with Jason Derlatka on keyboards and vocals and Todd Jensen on bass and vocals. Drummers in the house will want to keep an eye on Castronovo, who has long pulled double duty behind the kit and on the mic.",
+   "#T {\"title\": \"Journey at TD Garden\", \"head\": [\"Detail\", \"Info\"], \"rows\": [[\"Date\", \"Tuesday, Nov. 10, 2026\"], [\"Doors\", \"6 p.m.\"], [\"Show\", \"7:30 p.m.\"], [\"Venue\", \"TD Garden, 100 Legends Way\"], [\"Tickets\", \"On sale now via Ticketmaster\"]], \"note\": \"Prices are not posted on the venue page.\"}",
+   "## Getting there",
+   "TD Garden sits on top of North Station, served by the Orange and Green lines and Commuter Rail. Parking can be reserved ahead through Ticketmaster. VIP ticket holders should check tour emails for door times and entry locations. Suites can be booked through TD Garden at 617-624-1847."
+  ],
+  "sources": [
+   {
+    "outlet": "TD Garden",
+    "title": "Journey",
+    "date": "",
+    "url": "https://www.tdgarden.com/events/detail/journey"
+   }
+  ]
+ },
+ {
+  "slug": "today-and-tonight-2026-11-10",
+  "topic": "family",
+  "date": "2026-11-10",
+  "until": "2026-11-10",
+  "minutes": 1,
+  "title": "Boston Today and Tonight: Journey, Pokey LaFarge and Kelsey Waldon",
+  "dek": "Journey plays TD Garden at 7:30 PM, Pokey LaFarge releases Rent Money at the Armory at 7:00 PM and Kelsey Waldon plays Club Passim at 8:00 PM.",
+  "body": [
+   "Tuesday, Nov. 10 brings live music across Boston and Cambridge, from arena rock at TD Garden to folk at Club Passim. These picks are the evening's most notable shows, with start times taken from each venue's listing.",
+   "## Tonight, for grown-ups",
+   "#T {\"title\": \"Live music tonight\", \"head\": [\"Time\", \"What\", \"Where\"], \"rows\": [[\"7:00 PM\", \"Pokey LaFarge: Rent Money release show\", \"The Center for Arts at the Armory, Somerville\"], [\"7:30 PM\", \"Journey, Final Frontier Tour\", \"TD Garden, West End\"], [\"8:00 PM\", \"Kelsey Waldon\", \"Club Passim, Cambridge\"], [\"8:00 PM\", \"Michigander\", \"Brighton Music Hall\"], [\"8:00 PM\", \"Geese\", \"Roadrunner, Brighton\"]]}",
+   "Times come from each venue's listing. Check before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "TD Garden",
+    "title": "Journey",
+    "date": "",
+    "url": "https://www.tdgarden.com/events/detail/journey"
+   },
+   {
+    "outlet": "Arts at the Armory",
+    "title": "Pokey LaFarge: Rent Money release show",
+    "date": "",
+    "url": "https://artsatthearmory.org/?p=34355"
+   },
+   {
+    "outlet": "Club Passim",
+    "title": "Kelsey Waldon",
+    "date": "",
+    "url": "https://www.passim.org/live-music/events/kelsey-waldon/"
+   },
+   {
+    "outlet": "Ticketmaster",
+    "title": "Michigander",
+    "date": "",
+    "url": "https://www.ticketmaster.com/michigander-boston-massachusetts-11-10-2026/event/010064A1C917CBDC"
+   },
+   {
+    "outlet": "AXS",
+    "title": "Geese",
+    "date": "",
+    "url": "https://www.axs.com/events/1414925/geese-tickets"
+   }
+  ]
+ },
+ {
+  "slug": "pokey-lafarge-armory-somerville-2026",
+  "topic": "music",
+  "date": "2026-11-06",
+  "until": "2026-11-10",
+  "minutes": 1,
+  "title": "Pokey LaFarge Celebrates Rent Money at the Armory in Somerville",
+  "dek": "Tuesday, November 10 at 7 p.m. (doors 6:30 p.m.) at the Center for the Arts at the Armory, 191 Highland Avenue in Somerville.",
+  "body": [
+   "Pokey LaFarge performs at the Center for the Arts at the Armory in Somerville on Tuesday, November 10, in a show celebrating the release of Rent Money, his new album. Doors open at 6:30 p.m., and the music starts at 7 p.m. in the Performance Hall at 191 Highland Avenue.",
+   "LaFarge is an Illinois-born musician who has been recording and performing for about twenty years. His music moves easily across many styles of twentieth-century American song, and the presenter describes Rent Money as the best set of songs he has made so far.",
+   "## Before you go",
+   "Tickets are sold through AXS, and the listing does not show a price, so check the ticket page for the current figure. Food and drinks are served at the Performance Hall bar when doors open. The Armory is a community arts center, and a weeknight show in its hall is an easy way to see a working American roots musician up close, in a room far smaller than an arena."
+  ],
+  "sources": [
+   {
+    "outlet": "Arts at the Armory",
+    "title": "Pokey LaFarge",
+    "date": "",
+    "url": "https://artsatthearmory.org/?p=34355"
+   }
+  ]
  }
 ]

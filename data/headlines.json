@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-10T07:40:06-05:00",
+ "asof": "2026-11-11T07:45:47-05:00",
  "items": [
   {
    "h": "Snowport Returns to the Seaport With 130 Makers and Live Music",
@@ -7,40 +7,10 @@
    "outlet": "The Boston Rambler",
    "url": "?story=snowport-holiday-market-seaport-2026",
    "story": "snowport-holiday-market-seaport-2026",
-   "lead": true,
    "town": "Seaport",
-   "date": "2026-11-10",
-   "rank": 2
-  },
-  {
-   "h": "Journey's Final Frontier Tour Rolls Into TD Garden Nov. 10",
-   "sum": "Neal Schon, Jonathan Cain and Arnel Pineda bring an evening with Journey to Boston on a Tuesday night.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=journey-final-frontier-td-garden-nov-10",
-   "story": "journey-final-frontier-td-garden-nov-10",
-   "box": true,
-   "town": "West End",
-   "date": "2026-11-10",
-   "rank": 2
-  },
-  {
-   "h": "Boston Today and Tonight: Journey, Pokey LaFarge and Kelsey Waldon",
-   "sum": "Journey plays TD Garden at 7:30 PM, Pokey LaFarge releases Rent Money at the Armory at 7:00 PM and Kelsey Waldon plays Club Passim at 8:00 PM.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-10",
-   "story": "today-and-tonight-2026-11-10",
-   "town": "Boston",
-   "date": "2026-11-10",
-   "rank": 1
-  },
-  {
-   "h": "Holiday Bazaar at Arsenal Yards in Watertown, Nov. 14",
-   "sum": "The Arsenal Holiday Bazaar takes place Saturday, Nov. 14, at Arsenal Yards.",
-   "outlet": "The Boston Calendar",
-   "url": "https://www.thebostoncalendar.com/events/the-arsenal-holiday-bazaar",
-   "town": "Watertown",
-   "date": "2026-11-10",
-   "rank": 12
+   "date": "2026-11-11",
+   "rank": 2,
+   "lead": true
   },
   {
    "h": "Ballet BC Brings Contemporary Dance to the Cutler Majestic, Nov. 21-22",
@@ -193,16 +163,6 @@
    "rank": 8
   },
   {
-   "h": "Pokey LaFarge Celebrates Rent Money in Somerville",
-   "sum": "Tuesday's show at the Armory marks the release of his new album.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=pokey-lafarge-armory-somerville-2026",
-   "story": "pokey-lafarge-armory-somerville-2026",
-   "town": "Somerville",
-   "date": "2026-11-06",
-   "rank": 8
-  },
-  {
    "h": "Boston Ballet's Nutcracker Returns to the Opera House",
    "sum": "Performances begin Nov. 27.",
    "outlet": "The Boston Rambler",
@@ -211,15 +171,6 @@
    "town": "Theatre District",
    "date": "2026-11-04",
    "rank": 8
-  },
-  {
-   "h": "Heritage Chorale Opens Its 90th Anniversary Season in Framingham, Nov. 22",
-   "sum": "Nevins Hall hosts a Handel and Haydn program from 4 to 6 p.m. with four soloists and an 18-piece orchestra.",
-   "outlet": "The Boston Calendar",
-   "url": "https://www.thebostoncalendar.com/events/heritage-chorale-90th-anniversary-concert",
-   "town": "Framingham",
-   "date": "2026-11-07",
-   "rank": 9
   },
   {
    "h": "Handel and Haydn's Messiah Returns to Symphony Hall",
@@ -345,6 +296,67 @@
    "town": "Back Bay",
    "date": "2026-11-04",
    "rank": 14
+  },
+  {
+   "h": "Victoria Monét Brings Frequency of Love to MGM Music Hall, Nov. 13",
+   "sum": "Friday, Nov. 13, at 8:00 PM at MGM Music Hall at Fenway, 2 Lansdowne Street.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=victoria-monet-mgm-music-hall-nov-13-2026",
+   "story": "victoria-monet-mgm-music-hall-nov-13-2026",
+   "town": "Fenway",
+   "date": "2026-11-11",
+   "rank": 2,
+   "box": true
+  },
+  {
+   "h": "Boston Today and Tonight: The Longest Johns, Marshall Crenshaw, Passim",
+   "sum": "Tonight's picks include The Longest Johns at the Wilbur at 8:00 PM, Marshall Crenshaw at City Winery at 7:30 PM and Jason Carter Band at Club Passim at 8:00 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-11",
+   "story": "today-and-tonight-2026-11-11",
+   "town": "Boston",
+   "date": "2026-11-11",
+   "rank": 1
+  },
+  {
+   "h": "Heritage Chorale's 90th Anniversary Season Opens in Framingham, Nov. 22",
+   "sum": "Sunday, Nov. 22, from 4:00 to 6:00 PM at Nevins Hall, 150 Concord Street in Framingham, with four soloists and an 18-piece orchestra.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=heritage-chorale-90th-season-framingham-nov-22-2026",
+   "story": "heritage-chorale-90th-season-framingham-nov-22-2026",
+   "town": "Framingham",
+   "date": "2026-11-11",
+   "rank": 3
+  },
+  {
+   "h": "Arsenal Holiday Bazaar Brings 50-Plus Small Businesses to Watertown",
+   "sum": "Saturday, Nov. 14, and Sunday, Nov. 15, from 11:00 AM to 5:00 PM at Arsenal Yards, Bond Square in Watertown, with outdoor shopping and food.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=arsenal-holiday-bazaar-watertown-nov-14-2026",
+   "story": "arsenal-holiday-bazaar-watertown-nov-14-2026",
+   "town": "Watertown",
+   "date": "2026-11-11",
+   "rank": 4
+  },
+  {
+   "h": "Flamenco Duo Triana Maciel and Nino de los Reyes Plays Roxbury, Nov. 21",
+   "sum": "Saturday, Nov. 21, at 3:00 PM at the Roxbury Community College Media Arts Center, 1234 Columbus Avenue in Roxbury Crossing, with no charge admission.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=perpetuarte-flamenco-roxbury-community-college-nov-21-2026",
+   "story": "perpetuarte-flamenco-roxbury-community-college-nov-21-2026",
+   "town": "Roxbury",
+   "date": "2026-11-11",
+   "rank": 6
+  },
+  {
+   "h": "Peter and the Wolf Gets a Family Concert at Symphony Hall, Nov. 21",
+   "sum": "Saturday, Nov. 21, at 12:00 PM at Symphony Hall, 301 Massachusetts Avenue, with the Boston Youth Symphony Orchestras and the Boston Ballet School.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=peter-and-the-wolf-symphony-hall-nov-21-2026",
+   "story": "peter-and-the-wolf-symphony-hall-nov-21-2026",
+   "town": "Back Bay",
+   "date": "2026-11-11",
+   "rank": 8
   }
  ]
 }
