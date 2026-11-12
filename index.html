@@ -358,6 +358,7 @@ html body .lsrow .lspot.hasad{animation:hgAd 5s ease-in-out infinite}
 html body #flagLine{padding:0!important;height:6px!important;min-height:0!important;gap:0!important;border:0!important;background:linear-gradient(90deg,#141A2C 0 33.3%,#4A5F8F 33.3% 66.6%,#9B2A20 66.6%)!important}
 html body #flagLine::before,html body #flagLine i{display:none!important}
 </style>
+<style>a.sh.sh-nolink{cursor:default}a.sh.sh-nolink:hover{transform:none}</style>
 </head>
 <body>
 <title>The Boston Rambler</title>
@@ -1491,7 +1492,7 @@ function sty(slug){let f,c;if(STYLE_FIX[slug]){[f,c]=STYLE_FIX[slug];f%=SFONTS.l
 function storyCard(s){return `<button class="sc styled" style="--tc:${tc(s.topic)};${sty(s.slug)}" data-story="${s.slug}">
   <span class="kick" style="--tc:${tc(s.topic)}"><span class="dot"></span>${esc(tl(s.topic))}<time>${shortDay(s.date)}</time></span>
   <h4>${esc(s.title)}</h4><p>${esc(s.dek)}</p><span class="meta">${s.minutes} min read</span></button>`}
-function showRow(e){const d=pd(e.date);return `<a class="sh" href="${esc(e.url)}" target="_blank" rel="noopener">
+function showRow(e){const d=pd(e.date);const lk=/^https?:\/\//i.test(e.url||''); /* no published link: show the listing, but not as a dead link */ return `<a class="sh${lk?'':' sh-nolink'}"${lk?` href="${esc(e.url)}" target="_blank" rel="noopener"`:''}>
   <span class="dt"><small>${MON[d.getMonth()]}</small><b>${d.getDate()}</b><i>${DOW[d.getDay()]}</i></span>
   <span class="who"><b>${esc(e.artists)}</b><span>${esc(e.venue)}${e.hood?' · '+esc(e.hood):''}${e.time?' · '+esc(e.time):''}${e.doors_time?' · Doors '+esc(e.doors_time):''}${e.price?' · '+esc(e.price):''}${e.ages?' · '+esc(e.ages):''}</span>${e.blurb?'<i class="calb" title="'+esc(e.blurb)+'">'+esc(e.blurb)+'</i>':''}${(e.location_evidence||'').includes('official_club_calendar_default')?'<small style="display:block;color:var(--muted)">Venue inferred from the official Club Calendar; confirm with venue.</small>':''}</span>
   <span class="gtag" style="--gc:${GENRE[e.genre]||'#4A5F8F'}">${esc(e.genre)}</span></a>`}
