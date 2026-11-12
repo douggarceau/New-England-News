@@ -524,5 +524,92 @@
     "url": "https://artsatthearmory.org/?p=34355"
    }
   ]
+ },
+ {
+  "slug": "today-and-tonight-2026-11-11",
+  "topic": "family",
+  "date": "2026-11-11",
+  "until": "2026-11-11",
+  "minutes": 1,
+  "title": "Boston Today and Tonight: The Longest Johns, Marshall Crenshaw, Passim",
+  "dek": "Tonight's picks include The Longest Johns at the Wilbur at 8:00 PM, Marshall Crenshaw at City Winery at 7:30 PM and Jason Carter Band at Club Passim at 8:00 PM.",
+  "body": [
+   "Wednesday's listings lean toward grown-up nights, with a theatre show at the Wilbur, live music at Club Passim and City Winery, and a rock show at Roadrunner in Brighton. Each listing below comes from the venue's own calendar entry.",
+   "## Tonight, for grown-ups",
+   "#T {\"title\": \"Tonight, for grown-ups\", \"head\": [\"Time\", \"What\", \"Where\"], \"rows\": [[\"7:30 PM\", \"Marshall Crenshaw\", \"City Winery Boston, West End\"], [\"8:00 PM\", \"Jason Carter Band\", \"Club Passim, Cambridge\"], [\"8:00 PM\", \"The Longest Johns\", \"Wilbur Theatre, Downtown\"], [\"8:00 PM\", \"Geese\", \"Roadrunner, Brighton\"]]}",
+   "Times come from each venue's listing. Check before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "The Boston Calendar / City Winery",
+    "title": "Marshall Crenshaw, City Winery Boston",
+    "date": "2026-11-11",
+    "url": "https://tickets.citywinery.com/event/marshall-crenshaw-lzc62m"
+   },
+   {
+    "outlet": "Club Passim",
+    "title": "Jason Carter Band",
+    "date": "2026-11-11",
+    "url": "https://www.passim.org/live-music/events/jason-carter-band/"
+   },
+   {
+    "outlet": "Ticketmaster",
+    "title": "The Longest Johns, Wilbur Theatre",
+    "date": "2026-11-11",
+    "url": "https://www.ticketmaster.com/the-longest-johns-boston-massachusetts-11-11-2026/event/010064C59504F82E"
+   },
+   {
+    "outlet": "AXS",
+    "title": "Geese, Roadrunner",
+    "date": "2026-11-11",
+    "url": "https://www.axs.com/events/1414955/geese-tickets"
+   }
+  ]
+ },
+ {
+  "slug": "geese-roadrunner-two-nights-nov-10-11",
+  "topic": "music",
+  "date": "2026-10-29",
+  "until": "2026-11-11",
+  "minutes": 1,
+  "title": "Geese Play Two Nights at Roadrunner, Nov. 10 and 11",
+  "dek": "The Brooklyn rock band takes over Boston's big Brighton hall for back-to-back shows, with Gwenifer Raymond opening.",
+  "body": [
+   "Geese, one of the most talked-about young guitar bands around, plays two nights at Roadrunner in Brighton: Tuesday, Nov. 10, and Wednesday, Nov. 11.",
+   "Two straight nights at a room the size of Roadrunner says a lot about how quickly the band has grown. Their live sets lean loose and wiry, swinging from tight grooves to long, ragged jams, and they tend to sound a little different every night, which makes the double run a real temptation for fans.",
+   "## Opening act",
+   "Guitarist Gwenifer Raymond opens both nights, so plan to be inside by the time doors open.",
+   "## The details",
+   "Doors open at 7 p.m. and the show starts at 8 p.m. both nights, according to AXS. Roadrunner is at 89 Guest St. in Brighton. Tickets are on sale through AXS; prices were not posted on the listing we checked.",
+   "#T {\"title\": \"Geese at Roadrunner\", \"head\": [\"Night\", \"Doors\", \"Show\", \"Opener\"], \"rows\": [[\"Tue. Nov. 10\", \"7 p.m.\", \"8 p.m.\", \"Gwenifer Raymond\"], [\"Wed. Nov. 11\", \"7 p.m.\", \"8 p.m.\", \"Gwenifer Raymond\"]], \"note\": \"Roadrunner, 89 Guest St., Brighton. Tickets through AXS.\"}",
+   "## Also at Roadrunner this month",
+   "The venue's November calendar also includes country singer Hudson Westbrook on Saturday, Nov. 7."
+  ],
+  "sources": [
+   {
+    "outlet": "Songkick",
+    "title": "Geese Boston Tickets, Roadrunner, 10 Nov 2026",
+    "date": "",
+    "url": "https://www.songkick.com/concerts/43176084-geese-at-roadrunner"
+   },
+   {
+    "outlet": "Songkick",
+    "title": "Hudson Westbrook Boston Tickets, Roadrunner, 07 Nov 2026",
+    "date": "",
+    "url": "https://www.songkick.com/concerts/43321376-hudson-westbrook-at-roadrunner"
+   },
+   {
+    "outlet": "AXS",
+    "title": "Geese, Nov. 10",
+    "date": "",
+    "url": "https://www.axs.com/events/1414925/geese-tickets"
+   },
+   {
+    "outlet": "AXS",
+    "title": "Geese, Nov. 11",
+    "date": "",
+    "url": "https://www.axs.com/events/1414955/geese-tickets"
+   }
+  ]
  }
 ]
