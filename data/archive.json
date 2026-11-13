@@ -611,5 +611,78 @@
     "url": "https://www.axs.com/events/1414955/geese-tickets"
    }
   ]
+ },
+ {
+  "slug": "today-and-tonight-2026-11-12",
+  "topic": "family",
+  "date": "2026-11-12",
+  "until": "2026-11-12",
+  "minutes": 1,
+  "title": "Boston Today and Tonight: Creation, Tierney Sutton and Passim",
+  "dek": "Tonight at 7:30 PM, Osvaldo Golijov's Creation premieres at Symphony Hall in Back Bay, with jazz at Regattabar and folk at Club Passim at 7:00 PM.",
+  "body": [
+   "Thursday's biggest draw is the world premiere of Osvaldo Golijov's Creation, a Boston Symphony Orchestra commission. Smaller rooms in Cambridge and Back Bay offer jazz and folk on the same evening, and Berklee Performance Center's family musical Emperor's New Clothes begins at 7:00 PM for younger audiences.",
+   "## Tonight, for grown-ups",
+   "#T {\"title\": \"Tonight, for grown-ups\", \"head\": [\"Time\", \"What\", \"Where\"], \"rows\": [[\"7:00 PM\", \"Rev. Robert B. Jones Sr. and Matt Watroba\", \"Club Passim, Cambridge\"], [\"7:00 PM\", \"Tierney Sutton and Tamir Hendelman Duo\", \"Regattabar, Cambridge\"], [\"7:30 PM\", \"Creation by Osvaldo Golijov (world premiere)\", \"Symphony Hall, Back Bay\"], [\"7:30 PM\", \"Rachael Yamagata\", \"City Winery Boston, Seaport\"]]}",
+   "Times come from each venue's listing. Check before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "Boston Symphony Orchestra",
+    "title": "Creation by Osvaldo Golijov",
+    "date": "2026-11-12",
+    "url": "https://www.bso.org/events/nov-12-14-golijov"
+   },
+   {
+    "outlet": "Regattabar",
+    "title": "Tierney Sutton and Tamir Hendelman Duo",
+    "date": "2026-11-12",
+    "url": "https://www.ticketweb.com/event/tierney-sutton-and-tamir-hendelman-regattabar-tickets/14997353"
+   },
+   {
+    "outlet": "Club Passim",
+    "title": "Rev. Robert B. Jones, Sr. & Matt Watroba",
+    "date": "2026-11-12",
+    "url": "https://www.passim.org/live-music/events/rev-robert-b-jones-sr-matt-watroba/"
+   },
+   {
+    "outlet": "City Winery Boston",
+    "title": "Rachael Yamagata",
+    "date": "2026-11-12",
+    "url": "https://tickets.citywinery.com/event/rachael-yamagata-yycnml"
+   },
+   {
+    "outlet": "Berklee Performance Center",
+    "title": "Emperor's New Clothes",
+    "date": "2026-11-12",
+    "url": "https://www.berklee.edu/BPC/events/emperors-new-clothes"
+   }
+  ]
+ },
+ {
+  "slug": "emperors-new-clothes-berklee-nov-12-2026",
+  "topic": "family",
+  "date": "2026-11-05",
+  "until": "2026-11-12",
+  "minutes": 1,
+  "title": "A Family Musical Retells 'The Emperor's New Clothes' at Berklee",
+  "dek": "Thursday, Nov. 12 at 7 p.m. at the Berklee Performance Center, a musical for families based on Hans Christian Andersen's classic tale.",
+  "body": [
+   "The Berklee Theater Arts Collaborative and its Theater for Young Audiences Ensemble present a musical version of The Emperor's New Clothes at the Berklee Performance Center on Thursday, November 12, at 7 p.m.",
+   "## A Classic Tale, Set to Music",
+   "The production retells Hans Christian Andersen's story of a vain ruler and two swindlers who promise him a suit that only the honest can see. The adaptation was written by René Pfister, artistic director of the Berklee Theater Arts Collaborative, and it is made for family audiences.",
+   "## A Night Out for Young Audiences",
+   "Shows made for young audiences bring families into a theater together, and this one suits a Thursday evening for children and the grown-ups who come with them. Its songs and its familiar story give younger viewers a way into the theater.",
+   "## Tickets",
+   "Tickets are sold through the Berklee Performance Center's Etix page. The box office at 136 Massachusetts Avenue is open from noon to 6 p.m. Tuesday through Friday and two hours before ticketed events."
+  ],
+  "sources": [
+   {
+    "outlet": "Berklee Performance Center",
+    "title": "Emperor's New Clothes",
+    "date": "2026-11-05",
+    "url": "https://www.berklee.edu/BPC/events/emperors-new-clothes"
+   }
+  ]
  }
 ]
