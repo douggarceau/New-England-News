@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-13T12:45:00-05:00",
+ "asof": "2026-11-14T07:35:00-05:00",
  "items": [
   {
    "h": "Ballet BC Brings Contemporary Dance to the Cutler Majestic, Nov. 21-22",
@@ -8,16 +8,6 @@
    "url": "?story=ballet-bc-cutler-majestic-nov-21-22-2026",
    "story": "ballet-bc-cutler-majestic-nov-21-22-2026",
    "town": "Downtown",
-   "date": "2026-11-09",
-   "rank": 3
-  },
-  {
-   "h": "Nemanja Radulović and Double Sens Make Their U.S. Debut, Nov. 13",
-   "sum": "The violinist and his chamber orchestra play NEC's Jordan Hall at 8:00 PM on Friday, Nov. 13.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=radulovic-double-sens-jordan-hall-nov-13-2026",
-   "story": "radulovic-double-sens-jordan-hall-nov-13-2026",
-   "town": "Fenway",
    "date": "2026-11-09",
    "rank": 3
   },
@@ -168,16 +158,6 @@
    "rank": 8
   },
   {
-   "h": "Golijov's Creation: a BSO World Premiere, Nov. 12-14",
-   "sum": "Eric Jacobsen conducts the new Golijov, Hwang and Cohen work Nov. 12, 13 and 14 at Symphony Hall, 301 Massachusetts Ave.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=bso-golijov-creation-world-premiere-2026",
-   "story": "bso-golijov-creation-world-premiere-2026",
-   "town": "Back Bay",
-   "date": "2026-11-12",
-   "rank": 2
-  },
-  {
    "h": "Sing We Noel: Christmas Music From England and Early America",
    "sum": "Sunday, December 6, at 6:30 PM at Gordon Chapel in Old South Church, Back Bay.",
    "outlet": "The Boston Rambler",
@@ -225,38 +205,6 @@
    "town": "Back Bay",
    "date": "2026-11-12",
    "rank": 10
-  },
-  {
-   "h": "Snowport Returns to the Seaport With 130 Makers and Live Music",
-   "sum": "Opens Friday, Nov. 6, at 100 Seaport Boulevard in the Seaport District, with weekend hours from 10 a.m. and the market running through Dec. 27.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=snowport-holiday-market-seaport-2026",
-   "story": "snowport-holiday-market-seaport-2026",
-   "town": "Seaport",
-   "date": "2026-11-13",
-   "rank": 2,
-   "lead": true
-  },
-  {
-   "h": "Victoria Monét Brings Frequency of Love to MGM Music Hall, Nov. 13",
-   "sum": "Friday, Nov. 13, at 8:00 PM at MGM Music Hall at Fenway, 2 Lansdowne Street in Fenway, on the Frequency of Love Tour.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=victoria-monet-mgm-music-hall-nov-13-2026",
-   "story": "victoria-monet-mgm-music-hall-nov-13-2026",
-   "town": "Fenway",
-   "date": "2026-11-13",
-   "rank": 2,
-   "box": true
-  },
-  {
-   "h": "Boston Today and Tonight: Monét, Creation and Charlap",
-   "sum": "Friday, Nov. 13: Victoria Monét at MGM Music Hall at 8:00 PM, Golijov's Creation at Symphony Hall at 7:30 PM and the Bill Charlap Trio at Regattabar at 7:00 PM.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-13",
-   "story": "today-and-tonight-2026-11-13",
-   "town": "Boston",
-   "date": "2026-11-13",
-   "rank": 1
   },
   {
    "h": "Kapilow and A Far Cry Unpack Mozart's Clarinet Concerto, Nov. 22",
@@ -307,6 +255,38 @@
    "town": "Back Bay",
    "date": "2026-11-13",
    "rank": 8
+  },
+  {
+   "h": "Boston Today and Tonight: Creation, Nightingale and Arsenal Bazaar",
+   "sum": "Saturday, Nov. 14: Snowport opens at 10:00 AM, Nightingale plays Berklee at 7:30 PM and Creation plays Symphony Hall at 8:00 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-14",
+   "story": "today-and-tonight-2026-11-14",
+   "town": "Boston",
+   "date": "2026-11-14",
+   "rank": 1
+  },
+  {
+   "h": "Snowport Returns to the Seaport With 130 Makers and Live Music",
+   "sum": "Opens Friday, Nov. 6, at 100 Seaport Boulevard in the Seaport District, with weekend hours from 10 a.m. and the market running through Dec. 27.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=snowport-holiday-market-seaport-2026",
+   "story": "snowport-holiday-market-seaport-2026",
+   "lead": true,
+   "town": "Seaport",
+   "date": "2026-11-14",
+   "rank": 2
+  },
+  {
+   "h": "Golijov's Creation: a BSO World Premiere, Nov. 12-14",
+   "sum": "Eric Jacobsen conducts the new Golijov, Hwang and Cohen work Nov. 12, 13 and 14 at Symphony Hall, 301 Massachusetts Ave.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-golijov-creation-world-premiere-2026",
+   "story": "bso-golijov-creation-world-premiere-2026",
+   "box": true,
+   "town": "Back Bay",
+   "date": "2026-11-14",
+   "rank": 2
   }
  ]
 }
