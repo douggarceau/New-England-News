@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-15T08:00:00-05:00",
+ "asof": "2026-11-16T07:40:00-05:00",
  "items": [
   {
    "h": "Ballet BC Brings Contemporary Dance to the Cutler Majestic, Nov. 21-22",
@@ -12,26 +12,6 @@
    "rank": 3
   },
   {
-   "h": "Thibaudet and Yamada Bring Gershwin and Respighi to Symphony Hall",
-   "sum": "The BSO's Fountains of Rome program runs Nov. 27 and 28, with a pre-concert talk on the Friday.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=bso-gershwin-respighi-fountains-of-rome-2026",
-   "story": "bso-gershwin-respighi-fountains-of-rome-2026",
-   "town": "Back Bay",
-   "date": "2026-11-08",
-   "rank": 3
-  },
-  {
-   "h": "Lysander Piano Trio Plays Grieg and Dvořák at the Gardner",
-   "sum": "The Sunday afternoon concert on Nov. 15 includes works by Amanda Maier and Bongani Ndodana-Breen.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=lysander-piano-trio-gardner-nov-15-2026",
-   "story": "lysander-piano-trio-gardner-nov-15-2026",
-   "town": "Fenway",
-   "date": "2026-11-08",
-   "rank": 10
-  },
-  {
    "h": "Heritage Chorale's 90th Anniversary Season Opens in Framingham, Nov. 22",
    "sum": "Sunday, Nov. 22, from 4:00 to 6:00 PM at Nevins Hall, 150 Concord Street in Framingham, with four soloists and an 18-piece orchestra.",
    "outlet": "The Boston Rambler",
@@ -40,16 +20,6 @@
    "town": "Framingham",
    "date": "2026-11-11",
    "rank": 3
-  },
-  {
-   "h": "Arsenal Holiday Bazaar Brings 50-Plus Small Businesses to Watertown",
-   "sum": "Saturday, Nov. 14, and Sunday, Nov. 15, from 11:00 AM to 5:00 PM at Arsenal Yards, Bond Square in Watertown, with outdoor shopping and food.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=arsenal-holiday-bazaar-watertown-nov-14-2026",
-   "story": "arsenal-holiday-bazaar-watertown-nov-14-2026",
-   "town": "Watertown",
-   "date": "2026-11-11",
-   "rank": 4
   },
   {
    "h": "Peter and the Wolf Gets a Family Concert at Symphony Hall, Nov. 21",
@@ -82,26 +52,6 @@
    "rank": 4
   },
   {
-   "h": "Jenna Moynihan and Owen Marshall Play Club Passim, Nov. 15",
-   "sum": "Sunday, November 15, with doors at 1:00 PM and the show at 2:00 PM at Club Passim in Cambridge.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=moynihan-owen-marshall-club-passim-nov-15-2026",
-   "story": "moynihan-owen-marshall-club-passim-nov-15-2026",
-   "town": "Cambridge",
-   "date": "2026-11-12",
-   "rank": 6
-  },
-  {
-   "h": "Lucy Kaplansky Sings at Club Passim, Nov. 15",
-   "sum": "Sunday, November 15, with doors at 6:00 PM and the show at 7:00 PM at Club Passim in Cambridge.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=lucy-kaplansky-club-passim-nov-15-2026",
-   "story": "lucy-kaplansky-club-passim-nov-15-2026",
-   "town": "Cambridge",
-   "date": "2026-11-12",
-   "rank": 8
-  },
-  {
    "h": "Copley Square Tree Lighting Is Monday, Nov. 30, at 5:00 PM",
    "sum": "Boston Parks and Recreation hosts the annual tree lighting at Copley Square Plaza.",
    "outlet": "City of Boston",
@@ -131,26 +81,6 @@
    "rank": 3
   },
   {
-   "h": "Tufts Choirs Bring Brahms's German Requiem to Medford, Nov. 15",
-   "sum": "Sunday, Nov. 15 at 3:00 PM at the Granoff Music Center's Distler Hall in Medford: the Tufts Concert Choir and Chamber Singers, with no charge admission.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=tufts-choruses-brahms-requiem-granoff-nov-15-2026",
-   "story": "tufts-choruses-brahms-requiem-granoff-nov-15-2026",
-   "town": "Medford",
-   "date": "2026-11-13",
-   "rank": 4
-  },
-  {
-   "h": "Belmont Dramatic Club Opens a Festival of New Short Plays, Nov. 14",
-   "sum": "Saturday, Nov. 14 at 8:00 PM at Belmont Town Hall in Belmont: nine original short plays by New England playwrights, running through Nov. 22.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=belmont-show-must-go-on-short-plays-nov-14-2026",
-   "story": "belmont-show-must-go-on-short-plays-nov-14-2026",
-   "town": "Belmont",
-   "date": "2026-11-13",
-   "rank": 6
-  },
-  {
    "h": "Oriana Consort Sings Tennyson, Folk Songs and Poulenc, Nov. 22",
    "sum": "Sunday, Nov. 22 at 5:00 PM at First Lutheran Church on Berkeley Street in Back Bay: the Oriana Consort's fall concert.",
    "outlet": "The Boston Rambler",
@@ -176,20 +106,30 @@
    "outlet": "The Boston Rambler",
    "url": "?story=handel-haydn-messiah-symphony-hall-2026",
    "story": "handel-haydn-messiah-symphony-hall-2026",
-   "lead": true,
    "town": "Back Bay",
-   "date": "2026-11-15",
-   "rank": 2
+   "date": "2026-11-16",
+   "rank": 2,
+   "lead": true
   },
   {
-   "h": "Boston Today and Tonight: Dover Quartet, Lysander and Lucy Kaplansky",
-   "sum": "Sunday, Nov. 15: the Dover Quartet plays Jordan Hall at 3:00 PM in Fenway, the Lysander Piano Trio plays the Gardner at 1:30 PM, and Lucy Kaplansky sings Club Passim at 7:00 PM.",
+   "h": "Doja Cat Brings 'Tour Ma Vie' to TD Garden on Nov. 23 With Latto",
+   "sum": "The Grammy winner's world tour hits Causeway Street the Monday before Thanksgiving, with Latto as special guest.",
    "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-15",
-   "story": "today-and-tonight-2026-11-15",
-   "box": true,
+   "url": "?story=doja-cat-latto-td-garden-nov-23",
+   "story": "doja-cat-latto-td-garden-nov-23",
    "town": "Boston",
-   "date": "2026-11-15",
+   "date": "2026-11-16",
+   "rank": 2,
+   "box": true
+  },
+  {
+   "h": "Boston Today and Tonight: Brother Ali and Zachariah Hickman",
+   "sum": "Brother Ali at City Winery Boston, The Art of Possibility at City Winery's Haymarket Lounge and a Power Outage jam at Club Passim all start at 7:30 PM tonight.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-16",
+   "story": "today-and-tonight-2026-11-16",
+   "town": "Boston",
+   "date": "2026-11-16",
    "rank": 1
   }
  ]
