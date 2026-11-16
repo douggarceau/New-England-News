@@ -34,11 +34,17 @@ RENAMES = [
     (r'(?:the )?Fremont Abbey Arts Center', 'Fremont Abbey'),
     (r'(?:the )?Cannonball Arts Center', 'Cannonball Arts'),
 ]
+# Site-only extras: tools/banned_extra.json {"renames": [[regex, replacement], ...], "ban": [regex, ...]}
+# (e.g. names the owner may not use on one site). Renames run first; banned items/sentences are removed.
+EXTRA = {}
+_xp = os.path.join(ROOT, 'tools', 'banned_extra.json')
+if os.path.exists(_xp): EXTRA = json.load(open(_xp, encoding='utf-8'))
+RENAMES = [tuple(x) for x in EXTRA.get('renames', [])] + RENAMES
 RENAMES = [(re.compile(p, re.I), r) for p, r in RENAMES]
 URI_CTX = re.compile(r'\bURI\b|University of Rhode Island|Kingston', re.I)
 URI_FAC = re.compile(r'(?:the )?Fine Arts Center', re.I)
 
-BAN = re.compile(r'\barts?[\s\-]+cent(?:er|re)s?\b|jamestownarts\.com|jamestown fine arts\b', re.I)
+BAN = re.compile('|'.join([r'\barts?[\s\-]+cent(?:er|re)s?\b', r'jamestownarts\.com', r'jamestown fine arts\b'] + EXTRA.get('ban', [])), re.I)
 BAN_CASE = re.compile(r'\bJAC\b')  # Jamestown Arts Center's abbreviation (case-sensitive)
 def banned(s): return bool(BAN.search(s) or BAN_CASE.search(s))
 # link addresses are not seen by readers: only the two Jamestown arts-center sites count there
