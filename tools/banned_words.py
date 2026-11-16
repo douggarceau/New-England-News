@@ -27,6 +27,7 @@ RENAMES = [
     (r'\bthe Providence Performing Arts Center', 'PPAC'),
     (r'Providence Performing Arts Center', 'PPAC'),
     (r'Waterfire & Waterfire Arts Center', 'WaterFire Providence'),
+    (r'\bthe WaterFire Arts Center', "WaterFire Providence's building"),
     (r'WaterFire Arts Center', 'WaterFire Providence'),
     (r'(?:the )?URI Fine Arts Center', 'URI Fine Arts'),
     (r'(?:the )?Lindemann Performing Arts Center', "Brown's Lindemann Center"),
@@ -63,9 +64,18 @@ def rename(s):
     if n != s: stats['renamed'] += 1
     return n
 
+ABBR = re.compile(r'(?:\b[ap]\.m|\b(?:St|Ave|Rd|Dr|Mr|Mrs|Ms|No|Jan|Feb|Mar|Apr|Aug|Sept?|Oct|Nov|Dec|Jr|Sr|Inc|vs|Mt|Ft|U\.S)|\b[A-Z])\.$')
+def split_sentences(s):
+    """split on . ! ? but not after a.m./p.m., St., Nov., initials and similar"""
+    out = []
+    for piece in re.split(r'(?<=[.!?])\s+', s):
+        if out and ABBR.search(out[-1]): out[-1] += ' ' + piece
+        else: out.append(piece)
+    return out
+
 def drop_sentences(s):
     if is_url(s) or not banned(s): return s
-    parts = re.split(r'(?<=[.!?])\s+', s)
+    parts = split_sentences(s)
     keep = [p for p in parts if not banned(p)]
     stats['sentences'] += len(parts) - len(keep)
     return ' '.join(keep)
@@ -171,6 +181,19 @@ def main():
             ind = 1 if raw.startswith('{\n') or raw.startswith('[\n') else None
             sep = None if ind else (',', ':')
             write(fp, json.dumps(C, ensure_ascii=False, indent=ind, separators=sep) + ('\n' if raw.endswith('\n') else '')); changed.append('data/' + f)
+    # 2b. headline cards that point at a story which is no longer in STORIES
+    hp = os.path.join(ROOT, 'data', 'headlines.json')
+    if slugs is not None and os.path.exists(hp):
+        H = json.load(open(hp, encoding='utf-8')); items = H.get('items') if isinstance(H, dict) else H
+        if isinstance(items, list):
+            keep = [x for x in items if not (isinstance(x, dict) and x.get('story') and x['story'] not in slugs)]
+            if len(keep) != len(items):
+                stats['removed'] += len(items) - len(keep)
+                if isinstance(H, dict): H['items'] = keep
+                else: H = keep
+                raw = open(hp, encoding='utf-8').read(); ind = 1 if raw.startswith(('{\n', '[\n')) else None
+                write(hp, json.dumps(H, ensure_ascii=False, indent=ind, separators=None if ind else (',', ':')) + '\n')
+                if 'data/headlines.json' not in changed: changed.append('data/headlines.json')
     # 3. share pages of stories no longer in STORIES (pages of current stories are rebuilt by share_pages.py):
     #    rename venues in place; if the page still has banned words, replace it with a plain redirect
     #    to the home page so old shared links still land somewhere.
