@@ -1,15 +1,67 @@
 {
- "asof": "2026-11-16T07:40:00-05:00",
+ "asof": "2026-11-17T07:38:54-05:00",
  "items": [
   {
-   "h": "Ballet BC Brings Contemporary Dance to the Cutler Majestic, Nov. 21-22",
-   "sum": "Vancouver's Ballet BC plays the Cutler Majestic Theatre, with the Saturday show at 8:00 PM.",
+   "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
+   "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
    "outlet": "The Boston Rambler",
-   "url": "?story=ballet-bc-cutler-majestic-nov-21-22-2026",
-   "story": "ballet-bc-cutler-majestic-nov-21-22-2026",
+   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
+   "story": "handel-haydn-messiah-symphony-hall-2026",
+   "lead": true,
+   "town": "Back Bay",
+   "date": "2026-11-17",
+   "rank": 2
+  },
+  {
+   "h": "Doja Cat Brings 'Tour Ma Vie' to TD Garden on Nov. 23 With Latto",
+   "sum": "The Grammy winner's world tour hits Causeway Street the Monday before Thanksgiving, with Latto as special guest.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=doja-cat-latto-td-garden-nov-23",
+   "story": "doja-cat-latto-td-garden-nov-23",
+   "box": true,
+   "town": "Boston",
+   "date": "2026-11-17",
+   "rank": 2
+  },
+  {
+   "h": "Boston Today and Tonight: Eilen Jewell, Jack O'Neill and Club Passim",
+   "sum": "Tonight's picks: Eilen Jewell and Jack O'Neill at City Winery at 7:30 PM, Zachariah Hickman's Power Outage Party at Club Passim at 7:30 PM, and Stella Lefty at Royale at 8:00 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-17",
+   "story": "today-and-tonight-2026-11-17",
+   "town": "Boston",
+   "date": "2026-11-17",
+   "rank": 1
+  },
+  {
+   "h": "Places We Carry: Juried Student Show Opens at the MFA, Nov. 21",
+   "sum": "Opens Saturday, Nov. 21, in the Edward H. Linde Gallery, with work by five emerging artists.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=places-we-carry-smfa-tufts-mfa-2026",
+   "story": "places-we-carry-smfa-tufts-mfa-2026",
+   "town": "Fenway",
+   "date": "2026-11-17",
+   "rank": 4
+  },
+  {
+   "h": "Quincy Market Tree Lighting Is Saturday, Nov. 21, From 2:00 to 6:00 PM",
+   "sum": "Faneuil Hall Marketplace holds its annual lighting with Make-A-Wish and Santa, and admission is at no charge.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=quincy-market-tree-lighting-2026",
+   "story": "quincy-market-tree-lighting-2026",
    "town": "Downtown",
-   "date": "2026-11-09",
-   "rank": 3
+   "date": "2026-11-17",
+   "rank": 6
+  },
+  {
+   "h": "Convivium Sings A North Atlantic Christmas in Brookline, Nov. 21",
+   "sum": "Saturday, Nov. 21, from 7:00 to 8:30 PM at All Saints Parish, 1773 Beacon Street, with tickets at $25.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=convivium-a-north-atlantic-christmas-brookline-2026",
+   "story": "convivium-a-north-atlantic-christmas-brookline-2026",
+   "town": "Brookline",
+   "date": "2026-11-17",
+   "rank": 8
   },
   {
    "h": "Heritage Chorale's 90th Anniversary Season Opens in Framingham, Nov. 22",
@@ -99,38 +151,6 @@
    "town": "Seaport",
    "date": "2026-11-14",
    "rank": 2
-  },
-  {
-   "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
-   "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
-   "story": "handel-haydn-messiah-symphony-hall-2026",
-   "town": "Back Bay",
-   "date": "2026-11-16",
-   "rank": 2,
-   "lead": true
-  },
-  {
-   "h": "Doja Cat Brings 'Tour Ma Vie' to TD Garden on Nov. 23 With Latto",
-   "sum": "The Grammy winner's world tour hits Causeway Street the Monday before Thanksgiving, with Latto as special guest.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=doja-cat-latto-td-garden-nov-23",
-   "story": "doja-cat-latto-td-garden-nov-23",
-   "town": "Boston",
-   "date": "2026-11-16",
-   "rank": 2,
-   "box": true
-  },
-  {
-   "h": "Boston Today and Tonight: Brother Ali and Zachariah Hickman",
-   "sum": "Brother Ali at City Winery Boston, The Art of Possibility at City Winery's Haymarket Lounge and a Power Outage jam at Club Passim all start at 7:30 PM tonight.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-16",
-   "story": "today-and-tonight-2026-11-16",
-   "town": "Boston",
-   "date": "2026-11-16",
-   "rank": 1
   }
  ]
 }

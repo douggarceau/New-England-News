@@ -1252,5 +1252,40 @@
     "url": "https://www.broadwayworld.com/article/Boston-Ballet-Unveils-2026-2027-Season-Featuring-CINDERELLA-and-COPPLIA-20260324"
    }
   ]
+ },
+ {
+  "slug": "today-and-tonight-2026-11-16",
+  "topic": "family",
+  "date": "2026-11-16",
+  "until": "2026-11-16",
+  "minutes": 1,
+  "title": "Boston Today and Tonight: Brother Ali and Zachariah Hickman",
+  "dek": "Brother Ali at City Winery Boston, The Art of Possibility at City Winery's Haymarket Lounge and a Power Outage jam at Club Passim all start at 7:30 PM tonight.",
+  "body": [
+   "Monday is a quiet night on the Boston calendar, but three shows start at 7:30 PM and make a fine way to begin the week. Brother Ali plays City Winery Boston in the West End. The Boston Arts Academy Foundation presents The Art of Possibility, with Ronnie Devoe, in the Haymarket Lounge at City Winery. Zachariah Hickman brings his Power Outage pre-party jam session to Club Passim in Cambridge.",
+   "## Tonight, for grown-ups",
+   "#T {\"title\": \"Tonight, for grown-ups\", \"head\": [\"Time\", \"What\", \"Where\"], \"rows\": [[\"7:30 PM\", \"Brother Ali\", \"City Winery Boston, West End\"], [\"7:30 PM\", \"Boston Arts Academy Foundation: The Art of Possibility with Ronnie Devoe\", \"City Winery Haymarket Lounge, West End\"], [\"7:30 PM\", \"Zachariah Hickman's Power Outage PRE-Party Jam Session\", \"Club Passim, Cambridge\"]]}",
+   "Times come from each venue's listing. Check before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "City Winery Boston",
+    "title": "Brother Ali",
+    "date": "2026-11-16",
+    "url": "https://tickets.citywinery.com/event/brother-ali-0apjnd"
+   },
+   {
+    "outlet": "City Winery",
+    "title": "Boston Arts Academy Foundation: The Art of Possibility",
+    "date": "2026-11-16",
+    "url": "https://tickets.citywinery.com/event/boston-arts-academy-foundation-the-art-of-possib-dleswh"
+   },
+   {
+    "outlet": "Club Passim",
+    "title": "Zachariah Hickman's Power Outage PRE-Party Jam Session",
+    "date": "2026-11-16",
+    "url": "https://www.passim.org/live-music/events/zachariah-hickmans-power-outage-pre-party-jam-session/"
+   }
+  ]
  }
 ]
