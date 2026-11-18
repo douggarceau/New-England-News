@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-17T07:38:54-05:00",
+ "asof": "2026-11-18T07:45:38-05:00",
  "items": [
   {
    "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
@@ -7,10 +7,10 @@
    "outlet": "The Boston Rambler",
    "url": "?story=handel-haydn-messiah-symphony-hall-2026",
    "story": "handel-haydn-messiah-symphony-hall-2026",
-   "lead": true,
    "town": "Back Bay",
-   "date": "2026-11-17",
-   "rank": 2
+   "date": "2026-11-18",
+   "rank": 2,
+   "lead": true
   },
   {
    "h": "Doja Cat Brings 'Tour Ma Vie' to TD Garden on Nov. 23 With Latto",
@@ -18,20 +18,10 @@
    "outlet": "The Boston Rambler",
    "url": "?story=doja-cat-latto-td-garden-nov-23",
    "story": "doja-cat-latto-td-garden-nov-23",
-   "box": true,
    "town": "Boston",
-   "date": "2026-11-17",
-   "rank": 2
-  },
-  {
-   "h": "Boston Today and Tonight: Eilen Jewell, Jack O'Neill and Club Passim",
-   "sum": "Tonight's picks: Eilen Jewell and Jack O'Neill at City Winery at 7:30 PM, Zachariah Hickman's Power Outage Party at Club Passim at 7:30 PM, and Stella Lefty at Royale at 8:00 PM.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-17",
-   "story": "today-and-tonight-2026-11-17",
-   "town": "Boston",
-   "date": "2026-11-17",
-   "rank": 1
+   "date": "2026-11-18",
+   "rank": 2,
+   "box": true
   },
   {
    "h": "Places We Carry: Juried Student Show Opens at the MFA, Nov. 21",
@@ -143,14 +133,44 @@
    "rank": 8
   },
   {
-   "h": "Snowport Returns to the Seaport With 130 Makers and Live Music",
-   "sum": "Opens Friday, Nov. 6, at 100 Seaport Boulevard in the Seaport District, with weekend hours from 10 a.m. and the market running through Dec. 27.",
+   "h": "Boston Today and Tonight: Earfull, James Hunter Six and Club Passim",
+   "sum": "Jazz at the Regattabar, the James Hunter Six at City Winery Boston and Zachariah Hickman's Power Outage Party at Club Passim, each listed at 7:30 PM.",
    "outlet": "The Boston Rambler",
-   "url": "?story=snowport-holiday-market-seaport-2026",
-   "story": "snowport-holiday-market-seaport-2026",
-   "town": "Seaport",
-   "date": "2026-11-14",
-   "rank": 2
+   "url": "?story=today-and-tonight-2026-11-18",
+   "story": "today-and-tonight-2026-11-18",
+   "town": "Boston",
+   "date": "2026-11-18",
+   "rank": 1
+  },
+  {
+   "h": "Picasso, Miró and Dalí Turn the Page at the MFA Through Jan. 24",
+   "sum": "Through January 24, 2027, the MFA's Torf Gallery shows Spanish artists' illustrated books, with a virtual lecture on December 9 at 6:30 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=mfa-picasso-miro-dali-unbound-2026",
+   "story": "mfa-picasso-miro-dali-unbound-2026",
+   "town": "Boston",
+   "date": "2026-11-18",
+   "rank": 3
+  },
+  {
+   "h": "Boston Tuba Christmas Brings Brass to The Steps Plaza, Nov. 28",
+   "sum": "Saturday, November 28, from 12:30 to 1:30 PM at The Steps Plaza in Downtown Boston, with a festive tuba and brass program.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-tuba-christmas-steps-plaza-2026",
+   "story": "boston-tuba-christmas-steps-plaza-2026",
+   "town": "Downtown Boston",
+   "date": "2026-11-18",
+   "rank": 4
+  },
+  {
+   "h": "Flamenco in Roxbury: Triana Maciel and Nino de los Reyes, Nov. 21",
+   "sum": "Saturday, November 21, from 3:00 to 5:00 PM at the Media Arts Center, Roxbury Community College, with admission at no charge.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=perpetuarte-roxbury-flamenco-nov-21-2026",
+   "story": "perpetuarte-roxbury-flamenco-nov-21-2026",
+   "town": "Roxbury",
+   "date": "2026-11-18",
+   "rank": 6
   }
  ]
 }

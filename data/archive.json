@@ -1287,5 +1287,116 @@
     "url": "https://www.passim.org/live-music/events/zachariah-hickmans-power-outage-pre-party-jam-session/"
    }
   ]
+ },
+ {
+  "slug": "today-and-tonight-2026-11-17",
+  "topic": "family",
+  "date": "2026-11-17",
+  "until": "2026-11-17",
+  "minutes": 1,
+  "title": "Boston Today and Tonight: Eilen Jewell, Jack O'Neill and Club Passim",
+  "dek": "Tonight's picks: Eilen Jewell and Jack O'Neill at City Winery at 7:30 PM, Zachariah Hickman's Power Outage Party at Club Passim at 7:30 PM, and Stella Lefty at Royale at 8:00 PM.",
+  "body": [
+   "Tuesday is a quiet night on Boston's calendar, but a few music listings are running, and two of them start at 7:30 PM at City Winery and Club Passim.",
+   "## Tonight, for grown-ups",
+   "#T {\"title\": \"Tuesday, Nov. 17\", \"head\": [\"Time\", \"What\", \"Where\"], \"rows\": [[\"7:30 PM\", \"Eilen Jewell\", \"City Winery Boston\"], [\"7:30 PM\", \"Jack O'Neill (from Jackopierce)\", \"City Winery Haymarket Lounge\"], [\"7:30 PM\", \"Zachariah Hickman's Power Outage Party\", \"Club Passim, Cambridge\"], [\"8:00 PM\", \"Stella Lefty (all ages)\", \"Royale, Boston\"]]}",
+   "Times come from each venue's listing. Check before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "City Winery Boston",
+    "title": "Eilen Jewell",
+    "date": "",
+    "url": "https://tickets.citywinery.com/event/eilen-jewell-jth8h7"
+   },
+   {
+    "outlet": "City Winery Boston",
+    "title": "Jack O'Neill (from Jackopierce)",
+    "date": "",
+    "url": "https://tickets.citywinery.com/event/jack-oneill-from-jackopierce-rv25hi"
+   },
+   {
+    "outlet": "Club Passim",
+    "title": "Zachariah Hickman's Power Outage Party",
+    "date": "",
+    "url": "https://www.passim.org/live-music/events/zachariah-hickmans-power-outage-party/"
+   },
+   {
+    "outlet": "Royale",
+    "title": "Stella Lefty (All Ages)",
+    "date": "",
+    "url": "https://www.axs.com/events/1449694/stella-lefty-tickets?skin=boweryboston"
+   }
+  ]
+ },
+ {
+  "slug": "snowport-holiday-market-seaport-2026",
+  "topic": "culture",
+  "date": "2026-11-14",
+  "until": "2026-11-17",
+  "minutes": 1,
+  "title": "Snowport Returns to the Seaport With 130 Makers and Live Music",
+  "dek": "Opens Friday, Nov. 6, at 100 Seaport Boulevard in the Seaport District, with weekend hours from 10 a.m. and the market running through Dec. 27.",
+  "body": [
+   "Snowport, the holiday market that has become a fixture of Boston's Seaport District, opened its sixth season on Friday, Nov. 6, at 100 Seaport Boulevard. More than 130 independent businesses are taking part, including 17 local food and beverage vendors, and Boston 25 News reports that most of them are based in New England.",
+   "Shoppers will find apparel, jewelry, home decor, artwork, toys, gourmet gifts and other items from local makers. Boston.com's listing adds a separate Christmas tree market, which opens Nov. 20, according to NBC Boston, iceless curling that can be reserved through Feb. 28, 2027, and photo spots. Live music is back this season: Mohegan Music Mondays features emerging Boston-area performers from Berklee College of Music starting at 5 p.m. each Monday, and more music is planned from Tuesday through Thursday, according to Boston 25.",
+   "## Hours and entry",
+   "General admission is no charge. From Nov. 6 through Dec. 6 the market is open Monday through Thursday from 3 to 8 p.m., Friday from 11 a.m. to 9 p.m., Saturday from 10 a.m. to 9 p.m. and Sunday from 10 a.m. to 8 p.m. Weekday hours start at 11 a.m. from Dec. 7. The market is closed on Thanksgiving and Christmas Day and closes at 6 p.m. on Christmas Eve. Weekend timed-entry passes are reserved through the Seaport Insider app, at $15 for adults, according to Boston 25.",
+   "## Beyond the stalls",
+   "The market also includes a Creativity Corner for craft projects such as snow globe making, as WBUR's weekend preview describes it. The holiday calendar continues on Dec. 4 at 6 p.m., when a tree lighting takes place at 85 Northern Avenue, and a menorah lighting follows on Dec. 10 at 6 p.m. at 60 Seaport Boulevard, according to Boston.com.",
+   "Snowport is a reminder that the holiday season in Boston does not have to be spent in one crowded hall. For an afternoon it offers a gift from a local studio, a student's set on a Monday evening, and a chance to make something by hand before the lights go up across the city. The market runs through Dec. 27, so there is time to return."
+  ],
+  "sources": [
+   {
+    "outlet": "Boston 25 News",
+    "title": "Snowport holiday market returning to Boston's Seaport for 2026 holiday season",
+    "date": "2026-10-14",
+    "url": "https://www.boston25news.com/news/local/snowport-holiday-market-returning-boston-seaport-2026-holiday-season/VOOAPT3EP5FXRI4SVYFRFDNRO4/"
+   },
+   {
+    "outlet": "Boston.com",
+    "title": "Snowport 2026 Holiday Market",
+    "date": "2026-10-29",
+    "url": "https://www.boston.com/things-to-do/events/snowport-2026-seaport-boston/"
+   },
+   {
+    "outlet": "WBUR",
+    "title": "5 things to do this weekend, including A Streetcar Named Desire and the return of Snowport",
+    "date": "2026-11-04",
+    "url": "https://www.wbur.org/news/2026/11/04/5-things-to-do-this-weekend-including-a-streetcar-named-desire-and-the-return-of-snowport"
+   },
+   {
+    "outlet": "NBC Boston",
+    "title": "Boston Snowport holiday market opens today in Seaport District",
+    "date": "Nov 6, 2026",
+    "url": "https://www.nbcboston.com/news/local/boston-snowport-holiday-market-opens-today-in-seaport-district/4044929/"
+   }
+  ]
+ },
+ {
+  "slug": "berklee-singers-night-journey-nov-17-2026",
+  "topic": "music",
+  "date": "2026-11-07",
+  "until": "2026-11-17",
+  "minutes": 1,
+  "title": "Berklee Singers Night Takes On the Music of Journey, Nov. 17",
+  "dek": "Tuesday, Nov. 17 at 8 p.m. at the Berklee Performance Center, 136 Massachusetts Avenue in the Back Bay.",
+  "body": [
+   "Each semester, the Berklee Voice Department turns one of its most prestigious showcases over to a single songbook. This semester the songbook belongs to Journey, and on Tuesday, Nov. 17, at 8 p.m., the stage at the Berklee Performance Center will be filled with student voices working through the band's best-known catalog.",
+   "## Auditions and the showcase",
+   "The event page says that 250 talented Berklee vocal students auditioned for a place in Singers Night. It does not say how many will perform, but it calls the evening one of the Voice Department's most prestigious showcases. A program PDF is linked from the event page for those who want the running order in advance.",
+   "## Tickets and the box office",
+   "Tickets are sold through the etix link on the Berklee page, and prices are not listed there. Box office hours are noon to 6 p.m. Tuesday through Friday, plus two hours before ticketed Berklee Performance Center events. Hours can change, so the page suggests emailing boxoffice@berklee.edu or calling 617-747-2261 before you visit.",
+   "## Why it is worth an evening",
+   "Student showcases like this one are where many young singers first test their nerve in front of a full house. An evening of Journey, sung by Berklee's rising voices, is a warm and lively way to hear the next generation of performers, and a good reason to be in the Back Bay on a Tuesday night."
+  ],
+  "sources": [
+   {
+    "outlet": "Berklee Performance Center",
+    "title": "Singers Night: Journey, Don't Stop Believin' (event page)",
+    "date": "2026-11-07",
+    "url": "https://www.berklee.edu/BPC/events/singers-night-journey-dont-stop-believin"
+   }
+  ]
  }
 ]
