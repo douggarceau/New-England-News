@@ -1,6 +1,16 @@
 {
- "asof": "2026-11-18T07:45:38-05:00",
+ "asof": "2026-11-19T07:40:00-05:00",
  "items": [
+  {
+   "h": "Boston Today and Tonight: Lisiecki, Hip-Hop Hall of Fame, Passim",
+   "sum": "Jan Lisiecki plays Mendelssohn at Symphony Hall at 7:30 PM, the Berklee Hip-Hop Hall of Fame celebration starts at 8:00 PM and a City Hall artist talk runs from 6:00 to 8:00 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-19",
+   "story": "today-and-tonight-2026-11-19",
+   "town": "Boston",
+   "date": "2026-11-19",
+   "rank": 1
+  },
   {
    "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
    "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
@@ -8,7 +18,7 @@
    "url": "?story=handel-haydn-messiah-symphony-hall-2026",
    "story": "handel-haydn-messiah-symphony-hall-2026",
    "town": "Back Bay",
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "rank": 2,
    "lead": true
   },
@@ -19,59 +29,9 @@
    "url": "?story=doja-cat-latto-td-garden-nov-23",
    "story": "doja-cat-latto-td-garden-nov-23",
    "town": "Boston",
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "rank": 2,
    "box": true
-  },
-  {
-   "h": "Places We Carry: Juried Student Show Opens at the MFA, Nov. 21",
-   "sum": "Opens Saturday, Nov. 21, in the Edward H. Linde Gallery, with work by five emerging artists.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=places-we-carry-smfa-tufts-mfa-2026",
-   "story": "places-we-carry-smfa-tufts-mfa-2026",
-   "town": "Fenway",
-   "date": "2026-11-17",
-   "rank": 4
-  },
-  {
-   "h": "Quincy Market Tree Lighting Is Saturday, Nov. 21, From 2:00 to 6:00 PM",
-   "sum": "Faneuil Hall Marketplace holds its annual lighting with Make-A-Wish and Santa, and admission is at no charge.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=quincy-market-tree-lighting-2026",
-   "story": "quincy-market-tree-lighting-2026",
-   "town": "Downtown",
-   "date": "2026-11-17",
-   "rank": 6
-  },
-  {
-   "h": "Convivium Sings A North Atlantic Christmas in Brookline, Nov. 21",
-   "sum": "Saturday, Nov. 21, from 7:00 to 8:30 PM at All Saints Parish, 1773 Beacon Street, with tickets at $25.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=convivium-a-north-atlantic-christmas-brookline-2026",
-   "story": "convivium-a-north-atlantic-christmas-brookline-2026",
-   "town": "Brookline",
-   "date": "2026-11-17",
-   "rank": 8
-  },
-  {
-   "h": "Heritage Chorale's 90th Anniversary Season Opens in Framingham, Nov. 22",
-   "sum": "Sunday, Nov. 22, from 4:00 to 6:00 PM at Nevins Hall, 150 Concord Street in Framingham, with four soloists and an 18-piece orchestra.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=heritage-chorale-90th-season-framingham-nov-22-2026",
-   "story": "heritage-chorale-90th-season-framingham-nov-22-2026",
-   "town": "Framingham",
-   "date": "2026-11-11",
-   "rank": 3
-  },
-  {
-   "h": "Peter and the Wolf Gets a Family Concert at Symphony Hall, Nov. 21",
-   "sum": "Saturday, Nov. 21, at 12:00 PM at Symphony Hall, 301 Massachusetts Avenue, with the Boston Youth Symphony Orchestras and the Boston Ballet School.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=peter-and-the-wolf-symphony-hall-nov-21-2026",
-   "story": "peter-and-the-wolf-symphony-hall-nov-21-2026",
-   "town": "Back Bay",
-   "date": "2026-11-11",
-   "rank": 8
   },
   {
    "h": "Sing We Noel: Christmas Music From England and Early America",
@@ -82,25 +42,6 @@
    "town": "Back Bay",
    "date": "2026-11-12",
    "rank": 3
-  },
-  {
-   "h": "SoWa Christmas Market Opens Nov. 20 With 100-Plus Local Makers",
-   "sum": "Opening night is Friday, November 20, from 4:00 to 9:00 PM at SoWa Power Station in the South End.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=sowa-christmas-market-opens-nov-20-2026",
-   "story": "sowa-christmas-market-opens-nov-20-2026",
-   "town": "South End",
-   "date": "2026-11-12",
-   "rank": 4
-  },
-  {
-   "h": "Copley Square Tree Lighting Is Monday, Nov. 30, at 5:00 PM",
-   "sum": "Boston Parks and Recreation hosts the annual tree lighting at Copley Square Plaza.",
-   "outlet": "City of Boston",
-   "url": "https://www.boston.gov/calendar/2026-copley-square-tree-lighting",
-   "town": "Back Bay",
-   "date": "2026-11-12",
-   "rank": 10
   },
   {
    "h": "Kapilow and A Far Cry Unpack Mozart's Clarinet Concerto, Nov. 22",
@@ -123,26 +64,6 @@
    "rank": 3
   },
   {
-   "h": "Oriana Consort Sings Tennyson, Folk Songs and Poulenc, Nov. 22",
-   "sum": "Sunday, Nov. 22 at 5:00 PM at First Lutheran Church on Berkeley Street in Back Bay: the Oriana Consort's fall concert.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=oriana-consort-first-lutheran-nov-22-2026",
-   "story": "oriana-consort-first-lutheran-nov-22-2026",
-   "town": "Back Bay",
-   "date": "2026-11-13",
-   "rank": 8
-  },
-  {
-   "h": "Boston Today and Tonight: Earfull, James Hunter Six and Club Passim",
-   "sum": "Jazz at the Regattabar, the James Hunter Six at City Winery Boston and Zachariah Hickman's Power Outage Party at Club Passim, each listed at 7:30 PM.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-18",
-   "story": "today-and-tonight-2026-11-18",
-   "town": "Boston",
-   "date": "2026-11-18",
-   "rank": 1
-  },
-  {
    "h": "Picasso, Miró and Dalí Turn the Page at the MFA Through Jan. 24",
    "sum": "Through January 24, 2027, the MFA's Torf Gallery shows Spanish artists' illustrated books, with a virtual lecture on December 9 at 6:30 PM.",
    "outlet": "The Boston Rambler",
@@ -153,6 +74,36 @@
    "rank": 3
   },
   {
+   "h": "Earl Lee Leads Tchaikovsky's Fourth at Symphony Hall, Nov. 24-25",
+   "sum": "Franck, Tomasi and Tchaikovsky on one program, with saxophonist Steven Banks, at 1:30 PM on Nov. 24 and 8:00 PM on Nov. 25 at Symphony Hall.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-earl-lee-tchaikovsky-symphony-4-nov-24-25-2026",
+   "story": "bso-earl-lee-tchaikovsky-symphony-4-nov-24-25-2026",
+   "town": "Back Bay",
+   "date": "2026-11-19",
+   "rank": 3
+  },
+  {
+   "h": "Places We Carry: Juried Student Show Opens at the MFA, Nov. 21",
+   "sum": "Opens Saturday, Nov. 21, in the Edward H. Linde Gallery, with work by five emerging artists.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=places-we-carry-smfa-tufts-mfa-2026",
+   "story": "places-we-carry-smfa-tufts-mfa-2026",
+   "town": "Fenway",
+   "date": "2026-11-17",
+   "rank": 4
+  },
+  {
+   "h": "SoWa Christmas Market Opens Nov. 20 With 100-Plus Local Makers",
+   "sum": "Opening night is Friday, November 20, from 4:00 to 9:00 PM at SoWa Power Station in the South End.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=sowa-christmas-market-opens-nov-20-2026",
+   "story": "sowa-christmas-market-opens-nov-20-2026",
+   "town": "South End",
+   "date": "2026-11-12",
+   "rank": 4
+  },
+  {
    "h": "Boston Tuba Christmas Brings Brass to The Steps Plaza, Nov. 28",
    "sum": "Saturday, November 28, from 12:30 to 1:30 PM at The Steps Plaza in Downtown Boston, with a festive tuba and brass program.",
    "outlet": "The Boston Rambler",
@@ -161,6 +112,95 @@
    "town": "Downtown Boston",
    "date": "2026-11-18",
    "rank": 4
+  },
+  {
+   "h": "PerpetuARTE: A Flamenco Duo at Roxbury Community College, Nov. 21",
+   "sum": "Saturday, Nov. 21, from 3:00 to 5:00 PM at the Media Arts Center of Roxbury Community College, 1234 Columbus Avenue, with admission at no charge.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=perpetuarte-flamenco-roxbury-nov-21-2026",
+   "story": "perpetuarte-flamenco-roxbury-nov-21-2026",
+   "town": "Roxbury",
+   "date": "2026-11-19",
+   "rank": 4
+  },
+  {
+   "h": "Quincy Market Tree Lighting Is Saturday, Nov. 21, From 2:00 to 6:00 PM",
+   "sum": "Faneuil Hall Marketplace holds its annual lighting with Make-A-Wish and Santa, and admission is at no charge.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=quincy-market-tree-lighting-2026",
+   "story": "quincy-market-tree-lighting-2026",
+   "town": "Downtown",
+   "date": "2026-11-17",
+   "rank": 6
+  },
+  {
+   "h": "Coltrane 100 Tribute Brings Five Players to Berklee, Nov. 21",
+   "sum": "Saturday, Nov. 21, at 8:00 PM at the Berklee Performance Center in Back Bay, with Joe Lovano, Melissa Aldana, Leo Genovese, Linda May Han Oh and Jeff 'Tain' Watts.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=coltrane-100-both-directions-berklee-nov-21-2026",
+   "story": "coltrane-100-both-directions-berklee-nov-21-2026",
+   "town": "Back Bay",
+   "date": "2026-11-19",
+   "rank": 6
+  },
+  {
+   "h": "Convivium Sings A North Atlantic Christmas in Brookline, Nov. 21",
+   "sum": "Saturday, Nov. 21, from 7:00 to 8:30 PM at All Saints Parish, 1773 Beacon Street, with tickets at $25.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=convivium-a-north-atlantic-christmas-brookline-2026",
+   "story": "convivium-a-north-atlantic-christmas-brookline-2026",
+   "town": "Brookline",
+   "date": "2026-11-17",
+   "rank": 8
+  },
+  {
+   "h": "Oriana Consort Sings Tennyson, Folk Songs and Poulenc, Nov. 22",
+   "sum": "Sunday, Nov. 22 at 5:00 PM at First Lutheran Church on Berkeley Street in Back Bay: the Oriana Consort's fall concert.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=oriana-consort-first-lutheran-nov-22-2026",
+   "story": "oriana-consort-first-lutheran-nov-22-2026",
+   "town": "Back Bay",
+   "date": "2026-11-13",
+   "rank": 8
+  },
+  {
+   "h": "Bruce Molsky Plays Old-Time Fiddle at Club Passim, Nov. 22",
+   "sum": "Sunday, Nov. 22, with doors at 1:00 PM and the show at 2:00 PM at Club Passim in Cambridge.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bruce-molsky-passim-nov-22-2026",
+   "story": "bruce-molsky-passim-nov-22-2026",
+   "town": "Cambridge",
+   "date": "2026-11-19",
+   "rank": 8
+  },
+  {
+   "h": "Copley Square Tree Lighting Is Monday, Nov. 30, at 5:00 PM",
+   "sum": "Boston Parks and Recreation hosts the annual tree lighting at Copley Square Plaza.",
+   "outlet": "City of Boston",
+   "url": "https://www.boston.gov/calendar/2026-copley-square-tree-lighting",
+   "town": "Back Bay",
+   "date": "2026-11-12",
+   "rank": 10
+  },
+  {
+   "h": "Dinty Child and Mark Erelli Share Songs at Club Passim, Nov. 27",
+   "sum": "Friday, Nov. 27, with doors at 6:00 PM and the show at 7:00 PM at Club Passim in Cambridge.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=dinty-child-mark-erelli-passim-nov-27-2026",
+   "story": "dinty-child-mark-erelli-passim-nov-27-2026",
+   "town": "Cambridge",
+   "date": "2026-11-19",
+   "rank": 10
+  },
+  {
+   "h": "Laurie MacAllister and Seth Glier Sing at Club Passim, Nov. 21",
+   "sum": "Saturday, Nov. 21, with doors at 7:00 PM and the show at 8:00 PM at Club Passim in Cambridge.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=laurie-macallister-seth-glier-passim-nov-21-2026",
+   "story": "laurie-macallister-seth-glier-passim-nov-21-2026",
+   "town": "Cambridge",
+   "date": "2026-11-19",
+   "rank": 12
   }
  ]
 }

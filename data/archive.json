@@ -1398,5 +1398,40 @@
     "url": "https://www.berklee.edu/BPC/events/singers-night-journey-dont-stop-believin"
    }
   ]
+ },
+ {
+  "slug": "today-and-tonight-2026-11-18",
+  "topic": "family",
+  "date": "2026-11-18",
+  "until": "2026-11-18",
+  "minutes": 1,
+  "title": "Boston Today and Tonight: Earfull, James Hunter Six and Club Passim",
+  "dek": "Jazz at the Regattabar, the James Hunter Six at City Winery Boston and Zachariah Hickman's Power Outage Party at Club Passim, each listed at 7:30 PM.",
+  "body": [
+   "Wednesday evening in Boston brings jazz at the Regattabar, a headliner at City Winery Boston and a folk night at Club Passim, all with listed starts at 7:30 PM. Each venue's listing is below, with the time and place as the venue published them.",
+   "## Tonight, for grown-ups",
+   "#T {\"title\": \"Tonight, for grown-ups\", \"head\": [\"Time\", \"What\", \"Where\"], \"rows\": [[\"7:00 PM\", \"Marci / SARIKA\", \"Deep Cuts\"], [\"7:30 PM\", \"Earfull at the Regattabar\", \"Regattabar, Cambridge\"], [\"7:30 PM\", \"The James Hunter Six, with McKinley James\", \"City Winery Boston\"], [\"7:30 PM\", \"Zachariah Hickman's Power Outage Party\", \"Club Passim, Cambridge\"]]}",
+   "Times come from each venue's listing. Check before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "Regattabar",
+    "title": "Earfull at the Regattabar",
+    "date": "2026-11-18",
+    "url": "https://www.ticketweb.com/event/earfull-at-the-regattabar-regattabar-tickets/14377924"
+   },
+   {
+    "outlet": "City Winery Boston",
+    "title": "The James Hunter Six w/ special guest McKinley James",
+    "date": "2026-11-18",
+    "url": "https://tickets.citywinery.com/event/the-james-hunter-six-ky2sk9"
+   },
+   {
+    "outlet": "Club Passim",
+    "title": "Zachariah Hickman's Power Outage Party",
+    "date": "2026-11-18",
+    "url": "https://www.passim.org/live-music/events/zachariah-hickmans-power-outage-party/"
+   }
+  ]
  }
 ]
