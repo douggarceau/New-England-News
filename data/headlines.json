@@ -1,48 +1,6 @@
 {
- "asof": "2026-11-19T07:40:00-05:00",
+ "asof": "2026-11-20T07:45:00-05:00",
  "items": [
-  {
-   "h": "Boston Today and Tonight: Lisiecki, Hip-Hop Hall of Fame, Passim",
-   "sum": "Jan Lisiecki plays Mendelssohn at Symphony Hall at 7:30 PM, the Berklee Hip-Hop Hall of Fame celebration starts at 8:00 PM and a City Hall artist talk runs from 6:00 to 8:00 PM.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-19",
-   "story": "today-and-tonight-2026-11-19",
-   "town": "Boston",
-   "date": "2026-11-19",
-   "rank": 1
-  },
-  {
-   "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
-   "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
-   "story": "handel-haydn-messiah-symphony-hall-2026",
-   "town": "Back Bay",
-   "date": "2026-11-19",
-   "rank": 2,
-   "lead": true
-  },
-  {
-   "h": "Doja Cat Brings 'Tour Ma Vie' to TD Garden on Nov. 23 With Latto",
-   "sum": "The Grammy winner's world tour hits Causeway Street the Monday before Thanksgiving, with Latto as special guest.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=doja-cat-latto-td-garden-nov-23",
-   "story": "doja-cat-latto-td-garden-nov-23",
-   "town": "Boston",
-   "date": "2026-11-19",
-   "rank": 2,
-   "box": true
-  },
-  {
-   "h": "Sing We Noel: Christmas Music From England and Early America",
-   "sum": "Sunday, December 6, at 6:30 PM at Gordon Chapel in Old South Church, Back Bay.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=sing-we-noel-camerata-dec-6-2026",
-   "story": "sing-we-noel-camerata-dec-6-2026",
-   "town": "Back Bay",
-   "date": "2026-11-12",
-   "rank": 3
-  },
   {
    "h": "Kapilow and A Far Cry Unpack Mozart's Clarinet Concerto, Nov. 22",
    "sum": "Sunday, Nov. 22 at 3:00 PM at NEC's Jordan Hall in Fenway: Rob Kapilow, A Far Cry and clarinetist Romie de Guise-Langlois take on Mozart's Clarinet Concerto.",
@@ -91,16 +49,6 @@
    "story": "places-we-carry-smfa-tufts-mfa-2026",
    "town": "Fenway",
    "date": "2026-11-17",
-   "rank": 4
-  },
-  {
-   "h": "SoWa Christmas Market Opens Nov. 20 With 100-Plus Local Makers",
-   "sum": "Opening night is Friday, November 20, from 4:00 to 9:00 PM at SoWa Power Station in the South End.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=sowa-christmas-market-opens-nov-20-2026",
-   "story": "sowa-christmas-market-opens-nov-20-2026",
-   "town": "South End",
-   "date": "2026-11-12",
    "rank": 4
   },
   {
@@ -164,15 +112,6 @@
    "rank": 8
   },
   {
-   "h": "Copley Square Tree Lighting Is Monday, Nov. 30, at 5:00 PM",
-   "sum": "Boston Parks and Recreation hosts the annual tree lighting at Copley Square Plaza.",
-   "outlet": "City of Boston",
-   "url": "https://www.boston.gov/calendar/2026-copley-square-tree-lighting",
-   "town": "Back Bay",
-   "date": "2026-11-12",
-   "rank": 10
-  },
-  {
    "h": "Dinty Child and Mark Erelli Share Songs at Club Passim, Nov. 27",
    "sum": "Friday, Nov. 27, with doors at 6:00 PM and the show at 7:00 PM at Club Passim in Cambridge.",
    "outlet": "The Boston Rambler",
@@ -191,6 +130,38 @@
    "town": "Cambridge",
    "date": "2026-11-19",
    "rank": 12
+  },
+  {
+   "h": "Boston Today and Tonight: Lisiecki, Trinity Organ, SoWa Market",
+   "sum": "Jan Lisiecki plays Symphony Hall at 1:30 PM, a Trinity Church organ recital begins at 12:15 PM, the SoWa Christmas Market opens at 4:00 PM and Belmont's short-play festival runs at 8:00 PM on Friday, November 20.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-20",
+   "story": "today-and-tonight-2026-11-20",
+   "town": "Boston",
+   "date": "2026-11-20",
+   "rank": 1
+  },
+  {
+   "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
+   "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
+   "story": "handel-haydn-messiah-symphony-hall-2026",
+   "town": "Back Bay",
+   "date": "2026-11-20",
+   "rank": 2,
+   "lead": true
+  },
+  {
+   "h": "Doja Cat Brings 'Tour Ma Vie' to TD Garden on Nov. 23 With Latto",
+   "sum": "The Grammy winner's world tour hits Causeway Street the Monday before Thanksgiving, with Latto as special guest.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=doja-cat-latto-td-garden-nov-23",
+   "story": "doja-cat-latto-td-garden-nov-23",
+   "town": "Boston",
+   "date": "2026-11-20",
+   "rank": 2,
+   "box": true
   }
  ]
 }

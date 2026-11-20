@@ -1433,5 +1433,34 @@
     "url": "https://www.passim.org/live-music/events/zachariah-hickmans-power-outage-party/"
    }
   ]
+ },
+ {
+  "slug": "today-and-tonight-2026-11-19",
+  "topic": "family",
+  "date": "2026-11-19",
+  "until": "2026-11-19",
+  "minutes": 1,
+  "title": "Boston Today and Tonight: Lisiecki, Hip-Hop Hall of Fame, Passim",
+  "dek": "Jan Lisiecki plays Mendelssohn at Symphony Hall at 7:30 PM, the Berklee Hip-Hop Hall of Fame celebration starts at 8:00 PM and a City Hall artist talk runs from 6:00 to 8:00 PM.",
+  "body": [
+   "Thursday night in Boston offers a piano concerto at Symphony Hall, a hip-hop celebration in Back Bay and a run of songwriter nights across Cambridge and the West End.",
+   "## Tonight, for grown-ups",
+   "#T {\"title\": \"Thursday, November 19\", \"head\": [\"Time\", \"What\", \"Where\"], \"rows\": [[\"6:00 PM\", \"Native American Heritage Month artist talk with Erin Genia (registration requested)\", \"Boston City Hall, Boston\"], [\"7:00 PM\", \"GKit & Magnificent Danger\", \"The Rockwell, Somerville\"], [\"7:30 PM\", \"Jan Lisiecki plays Mendelssohn's Piano Concerto No. 1\", \"Symphony Hall, Back Bay\"], [\"7:30 PM\", \"Zachariah Hickman's Power Outage Party\", \"Club Passim, Cambridge\"], [\"7:30 PM\", \"Joshua Radin\", \"City Winery Boston, West End\"], [\"8:00 PM\", \"A Celebration of Hip-Hop: Berklee Hip-Hop Hall of Fame Induction\", \"Berklee Performance Center, Back Bay\"]]}",
+   "Times come from each venue's listing. Check before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "Boston Symphony Orchestra",
+    "title": "Jan Lisiecki performs Mendelssohn Piano Concerto No. 1",
+    "date": "",
+    "url": "https://www.bso.org/events/nov-19-21-mendelssohn-schumann?performance=2026-11-19-19:30"
+   },
+   {
+    "outlet": "Axios Boston",
+    "title": "Things to do in Boston this week (Nov. 16-20, 2026)",
+    "date": "Nov 16, 2026",
+    "url": "https://www.axios.com/local/boston/2026/11/16/boston-events-guide-november-16-20-2026"
+   }
+  ]
  }
 ]
