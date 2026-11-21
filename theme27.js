@@ -76,7 +76,7 @@ let v='';try{v=STATE.view}catch(_){}
  if(m){['hero27','coverSlot','whatsOn','view'].forEach(id=>{const e=document.getElementById(id);if(e&&e.parentNode!==m)m.appendChild(e)});
   /* 2 news right under the lead, then activities */
   const cs=document.getElementById('coverSlot'),wo=document.getElementById('whatsOn');
-  const order=[document.getElementById('hero27'),cs,wo,vw].filter(Boolean);order.forEach(e=>m.appendChild(e));
+  const order=[document.getElementById('hero27'),cs,wo,vw].filter(Boolean);const now=[...m.children].filter(x=>order.includes(x));if(now.some((x,i)=>x!==order[i]))order.forEach(e=>m.appendChild(e));
   if(vw&&vw.tagName==='MAIN')vw.setAttribute('role','region'),vw.setAttribute('aria-label','More')}
  const wm=document.querySelector('.wm27');if(wm&&!wm.getAttribute('role')){wm.setAttribute('role','heading');wm.setAttribute('aria-level','1')}
  [['.cvside .sea-h b'],['#whatsOn .wo-k'],['.jtwk .bh b'],['#hlBox .bh b'],['#beyond>h2']].forEach(([s])=>{const e=document.querySelector(s);if(e&&e.tagName!=='H2'&&!e.getAttribute('role')){e.setAttribute('role','heading');e.setAttribute('aria-level','2')}});
@@ -241,6 +241,6 @@ const h=document.getElementById('hero27');const lead=h&&h.dataset.story;
 const BG=['bg41-data-mesh','bg42-wireframe-terrain','bg43-graphite-gradient','bg44-particle-field','bg45-glass-panels','bg46-lidar-scan','bg47-liquid-chrome','bg48-aurora-edge','bg49-led-dot-matrix','bg50-orbit-lines'];
 let bi=Math.floor(Math.random()*BG.length),bi_=bi+3;
 function dress(){return;document.querySelectorAll('.bp:not([data-b27]),.ep.os:not([data-b27]),.lspot .ep:not([data-b27])').forEach(el=>{el.dataset.b27='1';el.style.setProperty('--b27','url(/img/bg27/'+BG[bi++%BG.length]+'.jpg)')})}
-const go_=()=>{build();try{const m=SEC0;if(m&&!STORY0){const b=[...document.querySelectorAll('#nav .nb27')].find(x=>x.dataset.k===m);if(b){const f=()=>b.click();setTimeout(f,0);setTimeout(()=>{let v='';try{v=STATE.view}catch(_){}if(v==='front')f()},900)}}}catch(_){}new MutationObserver(()=>{clearTimeout(go_.t);go_.t=setTimeout(build,60)}).observe(document.body,{childList:true,subtree:true})};
+const go_=()=>{build();try{const m=SEC0;if(m&&!STORY0){const b=[...document.querySelectorAll('#nav .nb27')].find(x=>x.dataset.k===m);if(b){const f=()=>b.click();setTimeout(f,0);setTimeout(()=>{let v='';try{v=STATE.view}catch(_){}if(v==='front')f()},900)}}}catch(_){}new MutationObserver(L=>{if(L.every(x=>{const t=x.target.nodeType===1?x.target:x.target.parentElement;return t&&t.closest&&t.closest('.lsrow,#rails27,.nb-clock,[data-clock]')}))return;clearTimeout(go_.t);go_.t=setTimeout(build,60)}).observe(document.body,{childList:true,subtree:true})};
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',go_):go_();
 })();
