@@ -208,8 +208,8 @@ function rails27(){const w=document.querySelector('.wrap');if(!w)return;let box=
  box.style.top=top+'px';fitRails();
  const E=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
  const card=e=>{const ev=e.ev||{};const d=ev.date?new Date(ev.date+'T12:00:00'):null;const when=[d?d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}):'',ev.time||e.when||''].filter(Boolean).join(' · ');
-  const g=/\.pdf(\?|$)/i.test(e.href||'')?'Schedule (PDF) →':/ticketmaster|seetickets|eventbrite|axs\.com|dice\.fm|etix|ticketweb|stubhub|tix|ticket/i.test(e.href||'')?'Tickets →':'Event details →';
-  return '<a class="t27ev" href="'+E(e.href||'#')+'"'+(e.ext?' target="_blank" rel="noopener"':'')+'><span class="w">'+E(when)+'</span><span class="t">'+E(e.bigText)+'</span><span class="f"><span class="v">'+E([e.name,ev.hood].filter(Boolean).join(' · '))+'</span><span class="g">'+g+'</span></span></a>'};
+  const g='Event details →';
+  return '<a class="t27ev" href="'+E(e.href||'#')+'"><span class="w">'+E(when)+'</span><span class="t">'+E(e.bigText)+'</span><span class="f"><span class="v">'+E([e.name,ev.hood].filter(Boolean).join(' · '))+'</span><span class="g">'+g+'</span></span></a>'};
  const L=[],Rr=[];P.slice(0,n).forEach((e,i)=>(i%2?Rr:L).push(card(e)));
  box.querySelector('.l').innerHTML=L.join('');box.querySelector('.r').innerHTML=Rr.join('')}
 function rails(){let P=pool2();if(!P.length)return;
