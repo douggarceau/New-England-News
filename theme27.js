@@ -194,8 +194,10 @@ function pool2(){let P=[];try{P=window.jtEvPool?jtEvPool():[]}catch(_){}let U=[]
  U.filter(e=>e&&e.date>=td&&e.artists&&!SK.test(e.genre||'')).slice(0,80).forEach(e=>{const t=String(e.artists).trim();if(have.has(t.toLowerCase()))return;have.add(t.toLowerCase());P.push({bigText:t,name:e.venue||'',when:e.time||'',href:e.url||'#',ext:1,ev:e})});return P}
 let R27sig='';
 function fitRails(){const box=document.getElementById('rails27'),w=document.querySelector('.wrap'),c=document.getElementById('main27')||document.getElementById('view');if(!box||!w||!c)return;
- const W=w.getBoundingClientRect(),M=c.getBoundingClientRect();const gl=M.left-W.left-16,gr=W.right-M.right-16;const cw=Math.min(250,gl,gr);
- if(cw<170){box.style.setProperty('display','none','important');return}box.style.setProperty('display','block','important');
+ const W=w.getBoundingClientRect();if(W.width<760){c.style.removeProperty('max-width');box.style.setProperty('display','none','important');return}
+ const want=Math.round(Math.max(150,Math.min(250,W.width*.17)));c.style.setProperty('max-width',Math.round(W.width-2*(want+30))+'px','important');c.style.setProperty('margin-left','auto','important');c.style.setProperty('margin-right','auto','important');
+ const M=c.getBoundingClientRect();const gl=M.left-W.left-16,gr=W.right-M.right-16;const cw=Math.min(250,gl,gr);
+ if(cw<140){box.style.setProperty('display','none','important');return}box.style.setProperty('display','block','important');
  const l=box.querySelector('.l'),r=box.querySelector('.r');l.style.width=r.style.width=cw+'px';l.style.left=Math.max(6,gl-cw)+'px';r.style.right=Math.max(6,gr-cw)+'px'}
 addEventListener('resize',()=>{clearTimeout(fitRails.t);fitRails.t=setTimeout(fitRails,120)});
 function rails27(){const w=document.querySelector('.wrap');if(!w)return;let box=document.getElementById('rails27');
