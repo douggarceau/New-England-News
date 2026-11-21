@@ -45,7 +45,13 @@ function build0(){
  if(ft&&!ft.querySelector('.ft27')){const d=document.createElement('div');d.className='ft27';
   d.innerHTML=(C.foot||[]).map(f=>'<button type="button" '+(f[1][0]==='#'?'data-c="'+f[1].slice(1)+'"':'data-g="'+f[1]+'"')+'>'+f[0]+'</button>').join('')+'<button type="button" data-dir="1">Business Directory</button><button type="button" data-g="advertise">Advertising</button><button type="button" data-g="privacy">Privacy &amp; Contact</button><span class="cp">© '+new Date().getFullYear()+' Island News Media Productions LLC</span>';
   d.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(b.dataset.dir){R.classList.toggle('dir27');return}if(b.dataset.c){const x=document.getElementById(b.dataset.c);if(x)x.click();return}cur='';mark();try{go(b.dataset.g)}catch(_){}});ft.insertBefore(d,ft.firstChild)}
- hero();dedupe();cal1();upd();labels();rails27();dress();fonts();sec27()}
+ ban27();hero();dedupe();cal1();upd();labels();rails27();dress();fonts();sec27()}
+/* Banner art (opt-in: window.T27.banner, optional T27.bannerM for phones): a full-width band of the site's own art
+   behind the masthead and menu, fading into the page. Decorative only; it never moves or covers anything. */
+function ban27(){if(!C.banner)return;let d=document.getElementById('ban27');
+ if(!d){d=document.createElement('div');d.id='ban27';d.dataset.f27='';d.setAttribute('aria-hidden','true');R.style.setProperty('--ban27','url('+C.banner+')');R.style.setProperty('--ban27m','url('+(C.bannerM||C.banner)+')');R.setAttribute('data-ban27','');document.body.insertBefore(d,document.body.firstChild)}
+ const n=document.getElementById('nav');if(n){const h=Math.round(n.getBoundingClientRect().bottom+scrollY+28)+'px';if(d.style.height!==h)d.style.height=h}}
+addEventListener('resize',()=>{clearTimeout(ban27.t);ban27.t=setTimeout(ban27,120)});
 /* Section accents (opt-in: window.T27.sec = {now,news,music,tech,calendar,explore}). The accent follows the
    page actually shown, so it stays right after Back, Forward and refresh. The masthead keeps the site's own color. */
 addEventListener('popstate',ev=>{const t=ev.state&&ev.state.t27tab;if(!t||t===cur||!TABV[t])return;cur=t;SF=t==='Tech'?TECHF:null;MODE=t==='Music'?'music':null;mark()});
@@ -55,7 +61,9 @@ function sec27(){let v='';try{v=STATE.view}catch(_){return}
  if(want&&want!==cur){cur=want;mark()}
  if(v!=='read'&&want){try{const h=history.state;if(h&&h.ep&&h.view===v&&h.t27tab!==cur)history.replaceState(Object.assign({},h,{t27tab:cur}),'')}catch(_){}}
  if(!C.sec)return;const k=v==='read'?lastSec:(want?want.toLowerCase():'');if(v!=='read')lastSec=k;
- if(R.getAttribute('data-sec27')!==k){R.setAttribute('data-sec27',k);R.style.setProperty('--a',(k&&C.sec[k])||C.a||'#E10600')}}
+ if(R.getAttribute('data-sec27')!==k){R.setAttribute('data-sec27',k);const c=(k&&C.sec[k])||C.a||'#E10600';R.style.setProperty('--a',c);
+  /* filled buttons: a deeper shade with white text where the site gives one (red, blue, purple, green); otherwise the bright color with dark text */
+  R.style.setProperty('--a-fill',(k&&C.secFill&&C.secFill[k])||c);R.style.setProperty('--a-ink',(k&&C.secFill&&C.secFill[k])?'#FFFFFF':(C.secInk||'#0B0D12'))}}
 /* any old serif or display face left over from earlier styling switches to the new faces */
 const OLD=/Georgia|Playfair|PT Serif|Libre Caslon|Bodoni|Abril|DM Serif|Old Standard|Cinzel|Marcellus|Satisfy|Special Elite|Cormorant|Alfa Slab|Oswald|Anton|Bebas|Times|serif$/i;
 function fonts(){document.addEventListener('keydown',e=>{if(e.key==='Escape')R.classList.remove('dir27')});

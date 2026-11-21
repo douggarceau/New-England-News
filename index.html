@@ -361,7 +361,7 @@ html body #flagLine::before,html body #flagLine i{display:none!important}
 <style>a.sh.sh-nolink{cursor:default}a.sh.sh-nolink:hover{transform:none}</style>
 </head>
 <body>
-<title>The Boston Rambler</title><script>window.T27={"a": "#177A41", "k": "Boston", "n": "RAMBLER", "tz": "America/New_York", "sec": {"now": "#FF2D2D", "news": "#2F8CFF", "music": "#FF8A00", "tech": "#22C55E", "calendar": "#B65CFF", "explore": "#FFD400"}}</script><script src="theme27.js?v=32"></script>
+<title>The Boston Rambler</title><script>window.T27={"a": "#177A41", "k": "Boston", "n": "RAMBLER", "tz": "America/New_York", "banner": "img/banner27.jpg", "bannerM": "img/banner27-m.jpg", "sec": {"now": "#FF2D2D", "news": "#2F8CFF", "music": "#FF8A00", "tech": "#22C55E", "calendar": "#B65CFF", "explore": "#FFD400"}, "secFill": {"now": "#D41C1C", "news": "#1F66D1", "tech": "#13853F", "calendar": "#8A3FD6"}}</script><script src="theme27.js?v=34"></script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -3046,6 +3046,6 @@ let opener=null;const close=()=>{if(!s.classList.contains('sbpop'))return;s.clas
 new MutationObserver(()=>{if(s.classList.contains('sbpop')){opener=document.activeElement&&document.activeElement!==document.body&&!s.contains(document.activeElement)?document.activeElement:opener;s.setAttribute('role','dialog');s.setAttribute('aria-modal','true')}}).observe(s,{attributes:true,attributeFilter:['class']});
 document.addEventListener('keydown',e=>{if(!s.classList.contains('sbpop'))return;if(e.key==='Escape'){e.preventDefault();close();return}if(e.key==='Tab'){const F=[...s.querySelectorAll('button,input,a[href],select,textarea')].filter(el=>!el.disabled&&el.offsetParent);if(!F.length)return;const a=F[0],z=F[F.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}})};
 go();addEventListener('DOMContentLoaded',go);setTimeout(go,1500)})();</script>
-<link rel="stylesheet" href="theme27.css?v=32">
+<link rel="stylesheet" href="theme27.css?v=34">
 </body>
 </html>
