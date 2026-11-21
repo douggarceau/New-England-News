@@ -90,7 +90,7 @@ let v='';try{v=STATE.view}catch(_){}
  /* 7 honest label */
  const wk=document.querySelector('.jtwk .bh>span');if(wk&&wk.textContent!=='Selected events, next 7 days')wk.textContent='Selected events, next 7 days'}
 const N27={shown:12};
-function news27(){let v='';try{v=STATE.view}catch(_){}R.classList.toggle('sec27',v!=='front');if(!(v==='cal'&&cur==='Music'))R.classList.remove('music27');if(v!=='stories')return;const host=document.getElementById('view');if(!host||host.querySelector('#news27'))return;
+function news27(){let v='';try{v=STATE.view}catch(_){}R.classList.toggle('sec27',v!=='front');if(!(v==='cal'&&/^(Music|Calendar)$/.test(cur)))R.classList.remove('music27');if(v!=='stories')return;const host=document.getElementById('view');if(!host||host.querySelector('#news27'))return;
  let L=[];try{L=STORIES.slice()}catch(_){return}const td=ymd(new Date());
  L=L.filter(s=>s&&s.title&&!/^today-(and-tonight|on-the-island)-/.test(s.slug)&&(!s.until||s.until>=td)&&(!window.T27S||T27S(s)));
  L.sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
@@ -125,57 +125,61 @@ function area27(h){h=String(h||'').trim();if(!h)return '';let a=h.split(/\s+[–
  return a}
 const G27=[['Rock & Metal',/^(rock|metal|punk|goth|hard rock|hardcore|industrial)$/i],['Indie',/^(indie|alternative)$/i],['Pop',/^pop$/i],['Hip-Hop & R&B',/^(hip-hop|rap|r&b|soul|funk)$/i],['Electronic',/^(electronic|clubs?|dj|house|techno)$/i],['Jazz & Blues',/^(jazz|blues)$/i],['Classical & Opera',/^(classical|opera|choral|chamber)$/i],['Folk & Country',/^(folk|country|americana|bluegrass|acoustic)$/i],['Latin & World',/^(latin|world|reggae|afrobeats?)$/i],['Genre unlisted',/^(live|music|experimental|concert)$/i]];
 const gname=g=>{for(const [n,r] of G27)if(r.test(g||''))return n;return null};
-const M27={d:'week',g:'',a:'',q:''};let M27init=false;const MQ0=new URLSearchParams(location.search);
-function music27(){let v='';try{v=STATE.view}catch(_){}if(v!=='cal'||cur!=='Music'){return}
+const M27S={music:{d:'week',g:'',a:'',q:'',dt:'',n:150},calendar:{d:'week',g:'',a:'',q:'',dt:'',n:150}};let M27=M27S.music;const M27init={};
+const cname=(g,t)=>{g=String(g||'').toLowerCase();if(/\b(family|kids|children)\b/i.test(t||'')&&!/^(theater|stage)$/.test(g))return 'Family';if(/^(theater|stage|dance|comedy)$/.test(g))return 'Theater & Shows';if(/^(art|arts|film)$/.test(g))return 'Art & Film';if(g==='family')return 'Family';if(g==='festival')return 'Festivals';if(/^(talks|books)$/.test(g))return 'Talks & Books';if(/^(community|civic)$/.test(g))return 'Community';if(/^(recreation|fitness)$/.test(g))return 'Recreation';if(g==='volunteer')return 'Volunteer';if(gname(g)&&g!=='other')return 'Music';return 'More events'};
+const C27=['Music','Theater & Shows','Art & Film','Festivals','Family','Talks & Books','Community','Recreation','Volunteer','More events'];const MQ0=new URLSearchParams(location.search);
+function music27(){let v='';try{v=STATE.view}catch(_){}const K=cur==='Music'?'music':cur==='Calendar'?'calendar':'';if(v!=='cal'||!K){return}const MU=K==='music';M27=M27S[K];const gn=MU?e=>gname(e.genre):e=>cname(e.genre,e.artists);const GL=MU?G27.map(x=>x[0]):C27;const W1=MU?'show':'event';
  const host=document.getElementById('view');if(!host)return;R.classList.add('music27');
- if(!M27init){M27init=true;const u=MQ0;['d','g','a','q'].forEach(k=>{if(u.get(k))M27[k]=u.get(k)})}
- if(host.querySelector('#music27'))return;
+ if(!M27init[K]){M27init[K]=true;const u=MQ0;if(u.get('section')===K)['d','g','a','q','dt'].forEach(k=>{if(u.get(k))M27[k]=u.get(k)});if(M27.dt)M27.d=''}
+ {const ex=host.querySelector('#music27');if(ex&&ex.dataset.kind===K)return}
  let U=[];try{U=up}catch(_){}const td=ymd(new Date());
- const ALL=U.filter(e=>e&&e.date>=td&&e.artists&&gname(e.genre)&&!/\b(bingo|trivia|karaoke|yoga|paint|craft|story ?time|workshop|class)\b/i.test(e.artists)&&!/^(support|worship|sports|family|community|recreation|volunteer|civic|drag)$/i.test(e.genre||''));
- {const seen=new Map();ALL.forEach(e=>{const k=e.date+'|'+String(e.venue||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,14)+'|'+String(e.artists).toLowerCase().split(/[,:(]| w\/ | with | and /)[0].replace(/[^a-z0-9]/g,'');const L0=seen.get(k)||[];const i=L0.findIndex(o=>!o.time||!e.time||o.time===e.time);if(i<0)L0.push(e);else if(!L0[i].time&&e.time)L0[i]=e;seen.set(k,L0)});ALL.length=0;seen.forEach(L0=>L0.forEach(e=>ALL.push(e)))}
+ const NO=/^(support|worship|sports|drag)$/i,NOT=/\b(basketball|soccer|hockey|football|baseball|softball|volleyball|lacrosse|pickleball|wrestling|AA|Al-Anon|Alcoholics|Narcotics|recovery|support|grief|worship|worship service|bible study|prayer (group|meeting))\b|\bvs\.? /i;
+ const ALL=MU?U.filter(e=>e&&e.date>=td&&e.artists&&gname(e.genre)&&!/\b(bingo|trivia|karaoke|yoga|paint|craft|story ?time|workshop|class)\b/i.test(e.artists)&&!/^(support|worship|sports|family|community|recreation|volunteer|civic|drag)$/i.test(e.genre||'')):U.filter(e=>e&&e.date>=td&&e.artists&&!NO.test(e.genre||'')&&!NOT.test(e.artists));
+ {const seen=new Map();ALL.forEach(e=>{const k=e.date+'|'+String(e.venue||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,14)+'|'+String(e.artists).toLowerCase().split(/[,:(]| w\/ | with | and /)[0].replace(/[^a-z0-9]/g,'').slice(0,14);const L0=seen.get(k)||[];const i=L0.findIndex(o=>!o.time||!e.time||o.time===e.time);if(i<0)L0.push(e);else if(!L0[i].time&&e.time)L0[i]=e;seen.set(k,L0)});ALL.length=0;seen.forEach(L0=>L0.forEach(e=>ALL.push(e)))}
  ALL.forEach(e=>{if(/^(paid|tba|tbd|varies|see site|n\/a)$/i.test(String(e.price||'').trim()))e.price=''});
  const E=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
- const areas={};ALL.forEach(e=>{const a=area27(e.hood||e.venue);if(a)areas[a]=(areas[a]||0)+1});
+ let ar=e=>area27(e.hood||e.venue);if(new Set(ALL.map(ar)).size<3)ar=e=>String(e.venue||'').split(' / ')[0];const areas={};ALL.forEach(e=>{const a=ar(e);if(a)areas[a]=(areas[a]||0)+1});
  const AR=Object.keys(areas).sort((x,y)=>(/^Nearby/.test(x)-/^Nearby/.test(y))||areas[y]-areas[x]);
- const gcount={};ALL.forEach(e=>{const n=gname(e.genre);gcount[n]=(gcount[n]||0)+1});
- let L=[];try{L=STORIES.filter(s=>s.topic==='music'||/^nat-.*(tour|album|music)/.test(s.slug)).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')))}catch(_){}
- const tOpt=[['tonight','Tonight'],['tomorrow','Tomorrow'],['weekend','This weekend'],['week','Next 7 days'],['all','All upcoming']];
- host.innerHTML='<section id="music27" aria-labelledby="m27h"><h1 id="m27h" style="font-size:clamp(34px,4vw,48px)!important">Music</h1>'+
-  '<div class="ctl27" role="group" aria-label="Filter shows">'+
+ const gcount={};ALL.forEach(e=>{const n=gn(e);gcount[n]=(gcount[n]||0)+1});
+ let L=[];try{L=STORIES.filter(s=>!MU||s.topic==='music'||/^nat-.*(tour|album|music)/.test(s.slug)).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')))}catch(_){}
+ const tOpt=[['tonight',MU?'Tonight':'Today'],['tomorrow','Tomorrow'],['weekend','This weekend'],['week','Next 7 days'],['all','All upcoming']];
+ host.innerHTML='<section id="music27" data-kind="'+K+'" aria-labelledby="m27h"><h1 id="m27h" style="font-size:clamp(34px,4vw,48px)!important">'+(MU?'Music':'Calendar')+'</h1>'+
+  '<div class="ctl27" role="group" aria-label="Filter '+W1+'s">'+
   '<div class="dt27" role="group" aria-label="Date">'+tOpt.map(([k,t])=>'<button type="button" data-d="'+k+'" aria-pressed="'+(M27.d===k)+'">'+t+'</button>').join('')+'</div>'+
   '<div class="sel27"><label>Where<select data-k="a"><option value="">Everywhere</option>'+AR.map(a=>'<option'+(M27.a===a?' selected':'')+'>'+E(a)+'</option>').join('')+'</select></label>'+
-  '<label>Genre<select data-k="g"><option value="">All genres</option>'+G27.map(([n])=>gcount[n]?'<option value="'+E(n)+'"'+(M27.g===n?' selected':'')+'>'+E(n)+' ('+gcount[n]+')</option>':'').join('')+'</select></label>'+
-  '<label class="q27">Search<input type="search" data-k="q" placeholder="Search artist, venue, or show" value="'+E(M27.q)+'" autocomplete="off"></label></div></div>'+
-  '<div class="pick27"></div><h2 class="lh">Shows</h2><p class="cnt m27c" aria-live="polite"></p><div class="res27"></div>'+
-  (L.length?'<section class="cov27" aria-labelledby="cov27h"><h2 id="cov27h" class="lh">Latest music coverage</h2>'+L.slice(0,6).map(s=>'<a class="row27" href="?story='+encodeURIComponent(s.slug)+'" data-story="'+E(s.slug)+'"><h3 style="font-size:20px!important">'+E(s.title)+'</h3>'+(s.dek?'<p>'+E(s.dek)+'</p>':'')+'</a>').join('')+'</section>':'')+
-  '<p class="note27">Listings updated daily. Times and prices can change, so check with the venue.</p></section>';
+  '<label>'+(MU?'Genre':'Category')+'<select data-k="g"><option value="">'+(MU?'All genres':'All categories')+'</option>'+GL.map(n=>gcount[n]?'<option value="'+E(n)+'"'+(M27.g===n?' selected':'')+'>'+E(n)+' ('+gcount[n]+')</option>':'').join('')+'</select></label>'+
+  '<label>Pick a date<input type="date" data-k="dt" min="'+td+'" value="'+E(M27.dt)+'"></label>'+'<label class="q27">Search<input type="search" data-k="q" placeholder="'+(MU?'Search artist, venue, or show':'Search event, venue, or town')+'" value="'+E(M27.q)+'" autocomplete="off"></label></div></div>'+
+  '<div class="pick27"></div><h2 class="lh">'+(MU?'Shows':'Events')+'</h2><p class="cnt m27c" aria-live="polite"></p><div class="res27"></div>'+
+  (MU&&L.length?'<section class="cov27" aria-labelledby="cov27h"><h2 id="cov27h" class="lh">Latest music coverage</h2>'+L.slice(0,6).map(s=>'<a class="row27" href="?story='+encodeURIComponent(s.slug)+'" data-story="'+E(s.slug)+'"><h3 style="font-size:20px!important">'+E(s.title)+'</h3>'+(s.dek?'<p>'+E(s.dek)+'</p>':'')+'</a>').join('')+'</section>':'')+
+  '<p class="note27">Listings come from organizers’ public pages and are updated daily. Times and prices can change, so check with the venue before you go.</p></section>';
  const ctl=host.querySelector('.ctl27');
- ctl.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{M27.d=b.dataset.d;ctl.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));draw()});
- ctl.querySelectorAll('select').forEach(s=>s.onchange=()=>{M27[s.dataset.k]=s.value;draw()});
- const qi=ctl.querySelector('input');let qt;qi.oninput=()=>{clearTimeout(qt);qt=setTimeout(()=>{M27.q=qi.value;draw()},120)};
+ const di=ctl.querySelector('input[type=date]');ctl.querySelectorAll('select,input').forEach(x=>x.style.setProperty('font-family','Geist,system-ui,sans-serif','important'));di.onchange=()=>{M27.dt=di.value;M27.n=150;if(M27.dt){M27.d='';ctl.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed','false'))}else{M27.d='week';ctl.querySelector('[data-d=week]').setAttribute('aria-pressed','true')}draw()};
+ ctl.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{M27.d=b.dataset.d;M27.dt='';di.value='';M27.n=150;ctl.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));draw()});
+ ctl.querySelectorAll('select').forEach(s=>s.onchange=()=>{M27[s.dataset.k]=s.value;M27.n=150;draw()});
+ const qi=ctl.querySelector('input[type=search]');let qt;qi.oninput=()=>{clearTimeout(qt);qt=setTimeout(()=>{M27.q=qi.value;draw()},120)};
  host.querySelectorAll('.cov27 a[data-story]').forEach(a=>a.addEventListener('click',ev=>{if(!(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button)){ev.preventDefault();setTimeout(()=>{try{history.replaceState(history.state,'','?story='+encodeURIComponent(a.dataset.story))}catch(_){}},300)}}));
  const linkLabel=u=>'Event details';
  const range=()=>{const n=new Date(),t=ymd(n),a=k=>ymd(new Date(n.getTime()+k*864e5));const dow=new Date(t+'T12:00:00').getDay();
-  if(M27.d==='tonight')return [t,t];if(M27.d==='tomorrow')return [a(1),a(1)];if(M27.d==='weekend'){const fri=dow===0?a(-2):dow===6?a(-1):a(5-dow),sun=dow===0?t:dow===6?a(1):a(7-dow);return [fri<t?t:fri,sun]}if(M27.d==='week')return [t,a(6)];return [t,'9999']};
+  if(M27.dt)return [M27.dt,M27.dt];if(M27.d==='tonight')return [t,t];if(M27.d==='tomorrow')return [a(1),a(1)];if(M27.d==='weekend'){const fri=dow===0?a(-2):dow===6?a(-1):a(5-dow),sun=dow===0?t:dow===6?a(1):a(7-dow);return [fri<t?t:fri,sun]}if(M27.d==='week')return [t,a(6)];return [t,'9999']};
  const big=/garden|arena|center|centre|stadium|amphitheat|pavilion|hall|theat|ballroom|paramount|steel|terminal 5|beacon|apollo|town hall|ppac|showbox|moore|paramount|vets/i;
  function draw(){const [f,t]=range();const q=M27.q.trim().toLowerCase();
-  const R2=ALL.filter(e=>e.date>=f&&e.date<=t&&(!M27.g||gname(e.genre)===M27.g)&&(!M27.a||area27(e.hood||e.venue)===M27.a)&&(!q||(e.artists+' '+e.venue+' '+(e.hood||'')).toLowerCase().includes(q))).sort((a,b)=>a.date.localeCompare(b.date)||(window.__tm?(__tm(a.time)??9999)-(__tm(b.time)??9999):0));
+  const R2=ALL.filter(e=>e.date>=f&&e.date<=t&&(M27.g?gn(e)===M27.g:(MU||q||gn(e)!=='Volunteer'))&&(!M27.a||ar(e)===M27.a)&&(!q||(e.artists+' '+e.venue+' '+(e.hood||'')).toLowerCase().includes(q))).sort((a,b)=>a.date.localeCompare(b.date)||(window.__tm?(__tm(a.time)??9999)-(__tm(b.time)??9999):0));
   /* address keeps the choices */
-  try{const u=new URLSearchParams();u.set('section','music');if(M27.d!=='week')u.set('d',M27.d);if(M27.g)u.set('g',M27.g);if(M27.a)u.set('a',M27.a);if(M27.q)u.set('q',M27.q);history.replaceState(history.state,'','?'+u.toString())}catch(_){}
-  host.querySelector('.m27c').textContent=R2.length+' show'+(R2.length===1?'':'s');
-  const pk=host.querySelector('.pick27');const tn=ALL.filter(e=>e.date===td);const p=M27.d==='tonight'||M27.d==='week'?(tn.find(e=>big.test(e.venue||''))||tn[0]):null;
+  try{const u=new URLSearchParams();u.set('section',K);if(M27.dt)u.set('dt',M27.dt);else if(M27.d!=='week')u.set('d',M27.d);if(M27.g)u.set('g',M27.g);if(M27.a)u.set('a',M27.a);if(M27.q)u.set('q',M27.q);history.replaceState(history.state,'','?'+u.toString())}catch(_){}
+  host.querySelector('.m27c').textContent=R2.length+' '+W1+(R2.length===1?'':'s');
+  const pk=host.querySelector('.pick27');const tn=ALL.filter(e=>e.date===td);const p=MU&&(M27.d==='tonight'||M27.d==='week')?(tn.find(e=>big.test(e.venue||''))||tn[0]):null;
   pk.innerHTML=p&&!q&&!M27.g&&!M27.a?'<a class="pk27" href="'+E(p.url||'#')+'"><span class="k">Tonight’s pick</span><span class="t">'+E(p.artists)+'</span><span class="v">'+E([p.time||'Time not listed',p.venue,area27(p.hood)].filter(Boolean).join(' · '))+(p.price?' · '+E(p.price):'')+'</span><span class="go">'+linkLabel(p.url)+' →</span></a>':'';
   const box=host.querySelector('.res27');
-  if(!R2.length){const act=[];if(M27.d!=='all')act.push(['d',tOpt.find(x=>x[0]===M27.d)[1]]);if(M27.g)act.push(['g',M27.g]);if(M27.a)act.push(['a',M27.a]);if(M27.q)act.push(['q','“'+M27.q+'”']);
-   box.innerHTML='<div class="empty27"><p>No shows match these filters.</p><div>'+act.map(([k,t])=>'<button type="button" data-x="'+k+'">'+E(t)+' ✕</button>').join('')+'<button type="button" data-x="all">Clear all</button></div></div>';
-   box.querySelectorAll('[data-x]').forEach(b=>b.onclick=()=>{const k=b.dataset.x;if(k==='all'||k==='d')M27.d='all';if(k==='all'||k==='g')M27.g='';if(k==='all'||k==='a')M27.a='';if(k==='all'||k==='q'){M27.q='';qi.value=''}
+  if(!R2.length){const act=[];if(M27.dt)act.push(['d',new Date(M27.dt+'T12:00:00').toLocaleDateString('en-US',{month:'long',day:'numeric'})]);else if(M27.d!=='all')act.push(['d',tOpt.find(x=>x[0]===M27.d)[1]]);if(M27.g)act.push(['g',M27.g]);if(M27.a)act.push(['a',M27.a]);if(M27.q)act.push(['q','“'+M27.q+'”']);
+   box.innerHTML='<div class="empty27"><p>No '+W1+'s match these filters.</p><div>'+act.map(([k,t])=>'<button type="button" data-x="'+k+'">'+E(t)+' ✕</button>').join('')+'<button type="button" data-x="all">Clear all</button></div></div>';
+   box.querySelectorAll('[data-x]').forEach(b=>b.onclick=()=>{const k=b.dataset.x;if(k==='all'||k==='d'){M27.d='all';M27.dt='';di.value=''}if(k==='all'||k==='g')M27.g='';if(k==='all'||k==='a')M27.a='';if(k==='all'||k==='q'){M27.q='';qi.value=''}
     ctl.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.d===M27.d)));ctl.querySelector('select[data-k=g]').value=M27.g;ctl.querySelector('select[data-k=a]').value=M27.a;draw()});return}
   const yr=new Date().getFullYear();let html='',d='';
-  R2.slice(0,300).forEach(e=>{if(e.date!==d){if(d)html+='</ul>';d=e.date;const x=new Date(e.date+'T12:00:00');const n=R2.filter(y=>y.date===d).length;
-    html+='<h3 class="day27">'+x.toLocaleDateString('en-US',Object.assign({weekday:'long',month:'long',day:'numeric'},x.getFullYear()!==yr?{year:'numeric'}:{}))+' <span>'+n+' show'+(n===1?'':'s')+'</span></h3><ul class="ul27">'}
+  R2.slice(0,M27.n).forEach(e=>{if(e.date!==d){if(d)html+='</ul>';d=e.date;const x=new Date(e.date+'T12:00:00');const n=R2.filter(y=>y.date===d).length;
+    html+='<h3 class="day27">'+x.toLocaleDateString('en-US',Object.assign({weekday:'long',month:'long',day:'numeric'},x.getFullYear()!==yr?{year:'numeric'}:{}))+' <span>'+n+' '+W1+(n===1?'':'s')+'</span></h3><ul class="ul27">'}
    const cov=L.find(s=>{const nz=x=>String(x||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();const full=String(e.artists);const key=nz(full.includes(':')?full.split(':').slice(1).join(' '):full.split(/,| w\/ | with /)[0]);if(key.length<6||!(' '+nz(s.title)+' ').includes(' '+key+' '))return false;if(s.until&&s.until<e.date)return false;const vn=nz(String(e.venue||'').split(/[\/,(]/)[0]).replace(/^the /,'');if(vn.length<4)return false;const all=' '+nz(s.title+' '+(s.dek||'')+' '+(Array.isArray(s.body)?s.body.join(' '):s.body||''))+' ';return all.includes(' '+vn+' ')});
-   html+='<li class="sh27"><span class="tm">'+E(e.time||'Time not listed')+'</span><span class="ar"><b>'+E(e.artists)+'</b><small>'+E([e.venue,area27(e.hood)].filter(Boolean).join(' · '))+(e.price?' · '+E(e.price):'')+'</small></span><span class="lk"><a href="'+E(e.url||'#')+'">'+linkLabel(e.url)+'</a>'+(cov?'<a href="?story='+encodeURIComponent(cov.slug)+'" data-story="'+E(cov.slug)+'">Read our coverage</a>':'')+'</span></li>'});
-  if(d)html+='</ul>';box.innerHTML=html;
+   html+='<li class="sh27"><span class="tm">'+E(e.time||'Time not listed')+'</span><span class="ar"><b>'+E(e.artists)+'</b><small>'+E([e.venue,area27(e.hood)].filter((x,i,a)=>x&&a.indexOf(x)===i).join(' · '))+(e.price?' · '+E(e.price):'')+'</small></span><span class="lk"><a href="'+E(e.url||'#')+'">'+linkLabel(e.url)+'</a>'+(cov?'<a href="?story='+encodeURIComponent(cov.slug)+'" data-story="'+E(cov.slug)+'">Read our coverage</a>':'')+'</span></li>'});
+  if(d)html+='</ul>';if(R2.length>M27.n)html+='<p class="more27w"><button type="button" class="mo27">Show more '+W1+'s</button><span>Showing '+M27.n+' of '+R2.length+'</span></p>';box.innerHTML=html;{const mo=box.querySelector('.mo27');if(mo)mo.onclick=()=>{const y=scrollY;M27.n+=150;draw();scrollTo(0,y)}}
   box.querySelectorAll('a[data-story]').forEach(a=>a.addEventListener('click',ev=>{if(!(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button)){ev.preventDefault();setTimeout(()=>{try{history.replaceState(history.state,'','?story='+encodeURIComponent(a.dataset.story))}catch(_){}},300)}}))}
  draw()}
 function nohelp(){let v='';try{v=STATE.view}catch(_){}if(v==='help'){try{go('front')}catch(_){}}}

@@ -360,3 +360,11 @@
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav .nb27{padding-inline:8px!important;white-space:nowrap!important}
 }
 @media (max-width:360px){:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav .nb27{padding-inline:5px!important;font-size:13px!important}:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch{flex-basis:36px!important;width:36px!important}}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sel27{grid-template-columns:1fr 1fr 1fr 1.6fr}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sel27 input[type=date]{color-scheme:dark}
+@media (max-width:760px){:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sel27{grid-template-columns:1fr 1fr}:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .q27{grid-column:1/-1}}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .more27w{display:flex;align-items:center;gap:14px;margin:18px 0}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .mo27{all:unset;cursor:pointer;font:600 14px/1 var(--f-tx);color:#fff;border:1px solid #637083;border-radius:999px;padding:12px 18px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .more27w span{font:500 13px/1 var(--f-tx);color:var(--tx2)}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6).music27 #view>.legal-note{display:none!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sel27 :is(select,input),:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sel27 select option{font-family:Geist,system-ui,sans-serif!important}
