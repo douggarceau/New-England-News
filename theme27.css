@@ -216,3 +216,38 @@
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #coverSlot .cvside>.sea-h{width:100%!important;box-sizing:border-box}
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #navToggle{display:none!important}
 @media (max-width:760px){:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav{display:flex!important}}
+/* ===== color system v2 (owner + GPT audit, Nov 21 2026): one shared palette; the accent is only for the primary button, the masthead dot and the LIVE dot ===== */
+:root[data-t27]{--bg0:#07080A;--bg1:#0E1116;--bg2:#151922;--ln:#252B36;--tx0:#F5F6F8;--tx1:#C4CAD3;--tx2:#939BA8;--lk:#F5F6F8}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) body{background:var(--bg0)!important}
+/* masthead: flat white wordmark */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .wm27 .n{background:none!important;-webkit-text-fill-color:#F5F6F8!important;color:#F5F6F8!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .wm27 .r{background:var(--ln)!important}
+/* menu: current section = underline + bold, no fill */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav .nb27[aria-current]{background:none!important;box-shadow:none!important;color:#fff!important;font-weight:700!important;text-decoration:underline;text-decoration-color:var(--a);text-decoration-thickness:2px;text-underline-offset:7px}
+/* lead story: flat panel, solid primary button */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #hero27{background:linear-gradient(160deg,#151922 0,#0C0F14 100%)!important;border-color:var(--ln)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #hero27 .hg{background:var(--a)!important;color:#fff!important}
+/* links: one treatment everywhere */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) :is(.wo-f a,.jtwk .nb,.t27more button,#coverSlot .cvside>.sea-h>:is(button,a),.hlmore,#hlBox .hlr span a){color:var(--lk)!important;-webkit-text-fill-color:var(--lk)!important;text-decoration:underline!important;text-decoration-color:color-mix(in srgb,var(--a) 70%,#fff)!important;text-underline-offset:4px!important;background:none!important;border:0!important}
+/* news tiles: only the first gets the accent edge */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #coverSlot .cvside>.sea-g>[data-story]{border-left:1px solid var(--ln)!important;border:1px solid var(--ln)!important;background:var(--bg2)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #coverSlot .cvside>.sea-g>[data-story]:first-child{border-left:3px solid var(--a)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #coverSlot .cvside>.sea-g>[data-story]:hover{background:#1B202B!important;border-color:#3A4352!important}
+/* event boxes: neutral edges, gray dates, white underlined action */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .t27ev{border:1px solid var(--ln)!important;border-top:1px solid var(--ln)!important;background:var(--bg2)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .t27ev:hover{border-color:#3A4352!important;background:#1B202B!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .t27ev .w{color:var(--tx1)!important;-webkit-text-fill-color:var(--tx1)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .t27ev .g{color:#fff!important;-webkit-text-fill-color:#fff!important;text-decoration:underline!important;text-decoration-color:color-mix(in srgb,var(--a) 70%,#fff)!important;text-underline-offset:3px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .t27ev .v{color:var(--tx2)!important;-webkit-text-fill-color:var(--tx2)!important;font-size:12px!important}
+/* filter fields: visible outline */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) :is(.wo-s,#whatsOn select){border:1px solid #637083!important}
+/* small text readable */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) :is(.ft27 .cp,.clsbar *,#hlBox .hlr span,#hlBox .bh span,.jtwk .bh>span,#whatsOn .t27more span){color:var(--tx2)!important;-webkit-text-fill-color:var(--tx2)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch input::placeholder{color:var(--tx1)!important}
+/* This Week date badges: neutral */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .jtwk :is(.jtd,.jtev>span:first-child){background:var(--bg2)!important;border-color:var(--ln)!important;color:var(--tx0)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .jtwk .jtev>span:first-child *{color:var(--tx1)!important;-webkit-text-fill-color:var(--tx1)!important}
+/* LIVE dot uses the site accent */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .clsbar .rec::before,:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .clsbar .rec i,:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .clsbar .rec b{background:var(--a)!important;box-shadow:none!important}
+/* calendar row times: light gray, not accent */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #whatsOn .wo-r>:first-child{color:var(--tx1)!important}
