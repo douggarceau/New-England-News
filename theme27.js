@@ -23,11 +23,12 @@ function nav(v,mode,days){MODE=mode||null;try{STATE.genre='all';STATE.cq='';if(d
  try{go(v)}catch(e){const b=document.querySelector('#nav [data-go="'+v+'"]');if(b)b.click()}}
 if(C.items)ITEMS.splice(0,ITEMS.length,...C.items.map(([t,v])=>[t,()=>nav(v)]));
 let cur='Now';
-function mark(){document.querySelectorAll('#nav .nb27').forEach(b=>{if(b.textContent===cur)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+function mark(){const mb=document.querySelector('#nav .more27');if(mb)mb.classList.toggle('on27',/^(Music|Tech|Explore)$/.test(cur));document.querySelectorAll('#nav .nb27').forEach(b=>{if(b.textContent===cur)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
  const sec=cur==='News'?'news':cur==='Tech'?'tech':cur==='Music'?'music':cur==='Calendar'?'calendar':cur==='Explore'?'explore':'';
  try{if(!/[?&]story=/.test(location.search)&&!(SEC0&&cur==='Now'&&!mark.done)){const u=sec?'?section='+sec:location.pathname;if(location.search!==(sec?'?section='+sec:''))history.replaceState(history.state,'',u)}}catch(_){}
  if(cur!=='Now')mark.done=1;document.title=(cur&&cur!=='Now'?cur+' | ':'')+(C.title||document.title.split(' | ').pop())}
-function build(){
+function build(){const ae=document.activeElement,ss=ae&&ae.selectionStart,se=ae&&ae.selectionEnd;try{build0()}finally{if(ae&&ae!==document.body&&document.contains(ae)&&document.activeElement!==ae){try{ae.focus({preventScroll:true});if(ss!=null)ae.setSelectionRange(ss,se)}catch(_){}}}}
+function build0(){
  const m=document.querySelector('header.mast');
  if(m&&!m.querySelector('.wm27')){const w=document.createElement('a');w.className='wm27';w.href='/';w.setAttribute('aria-label',(C.k||'')+' '+(C.n||''));
   w.innerHTML='<span class="k"><i></i>'+(C.k||'')+'</span><span class="n"'+(C.sz?' style="font-size:'+C.sz+'"':'')+'>'+(C.n||'')+'</span><span class="r"></span>';
@@ -89,7 +90,7 @@ let v='';try{v=STATE.view}catch(_){}
  /* 7 honest label */
  const wk=document.querySelector('.jtwk .bh>span');if(wk&&wk.textContent!=='Selected events, next 7 days')wk.textContent='Selected events, next 7 days'}
 const N27={shown:12};
-function news27(){let v='';try{v=STATE.view}catch(_){}R.classList.toggle('sec27',v!=='front');if(v!=='stories')return;const host=document.getElementById('view');if(!host||host.querySelector('#news27'))return;
+function news27(){let v='';try{v=STATE.view}catch(_){}R.classList.toggle('sec27',v!=='front');if(!(v==='cal'&&cur==='Music'))R.classList.remove('music27');if(v!=='stories')return;const host=document.getElementById('view');if(!host||host.querySelector('#news27'))return;
  let L=[];try{L=STORIES.slice()}catch(_){return}const td=ymd(new Date());
  L=L.filter(s=>s&&s.title&&!/^today-(and-tonight|on-the-island)-/.test(s.slug)&&(!s.until||s.until>=td)&&(!window.T27S||T27S(s)));
  L.sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
@@ -116,11 +117,72 @@ function news27(){let v='';try{v=STATE.view}catch(_){}R.classList.toggle('sec27'
   box.innerHTML=X.map(x=>'<a href="'+E(x.url)+'" target="_blank" rel="noopener"><b>'+E(x.h)+'</b><span>'+E(x.outlet||'')+(x.date?' · '+day(x.date):'')+'</span></a>').join('')}).catch(()=>{});
  /* coming back from a story: same place, same focus */
  try{const s=JSON.parse(sessionStorage.getItem('n27')||'null');if(s&&s.s){sessionStorage.removeItem('n27');if(s.n>N27.shown){N27.shown=s.n;apply()}const a=host.querySelector('a[data-story="'+CSS.escape(s.s)+'"]');requestAnimationFrame(()=>{scrollTo(0,s.y);if(a)a.focus({preventScroll:true})});setTimeout(()=>{const b=document.querySelector('#news27 a[data-story="'+CSS.escape(s.s)+'"]');if(b){b.focus({preventScroll:true});if(Math.abs(scrollY-s.y)>40)scrollTo(0,s.y)}},250)}}catch(_){}}
+/* ===== Music section page ===== */
+const MAN=/^(midtown|east village|west village|lower east side|chelsea|harlem|east harlem|upper west side|upper east side|washington heights|gramercy|soho|tribeca|greenwich village|financial district|hell's kitchen|murray hill|flatiron|nolita|noho|inwood|morningside heights|union square|lincoln center|times square|theater district|kips bay|nomad|battery park|hudson yards|meatpacking|chinatown|little italy|manhattan|lower manhattan|hudson square|two bridges|yorkville|hamilton heights|sugar hill|alphabet city|bowery|uptown|downtown manhattan)/i;
+function area27(h){h=String(h||'').trim();if(!h)return '';let a=h.split(/\s+[–—-]\s+|\s*·\s*/)[0].trim();
+ if(/new york city/i.test(C.k||'')){if(/elmont|long island|nassau/i.test(h))return 'Nearby: Long Island';if(/rutherford|new jersey|newark|hoboken|jersey city|metlife/i.test(h))return 'Nearby: New Jersey';
+  if(/^(brooklyn|queens|bronx|the bronx|staten island)/i.test(a))return a.replace(/^the /i,'').replace(/^bronx/i,'The Bronx');if(MAN.test(a)||MAN.test(h))return 'Manhattan'}
+ return a}
+const G27=[['Rock & Metal',/^(rock|metal|punk|goth|hard rock|hardcore|industrial)$/i],['Indie',/^(indie|alternative)$/i],['Pop',/^pop$/i],['Hip-Hop & R&B',/^(hip-hop|rap|r&b|soul|funk)$/i],['Electronic',/^(electronic|clubs?|dj|house|techno)$/i],['Jazz & Blues',/^(jazz|blues)$/i],['Classical & Opera',/^(classical|opera|choral|chamber)$/i],['Folk & Country',/^(folk|country|americana|bluegrass|acoustic)$/i],['Latin & World',/^(latin|world|reggae|afrobeats?)$/i],['Genre unlisted',/^(live|music|experimental|concert)$/i]];
+const gname=g=>{for(const [n,r] of G27)if(r.test(g||''))return n;return null};
+const M27={d:'week',g:'',a:'',q:''};let M27init=false;const MQ0=new URLSearchParams(location.search);
+function music27(){let v='';try{v=STATE.view}catch(_){}if(v!=='cal'||cur!=='Music'){return}
+ const host=document.getElementById('view');if(!host)return;R.classList.add('music27');
+ if(!M27init){M27init=true;const u=MQ0;['d','g','a','q'].forEach(k=>{if(u.get(k))M27[k]=u.get(k)})}
+ if(host.querySelector('#music27'))return;
+ let U=[];try{U=up}catch(_){}const td=ymd(new Date());
+ const ALL=U.filter(e=>e&&e.date>=td&&e.artists&&gname(e.genre)&&!/\b(bingo|trivia|karaoke|yoga|paint|craft|story ?time|workshop|class)\b/i.test(e.artists)&&!/^(support|worship|sports|family|community|recreation|volunteer|civic|drag)$/i.test(e.genre||''));
+ {const seen=new Map();ALL.forEach(e=>{const k=e.date+'|'+String(e.venue||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,14)+'|'+String(e.artists).toLowerCase().split(/[,:(]| w\/ | with | and /)[0].replace(/[^a-z0-9]/g,'');const L0=seen.get(k)||[];const i=L0.findIndex(o=>!o.time||!e.time||o.time===e.time);if(i<0)L0.push(e);else if(!L0[i].time&&e.time)L0[i]=e;seen.set(k,L0)});ALL.length=0;seen.forEach(L0=>L0.forEach(e=>ALL.push(e)))}
+ ALL.forEach(e=>{if(/^(paid|tba|tbd|varies|see site|n\/a)$/i.test(String(e.price||'').trim()))e.price=''});
+ const E=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const areas={};ALL.forEach(e=>{const a=area27(e.hood||e.venue);if(a)areas[a]=(areas[a]||0)+1});
+ const AR=Object.keys(areas).sort((x,y)=>(/^Nearby/.test(x)-/^Nearby/.test(y))||areas[y]-areas[x]);
+ const gcount={};ALL.forEach(e=>{const n=gname(e.genre);gcount[n]=(gcount[n]||0)+1});
+ let L=[];try{L=STORIES.filter(s=>s.topic==='music'||/^nat-.*(tour|album|music)/.test(s.slug)).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')))}catch(_){}
+ const tOpt=[['tonight','Tonight'],['tomorrow','Tomorrow'],['weekend','This weekend'],['week','Next 7 days'],['all','All upcoming']];
+ host.innerHTML='<section id="music27" aria-labelledby="m27h"><h1 id="m27h" style="font-size:clamp(34px,4vw,48px)!important">Music</h1>'+
+  '<div class="ctl27" role="group" aria-label="Filter shows">'+
+  '<div class="dt27" role="group" aria-label="Date">'+tOpt.map(([k,t])=>'<button type="button" data-d="'+k+'" aria-pressed="'+(M27.d===k)+'">'+t+'</button>').join('')+'</div>'+
+  '<div class="sel27"><label>Where<select data-k="a"><option value="">Everywhere</option>'+AR.map(a=>'<option'+(M27.a===a?' selected':'')+'>'+E(a)+'</option>').join('')+'</select></label>'+
+  '<label>Genre<select data-k="g"><option value="">All genres</option>'+G27.map(([n])=>gcount[n]?'<option value="'+E(n)+'"'+(M27.g===n?' selected':'')+'>'+E(n)+' ('+gcount[n]+')</option>':'').join('')+'</select></label>'+
+  '<label class="q27">Search<input type="search" data-k="q" placeholder="Search artist, venue, or show" value="'+E(M27.q)+'" autocomplete="off"></label></div></div>'+
+  '<div class="pick27"></div><h2 class="lh">Shows</h2><p class="cnt m27c" aria-live="polite"></p><div class="res27"></div>'+
+  (L.length?'<section class="cov27" aria-labelledby="cov27h"><h2 id="cov27h" class="lh">Latest music coverage</h2>'+L.slice(0,6).map(s=>'<a class="row27" href="?story='+encodeURIComponent(s.slug)+'" data-story="'+E(s.slug)+'"><h3 style="font-size:20px!important">'+E(s.title)+'</h3>'+(s.dek?'<p>'+E(s.dek)+'</p>':'')+'</a>').join('')+'</section>':'')+
+  '<p class="note27">Listings updated daily. Times and prices can change, so check with the venue.</p></section>';
+ const ctl=host.querySelector('.ctl27');
+ ctl.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{M27.d=b.dataset.d;ctl.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));draw()});
+ ctl.querySelectorAll('select').forEach(s=>s.onchange=()=>{M27[s.dataset.k]=s.value;draw()});
+ const qi=ctl.querySelector('input');let qt;qi.oninput=()=>{clearTimeout(qt);qt=setTimeout(()=>{M27.q=qi.value;draw()},120)};
+ host.querySelectorAll('.cov27 a[data-story]').forEach(a=>a.addEventListener('click',ev=>{if(!(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button))ev.preventDefault()}));
+ const linkLabel=u=>/\.pdf(\?|$)/i.test(u||'')?'Season schedule (PDF)':/jambase\.com/i.test(u||'')?'Tour announcement':/songkick\.com/i.test(u||'')?'Event details on Songkick':/ticketmaster|axs\.com|seetickets|eventbrite|dice\.fm|etix|ticketweb|stubhub|tix\.com|boxoffice|tickets?\./i.test(u||'')?'Tickets':'Event details';
+ const range=()=>{const n=new Date(),t=ymd(n),a=k=>ymd(new Date(n.getTime()+k*864e5));const dow=new Date(t+'T12:00:00').getDay();
+  if(M27.d==='tonight')return [t,t];if(M27.d==='tomorrow')return [a(1),a(1)];if(M27.d==='weekend'){const fri=dow===0?a(-2):dow===6?a(-1):a(5-dow),sun=dow===0?t:dow===6?a(1):a(7-dow);return [fri<t?t:fri,sun]}if(M27.d==='week')return [t,a(6)];return [t,'9999']};
+ const big=/garden|arena|center|centre|stadium|amphitheat|pavilion|hall|theat|ballroom|paramount|steel|terminal 5|beacon|apollo|town hall|ppac|showbox|moore|paramount|vets/i;
+ function draw(){const [f,t]=range();const q=M27.q.trim().toLowerCase();
+  const R2=ALL.filter(e=>e.date>=f&&e.date<=t&&(!M27.g||gname(e.genre)===M27.g)&&(!M27.a||area27(e.hood||e.venue)===M27.a)&&(!q||(e.artists+' '+e.venue+' '+(e.hood||'')).toLowerCase().includes(q))).sort((a,b)=>a.date.localeCompare(b.date)||(window.__tm?(__tm(a.time)??9999)-(__tm(b.time)??9999):0));
+  /* address keeps the choices */
+  try{const u=new URLSearchParams();u.set('section','music');if(M27.d!=='week')u.set('d',M27.d);if(M27.g)u.set('g',M27.g);if(M27.a)u.set('a',M27.a);if(M27.q)u.set('q',M27.q);history.replaceState(history.state,'','?'+u.toString())}catch(_){}
+  host.querySelector('.m27c').textContent=R2.length+' show'+(R2.length===1?'':'s');
+  const pk=host.querySelector('.pick27');const tn=ALL.filter(e=>e.date===td);const p=M27.d==='tonight'||M27.d==='week'?(tn.find(e=>big.test(e.venue||''))||tn[0]):null;
+  pk.innerHTML=p&&!q&&!M27.g&&!M27.a?'<a class="pk27" href="'+E(p.url||'#')+'" target="_blank" rel="noopener"><span class="k">Tonight’s pick</span><span class="t">'+E(p.artists)+'</span><span class="v">'+E([p.time||'Time not listed',p.venue,area27(p.hood)].filter(Boolean).join(' · '))+(p.price?' · '+E(p.price):'')+'</span><span class="go">'+linkLabel(p.url)+' →</span></a>':'';
+  const box=host.querySelector('.res27');
+  if(!R2.length){const act=[];if(M27.d!=='all')act.push(['d',tOpt.find(x=>x[0]===M27.d)[1]]);if(M27.g)act.push(['g',M27.g]);if(M27.a)act.push(['a',M27.a]);if(M27.q)act.push(['q','“'+M27.q+'”']);
+   box.innerHTML='<div class="empty27"><p>No shows match these filters.</p><div>'+act.map(([k,t])=>'<button type="button" data-x="'+k+'">'+E(t)+' ✕</button>').join('')+'<button type="button" data-x="all">Clear all</button></div></div>';
+   box.querySelectorAll('[data-x]').forEach(b=>b.onclick=()=>{const k=b.dataset.x;if(k==='all'||k==='d')M27.d='all';if(k==='all'||k==='g')M27.g='';if(k==='all'||k==='a')M27.a='';if(k==='all'||k==='q'){M27.q='';qi.value=''}
+    ctl.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.d===M27.d)));ctl.querySelector('select[data-k=g]').value=M27.g;ctl.querySelector('select[data-k=a]').value=M27.a;draw()});return}
+  const yr=new Date().getFullYear();let html='',d='';
+  R2.slice(0,300).forEach(e=>{if(e.date!==d){if(d)html+='</ul>';d=e.date;const x=new Date(e.date+'T12:00:00');const n=R2.filter(y=>y.date===d).length;
+    html+='<h3 class="day27">'+x.toLocaleDateString('en-US',Object.assign({weekday:'long',month:'long',day:'numeric'},x.getFullYear()!==yr?{year:'numeric'}:{}))+' <span>'+n+' show'+(n===1?'':'s')+'</span></h3><ul class="ul27">'}
+   const cov=L.find(s=>{const a=String(e.artists).toLowerCase().split(/[,:–—(]| w\/ | with /)[0].trim();return a.length>3&&String(s.title).toLowerCase().includes(a)});
+   html+='<li class="sh27"><span class="tm">'+E(e.time||'Time not listed')+'</span><span class="ar"><b>'+E(e.artists)+'</b><small>'+E([e.venue,area27(e.hood)].filter(Boolean).join(' · '))+(e.price?' · '+E(e.price):'')+'</small></span><span class="lk"><a href="'+E(e.url||'#')+'" target="_blank" rel="noopener">'+linkLabel(e.url)+'</a>'+(cov?'<a href="?story='+encodeURIComponent(cov.slug)+'" data-story="'+E(cov.slug)+'">Read our coverage</a>':'')+'</span></li>'});
+  if(d)html+='</ul>';box.innerHTML=html;
+  box.querySelectorAll('a[data-story]').forEach(a=>a.addEventListener('click',ev=>{if(!(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button))ev.preventDefault()}))}
+ draw()}
 function nohelp(){let v='';try{v=STATE.view}catch(_){}if(v==='help'){try{go('front')}catch(_){}}}
 function week(){nohelp();let v='';try{v=STATE.view}catch(_){}if(v!=='front'||document.querySelector('.jtwk')||typeof jtWeek!=='function')return;const host=document.getElementById('view');if(!host)return;
  const s=document.createElement('section');s.className='box jtwk t27wk';s.innerHTML='<div class="bh"><b>This week</b><span>next 7 days</span></div><div id="jtWeek">'+jtWeek()+'</div><div style="padding:10px 14px"><button class="nb" data-go="cal">Full calendar →</button></div>';
  const b=document.getElementById('beyond');host.insertBefore(s,b||null)}
-function labels(){news27();week();try{layout()}catch(_){}document.querySelectorAll('#whatsOn .wo-r').forEach(r=>{const t=r.firstElementChild;if(t&&t.textContent.trim()==='TBA')t.textContent=''});
+function labels(){music27();news27();week();try{layout()}catch(_){}document.querySelectorAll('#whatsOn .wo-r').forEach(r=>{const t=r.firstElementChild;if(t&&t.textContent.trim()==='TBA')t.textContent=''});
  const wk=document.querySelector('.jtwk .bh b');if(wk){const n=[...wk.childNodes].filter(x=>x.nodeType===3);n.forEach(x=>{if(/\S/.test(x.textContent)&&x.textContent.trim()!=='This week')x.textContent=' This week'})}
  document.querySelectorAll('.jtwk button,.jtwk a,.wo-f a').forEach(a=>{if(/^full .*calendar/i.test(a.textContent.trim())&&a.textContent.trim()!=='Full calendar →')a.textContent='Full calendar →'});
  const hm=document.querySelector('#hlBox .hlmore');if(hm&&!hm.dataset.t27){hm.dataset.t27='1';hm.click()}
@@ -131,7 +193,7 @@ function pool2(){let P=[];try{P=window.jtEvPool?jtEvPool():[]}catch(_){}let U=[]
  const SK=/^(worship|support|sports|drag|recreation|community|volunteer|civic|family|fitness)$/i;
  U.filter(e=>e&&e.date>=td&&e.artists&&!SK.test(e.genre||'')).slice(0,80).forEach(e=>{const t=String(e.artists).trim();if(have.has(t.toLowerCase()))return;have.add(t.toLowerCase());P.push({bigText:t,name:e.venue||'',when:e.time||'',href:e.url||'#',ext:1,ev:e})});return P}
 let R27sig='';
-function fitRails(){const box=document.getElementById('rails27'),w=document.querySelector('.wrap'),c=document.getElementById('main27')||document.getElementById('view');if(!box||!w||!c)return;
+function fitRails(){const box=document.getElementById('rails27'),w=document.querySelector('.wrap'),c=document.getElementById('main27')||document.getElementById('view');if(!box||!w||!c)return;if(R.classList.contains('music27')){box.style.setProperty('display','none','important');return}
  const W=w.getBoundingClientRect(),M=c.getBoundingClientRect();const gl=M.left-W.left-16,gr=W.right-M.right-16;const cw=Math.min(250,gl,gr);
  if(cw<170){box.style.setProperty('display','none','important');return}box.style.setProperty('display','block','important');
  const l=box.querySelector('.l'),r=box.querySelector('.r');l.style.width=r.style.width=cw+'px';l.style.left=Math.max(6,gl-cw)+'px';r.style.right=Math.max(6,gr-cw)+'px'}

@@ -313,3 +313,40 @@
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch input,:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch input:not(:focus){width:36px!important;min-width:0!important;padding:9px 0 9px 30px!important;color:transparent!important}
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch input:focus{width:130px!important;color:#fff!important}
 }
+/* ===== Music page ===== */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6).music27 #rails27{display:none!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .ctl27{display:flex;flex-direction:column;gap:12px;margin:8px 0 20px;padding:14px;border:1px solid var(--ln);border-radius:14px;background:var(--bg1)}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .dt27{display:flex;flex-wrap:wrap;gap:6px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .dt27 button{all:unset;cursor:pointer;font:600 14px/1 var(--f-tx)!important;color:var(--tx1)!important;padding:10px 14px;border:1px solid var(--ln);border-radius:999px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .dt27 button[aria-pressed=true]{color:#fff!important;border-color:#fff;background:rgba(255,255,255,.08)}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sel27{display:grid;grid-template-columns:1fr 1fr 2fr;gap:10px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sel27 label{display:flex;flex-direction:column;gap:6px;font:600 12px/1 var(--f-tx)!important;color:var(--tx2)!important;letter-spacing:.04em}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sel27 :is(select,input){font:500 15px/1.2 var(--f-tx)!important;color:#fff!important;background:var(--bg2)!important;border:1px solid #637083!important;border-radius:10px!important;padding:11px 12px!important;width:100%;box-sizing:border-box;min-height:44px}
+@media (max-width:760px){:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sel27{grid-template-columns:1fr 1fr}:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .q27{grid-column:1/-1}}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .pk27{display:flex;flex-direction:column;gap:8px;padding:22px 24px;margin:0 0 22px;border-radius:16px;background:linear-gradient(160deg,#151922 0,#0C0F14 100%);border:1px solid var(--ln);border-left:3px solid var(--a);text-decoration:none!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .pk27 .k{font:700 12px/1 var(--f-tx)!important;letter-spacing:.14em;text-transform:uppercase;color:var(--tx2)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .pk27 .t{font:700 clamp(24px,2.8vw,34px)/1.1 var(--f-hd)!important;color:#fff!important;letter-spacing:-.02em}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .pk27 .v{font:500 15px/1.4 var(--f-tx)!important;color:var(--tx1)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .pk27 .go{align-self:flex-start;font:600 14px/1 var(--f-tx)!important;color:#fff!important;background:var(--a);padding:11px 16px;border-radius:999px;margin-top:4px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 h2.lh{font:700 20px/1.2 var(--f-hd)!important;color:var(--tx0)!important;margin:0 0 4px!important;padding-bottom:10px;border-bottom:1px solid var(--ln)}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .cnt{font:500 14px/1 var(--f-tx)!important;color:var(--tx2)!important;margin:10px 0 0!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .day27{font:700 15px/1.2 var(--f-hd)!important;color:#fff!important;margin:24px 0 6px!important;letter-spacing:.01em}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .day27 span{font:500 13px/1 var(--f-tx);color:var(--tx2);margin-left:8px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .ul27{list-style:none;margin:0;padding:0}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sh27{display:grid;grid-template-columns:96px 1fr auto;gap:14px;align-items:center;padding:13px 4px;border-bottom:1px solid var(--ln)}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sh27 .tm{font:600 14px/1.2 var(--f-tx)!important;color:var(--tx1)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sh27 .ar b{display:block;font:650 17px/1.25 var(--f-hd)!important;color:#fff!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sh27 .ar small{display:block;margin-top:3px;font:400 14px/1.35 var(--f-tx)!important;color:var(--tx2)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sh27 .lk{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sh27 .lk a{font:600 13px/1.2 var(--f-tx)!important;color:#fff!important;text-decoration:underline!important;text-decoration-color:color-mix(in srgb,var(--a) 70%,#fff)!important;text-underline-offset:3px;white-space:nowrap}
+@media (max-width:760px){:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sh27{grid-template-columns:1fr;gap:4px}:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .sh27 .lk{flex-direction:row;align-items:flex-start;gap:14px}}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .empty27{padding:24px 4px}:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .empty27 p{font:500 16px/1.4 var(--f-tx)!important;color:var(--tx1)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .empty27 button{all:unset;cursor:pointer;margin:8px 8px 0 0;font:600 13px/1 var(--f-tx);color:#fff;border:1px solid #637083;border-radius:999px;padding:10px 14px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .cov27{margin:34px 0 10px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .row27{display:block;padding:14px 4px;border-bottom:1px solid var(--ln);text-decoration:none!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .row27 h3{font:650 20px/1.25 var(--f-hd)!important;color:#fff!important;margin:0 0 6px!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .row27 p{font:400 15px/1.5 var(--f-tx)!important;color:var(--tx1)!important;margin:0!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .note27{font:500 13px/1.4 var(--f-tx)!important;color:var(--tx2)!important;margin:18px 0 30px!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .day27 span{font:500 13px/1 var(--f-tx)!important;color:var(--tx2)!important;margin-left:8px;letter-spacing:0!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #music27 .pk27 .go{text-transform:none!important;letter-spacing:0!important;box-shadow:none!important;text-shadow:none!important;font:600 14px/1 var(--f-tx)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav .more27.on27{font-weight:700!important;color:#fff!important;text-decoration:underline!important;text-underline-offset:6px}
