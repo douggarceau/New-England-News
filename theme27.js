@@ -2,7 +2,7 @@
 window.WO_CATS=[['Live Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country|blues|soul|reggae|funk)$/i],['Comedy',/^comedy$/i],['Shows',/^(theater|dance|classical|opera|stage)$/i],['Film',/^film$/i],['Art',/^(arts|art)$/i],['Nightlife',/^(clubs|club|nightlife)$/i],['Food & Drink',/^(food|drink|dining)$/i],['Outdoors',/^recreation$/i],['Talks & Books',/^talks$/i]];
 window.WO_OTHER='More Events';window.WO_SKIP=/^(sports|support|worship|drag)$/i;
 (function(){
-const C=window.T27||{};const R=document.documentElement;
+const C=window.T27||{};const SEC0=(location.search.match(/[?&]section=(news|tech|music|calendar|explore)/)||[])[1]||'';const STORY0=/[?&]story=/.test(location.search);const R=document.documentElement;
 R.setAttribute('data-t27','');if(C.keepArt)R.setAttribute('data-keepart','');R.style.setProperty('--a',C.a||'#E10600');
 const f=document.createElement('link');f.rel='stylesheet';f.href='https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap';document.head.appendChild(f);
 /* calendar filter hook used by vCal: music only, or the weekend */
@@ -23,7 +23,10 @@ function nav(v,mode,days){MODE=mode||null;try{STATE.genre='all';STATE.cq='';if(d
  try{go(v)}catch(e){const b=document.querySelector('#nav [data-go="'+v+'"]');if(b)b.click()}}
 if(C.items)ITEMS.splice(0,ITEMS.length,...C.items.map(([t,v])=>[t,()=>nav(v)]));
 let cur='Now';
-function mark(){document.querySelectorAll('#nav .nb27').forEach(b=>b.toggleAttribute('aria-current',b.textContent===cur))}
+function mark(){document.querySelectorAll('#nav .nb27').forEach(b=>{if(b.textContent===cur)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+ const sec=cur==='News'?'news':cur==='Tech'?'tech':cur==='Music'?'music':cur==='Calendar'?'calendar':cur==='Explore'?'explore':'';
+ try{if(!/[?&]story=/.test(location.search)&&!(SEC0&&cur==='Now'&&!mark.done)){const u=sec?'?section='+sec:location.pathname;if(location.search!==(sec?'?section='+sec:''))history.replaceState(history.state,'',u)}}catch(_){}
+ if(cur!=='Now')mark.done=1;document.title=(cur&&cur!=='Now'?cur+' | ':'')+(C.title||document.title.split(' | ').pop())}
 function build(){
  const m=document.querySelector('header.mast');
  if(m&&!m.querySelector('.wm27')){const w=document.createElement('a');w.className='wm27';w.href='/';w.setAttribute('aria-label',(C.k||'')+' '+(C.n||''));
@@ -31,7 +34,9 @@ function build(){
   w.onclick=e=>{e.preventDefault();cur='Now';mark();nav('front')};(m.querySelector('div')||m).appendChild(w)}
  const n=document.getElementById('nav');
  if(n&&!n.querySelector('.nb27')){ITEMS.forEach(([t,fn],i)=>{const b=document.createElement('button');b.type='button';b.className='nb27';b.textContent=t;b.style.order=i;
-  b.onclick=()=>{cur=t;mark();if(t!=='Tech')SF=null;fn()};n.appendChild(b)});mark()}
+  b.dataset.k=t.toLowerCase();b.onclick=()=>{cur=t;mark();if(t!=='Tech')SF=null;n.classList.remove('open27');fn();if(t==='News'||t==='Tech')setTimeout(()=>{const h=document.querySelector('#news27 h1');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}},60)};n.appendChild(b)});
+  const mb=document.createElement('button');mb.type='button';mb.className='nb27 more27';mb.textContent='More';mb.style.order=50;mb.setAttribute('aria-expanded','false');mb.onclick=()=>{const o=n.classList.toggle('open27');mb.setAttribute('aria-expanded',String(o))};n.appendChild(mb);mark()}
+ if(!document.querySelector('.skip27')){const s=document.createElement('a');s.className='skip27';s.href='#main27';s.textContent='Skip to content';document.body.insertBefore(s,document.body.firstChild)}
  const ft=document.querySelector('footer.site-footer');
  if(ft&&!ft.querySelector('.ft27')){const d=document.createElement('div');d.className='ft27';
   d.innerHTML=(C.foot||[]).map(f=>'<button type="button" '+(f[1][0]==='#'?'data-c="'+f[1].slice(1)+'"':'data-g="'+f[1]+'"')+'>'+f[0]+'</button>').join('')+'<button type="button" data-dir="1">Business Directory</button><button type="button" data-g="advertise">Advertising</button><button type="button" data-g="privacy">Privacy &amp; Contact</button><span class="cp">© '+new Date().getFullYear()+' Island News Media Productions LLC</span>';
@@ -60,7 +65,8 @@ function hero(){let v='';try{v=STATE.view}catch(_){}const old=document.getElemen
  b.innerHTML='<span class="hk">'+H(k)+'</span><span class="ht">'+H(s.title)+'</span>'+(s.dek?'<span class="hd">'+H(s.dek)+'</span>':'')+'<span class="hg">Read the story →</span>';
  anchor.parentNode.insertBefore(b,anchor)}
 function cal1(){const w=document.getElementById('whatsOn');if(!w||w.dataset.t27a)return;const d=w.querySelector('details.wo-d');if(!d)return;w.dataset.t27a='1';if(!w.querySelector('details[open]')){d.open=true;d.classList.add('t27auto');setTimeout(()=>d.addEventListener('toggle',()=>d.classList.remove('t27auto'),{once:true}),400)}}
-function layout(){const nt=document.getElementById('navToggle');if(nt){nt.style.setProperty('display','none','important');const n=document.getElementById('nav');if(n){n.style.setProperty('display','flex','important');n.removeAttribute('hidden');n.classList.remove('closed','collapsed')}}
+function layout(){const si=document.querySelector('#nav #nbSearch input');if(si){if(innerWidth<=760&&document.activeElement!==si)si.style.setProperty('width','36px','important');else si.style.removeProperty('width')}
+const nt=document.getElementById('navToggle');if(nt){nt.style.setProperty('display','none','important');const n=document.getElementById('nav');if(n){n.style.setProperty('display','flex','important');n.removeAttribute('hidden');n.classList.remove('closed','collapsed')}}
 let v='';try{v=STATE.view}catch(_){}
  /* 10 one main landmark around the editorial column, with headings */
  const w=document.querySelector('.wrap');const vw=document.getElementById('view');
@@ -82,11 +88,39 @@ let v='';try{v=STATE.view}catch(_){}
   x.innerHTML='<span>Showing 5 of '+rows+'</span><button type="button">View all '+rows+' '+cat.toLowerCase()+' events →</button>';x.querySelector('button').onclick=()=>{cur='Calendar';mark();/music/i.test(cat)?nav('cal','music',30):nav('cal',null,14)};d.appendChild(x)}}
  /* 7 honest label */
  const wk=document.querySelector('.jtwk .bh>span');if(wk&&wk.textContent!=='Selected events, next 7 days')wk.textContent='Selected events, next 7 days'}
+const N27={shown:12};
+function news27(){let v='';try{v=STATE.view}catch(_){}R.classList.toggle('sec27',v!=='front');if(v!=='stories')return;const host=document.getElementById('view');if(!host||host.querySelector('#news27'))return;
+ let L=[];try{L=STORIES.slice()}catch(_){return}const td=ymd(new Date());
+ L=L.filter(s=>s&&s.title&&!/^today-(and-tonight|on-the-island)-/.test(s.slug)&&(!s.until||s.until>=td)&&(!window.T27S||T27S(s)));
+ L.sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+ const E=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const day=d=>{if(!d)return '';const x=new Date(d+'T12:00:00');return x.toLocaleDateString('en-US',{month:'short',day:'numeric'})};
+ const yd=ymd(new Date(Date.now()-864e5)),wk=ymd(new Date(Date.now()-6*864e5));
+ const grp=d=>d>=td?'Today':d>=yd?'Yesterday':d>=wk?'Earlier this week':'Older';
+ const isTech=cur==='Tech';const title=isTech?'Tech':'News';
+ const lead=L.find(s=>s.lead)||L[0];const rest=L.filter(s=>s!==lead);
+ const row=s=>'<a class="row27" href="?story='+encodeURIComponent(s.slug)+'" data-story="'+E(s.slug)+'"><h3 style="font-size:20px!important;line-height:1.25!important">'+E(s.title)+'</h3>'+(s.dek?'<p>'+E(s.dek)+'</p>':'')+'<span class="m">'+day(s.date)+(s.minutes>2?' · '+s.minutes+' min read':'')+'</span></a>';
+ let html='<section id="news27" aria-labelledby="n27h"><h1 id="n27h" style="font-size:clamp(34px,4vw,48px)!important">'+title+'</h1><p class="cnt">'+L.length+' stories, newest first</p>';
+ if(lead)html+='<a class="lead27" href="?story='+encodeURIComponent(lead.slug)+'" data-story="'+E(lead.slug)+'"><span class="m">'+day(lead.date)+'</span><h2>'+E(lead.title)+'</h2>'+(lead.dek?'<p>'+E(lead.dek)+'</p>':'')+'<span class="go">Read the story →</span></a>';
+ html+='<h2 class="lh">Latest</h2><div class="list27">';let g='';
+ rest.forEach((s,i)=>{const k=grp(s.date||'');if(k!==g){g=k;html+='<h3 class="grp27" data-i="'+i+'">'+k+'</h3>'}html+=row(s).replace('class="row27"','class="row27" data-i="'+i+'"')});
+ html+='</div><div class="more27w"><span class="cnt2"></span><button type="button" class="lm27">Load more</button></div>';
+ if(!isTech)html+='<section class="ln27" aria-labelledby="ln27h"><h2 id="ln27h">From local newsrooms</h2><div class="ln27l"></div></section>';
+ html+='</section>';host.innerHTML=html;
+ const apply=()=>{const n=Math.min(N27.shown,rest.length);host.querySelectorAll('.list27 [data-i]').forEach(e=>{e.hidden=+e.dataset.i>=n});const w=host.querySelector('.more27w');w.querySelector('.cnt2').textContent='Showing '+n+' of '+rest.length;w.querySelector('.lm27').hidden=n>=rest.length};
+ apply();host.querySelector('.lm27').onclick=()=>{N27.shown+=12;apply()};
+ host.querySelectorAll('a[data-story]').forEach(a=>a.addEventListener('click',ev=>{if(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button)return;ev.preventDefault();try{sessionStorage.setItem('n27',JSON.stringify({s:a.dataset.story,y:scrollY,n:N27.shown}))}catch(_){}}));
+ if(!isTech)fetch('data/headlines.json?'+Math.floor(Date.now()/6e5),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d||!d.items)return;const own=new Set(L.map(s=>s.slug));
+  const X=d.items.filter(x=>x&&x.h&&x.url&&!x.story&&!/^\?story=/.test(x.url)).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).slice(0,10);
+  const box=host.querySelector('.ln27l');if(!box)return;if(!X.length){host.querySelector('.ln27').remove();return}
+  box.innerHTML=X.map(x=>'<a href="'+E(x.url)+'" target="_blank" rel="noopener"><b>'+E(x.h)+'</b><span>'+E(x.outlet||'')+(x.date?' · '+day(x.date):'')+'</span></a>').join('')}).catch(()=>{});
+ /* coming back from a story: same place, same focus */
+ try{const s=JSON.parse(sessionStorage.getItem('n27')||'null');if(s&&s.s){sessionStorage.removeItem('n27');if(s.n>N27.shown){N27.shown=s.n;apply()}const a=host.querySelector('a[data-story="'+CSS.escape(s.s)+'"]');requestAnimationFrame(()=>{scrollTo(0,s.y);if(a)a.focus({preventScroll:true})});setTimeout(()=>{const b=document.querySelector('#news27 a[data-story="'+CSS.escape(s.s)+'"]');if(b){b.focus({preventScroll:true});if(Math.abs(scrollY-s.y)>40)scrollTo(0,s.y)}},250)}}catch(_){}}
 function nohelp(){let v='';try{v=STATE.view}catch(_){}if(v==='help'){try{go('front')}catch(_){}}}
 function week(){nohelp();let v='';try{v=STATE.view}catch(_){}if(v!=='front'||document.querySelector('.jtwk')||typeof jtWeek!=='function')return;const host=document.getElementById('view');if(!host)return;
  const s=document.createElement('section');s.className='box jtwk t27wk';s.innerHTML='<div class="bh"><b>This week</b><span>next 7 days</span></div><div id="jtWeek">'+jtWeek()+'</div><div style="padding:10px 14px"><button class="nb" data-go="cal">Full calendar →</button></div>';
  const b=document.getElementById('beyond');host.insertBefore(s,b||null)}
-function labels(){week();try{layout()}catch(_){}document.querySelectorAll('#whatsOn .wo-r').forEach(r=>{const t=r.firstElementChild;if(t&&t.textContent.trim()==='TBA')t.textContent=''});
+function labels(){news27();week();try{layout()}catch(_){}document.querySelectorAll('#whatsOn .wo-r').forEach(r=>{const t=r.firstElementChild;if(t&&t.textContent.trim()==='TBA')t.textContent=''});
  const wk=document.querySelector('.jtwk .bh b');if(wk){const n=[...wk.childNodes].filter(x=>x.nodeType===3);n.forEach(x=>{if(/\S/.test(x.textContent)&&x.textContent.trim()!=='This week')x.textContent=' This week'})}
  document.querySelectorAll('.jtwk button,.jtwk a,.wo-f a').forEach(a=>{if(/^full .*calendar/i.test(a.textContent.trim())&&a.textContent.trim()!=='Full calendar →')a.textContent='Full calendar →'});
  const hm=document.querySelector('#hlBox .hlmore');if(hm&&!hm.dataset.t27){hm.dataset.t27='1';hm.click()}
@@ -139,6 +173,6 @@ const h=document.getElementById('hero27');const lead=h&&h.dataset.story;
 const BG=['bg41-data-mesh','bg42-wireframe-terrain','bg43-graphite-gradient','bg44-particle-field','bg45-glass-panels','bg46-lidar-scan','bg47-liquid-chrome','bg48-aurora-edge','bg49-led-dot-matrix','bg50-orbit-lines'];
 let bi=Math.floor(Math.random()*BG.length),bi_=bi+3;
 function dress(){return;document.querySelectorAll('.bp:not([data-b27]),.ep.os:not([data-b27]),.lspot .ep:not([data-b27])').forEach(el=>{el.dataset.b27='1';el.style.setProperty('--b27','url(/img/bg27/'+BG[bi++%BG.length]+'.jpg)')})}
-const go_=()=>{build();new MutationObserver(()=>{clearTimeout(go_.t);go_.t=setTimeout(build,60)}).observe(document.body,{childList:true,subtree:true})};
+const go_=()=>{build();try{const m=SEC0;if(m&&!STORY0){const b=[...document.querySelectorAll('#nav .nb27')].find(x=>x.dataset.k===m);if(b){const f=()=>b.click();setTimeout(f,0);setTimeout(()=>{let v='';try{v=STATE.view}catch(_){}if(v==='front')f()},900)}}}catch(_){}new MutationObserver(()=>{clearTimeout(go_.t);go_.t=setTimeout(build,60)}).observe(document.body,{childList:true,subtree:true})};
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',go_):go_();
 })();
