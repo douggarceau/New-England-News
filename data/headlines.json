@@ -132,6 +132,46 @@
    "town": "Boston",
    "date": "2026-11-21",
    "rank": 1
+  },
+  {
+   "h": "Anthropic Lands on Nasdaq With the Largest IPO on Record",
+   "sum": "The Claude maker priced shares at $83, raised about $81 billion and opened its first trading day near $111.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=tech-anthropic-nasdaq-debut-record-ipo-2026-11-21",
+   "story": "tech-anthropic-nasdaq-debut-record-ipo-2026-11-21",
+   "town": "National",
+   "date": "2026-11-21",
+   "rank": 3
+  },
+  {
+   "h": "Haymitch Gets His Origin Story as Hunger Games Returns to Theaters",
+   "sum": "Sunrise on the Reaping is in theaters, with trackers betting it opens bigger than any Hunger Games film in a decade.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=nat-hunger-games-sunrise-on-the-reaping-opens-2026-11-21",
+   "story": "nat-hunger-games-sunrise-on-the-reaping-opens-2026-11-21",
+   "town": "National",
+   "date": "2026-11-21",
+   "rank": 3
+  },
+  {
+   "h": "OpenAI's GPT-6.2 Astra and Sol Aim at Office Work, for Less",
+   "sum": "OpenAI's two new models promise better documents, code and design work at lower prices, as the race with Anthropic and Google tightens.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=tech-openai-gpt-6-2-astra-sol-release-2026-11-21",
+   "story": "tech-openai-gpt-6-2-astra-sol-release-2026-11-21",
+   "town": "National",
+   "date": "2026-11-21",
+   "rank": 3
+  },
+  {
+   "h": "Voyager 1 Is Now One Light-Day From Earth",
+   "sum": "After more than 49 years in flight, NASA's farthest spacecraft has crossed a distance light needs a full day to travel.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=nat-voyager-1-one-light-day-from-earth-2026-11-21",
+   "story": "nat-voyager-1-one-light-day-from-earth-2026-11-21",
+   "town": "National",
+   "date": "2026-11-21",
+   "rank": 3
   }
  ]
 }
