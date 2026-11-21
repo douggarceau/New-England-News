@@ -3,7 +3,8 @@ window.WO_CATS=[['Live Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|la
 window.WO_OTHER='More Events';window.WO_SKIP=/^(sports|support|worship|drag)$/i;
 (function(){
 const C=window.T27||{};const SEC0=(location.search.match(/[?&]section=(news|tech|music|calendar|explore)/)||[])[1]||'';const STORY0=/[?&]story=/.test(location.search);const R=document.documentElement;
-R.setAttribute('data-t27','');if(C.keepArt)R.setAttribute('data-keepart','');R.style.setProperty('--a',C.a||'#E10600');
+const CL=!!C.classic;if(CL&&C.pal)Object.entries(C.pal).forEach(([k,v])=>document.documentElement.style.setProperty('--c-'+k,v));/* classic: keep the site's own design; add only the six tabs, the new pages and the behavior fixes */
+R.setAttribute(CL?'data-t27c':'data-t27','');if(C.skin)R.setAttribute('data-skin27',C.skin);if(C.keepArt)R.setAttribute('data-keepart','');R.style.setProperty('--a',C.a||'#E10600');
 const f=document.createElement('link');f.rel='stylesheet';f.href='https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap';document.head.appendChild(f);
 /* calendar filter hook used by vCal: music only, or the weekend */
 const MUS=/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country|music|blues|soul|reggae|funk|classical|clubs)$/i;
@@ -33,18 +34,19 @@ function mark(){const mb=document.querySelector('#nav .more27');if(mb)mb.classLi
 function build(){const ae=document.activeElement,ss=ae&&ae.selectionStart,se=ae&&ae.selectionEnd;try{build0()}finally{if(ae&&ae!==document.body&&document.contains(ae)&&document.activeElement!==ae){try{ae.focus({preventScroll:true});if(ss!=null)ae.setSelectionRange(ss,se)}catch(_){}}}}
 function build0(){
  const m=document.querySelector('header.mast');
- if(m&&!m.querySelector('.wm27')){const w=document.createElement('a');w.className='wm27';w.href='/';w.setAttribute('aria-label',(C.k||'')+' '+(C.n||''));
+ if(!CL&&m&&!m.querySelector('.wm27')){const w=document.createElement('a');w.className='wm27';w.href='/';w.setAttribute('aria-label',(C.k||'')+' '+(C.n||''));
   w.innerHTML='<span class="k"><i></i>'+(C.k||'')+'</span><span class="n"'+(C.sz?' style="font-size:'+C.sz+'"':'')+'>'+(C.n||'')+'</span><span class="r"></span>';
   w.onclick=e=>{e.preventDefault();cur='Now';mark();nav('front')};(m.querySelector('div')||m).appendChild(w)}
  const n=document.getElementById('nav');
- if(n&&!n.querySelector('.nb27')){ITEMS.forEach(([t,fn],i)=>{const b=document.createElement('button');b.type='button';b.className='nb27';b.textContent=t;b.style.order=i;
+ if(n&&!n.querySelector('.nb27')){ITEMS.forEach(([t,fn],i)=>{const b=document.createElement('button');b.type='button';b.className=CL?'nb27 nb':'nb27';b.textContent=t;b.style.order=i;
   b.dataset.k=t.toLowerCase();b.onclick=()=>{let v0='';try{v0=STATE.view}catch(_){}if(t!==cur&&TABV[t]===v0&&history.state&&history.state.ep){try{history.replaceState(Object.assign({},history.state,{t27tab:cur,y:scrollY}),'');history.pushState(Object.assign({},history.state,{t27tab:t,y:0}),'',location.href)}catch(_){}}cur=t;mark();if(t!=='Tech')SF=null;n.classList.remove('open27');fn();if(t==='News'||t==='Tech')setTimeout(()=>{const h=document.querySelector('#news27 h1');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}},60)};n.appendChild(b)});
-  const mb=document.createElement('button');mb.type='button';mb.className='nb27 more27';mb.textContent='More';mb.style.order=50;mb.setAttribute('aria-expanded','false');mb.onclick=()=>{const o=n.classList.toggle('open27');mb.setAttribute('aria-expanded',String(o))};n.appendChild(mb);mark()}
+  const mb=document.createElement('button');mb.type='button';mb.className=CL?'nb27 more27 nb':'nb27 more27';mb.textContent='More';mb.style.order=50;mb.setAttribute('aria-expanded','false');mb.onclick=()=>{const o=n.classList.toggle('open27');mb.setAttribute('aria-expanded',String(o))};n.appendChild(mb);mark()}
  if(!document.querySelector('.skip27')){const s=document.createElement('a');s.className='skip27';s.href='#main27';s.textContent='Skip to content';document.body.insertBefore(s,document.body.firstChild)}
  const ft=document.querySelector('footer.site-footer');
  if(ft&&!ft.querySelector('.ft27')){const d=document.createElement('div');d.className='ft27';
   d.innerHTML=(C.foot||[]).map(f=>'<button type="button" '+(f[1][0]==='#'?'data-c="'+f[1].slice(1)+'"':'data-g="'+f[1]+'"')+'>'+f[0]+'</button>').join('')+'<button type="button" data-dir="1">Business Directory</button><button type="button" data-g="advertise">Advertising</button><button type="button" data-g="privacy">Privacy &amp; Contact</button><span class="cp">© '+new Date().getFullYear()+' Island News Media Productions LLC</span>';
   d.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(b.dataset.dir){R.classList.toggle('dir27');return}if(b.dataset.c){const x=document.getElementById(b.dataset.c);if(x)x.click();return}cur='';mark();try{go(b.dataset.g)}catch(_){}});ft.insertBefore(d,ft.firstChild)}
+ if(CL){ban27();hero();dedupe();cal1();upd();labels();rails27();sec27();const nt=document.getElementById('navToggle');if(nt){nt.style.setProperty('display','none','important');const n2=document.getElementById('nav');if(n2){n2.style.setProperty('display','flex','important');n2.style.setProperty('flex-wrap','wrap','important');n2.removeAttribute('hidden');n2.classList.remove('closed','collapsed')}}return}
  ban27();hero();dedupe();cal1();upd();labels();rails27();dress();fonts();sec27()}
 /* Banner art (opt-in: window.T27.banner, optional T27.bannerM for phones): a full-width band of the site's own art
    behind the masthead and menu, fading into the page. Decorative only; it never moves or covers anything. */
@@ -66,7 +68,7 @@ function sec27(){let v='';try{v=STATE.view}catch(_){return}
   R.style.setProperty('--a-fill',(k&&C.secFill&&C.secFill[k])||c);R.style.setProperty('--a-ink',(k&&C.secFill&&C.secFill[k])?'#FFFFFF':(C.secInk||'#0B0D12'))}}
 /* any old serif or display face left over from earlier styling switches to the new faces */
 const OLD=/Georgia|Playfair|PT Serif|Libre Caslon|Bodoni|Abril|DM Serif|Old Standard|Cinzel|Marcellus|Satisfy|Special Elite|Cormorant|Alfa Slab|Oswald|Anton|Bebas|Times|serif$/i;
-function fonts(){document.addEventListener('keydown',e=>{if(e.key==='Escape')R.classList.remove('dir27')});
+function fonts(){if(C.skin)return;/* a skin sets its own type and colors; keep art and fonts as they are */document.addEventListener('keydown',e=>{if(e.key==='Escape')R.classList.remove('dir27')});
 const RED=/^rgba?\((193, 18, 31|225, 6, 0|200, 16, 46)(, 1)?\)$/,swap=!/^#(E10600|C1121F)$/i.test(C.a||'');
 document.body.querySelectorAll(':is(b,strong,span,a,h1,h2,h3,h4,p,button,div,small,i,em,li,summary,label,section,article,aside):not([data-f27])').forEach(e=>{e.dataset.f27='';const cs=getComputedStyle(e);
  if(swap){for(const [k,c] of [['border-left-color',cs.borderLeftColor],['border-top-color',cs.borderTopColor],['border-bottom-color',cs.borderBottomColor],['background-color',cs.backgroundColor],['color',cs.color]])if(RED.test(c))e.style.setProperty(k,'var(--a)','important')}
@@ -87,7 +89,7 @@ function hero(){let v='';try{v=STATE.view}catch(_){}const old=document.getElemen
  b.innerHTML='<span class="hk">'+H(k)+'</span><span class="ht">'+H(s.title)+'</span>'+(s.dek?'<span class="hd">'+H(s.dek)+'</span>':'')+'<span class="hg">Read the story →</span>';
  anchor.parentNode.insertBefore(b,anchor)}
 function cal1(){const w=document.getElementById('whatsOn');if(!w||w.dataset.t27a)return;const d=w.querySelector('details.wo-d');if(!d)return;w.dataset.t27a='1';if(!w.querySelector('details[open]')){d.open=true;d.classList.add('t27auto');setTimeout(()=>d.addEventListener('toggle',()=>d.classList.remove('t27auto'),{once:true}),400)}}
-function layout(){const si=document.querySelector('#nav #nbSearch input');if(si){if(innerWidth<=760&&document.activeElement!==si)si.style.setProperty('width','36px','important');else si.style.removeProperty('width')}
+function layout(){const si=document.querySelector('#nav #nbSearch input');if(si){if(innerWidth<=760&&!CL&&document.activeElement!==si)si.style.setProperty('width','36px','important');else si.style.removeProperty('width')}
 const nt=document.getElementById('navToggle');if(nt){nt.style.setProperty('display','none','important');const n=document.getElementById('nav');if(n){n.style.setProperty('display','flex','important');n.removeAttribute('hidden');n.classList.remove('closed','collapsed')}}
 let v='';try{v=STATE.view}catch(_){}
  /* 10 one main landmark around the editorial column, with headings */
@@ -174,7 +176,7 @@ function music27(){let v='';try{v=STATE.view}catch(_){}const K=cur==='Music'?'mu
   (MU&&L.length?'<section class="cov27" aria-labelledby="cov27h"><h2 id="cov27h" class="lh">Latest music coverage</h2>'+L.slice(0,6).map(s=>'<a class="row27" href="?story='+encodeURIComponent(s.slug)+'" data-story="'+E(s.slug)+'"><h3 style="font-size:20px!important">'+E(s.title)+'</h3>'+(s.dek?'<p>'+E(s.dek)+'</p>':'')+'</a>').join('')+'</section>':'')+
   '<p class="note27">Listings come from organizers’ public pages and are updated daily. Times and prices can change, so check with the venue before you go.</p></section>';
  const ctl=host.querySelector('.ctl27');
- const di=ctl.querySelector('input[type=date]');ctl.querySelectorAll('select,input').forEach(x=>x.style.setProperty('font-family','Geist,system-ui,sans-serif','important'));di.onchange=()=>{M27.dt=di.value;M27.n=150;if(M27.dt){M27.d='';ctl.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed','false'))}else{M27.d='week';ctl.querySelector('[data-d=week]').setAttribute('aria-pressed','true')}draw()};
+ const di=ctl.querySelector('input[type=date]');if(!CL)ctl.querySelectorAll('select,input').forEach(x=>x.style.setProperty('font-family','Geist,system-ui,sans-serif','important'));di.onchange=()=>{M27.dt=di.value;M27.n=150;if(M27.dt){M27.d='';ctl.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed','false'))}else{M27.d='week';ctl.querySelector('[data-d=week]').setAttribute('aria-pressed','true')}draw()};
  ctl.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{M27.d=b.dataset.d;M27.dt='';di.value='';M27.n=150;ctl.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));draw()});
  ctl.querySelectorAll('select').forEach(s=>s.onchange=()=>{M27[s.dataset.k]=s.value;M27.n=150;draw()});
  const qi=ctl.querySelector('input[type=search]');let qt;qi.oninput=()=>{clearTimeout(qt);qt=setTimeout(()=>{M27.q=qi.value;draw()},120)};
@@ -283,5 +285,5 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
 addEventListener('popstate',()=>{const was=inRead,s=lastRead;if(!was||!s)return;
  /* big lists can redraw after the first try: retry while focus is still unclaimed (or sits on a stale copy) */
  const put=()=>{let v='';try{v=STATE.view}catch(_){}if(v==='read')return;const fe=document.activeElement;if(fe&&fe!==document.body&&document.contains(fe)&&!(fe.dataset&&fe.dataset.story===s))return;
-  const L=[...document.querySelectorAll('#main27 [data-story="'+CSS.escape(s)+'"]')].filter(x=>x.offsetParent);const a=L.find(x=>{const r=x.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight})||L[0];if(a&&fe!==a)a.focus({preventScroll:true})};
+  const L=[...(document.getElementById('main27')||document.getElementById('view')||document).querySelectorAll('[data-story="'+CSS.escape(s)+'"]')].filter(x=>x.offsetParent);const a=L.find(x=>{const r=x.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight})||L[0];if(a&&fe!==a)a.focus({preventScroll:true})};
  [450,900,1600,2600].forEach(t=>setTimeout(put,t))})})();
