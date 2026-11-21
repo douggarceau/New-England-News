@@ -257,7 +257,7 @@
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .c{position:absolute;top:0;width:250px;display:flex;flex-direction:column;gap:12px;pointer-events:auto}
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .l{left:10px}:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .r{right:10px}
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .t27ev{height:150px!important;text-decoration:none!important}
-@media (max-width:1099px){:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27{display:none!important}}
+
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #coverSlot .cvside>:is(.sea-h.nat,.nl-bar,.nat-l,.evtk){display:none!important}
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .t27ev .t{-webkit-line-clamp:2!important}
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .t27ev .v{-webkit-line-clamp:1!important}

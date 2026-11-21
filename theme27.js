@@ -131,15 +131,19 @@ function pool2(){let P=[];try{P=window.jtEvPool?jtEvPool():[]}catch(_){}let U=[]
  const SK=/^(worship|support|sports|drag|recreation|community|volunteer|civic|family|fitness)$/i;
  U.filter(e=>e&&e.date>=td&&e.artists&&!SK.test(e.genre||'')).slice(0,80).forEach(e=>{const t=String(e.artists).trim();if(have.has(t.toLowerCase()))return;have.add(t.toLowerCase());P.push({bigText:t,name:e.venue||'',when:e.time||'',href:e.url||'#',ext:1,ev:e})});return P}
 let R27sig='';
+function fitRails(){const box=document.getElementById('rails27'),w=document.querySelector('.wrap'),c=document.getElementById('main27')||document.getElementById('view');if(!box||!w||!c)return;
+ const W=w.getBoundingClientRect(),M=c.getBoundingClientRect();const gl=M.left-W.left-16,gr=W.right-M.right-16;const cw=Math.min(250,gl,gr);
+ if(cw<170){box.style.setProperty('display','none','important');return}box.style.setProperty('display','block','important');
+ const l=box.querySelector('.l'),r=box.querySelector('.r');l.style.width=r.style.width=cw+'px';l.style.left=Math.max(6,gl-cw)+'px';r.style.right=Math.max(6,gr-cw)+'px'}
+addEventListener('resize',()=>{clearTimeout(fitRails.t);fitRails.t=setTimeout(fitRails,120)});
 function rails27(){const w=document.querySelector('.wrap');if(!w)return;let box=document.getElementById('rails27');
- if(innerWidth<1100){if(box)box.style.display='none';return}
  const P=pool2();if(!P.length)return;
  const anchor=document.getElementById('hero27')||document.getElementById('main27')||document.getElementById('view');if(!anchor)return;
  const top=Math.max(0,Math.round(anchor.getBoundingClientRect().top-w.getBoundingClientRect().top));
  const H=Math.max(600,w.scrollHeight-top-40);const per=Math.max(1,Math.floor((H+12)/162));const n=Math.min(P.length,per*2);
- const sig=top+'|'+per+'|'+P.length;if(box&&R27sig===sig){box.style.display='';return}R27sig=sig;
+ const sig=top+'|'+per+'|'+P.length;if(box&&R27sig===sig){fitRails();return}R27sig=sig;
  if(!box){box=document.createElement('div');box.id='rails27';box.setAttribute('aria-label','Events');box.innerHTML='<div class="c l"></div><div class="c r"></div>';w.appendChild(box)}
- box.style.display='';box.style.top=top+'px';
+ box.style.top=top+'px';fitRails();
  const E=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
  const card=e=>{const ev=e.ev||{};const d=ev.date?new Date(ev.date+'T12:00:00'):null;const when=[d?d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}):'',ev.time||e.when||''].filter(Boolean).join(' · ');
   const g=/\.pdf(\?|$)/i.test(e.href||'')?'Schedule (PDF) →':/ticketmaster|seetickets|eventbrite|axs\.com|dice\.fm|etix|ticketweb|stubhub|tix|ticket/i.test(e.href||'')?'Tickets →':'Event details →';
