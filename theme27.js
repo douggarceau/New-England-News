@@ -4,7 +4,7 @@ window.WO_OTHER='More Events';window.WO_SKIP=/^(sports|support|worship|drag)$/i;
 (function(){
 const C=window.T27||{};const SEC0=(location.search.match(/[?&]section=(news|tech|music|calendar|explore)/)||[])[1]||'';const STORY0=/[?&]story=/.test(location.search);const R=document.documentElement;
 const CL=!!C.classic;if(CL&&C.pal)Object.entries(C.pal).forEach(([k,v])=>document.documentElement.style.setProperty('--c-'+k,v));/* classic: keep the site's own design; add only the six tabs, the new pages and the behavior fixes */
-R.setAttribute(CL?'data-t27c':'data-t27','');if(C.skin)R.setAttribute('data-skin27',C.skin);if(C.keepArt)R.setAttribute('data-keepart','');R.style.setProperty('--a',C.a||'#E10600');
+R.setAttribute(CL?'data-t27c':'data-t27','');if(C.skin)R.setAttribute('data-skin27',C.skin);if(C.kTop)R.setAttribute('data-ktop27','');if(C.keepArt)R.setAttribute('data-keepart','');R.style.setProperty('--a',C.a||'#E10600');
 const f=document.createElement('link');f.rel='stylesheet';f.href='https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap';document.head.appendChild(f);
 /* calendar filter hook used by vCal: music only, or the weekend */
 const MUS=/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country|music|blues|soul|reggae|funk|classical|clubs)$/i;
