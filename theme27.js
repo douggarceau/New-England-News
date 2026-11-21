@@ -12,11 +12,14 @@ window.T27F=e=>{if(/^(support|recovery|worship)$/i.test(e.genre||'')||/\b(suppor
 const TZ=C.tz||'America/New_York';const ymd=d=>d.toLocaleDateString('en-CA',{timeZone:TZ});
 function weekend(){const n=new Date(),td=ymd(n),dow=new Date(td+'T12:00:00').getDay();const a=(k)=>ymd(new Date(n.getTime()+k*864e5));
  const fri=dow===0?a(-2):dow===6?a(-1):a(5-dow);const sun=dow===0?td:dow===6?a(1):a(7-dow);return [fri<td?td:fri,sun]}
+const TECHF=s=>/^tech-/.test(s.slug)||/\b(AI|robot|tech)\b/i.test(s.title||'');
+/* tabs that share a page type (Music/Calendar, News/Tech) get their own history step, labeled with the tab */
+const TABV={Now:'front',News:'stories',Tech:'stories',Music:'cal',Calendar:'cal',Explore:'visit'};
 const ITEMS=[
  ['Now',()=>nav('front')],
  ['News',()=>nav('stories')],
  ['Music',()=>nav('cal','music',30)],
- ['Tech',()=>{SF=s=>/^tech-/.test(s.slug)||/\b(AI|robot|tech)\b/i.test(s.title||'');nav('stories')}],
+ ['Tech',()=>{SF=TECHF;nav('stories')}],
  ['Calendar',()=>nav('cal',null,14)],
  ['Explore',()=>nav('visit')]];
 function nav(v,mode,days){MODE=mode||null;try{STATE.genre='all';STATE.cq='';if(days)STATE.cdays=days;else STATE.cdays=14}catch(_){}
@@ -35,14 +38,24 @@ function build0(){
   w.onclick=e=>{e.preventDefault();cur='Now';mark();nav('front')};(m.querySelector('div')||m).appendChild(w)}
  const n=document.getElementById('nav');
  if(n&&!n.querySelector('.nb27')){ITEMS.forEach(([t,fn],i)=>{const b=document.createElement('button');b.type='button';b.className='nb27';b.textContent=t;b.style.order=i;
-  b.dataset.k=t.toLowerCase();b.onclick=()=>{cur=t;mark();if(t!=='Tech')SF=null;n.classList.remove('open27');fn();if(t==='News'||t==='Tech')setTimeout(()=>{const h=document.querySelector('#news27 h1');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}},60)};n.appendChild(b)});
+  b.dataset.k=t.toLowerCase();b.onclick=()=>{let v0='';try{v0=STATE.view}catch(_){}if(t!==cur&&TABV[t]===v0&&history.state&&history.state.ep){try{history.replaceState(Object.assign({},history.state,{t27tab:cur,y:scrollY}),'');history.pushState(Object.assign({},history.state,{t27tab:t,y:0}),'',location.href)}catch(_){}}cur=t;mark();if(t!=='Tech')SF=null;n.classList.remove('open27');fn();if(t==='News'||t==='Tech')setTimeout(()=>{const h=document.querySelector('#news27 h1');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}},60)};n.appendChild(b)});
   const mb=document.createElement('button');mb.type='button';mb.className='nb27 more27';mb.textContent='More';mb.style.order=50;mb.setAttribute('aria-expanded','false');mb.onclick=()=>{const o=n.classList.toggle('open27');mb.setAttribute('aria-expanded',String(o))};n.appendChild(mb);mark()}
  if(!document.querySelector('.skip27')){const s=document.createElement('a');s.className='skip27';s.href='#main27';s.textContent='Skip to content';document.body.insertBefore(s,document.body.firstChild)}
  const ft=document.querySelector('footer.site-footer');
  if(ft&&!ft.querySelector('.ft27')){const d=document.createElement('div');d.className='ft27';
   d.innerHTML=(C.foot||[]).map(f=>'<button type="button" '+(f[1][0]==='#'?'data-c="'+f[1].slice(1)+'"':'data-g="'+f[1]+'"')+'>'+f[0]+'</button>').join('')+'<button type="button" data-dir="1">Business Directory</button><button type="button" data-g="advertise">Advertising</button><button type="button" data-g="privacy">Privacy &amp; Contact</button><span class="cp">© '+new Date().getFullYear()+' Island News Media Productions LLC</span>';
   d.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(b.dataset.dir){R.classList.toggle('dir27');return}if(b.dataset.c){const x=document.getElementById(b.dataset.c);if(x)x.click();return}cur='';mark();try{go(b.dataset.g)}catch(_){}});ft.insertBefore(d,ft.firstChild)}
- hero();dedupe();cal1();upd();labels();rails27();dress();fonts()}
+ hero();dedupe();cal1();upd();labels();rails27();dress();fonts();sec27()}
+/* Section accents (opt-in: window.T27.sec = {now,news,music,tech,calendar,explore}). The accent follows the
+   page actually shown, so it stays right after Back, Forward and refresh. The masthead keeps the site's own color. */
+addEventListener('popstate',ev=>{const t=ev.state&&ev.state.t27tab;if(!t||t===cur||!TABV[t])return;cur=t;SF=t==='Tech'?TECHF:null;MODE=t==='Music'?'music':null;mark()});
+let lastSec='';R.style.setProperty('--brand',C.a||'#E10600');if(C.sec)R.style.setProperty('--a-ink',C.secInk||'#0B0D12');
+function sec27(){let v='';try{v=STATE.view}catch(_){return}
+ const want=v==='front'?'Now':v==='stories'?(cur==='Tech'?'Tech':'News'):v==='cal'?(/^(Music|Calendar)$/.test(cur)?cur:'Calendar'):v==='visit'?'Explore':null;
+ if(want&&want!==cur){cur=want;mark()}
+ if(v!=='read'&&want){try{const h=history.state;if(h&&h.ep&&h.view===v&&h.t27tab!==cur)history.replaceState(Object.assign({},h,{t27tab:cur}),'')}catch(_){}}
+ if(!C.sec)return;const k=v==='read'?lastSec:(want?want.toLowerCase():'');if(v!=='read')lastSec=k;
+ if(R.getAttribute('data-sec27')!==k){R.setAttribute('data-sec27',k);R.style.setProperty('--a',(k&&C.sec[k])||C.a||'#E10600')}}
 /* any old serif or display face left over from earlier styling switches to the new faces */
 const OLD=/Georgia|Playfair|PT Serif|Libre Caslon|Bodoni|Abril|DM Serif|Old Standard|Cinzel|Marcellus|Satisfy|Special Elite|Cormorant|Alfa Slab|Oswald|Anton|Bebas|Times|serif$/i;
 function fonts(){document.addEventListener('keydown',e=>{if(e.key==='Escape')R.classList.remove('dir27')});
@@ -101,14 +114,14 @@ function news27(){let v='';try{v=STATE.view}catch(_){}R.classList.toggle('sec27'
  const isTech=cur==='Tech';const title=isTech?'Tech':'News';
  const lead=L.find(s=>s.lead)||L[0];const rest=L.filter(s=>s!==lead);
  const row=s=>'<a class="row27" href="?story='+encodeURIComponent(s.slug)+'" data-story="'+E(s.slug)+'"><h3 style="font-size:20px!important;line-height:1.25!important">'+E(s.title)+'</h3>'+(s.dek?'<p>'+E(s.dek)+'</p>':'')+'<span class="m">'+day(s.date)+(s.minutes>2?' · '+s.minutes+' min read':'')+'</span></a>';
- let html='<section id="news27" aria-labelledby="n27h"><h1 id="n27h" style="font-size:clamp(34px,4vw,48px)!important">'+title+'</h1><p class="cnt">'+L.length+' stories, newest first</p>';
+ let html='<section id="news27" aria-labelledby="n27h"><h1 id="n27h" style="font-size:clamp(34px,4vw,48px)!important">'+title+'</h1><p class="cnt">'+(L.length?L.length+' stories, newest first':'No '+(isTech?'tech ':'')+'stories yet. New ones will appear here.')+'</p>';
  if(lead)html+='<a class="lead27" href="?story='+encodeURIComponent(lead.slug)+'" data-story="'+E(lead.slug)+'"><span class="m">'+day(lead.date)+'</span><h2>'+E(lead.title)+'</h2>'+(lead.dek?'<p>'+E(lead.dek)+'</p>':'')+'<span class="go">Read the story →</span></a>';
- html+='<h2 class="lh">Latest</h2><div class="list27">';let g='';
+ html+=(rest.length?'<h2 class="lh">Latest</h2>':'')+'<div class="list27">';let g='';
  rest.forEach((s,i)=>{const k=grp(s.date||'');if(k!==g){g=k;html+='<h3 class="grp27" data-i="'+i+'">'+k+'</h3>'}html+=row(s).replace('class="row27"','class="row27" data-i="'+i+'"')});
  html+='</div><div class="more27w"><span class="cnt2"></span><button type="button" class="lm27">Load more</button></div>';
  if(!isTech)html+='<section class="ln27" aria-labelledby="ln27h"><h2 id="ln27h">From local newsrooms</h2><div class="ln27l"></div></section>';
  html+='</section>';host.innerHTML=html;
- const apply=()=>{const n=Math.min(N27.shown,rest.length);host.querySelectorAll('.list27 [data-i]').forEach(e=>{e.hidden=+e.dataset.i>=n});const w=host.querySelector('.more27w');w.querySelector('.cnt2').textContent='Showing '+n+' of '+rest.length;w.querySelector('.lm27').hidden=n>=rest.length};
+ const apply=()=>{const n=Math.min(N27.shown,rest.length);host.querySelectorAll('.list27 [data-i]').forEach(e=>{e.hidden=+e.dataset.i>=n});const w=host.querySelector('.more27w');w.querySelector('.cnt2').textContent=rest.length?'Showing '+n+' of '+rest.length:'';w.querySelector('.lm27').hidden=n>=rest.length};
  apply();host.querySelector('.lm27').onclick=()=>{N27.shown+=12;apply()};
  host.querySelectorAll('a[data-story]').forEach(a=>a.addEventListener('click',ev=>{if(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button)return;ev.preventDefault();try{sessionStorage.setItem('n27',JSON.stringify({s:a.dataset.story,y:scrollY,n:N27.shown}))}catch(_){}}));
  if(!isTech)fetch('data/headlines.json?'+Math.floor(Date.now()/6e5),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d||!d.items)return;const own=new Set(L.map(s=>s.slug));
@@ -208,7 +221,8 @@ function rails27(){const w=document.querySelector('.wrap');if(!w)return;let box=
  const P=pool2();if(!P.length)return;
  const anchor=document.getElementById('hero27')||document.getElementById('main27')||document.getElementById('view');if(!anchor)return;
  const top=Math.max(0,Math.round(anchor.getBoundingClientRect().top-w.getBoundingClientRect().top));
- const H=Math.max(600,w.scrollHeight-top-40);const per=Math.max(1,Math.floor((H+12)/162));const n=Math.min(P.length,per*2);
+ /* size from the content column, not the whole page: the rails themselves must not make the page taller */
+ const col=document.getElementById('main27')||document.getElementById('view');const H=Math.max(600,Math.round((col?col.getBoundingClientRect().bottom:w.getBoundingClientRect().bottom)-w.getBoundingClientRect().top)-top-40);const per=Math.max(1,Math.floor((H+12)/162));const n=Math.min(P.length,per*2);
  const sig=top+'|'+per+'|'+P.length;if(box&&R27sig===sig){fitRails();return}R27sig=sig;
  if(!box){box=document.createElement('div');box.id='rails27';box.setAttribute('aria-label','Events');box.innerHTML='<div class="c l"></div><div class="c r"></div>';w.appendChild(box)}
  box.style.top=top+'px';fitRails();
@@ -248,3 +262,18 @@ function dress(){return;document.querySelectorAll('.bp:not([data-b27]),.ep.os:no
 const go_=()=>{build();try{const m=SEC0;if(m&&!STORY0){const b=[...document.querySelectorAll('#nav .nb27')].find(x=>x.dataset.k===m);if(b){const f=()=>b.click();setTimeout(f,0);setTimeout(()=>{let v='';try{v=STATE.view}catch(_){}if(v==='front')f()},900)}}}catch(_){}new MutationObserver(L=>{if(L.every(x=>{const t=x.target.nodeType===1?x.target:x.target.parentElement;return t&&t.closest&&t.closest('.lsrow,#rails27,.nb-clock,[data-clock]')}))return;clearTimeout(go_.t);go_.t=setTimeout(build,60)}).observe(document.body,{childList:true,subtree:true})};
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',go_):go_();
 })();
+/* Article "← Back": if the reader opened this story from a page on this site, step back through history, so the
+   page, filters and scroll come back exactly as with the browser's Back button. The marker lives in the history
+   entry, so it still works after Forward. Opened from a bookmark or a shared link, the button keeps its old behavior.
+   After any Back to a list, keyboard focus returns to the story the reader came from. */
+(function(){let lastRead=null,inRead=false;
+setInterval(()=>{try{inRead=STATE.view==='read';if(inRead)lastRead=STATE.story}catch(_){}},250);
+document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('[data-story]');if(!a||a.closest('article.reader button.back')||e.metaKey||e.ctrlKey||e.shiftKey||e.button)return;const s=a.dataset.story;
+ setTimeout(()=>{try{const h=history.state;if(h&&h.ep&&h.view==='read'&&h.story===s&&STATE.view==='read'&&STATE.story===s)history.replaceState(Object.assign({},h,{t27in:1}),'')}catch(_){}},0)},true);
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('article.reader button.back');if(!b)return;const h=history.state;let st='';try{st=STATE.story}catch(_){}
+ if(!(h&&h.ep&&h.t27in&&h.view==='read'&&h.story===st))return;e.preventDefault();e.stopImmediatePropagation();history.back()},true);
+addEventListener('popstate',()=>{const was=inRead,s=lastRead;if(!was||!s)return;
+ /* big lists can redraw after the first try: retry while focus is still unclaimed (or sits on a stale copy) */
+ const put=()=>{let v='';try{v=STATE.view}catch(_){}if(v==='read')return;const fe=document.activeElement;if(fe&&fe!==document.body&&document.contains(fe)&&!(fe.dataset&&fe.dataset.story===s))return;
+  const L=[...document.querySelectorAll('#main27 [data-story="'+CSS.escape(s)+'"]')].filter(x=>x.offsetParent);const a=L.find(x=>{const r=x.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight})||L[0];if(a&&fe!==a)a.focus({preventScroll:true})};
+ [450,900,1600,2600].forEach(t=>setTimeout(put,t))})})();
