@@ -361,7 +361,7 @@ html body #flagLine::before,html body #flagLine i{display:none!important}
 <style>a.sh.sh-nolink{cursor:default}a.sh.sh-nolink:hover{transform:none}</style>
 </head>
 <body>
-<title>The Boston Rambler</title>
+<title>The Boston Rambler</title><script>window.T27={"a": "#1F8A4C", "k": "Boston", "n": "RAMBLER", "tz": "America/New_York", "sis": [["x", "y"]]}</script><script src="theme27.js?v=18"></script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1716,7 +1716,7 @@ async function cwLoad(force){if(!force&&Date.now()-CW.t<240000)return;const ago=
   if(Array.isArray(f))CW.fire=f;CW.t=Date.now();cwFill()}
 
 /* Front page: the week ahead in Boston. Skips daily worship, meetings and services so real events stand out; one pick per event, grouped by day. */
-const JTSKIP=/^(worship|support)$/;const JTNOISE=/\b(mass|rosary|teen center|pantry|thrift|reconciliation|bible|prayer|morning glory|al-anon|aa meeting|step workshop|choir rehearsals?|chorus rehearsals?|rehearsals?|office hours)\b/i;
+const JTSKIP=/^(worship|support|sports|drag|recreation|community|volunteer|civic|family|fitness)$/;const JTNOISE=/\b(mass|rosary|teen center|pantry|thrift|reconciliation|bible|prayer|morning glory|al-anon|aa meeting|step workshop|choir rehearsals?|chorus rehearsals?|rehearsals?|office hours)\b/i;
 function jtWeekList(D,all){try{const end=addDays(todayKey,D||7);const now=new Date();const nowMin=now.getHours()*60+now.getMinutes();const mins=t=>{const v=window.__tm(t);return v==null?9999:v};const vn=v=>(v||'').toLowerCase().normalize('NFD').replace(/[^a-z]/g,'').replace(/^the/,'').slice(0,12);const seen=new Set(),per={};const out=[];
  for(const e of up){if(e.date<todayKey||e.date>end||JTSKIP.test(e.genre||'')||JTNOISE.test(e.artists||''))continue;if(e.date===todayKey&&mins(e.time)!==9999&&mins(e.time)<nowMin-30)continue;
   const k1=(e.artists||'').toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z]/g,'').slice(0,24),k2=e.date+'|'+(e.time||'')+'|'+vn(e.venue);if(seen.has(k1)||seen.has(k2))continue;if(!all&&(per[e.date]||0)>=(D?6:2))continue;seen.add(k1);seen.add(k2);per[e.date]=(per[e.date]||0)+1;out.push(e);if(!all&&out.length>=(D?60:9))break}
@@ -1774,7 +1774,7 @@ function vInk(){const L=STORIES.filter(s=>s.topic==='ink');return `<h2 class="ro
 /* national features live on the cover, not in the Stories tab (Boston news only) */
 const FEATURES=new Set([]);
 function vStories(){
-  const LS=STORIES.filter(s=>!FEATURES.has(s.slug)).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+  const LS=STORIES.filter(s=>!FEATURES.has(s.slug)&&(!window.T27S||window.T27S(s))).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
   return `<h2 class="room">Boston Arts &amp; Events Stories</h2>
   <div class="sgrid">${LS.map(storyCard).join('')}</div>`;
 }
@@ -1817,7 +1817,7 @@ function vReader(slug){
 }
 function vCal(){const upc=up.filter(e=>e.genre!=='support');
   const gs=[...new Set(upc.map(e=>e.genre))].sort((a,b)=>upc.filter(e=>e.genre===b).length-upc.filter(e=>e.genre===a).length);
-  let L=upc.filter(e=>STATE.genre==='all'||e.genre===STATE.genre);
+  let L=upc.filter(e=>(window.T27F?T27F(e):true)&&(STATE.genre==='all'||e.genre===STATE.genre));
   const q=STATE.cq.toLowerCase(); if(q) L=L.filter(e=>(e.artists+' '+e.venue+' '+(e.hood||'')).toLowerCase().includes(q));
   if(STATE.hood!=='all') L=L.filter(e=>e.hood===STATE.hood);
   const hoods=[...new Set(upc.map(e=>e.hood).filter(Boolean))].sort();
@@ -2235,10 +2235,10 @@ const $=id=>document.getElementById(id),esc=t=>String(t).replace(/&/g,'&amp;').r
 const promoTimers=new WeakMap();
 const promoKey=s=>s.rep?'report:'+s.rep:'title:'+String(s.bigText||s.big||s.name||s.story||s.href).replace(/\s+/g,' ').trim().toLowerCase();
 const narrowExtra=box=>innerWidth<1280&&box.classList.contains('ls-extra');
-function showPromo(id,pool,off,flip){if(/^ls[BDHFJNP]$/.test(id)&&window.jtEvPool){const e=window.jtEvPool();if(e.length)return showPromo0(id,e,off,flip)}const A=adPool();const on=document.querySelectorAll('.lspot.t-ad,.lspot.t-adimg').length;
+function showPromo(id,pool,off,flip){if(window.jtEvPool){const e=window.jtEvPool();if(e.length)return showPromo0(id,e,off,flip)}const A=adPool();const on=document.querySelectorAll('.lspot.t-ad,.lspot.t-adimg').length;
  if(A.length&&on<Math.min(2,A.length)&&Math.random()<(on?0.15:0.3))return showPromo0(id,adShuf(A),0,flip);return showPromo0(id,pool,off,flip)}
 function adShuf(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-const ADS_ON=true; /* Advertise Here boxes: set true to turn back on */
+const ADS_ON=false; /* Advertise Here boxes: set true to turn back on */
 const AD_SEED=[];
 window.__adPool=()=>adPool();function adPool(){if(!ADS_ON)return AD_SEED;if(adPool.L)return adPool.L;const P='$30 / 30 days · no money up front · no design needed';return adPool.L=AD_SEED.concat([['#4A5F8F','Real estate<em>brokers &amp; agents</em>','Listings in front of Boston buyers.'],
 ['#E3CF9F','Wealth<em>&amp; advisors</em>','Financial planners, private banks and wealth managers.'],
@@ -2826,7 +2826,7 @@ const go=()=>{try{if(!E.length||!window.__fill0)return;const nz=s=>String(s||'')
 document.querySelectorAll('.lsrow .lspot[hidden] > a[id]').forEach(el=>{if(innerWidth<1280&&el.parentNode.classList.contains('ls-extra'))return;let it=null;for(let n=0;n<E.length;n++){const c=E[(k+n)%E.length];if(!vis.has(nz(c.bigText))){it=c;k=k+n+1;break}}if(!it)return;vis.add(nz(it.bigText));el.parentNode.hidden=false;el.parentNode.style.display='';window.__fill0(el,it)})}catch(_){}};
 setTimeout(go,1500);setInterval(go,3000)})();</script>
 <link rel="stylesheet" href="posters.css?v=24">
-<link rel="stylesheet" href="polish.css?v=48"><script src="whatson.js?v=24" defer></script>
+<link rel="stylesheet" href="polish.css?v=48"><script src="whatson.js?v=27" defer></script>
 <script src="recovery.js?v=1" defer></script>
 <script>(()=>{const go=()=>{const nav=document.getElementById("nav");if(!nav||document.getElementById("nbSub"))return;const b=document.createElement("button");b.className="nb";b.id="nbSub";b.type="button";b.textContent="Subscribe";nav.appendChild(b);b.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();const s=document.getElementById("subBox");if(!s)return;if(s.parentNode!==document.body)document.body.appendChild(s);s.classList.toggle("sbpop");if(s.classList.contains("sbpop")){const i=s.querySelector("input:not([hidden])");i&&i.focus()}});document.addEventListener("click",e=>{const s=document.getElementById("subBox");if(s&&s.classList.contains("sbpop")&&!s.contains(e.target)&&e.target!==b)s.classList.remove("sbpop")})};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",go):go()})();</script><script>setInterval(()=>{try{const n=new Date(),M=n.toLocaleDateString("en-US",{month:"short",timeZone:"America/New_York"}).toUpperCase(),D=String(+n.toLocaleDateString("en-US",{day:"numeric",timeZone:"America/New_York"}));document.querySelectorAll("#view a.sh").forEach(a=>{const dt=a.querySelector(".dt");if(!dt||dt.dataset.tf===M+D)return;dt.dataset.tf=M+D;const old=dt.querySelector(".tflag");old&&old.remove();const m=(dt.querySelector("small")||{}).textContent,d=(dt.querySelector("b")||{}).textContent;if(String(m).trim().toUpperCase()!==M||String(d).trim()!==D)return;const tm=(a.querySelector(".who span")||{}).textContent||"";const x=tm.match(/(\d{1,2})(?::\d{2})?\s*(AM|PM)/i);let h=x?(+x[1]%12)+(/pm/i.test(x[2])?12:0):-1;const f=document.createElement("span");f.className="tflag";f.textContent=h>=17?"Tonight":"Today";dt.appendChild(f)})}catch(_){}},400)</script><style id="topSceneCss">
 /* Top story box: island painting instead of the red curtain (owner's request, Nov 7 2026) */
@@ -3046,5 +3046,6 @@ let opener=null;const close=()=>{if(!s.classList.contains('sbpop'))return;s.clas
 new MutationObserver(()=>{if(s.classList.contains('sbpop')){opener=document.activeElement&&document.activeElement!==document.body&&!s.contains(document.activeElement)?document.activeElement:opener;s.setAttribute('role','dialog');s.setAttribute('aria-modal','true')}}).observe(s,{attributes:true,attributeFilter:['class']});
 document.addEventListener('keydown',e=>{if(!s.classList.contains('sbpop'))return;if(e.key==='Escape'){e.preventDefault();close();return}if(e.key==='Tab'){const F=[...s.querySelectorAll('button,input,a[href],select,textarea')].filter(el=>!el.disabled&&el.offsetParent);if(!F.length)return;const a=F[0],z=F[F.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}})};
 go();addEventListener('DOMContentLoaded',go);setTimeout(go,1500)})();</script>
+<link rel="stylesheet" href="theme27.css?v=18">
 </body>
 </html>

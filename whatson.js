@@ -2,8 +2,8 @@
 (function(){
 const RD=()=>{const s=document.getElementById('coverSlot');document.documentElement.classList.toggle('rd',!(s&&s.offsetParent!==null&&s.childElementCount>0))};setInterval(RD,400);document.addEventListener('click',()=>setTimeout(RD,60),true);
 const H=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const SKIP=/^(sports|support)$/i;
-const TZ='America/New_York';
+const SKIP=window.WO_SKIP||/^(sports|support)$/i;
+const TZ=/seattle/i.test(location.hostname+' '+document.title)?'America/Los_Angeles':'America/New_York';
 const ymd=d=>d.toLocaleDateString('en-CA',{timeZone:TZ});
 const add=(d,n)=>new Date(d.getTime()+n*864e5);
 function mins(t){const m=String(t||'').match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i);if(!m)return 9999;let h=+m[1]%12;if(/pm/i.test(m[3]))h+=12;return h*60+(+m[2]||0)}
@@ -25,17 +25,17 @@ function list(r){const td=ymd(new Date()),nm=nowMins(),late=nm>=17*60;
  return EV.filter(e=>e.date>=r.from&&e.date<=r.to&&(r.from!==td||r.to!==td||stillOn(e,nm,late)))
   .sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:mins(a.time)-mins(b.time))}
 function dayLbl(ds){const d=new Date(ds+'T12:00:00');return d.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase()+' '+d.getDate()}
-const PLACE=(()=>{const t=(location.hostname+' '+document.title).toLowerCase();return /jamestown/.test(t)?'Jamestown':/hurricane|rhode/.test(t)?'Rhode Island':/boston|rambler/.test(t)?'Boston':/scream|new york|nyc/.test(t)?'New York City':'the Area'})();
-const CATS=[['Live Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country)$/i],['Classical Music & Opera',/^classical$/i],['Theater & Dance',/^(theater|dance)$/i],['Comedy',/^comedy$/i],['Film Screenings',/^film$/i],['Lectures, Talks & Book Events',/^talks$/i],['Art Exhibits & Museums',/^arts$/i],['Children & Family Activities',/^family$/i],['Fitness, Outdoors & Social Groups',/^recreation$/i],['Volunteer Opportunities',/^volunteer$/i],['Community Events',/^community$/i],['Church Services & Worship',/^worship$/i]];
-function cat(g){for(const c of CATS)if(c[1].test(g||''))return c[0];return 'Other Activities'}
+const PLACE=(()=>{const t=(location.hostname+' '+document.title).toLowerCase();return /seattle|guitar doug/.test(t)?'Seattle':/jamestown/.test(t)?'Jamestown':/hurricane|rhode/.test(t)?'Rhode Island':/boston|rambler/.test(t)?'Boston':/scream|new york|nyc/.test(t)?'New York City':'the Area'})();
+const OTH=window.WO_OTHER||'Other Activities';const CATS=window.WO_CATS||[['Live Music',/^(live|rock|indie|jazz|pop|electronic|folk|r&b|latin|metal|hip-hop|punk|experimental|world|goth|country)$/i],['Classical Music & Opera',/^classical$/i],['Theater & Dance',/^(theater|dance)$/i],['Comedy',/^comedy$/i],['Film Screenings',/^film$/i],['Lectures, Talks & Book Events',/^talks$/i],['Art Exhibits & Museums',/^arts$/i],['Children & Family Activities',/^family$/i],['Fitness, Outdoors & Social Groups',/^recreation$/i],['Volunteer Opportunities',/^volunteer$/i],['Community Events',/^community$/i],['Church Services & Worship',/^worship$/i]];
+function cat(g){for(const c of CATS)if(c[1].test(g||''))return c[0];return OTH}
 function row(e,multi){const name=String(e.artists||'').split(/\s+[|@]\s+/)[0];const u=/^https?:/.test(e.url||'')?e.url:'';
  return '<a class="wo-r"'+(u?' href="'+H(u)+'" target="_blank" rel="noopener"':' href="#cal"')+'><span class="wo-t">'+(multi?H(dayLbl(e.date))+' · ':'')+H(String(e.time||'TBA').replace(/:00/g,''))+'</span><span class="wo-n"><b>'+H(name)+'</b> <small>'+H(e.venue||'')+'</small></span></a>'}
 let OPEN={},FLAT=false;
 function render(box){const R=ranges(),r=R[tab],L=list(r),multi=r.from!==r.to;
  const g={};L.forEach(e=>{const c=cat(e.genre);(g[c]=g[c]||[]).push(e)});
- const order=CATS.map(c=>c[0]).concat('Other Activities').filter(k=>g[k]);
+ const order=CATS.map(c=>c[0]).concat(OTH).filter(k=>g[k]);
  const secs=FLAT?('<div class="wo-flat">'+(()=>{let h='',lastD='',lastH=-2;return L.map(e=>{let pre='';if(multi&&e.date!==lastD){lastD=e.date;lastH=-2;pre+='<div class="wo-hr wo-day">'+H(new Date(e.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'}))+'</div>'}const m=mins(e.time),hr=m>=9999?-1:Math.floor(m/60);if(hr!==lastH){lastH=hr;pre+='<div class="wo-hr">'+(hr<0?'Time not listed':((hr%12)||12)+(hr<12?' AM':' PM'))+'</div>'}return pre+row(e,multi)}).join('')})()+'</div>'):order.map((k,i)=>'<details class="wo-d'+((g[k]||[]).length?'':' wo-z')+'" data-k="'+H(k)+'"'+(OPEN[k]?' open':'')+'><summary>'+H(k)+'<span>'+(g[k]||[]).length+'</span></summary>'+((g[k]||[]).map(e=>row(e,multi)).join('')||'<p class="wo-e">Nothing listed for this time.</p>')+'</details>').join('');
- box.innerHTML='<div class="wo-h"><span class="wo-k">All Activities in '+H(PLACE)+'</span><label class="wo-lb">When<select class="wo-s" aria-label="When">'+R.map((x,i)=>'<option value="'+i+'"'+(i===tab?' selected':'')+'>'+H(x.k)+'</option>').join('')+'</select></label><label class="wo-lb">Show<select class="wo-s wo-v" aria-label="Show"><option value="cat"'+(FLAT?'':' selected')+'>By category</option><option value="all"'+(FLAT?' selected':'')+'>All '+L.length+' by date and time</option></select></label></div>'+
+ box.innerHTML='<div class="wo-h"><span class="wo-k">'+'All Activities in '+H(PLACE)+'</span><label class="wo-lb">When<select class="wo-s" aria-label="When">'+R.map((x,i)=>'<option value="'+i+'"'+(i===tab?' selected':'')+'>'+H(x.k)+'</option>').join('')+'</select></label><label class="wo-lb">Show<select class="wo-s wo-v" aria-label="Show"><option value="cat"'+(FLAT?'':' selected')+'>By category</option><option value="all"'+(FLAT?' selected':'')+'>All '+L.length+' by date and time</option></select></label></div>'+
   '<div class="wo-l">'+(secs||'<p class="wo-e">Nothing listed yet. See the full calendar for what’s coming up.</p>')+'</div>'+
   '<div class="wo-f"><a href="#cal" class="wo-all">Full event calendar →</a></div>'}
 function mount(){const slot=document.getElementById('coverSlot');if(!slot)return;let box=document.getElementById('whatsOn');
