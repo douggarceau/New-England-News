@@ -1,26 +1,6 @@
 {
- "asof": "2026-11-20T07:45:00-05:00",
+ "asof": "2026-11-21T08:00:00-05:00",
  "items": [
-  {
-   "h": "Kapilow and A Far Cry Unpack Mozart's Clarinet Concerto, Nov. 22",
-   "sum": "Sunday, Nov. 22 at 3:00 PM at NEC's Jordan Hall in Fenway: Rob Kapilow, A Far Cry and clarinetist Romie de Guise-Langlois take on Mozart's Clarinet Concerto.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=kapilow-mozart-clarinet-jordan-hall-nov-22-2026",
-   "story": "kapilow-mozart-clarinet-jordan-hall-nov-22-2026",
-   "town": "Fenway",
-   "date": "2026-11-13",
-   "rank": 3
-  },
-  {
-   "h": "Masterworks Chorale Sings Mozart's Coronation Mass, Nov. 22",
-   "sum": "Sunday, Nov. 22 from 3:00 to 5:00 PM at Cary Memorial Hall in Lexington: Masterworks Chorale, Kevin Leong and the Pro Arte Chamber Orchestra.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=masterworks-coronation-mass-cary-hall-nov-22-2026",
-   "story": "masterworks-coronation-mass-cary-hall-nov-22-2026",
-   "town": "Lexington",
-   "date": "2026-11-13",
-   "rank": 3
-  },
   {
    "h": "Picasso, Miró and Dalí Turn the Page at the MFA Through Jan. 24",
    "sum": "Through January 24, 2027, the MFA's Torf Gallery shows Spanish artists' illustrated books, with a virtual lecture on December 9 at 6:30 PM.",
@@ -92,16 +72,6 @@
    "rank": 8
   },
   {
-   "h": "Oriana Consort Sings Tennyson, Folk Songs and Poulenc, Nov. 22",
-   "sum": "Sunday, Nov. 22 at 5:00 PM at First Lutheran Church on Berkeley Street in Back Bay: the Oriana Consort's fall concert.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=oriana-consort-first-lutheran-nov-22-2026",
-   "story": "oriana-consort-first-lutheran-nov-22-2026",
-   "town": "Back Bay",
-   "date": "2026-11-13",
-   "rank": 8
-  },
-  {
    "h": "Bruce Molsky Plays Old-Time Fiddle at Club Passim, Nov. 22",
    "sum": "Sunday, Nov. 22, with doors at 1:00 PM and the show at 2:00 PM at Club Passim in Cambridge.",
    "outlet": "The Boston Rambler",
@@ -132,23 +102,13 @@
    "rank": 12
   },
   {
-   "h": "Boston Today and Tonight: Lisiecki, Trinity Organ, SoWa Market",
-   "sum": "Jan Lisiecki plays Symphony Hall at 1:30 PM, a Trinity Church organ recital begins at 12:15 PM, the SoWa Christmas Market opens at 4:00 PM and Belmont's short-play festival runs at 8:00 PM on Friday, November 20.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-20",
-   "story": "today-and-tonight-2026-11-20",
-   "town": "Boston",
-   "date": "2026-11-20",
-   "rank": 1
-  },
-  {
    "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
    "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
    "outlet": "The Boston Rambler",
    "url": "?story=handel-haydn-messiah-symphony-hall-2026",
    "story": "handel-haydn-messiah-symphony-hall-2026",
    "town": "Back Bay",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "rank": 2,
    "lead": true
   },
@@ -159,9 +119,19 @@
    "url": "?story=doja-cat-latto-td-garden-nov-23",
    "story": "doja-cat-latto-td-garden-nov-23",
    "town": "Boston",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "rank": 2,
    "box": true
+  },
+  {
+   "h": "Boston Today and Tonight: Peter and the Wolf, Ballet BC, Coltrane 100",
+   "sum": "Saturday brings Peter and the Wolf at 12:00 PM at Symphony Hall, Ballet BC at 8:00 PM at the Cutler Majestic Theatre and Coltrane 100 at 8:00 PM at Berklee Performance Center.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-21",
+   "story": "today-and-tonight-2026-11-21",
+   "town": "Boston",
+   "date": "2026-11-21",
+   "rank": 1
   }
  ]
 }
