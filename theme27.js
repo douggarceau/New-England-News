@@ -153,8 +153,8 @@ function music27(){let v='';try{v=STATE.view}catch(_){}if(v!=='cal'||cur!=='Musi
  ctl.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{M27.d=b.dataset.d;ctl.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));draw()});
  ctl.querySelectorAll('select').forEach(s=>s.onchange=()=>{M27[s.dataset.k]=s.value;draw()});
  const qi=ctl.querySelector('input');let qt;qi.oninput=()=>{clearTimeout(qt);qt=setTimeout(()=>{M27.q=qi.value;draw()},120)};
- host.querySelectorAll('.cov27 a[data-story]').forEach(a=>a.addEventListener('click',ev=>{if(!(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button))ev.preventDefault()}));
- const linkLabel=u=>/\.pdf(\?|$)/i.test(u||'')?'Season schedule (PDF)':/jambase\.com/i.test(u||'')?'Tour announcement':/songkick\.com/i.test(u||'')?'Event details on Songkick':/ticketmaster|axs\.com|seetickets|eventbrite|dice\.fm|etix|ticketweb|stubhub|tix\.com|boxoffice|tickets?\./i.test(u||'')?'Tickets':'Event details';
+ host.querySelectorAll('.cov27 a[data-story]').forEach(a=>a.addEventListener('click',ev=>{if(!(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button)){ev.preventDefault();setTimeout(()=>{try{history.replaceState(history.state,'','?story='+encodeURIComponent(a.dataset.story))}catch(_){}},300)}}));
+ const linkLabel=u=>'Event details';
  const range=()=>{const n=new Date(),t=ymd(n),a=k=>ymd(new Date(n.getTime()+k*864e5));const dow=new Date(t+'T12:00:00').getDay();
   if(M27.d==='tonight')return [t,t];if(M27.d==='tomorrow')return [a(1),a(1)];if(M27.d==='weekend'){const fri=dow===0?a(-2):dow===6?a(-1):a(5-dow),sun=dow===0?t:dow===6?a(1):a(7-dow);return [fri<t?t:fri,sun]}if(M27.d==='week')return [t,a(6)];return [t,'9999']};
  const big=/garden|arena|center|centre|stadium|amphitheat|pavilion|hall|theat|ballroom|paramount|steel|terminal 5|beacon|apollo|town hall|ppac|showbox|moore|paramount|vets/i;
@@ -164,7 +164,7 @@ function music27(){let v='';try{v=STATE.view}catch(_){}if(v!=='cal'||cur!=='Musi
   try{const u=new URLSearchParams();u.set('section','music');if(M27.d!=='week')u.set('d',M27.d);if(M27.g)u.set('g',M27.g);if(M27.a)u.set('a',M27.a);if(M27.q)u.set('q',M27.q);history.replaceState(history.state,'','?'+u.toString())}catch(_){}
   host.querySelector('.m27c').textContent=R2.length+' show'+(R2.length===1?'':'s');
   const pk=host.querySelector('.pick27');const tn=ALL.filter(e=>e.date===td);const p=M27.d==='tonight'||M27.d==='week'?(tn.find(e=>big.test(e.venue||''))||tn[0]):null;
-  pk.innerHTML=p&&!q&&!M27.g&&!M27.a?'<a class="pk27" href="'+E(p.url||'#')+'" target="_blank" rel="noopener"><span class="k">Tonight’s pick</span><span class="t">'+E(p.artists)+'</span><span class="v">'+E([p.time||'Time not listed',p.venue,area27(p.hood)].filter(Boolean).join(' · '))+(p.price?' · '+E(p.price):'')+'</span><span class="go">'+linkLabel(p.url)+' →</span></a>':'';
+  pk.innerHTML=p&&!q&&!M27.g&&!M27.a?'<a class="pk27" href="'+E(p.url||'#')+'"><span class="k">Tonight’s pick</span><span class="t">'+E(p.artists)+'</span><span class="v">'+E([p.time||'Time not listed',p.venue,area27(p.hood)].filter(Boolean).join(' · '))+(p.price?' · '+E(p.price):'')+'</span><span class="go">'+linkLabel(p.url)+' →</span></a>':'';
   const box=host.querySelector('.res27');
   if(!R2.length){const act=[];if(M27.d!=='all')act.push(['d',tOpt.find(x=>x[0]===M27.d)[1]]);if(M27.g)act.push(['g',M27.g]);if(M27.a)act.push(['a',M27.a]);if(M27.q)act.push(['q','“'+M27.q+'”']);
    box.innerHTML='<div class="empty27"><p>No shows match these filters.</p><div>'+act.map(([k,t])=>'<button type="button" data-x="'+k+'">'+E(t)+' ✕</button>').join('')+'<button type="button" data-x="all">Clear all</button></div></div>';
@@ -174,9 +174,9 @@ function music27(){let v='';try{v=STATE.view}catch(_){}if(v!=='cal'||cur!=='Musi
   R2.slice(0,300).forEach(e=>{if(e.date!==d){if(d)html+='</ul>';d=e.date;const x=new Date(e.date+'T12:00:00');const n=R2.filter(y=>y.date===d).length;
     html+='<h3 class="day27">'+x.toLocaleDateString('en-US',Object.assign({weekday:'long',month:'long',day:'numeric'},x.getFullYear()!==yr?{year:'numeric'}:{}))+' <span>'+n+' show'+(n===1?'':'s')+'</span></h3><ul class="ul27">'}
    const cov=L.find(s=>{const a=String(e.artists).toLowerCase().split(/[,:–—(]| w\/ | with /)[0].trim();return a.length>3&&String(s.title).toLowerCase().includes(a)});
-   html+='<li class="sh27"><span class="tm">'+E(e.time||'Time not listed')+'</span><span class="ar"><b>'+E(e.artists)+'</b><small>'+E([e.venue,area27(e.hood)].filter(Boolean).join(' · '))+(e.price?' · '+E(e.price):'')+'</small></span><span class="lk"><a href="'+E(e.url||'#')+'" target="_blank" rel="noopener">'+linkLabel(e.url)+'</a>'+(cov?'<a href="?story='+encodeURIComponent(cov.slug)+'" data-story="'+E(cov.slug)+'">Read our coverage</a>':'')+'</span></li>'});
+   html+='<li class="sh27"><span class="tm">'+E(e.time||'Time not listed')+'</span><span class="ar"><b>'+E(e.artists)+'</b><small>'+E([e.venue,area27(e.hood)].filter(Boolean).join(' · '))+(e.price?' · '+E(e.price):'')+'</small></span><span class="lk"><a href="'+E(e.url||'#')+'">'+linkLabel(e.url)+'</a>'+(cov?'<a href="?story='+encodeURIComponent(cov.slug)+'" data-story="'+E(cov.slug)+'">Read our coverage</a>':'')+'</span></li>'});
   if(d)html+='</ul>';box.innerHTML=html;
-  box.querySelectorAll('a[data-story]').forEach(a=>a.addEventListener('click',ev=>{if(!(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button))ev.preventDefault()}))}
+  box.querySelectorAll('a[data-story]').forEach(a=>a.addEventListener('click',ev=>{if(!(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button)){ev.preventDefault();setTimeout(()=>{try{history.replaceState(history.state,'','?story='+encodeURIComponent(a.dataset.story))}catch(_){}},300)}}))}
  draw()}
 function nohelp(){let v='';try{v=STATE.view}catch(_){}if(v==='help'){try{go('front')}catch(_){}}}
 function week(){nohelp();let v='';try{v=STATE.view}catch(_){}if(v!=='front'||document.querySelector('.jtwk')||typeof jtWeek!=='function')return;const host=document.getElementById('view');if(!host)return;
@@ -193,7 +193,7 @@ function pool2(){let P=[];try{P=window.jtEvPool?jtEvPool():[]}catch(_){}let U=[]
  const SK=/^(worship|support|sports|drag|recreation|community|volunteer|civic|family|fitness)$/i;
  U.filter(e=>e&&e.date>=td&&e.artists&&!SK.test(e.genre||'')).slice(0,80).forEach(e=>{const t=String(e.artists).trim();if(have.has(t.toLowerCase()))return;have.add(t.toLowerCase());P.push({bigText:t,name:e.venue||'',when:e.time||'',href:e.url||'#',ext:1,ev:e})});return P}
 let R27sig='';
-function fitRails(){const box=document.getElementById('rails27'),w=document.querySelector('.wrap'),c=document.getElementById('main27')||document.getElementById('view');if(!box||!w||!c)return;if(R.classList.contains('music27')){box.style.setProperty('display','none','important');return}
+function fitRails(){const box=document.getElementById('rails27'),w=document.querySelector('.wrap'),c=document.getElementById('main27')||document.getElementById('view');if(!box||!w||!c)return;
  const W=w.getBoundingClientRect(),M=c.getBoundingClientRect();const gl=M.left-W.left-16,gr=W.right-M.right-16;const cw=Math.min(250,gl,gr);
  if(cw<170){box.style.setProperty('display','none','important');return}box.style.setProperty('display','block','important');
  const l=box.querySelector('.l'),r=box.querySelector('.r');l.style.width=r.style.width=cw+'px';l.style.left=Math.max(6,gl-cw)+'px';r.style.right=Math.max(6,gr-cw)+'px'}
@@ -224,7 +224,7 @@ function rails(){let P=pool2();if(!P.length)return;
   const when=[d?d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}):'',ev.time||e.when||''].filter(Boolean).join(' · ');
   sp.classList.remove('t-st','t-ad','t-adimg');sp.classList.add('t-mu');sp.dataset.frozen='1';
   a.dataset.promoKey=key;a.href=e.href||'#';if(e.ext){a.target='_blank';a.rel='noopener'}a.removeAttribute('data-story');a.setAttribute('aria-label',e.bigText||'');
-  a.innerHTML='<span class="t27ev"><span class="w">'+H(when)+'</span><span class="t">'+H(e.bigText)+'</span><span class="f"><span class="v">'+H([e.name,ev.hood].filter(Boolean).join(' · '))+'</span><span class="g">'+(/\.pdf(\?|$)/i.test(e.href||'')?'Schedule (PDF) →':/ticketmaster|seetickets|eventbrite|axs\.com|dice\.fm|etix|ticketweb|stubhub|tix|ticket/i.test(e.href||'')?'Tickets →':'Event details →')+'</span></span></span>'})}
+  a.innerHTML='<span class="t27ev"><span class="w">'+H(when)+'</span><span class="t">'+H(e.bigText)+'</span><span class="f"><span class="v">'+H([e.name,ev.hood].filter(Boolean).join(' · '))+'</span><span class="g">'+'Event details →'+'</span></span></span>'})}
 
 let updT=null;function upd(){const t=document.querySelector('.clsbar.top');if(!t||t.querySelector('.upd27'))return;const s=document.createElement('span');s.className='upd27';t.insertBefore(s,t.querySelector('.rec'));
  const show=d=>{if(!d)return;const x=new Date(d);if(isNaN(x))return;s.textContent='Updated '+x.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:TZ})};
