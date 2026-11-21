@@ -351,3 +351,12 @@
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav .more27.on27{font-weight:700!important;color:#fff!important;text-decoration:underline!important;text-underline-offset:6px}
 
 @media (min-width:761px){:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .wm27 .n{font-size:clamp(34px,4.2vw,56px)!important}}
+@media (max-width:760px){
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav{position:relative!important;justify-content:space-between!important;gap:2px!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch{flex:0 0 40px!important;width:40px!important;min-width:0!important;max-width:40px!important;overflow:hidden!important;margin:0!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch input,:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch input:not(:focus){width:40px!important;min-width:0!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch:focus-within{position:absolute!important;left:8px;right:8px;top:50%;transform:translateY(-50%);width:auto!important;max-width:none!important;z-index:9;background:var(--bg1)!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch:focus-within input{width:100%!important;color:#fff!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav .nb27{padding-inline:8px!important;white-space:nowrap!important}
+}
+@media (max-width:360px){:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav .nb27{padding-inline:5px!important;font-size:13px!important}:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #nav #nbSearch{flex-basis:36px!important;width:36px!important}}
