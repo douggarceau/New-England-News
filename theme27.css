@@ -251,3 +251,13 @@
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .clsbar .rec::before,:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .clsbar .rec i,:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .clsbar .rec b{background:var(--a)!important;box-shadow:none!important}
 /* calendar row times: light gray, not accent */
 :root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #whatsOn .wo-r>:first-child{color:var(--tx1)!important}
+/* own side columns: static, no rotation, no flicker */
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) .lsrow{display:none!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27{position:absolute;left:0;right:0;pointer-events:none;z-index:5}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .c{position:absolute;top:0;width:250px;display:flex;flex-direction:column;gap:12px;pointer-events:auto}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .l{left:10px}:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .r{right:10px}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .t27ev{height:150px!important;text-decoration:none!important}
+@media (max-width:1099px){:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27{display:none!important}}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #coverSlot .cvside>:is(.sea-h.nat,.nl-bar,.nat-l,.evtk){display:none!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .t27ev .t{-webkit-line-clamp:2!important}
+:root[data-t27]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6) #rails27 .t27ev .v{-webkit-line-clamp:1!important}

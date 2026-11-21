@@ -36,7 +36,7 @@ function build(){
  if(ft&&!ft.querySelector('.ft27')){const d=document.createElement('div');d.className='ft27';
   d.innerHTML=(C.foot||[]).map(f=>'<button type="button" '+(f[1][0]==='#'?'data-c="'+f[1].slice(1)+'"':'data-g="'+f[1]+'"')+'>'+f[0]+'</button>').join('')+'<button type="button" data-dir="1">Business Directory</button><button type="button" data-g="advertise">Advertising</button><button type="button" data-g="privacy">Privacy &amp; Contact</button><span class="cp">© '+new Date().getFullYear()+' Island News Media Productions LLC</span>';
   d.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(b.dataset.dir){R.classList.toggle('dir27');return}if(b.dataset.c){const x=document.getElementById(b.dataset.c);if(x)x.click();return}cur='';mark();try{go(b.dataset.g)}catch(_){}});ft.insertBefore(d,ft.firstChild)}
- hero();dedupe();cal1();upd();labels();rails();dress();fonts()}
+ hero();dedupe();cal1();upd();labels();rails27();dress();fonts()}
 /* any old serif or display face left over from earlier styling switches to the new faces */
 const OLD=/Georgia|Playfair|PT Serif|Libre Caslon|Bodoni|Abril|DM Serif|Old Standard|Cinzel|Marcellus|Satisfy|Special Elite|Cormorant|Alfa Slab|Oswald|Anton|Bebas|Times|serif$/i;
 function fonts(){document.addEventListener('keydown',e=>{if(e.key==='Escape')R.classList.remove('dir27')});
@@ -76,7 +76,7 @@ let v='';try{v=STATE.view}catch(_){}
  /* 9 news tiles as native links */
  document.querySelectorAll('.cvside .sea-g button[data-story]').forEach(b=>{const a=document.createElement('a');for(const at of b.attributes)if(at.name!=='type')a.setAttribute(at.name,at.value);a.href='?story='+encodeURIComponent(b.dataset.story);a.innerHTML=b.innerHTML;a.addEventListener('click',ev=>{if(!(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button))ev.preventDefault()});b.replaceWith(a)});
  /* 3 side columns start level with the lead */
- const hr=document.getElementById('hero27');const ls=document.querySelector('.lsrow');if(ls&&hr&&innerWidth>=1100){const sp=ls.querySelector('.lspot');if(sp){const d=Math.round(hr.getBoundingClientRect().top-sp.getBoundingClientRect().top);if(Math.abs(d)>4){const cur=parseFloat(ls.dataset.dy||'0');ls.dataset.dy=String(cur+d);ls.style.setProperty('transform','translateY('+(cur+d)+'px)','important')}}}
+ const hr=null;const ls=null;if(false){const sp=ls.querySelector('.lspot');if(sp){const d=Math.round(hr.getBoundingClientRect().top-sp.getBoundingClientRect().top);if(Math.abs(d)>4){const cur=parseFloat(ls.dataset.dy||'0');ls.dataset.dy=String(cur+d);ls.style.setProperty('transform','translateY('+(cur+d)+'px)','important')}}}
  /* 4 say how many are shown and link to all of them */
  const d=document.querySelector('#whatsOn details.t27auto');if(d&&!d.querySelector('.t27more')){const rows=d.querySelectorAll('.wo-r').length;if(rows>5){const nm=(d.querySelector('summary')||{}).textContent||'';const cat=nm.replace(/\d+/g,'').trim();const x=document.createElement('div');x.className='t27more';
   x.innerHTML='<span>Showing 5 of '+rows+'</span><button type="button">View all '+rows+' '+cat.toLowerCase()+' events →</button>';x.querySelector('button').onclick=()=>{cur='Calendar';mark();/music/i.test(cat)?nav('cal','music',30):nav('cal',null,14)};d.appendChild(x)}}
@@ -96,6 +96,22 @@ const set=(el,t)=>{if(el&&el.firstChild&&el.textContent.trim()!==t){const n=[...
 function pool2(){let P=[];try{P=window.jtEvPool?jtEvPool():[]}catch(_){}let U=[];try{U=up}catch(_){}const td=ymd(new Date());const have=new Set(P.map(x=>String(x.bigText||'').toLowerCase()));
  const SK=/^(worship|support|sports|drag|recreation|community|volunteer|civic|family|fitness)$/i;
  U.filter(e=>e&&e.date>=td&&e.artists&&!SK.test(e.genre||'')).slice(0,80).forEach(e=>{const t=String(e.artists).trim();if(have.has(t.toLowerCase()))return;have.add(t.toLowerCase());P.push({bigText:t,name:e.venue||'',when:e.time||'',href:e.url||'#',ext:1,ev:e})});return P}
+let R27sig='';
+function rails27(){const w=document.querySelector('.wrap');if(!w)return;let box=document.getElementById('rails27');
+ if(innerWidth<1100){if(box)box.style.display='none';return}
+ const P=pool2();if(!P.length)return;
+ const anchor=document.getElementById('hero27')||document.getElementById('main27')||document.getElementById('view');if(!anchor)return;
+ const top=Math.max(0,Math.round(anchor.getBoundingClientRect().top-w.getBoundingClientRect().top));
+ const H=Math.max(600,w.scrollHeight-top-40);const per=Math.max(1,Math.floor((H+12)/162));const n=Math.min(P.length,per*2);
+ const sig=top+'|'+per+'|'+P.length;if(box&&R27sig===sig){box.style.display='';return}R27sig=sig;
+ if(!box){box=document.createElement('div');box.id='rails27';box.setAttribute('aria-label','Events');box.innerHTML='<div class="c l"></div><div class="c r"></div>';w.appendChild(box)}
+ box.style.display='';box.style.top=top+'px';
+ const E=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const card=e=>{const ev=e.ev||{};const d=ev.date?new Date(ev.date+'T12:00:00'):null;const when=[d?d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}):'',ev.time||e.when||''].filter(Boolean).join(' · ');
+  const g=/\.pdf(\?|$)/i.test(e.href||'')?'Schedule (PDF) →':/ticketmaster|seetickets|eventbrite|axs\.com|dice\.fm|etix|ticketweb|stubhub|tix|ticket/i.test(e.href||'')?'Tickets →':'Event details →';
+  return '<a class="t27ev" href="'+E(e.href||'#')+'"'+(e.ext?' target="_blank" rel="noopener"':'')+'><span class="w">'+E(when)+'</span><span class="t">'+E(e.bigText)+'</span><span class="f"><span class="v">'+E([e.name,ev.hood].filter(Boolean).join(' · '))+'</span><span class="g">'+g+'</span></span></a>'};
+ const L=[],Rr=[];P.slice(0,n).forEach((e,i)=>(i%2?Rr:L).push(card(e)));
+ box.querySelector('.l').innerHTML=L.join('');box.querySelector('.r').innerHTML=Rr.join('')}
 function rails(){let P=pool2();if(!P.length)return;
  const H=x=>String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
  const K=x=>'title:'+String(x||'').replace(/\s+/g,' ').trim().toLowerCase();
@@ -109,7 +125,7 @@ function rails(){let P=pool2();if(!P.length)return;
   sp.classList.remove('t-st','t-ad','t-adimg');sp.classList.add('t-mu');sp.dataset.frozen='1';
   a.dataset.promoKey=key;a.href=e.href||'#';if(e.ext){a.target='_blank';a.rel='noopener'}a.removeAttribute('data-story');a.setAttribute('aria-label',e.bigText||'');
   a.innerHTML='<span class="t27ev"><span class="w">'+H(when)+'</span><span class="t">'+H(e.bigText)+'</span><span class="f"><span class="v">'+H([e.name,ev.hood].filter(Boolean).join(' · '))+'</span><span class="g">'+(/\.pdf(\?|$)/i.test(e.href||'')?'Schedule (PDF) →':/ticketmaster|seetickets|eventbrite|axs\.com|dice\.fm|etix|ticketweb|stubhub|tix|ticket/i.test(e.href||'')?'Tickets →':'Event details →')+'</span></span></span>'})}
-setInterval(()=>{try{rails()}catch(_){}},1500);
+
 let updT=null;function upd(){const t=document.querySelector('.clsbar.top');if(!t||t.querySelector('.upd27'))return;const s=document.createElement('span');s.className='upd27';t.insertBefore(s,t.querySelector('.rec'));
  const show=d=>{if(!d)return;const x=new Date(d);if(isNaN(x))return;s.textContent='Updated '+x.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:TZ})};
  const tryF=(fs)=>{if(!fs.length)return;fetch(fs[0]+'?'+Date.now(),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(d&&d.asof)show(d.asof);else tryF(fs.slice(1))}).catch(()=>tryF(fs.slice(1)))};tryF(['data/headlines.json','data/cal.json','data/beyond.json'])}
