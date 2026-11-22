@@ -3047,5 +3047,50 @@ new MutationObserver(()=>{if(s.classList.contains('sbpop')){opener=document.acti
 document.addEventListener('keydown',e=>{if(!s.classList.contains('sbpop'))return;if(e.key==='Escape'){e.preventDefault();close();return}if(e.key==='Tab'){const F=[...s.querySelectorAll('button,input,a[href],select,textarea')].filter(el=>!el.disabled&&el.offsetParent);if(!F.length)return;const a=F[0],z=F[F.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}})};
 go();addEventListener('DOMContentLoaded',go);setTimeout(go,1500)})();</script>
 <link rel="stylesheet" href="theme27.css?v=53">
+<style id="bbFrontCss">/* Business Board on the front page, same on every site, computer and phone */
+#bbFront{display:block;margin:0 0 16px;padding:14px 16px 12px;border:1px solid #F6EFDF22;border-radius:14px;background:linear-gradient(180deg,#13294A,#0F1F36);position:relative;overflow:hidden}
+#bbFront::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:#B5123A}
+#bbFront .bb-h{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:6px 0 10px}
+#bbFront .bb-h b{font:700 15px/1 "Playfair Display",Georgia,serif;letter-spacing:.14em;text-transform:uppercase;color:#C9A54C}
+#bbFront .bb-h select{font:700 12px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border-radius:6px;border:1px solid #F6EFDF44;background:#0A1428;color:#F6EFDF;max-width:100%}
+#bbFront .bb-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;height:380px;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(180deg,transparent,#000 8%,#000 92%,transparent)}
+@media (max-width:900px){#bbFront .bb-g{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:480px){#bbFront .bb-g{grid-template-columns:1fr;height:340px}}
+#bbFront .bb-col{overflow:hidden;min-width:0}
+#bbFront .bb-tr{display:flex;flex-direction:column;gap:8px;animation:bbUp linear infinite}
+#bbFront .bb-tr.dn{animation-name:bbDn}
+#bbFront .bb-col:hover .bb-tr{animation-play-state:paused}
+@keyframes bbUp{from{transform:translateY(0)}to{transform:translateY(calc(-50% - 4px))}}@keyframes bbDn{from{transform:translateY(calc(-50% - 4px))}to{transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){#bbFront .bb-tr{animation:none!important}#bbFront .bb-g{overflow:auto}}
+#bbFront .bb-c{display:flex;flex-direction:column;gap:3px;padding:9px 10px;border:1px solid #F6EFDF14;border-left:3px solid #B5123A;background:#0A1428;color:#F6EFDF;text-decoration:none;min-width:0}
+#bbFront .bb-c:hover{border-color:#C9A54C}
+#bbFront .bb-c i{font:700 9.5px/1.2 "Helvetica Neue",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#C9A54C;font-style:normal}
+#bbFront .bb-c b{font:700 14px/1.2 "Playfair Display",Georgia,serif;color:#F6EFDF}
+#bbFront .bb-c small{font:500 11px/1.3 "Helvetica Neue",Arial,sans-serif;color:#B9C2D3}
+#bbFront .bb-f{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:10px;font:12px/1.3 "PT Serif",Georgia,serif;color:#B9C2D3}
+#bbFront .bb-all{background:#B5123A;color:#fff;border:0;border-radius:4px;padding:8px 12px;font:800 11px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+</style>
+<script id="bbFrontJs">(()=>{const E=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let D=null,cat='all';
+const sh=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const card=x=>{const t=x.w?'a href="'+E(x.w)+'" target="_blank" rel="noopener"':'div';return '<'+t+' class="bb-c"><i>'+E(x.c)+'</i><b>'+E(x.n)+'</b><small>'+E(x.a)+'</small></'+(x.w?'a':'div')+'>'};
+function draw(box){const L=sh(D.items.filter(x=>x&&!x.cl&&x.n&&(cat==='all'||x.c===cat))).slice(0,cat==='all'?90:200);const n=innerWidth<=480?1:innerWidth<=900?2:3;const C=Array.from({length:n},()=>[]);L.forEach((x,i)=>C[i%n].push(x));
+ box.querySelector('.bb-g').innerHTML=C.map((c,i)=>{const h=c.map(card).join('');return '<div class="bb-col"><div class="bb-tr'+(i%2?' dn':'')+'" style="animation-duration:'+Math.max(20,Math.round(c.length*4))+'s">'+h+(c.length>3?h:'')+'</div></div>'}).join('');
+ box.querySelector('.bb-n').textContent=L.length+' listed'+(cat==='all'?' · shuffled every visit':'')}
+/* phones: top of the page, under the tabs; computers: right after All Activities */
+const PH=()=>matchMedia('(max-width:760px)').matches;
+const spot=()=>{const m=document.getElementById('main27');if(PH())return m&&m.firstElementChild&&m.firstElementChild.id!=='bbFront'?{before:m.firstElementChild}:m?{before:m.firstElementChild}:null;const w=document.querySelector('#main27 #whatsOn')||(m?null:document.getElementById('whatsOn'));return w?{after:w}:null};
+function put(b,s){if(s.before){if(s.before!==b&&b.nextElementSibling!==s.before)s.before.parentNode.insertBefore(b,s.before)}else if(s.after.nextElementSibling!==b)s.after.parentNode.insertBefore(b,s.after.nextSibling)}
+function place(){const b=document.getElementById('bbFront'),s=spot();if(b&&s)put(b,s)}
+addEventListener('resize',()=>place());
+function mount(){if(!D)return;if(document.getElementById('bbFront')){place();return}const sp=spot();if(!sp)return;
+ const box=document.createElement('section');box.id='bbFront';box.setAttribute('aria-label','Boston Business Board');
+ box.innerHTML='<div class="bb-h"><b>Boston Business Board</b><select aria-label="Category"><option value="all">All businesses ('+D.items.length+')</option>'+D.cats.map(c=>'<option value="'+E(c)+'">'+E(c)+' ('+D.items.filter(x=>x.c===c).length+')</option>').join('')+'</select></div><div class="bb-g"></div><div class="bb-f"><span class="bb-n"></span><button class="bb-all" type="button">Search the board →</button></div>';
+ put(box,sp);
+ box.querySelector('select').addEventListener('change',e=>{cat=e.target.value;draw(box)});
+ box.querySelector('.bb-all').addEventListener('click',()=>{const nb=document.getElementById('dirNb');if(nb)nb.click()});
+ draw(box)}
+fetch('data/directory.json?'+Math.floor(Date.now()/6e5),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d||!d.items)return;D=d;mount()}).catch(()=>{});
+new MutationObserver(()=>{if(D)mount()}).observe(document.documentElement,{childList:true,subtree:true});
+})();</script>
 </body>
 </html>
