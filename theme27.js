@@ -287,3 +287,7 @@ addEventListener('popstate',()=>{const was=inRead,s=lastRead;if(!was||!s)return;
  const put=()=>{let v='';try{v=STATE.view}catch(_){}if(v==='read')return;const fe=document.activeElement;if(fe&&fe!==document.body&&document.contains(fe)&&!(fe.dataset&&fe.dataset.story===s))return;
   const L=[...(document.getElementById('main27')||document.getElementById('view')||document).querySelectorAll('[data-story="'+CSS.escape(s)+'"]')].filter(x=>x.offsetParent);const a=L.find(x=>{const r=x.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight})||L[0];if(a&&fe!==a)a.focus({preventScroll:true})};
  [450,900,1600,2600].forEach(t=>setTimeout(put,t))})})();
+
+/* Business Directory: a small link in the top strip that opens the directory */
+(()=>{const add=()=>{const bar=document.querySelector('.clsbar.top');if(!bar||bar.querySelector('.biz27'))return;const a=document.createElement('a');a.className='biz27';a.href='#';a.textContent='Business Directory';a.addEventListener('click',e=>{e.preventDefault();const d=document.querySelector('button[data-dir]')||document.getElementById('dirNb');if(d)d.click()});const u=bar.querySelector('.upd27');bar.insertBefore(a,u||null)};
+new MutationObserver(add).observe(document.documentElement,{childList:true,subtree:true});add()})();

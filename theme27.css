@@ -680,3 +680,13 @@
 :root[data-t27][data-skin27="nautical"] select,:root[data-t27][data-skin27="nautical"] select option,:root[data-t27][data-skin27="nautical"] select optgroup{color-scheme:dark}
 :root[data-t27][data-skin27="nautical"] select option,:root[data-t27][data-skin27="nautical"] select optgroup{background-color:#13294A!important;color:#F6EFDF!important}
 :root[data-t27][data-skin27="nautical"] select option:checked{background-color:#B5123A!important;color:#fff!important}
+
+/* Business Directory link in the top strip */
+.clsbar.top .biz27{pointer-events:auto!important;position:relative;z-index:5;cursor:pointer;margin-left:auto;margin-right:14px;color:inherit;text-decoration:underline;text-underline-offset:3px;white-space:nowrap;font-size:inherit;letter-spacing:inherit;text-transform:inherit}
+.clsbar.top .biz27:hover{color:#C9A54C}
+
+/* Headlines box: bright, easy-to-read text */
+:root[data-t27][data-skin27="nautical"]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6):not(#n1):not(#n2):not(#n3):not(#n4) #hlBox .hlr,:root[data-t27][data-skin27="nautical"]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6):not(#n1):not(#n2):not(#n3):not(#n4) #hlBox .hlr:visited{opacity:1!important;filter:none!important}
+:root[data-t27][data-skin27="nautical"]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6):not(#n1):not(#n2):not(#n3):not(#n4) #hlBox .hlt b{color:#F6EFDF!important;-webkit-text-fill-color:#F6EFDF!important;opacity:1!important}
+:root[data-t27][data-skin27="nautical"]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6):not(#n1):not(#n2):not(#n3):not(#n4) #hlBox .hlt span{color:#DCE3EE!important;-webkit-text-fill-color:#DCE3EE!important;opacity:1!important}
+:root[data-t27][data-skin27="nautical"]:not(#_):not(#t1):not(#t2):not(#t3):not(#t4):not(#t5):not(#t6):not(#n1):not(#n2):not(#n3):not(#n4) #hlBox .hlt small{color:#C9A54C!important;-webkit-text-fill-color:#C9A54C!important;opacity:1!important}
