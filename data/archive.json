@@ -1820,5 +1820,308 @@
     "url": "https://www.bso.org/press/boston-symphony-orchestra-and-music-director-andris-nelsons-announce-2026-27-season-sept-18-may-9"
    }
   ]
+ },
+ {
+  "slug": "today-and-tonight-2026-11-22",
+  "topic": "family",
+  "date": "2026-11-22",
+  "until": "2026-11-22",
+  "minutes": 1,
+  "title": "Boston Today and Tonight: Ballet BC, Boston Philharmonic, Samantha Fish",
+  "dek": "Sunday, Nov. 22: Ballet BC at 2:00 PM at the Cutler Majestic, the Boston Philharmonic at 3:00 PM at Symphony Hall and Samantha Fish at 8:00 PM at the Wilbur Theatre.",
+  "body": [
+   "Sunday in Boston brings a full afternoon of dance, orchestra, chorus and chamber music, then a lively night of songwriters and touring acts. Here is a short list of what is on today, with venues' own listed times, so you can plan the day in one glance.",
+   "## Tonight, for grown-ups",
+   "#T {\"title\": \"Tonight, for grown-ups\", \"head\": [\"Time\", \"What\", \"Where\"], \"rows\": [[\"2:00 PM\", \"Ballet BC, the Vancouver company's second program\", \"Cutler Majestic Theatre, Downtown\"], [\"2:00 PM\", \"The Show Must Go On! festival of nine short plays\", \"Belmont Town Hall, Belmont\"], [\"2:00 PM\", \"Bruce Molsky, old-time fiddle\", \"Club Passim, Cambridge\"], [\"3:00 PM\", \"Boston Philharmonic Orchestra: Schubert and Bruckner\", \"Symphony Hall, Back Bay\"], [\"3:00 PM\", \"What Makes It Great? with Rob Kapilow: Mozart's Clarinet Concerto\", \"NEC's Jordan Hall, Fenway\"], [\"3:00 PM\", \"Masterworks Chorale: Mozart's Coronation Mass\", \"Cary Memorial Hall, Lexington\"], [\"4:00 PM\", \"Heritage Chorale 90th Anniversary Concert\", \"Nevins Hall, Framingham\"], [\"5:00 PM\", \"The Oriana Consort, fall concert\", \"First Lutheran Church, Back Bay\"], [\"7:00 PM\", \"Julia Minkin\", \"The Rockwell, Allston\"], [\"7:00 PM\", \"Nate Sabat and Morgan Harris\", \"Club Passim, Cambridge\"], [\"8:00 PM\", \"Samantha Fish: Paper Doll Live World Tour\", \"Wilbur Theatre, Downtown\"], [\"8:00 PM\", \"Jessie Reyez: A Little Vengeance Tour\", \"MGM Music Hall at Fenway\"]]}",
+   "Times come from each venue's listing. Check before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "Vivo Performing Arts",
+    "title": "Ballet BC",
+    "date": "2026-11-22",
+    "url": "https://www.vivoperformingarts.org/productions/ballet-bc/"
+   },
+   {
+    "outlet": "Boston Symphony Orchestra",
+    "title": "Boston Philharmonic Orchestra: Schubert and Bruckner",
+    "date": "2026-11-22",
+    "url": "https://www.bso.org/events/bpo-schubert-and-bruckner?performance=2026-11-22-15:00"
+   },
+   {
+    "outlet": "The Boston Calendar",
+    "title": "Masterworks Chorale Presents Mozart's Coronation Mass",
+    "date": "2026-11-22",
+    "url": "https://www.thebostoncalendar.com/events/masterworks-chorale-presents-mozart-s-coronation-mass"
+   },
+   {
+    "outlet": "Club Passim",
+    "title": "Nate Sabat & Morgan Harris",
+    "date": "2026-11-22",
+    "url": "https://www.passim.org/live-music/events/nate-sabat-morgan-harris/"
+   },
+   {
+    "outlet": "Ticketmaster",
+    "title": "Samantha Fish: Paper Doll Live World Tour",
+    "date": "2026-11-22",
+    "url": "https://www.ticketmaster.com/samantha-fish-paper-doll-live-world-boston-massachusetts-11-22-2026/event/010064F7A4223B8A"
+   },
+   {
+    "outlet": "The Rockwell",
+    "title": "Julia Minkin",
+    "date": "2026-11-22",
+    "url": "https://therockwell.org/calendar/julia-minkin/"
+   }
+  ]
+ },
+ {
+  "slug": "bruce-molsky-passim-nov-22-2026",
+  "topic": "music",
+  "date": "2026-11-19",
+  "until": "2026-11-22",
+  "minutes": 1,
+  "title": "Bruce Molsky Plays Old-Time Fiddle at Club Passim, Nov. 22",
+  "dek": "Sunday, Nov. 22, with doors at 1:00 PM and the show at 2:00 PM at Club Passim in Cambridge.",
+  "body": [
+   "Bruce Molsky, a Grammy-nominated old-time and traditional musician, brings his fiddle to Club Passim in Cambridge on Sunday afternoon. He also plays banjo, guitar and sings.",
+   "## The music",
+   "The Club Passim listing describes his concerts as intimate and warm. His repertoire mixes Southern Appalachian tunes with traditional material from around the world, so the afternoon moves easily between regional styles.",
+   "## About the artist",
+   "Molsky is known mainly for his fiddle playing. The listing also notes his role as a Visiting Scholar at Berklee College of Music and his many collaborations and recordings, which give a sense of how long he has worked in the tradition.",
+   "## Times and place",
+   "Doors open at 1:00 PM and the show starts at 2:00 PM on Sunday, Nov. 22. The listing does not give a street address for the venue, so check the Club Passim page for directions and parking before you go.",
+   "## Tickets",
+   "The listing gives the price as $35, or $33 for members. All fees are shown as included, with a separate $3 processing fee and $2 preservation fee that is waived at the box office."
+  ],
+  "sources": [
+   {
+    "outlet": "Club Passim",
+    "title": "Bruce Molsky",
+    "date": "",
+    "url": "https://www.passim.org/live-music/events/bruce-molsky/"
+   }
+  ]
+ },
+ {
+  "slug": "kapilow-mozart-clarinet-jordan-hall-nov-22-2026",
+  "topic": "culture",
+  "date": "2026-11-13",
+  "until": "2026-11-22",
+  "minutes": 1,
+  "title": "Kapilow and A Far Cry Unpack Mozart's Clarinet Concerto, Nov. 22",
+  "dek": "Sunday, Nov. 22 at 3:00 PM at NEC's Jordan Hall in Fenway: Rob Kapilow, A Far Cry and clarinetist Romie de Guise-Langlois take on Mozart's Clarinet Concerto.",
+  "body": [
+   "Rob Kapilow's What Makes It Great? series returns to Jordan Hall on Sunday, November 22, at 3:00 PM, presented by Vivo Performing Arts. This installment takes up Mozart's Clarinet Concerto, a late work, with A Far Cry and clarinetist Romie de Guise-Langlois joining Kapilow on stage.",
+   "The series is built on close listening. Kapilow, a music educator, combines detailed analysis with storytelling and humor, and the afternoon pairs an in-depth look at the concerto with a performance of it.",
+   "## Who is performing",
+   "A Far Cry, which the organization describes as Boston's A Far Cry chamber orchestra, presents concerts, touring, recordings and education programs. Romie de Guise-Langlois is the clarinet soloist.",
+   "Jordan Hall, home of the New England Conservatory, is one of the city's principal chamber music halls, and the listing gives a 3:00 PM start.",
+   "## Where and how to buy",
+   "The concert takes place at NEC's Jordan Hall, 290 Huntington Avenue, Boston. The event lists several price levels, and tickets are available through the Get Tickets button on the Vivo page. Questions about programming or ticketing can go to 617-482-6661 or boxoffice@vivoperformingarts.org.",
+   "Mozart wrote the Clarinet Concerto in 1791, the last year of his life, and it has become one of the most loved works in the clarinet repertoire. For listeners who know the piece well, a guided hearing can bring out details that a concert performance alone may pass over.",
+   "For listeners who want to know what they are hearing, the afternoon offers a concerto explained before it is played in full."
+  ],
+  "sources": [
+   {
+    "outlet": "NEC / Vivo Performing Arts",
+    "title": "Vivo Performing Arts Presents: What Makes It Great? with Rob Kapilow: Mozart's Clarinet Concerto",
+    "date": "2026-11-22",
+    "url": "https://necmusic.edu/?p=79712"
+   },
+   {
+    "outlet": "A Far Cry",
+    "title": "What Makes It Great?",
+    "date": "2026-11-22",
+    "url": "https://afarcry.org/all-concerts/what-makes-it-great"
+   }
+  ]
+ },
+ {
+  "slug": "masterworks-coronation-mass-cary-hall-nov-22-2026",
+  "topic": "music",
+  "date": "2026-11-13",
+  "until": "2026-11-22",
+  "minutes": 1,
+  "title": "Masterworks Chorale Sings Mozart's Coronation Mass, Nov. 22",
+  "dek": "Sunday, Nov. 22 from 3:00 to 5:00 PM at Cary Memorial Hall in Lexington: Masterworks Chorale, Kevin Leong and the Pro Arte Chamber Orchestra.",
+  "body": [
+   "Masterworks Chorale opens a Sunday afternoon of Mozart and the Haydns on November 22, 2026, from 3:00 to 5:00 PM at Cary Memorial Hall, 1605 Massachusetts Avenue in Lexington. Music Director Kevin Leong leads the chorale, which is joined by soloists Deborah Selig, soprano; Roselin Osser, mezzo-soprano; Gregory Zavracky, tenor; and Will Prapestis, baritone, and by the Pro Arte Chamber Orchestra.",
+   "## The program",
+   "Mozart's Coronation Mass is the featured work. The program also includes Mozart's Dixit et Magnificat, Joseph Haydn's Responsoria, and Michael Haydn's Timete Dominum and Beatus vir, so the afternoon sets the two composers' sacred music side by side.",
+   "## About the chorale",
+   "Mozart completed the Coronation Mass in 1779 while working in Salzburg, and the afternoon pairs it with other sacred works from the same circle of composers, so audiences can hear how the music of the period was built for the church.",
+   "The group was founded in 1940 as the Lexington Choral Society and renamed Masterworks Chorale in 1969 to reflect its geographically diverse membership. Allen Lannom conducted the chorus from 1952 to 2005, and Steven Karidoyanes became Music Director in 2006.",
+   "The Pro Arte Chamber Orchestra accompanies the choral works, so the sound is full-scale rather than a single keyboard. The concert runs about two hours, from 3:00 to 5:00 PM.",
+   "## Tickets",
+   "Tickets are $50, $35 or $20. The listing does not explain how to buy them, so check masterworkschorale.org before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "The Boston Calendar",
+    "title": "Masterworks Chorale Presents Mozart's Coronation Mass",
+    "date": "2026-11-22",
+    "url": "https://www.thebostoncalendar.com/events/masterworks-chorale-presents-mozart-s-coronation-mass"
+   },
+   {
+    "outlet": "Masterworks Chorale",
+    "title": "History",
+    "date": "2026-11-13",
+    "url": "https://www.masterworkschorale.org/history"
+   }
+  ]
+ },
+ {
+  "slug": "belmont-show-must-go-on-short-plays-nov-14-2026",
+  "topic": "stage",
+  "date": "2026-11-13",
+  "until": "2026-11-22",
+  "minutes": 1,
+  "title": "Belmont Dramatic Club Opens a Festival of New Short Plays, Nov. 14",
+  "dek": "Saturday, Nov. 14 at 8:00 PM at Belmont Town Hall in Belmont: nine original short plays by New England playwrights, running through Nov. 22.",
+  "body": [
+   "Belmont Dramatic Club is presenting The Show Must Go On!, its first festival of short plays, at Belmont Town Hall, 455 Concord Avenue in Belmont. The festival includes nine original short plays by New England playwrights, staged by the club, a community theater group in Belmont.",
+   "## Performance dates",
+   "Saturday, November 14 at 8:00 PM; Sunday, November 15 at 2:00 PM; Friday, November 20 and Saturday, November 21 at 8:00 PM; and Sunday, November 22 at 2:00 PM.",
+   "The festival runs across two weekends, with Friday and Saturday evening shows and Sunday afternoon performances, so the schedule suits both weeknight and weekend audiences.",
+   "## What the plays explore",
+   "The plays look at how people perform in their daily lives and how they keep going when life is disrupted. Some pieces also give audiences a look backstage.",
+   "Festivals of short plays give a community theater company a chance to try many voices in one evening. Each piece tells its own story, so audiences can see a range of work without committing to a full-length production.",
+   "## Tickets",
+   "Admission is $20. Tickets are available through belmontdramaticclub.org."
+  ],
+  "sources": [
+   {
+    "outlet": "The Boston Calendar",
+    "title": "The Belmont Dramatic Club Presents The Show Must Go On!",
+    "date": "2026-11-14",
+    "url": "https://www.thebostoncalendar.com/events/the-belmont-dramatic-club-presents-the-show-must-go-on"
+   }
+  ]
+ },
+ {
+  "slug": "oriana-consort-first-lutheran-nov-22-2026",
+  "topic": "music",
+  "date": "2026-11-13",
+  "until": "2026-11-22",
+  "minutes": 1,
+  "title": "Oriana Consort Sings Tennyson, Folk Songs and Poulenc, Nov. 22",
+  "dek": "Sunday, Nov. 22 at 5:00 PM at First Lutheran Church on Berkeley Street in Back Bay: the Oriana Consort's fall concert.",
+  "body": [
+   "The Oriana Consort, a chorale of about 25 adult mixed voices directed by Walter Chapin, gives its fall concert at First Lutheran Church, 299 Berkeley Street, on Sunday, November 22, at 5:00 PM. The listing runs to about 7:00 PM.",
+   "## The program",
+   "Two settings of Tennyson's The Lotos-Eaters, by Robert Hobby and Daniel Gawthorp, open each half of the concert. Between them come British Isles folk songs by Gawthorp, Ralph Vaughan Williams, Alice Parker and Ēriks Ešenvalds, French songs by Debussy, Saint-Saëns and Poulenc, and sacred works by Salamone Rossi, Randall Thompson, Charles Villiers Stanford, Williametta Spencer, Ešenvalds and Rosephanye Powell.",
+   "Tennyson's poem describes sailors who settle into a languid island life, and the concert opens with two settings of it. The program then moves from English poetry to folk song, French art song and sacred music, a range that suits a chorale of about 25 voices.",
+   "## About the group",
+   "Founded in 1994 and based in Cambridge, the Oriana Consort aims for what it describes as a warm, attractive and compelling choral sound.",
+   "The listing gives an end time of about 7:00 PM, so the concert fits an early Sunday evening. The church sits in Back Bay near Copley Square.",
+   "## Tickets",
+   "Tickets are $25 or $20, and buying online in advance saves $5 per ticket. Order at orianaconsort.org/upcoming-concerts."
+  ],
+  "sources": [
+   {
+    "outlet": "The Boston Calendar",
+    "title": "The Oriana Consort: There Is Sweet Music",
+    "date": "2026-11-22",
+    "url": "https://www.thebostoncalendar.com/events/there-is-sweet-music-choral-expressions-of-comfort-and-connection--3"
+   },
+   {
+    "outlet": "Choral Arts New England",
+    "title": "Oriana Consort",
+    "date": "2026-11-13",
+    "url": "https://choralarts-newengland.org/CDIR/233"
+   }
+  ]
+ },
+ {
+  "slug": "heritage-chorale-90th-season-framingham-nov-22-2026",
+  "topic": "music",
+  "date": "2026-11-11",
+  "until": "2026-11-22",
+  "minutes": 1,
+  "title": "Heritage Chorale's 90th Anniversary Season Opens in Framingham, Nov. 22",
+  "dek": "Sunday, Nov. 22, from 4:00 to 6:00 PM at Nevins Hall, 150 Concord Street in Framingham, with four soloists and an 18-piece orchestra.",
+  "body": [
+   "Heritage Chorale opens its 90th anniversary season on Sunday, Nov. 22, with a program of Handel and Haydn at Nevins Hall in Framingham. The listing runs from 4:00 to 6:00 PM, and the concert is billed as the Chorale's 90th anniversary concert.",
+   "The listing describes four outstanding soloists, an eighteen-piece orchestra, and a collaborative pianist and music director for the Chorale. It does not name the individual soloists or the works on the program, so check the Chorale's website for those details.",
+   "## Tickets and location",
+   "Nevins Hall is at 150 Concord Street in Framingham. Admission is $25. Tickets are sold through the Chorale's online box office at heritagechorale.org, which the listing says is now open. No reservation requirement is stated.",
+   "## A milestone season",
+   "A choral concert that marks an anniversary gives audiences a chance to hear a long-running community chorus in full voice. This one pairs that milestone with the music of Handel and Haydn, two composers whose works fill concert programs across the choral world."
+  ],
+  "sources": [
+   {
+    "outlet": "The Boston Calendar",
+    "title": "Heritage Chorale 90th Anniversary Concert",
+    "date": "2026-11-11",
+    "url": "https://www.thebostoncalendar.com/events/heritage-chorale-90th-anniversary-concert"
+   }
+  ]
+ },
+ {
+  "slug": "ballet-bc-cutler-majestic-nov-21-22-2026",
+  "topic": "stage",
+  "date": "2026-11-09",
+  "until": "2026-11-22",
+  "title": "Ballet BC Brings Contemporary Dance to the Cutler Majestic, Nov. 21-22",
+  "dek": "Saturday, Nov. 21, at 8:00 PM and a Sunday afternoon show, Nov. 22, at the Cutler Majestic Theatre on the Emerson College campus in Boston.",
+  "body": [
+   "Ballet BC, the Vancouver company led by artistic director Medhi Walerski, comes to Boston this month for two performances at the Cutler Majestic Theatre at Emerson College. The Saturday show, Nov. 21, begins at 8:00 PM. A Sunday afternoon performance, Nov. 22, also runs; confirm its start time on the Vivo Performing Arts listing before you go.",
+   "Presented by Vivo Performing Arts, the program is described as an evening about tenderness, ecstasy and human longing, danced by a company of 20 dancers. The listing does not name the individual works or their choreographers, so the program itself is the surprise. What it does promise is a contemporary idiom in which movement carries the story.",
+   "## A Vancouver company on a Boston stage",
+   "This visit brings the company's work to a Boston audience that has a long tradition of ballet, with the Boston Ballet's seasons at the Boston Opera House and the Nutcracker that fills the calendar each winter. Ballet BC offers a different experience. Its contemporary repertory is built around dancers who move with weight, speed and emotional directness, and a single evening lets a viewer see a full company rather than a few guest soloists.",
+   "The listing's focus on tenderness and longing points to a program that is as much about feeling as technique. For a program built on physical expression, the scale of the house matters. The Cutler Majestic is a smaller theatre than the big civic halls, so the dancers are close enough that the emotional arc of the evening should read clearly from most seats.",
+   "## Where to see it and how to get tickets",
+   "The Cutler Majestic Theatre is at 219 Tremont Street, on the Emerson College campus. Single tickets are sold through Vivo Performing Arts, which lists multiple price points. An Applause Circle membership, $25, gives early access to tickets, with details at vivoarts.org/applause-circle. Plan for the Saturday show at 8:00 PM or the Sunday afternoon performance, and check the Vivo listing for the Sunday start time before you buy."
+  ],
+  "sources": [
+   {
+    "outlet": "The Boston Calendar",
+    "title": "Vivo Performing Arts presents Ballet BC",
+    "date": "2026-11-09",
+    "url": "https://www.thebostoncalendar.com/events/vivo-performing-arts-presents-ballet-bc"
+   }
+  ],
+  "minutes": 1
+ },
+ {
+  "slug": "boston-philharmonic-schubert-bruckner-2026",
+  "topic": "music",
+  "date": "2026-10-30",
+  "until": "2026-11-22",
+  "minutes": 1,
+  "title": "Zander Conducts Bruckner's Fifth at Symphony Hall, Nov. 22",
+  "dek": "Benjamin Zander leads the Boston Philharmonic Orchestra in Schubert and Bruckner Sunday, Nov. 22 at 3 p.m., Symphony Hall, Back Bay.",
+  "body": [
+   "Some concerts are worth planning around because of what is on the stage: a conductor who loves the music, and a symphony the orchestra has almost never played. On Sunday, Nov. 22, Benjamin Zander leads the Boston Philharmonic Orchestra in Schubert's Unfinished Symphony and Bruckner's Symphony No. 5.",
+   "## What you will hear",
+   "Schubert's Symphony No. 8, the Unfinished, runs about 25 minutes. Zander counts it among his favorite works. No one knows why Schubert left it unfinished, since he lived six more years after writing it, and it remains one of the most beloved works in the repertoire.",
+   "Bruckner's Fifth, about 81 minutes long, is the main event. The orchestra describes it as a magnificent, heaven-storming symphony of overwhelming grandeur, and notes that the Philharmonic has played it only once in its nearly 50-year history. It is a rare chance to hear it live.",
+   "## Why now",
+   "The Boston Philharmonic is presenting its final season at Symphony Hall, according to a WBUR fall concert guide.",
+   "## Details",
+   "The concert begins at 3 p.m. on Sunday, Nov. 22. A guide to the music with Zander begins at 1:45 p.m. Symphony Hall is at 301 Massachusetts Avenue, Boston, MA 02115.",
+   "Tickets are sold through the orchestra's website at bostonphil.org and the BSO's ticketing page for the performance. Ticket prices are not listed on either page. For phone help with BSO ticketing, call 617-266-1200 (Monday to Friday, 10 a.m. to 4 p.m.; Saturday, 12:30 to 4:30 p.m.).",
+   "A beloved symphony and a rarely performed one make a fitting pairing."
+  ],
+  "sources": [
+   {
+    "outlet": "Boston Philharmonic Orchestra",
+    "title": "Schubert and Bruckner (BPO 2)",
+    "date": "",
+    "url": "https://www.bostonphil.org/2026-2027-bpo2-schubert-bruckner"
+   },
+   {
+    "outlet": "Boston Symphony Orchestra",
+    "title": "Boston Philharmonic Orchestra: Schubert and Bruckner",
+    "date": "",
+    "url": "https://www.bso.org/events/bpo-schubert-and-bruckner"
+   },
+   {
+    "outlet": "WBUR",
+    "title": "2026 fall classical music concert guide, Boston",
+    "date": "2026-08-31",
+    "url": "https://www.wbur.org/news/2026/08/31/2026-fall-classical-music-concert-guide-boston-massachusetts"
+   }
+  ]
  }
 ]

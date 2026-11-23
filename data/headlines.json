@@ -1,16 +1,6 @@
 {
- "asof": "2026-11-22T07:45:00-05:00",
+ "asof": "2026-11-23T07:38:53-05:00",
  "items": [
-  {
-   "h": "Boston Today and Tonight: Ballet BC, Boston Philharmonic, Samantha Fish",
-   "sum": "Sunday, Nov. 22: Ballet BC at 2:00 PM at the Cutler Majestic, the Boston Philharmonic at 3:00 PM at Symphony Hall and Samantha Fish at 8:00 PM at the Wilbur Theatre.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-22",
-   "story": "today-and-tonight-2026-11-22",
-   "town": "Boston",
-   "date": "2026-11-22",
-   "rank": 1
-  },
   {
    "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
    "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
@@ -18,7 +8,7 @@
    "url": "?story=handel-haydn-messiah-symphony-hall-2026",
    "story": "handel-haydn-messiah-symphony-hall-2026",
    "town": "Back Bay",
-   "date": "2026-11-22",
+   "date": "2026-11-23",
    "rank": 2,
    "lead": true
   },
@@ -102,16 +92,6 @@
    "town": "Downtown Boston",
    "date": "2026-11-18",
    "rank": 4
-  },
-  {
-   "h": "Bruce Molsky Plays Old-Time Fiddle at Club Passim, Nov. 22",
-   "sum": "Sunday, Nov. 22, with doors at 1:00 PM and the show at 2:00 PM at Club Passim in Cambridge.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=bruce-molsky-passim-nov-22-2026",
-   "story": "bruce-molsky-passim-nov-22-2026",
-   "town": "Cambridge",
-   "date": "2026-11-19",
-   "rank": 8
   },
   {
    "h": "Dinty Child and Mark Erelli Share Songs at Club Passim, Nov. 27",
