@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-23T07:38:53-05:00",
+ "asof": "2026-11-24T07:45:00-05:00",
  "items": [
   {
    "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
@@ -8,20 +8,9 @@
    "url": "?story=handel-haydn-messiah-symphony-hall-2026",
    "story": "handel-haydn-messiah-symphony-hall-2026",
    "town": "Back Bay",
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "rank": 2,
    "lead": true
-  },
-  {
-   "h": "Doja Cat Brings 'Tour Ma Vie' to TD Garden on Nov. 23 With Latto",
-   "sum": "The Grammy winner's world tour hits Causeway Street the Monday before Thanksgiving, with Latto as special guest.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=doja-cat-latto-td-garden-nov-23",
-   "story": "doja-cat-latto-td-garden-nov-23",
-   "town": "Downtown",
-   "date": "2026-11-22",
-   "rank": 2,
-   "box": true
   },
   {
    "h": "Picasso, Miró and Dalí Turn the Page at the MFA Through Jan. 24",
@@ -45,7 +34,7 @@
   },
   {
    "h": "Haymitch Gets His Origin Story as Hunger Games Returns to Theaters",
-   "sum": "Sunrise on the Reaping is in theaters, with trackers betting it opens bigger than any Hunger Games film in a decade.",
+   "sum": "Sunrise on the Reaping is in theaters now, a prequel that follows Haymitch Abernathy before the Games.",
    "outlet": "The Boston Rambler",
    "url": "?story=nat-hunger-games-sunrise-on-the-reaping-opens-2026-11-21",
    "story": "nat-hunger-games-sunrise-on-the-reaping-opens-2026-11-21",
@@ -62,26 +51,6 @@
    "town": "National",
    "date": "2026-11-21",
    "rank": 3
-  },
-  {
-   "h": "Voyager 1 Is Now One Light-Day From Earth",
-   "sum": "After more than 49 years in flight, NASA's farthest spacecraft has crossed a distance light needs a full day to travel.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=nat-voyager-1-one-light-day-from-earth-2026-11-21",
-   "story": "nat-voyager-1-one-light-day-from-earth-2026-11-21",
-   "town": "National",
-   "date": "2026-11-21",
-   "rank": 3
-  },
-  {
-   "h": "Places We Carry: Juried Student Show Opens at the MFA, Nov. 21",
-   "sum": "Opens Saturday, Nov. 21, in the Edward H. Linde Gallery, with work by five emerging artists.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=places-we-carry-smfa-tufts-mfa-2026",
-   "story": "places-we-carry-smfa-tufts-mfa-2026",
-   "town": "Fenway",
-   "date": "2026-11-17",
-   "rank": 4
   },
   {
    "h": "Boston Tuba Christmas Brings Brass to The Steps Plaza, Nov. 28",
@@ -102,6 +71,37 @@
    "town": "Cambridge",
    "date": "2026-11-19",
    "rank": 10
+  },
+  {
+   "h": "Huntington Premieres 'Adia & Clora Snatch Joy' Nov. 24 to Dec. 13",
+   "sum": "The new play begins its run tonight and continues through Dec. 13 at the Huntington.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=huntington-adia-clora-snatch-joy-2026",
+   "story": "huntington-adia-clora-snatch-joy-2026",
+   "box": true,
+   "town": "Fenway",
+   "date": "2026-11-24",
+   "rank": 2
+  },
+  {
+   "h": "Boston Today and Tonight: Red McAdam, Yaelokre and Voices Unheard",
+   "sum": "Tuesday's live picks include Voices Unheard at 7:00 PM, Red McAdam at 8:00 PM and Yaelokre at 8:00 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-24",
+   "story": "today-and-tonight-2026-11-24",
+   "town": "Boston",
+   "date": "2026-11-24",
+   "rank": 1
+  },
+  {
+   "h": "Copley Square Lights Its Tree and Reopens the Park, Nov. 30",
+   "sum": "The city's tree lighting runs 5:00 to 6:00 PM Monday, with arts and crafts, Santa and music from the Boston Children's Chorus.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=copley-square-tree-lighting-2026",
+   "story": "copley-square-tree-lighting-2026",
+   "town": "Back Bay",
+   "date": "2026-11-24",
+   "rank": 4
   }
  ]
 }
