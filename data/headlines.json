@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-24T07:45:00-05:00",
+ "asof": "2026-11-26T09:00:00-05:00",
  "items": [
   {
    "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
@@ -8,9 +8,50 @@
    "url": "?story=handel-haydn-messiah-symphony-hall-2026",
    "story": "handel-haydn-messiah-symphony-hall-2026",
    "town": "Back Bay",
-   "date": "2026-11-24",
+   "date": "2026-11-26",
    "rank": 2,
    "lead": true
+  },
+  {
+   "h": "Thibaudet Plays Gershwin as Yamada Leads Respighi at Symphony Hall",
+   "sum": "Friday, Nov. 27, at 1:30 p.m. and Saturday, Nov. 28, at 8:00 p.m. at Symphony Hall, 301 Massachusetts Ave., Back Bay.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-gershwin-respighi-fountains-of-rome-2026",
+   "story": "bso-gershwin-respighi-fountains-of-rome-2026",
+   "town": "Back Bay",
+   "date": "2026-11-26",
+   "rank": 2,
+   "box": true
+  },
+  {
+   "h": "Boston Ballet's 'Nutcracker' Returns to the Opera House Nov. 27",
+   "sum": "Mikko Nissinen's holiday staple opens the day after Thanksgiving and runs through New Year's Eve.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-ballet-nutcracker-2026",
+   "story": "boston-ballet-nutcracker-2026",
+   "town": "Downtown",
+   "date": "2026-11-26",
+   "rank": 3
+  },
+  {
+   "h": "Holiday Pops 2026: 41 Shows, Symphony Hall Dec. 3-28",
+   "sum": "The Boston Pops' holiday season adds a Muppet movie night and a sensory-friendly concert; tickets are on sale now.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=holiday-pops-2026-symphony-hall",
+   "story": "holiday-pops-2026-symphony-hall",
+   "town": "Back Bay",
+   "date": "2026-11-26",
+   "rank": 3
+  },
+  {
+   "h": "The Book of Esther in the Age of Rembrandt at the Gardner",
+   "sum": "On view through January 18, 2027 in the Hostetter Gallery at the Isabella Stewart Gardner Museum on the Fenway.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=gardner-book-of-esther-rembrandt-2026",
+   "story": "gardner-book-of-esther-rembrandt-2026",
+   "town": "Fenway",
+   "date": "2026-11-26",
+   "rank": 5
   },
   {
    "h": "Picasso, Miró and Dalí Turn the Page at the MFA Through Jan. 24",
@@ -18,59 +59,29 @@
    "outlet": "The Boston Rambler",
    "url": "?story=mfa-picasso-miro-dali-unbound-2026",
    "story": "mfa-picasso-miro-dali-unbound-2026",
-   "town": "Boston",
-   "date": "2026-11-18",
-   "rank": 3
+   "town": "Fenway",
+   "date": "2026-11-26",
+   "rank": 5
   },
   {
-   "h": "Earl Lee Leads Tchaikovsky's Fourth at Symphony Hall, Nov. 24-25",
-   "sum": "Franck, Tomasi and Tchaikovsky on one program, with saxophonist Steven Banks, at 1:30 PM on Nov. 24 and 8:00 PM on Nov. 25 at Symphony Hall.",
+   "h": "Sing We Noel: Christmas Music From England and Early America",
+   "sum": "Sunday, December 6, at 6:30 PM at Gordon Chapel in Old South Church, Back Bay.",
    "outlet": "The Boston Rambler",
-   "url": "?story=bso-earl-lee-tchaikovsky-symphony-4-nov-24-25-2026",
-   "story": "bso-earl-lee-tchaikovsky-symphony-4-nov-24-25-2026",
+   "url": "?story=sing-we-noel-camerata-dec-6-2026",
+   "story": "sing-we-noel-camerata-dec-6-2026",
    "town": "Back Bay",
-   "date": "2026-11-19",
-   "rank": 3
+   "date": "2026-11-26",
+   "rank": 6
   },
   {
-   "h": "Haymitch Gets His Origin Story as Hunger Games Returns to Theaters",
-   "sum": "Sunrise on the Reaping is in theaters now, a prequel that follows Haymitch Abernathy before the Games.",
+   "h": "SoWa Christmas Market Opens Nov. 20 With 100-Plus Local Makers",
+   "sum": "Opening night is Friday, November 20, from 4:00 to 9:00 PM at SoWa Power Station in the South End.",
    "outlet": "The Boston Rambler",
-   "url": "?story=nat-hunger-games-sunrise-on-the-reaping-opens-2026-11-21",
-   "story": "nat-hunger-games-sunrise-on-the-reaping-opens-2026-11-21",
-   "town": "National",
-   "date": "2026-11-21",
-   "rank": 3
-  },
-  {
-   "h": "OpenAI's GPT-6.2 Astra and Sol Aim at Office Work, for Less",
-   "sum": "OpenAI's two new models promise better documents, code and design work at lower prices, as the race with Anthropic and Google tightens.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=tech-openai-gpt-6-2-astra-sol-release-2026-11-21",
-   "story": "tech-openai-gpt-6-2-astra-sol-release-2026-11-21",
-   "town": "National",
-   "date": "2026-11-21",
-   "rank": 3
-  },
-  {
-   "h": "Boston Tuba Christmas Brings Brass to The Steps Plaza, Nov. 28",
-   "sum": "Saturday, November 28, from 12:30 to 1:30 PM at The Steps Plaza in Downtown Boston, with a festive tuba and brass program.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=boston-tuba-christmas-steps-plaza-2026",
-   "story": "boston-tuba-christmas-steps-plaza-2026",
-   "town": "Downtown Boston",
-   "date": "2026-11-18",
-   "rank": 4
-  },
-  {
-   "h": "Dinty Child and Mark Erelli Share Songs at Club Passim, Nov. 27",
-   "sum": "Friday, Nov. 27, with doors at 6:00 PM and the show at 7:00 PM at Club Passim in Cambridge.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=dinty-child-mark-erelli-passim-nov-27-2026",
-   "story": "dinty-child-mark-erelli-passim-nov-27-2026",
-   "town": "Cambridge",
-   "date": "2026-11-19",
-   "rank": 10
+   "url": "?story=sowa-christmas-market-opens-nov-20-2026",
+   "story": "sowa-christmas-market-opens-nov-20-2026",
+   "town": "South End",
+   "date": "2026-11-26",
+   "rank": 6
   },
   {
    "h": "Huntington Premieres 'Adia & Clora Snatch Joy' Nov. 24 to Dec. 13",
@@ -78,20 +89,29 @@
    "outlet": "The Boston Rambler",
    "url": "?story=huntington-adia-clora-snatch-joy-2026",
    "story": "huntington-adia-clora-snatch-joy-2026",
-   "box": true,
    "town": "Fenway",
-   "date": "2026-11-24",
-   "rank": 2
+   "date": "2026-11-26",
+   "rank": 6
   },
   {
-   "h": "Boston Today and Tonight: Red McAdam, Yaelokre and Voices Unheard",
-   "sum": "Tuesday's live picks include Voices Unheard at 7:00 PM, Red McAdam at 8:00 PM and Yaelokre at 8:00 PM.",
+   "h": "Places We Carry: SMFA at Tufts Juried Student Show Opens at the MFA",
+   "sum": "Opens Saturday, Nov. 21, in the Edward H. Linde Gallery at the Museum of Fine Arts in Fenway and runs through April 18, 2027.",
    "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-24",
-   "story": "today-and-tonight-2026-11-24",
+   "url": "?story=places-we-carry-smfa-tufts-mfa-2026",
+   "story": "places-we-carry-smfa-tufts-mfa-2026",
    "town": "Boston",
-   "date": "2026-11-24",
-   "rank": 1
+   "date": "2026-11-26",
+   "rank": 8
+  },
+  {
+   "h": "Unvarnished at the MFA: Conservators Restore a Dutch Group Portrait",
+   "sum": "Opens Dec. 9 in the William A. Coolidge Gallery at the Museum of Fine Arts, 465 Huntington Avenue in the Fenway, and runs through Feb. 14, 2028.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=mfa-unvarnished-dutch-group-portrait-2026",
+   "story": "mfa-unvarnished-dutch-group-portrait-2026",
+   "town": "Fenway",
+   "date": "2026-11-26",
+   "rank": 8
   },
   {
    "h": "Copley Square Lights Its Tree and Reopens the Park, Nov. 30",
@@ -100,7 +120,17 @@
    "url": "?story=copley-square-tree-lighting-2026",
    "story": "copley-square-tree-lighting-2026",
    "town": "Back Bay",
-   "date": "2026-11-24",
+   "date": "2026-11-26",
+   "rank": 4
+  },
+  {
+   "h": "Boston Tuba Christmas Brings Brass to The Steps Plaza, Nov. 28",
+   "sum": "Saturday, November 28, from 12:30 to 1:30 PM at The Steps Plaza in Downtown Boston, with a festive tuba and brass program.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-tuba-christmas-steps-plaza-2026",
+   "story": "boston-tuba-christmas-steps-plaza-2026",
+   "town": "Downtown Crossing",
+   "date": "2026-11-26",
    "rank": 4
   },
   {
@@ -110,8 +140,18 @@
    "url": "?story=boston-thanksgiving-weekend-2026-11-25",
    "story": "boston-thanksgiving-weekend-2026-11-25",
    "town": "Boston",
-   "date": "2026-11-25",
-   "rank": 2
+   "date": "2026-11-26",
+   "rank": 9
+  },
+  {
+   "h": "Dinty Child and Mark Erelli Share Songs at Club Passim, Nov. 27",
+   "sum": "Friday, Nov. 27, with doors at 6:00 PM and the show at 7:00 PM at Club Passim in Cambridge.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=dinty-child-mark-erelli-passim-nov-27-2026",
+   "story": "dinty-child-mark-erelli-passim-nov-27-2026",
+   "town": "Cambridge",
+   "date": "2026-11-26",
+   "rank": 10
   }
  ]
 }
