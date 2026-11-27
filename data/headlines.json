@@ -1,17 +1,6 @@
 {
- "asof": "2026-11-26T09:00:00-05:00",
+ "asof": "2026-11-27T08:00:00-05:00",
  "items": [
-  {
-   "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
-   "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
-   "story": "handel-haydn-messiah-symphony-hall-2026",
-   "town": "Back Bay",
-   "date": "2026-11-26",
-   "rank": 2,
-   "lead": true
-  },
   {
    "h": "Thibaudet Plays Gershwin as Yamada Leads Respighi at Symphony Hall",
    "sum": "Friday, Nov. 27, at 1:30 p.m. and Saturday, Nov. 28, at 8:00 p.m. at Symphony Hall, 301 Massachusetts Ave., Back Bay.",
@@ -20,8 +9,7 @@
    "story": "bso-gershwin-respighi-fountains-of-rome-2026",
    "town": "Back Bay",
    "date": "2026-11-26",
-   "rank": 2,
-   "box": true
+   "rank": 2
   },
   {
    "h": "Boston Ballet's 'Nutcracker' Returns to the Opera House Nov. 27",
@@ -31,7 +19,8 @@
    "story": "boston-ballet-nutcracker-2026",
    "town": "Downtown",
    "date": "2026-11-26",
-   "rank": 3
+   "rank": 2,
+   "box": true
   },
   {
    "h": "Holiday Pops 2026: 41 Shows, Symphony Hall Dec. 3-28",
@@ -152,6 +141,56 @@
    "town": "Cambridge",
    "date": "2026-11-26",
    "rank": 10
+  },
+  {
+   "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
+   "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
+   "story": "handel-haydn-messiah-symphony-hall-2026",
+   "lead": true,
+   "town": "Back Bay",
+   "date": "2026-11-27",
+   "rank": 2
+  },
+  {
+   "h": "Boston Baroque Rings In the New Year at Sanders Theatre",
+   "sum": "Dec. 31 at 7:30 PM and Jan. 1 at 3:00 PM, with Beethoven's Seventh after intermission.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-baroque-new-years-2026",
+   "story": "boston-baroque-new-years-2026",
+   "town": "Cambridge",
+   "date": "2026-11-27",
+   "rank": 3
+  },
+  {
+   "h": "Commonwealth Shakespeare's Christmas Carol Runs Dec. 11-20",
+   "sum": "Dickens' story with 19th-century carols at the Majestic, with ASL and audio description performances.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=commonwealth-shakespeare-christmas-carol-2026",
+   "story": "commonwealth-shakespeare-christmas-carol-2026",
+   "town": "Downtown",
+   "date": "2026-11-27",
+   "rank": 3
+  },
+  {
+   "h": "Boston Today and Tonight: Messiah, Gershwin and Chris Botti",
+   "sum": "Handel's Messiah at 7:30 PM and Chris Botti at 8:00 PM headline a Friday night, with a Gershwin matinee at 1:30 PM.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=today-and-tonight-2026-11-27",
+   "story": "today-and-tonight-2026-11-27",
+   "town": "Boston",
+   "date": "2026-11-27",
+   "rank": 1
+  },
+  {
+   "h": "Boston Lyric Opera's The Queen of Spades Plays Symphony Hall in January",
+   "sum": "Tchaikovsky's opera runs Jan. 29 and Jan. 31, 2027, presented with the BSO.",
+   "outlet": "Boston Lyric Opera",
+   "url": "https://blo.org/50years/",
+   "town": "Back Bay",
+   "date": "2026-11-27",
+   "rank": 7
   }
  ]
 }
