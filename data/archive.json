@@ -2387,5 +2387,71 @@
     "url": "https://www.axios.com/local/boston/2026/11/16/boston-events-guide-november-16-20-2026"
    }
   ]
+ },
+ {
+  "slug": "today-and-tonight-2026-11-27",
+  "topic": "family",
+  "date": "2026-11-27",
+  "until": "2026-11-27",
+  "title": "Boston Today and Tonight: Messiah, Gershwin and Chris Botti",
+  "dek": "Handel's Messiah at 7:30 PM and Chris Botti at 8:00 PM headline a Friday night, with a Gershwin matinee at 1:30 PM.",
+  "body": [
+   "Friday after Thanksgiving is a busy night for music in Boston. Symphony Hall hosts a matinee of Gershwin and Respighi and the first evening of Handel and Haydn's Messiah, while the Wilbur Theatre features trumpeter Chris Botti. Club Passim in Cambridge adds a folk show at 7:00 PM for those who want something smaller.",
+   "#T {\"title\": \"Tonight, for grown-ups\", \"head\": [\"Time\", \"What\", \"Where\"], \"rows\": [[\"1:30 PM\", \"Gershwin and Respighi: Fountains of Rome, Boston Symphony Orchestra\", \"Symphony Hall, Back Bay\"], [\"7:00 PM\", \"Dinty Child and Mark Erelli, Club Passim\", \"Club Passim, Cambridge\"], [\"7:30 PM\", \"Handel's Messiah, Handel and Haydn Society\", \"Symphony Hall, Back Bay\"], [\"8:00 PM\", \"Chris Botti\", \"Wilbur Theatre, Theatre District\"]]}",
+   "Times come from each venue's listing. Check before you go."
+  ],
+  "sources": [
+   {
+    "outlet": "Boston Symphony Orchestra",
+    "title": "Gershwin and Respighi Fountains of Rome",
+    "date": "2026-11-27",
+    "url": "https://www.bso.org/events/nov-27-28-gershwin-respighi?performance=2026-11-27-13:30"
+   },
+   {
+    "outlet": "Club Passim",
+    "title": "Dinty Child and Mark Erelli",
+    "date": "2026-11-27",
+    "url": "https://www.passim.org/live-music/events/dinty-child-mark-erelli/"
+   },
+   {
+    "outlet": "Handel and Haydn Society",
+    "title": "Handel's Messiah",
+    "date": "2026-11-27",
+    "url": "https://handelandhaydn.org/concerts/26-27/messiah/"
+   },
+   {
+    "outlet": "Ticketmaster",
+    "title": "Chris Botti, Wilbur Theatre",
+    "date": "2026-11-27",
+    "url": "https://www.ticketmaster.com/chris-botti-boston-massachusetts-11-27-2026/event/0100647C91739314"
+   }
+  ],
+  "minutes": 1
+ },
+ {
+  "slug": "dinty-child-mark-erelli-passim-nov-27-2026",
+  "topic": "music",
+  "date": "2026-11-19",
+  "until": "2026-11-27",
+  "minutes": 1,
+  "title": "Dinty Child and Mark Erelli Share Songs at Club Passim, Nov. 27",
+  "dek": "Friday, Nov. 27, with doors at 6:00 PM and the show at 7:00 PM at Club Passim in Cambridge.",
+  "body": [
+   "Dinty Child and Mark Erelli bring a collaborative show to Club Passim on Friday, Nov. 27. The evening features live versions of the two artists' co-written songs.",
+   "## An up-close evening",
+   "The listing calls the night an intimate, up-close look at the partnership between the two musicians. It describes Erelli's singer-songwriter style blending with Child's inventive musicianship, so the songs are heard in the voices of both writers.",
+   "## Times",
+   "Doors open at 6:00 PM and the show begins at 7:00 PM. The Club Passim listing does not state a street address, so check the venue's directions and parking page before you go.",
+   "## Tickets",
+   "The listing gives the price as $40 general admission or $35 for members. All fees are shown as included, with a $3 processing fee and a $2 preservation fee that is waived at the box office."
+  ],
+  "sources": [
+   {
+    "outlet": "Club Passim",
+    "title": "Dinty Child & Mark Erelli",
+    "date": "",
+    "url": "https://www.passim.org/live-music/events/dinty-child-mark-erelli"
+   }
+  ]
  }
 ]

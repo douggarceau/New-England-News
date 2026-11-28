@@ -1,15 +1,15 @@
 {
- "asof": "2026-11-27T08:00:00-05:00",
+ "asof": "2026-11-28T10:00:00-05:00",
  "items": [
   {
-   "h": "Thibaudet Plays Gershwin as Yamada Leads Respighi at Symphony Hall",
-   "sum": "Friday, Nov. 27, at 1:30 p.m. and Saturday, Nov. 28, at 8:00 p.m. at Symphony Hall, 301 Massachusetts Ave., Back Bay.",
+   "h": "Boston Today and Tonight: Gershwin, Botti and Bonobo",
+   "sum": "Tonight's picks: the Boston Symphony Orchestra's Gershwin and Respighi at 8:00 PM, Chris Botti at 8:00 PM and Bonobo at 7:00 PM.",
    "outlet": "The Boston Rambler",
-   "url": "?story=bso-gershwin-respighi-fountains-of-rome-2026",
-   "story": "bso-gershwin-respighi-fountains-of-rome-2026",
-   "town": "Back Bay",
-   "date": "2026-11-26",
-   "rank": 2
+   "url": "?story=today-and-tonight-2026-11-28",
+   "story": "today-and-tonight-2026-11-28",
+   "town": "Boston",
+   "date": "2026-11-28",
+   "rank": 1
   },
   {
    "h": "Boston Ballet's 'Nutcracker' Returns to the Opera House Nov. 27",
@@ -19,8 +19,39 @@
    "story": "boston-ballet-nutcracker-2026",
    "town": "Downtown",
    "date": "2026-11-26",
-   "rank": 2,
-   "box": true
+   "rank": 2
+  },
+  {
+   "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
+   "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
+   "story": "handel-haydn-messiah-symphony-hall-2026",
+   "town": "Back Bay",
+   "date": "2026-11-27",
+   "rank": 2
+  },
+  {
+   "h": "Copley Square Lights Its Tree and Reopens the Park, Nov. 30",
+   "sum": "Monday, Nov. 30, from 5:00 to 6:00 PM at 560 Boylston Street, with arts and crafts, Santa and Rudolph, and music from the Boston Children's Chorus.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=copley-square-tree-lighting-2026",
+   "story": "copley-square-tree-lighting-2026",
+   "lead": true,
+   "town": "Back Bay",
+   "date": "2026-11-28",
+   "rank": 2
+  },
+  {
+   "h": "Thibaudet Plays Gershwin as Yamada Leads Respighi at Symphony Hall",
+   "sum": "Friday, Nov. 27, at 1:30 p.m. and Saturday, Nov. 28, at 8:00 p.m. at Symphony Hall, 301 Massachusetts Ave., Back Bay.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=bso-gershwin-respighi-fountains-of-rome-2026",
+   "story": "bso-gershwin-respighi-fountains-of-rome-2026",
+   "box": true,
+   "town": "Back Bay",
+   "date": "2026-11-28",
+   "rank": 2
   },
   {
    "h": "Holiday Pops 2026: 41 Shows, Symphony Hall Dec. 3-28",
@@ -31,6 +62,46 @@
    "town": "Back Bay",
    "date": "2026-11-26",
    "rank": 3
+  },
+  {
+   "h": "Boston Baroque Rings In the New Year at Sanders Theatre",
+   "sum": "Dec. 31 at 7:30 PM and Jan. 1 at 3:00 PM, with Beethoven's Seventh after intermission.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-baroque-new-years-2026",
+   "story": "boston-baroque-new-years-2026",
+   "town": "Cambridge",
+   "date": "2026-11-27",
+   "rank": 3
+  },
+  {
+   "h": "Commonwealth Shakespeare's Christmas Carol Runs Dec. 11-20",
+   "sum": "Dickens' story with 19th-century carols at the Majestic, with ASL and audio description performances.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=commonwealth-shakespeare-christmas-carol-2026",
+   "story": "commonwealth-shakespeare-christmas-carol-2026",
+   "town": "Downtown",
+   "date": "2026-11-27",
+   "rank": 3
+  },
+  {
+   "h": "A Boston Christmas: Back Bay Chorale at Old South Church, Dec. 18-19",
+   "sum": "Carols from King's College and a world premiere carol commission, sung on Boylston Street.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=back-bay-chorale-a-boston-christmas-2026",
+   "story": "back-bay-chorale-a-boston-christmas-2026",
+   "town": "Back Bay",
+   "date": "2026-11-28",
+   "rank": 3
+  },
+  {
+   "h": "Boston Tuba Christmas Brings Brass to The Steps Plaza, Nov. 28",
+   "sum": "Saturday, November 28, from 12:30 to 1:30 PM at The Steps Plaza in Downtown Boston, with a festive tuba and brass program.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=boston-tuba-christmas-steps-plaza-2026",
+   "story": "boston-tuba-christmas-steps-plaza-2026",
+   "town": "Downtown Crossing",
+   "date": "2026-11-26",
+   "rank": 4
   },
   {
    "h": "The Book of Esther in the Age of Rembrandt at the Gardner",
@@ -83,6 +154,25 @@
    "rank": 6
   },
   {
+   "h": "Christmas in Olde/New England at the Church of the Covenant, Dec. 5",
+   "sum": "Musicians of the Old Post Road and Convivium Musicum sing early American and Christmas music on Newbury Street.",
+   "outlet": "The Boston Rambler",
+   "url": "?story=old-post-road-christmas-covenant-2026",
+   "story": "old-post-road-christmas-covenant-2026",
+   "town": "Back Bay",
+   "date": "2026-11-28",
+   "rank": 6
+  },
+  {
+   "h": "Boston Lyric Opera's The Queen of Spades Plays Symphony Hall in January",
+   "sum": "Tchaikovsky's opera runs Jan. 29 and Jan. 31, 2027, presented with the BSO.",
+   "outlet": "Boston Lyric Opera",
+   "url": "https://blo.org/50years/",
+   "town": "Back Bay",
+   "date": "2026-11-27",
+   "rank": 7
+  },
+  {
    "h": "Places We Carry: SMFA at Tufts Juried Student Show Opens at the MFA",
    "sum": "Opens Saturday, Nov. 21, in the Edward H. Linde Gallery at the Museum of Fine Arts in Fenway and runs through April 18, 2027.",
    "outlet": "The Boston Rambler",
@@ -103,26 +193,6 @@
    "rank": 8
   },
   {
-   "h": "Copley Square Lights Its Tree and Reopens the Park, Nov. 30",
-   "sum": "The city's tree lighting runs 5:00 to 6:00 PM Monday, with arts and crafts, Santa and music from the Boston Children's Chorus.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=copley-square-tree-lighting-2026",
-   "story": "copley-square-tree-lighting-2026",
-   "town": "Back Bay",
-   "date": "2026-11-26",
-   "rank": 4
-  },
-  {
-   "h": "Boston Tuba Christmas Brings Brass to The Steps Plaza, Nov. 28",
-   "sum": "Saturday, November 28, from 12:30 to 1:30 PM at The Steps Plaza in Downtown Boston, with a festive tuba and brass program.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=boston-tuba-christmas-steps-plaza-2026",
-   "story": "boston-tuba-christmas-steps-plaza-2026",
-   "town": "Downtown Crossing",
-   "date": "2026-11-26",
-   "rank": 4
-  },
-  {
    "h": "Boston's Long Weekend: Markets, Messiah and a Last Plymouth Call",
    "sum": "Snowport and SoWa close Thursday and stay open late Friday, Plimoth Patuxet's season ends Sunday, and Fabolous plays Encore Friday night.",
    "outlet": "The Boston Rambler",
@@ -131,66 +201,6 @@
    "town": "Boston",
    "date": "2026-11-26",
    "rank": 9
-  },
-  {
-   "h": "Dinty Child and Mark Erelli Share Songs at Club Passim, Nov. 27",
-   "sum": "Friday, Nov. 27, with doors at 6:00 PM and the show at 7:00 PM at Club Passim in Cambridge.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=dinty-child-mark-erelli-passim-nov-27-2026",
-   "story": "dinty-child-mark-erelli-passim-nov-27-2026",
-   "town": "Cambridge",
-   "date": "2026-11-26",
-   "rank": 10
-  },
-  {
-   "h": "Handel and Haydn's Messiah at Symphony Hall, Nov. 27-29",
-   "sum": "Harry Christophers leads the Handel and Haydn Society in its 173rd annual Messiah Nov. 27, 28 and 29 at Symphony Hall, Boston.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=handel-haydn-messiah-symphony-hall-2026",
-   "story": "handel-haydn-messiah-symphony-hall-2026",
-   "lead": true,
-   "town": "Back Bay",
-   "date": "2026-11-27",
-   "rank": 2
-  },
-  {
-   "h": "Boston Baroque Rings In the New Year at Sanders Theatre",
-   "sum": "Dec. 31 at 7:30 PM and Jan. 1 at 3:00 PM, with Beethoven's Seventh after intermission.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=boston-baroque-new-years-2026",
-   "story": "boston-baroque-new-years-2026",
-   "town": "Cambridge",
-   "date": "2026-11-27",
-   "rank": 3
-  },
-  {
-   "h": "Commonwealth Shakespeare's Christmas Carol Runs Dec. 11-20",
-   "sum": "Dickens' story with 19th-century carols at the Majestic, with ASL and audio description performances.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=commonwealth-shakespeare-christmas-carol-2026",
-   "story": "commonwealth-shakespeare-christmas-carol-2026",
-   "town": "Downtown",
-   "date": "2026-11-27",
-   "rank": 3
-  },
-  {
-   "h": "Boston Today and Tonight: Messiah, Gershwin and Chris Botti",
-   "sum": "Handel's Messiah at 7:30 PM and Chris Botti at 8:00 PM headline a Friday night, with a Gershwin matinee at 1:30 PM.",
-   "outlet": "The Boston Rambler",
-   "url": "?story=today-and-tonight-2026-11-27",
-   "story": "today-and-tonight-2026-11-27",
-   "town": "Boston",
-   "date": "2026-11-27",
-   "rank": 1
-  },
-  {
-   "h": "Boston Lyric Opera's The Queen of Spades Plays Symphony Hall in January",
-   "sum": "Tchaikovsky's opera runs Jan. 29 and Jan. 31, 2027, presented with the BSO.",
-   "outlet": "Boston Lyric Opera",
-   "url": "https://blo.org/50years/",
-   "town": "Back Bay",
-   "date": "2026-11-27",
-   "rank": 7
   }
  ]
 }
